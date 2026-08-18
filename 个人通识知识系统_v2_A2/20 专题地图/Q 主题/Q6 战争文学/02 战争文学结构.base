@@ -11,8 +11,12 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   war_history_stage:
     displayName: 历史阶段
+  question_cluster:
+    displayName: 核心问题群
   id:
     displayName: 稳定 ID
 
@@ -23,7 +27,9 @@ views:
       - file.name
       - dimension
       - sequence
+      - parent
       - war_history_stage
+      - question_cluster
       - id
 
   - type: table
@@ -31,7 +37,9 @@ views:
     filters:
       and:
         - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-Q6-WAR"'
     order:
+      - sequence
       - file.name
       - dimension
       - id
@@ -41,7 +49,43 @@ views:
     filters:
       and:
         - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q6-WAR-HISTORY"'
     order:
       - sequence
       - file.name
       - war_history_stage
+      - id
+
+  - type: table
+    name: 六个核心问题群
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q6-WAR-AXES"'
+    order:
+      - sequence
+      - file.name
+      - question_cluster
+      - id
+
+  - type: table
+    name: 历史节点
+    filters:
+      and:
+        - 'dimension == "history"'
+    order:
+      - sequence
+      - file.name
+      - parent
+      - war_history_stage
+
+  - type: table
+    name: 问题节点
+    filters:
+      and:
+        - 'dimension == "core_question"'
+    order:
+      - sequence
+      - file.name
+      - question_cluster
+      - parent

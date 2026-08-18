@@ -1,284 +1,57 @@
 {
   "nodes": [
-    {
-      "id": "root",
-      "type": "file",
-      "x": 1180,
-      "y": 0,
-      "width": 560,
-      "height": 130,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/00 战争文学.md",
-      "color": "4"
-    },
-    {
-      "id": "g-detail",
-      "type": "group",
-      "x": 0,
-      "y": 230,
-      "width": 1120,
-      "height": 1250,
-      "label": "战争文学史",
-      "color": "1"
-    },
-    {
-      "id": "g-structure",
-      "type": "group",
-      "x": 1200,
-      "y": 230,
-      "width": 900,
-      "height": 950,
-      "label": "概念结构",
-      "color": "2"
-    },
-    {
-      "id": "g-data",
-      "type": "group",
-      "x": 2180,
-      "y": 230,
-      "width": 850,
-      "height": 700,
-      "label": "使用与数据",
-      "color": "5"
-    },
-    {
-      "id": "s1",
-      "type": "file",
-      "x": 1370,
-      "y": 320,
-      "width": 560,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/01 边界：战争文学与历史文学.md",
-      "color": "2"
-    },
-    {
-      "id": "s2",
-      "type": "file",
-      "x": 1370,
-      "y": 465,
-      "width": 560,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/02 七阶段战争文学思想史.md",
-      "color": "2"
-    },
-    {
-      "id": "s3",
-      "type": "file",
-      "x": 1370,
-      "y": 610,
-      "width": 560,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/03 二十条战争问题横轴.md",
-      "color": "2"
-    },
-    {
-      "id": "s4",
-      "type": "file",
-      "x": 1370,
-      "y": 755,
-      "width": 560,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/04 从英雄主义到战争记忆.md",
-      "color": "2"
-    },
-    {
-      "id": "s5",
-      "type": "file",
-      "x": 1370,
-      "y": 900,
-      "width": 560,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/05 阅读路线.md",
-      "color": "2"
-    },
-    {
-      "id": "works",
-      "type": "file",
-      "x": 2350,
-      "y": 340,
-      "width": 520,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/03 战争作品.base",
-      "color": "4"
-    },
-    {
-      "id": "structdb",
-      "type": "file",
-      "x": 2350,
-      "y": 510,
-      "width": 520,
-      "height": 110,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/02 战争文学结构.base",
-      "color": "5"
-    },
-    {
-      "id": "d1",
-      "type": "file",
-      "x": 70,
-      "y": 430,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/01 英雄史诗：战争作为荣耀舞台.md",
-      "color": "1"
-    },
-    {
-      "id": "d2",
-      "type": "file",
-      "x": 590,
-      "y": 430,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/02 近代与19世纪：战争现实主义化.md",
-      "color": "1"
-    },
-    {
-      "id": "d3",
-      "type": "file",
-      "x": 70,
-      "y": 575,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/03 第一次世界大战与意识形态战争.md",
-      "color": "1"
-    },
-    {
-      "id": "d4",
-      "type": "file",
-      "x": 590,
-      "y": 575,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/04 第二次世界大战：总体战与东亚战争.md",
-      "color": "1"
-    },
-    {
-      "id": "d5",
-      "type": "file",
-      "x": 70,
-      "y": 720,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/05 Holocaust、见证与核时代.md",
-      "color": "1"
-    },
-    {
-      "id": "d6",
-      "type": "file",
-      "x": 590,
-      "y": 720,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/06 朝鲜、越南、去殖民与后殖民战争.md",
-      "color": "1"
-    },
-    {
-      "id": "d7",
-      "type": "file",
-      "x": 70,
-      "y": 865,
-      "width": 460,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/07 中东、伊拉克、阿富汗与长期战争.md",
-      "color": "1"
-    }
+    {"id":"root","type":"file","x":1220,"y":0,"width":560,"height":130,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/00 战争文学.md","color":"4"},
+    {"id":"g-core","type":"group","x":0,"y":240,"width":940,"height":1030,"label":"Q轴核心结构","color":"2"},
+    {"id":"g-history","type":"group","x":1010,"y":240,"width":1040,"height":1120,"label":"历史纵轴：七个阶段","color":"1"},
+    {"id":"g-question","type":"group","x":2120,"y":240,"width":1040,"height":1120,"label":"主题横轴：六个核心问题群","color":"3"},
+    {"id":"g-data","type":"group","x":0,"y":1340,"width":940,"height":430,"label":"数据与阅读入口","color":"5"},
+
+    {"id":"boundary","type":"file","x":160,"y":330,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/01 边界：战争文学与历史文学.md","color":"2"},
+    {"id":"history","type":"file","x":160,"y":500,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/02 七阶段战争文学思想史.md","color":"1"},
+    {"id":"axes","type":"file","x":160,"y":670,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/03 二十条战争问题横轴.md","color":"3"},
+    {"id":"bridge","type":"file","x":160,"y":840,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/04 跨体裁与跨文明比较.md","color":"5"},
+    {"id":"reading","type":"file","x":160,"y":1010,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/10 结构/05 阅读路线.md","color":"6"},
+
+    {"id":"h1","type":"file","x":1080,"y":340,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/01 英雄史诗：战争作为荣耀舞台.md","color":"1"},
+    {"id":"h2","type":"file","x":1540,"y":340,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/02 近代与19世纪：战争现实主义化.md","color":"1"},
+    {"id":"h3","type":"file","x":1080,"y":500,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/03 第一次世界大战与意识形态战争.md","color":"1"},
+    {"id":"h4","type":"file","x":1540,"y":500,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/04 第二次世界大战：总体战与东亚战争.md","color":"1"},
+    {"id":"h5","type":"file","x":1080,"y":660,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/05 Holocaust、见证与核时代.md","color":"1"},
+    {"id":"h6","type":"file","x":1540,"y":660,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/06 朝鲜、越南、去殖民与后殖民战争.md","color":"1"},
+    {"id":"h7","type":"file","x":1080,"y":820,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/11 细分/07 中东、伊拉克、阿富汗与长期战争.md","color":"1"},
+
+    {"id":"q1","type":"file","x":2200,"y":340,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/01 战斗、士兵与军事制度.md","color":"3"},
+    {"id":"q2","type":"file","x":2660,"y":340,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/02 平民、占领、女性与儿童.md","color":"3"},
+    {"id":"q3","type":"file","x":2200,"y":500,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/03 总体战、种族灭绝与核暴力.md","color":"3"},
+    {"id":"q4","type":"file","x":2660,"y":500,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/04 内战、殖民战争与长期战争.md","color":"3"},
+    {"id":"q5","type":"file","x":2200,"y":660,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/05 创伤、战后与战争记忆.md","color":"3"},
+    {"id":"q6","type":"file","x":2660,"y":660,"width":430,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/12 核心问题/06 真相、责任与战争叙事.md","color":"3"},
+
+    {"id":"works","type":"file","x":150,"y":1440,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/03 战争作品.base","color":"4"},
+    {"id":"structdb","type":"file","x":150,"y":1600,"width":560,"height":105,"file":"个人通识知识系统_v2_A2/20 专题地图/Q 主题/Q6 战争文学/02 战争文学结构.base","color":"5"}
   ],
   "edges": [
-    {
-      "id": "e-root-s1",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "s1",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-s2",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "s2",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-s3",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "s3",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-s4",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "s4",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-s5",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "s5",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-works",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "works",
-      "toSide": "top"
-    },
-    {
-      "id": "e-root-structdb",
-      "fromNode": "root",
-      "fromSide": "bottom",
-      "toNode": "structdb",
-      "toSide": "top"
-    },
-    {
-      "id": "e-detail-1",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d1",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-2",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d2",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-3",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d3",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-4",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d4",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-5",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d5",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-6",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d6",
-      "toSide": "right"
-    },
-    {
-      "id": "e-detail-7",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "d7",
-      "toSide": "right"
-    }
+    {"id":"e-root-boundary","fromNode":"root","fromSide":"bottom","toNode":"boundary","toSide":"top"},
+    {"id":"e-root-history","fromNode":"root","fromSide":"bottom","toNode":"history","toSide":"top"},
+    {"id":"e-root-axes","fromNode":"root","fromSide":"bottom","toNode":"axes","toSide":"top"},
+    {"id":"e-root-bridge","fromNode":"root","fromSide":"bottom","toNode":"bridge","toSide":"top"},
+    {"id":"e-root-reading","fromNode":"root","fromSide":"bottom","toNode":"reading","toSide":"top"},
+    {"id":"e-root-works","fromNode":"root","fromSide":"bottom","toNode":"works","toSide":"top"},
+    {"id":"e-root-struct","fromNode":"root","fromSide":"bottom","toNode":"structdb","toSide":"top"},
+
+    {"id":"e-h1","fromNode":"history","fromSide":"right","toNode":"h1","toSide":"left"},
+    {"id":"e-h2","fromNode":"history","fromSide":"right","toNode":"h2","toSide":"left"},
+    {"id":"e-h3","fromNode":"history","fromSide":"right","toNode":"h3","toSide":"left"},
+    {"id":"e-h4","fromNode":"history","fromSide":"right","toNode":"h4","toSide":"left"},
+    {"id":"e-h5","fromNode":"history","fromSide":"right","toNode":"h5","toSide":"left"},
+    {"id":"e-h6","fromNode":"history","fromSide":"right","toNode":"h6","toSide":"left"},
+    {"id":"e-h7","fromNode":"history","fromSide":"right","toNode":"h7","toSide":"left"},
+
+    {"id":"e-q1","fromNode":"axes","fromSide":"right","toNode":"q1","toSide":"left"},
+    {"id":"e-q2","fromNode":"axes","fromSide":"right","toNode":"q2","toSide":"left"},
+    {"id":"e-q3","fromNode":"axes","fromSide":"right","toNode":"q3","toSide":"left"},
+    {"id":"e-q4","fromNode":"axes","fromSide":"right","toNode":"q4","toSide":"left"},
+    {"id":"e-q5","fromNode":"axes","fromSide":"right","toNode":"q5","toSide":"left"},
+    {"id":"e-q6","fromNode":"axes","fromSide":"right","toNode":"q6","toSide":"left"}
   ]
 }
