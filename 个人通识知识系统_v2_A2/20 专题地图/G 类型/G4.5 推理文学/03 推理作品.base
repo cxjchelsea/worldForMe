@@ -1,0 +1,188 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G45-MYSTERY")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  mystery_priority:
+    displayName: 推理优先级
+  mystery_history_cluster:
+    displayName: 历史大区块
+  mystery_history:
+    displayName: 历史位置
+  mystery_history_detail:
+    displayName: 历史细分
+  mystery_technique:
+    displayName: 谜题/结构技法
+  mystery_mode:
+    displayName: 犯罪小说模式
+  read_status:
+    displayName: 阅读状态
+  verification_status:
+    displayName: 校验状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部推理作品
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history_cluster
+      - mystery_history
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - mystery_priority == "★"
+    order:
+      - file.name
+      - author
+      - mystery_history_cluster
+      - mystery_history
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - mystery_priority == "◆"
+    order:
+      - file.name
+      - author
+      - mystery_history_cluster
+      - mystery_history
+      - read_status
+  - type: table
+    name: 深挖候选 ○
+    filters:
+      and:
+        - mystery_priority == "○"
+    order:
+      - file.name
+      - author
+      - mystery_history_cluster
+      - mystery_history
+      - read_status
+  - type: table
+    name: 历史 前史与黄金时代
+    filters:
+      and:
+        - mystery_history_cluster.contains("前史、侦探诞生与黄金时代")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 历史 英美类型扩张
+    filters:
+      and:
+        - mystery_history_cluster.contains("英美犯罪小说传统与类型扩张")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 历史 日本推理
+    filters:
+      and:
+        - mystery_history_cluster.contains("日本推理传统")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 历史 北欧与欧洲大陆
+    filters:
+      and:
+        - mystery_history_cluster.contains("北欧与欧洲大陆犯罪文学")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 历史 中文推理
+    filters:
+      and:
+        - mystery_history_cluster.contains("中文推理")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 历史 边界类型
+    filters:
+      and:
+        - mystery_history_cluster.contains("边界类型")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history
+      - mystery_history_detail
+      - read_status
+  - type: table
+    name: 技法 已明确标注
+    filters:
+      and:
+        - "!mystery_technique.isEmpty()"
+    order:
+      - file.name
+      - author
+      - mystery_technique
+      - mystery_history_cluster
+      - mystery_priority
+      - read_status
+  - type: table
+    name: 模式 已明确标注
+    filters:
+      and:
+        - "!mystery_mode.isEmpty()"
+    order:
+      - file.name
+      - author
+      - mystery_mode
+      - mystery_history_cluster
+      - mystery_priority
+      - read_status
+  - type: table
+    name: 阅读状态未映射
+    filters:
+      and:
+        - read_status == "未映射"
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - mystery_history_cluster
+      - read_status
+  - type: table
+    name: 需复核
+    filters:
+      and:
+        - verification_status == "需复核"
+    order:
+      - file.name
+      - author
+      - aliases
+      - review_note
+      - id

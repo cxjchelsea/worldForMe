@@ -1,0 +1,81 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G44-HISTORICAL")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  historical_priority:
+    displayName: 专题优先级
+  historical_history_cluster:
+    displayName: 历史区块
+  historical_axes:
+    displayName: 历史对象/形式
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部历史作品
+    order:
+      - file.name
+      - author
+      - historical_priority
+      - historical_history_cluster
+      - historical_axes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - historical_priority == "★"
+    order:
+      - file.name
+      - author
+      - historical_history_cluster
+      - historical_axes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - historical_priority == "◆"
+    order:
+      - file.name
+      - author
+      - historical_history_cluster
+      - historical_axes
+      - read_status
+  - type: table
+    name: 按历史区块
+    groupBy:
+      property: historical_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - historical_priority
+      - historical_axes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - "!historical_axes.isEmpty()"
+    order:
+      - file.name
+      - author
+      - historical_axes
+      - historical_priority
+  - type: table
+    name: 阅读状态未映射
+    filters:
+      and:
+        - read_status == "未映射"
+    order:
+      - file.name
+      - author
+      - historical_priority
+      - historical_history_cluster

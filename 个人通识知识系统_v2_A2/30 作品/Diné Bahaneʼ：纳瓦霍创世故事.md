@@ -1,0 +1,44 @@
+---
+id: WL-WORK-1354
+type: work
+title: Diné Bahaneʼ：纳瓦霍创世故事
+title_original: Diné Bahaneʼ
+aliases:
+- Diné Bahaneʼ
+author: ''
+author_source: traditional_or_pending
+year: null
+literary_traditions: []
+read_status: 未映射
+topics:
+- WL-TOPIC-G1-MYTH
+topic_links:
+- '[[20 专题地图/G 类型/G1 世界神话文学/00 世界神话文学]]'
+myth_priority: ★
+myth_tradition_cluster: 美洲与大洋洲
+myth_motifs: []
+verification_status: 自动通过
+bibliography_status: metadata_pending
+batch3_source_refs:
+- 神话书单.md:1408
+- 神话书单.md:922
+---
+# Diné Bahaneʼ：纳瓦霍创世故事
+
+## 基本信息
+
+- 作者 / 归属：传统文本 / 待书目校验
+- 原文名：Diné Bahaneʼ
+- 其他题名：Diné Bahaneʼ
+- 年代 / 首次成书时间：待统一书目校验
+- 阅读状态：未映射
+
+## 专题位置
+
+- [[20 专题地图/G 类型/G1 世界神话文学/00 世界神话文学|世界神话文学]]
+  - 专题优先级：★
+  - 神话传统：美洲与大洋洲
+
+## 数据说明
+
+> 本文件是中央作品库中的唯一作品实体。神话传统文本允许作者为空；旅行文学后续可统一补作者、年代与原文题名。

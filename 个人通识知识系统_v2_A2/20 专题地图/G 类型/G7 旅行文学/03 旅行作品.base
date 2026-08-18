@@ -1,0 +1,71 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-G7-TRAVEL")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  travel_priority:
+    displayName: 旅行优先级
+  travel_history_cluster:
+    displayName: 历史阶段
+  travel_axes:
+    displayName: 旅行横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部旅行作品
+    order:
+      - file.name
+      - author
+      - travel_priority
+      - travel_history_cluster
+      - travel_axes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'travel_priority == "★"'
+    order:
+      - file.name
+      - author
+      - travel_history_cluster
+      - travel_axes
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'travel_priority == "◆"'
+    order:
+      - file.name
+      - author
+      - travel_history_cluster
+      - travel_axes
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: travel_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - travel_priority
+      - travel_axes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!travel_axes.isEmpty()'
+    order:
+      - file.name
+      - author
+      - travel_axes
+      - travel_history_cluster

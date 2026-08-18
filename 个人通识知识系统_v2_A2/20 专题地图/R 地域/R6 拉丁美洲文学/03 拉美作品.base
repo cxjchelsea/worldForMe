@@ -1,0 +1,49 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-R6-LATAM")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  latam_priority:
+    displayName: R6优先级
+  latam_history_stage:
+    displayName: 历史阶段
+  latam_axes:
+    displayName: 拉美横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部拉美作品
+    order: [file.name, author, latam_priority, latam_history_stage, latam_axes, read_status]
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'latam_priority == "★"'
+    order: [file.name, author, latam_history_stage, latam_axes, read_status]
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'latam_priority == "◆"'
+    order: [file.name, author, latam_history_stage, latam_axes, read_status]
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: latam_history_stage
+      direction: ASC
+    order: [file.name, author, latam_priority, latam_axes]
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!latam_axes.isEmpty()'
+    order: [file.name, author, latam_axes, latam_history_stage]

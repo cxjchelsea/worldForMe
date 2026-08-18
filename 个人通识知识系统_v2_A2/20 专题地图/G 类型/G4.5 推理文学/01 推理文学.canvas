@@ -1,0 +1,36 @@
+{
+	"nodes":[
+		{"id":"root","type":"file","x":1180,"y":0,"width":520,"height":130,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/00 推理文学.md","color":"4"},
+		{"id":"g-history","type":"group","x":0,"y":250,"width":1000,"height":900,"label":"历史演进","color":"1"},
+		{"id":"g-concepts","type":"group","x":1080,"y":250,"width":1000,"height":900,"label":"概念结构","color":"2"},
+		{"id":"g-use","type":"group","x":2160,"y":250,"width":900,"height":900,"label":"使用与数据","color":"5"},
+		{"id":"hist","type":"file","x":240,"y":320,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/10 结构/01 历史演进.md","color":"1"},
+		{"id":"tech","type":"file","x":1240,"y":320,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/10 结构/02 谜题与结构技法.md","color":"2"},
+		{"id":"mode","type":"file","x":1240,"y":500,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/10 结构/03 犯罪小说模式.md","color":"3"},
+		{"id":"region","type":"file","x":1240,"y":680,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/10 结构/04 地域传统.md","color":"5"},
+		{"id":"reading","type":"file","x":2340,"y":360,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/10 结构/05 阅读路线.md","color":"6"},
+		{"id":"worksdb","type":"file","x":2340,"y":560,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/03 推理作品.base","color":"4"},
+		{"id":"structuredb","type":"file","x":2340,"y":760,"width":520,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/02 推理文学结构.base","color":"5"},
+		{"id":"h1","type":"file","x":80,"y":520,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/01 前史、侦探诞生与黄金时代.md","color":"1"},
+		{"id":"h2","type":"file","x":520,"y":520,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/02 美国犯罪小说传统与类型扩张.md","color":"1"},
+		{"id":"h3","type":"file","x":80,"y":680,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/03 日本推理传统.md","color":"1"},
+		{"id":"h4","type":"file","x":520,"y":680,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/04 北欧与欧洲大陆犯罪文学.md","color":"1"},
+		{"id":"h5","type":"file","x":80,"y":840,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/05 中文推理与边界类型.md","color":"1"},
+		{"id":"h6","type":"file","x":520,"y":840,"width":400,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 推理文学/11 历史细分/06 边界类型：间谍、盗窃与犯罪者小说.md","color":"1"}
+	],
+	"edges":[
+		{"id":"e-root-hist","fromNode":"root","fromSide":"bottom","toNode":"hist","toSide":"top"},
+		{"id":"e-root-tech","fromNode":"root","fromSide":"bottom","toNode":"tech","toSide":"top"},
+		{"id":"e-root-mode","fromNode":"root","fromSide":"bottom","toNode":"mode","toSide":"top"},
+		{"id":"e-root-region","fromNode":"root","fromSide":"bottom","toNode":"region","toSide":"top"},
+		{"id":"e-root-reading","fromNode":"root","fromSide":"bottom","toNode":"reading","toSide":"top"},
+		{"id":"e-root-worksdb","fromNode":"root","fromSide":"bottom","toNode":"worksdb","toSide":"top"},
+		{"id":"e-root-structuredb","fromNode":"root","fromSide":"bottom","toNode":"structuredb","toSide":"top"},
+		{"id":"e-hist-h1","fromNode":"hist","fromSide":"bottom","toNode":"h1","toSide":"top"},
+		{"id":"e-hist-h2","fromNode":"hist","fromSide":"bottom","toNode":"h2","toSide":"top"},
+		{"id":"e-hist-h3","fromNode":"hist","fromSide":"bottom","toNode":"h3","toSide":"top"},
+		{"id":"e-hist-h4","fromNode":"hist","fromSide":"bottom","toNode":"h4","toSide":"top"},
+		{"id":"e-hist-h5","fromNode":"hist","fromSide":"bottom","toNode":"h5","toSide":"top"},
+		{"id":"e-hist-h6","fromNode":"hist","fromSide":"bottom","toNode":"h6","toSide":"top"}
+	]
+}

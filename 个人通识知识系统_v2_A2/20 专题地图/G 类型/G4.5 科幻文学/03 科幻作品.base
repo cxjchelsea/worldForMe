@@ -1,0 +1,184 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G45-SF")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  sf_priority:
+    displayName: 科幻优先级
+  sf_history_cluster:
+    displayName: 历史大区块
+  sf_history:
+    displayName: 历史位置
+  sf_themes:
+    displayName: 思想母题
+  sf_region:
+    displayName: 原专题地域入口
+  read_status:
+    displayName: 阅读状态
+  verification_status:
+    displayName: 校验状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部科幻作品
+    order:
+      - file.name
+      - author
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - sf_region
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - sf_priority == "★"
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_themes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - sf_priority == "◆"
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_themes
+      - read_status
+  - type: table
+    name: 按历史区块
+    groupBy:
+      property: sf_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - sf_priority
+      - sf_history
+      - read_status
+  - type: table
+    name: 主题已明确标注
+    filters:
+      and:
+        - "!sf_themes.isEmpty()"
+    order:
+      - file.name
+      - author
+      - sf_themes
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: AI与机器人
+    filters:
+      and:
+        - sf_themes.contains("AI / 机器人")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: 第一接触
+    filters:
+      and:
+        - sf_themes.contains("第一接触")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: 反乌托邦
+    filters:
+      and:
+        - sf_themes.contains("反乌托邦")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: Hard SF
+    filters:
+      and:
+        - sf_themes.contains("Hard SF")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: Cyberpunk
+    filters:
+      and:
+        - sf_themes.contains("Cyberpunk")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: 后人类
+    filters:
+      and:
+        - sf_themes.contains("后人类")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: 生态与Climate Fiction
+    filters:
+      and:
+        - sf_themes.contains("生态 / Climate Fiction")
+    order:
+      - file.name
+      - author
+      - sf_history_cluster
+      - sf_priority
+  - type: table
+    name: 地域已明确标注
+    filters:
+      and:
+        - sf_region != ""
+    groupBy:
+      property: sf_region
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - sf_priority
+      - sf_history_cluster
+  - type: table
+    name: 阅读状态未映射
+    filters:
+      and:
+        - read_status == "未映射"
+    order:
+      - file.name
+      - author
+      - sf_priority
+      - sf_history_cluster
+      - read_status
+  - type: table
+    name: 需复核
+    filters:
+      and:
+        - verification_status == "需复核"
+    order:
+      - file.name
+      - author
+      - review_note
+      - id

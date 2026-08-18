@@ -1,0 +1,81 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G46-DYSTOPIA")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  dystopia_priority:
+    displayName: 专题优先级
+  dystopia_history_cluster:
+    displayName: 历史区块
+  dystopia_control_modes:
+    displayName: 控制机制
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部反乌托邦作品
+    order:
+      - file.name
+      - author
+      - dystopia_priority
+      - dystopia_history_cluster
+      - dystopia_control_modes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - dystopia_priority == "★"
+    order:
+      - file.name
+      - author
+      - dystopia_history_cluster
+      - dystopia_control_modes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - dystopia_priority == "◆"
+    order:
+      - file.name
+      - author
+      - dystopia_history_cluster
+      - dystopia_control_modes
+      - read_status
+  - type: table
+    name: 按历史区块
+    groupBy:
+      property: dystopia_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - dystopia_priority
+      - dystopia_control_modes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - "!dystopia_control_modes.isEmpty()"
+    order:
+      - file.name
+      - author
+      - dystopia_control_modes
+      - dystopia_priority
+  - type: table
+    name: 阅读状态未映射
+    filters:
+      and:
+        - read_status == "未映射"
+    order:
+      - file.name
+      - author
+      - dystopia_priority
+      - dystopia_history_cluster

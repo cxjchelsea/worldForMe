@@ -1,0 +1,53 @@
+---
+id: "WL-WORK-0041"
+type: "work"
+title: "X的悲剧"
+title_original: ""
+aliases: []
+author: "埃勒里·奎因"
+author_source: "author_heading"
+year: null
+literary_traditions: []
+read_status: "未映射"
+topics:
+  - "WL-TOPIC-G45-MYSTERY"
+topic_links:
+  - "[[20 专题地图/G 类型/G4.5 推理文学/00 推理文学]]"
+mystery_priority: "★"
+mystery_history_cluster:
+  - "前史、侦探诞生与黄金时代"
+mystery_history:
+  - "埃勒里·奎因——逻辑与公平游戏"
+mystery_history_detail: []
+mystery_technique: []
+mystery_mode: []
+series: ""
+verification_status: "自动通过"
+review_note: ""
+source_mentions: 1
+first_source_line: 190
+mystery_source_lines:
+  - "190"
+---
+
+# X的悲剧
+
+## 基本信息
+
+- 作者：埃勒里·奎因
+- 首次出版年：待统一书目校验
+- 阅读状态：未映射
+
+## 推理文学位置
+
+- 专题：[[20 专题地图/G 类型/G4.5 推理文学/00 推理文学|推理文学]]
+- 历史位置：埃勒里·奎因——逻辑与公平游戏
+- 专题阅读优先级：★
+
+## 来源与校验
+
+- 原始专题：[[20 专题地图/G 类型/G4.5 推理文学/_source/推理书单_原始版|推理书单原始版]]
+- 首次出现行号：190
+- 提取校验：自动通过
+
+> 本文件是作品实体。其他专题若再次出现本书，应复用此文件并追加对应专题属性，而不是重复创建作品。

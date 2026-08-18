@@ -1,0 +1,49 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-M3-MODERNISM")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  modernism_priority:
+    displayName: M3优先级
+  modernism_tradition_cluster:
+    displayName: 传统入口
+  modernism_axes:
+    displayName: 形式/经验横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部现代主义作品
+    order: [file.name, author, modernism_priority, modernism_tradition_cluster, modernism_axes, read_status]
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'modernism_priority == "★"'
+    order: [file.name, author, modernism_tradition_cluster, modernism_axes, read_status]
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'modernism_priority == "◆"'
+    order: [file.name, author, modernism_tradition_cluster, modernism_axes, read_status]
+  - type: table
+    name: 按传统入口
+    groupBy:
+      property: modernism_tradition_cluster
+      direction: ASC
+    order: [file.name, author, modernism_priority, modernism_axes]
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!modernism_axes.isEmpty()'
+    order: [file.name, author, modernism_axes, modernism_tradition_cluster]

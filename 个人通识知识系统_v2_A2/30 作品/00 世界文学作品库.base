@@ -1,0 +1,209 @@
+filters:
+  and:
+    - type == "work"
+properties:
+  file.name:
+    displayName: 作品
+  title:
+    displayName: 标准书名
+  aliases:
+    displayName: 其他题名
+  author:
+    displayName: 作者
+  year:
+    displayName: 首次出版年
+  topics:
+    displayName: 专题
+  read_status:
+    displayName: 阅读状态
+  verification_status:
+    displayName: 校验状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - topics
+      - read_status
+      - id
+  - type: table
+    name: 推理文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G45-MYSTERY")
+    order:
+      - file.name
+      - author
+      - mystery_priority
+      - read_status
+      - id
+  - type: table
+    name: 科幻文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G45-SF")
+    order:
+      - file.name
+      - author
+      - sf_priority
+      - read_status
+      - id
+  - type: table
+    name: 奇幻文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G45-FANTASY")
+    order:
+      - file.name
+      - author
+      - fantasy_priority
+      - read_status
+      - id
+  - type: table
+    name: 恐怖文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G45-HORROR")
+    order:
+      - file.name
+      - author
+      - horror_priority
+      - read_status
+      - id
+  - type: table
+    name: 冒险文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G45-ADVENTURE")
+    order:
+      - file.name
+      - author
+      - adventure_priority
+      - read_status
+      - id
+  - type: table
+    name: 成长文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G43-BILDUNGSROMAN")
+    order:
+      - file.name
+      - author
+      - growth_priority
+      - read_status
+      - id
+  - type: table
+    name: 家族文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G43-FAMILY")
+    order:
+      - file.name
+      - author
+      - family_priority
+      - read_status
+      - id
+  - type: table
+    name: 历史文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G44-HISTORICAL")
+    order:
+      - file.name
+      - author
+      - historical_priority
+      - read_status
+      - id
+  - type: table
+    name: 反乌托邦文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G46-DYSTOPIA")
+    order:
+      - file.name
+      - author
+      - dystopia_priority
+      - read_status
+      - id
+  - type: table
+    name: 世界神话文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G1-MYTH")
+    order:
+      - file.name
+      - author
+      - myth_priority
+      - read_status
+      - id
+  - type: table
+    name: 旅行文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-G7-TRAVEL")
+    order:
+      - file.name
+      - author
+      - travel_priority
+      - read_status
+      - id
+  - type: table
+    name: 二战后多极文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-T5-POSTWAR")
+    order:
+      - file.name
+      - author
+      - postwar_priority
+      - postwar_stage
+      - read_status
+      - id
+  - type: table
+    name: 拉丁美洲文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-R6-LATAM")
+    order:
+      - file.name
+      - author
+      - latam_priority
+      - latam_history_stage
+      - read_status
+      - id
+  - type: table
+    name: 现代主义文学
+    filters:
+      and:
+        - topics.contains("WL-TOPIC-M3-MODERNISM")
+    order:
+      - file.name
+      - author
+      - modernism_priority
+      - modernism_tradition_cluster
+      - read_status
+      - id
+  - type: table
+    name: 阅读状态未映射
+    filters:
+      and:
+        - read_status == "未映射"
+    order:
+      - file.name
+      - author
+      - topics
+      - id
+  - type: table
+    name: 需复核
+    filters:
+      and:
+        - verification_status == "需复核"
+    order:
+      - file.name
+      - author
+      - aliases
+      - verification_status
+      - id

@@ -1,0 +1,114 @@
+filters:
+  and:
+    - type == "literature_node"
+    - id.startsWith("WL-")
+properties:
+  file.name:
+    displayName: 节点
+  code:
+    displayName: 编码
+  axis:
+    displayName: 轴
+  level:
+    displayName: 层级
+  importance:
+    displayName: 文学史重要度
+  coverage_priority:
+    displayName: 阅读经验优先级
+  time_range:
+    displayName: 时间范围
+  topic_map:
+    displayName: 专题地图
+  parent:
+    displayName: 父节点
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部节点
+    order:
+      - file.name
+      - axis
+      - level
+      - importance
+      - coverage_priority
+      - topic_map
+      - id
+    columnSize:
+      file.name: 285
+  - type: table
+    name: 六轴一级节点
+    filters:
+      and:
+        - level == 1
+    groupBy:
+      property: axis
+      direction: ASC
+    order:
+      - file.name
+      - importance
+      - coverage_priority
+      - time_range
+      - topic_map
+      - id
+  - type: table
+    name: S级文学史骨架
+    filters:
+      and:
+        - importance == "S"
+    groupBy:
+      property: axis
+      direction: ASC
+    order:
+      - file.name
+      - level
+      - topic_map
+      - id
+  - type: table
+    name: Core阅读经验
+    filters:
+      and:
+        - coverage_priority == "Core"
+    groupBy:
+      property: axis
+      direction: ASC
+    order:
+      - file.name
+      - level
+      - topic_map
+      - id
+  - type: table
+    name: G轴小说细分
+    filters:
+      and:
+        - axis == "G"
+        - level == 2
+    order:
+      - file.name
+      - importance
+      - topic_map
+      - parent
+      - id
+  - type: table
+    name: 尚未接入专题
+    filters:
+      and:
+        - topic_map == null
+    groupBy:
+      property: axis
+      direction: ASC
+    order:
+      - file.name
+      - level
+      - importance
+      - coverage_priority
+      - id
+  - type: table
+    name: 技术审计
+    order:
+      - id
+      - code
+      - axis
+      - parent
+      - level
+      - file.name

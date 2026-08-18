@@ -1,0 +1,335 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "x": 1150,
+      "y": 0,
+      "width": 520,
+      "height": 130,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/00 奇幻文学.md",
+      "color": "4"
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "x": 0,
+      "y": 230,
+      "width": 1100,
+      "height": 1200,
+      "label": "历史",
+      "color": "1"
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "x": 1180,
+      "y": 230,
+      "width": 850,
+      "height": 850,
+      "label": "概念结构",
+      "color": "2"
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "x": 2110,
+      "y": 230,
+      "width": 820,
+      "height": 700,
+      "label": "使用与数据",
+      "color": "5"
+    },
+    {
+      "id": "s1",
+      "type": "file",
+      "x": 1300,
+      "y": 320,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/10 结构/01 历史与类型演进.md",
+      "color": "2"
+    },
+    {
+      "id": "s2",
+      "type": "file",
+      "x": 1300,
+      "y": 465,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/10 结构/02 子类型与审美分叉.md",
+      "color": "2"
+    },
+    {
+      "id": "s3",
+      "type": "file",
+      "x": 1300,
+      "y": 610,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/10 结构/03 神话重述与全球传统.md",
+      "color": "2"
+    },
+    {
+      "id": "s4",
+      "type": "file",
+      "x": 1300,
+      "y": 755,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/10 结构/04 阅读路线.md",
+      "color": "2"
+    },
+    {
+      "id": "works",
+      "type": "file",
+      "x": 2280,
+      "y": 340,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/03 奇幻作品.base",
+      "color": "4"
+    },
+    {
+      "id": "structdb",
+      "type": "file",
+      "x": 2280,
+      "y": 510,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/02 奇幻文学结构.base",
+      "color": "5"
+    },
+    {
+      "id": "h1",
+      "type": "file",
+      "x": 70,
+      "y": 430,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/01 前现代幻想母体.md",
+      "color": "1"
+    },
+    {
+      "id": "h2",
+      "type": "file",
+      "x": 580,
+      "y": 430,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/02 童话与民间幻想文学化.md",
+      "color": "1"
+    },
+    {
+      "id": "h3",
+      "type": "file",
+      "x": 70,
+      "y": 575,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/03 19世纪现代奇幻形成.md",
+      "color": "1"
+    },
+    {
+      "id": "h4",
+      "type": "file",
+      "x": 580,
+      "y": 575,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/04 20世纪早期类型形成与Sword & Sorcery.md",
+      "color": "1"
+    },
+    {
+      "id": "h5",
+      "type": "file",
+      "x": 70,
+      "y": 720,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/05 Tolkien、Lewis与现代High Fantasy.md",
+      "color": "1"
+    },
+    {
+      "id": "h6",
+      "type": "file",
+      "x": 580,
+      "y": 720,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/06 1950—70年代反英雄与思想升级.md",
+      "color": "1"
+    },
+    {
+      "id": "h7",
+      "type": "file",
+      "x": 70,
+      "y": 865,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/07 1970—2000史诗奇幻扩张.md",
+      "color": "1"
+    },
+    {
+      "id": "h8",
+      "type": "file",
+      "x": 580,
+      "y": 865,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/08 现代子类型全面分化.md",
+      "color": "1"
+    },
+    {
+      "id": "h9",
+      "type": "file",
+      "x": 70,
+      "y": 1010,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/09 Global Fantasy与中国现代奇幻.md",
+      "color": "1"
+    },
+    {
+      "id": "h10",
+      "type": "file",
+      "x": 580,
+      "y": 1010,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/10 东亚网络幻想、异世界与Progression.md",
+      "color": "1"
+    },
+    {
+      "id": "h11",
+      "type": "file",
+      "x": 70,
+      "y": 1155,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 奇幻文学/11 历史细分/11 Romantasy、Cozy与Academic Fantasy.md",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-root-s1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s1",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s2",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s3",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s4",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-works",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "works",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-structdb",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "structdb",
+      "toSide": "top"
+    },
+    {
+      "id": "e-h1",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h1",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h2",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h2",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h3",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h3",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h4",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h4",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h5",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h5",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h6",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h6",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h7",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h7",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h8",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h8",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h9",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h9",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h10",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h10",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h11",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h11",
+      "toSide": "right"
+    }
+  ]
+}

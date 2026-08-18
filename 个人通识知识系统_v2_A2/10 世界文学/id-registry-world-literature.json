@@ -1,0 +1,766 @@
+{
+  "system": {
+    "id": "WL",
+    "name": "世界文学地图",
+    "parent": "PGK-D01",
+    "source_version": "2.3+Q15",
+    "read_mapping_included": false
+  },
+  "axes": [
+    {
+      "id": "WL-T",
+      "axis": "T",
+      "name": "时间 / 文学史阶段",
+      "role": "primary",
+      "priority_scheme": "S/A/B",
+      "question": "它发生在文学史什么时候？",
+      "file": "02 轴/T轴 世界文学时间史.md"
+    },
+    {
+      "id": "WL-R",
+      "axis": "R",
+      "name": "地区 / 文学传统",
+      "role": "primary",
+      "priority_scheme": "S/A/B",
+      "question": "它来自哪条文学传统？",
+      "file": "02 轴/R轴 世界文学传统.md"
+    },
+    {
+      "id": "WL-M",
+      "axis": "M",
+      "name": "思潮 / 运动 / 美学范式",
+      "role": "primary",
+      "priority_scheme": "S/A/B",
+      "question": "它属于什么文学思想与美学变化？",
+      "file": "02 轴/M轴 文学思潮与美学范式.md"
+    },
+    {
+      "id": "WL-G",
+      "axis": "G",
+      "name": "体裁 / 类型 / 叙事传统",
+      "role": "primary",
+      "priority_scheme": "S/A/B",
+      "question": "它是什么文学形式或类型？",
+      "file": "02 轴/G轴 体裁与类型.md"
+    },
+    {
+      "id": "WL-N",
+      "axis": "N",
+      "name": "叙事技法 / 形式",
+      "role": "auxiliary",
+      "priority_scheme": "Core/Expand/Interest",
+      "question": "它具体怎样讲故事？",
+      "file": "02 轴/N轴 叙事技法.md"
+    },
+    {
+      "id": "WL-Q",
+      "axis": "Q",
+      "name": "主题 / 母题 / 文学问题",
+      "role": "auxiliary",
+      "priority_scheme": "Core/Expand/Interest",
+      "question": "它在处理什么人类问题？",
+      "file": "02 轴/Q轴 文学主题与人类问题.md"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "WL-T0",
+      "code": "T0",
+      "name": "文学源头与古代文学",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T0 文学源头与古代文学.md",
+      "time_range": "约史前—公元500年",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-T1",
+      "code": "T1",
+      "name": "中古多中心文学世界",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T1 中古多中心文学世界.md",
+      "time_range": "约500—1500",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-T2",
+      "code": "T2",
+      "name": "早期现代文学",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T2 早期现代文学.md",
+      "time_range": "约1500—1800",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-T3",
+      "code": "T3",
+      "name": "19世纪现代文学体系",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T3 19世纪现代文学体系.md",
+      "time_range": "约1800—1890",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-T4",
+      "code": "T4",
+      "name": "全球现代主义时代",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T4 全球现代主义时代.md",
+      "time_range": "约1890—1945",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-T5",
+      "code": "T5",
+      "name": "二战后多极文学",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T5 二战后多极文学.md",
+      "time_range": "约1945—1980",
+      "importance": "S",
+      "topic_map": [
+        "20 专题地图/T 时间/T5 二战后多极文学/00 二战后多极文学.md"
+      ]
+    },
+    {
+      "id": "WL-T6",
+      "code": "T6",
+      "name": "当代全球文学",
+      "axis": "T",
+      "parent": "WL-T",
+      "level": 1,
+      "file": "03 节点/T 时间/T6 当代全球文学.md",
+      "time_range": "约1980—至今",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R1",
+      "code": "R1",
+      "name": "西亚—地中海古老传统",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R1 西亚—地中海古老传统.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R2",
+      "code": "R2",
+      "name": "东亚文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R2 东亚文学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R3",
+      "code": "R3",
+      "name": "南亚文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R3 南亚文学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R4",
+      "code": "R4",
+      "name": "欧洲文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R4 欧洲文学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R5",
+      "code": "R5",
+      "name": "北美文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R5 北美文学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R6",
+      "code": "R6",
+      "name": "拉丁美洲与加勒比",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R6 拉丁美洲与加勒比.md",
+      "importance": "S",
+      "topic_map": [
+        "20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学.md"
+      ]
+    },
+    {
+      "id": "WL-R7",
+      "code": "R7",
+      "name": "非洲文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R7 非洲文学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R8",
+      "code": "R8",
+      "name": "东南亚文学",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R8 东南亚文学.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R9",
+      "code": "R9",
+      "name": "大洋洲与太平洋",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R9 大洋洲与太平洋.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-R10",
+      "code": "R10",
+      "name": "跨区域文学传统",
+      "axis": "R",
+      "parent": "WL-R",
+      "level": 1,
+      "file": "03 节点/R 地域/R10 跨区域文学传统.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-M1",
+      "code": "M1",
+      "name": "早期现代思想与美学",
+      "axis": "M",
+      "parent": "WL-M",
+      "level": 1,
+      "file": "03 节点/M 思潮/M1 早期现代思想与美学.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-M2",
+      "code": "M2",
+      "name": "19世纪文学思潮",
+      "axis": "M",
+      "parent": "WL-M",
+      "level": 1,
+      "file": "03 节点/M 思潮/M2 19世纪文学思潮.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-M3",
+      "code": "M3",
+      "name": "现代主义与先锋派",
+      "axis": "M",
+      "parent": "WL-M",
+      "level": 1,
+      "file": "03 节点/M 思潮/M3 现代主义与先锋派.md",
+      "importance": "S",
+      "topic_map": [
+        "20 专题地图/M 思潮/M3 现代主义文学/00 现代主义文学.md"
+      ]
+    },
+    {
+      "id": "WL-M4",
+      "code": "M4",
+      "name": "政治、民族与文化运动",
+      "axis": "M",
+      "parent": "WL-M",
+      "level": 1,
+      "file": "03 节点/M 思潮/M4 政治、民族与文化运动.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-M5",
+      "code": "M5",
+      "name": "战后与当代美学范式",
+      "axis": "M",
+      "parent": "WL-M",
+      "level": 1,
+      "file": "03 节点/M 思潮/M5 战后与当代美学范式.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G1",
+      "code": "G1",
+      "name": "口述与民间文学",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G1 口述与民间文学.md",
+      "importance": "S",
+      "topic_map": [
+        "20 专题地图/G 类型/G1 世界神话文学/00 世界神话文学.md"
+      ]
+    },
+    {
+      "id": "WL-G2",
+      "code": "G2",
+      "name": "诗歌",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G2 诗歌.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G3",
+      "code": "G3",
+      "name": "戏剧",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G3 戏剧.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G4",
+      "code": "G4",
+      "name": "小说 / Fiction",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G4 小说 ／ Fiction.md",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G4.1",
+      "code": "G4.1",
+      "name": "按篇幅与基础形式",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.1 按篇幅与基础形式.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G4.2",
+      "code": "G4.2",
+      "name": "历史形成的小说形式",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.2 历史形成的小说形式.md",
+      "importance": "S",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G4.3",
+      "code": "G4.3",
+      "name": "社会与人物型小说",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.3 社会与人物型小说.md",
+      "importance": "S",
+      "topic_map": [
+        "20 专题地图/G 类型/G4.3 成长文学/00 成长文学.md",
+        "20 专题地图/G 类型/G4.3 家族文学/00 家族文学.md"
+      ]
+    },
+    {
+      "id": "WL-G4.4",
+      "code": "G4.4",
+      "name": "历史与现实类型",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.4 历史与现实类型.md",
+      "importance": "A",
+      "topic_map": [
+        "20 专题地图/G 类型/G4.4 历史文学/00 历史文学.md"
+      ]
+    },
+    {
+      "id": "WL-G4.5",
+      "code": "G4.5",
+      "name": "现代类型文学",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.5 现代类型文学.md",
+      "importance": "A",
+      "topic_map": [
+        "20 专题地图/G 类型/G4.5 推理文学/00 推理文学.md",
+        "20 专题地图/G 类型/G4.5 科幻文学/00 科幻文学.md",
+        "20 专题地图/G 类型/G4.5 奇幻文学/00 奇幻文学.md",
+        "20 专题地图/G 类型/G4.5 恐怖文学/00 恐怖文学.md",
+        "20 专题地图/G 类型/G4.5 冒险文学/00 冒险文学.md"
+      ]
+    },
+    {
+      "id": "WL-G4.6",
+      "code": "G4.6",
+      "name": "思辨与思想类型",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.6 思辨与思想类型.md",
+      "importance": "A",
+      "topic_map": [
+        "20 专题地图/G 类型/G4.6 反乌托邦文学/00 反乌托邦文学.md"
+      ]
+    },
+    {
+      "id": "WL-G4.7",
+      "code": "G4.7",
+      "name": "读者与市场类型",
+      "axis": "G",
+      "parent": "WL-G4",
+      "level": 2,
+      "file": "03 节点/G 类型/G4.7 读者与市场类型.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G5",
+      "code": "G5",
+      "name": "散文",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G5 散文.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G6",
+      "code": "G6",
+      "name": "生命书写",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G6 生命书写.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-G7",
+      "code": "G7",
+      "name": "纪实文学",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G7 纪实文学.md",
+      "importance": "A",
+      "topic_map": [
+        "20 专题地图/G 类型/G7 旅行文学/00 旅行文学.md"
+      ]
+    },
+    {
+      "id": "WL-G8",
+      "code": "G8",
+      "name": "混合文类",
+      "axis": "G",
+      "parent": "WL-G",
+      "level": 1,
+      "file": "03 节点/G 类型/G8 混合文类.md",
+      "importance": "A",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N1",
+      "code": "N1",
+      "name": "叙述者与视角",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N1 叙述者与视角.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N2",
+      "code": "N2",
+      "name": "聚焦与可靠性",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N2 聚焦与可靠性.md",
+      "coverage_priority": "Core",
+      "topic_map": [
+        "20 专题地图/N 叙事/不可靠叙述书单.md"
+      ]
+    },
+    {
+      "id": "WL-N3",
+      "code": "N3",
+      "name": "时间技术",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N3 时间技术.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N4",
+      "code": "N4",
+      "name": "意识与人物语言",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N4 意识与人物语言.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N5",
+      "code": "N5",
+      "name": "结构技术",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N5 结构技术.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N6",
+      "code": "N6",
+      "name": "语言与风格技术",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N6 语言与风格技术.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N7",
+      "code": "N7",
+      "name": "自反性与文本关系",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N7 自反性与文本关系.md",
+      "coverage_priority": "Expand",
+      "topic_map": []
+    },
+    {
+      "id": "WL-N8",
+      "code": "N8",
+      "name": "文档与媒介技术",
+      "axis": "N",
+      "parent": "WL-N",
+      "level": 1,
+      "file": "03 节点/N 叙事/N8 文档与媒介技术.md",
+      "coverage_priority": "Expand",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q1",
+      "code": "Q1",
+      "name": "个体与存在",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q1 个体与存在.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q2",
+      "code": "Q2",
+      "name": "爱、欲望与亲密关系",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q2 爱、欲望与亲密关系.md",
+      "coverage_priority": "Core",
+      "topic_map": [
+        "20 专题地图/Q 主题/爱情书单.md"
+      ]
+    },
+    {
+      "id": "WL-Q3",
+      "code": "Q3",
+      "name": "家庭与成长",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q3 家庭与成长.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q4",
+      "code": "Q4",
+      "name": "社会、阶级与劳动",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q4 社会、阶级与劳动.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q5",
+      "code": "Q5",
+      "name": "国家、权力与制度",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q5 国家、权力与制度.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q6",
+      "code": "Q6",
+      "name": "战争、暴力与创伤",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q6 战争、暴力与创伤.md",
+      "coverage_priority": "Core",
+      "topic_map": [
+        "20 专题地图/Q 主题/战争书单.md"
+      ]
+    },
+    {
+      "id": "WL-Q7",
+      "code": "Q7",
+      "name": "性别、身体与性",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q7 性别、身体与性.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q8",
+      "code": "Q8",
+      "name": "种族、族群与殖民",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q8 种族、族群与殖民.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q9",
+      "code": "Q9",
+      "name": "迁徙、流亡与归属",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q9 迁徙、流亡与归属.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q10",
+      "code": "Q10",
+      "name": "历史、记忆与时间",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q10 历史、记忆与时间.md",
+      "coverage_priority": "Core",
+      "topic_map": [
+        "20 专题地图/Q 主题/历史、记忆与时间主题书单.md"
+      ]
+    },
+    {
+      "id": "WL-Q11",
+      "code": "Q11",
+      "name": "宗教、伦理与超越",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q11 宗教、伦理与超越.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q12",
+      "code": "Q12",
+      "name": "科学、技术与现代性",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q12 科学、技术与现代性.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q13",
+      "code": "Q13",
+      "name": "自然、生态与非人类",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q13 自然、生态与非人类.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q14",
+      "code": "Q14",
+      "name": "语言、知识与艺术",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "file": "03 节点/Q 主题/Q14 语言、知识与艺术.md",
+      "coverage_priority": "Core",
+      "topic_map": []
+    },
+    {
+      "id": "WL-Q15",
+      "code": "Q15",
+      "name": "武人、英雄与秩序",
+      "axis": "Q",
+      "parent": "WL-Q",
+      "level": 1,
+      "coverage_priority": "Interest",
+      "file": "03 节点/Q 主题/Q15 武人、英雄与秩序.md",
+      "topic_map": [
+        "20 专题地图/Q15 武人、英雄与秩序/世界武人英雄谱系.md"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G45-ADVENTURE")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  adventure_priority:
+    displayName: 冒险优先级
+  adventure_history_cluster:
+    displayName: 历史区块
+  adventure_axes:
+    displayName: 冒险结构横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部冒险作品
+    order:
+      - file.name
+      - author
+      - adventure_priority
+      - adventure_history_cluster
+      - adventure_axes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - adventure_priority == "★"
+    order:
+      - file.name
+      - author
+      - adventure_history_cluster
+      - adventure_axes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - adventure_priority == "◆"
+    order:
+      - file.name
+      - author
+      - adventure_history_cluster
+      - adventure_axes
+      - read_status
+  - type: table
+    name: 边界 △
+    filters:
+      and:
+        - adventure_priority == "△"
+    order:
+      - file.name
+      - author
+      - adventure_history_cluster
+      - adventure_axes
+      - read_status
+  - type: table
+    name: 按历史区块
+    groupBy:
+      property: adventure_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - adventure_priority
+      - adventure_axes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - "!adventure_axes.isEmpty()"
+    order:
+      - file.name
+      - author
+      - adventure_axes
+      - adventure_priority

@@ -1,0 +1,71 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-G1-MYTH")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者/归属
+  myth_priority:
+    displayName: 神话优先级
+  myth_tradition_cluster:
+    displayName: 文明传统
+  myth_motifs:
+    displayName: 神话母题
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部神话作品
+    order:
+      - file.name
+      - author
+      - myth_priority
+      - myth_tradition_cluster
+      - myth_motifs
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'myth_priority == "★"'
+    order:
+      - file.name
+      - author
+      - myth_tradition_cluster
+      - myth_motifs
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'myth_priority == "◆"'
+    order:
+      - file.name
+      - author
+      - myth_tradition_cluster
+      - myth_motifs
+  - type: table
+    name: 按文明传统
+    groupBy:
+      property: myth_tradition_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - myth_priority
+      - myth_motifs
+  - type: table
+    name: 母题已标注
+    filters:
+      and:
+        - '!myth_motifs.isEmpty()'
+    order:
+      - file.name
+      - author
+      - myth_motifs
+      - myth_tradition_cluster

@@ -1,0 +1,56 @@
+filters:
+  and:
+    - type == "literature_topic_map"
+properties:
+  file.name:
+    displayName: 专题
+  name:
+    displayName: 名称
+  primary_anchor:
+    displayName: 主锚点
+  topic_role:
+    displayName: 角色
+  parent_topic:
+    displayName: 上级专题
+  source_status:
+    displayName: 迁移状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部专题
+    order:
+      - file.name
+      - primary_anchor
+      - topic_role
+      - parent_topic
+      - id
+  - type: table
+    name: 按主锚点
+    groupBy:
+      property: primary_anchor
+      direction: ASC
+    order:
+      - file.name
+      - topic_role
+      - parent_topic
+      - id
+  - type: table
+    name: 直接专题
+    filters:
+      and:
+        - topic_role == "direct"
+    order:
+      - file.name
+      - primary_anchor
+      - id
+  - type: table
+    name: Q15武人体系
+    filters:
+      and:
+        - primary_anchor == "WL-Q15"
+    order:
+      - topic_role
+      - file.name
+      - parent_topic
+      - id

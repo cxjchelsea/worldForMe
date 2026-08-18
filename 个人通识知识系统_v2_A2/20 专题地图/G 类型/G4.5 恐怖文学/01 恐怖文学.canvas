@@ -1,0 +1,284 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "x": 1150,
+      "y": 0,
+      "width": 520,
+      "height": 130,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/00 恐怖文学.md",
+      "color": "4"
+    },
+    {
+      "id": "g1",
+      "type": "group",
+      "x": 0,
+      "y": 230,
+      "width": 1100,
+      "height": 1200,
+      "label": "历史",
+      "color": "1"
+    },
+    {
+      "id": "g2",
+      "type": "group",
+      "x": 1180,
+      "y": 230,
+      "width": 850,
+      "height": 850,
+      "label": "概念结构",
+      "color": "2"
+    },
+    {
+      "id": "g3",
+      "type": "group",
+      "x": 2110,
+      "y": 230,
+      "width": 820,
+      "height": 700,
+      "label": "使用与数据",
+      "color": "5"
+    },
+    {
+      "id": "s1",
+      "type": "file",
+      "x": 1300,
+      "y": 320,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/10 结构/01 历史演进.md",
+      "color": "2"
+    },
+    {
+      "id": "s2",
+      "type": "file",
+      "x": 1300,
+      "y": 465,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/10 结构/02 恐惧机制与子类型.md",
+      "color": "2"
+    },
+    {
+      "id": "s3",
+      "type": "file",
+      "x": 1300,
+      "y": 610,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/10 结构/03 全球恐怖传统.md",
+      "color": "2"
+    },
+    {
+      "id": "s4",
+      "type": "file",
+      "x": 1300,
+      "y": 755,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/10 结构/04 阅读路线.md",
+      "color": "2"
+    },
+    {
+      "id": "works",
+      "type": "file",
+      "x": 2280,
+      "y": 340,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/03 恐怖作品.base",
+      "color": "4"
+    },
+    {
+      "id": "structdb",
+      "type": "file",
+      "x": 2280,
+      "y": 510,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/02 恐怖文学结构.base",
+      "color": "5"
+    },
+    {
+      "id": "h1",
+      "type": "file",
+      "x": 70,
+      "y": 430,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/01 现代恐怖以前的母体.md",
+      "color": "1"
+    },
+    {
+      "id": "h2",
+      "type": "file",
+      "x": 580,
+      "y": 430,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/02 18世纪Gothic形成.md",
+      "color": "1"
+    },
+    {
+      "id": "h3",
+      "type": "file",
+      "x": 70,
+      "y": 575,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/03 19世纪怪物、鬼故事与心理哥特.md",
+      "color": "1"
+    },
+    {
+      "id": "h4",
+      "type": "file",
+      "x": 580,
+      "y": 575,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/04 Weird Fiction与Lovecraft宇宙恐怖.md",
+      "color": "1"
+    },
+    {
+      "id": "h5",
+      "type": "file",
+      "x": 70,
+      "y": 720,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/05 20世纪中期心理恐怖与Southern Gothic.md",
+      "color": "1"
+    },
+    {
+      "id": "h6",
+      "type": "file",
+      "x": 580,
+      "y": 720,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/06 1960—80年代现代Horror爆发.md",
+      "color": "1"
+    },
+    {
+      "id": "h7",
+      "type": "file",
+      "x": 70,
+      "y": 865,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/07 文学恐怖、Cosmic与21世纪新分化.md",
+      "color": "1"
+    },
+    {
+      "id": "h8",
+      "type": "file",
+      "x": 580,
+      "y": 865,
+      "width": 450,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/08 日本、中国、韩国与拉美全球恐怖.md",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-root-s1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s1",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s2",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s3",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s4",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-works",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "works",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-structdb",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "structdb",
+      "toSide": "top"
+    },
+    {
+      "id": "e-h1",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h1",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h2",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h2",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h3",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h3",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h4",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h4",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h5",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h5",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h6",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h6",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h7",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h7",
+      "toSide": "right"
+    },
+    {
+      "id": "e-h8",
+      "fromNode": "s1",
+      "fromSide": "left",
+      "toNode": "h8",
+      "toSide": "right"
+    }
+  ]
+}

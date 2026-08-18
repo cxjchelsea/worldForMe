@@ -1,0 +1,47 @@
+filters:
+  and:
+    - 'topic_id == "WL-TOPIC-G44-HISTORICAL"'
+
+properties:
+  file.name:
+    displayName: 节点
+  type:
+    displayName: 类型
+  dimension:
+    displayName: 维度
+  sequence:
+    displayName: 顺序
+  history_cluster:
+    displayName: 历史区块
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - history_cluster
+      - id
+
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order:
+      - file.name
+      - dimension
+      - id
+
+  - type: table
+    name: 历史细分
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+    order:
+      - sequence
+      - file.name
+      - history_cluster

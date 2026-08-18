@@ -1,0 +1,37 @@
+filters:
+  and:
+    - 'topic_id == "WL-TOPIC-G45-SF"'
+
+properties:
+  file.name:
+    displayName: 节点
+  type:
+    displayName: 类型
+  dimension:
+    displayName: 维度
+  sequence:
+    displayName: 顺序
+  history_cluster:
+    displayName: 历史大区块
+  parent:
+    displayName: 父节点
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部知识节点
+    order: [file.name, dimension, sequence, history_cluster, id]
+  - type: table
+    name: 核心结构节点
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order: [file.name, dimension, id]
+  - type: table
+    name: 历史十二区块
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+        - 'dimension == "history"'
+    order: [sequence, file.name, history_cluster, id]

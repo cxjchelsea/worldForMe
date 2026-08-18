@@ -1,0 +1,94 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-G45-FANTASY")
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  fantasy_priority:
+    displayName: 奇幻优先级
+  fantasy_history_cluster:
+    displayName: 历史区块
+  fantasy_subgenres:
+    displayName: 子类型
+  fantasy_region:
+    displayName: 地域入口
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部奇幻作品
+    order:
+      - file.name
+      - author
+      - fantasy_priority
+      - fantasy_history_cluster
+      - fantasy_subgenres
+      - fantasy_region
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - fantasy_priority == "★"
+    order:
+      - file.name
+      - author
+      - fantasy_history_cluster
+      - fantasy_subgenres
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - fantasy_priority == "◆"
+    order:
+      - file.name
+      - author
+      - fantasy_history_cluster
+      - fantasy_subgenres
+      - read_status
+  - type: table
+    name: 边界 △
+    filters:
+      and:
+        - fantasy_priority == "△"
+    order:
+      - file.name
+      - author
+      - fantasy_history_cluster
+      - read_status
+  - type: table
+    name: 按历史区块
+    groupBy:
+      property: fantasy_history_cluster
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - fantasy_priority
+      - fantasy_subgenres
+  - type: table
+    name: 子类型已标注
+    filters:
+      and:
+        - "!fantasy_subgenres.isEmpty()"
+    order:
+      - file.name
+      - author
+      - fantasy_subgenres
+      - fantasy_priority
+  - type: table
+    name: 地域已标注
+    filters:
+      and:
+        - "!fantasy_region.isEmpty()"
+    order:
+      - file.name
+      - author
+      - fantasy_region
+      - fantasy_priority

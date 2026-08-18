@@ -1,0 +1,45 @@
+filters:
+  and:
+    - 'topic_id == "WL-TOPIC-G1-MYTH"'
+
+properties:
+  file.name:
+    displayName: 节点
+  type:
+    displayName: 类型
+  dimension:
+    displayName: 维度
+  sequence:
+    displayName: 顺序
+  tradition_cluster:
+    displayName: 文明传统
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - tradition_cluster
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order:
+      - file.name
+      - dimension
+      - id
+  - type: table
+    name: 十二文明传统
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+    order:
+      - sequence
+      - file.name
+      - tradition_cluster

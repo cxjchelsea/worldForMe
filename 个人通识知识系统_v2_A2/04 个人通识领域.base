@@ -1,0 +1,57 @@
+filters:
+  and:
+    - type == "domain"
+    - id.startsWith("PGK-D")
+properties:
+  file.name:
+    displayName: 领域
+  id:
+    displayName: 稳定 ID
+  parent_name:
+    displayName: 知识世界
+  priority:
+    displayName: 优先级
+  exploration_status:
+    displayName: 探索状态
+  child_map:
+    displayName: 下一级地图
+views:
+  - type: table
+    name: 全部领域
+    order:
+      - file.name
+      - parent_name
+      - priority
+      - exploration_status
+      - child_map
+      - id
+    sort:
+      - property: file.name
+        direction: ASC
+    columnSize:
+      file.name: 247
+  - type: table
+    name: 按知识世界
+    groupBy:
+      property: parent_name
+      direction: ASC
+    order:
+      - file.name
+      - priority
+      - exploration_status
+      - child_map
+      - id
+  - type: table
+    name: 待继续探索
+    filters:
+      and:
+        - exploration_status != "mapped"
+        - or:
+            - priority == "S"
+            - priority == "A"
+    order:
+      - file.name
+      - parent_name
+      - priority
+      - exploration_status
+      - child_map

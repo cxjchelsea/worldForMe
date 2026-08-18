@@ -1,0 +1,352 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "x": 1180,
+      "y": 0,
+      "width": 560,
+      "height": 130,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/00 现代主义文学.md",
+      "color": "4"
+    },
+    {
+      "id": "g-detail",
+      "type": "group",
+      "x": 0,
+      "y": 230,
+      "width": 1120,
+      "height": 1200,
+      "label": "全球现代主义传统",
+      "color": "1"
+    },
+    {
+      "id": "g-structure",
+      "type": "group",
+      "x": 1200,
+      "y": 230,
+      "width": 900,
+      "height": 950,
+      "label": "概念结构",
+      "color": "2"
+    },
+    {
+      "id": "g-data",
+      "type": "group",
+      "x": 2180,
+      "y": 230,
+      "width": 850,
+      "height": 700,
+      "label": "使用与数据",
+      "color": "5"
+    },
+    {
+      "id": "s1",
+      "type": "file",
+      "x": 1370,
+      "y": 320,
+      "width": 560,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/10 结构/01 边界：Modernism不是现代文学的同义词.md",
+      "color": "2"
+    },
+    {
+      "id": "s2",
+      "type": "file",
+      "x": 1370,
+      "y": 465,
+      "width": 560,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/10 结构/02 全球现代主义传统.md",
+      "color": "2"
+    },
+    {
+      "id": "s3",
+      "type": "file",
+      "x": 1370,
+      "y": 610,
+      "width": 560,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/10 结构/03 十五条形式与经验横轴.md",
+      "color": "2"
+    },
+    {
+      "id": "s4",
+      "type": "file",
+      "x": 1370,
+      "y": 755,
+      "width": 560,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/10 结构/04 Global Modernism与殖民现代性.md",
+      "color": "2"
+    },
+    {
+      "id": "s5",
+      "type": "file",
+      "x": 1370,
+      "y": 900,
+      "width": 560,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/10 结构/05 阅读路线.md",
+      "color": "2"
+    },
+    {
+      "id": "works",
+      "type": "file",
+      "x": 2350,
+      "y": 340,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/03 现代主义作品.base",
+      "color": "4"
+    },
+    {
+      "id": "structdb",
+      "type": "file",
+      "x": 2350,
+      "y": 510,
+      "width": 520,
+      "height": 110,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/02 现代主义文学结构.base",
+      "color": "5"
+    },
+    {
+      "id": "d1",
+      "type": "file",
+      "x": 70,
+      "y": 430,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/01 19世纪前史.md",
+      "color": "1"
+    },
+    {
+      "id": "d2",
+      "type": "file",
+      "x": 590,
+      "y": 430,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/02 英国—爱尔兰现代主义.md",
+      "color": "1"
+    },
+    {
+      "id": "d3",
+      "type": "file",
+      "x": 70,
+      "y": 575,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/03 法国现代主义.md",
+      "color": "1"
+    },
+    {
+      "id": "d4",
+      "type": "file",
+      "x": 590,
+      "y": 575,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/04 德语—奥地利—中欧.md",
+      "color": "1"
+    },
+    {
+      "id": "d5",
+      "type": "file",
+      "x": 70,
+      "y": 720,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/05 俄罗斯与东欧.md",
+      "color": "1"
+    },
+    {
+      "id": "d6",
+      "type": "file",
+      "x": 590,
+      "y": 720,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/06 美国与Harlem Renaissance.md",
+      "color": "1"
+    },
+    {
+      "id": "d7",
+      "type": "file",
+      "x": 70,
+      "y": 865,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/07 伊比利亚与意大利.md",
+      "color": "1"
+    },
+    {
+      "id": "d8",
+      "type": "file",
+      "x": 590,
+      "y": 865,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/08 拉丁美洲与Brazilian Modernismo.md",
+      "color": "1"
+    },
+    {
+      "id": "d9",
+      "type": "file",
+      "x": 70,
+      "y": 1010,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/09 日本与中国现代主义.md",
+      "color": "1"
+    },
+    {
+      "id": "d10",
+      "type": "file",
+      "x": 590,
+      "y": 1010,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/10 南亚、波斯与阿拉伯现代主义.md",
+      "color": "1"
+    },
+    {
+      "id": "d11",
+      "type": "file",
+      "x": 70,
+      "y": 1155,
+      "width": 460,
+      "height": 105,
+      "file": "个人通识知识系统_v2_A2/20 专题地图/M 思潮/M3 现代主义文学/11 细分/11 殖民与跨国现代主义.md",
+      "color": "1"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-root-s1",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s1",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s2",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s2",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s3",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s3",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s4",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s4",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-s5",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "s5",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-works",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "works",
+      "toSide": "top"
+    },
+    {
+      "id": "e-root-structdb",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "structdb",
+      "toSide": "top"
+    },
+    {
+      "id": "e-detail-1",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d1",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-2",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d2",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-3",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d3",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-4",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d4",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-5",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d5",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-6",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d6",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-7",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d7",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-8",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d8",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-9",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d9",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-10",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d10",
+      "toSide": "right"
+    },
+    {
+      "id": "e-detail-11",
+      "fromNode": "s2",
+      "fromSide": "left",
+      "toNode": "d11",
+      "toSide": "right"
+    }
+  ]
+}
