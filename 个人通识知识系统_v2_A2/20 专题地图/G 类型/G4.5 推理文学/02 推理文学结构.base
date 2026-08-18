@@ -27,11 +27,13 @@ views:
       - parent
       - id
   - type: table
-    name: 核心结构节点
+    name: 核心结构
     filters:
       and:
         - type == "literature_topic_structure"
+        - parent == "WL-TOPIC-G45-MYSTERY"
     order:
+      - sequence
       - file.name
       - dimension
       - id
@@ -40,9 +42,39 @@ views:
     filters:
       and:
         - type == "literature_topic_section"
-        - dimension == "history"
+        - parent == "WL-TOPIC-G45-MYSTERY-HISTORY"
     order:
       - sequence
       - file.name
       - history_cluster
+      - id
+  - type: table
+    name: 谜题与结构技法
+    filters:
+      and:
+        - dimension == "technique"
+    order:
+      - sequence
+      - file.name
+      - parent
+      - id
+  - type: table
+    name: 犯罪小说模式
+    filters:
+      and:
+        - dimension == "mode"
+    order:
+      - sequence
+      - file.name
+      - parent
+      - id
+  - type: table
+    name: 地域传统
+    filters:
+      and:
+        - dimension == "region"
+    order:
+      - sequence
+      - file.name
+      - parent
       - id
