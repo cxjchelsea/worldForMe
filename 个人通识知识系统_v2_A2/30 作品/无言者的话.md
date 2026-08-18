@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-R6-LATAM 拉丁美洲文学
+- WL-TOPIC-R6-LATAM
 topic_links:
 - '[[20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学]]'
 latam_priority: ★

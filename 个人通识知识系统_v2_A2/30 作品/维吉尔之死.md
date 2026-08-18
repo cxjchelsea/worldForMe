@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-M3-MODERNISM 现代主义文学
+- WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[20 专题地图/M 思潮/M3 现代主义文学/00 现代主义文学]]'
 modernism_priority: ◆

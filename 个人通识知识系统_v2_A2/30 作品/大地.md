@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G43-FAMILY 家族文学
+- WL-TOPIC-G43-FAMILY
 topic_links:
 - '[[20 专题地图/G 类型/G4.3 家族文学/00 家族文学]]'
 family_priority: ★

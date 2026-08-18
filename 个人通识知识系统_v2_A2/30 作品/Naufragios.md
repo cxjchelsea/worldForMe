@@ -11,10 +11,10 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G45-ADVENTURE 冒险文学
-- WL-TOPIC-G7-TRAVEL 旅行文学
-- WL-TOPIC-Q15 世界武人、边疆与法外英雄文学
-- WL-TOPIC-Q15-WESTERN 西部文学
+- WL-TOPIC-G45-ADVENTURE
+- WL-TOPIC-G7-TRAVEL
+- WL-TOPIC-Q15
+- WL-TOPIC-Q15-WESTERN
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 冒险文学/00 冒险文学]]'
 - '[[20 专题地图/G 类型/G7 旅行文学/00 旅行文学]]'

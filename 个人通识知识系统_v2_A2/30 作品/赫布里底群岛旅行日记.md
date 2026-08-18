@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G7-TRAVEL 旅行文学
+- WL-TOPIC-G7-TRAVEL
 topic_links:
 - '[[20 专题地图/G 类型/G7 旅行文学/00 旅行文学]]'
 travel_priority: ★

@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G45-ADVENTURE 冒险文学
+- WL-TOPIC-G45-ADVENTURE
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 冒险文学/00 冒险文学]]'
 adventure_priority: ★

@@ -10,8 +10,8 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G45-SF 科幻文学
-- WL-TOPIC-G46-DYSTOPIA 反乌托邦文学
+- WL-TOPIC-G45-SF
+- WL-TOPIC-G46-DYSTOPIA
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 科幻文学/00 科幻文学]]'
 - '[[20 专题地图/G 类型/G4.6 反乌托邦文学/00 反乌托邦文学]]'

@@ -24,7 +24,7 @@ axis_q:
 - Q11 宗教、伦理与超越
 axis_source: read_calibrated
 topics:
-- WL-TOPIC-N2-UNRELIABLE 不可靠叙述
+- WL-TOPIC-N2-UNRELIABLE
 topic_links:
 - '[[20 专题地图/N 叙事/N2 不可靠叙述/00 不可靠叙述]]'
 unreliable_priority: ★
