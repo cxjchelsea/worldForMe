@@ -44,310 +44,6 @@ views:
     columnSize:
       note.topics: 503
   - type: table
-    name: 推理文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G45-MYSTERY")
-    order:
-      - file.name
-      - author
-      - mystery_priority
-      - read_status
-      - id
-  - type: table
-    name: 科幻文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G45-SF")
-    order:
-      - file.name
-      - author
-      - sf_priority
-      - read_status
-      - id
-  - type: table
-    name: 奇幻文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G45-FANTASY")
-    order:
-      - file.name
-      - author
-      - fantasy_priority
-      - read_status
-      - id
-  - type: table
-    name: 恐怖文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G45-HORROR")
-    order:
-      - file.name
-      - author
-      - horror_priority
-      - read_status
-      - id
-  - type: table
-    name: 冒险文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G45-ADVENTURE")
-    order:
-      - file.name
-      - author
-      - adventure_priority
-      - read_status
-      - id
-  - type: table
-    name: 成长文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G43-BILDUNGSROMAN")
-    order:
-      - file.name
-      - author
-      - growth_priority
-      - read_status
-      - id
-  - type: table
-    name: 家族文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G43-FAMILY")
-    order:
-      - file.name
-      - author
-      - family_priority
-      - read_status
-      - id
-  - type: table
-    name: 历史文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G44-HISTORICAL")
-    order:
-      - file.name
-      - author
-      - historical_priority
-      - read_status
-      - id
-  - type: table
-    name: 反乌托邦文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G46-DYSTOPIA")
-    order:
-      - file.name
-      - author
-      - dystopia_priority
-      - read_status
-      - id
-  - type: table
-    name: 世界神话文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G1-MYTH")
-    order:
-      - file.name
-      - author
-      - myth_priority
-      - read_status
-      - id
-  - type: table
-    name: 旅行文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-G7-TRAVEL")
-    order:
-      - file.name
-      - author
-      - travel_priority
-      - read_status
-      - id
-  - type: table
-    name: 二战后多极文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-T5-POSTWAR")
-    order:
-      - file.name
-      - author
-      - postwar_priority
-      - postwar_stage
-      - read_status
-      - id
-  - type: table
-    name: 拉丁美洲文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-R6-LATAM")
-    order:
-      - file.name
-      - author
-      - latam_priority
-      - latam_history_stage
-      - read_status
-      - id
-  - type: table
-    name: 现代主义文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-M3-MODERNISM")
-    order:
-      - file.name
-      - author
-      - modernism_priority
-      - modernism_tradition_cluster
-      - read_status
-      - id
-  - type: table
-    name: 不可靠叙述
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-N2-UNRELIABLE")
-    order:
-      - file.name
-      - author
-      - unreliable_priority
-      - unreliable_modes
-      - read_status
-      - id
-  - type: table
-    name: 爱情文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q2-LOVE")
-    order:
-      - file.name
-      - author
-      - love_priority
-      - love_history_stage
-      - read_status
-      - id
-  - type: table
-    name: 战争文学
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q6-WAR")
-    order:
-      - file.name
-      - author
-      - war_priority
-      - war_history_stage
-      - read_status
-      - id
-  - type: table
-    name: 历史、记忆与时间
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q10-MEMORY")
-    order:
-      - file.name
-      - author
-      - memory_priority
-      - memory_dimensions
-      - read_status
-      - id
-  - type: table
-    name: Q15 武人英雄体系
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15")
-    order:
-      - file.name
-      - author
-      - martial_systems
-      - read_status
-      - id
-  - type: table
-    name: Q15·武侠
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-WUXIA")
-    order:
-      - file.name
-      - author
-      - wuxia_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·欧洲骑士
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-KNIGHT")
-    order:
-      - file.name
-      - author
-      - knight_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·日本武士／剑豪
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-SAMURAI")
-    order:
-      - file.name
-      - author
-      - samurai_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·欧洲剑客／Swashbuckler
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-SWASHBUCKLER")
-    order:
-      - file.name
-      - author
-      - swashbuckler_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·西部／Western
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-WESTERN")
-    order:
-      - file.name
-      - author
-      - western_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·Gaucho
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-GAUCHO")
-    order:
-      - file.name
-      - author
-      - gaucho_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·侠盗／Outlaw Hero
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-OUTLAW")
-    order:
-      - file.name
-      - author
-      - outlaw_priority
-      - read_status
-      - id
-  - type: table
-    name: Q15·海盗／Maritime Outlaw
-    filters:
-      and:
-        - topics.contains("WL-TOPIC-Q15-PIRATE")
-    order:
-      - file.name
-      - author
-      - pirate_priority
-      - read_status
-      - id
-  - type: table
     name: 未读
     filters:
       and:
@@ -384,6 +80,38 @@ views:
       - axis_n
       - axis_q
       - id
+  - type: table
+    name: 已读按时间
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_t
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - axis_r
+      - axis_g
+      - axis_q
+  - type: table
+    name: 已读按地域
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - axis_t
+      - axis_g
+      - axis_q
   - type: table
     name: 需复核
     filters:

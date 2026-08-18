@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 已读
 axis_t:
-- T6
+- T6 当代全球文学
 axis_r:
-- R10
+- R10 跨区域文学传统
 axis_m: []
 axis_g:
-- G4.3
+- G4.3 社会与人物型小说
 axis_n:
-- N2
+- N2 聚焦与可靠性
 axis_q:
-- Q1
-- Q11
+- Q1 个体与存在
+- Q11 宗教、伦理与超越
 axis_source: read_calibrated
 topics:
-- WL-TOPIC-N2-UNRELIABLE
+- WL-TOPIC-N2-UNRELIABLE 不可靠叙述
 topic_links:
 - '[[20 专题地图/N 叙事/N2 不可靠叙述/00 不可靠叙述]]'
 unreliable_priority: ★

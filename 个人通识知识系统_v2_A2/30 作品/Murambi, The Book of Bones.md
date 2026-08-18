@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-Q6-WAR
+- WL-TOPIC-Q6-WAR 战争文学
 topic_links:
 - '[[20 专题地图/Q 主题/Q6 战争文学/00 战争文学]]'
 war_priority: ★

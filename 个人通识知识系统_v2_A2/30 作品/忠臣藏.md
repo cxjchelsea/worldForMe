@@ -10,8 +10,8 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-Q15
-- WL-TOPIC-Q15-SAMURAI
+- WL-TOPIC-Q15 世界武人、边疆与法外英雄文学
+- WL-TOPIC-Q15-SAMURAI 日本武士与剑豪文学
 topic_links:
 - '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
 - '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/03 日本武士与剑豪文学/00 日本武士与剑豪文学]]'

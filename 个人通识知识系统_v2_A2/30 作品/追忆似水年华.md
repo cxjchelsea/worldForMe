@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G43-BILDUNGSROMAN
+- WL-TOPIC-G43-BILDUNGSROMAN 成长文学
 topic_links:
 - '[[20 专题地图/G 类型/G4.3 成长文学/00 成长文学]]'
 growth_priority: △

@@ -21,6 +21,18 @@ properties:
     displayName: 犯罪小说模式
   read_status:
     displayName: 阅读状态
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_m:
+    displayName: M 思潮
+  axis_g:
+    displayName: G 类型
+  axis_n:
+    displayName: N 叙事
+  axis_q:
+    displayName: Q 主题
   verification_status:
     displayName: 校验状态
   id:
@@ -45,6 +57,17 @@ views:
       - author
       - mystery_history_cluster
       - mystery_history
+      - read_status
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - mystery_priority == "★"
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - mystery_history_cluster
       - read_status
   - type: table
     name: 系统扩展 ◆
@@ -186,3 +209,20 @@ views:
       - aliases
       - review_note
       - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - read_status

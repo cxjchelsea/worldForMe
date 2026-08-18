@@ -1,8 +1,7 @@
 filters:
   and:
-    - 'type == "work"'
-    - 'topics.contains("WL-TOPIC-R6-LATAM")'
-
+    - type == "work"
+    - topics.contains("WL-TOPIC-R6-LATAM")
 properties:
   file.name:
     displayName: 作品
@@ -16,34 +15,97 @@ properties:
     displayName: 拉美横轴
   read_status:
     displayName: 阅读状态
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_m:
+    displayName: M 思潮
+  axis_g:
+    displayName: G 类型
+  axis_n:
+    displayName: N 叙事
+  axis_q:
+    displayName: Q 主题
   id:
     displayName: 稳定 ID
-
 views:
   - type: table
     name: 全部拉美作品
-    order: [file.name, author, latam_priority, latam_history_stage, latam_axes, read_status]
+    order:
+      - file.name
+      - author
+      - latam_priority
+      - latam_history_stage
+      - latam_axes
+      - read_status
   - type: table
     name: 核心骨架 ★
     filters:
       and:
-        - 'latam_priority == "★"'
-    order: [file.name, author, latam_history_stage, latam_axes, read_status]
+        - latam_priority == "★"
+    order:
+      - file.name
+      - author
+      - latam_history_stage
+      - latam_axes
+      - read_status
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - latam_priority == "★"
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - latam_history_stage
+      - read_status
   - type: table
     name: 系统扩展 ◆
     filters:
       and:
-        - 'latam_priority == "◆"'
-    order: [file.name, author, latam_history_stage, latam_axes, read_status]
+        - latam_priority == "◆"
+    order:
+      - file.name
+      - author
+      - latam_history_stage
+      - latam_axes
+      - read_status
   - type: table
     name: 按历史阶段
     groupBy:
       property: latam_history_stage
       direction: ASC
-    order: [file.name, author, latam_priority, latam_axes]
+    order:
+      - file.name
+      - author
+      - latam_priority
+      - latam_axes
   - type: table
     name: 横轴已标注
     filters:
       and:
-        - '!latam_axes.isEmpty()'
-    order: [file.name, author, latam_axes, latam_history_stage]
+        - "!latam_axes.isEmpty()"
+    order:
+      - file.name
+      - author
+      - latam_axes
+      - latam_history_stage
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - read_status

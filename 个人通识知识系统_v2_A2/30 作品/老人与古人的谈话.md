@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G1-MYTH
+- WL-TOPIC-G1-MYTH 世界神话文学
 topic_links:
 - '[[20 专题地图/G 类型/G1 世界神话文学/00 世界神话文学]]'
 myth_priority: ◆

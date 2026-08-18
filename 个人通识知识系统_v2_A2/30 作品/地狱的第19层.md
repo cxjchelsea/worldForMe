@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-G45-HORROR
+- WL-TOPIC-G45-HORROR 恐怖文学
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 恐怖文学/00 恐怖文学]]'
 horror_priority: ◆

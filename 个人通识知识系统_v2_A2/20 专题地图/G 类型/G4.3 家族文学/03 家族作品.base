@@ -15,6 +15,18 @@ properties:
     displayName: 家族机制
   read_status:
     displayName: 阅读状态
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_m:
+    displayName: M 思潮
+  axis_g:
+    displayName: G 类型
+  axis_n:
+    displayName: N 叙事
+  axis_q:
+    displayName: Q 主题
   id:
     displayName: 稳定 ID
 views:
@@ -37,6 +49,17 @@ views:
       - author
       - family_history_cluster
       - family_axes
+      - read_status
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - family_priority == "★"
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - family_history_cluster
       - read_status
   - type: table
     name: 系统扩展 ◆
@@ -79,3 +102,20 @@ views:
       - author
       - family_priority
       - family_history_cluster
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - read_status

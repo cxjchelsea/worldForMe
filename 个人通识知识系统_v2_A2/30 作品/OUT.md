@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: "未读"
 topics:
-  - "WL-TOPIC-G45-MYSTERY"
+  - "WL-TOPIC-G45-MYSTERY 推理文学"
 topic_links:
   - "[[20 专题地图/G 类型/G4.5 推理文学/00 推理文学]]"
 mystery_priority: "★"

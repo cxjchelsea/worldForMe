@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 topics:
-- WL-TOPIC-Q2-LOVE
+- WL-TOPIC-Q2-LOVE 爱情文学
 topic_links:
 - '[[20 专题地图/Q 主题/Q2 爱情文学/00 爱情文学]]'
 love_priority: ◆

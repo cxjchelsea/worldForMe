@@ -14,6 +14,18 @@ properties:
     displayName: 总谱系核心
   read_status:
     displayName: 阅读状态
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_m:
+    displayName: M 思潮
+  axis_g:
+    displayName: G 类型
+  axis_n:
+    displayName: N 叙事
+  axis_q:
+    displayName: Q 主题
   id:
     displayName: 稳定 ID
 
@@ -104,6 +116,33 @@ views:
     filters:
       and:
         - 'martial_systems.contains("海盗／Maritime Outlaw")'
+    order:
+      - file.name
+      - author
+      - read_status
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - read_status
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - 'q15_core_compare == true'
+        - 'read_status == "未读"'
     order:
       - file.name
       - author
