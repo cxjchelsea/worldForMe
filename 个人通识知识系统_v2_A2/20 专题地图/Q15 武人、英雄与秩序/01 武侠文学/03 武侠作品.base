@@ -1,0 +1,75 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-Q15-WUXIA")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  wuxia_priority:
+    displayName: 专题优先级
+  wuxia_history_stage:
+    displayName: 历史阶段
+  wuxia_axes:
+    displayName: 内部横轴
+  martial_systems:
+    displayName: Q15系统
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部武侠作品
+    order:
+      - file.name
+      - author
+      - wuxia_priority
+      - wuxia_history_stage
+      - wuxia_axes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'wuxia_priority == "★"'
+    order:
+      - file.name
+      - author
+      - wuxia_history_stage
+      - wuxia_axes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'wuxia_priority == "◆"'
+    order:
+      - file.name
+      - author
+      - wuxia_history_stage
+      - wuxia_axes
+      - read_status
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: wuxia_history_stage
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - wuxia_priority
+      - wuxia_axes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!wuxia_axes.isEmpty()'
+    order:
+      - file.name
+      - author
+      - wuxia_axes
+      - wuxia_history_stage

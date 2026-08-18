@@ -1,8 +1,7 @@
 filters:
   and:
-    - 'type == "work"'
-    - 'topics.contains("WL-TOPIC-G1-MYTH")'
-
+    - type == "work"
+    - topics.contains("WL-TOPIC-G1-MYTH")
 properties:
   file.name:
     displayName: 作品
@@ -18,7 +17,6 @@ properties:
     displayName: 阅读状态
   id:
     displayName: 稳定 ID
-
 views:
   - type: table
     name: 全部神话作品
@@ -33,7 +31,7 @@ views:
     name: 核心骨架 ★
     filters:
       and:
-        - 'myth_priority == "★"'
+        - myth_priority == "★"
     order:
       - file.name
       - author
@@ -43,7 +41,7 @@ views:
     name: 系统扩展 ◆
     filters:
       and:
-        - 'myth_priority == "◆"'
+        - myth_priority == "◆"
     order:
       - file.name
       - author
@@ -63,7 +61,7 @@ views:
     name: 母题已标注
     filters:
       and:
-        - '!myth_motifs.isEmpty()'
+        - "!myth_motifs.isEmpty()"
     order:
       - file.name
       - author

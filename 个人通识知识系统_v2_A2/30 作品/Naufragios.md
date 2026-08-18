@@ -13,9 +13,13 @@ read_status: 未映射
 topics:
 - WL-TOPIC-G45-ADVENTURE
 - WL-TOPIC-G7-TRAVEL
+- WL-TOPIC-Q15
+- WL-TOPIC-Q15-WESTERN
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 冒险文学/00 冒险文学]]'
 - '[[20 专题地图/G 类型/G7 旅行文学/00 旅行文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/05 西部文学/00 西部文学]]'
 adventure_priority: △
 adventure_history_cluster: 航海时代、Robinsonade与生存
 adventure_axes: []
@@ -29,6 +33,15 @@ travel_axes: []
 batch3_source_refs:
 - 旅行书单.md:2035
 - 旅行书单.md:540
+martial_systems:
+- 西部／Western
+q15_core_compare: false
+western_priority: △
+western_history_stage: 第0阶段：美国西部成为美国之前
+western_axes: []
+batch6_source_refs:
+- 西部书单.md:132
+- 西部书单.md:2247
 ---
 # Naufragios
 

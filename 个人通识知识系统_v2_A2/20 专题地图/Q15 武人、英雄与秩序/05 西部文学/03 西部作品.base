@@ -1,0 +1,75 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-Q15-WESTERN")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  western_priority:
+    displayName: 专题优先级
+  western_history_stage:
+    displayName: 历史阶段
+  western_axes:
+    displayName: 内部横轴
+  martial_systems:
+    displayName: Q15系统
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部西部作品
+    order:
+      - file.name
+      - author
+      - western_priority
+      - western_history_stage
+      - western_axes
+      - read_status
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'western_priority == "★"'
+    order:
+      - file.name
+      - author
+      - western_history_stage
+      - western_axes
+      - read_status
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'western_priority == "◆"'
+    order:
+      - file.name
+      - author
+      - western_history_stage
+      - western_axes
+      - read_status
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: western_history_stage
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - western_priority
+      - western_axes
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!western_axes.isEmpty()'
+    order:
+      - file.name
+      - author
+      - western_axes
+      - western_history_stage

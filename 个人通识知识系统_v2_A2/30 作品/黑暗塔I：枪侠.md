@@ -11,8 +11,12 @@ literary_traditions: []
 read_status: 未映射
 topics:
 - WL-TOPIC-G45-FANTASY
+- WL-TOPIC-Q15
+- WL-TOPIC-Q15-WESTERN
 topic_links:
 - '[[20 专题地图/G 类型/G4.5 奇幻文学/00 奇幻文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/05 西部文学/00 西部文学]]'
 fantasy_priority: △
 fantasy_history_cluster: 现代子类型全面分化
 fantasy_subgenres:
@@ -22,6 +26,15 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch1_source_refs:
 - 奇幻书单.md:905
+martial_systems:
+- 西部／Western
+q15_core_compare: false
+western_priority: △
+western_history_stage: Weird Western与Western Noir
+western_axes: []
+batch6_source_refs:
+- 西部书单.md:1439
+- 西部书单.md:2340
 ---
 # 黑暗塔I：枪侠
 

@@ -1,0 +1,49 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-Q2-LOVE")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  love_priority:
+    displayName: 爱情优先级
+  love_history_stage:
+    displayName: 历史阶段
+  love_axes:
+    displayName: 爱情横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部爱情作品
+    order: [file.name, author, love_priority, love_history_stage, love_axes, read_status]
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'love_priority == "★"'
+    order: [file.name, author, love_history_stage, love_axes, read_status]
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'love_priority == "◆"'
+    order: [file.name, author, love_history_stage, love_axes, read_status]
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: love_history_stage
+      direction: ASC
+    order: [file.name, author, love_priority, love_axes]
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!love_axes.isEmpty()'
+    order: [file.name, author, love_axes, love_history_stage]

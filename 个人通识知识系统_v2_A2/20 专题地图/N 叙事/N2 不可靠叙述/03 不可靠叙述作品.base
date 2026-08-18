@@ -1,0 +1,127 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-N2-UNRELIABLE")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  unreliable_priority:
+    displayName: 优先级
+  unreliable_modes:
+    displayName: 不可靠机制
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部N2作品
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+      - unreliable_modes
+      - read_status
+  - type: table
+    name: 主动隐瞒
+    filters:
+      and:
+        - 'unreliable_modes.contains("主动隐瞒")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 自相矛盾
+    filters:
+      and:
+        - 'unreliable_modes.contains("自相矛盾")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 自我欺骗
+    filters:
+      and:
+        - 'unreliable_modes.contains("自我欺骗")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 价值扭曲
+    filters:
+      and:
+        - 'unreliable_modes.contains("价值扭曲")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 感知失真
+    filters:
+      and:
+        - 'unreliable_modes.contains("感知失真")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 解释失真
+    filters:
+      and:
+        - 'unreliable_modes.contains("解释失真")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 意识破碎
+    filters:
+      and:
+        - 'unreliable_modes.contains("意识破碎")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 记忆重构
+    filters:
+      and:
+        - 'unreliable_modes.contains("记忆重构")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 多重证词
+    filters:
+      and:
+        - 'unreliable_modes.contains("多重证词")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 叙事真相
+    filters:
+      and:
+        - 'unreliable_modes.contains("叙事真相")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority
+  - type: table
+    name: 文本劫持
+    filters:
+      and:
+        - 'unreliable_modes.contains("文本劫持")'
+    order:
+      - file.name
+      - author
+      - unreliable_priority

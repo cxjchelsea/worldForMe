@@ -3,7 +3,8 @@ id: WL-WORK-1526
 type: work
 title: China Iron历险记
 title_original: ''
-aliases: []
+aliases:
+- China Iron
 author: 加夫列拉·卡贝松·卡马拉
 author_source: batch4_source_inferred
 year: null
@@ -11,8 +12,14 @@ literary_traditions: []
 read_status: 未映射
 topics:
 - WL-TOPIC-R6-LATAM
+- WL-TOPIC-Q15
+- WL-TOPIC-Q15-GAUCHO
+- WL-TOPIC-Q15-OUTLAW
 topic_links:
 - '[[20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/06 Gaucho文学/00 Gaucho文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/07 侠盗文学/00 侠盗文学]]'
 latam_priority: ★
 latam_history_stage: 1990年代至21世纪
 latam_axes: []
@@ -20,6 +27,27 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 拉美书单.md:1098
+martial_systems:
+- Gaucho
+- 侠盗／Outlaw Hero
+q15_core_compare: true
+gaucho_priority: ''
+gaucho_history_stage: 边缘者重新获得Gaucho声音
+gaucho_axes:
+- 男性气概
+- Queer Gauchesca
+outlaw_priority: ''
+outlaw_tradition_cluster: ''
+outlaw_axes:
+- 女性Outlaw
+batch6_source_refs:
+- Gaucho书单.md:1470
+- Gaucho书单.md:1518
+- Gaucho书单.md:960
+- Gaucho书单.md:984
+- Gaucho书单.md:994
+- 世界武人英雄谱系.md:769
+- 侠盗书单.md:1828
 ---
 # China Iron历险记
 

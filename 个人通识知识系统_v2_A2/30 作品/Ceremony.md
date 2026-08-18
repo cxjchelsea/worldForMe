@@ -11,8 +11,12 @@ literary_traditions: []
 read_status: 未映射
 topics:
 - WL-TOPIC-G44-HISTORICAL
+- WL-TOPIC-Q15
+- WL-TOPIC-Q15-WESTERN
 topic_links:
 - '[[20 专题地图/G 类型/G4.4 历史文学/00 历史文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
+- '[[20 专题地图/Q15 武人、英雄与秩序/05 西部文学/00 西部文学]]'
 historical_priority: ◆
 historical_history_cluster: 早期现代、革命、19世纪与奴隶制
 historical_axes: []
@@ -21,6 +25,17 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 历史书单.md:825
 - 历史书单.md:827
+martial_systems:
+- 西部／Western
+q15_core_compare: false
+western_priority: ★
+western_history_stage: Native Counter-Western
+western_axes:
+- Native Counter-Western
+batch6_source_refs:
+- 西部书单.md:1800
+- 西部书单.md:2301
+- 西部书单.md:901
 ---
 # Ceremony
 

@@ -1,0 +1,55 @@
+filters:
+  and:
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-Q6-WAR")'
+
+properties:
+  file.name:
+    displayName: 作品
+  author:
+    displayName: 作者
+  war_priority:
+    displayName: 战争优先级
+  war_history_stage:
+    displayName: 历史阶段
+  war_axes:
+    displayName: 战争横轴
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部战争作品
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'war_priority == "★"'
+    order: [file.name, author, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 系统扩展 ◆
+    filters:
+      and:
+        - 'war_priority == "◆"'
+    order: [file.name, author, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 边界 △
+    filters:
+      and:
+        - 'war_priority == "△"'
+    order: [file.name, author, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 按历史阶段
+    groupBy:
+      property: war_history_stage
+      direction: ASC
+    order: [file.name, author, war_priority, war_axes]
+  - type: table
+    name: 横轴已标注
+    filters:
+      and:
+        - '!war_axes.isEmpty()'
+    order: [file.name, author, war_axes, war_history_stage]

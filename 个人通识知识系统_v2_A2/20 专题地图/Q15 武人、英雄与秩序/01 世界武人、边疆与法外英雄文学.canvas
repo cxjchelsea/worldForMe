@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"root","type":"file","x":1050,"y":0,"width":650,"height":130,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学.md","color":"4"},
+		{"id":"g-systems","type":"group","x":0,"y":240,"width":1900,"height":850,"label":"八个武人系统","color":"1"},
+		{"id":"g-structure","type":"group","x":1980,"y":240,"width":900,"height":1000,"label":"总问题","color":"2"},
+		{"id":"works","type":"file","x":2100,"y":1180,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/03 Q15作品.base","color":"4"},
+		{"id":"structdb","type":"file","x":2100,"y":1330,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/02 Q15结构.base","color":"5"},
+		{"id":"sys1","type":"file","x":80,"y":340,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/01 武侠文学/00 武侠文学.md","color":"1"},
+		{"id":"sys2","type":"file","x":550,"y":340,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/02 欧洲骑士文学/00 欧洲骑士文学.md","color":"1"},
+		{"id":"sys3","type":"file","x":1020,"y":340,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/03 日本武士与剑豪文学/00 日本武士与剑豪文学.md","color":"1"},
+		{"id":"sys4","type":"file","x":1490,"y":340,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/04 欧洲剑客文学/00 欧洲剑客文学.md","color":"1"},
+		{"id":"sys5","type":"file","x":80,"y":650,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/05 西部文学/00 西部文学.md","color":"1"},
+		{"id":"sys6","type":"file","x":550,"y":650,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/06 Gaucho文学/00 Gaucho文学.md","color":"1"},
+		{"id":"sys7","type":"file","x":1020,"y":650,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/07 侠盗文学/00 侠盗文学.md","color":"1"},
+		{"id":"sys8","type":"file","x":1490,"y":650,"width":390,"height":120,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/08 海盗文学/00 海盗文学.md","color":"1"},
+		{"id":"rs1","type":"file","x":2150,"y":330,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/01 边界：武人英雄不是武器分类.md","color":"2"},
+		{"id":"rs2","type":"file","x":2150,"y":465,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/02 五大文明系统、两个角色系统与一条历史分支.md","color":"2"},
+		{"id":"rs3","type":"file","x":2150,"y":600,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/03 私人暴力的合法性.md","color":"2"},
+		{"id":"rs4","type":"file","x":2150,"y":735,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/04 国家强度、空间与英雄组织方式.md","color":"2"},
+		{"id":"rs5","type":"file","x":2150,"y":870,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/05 英雄→神话→类型→解构.md","color":"2"},
+		{"id":"rs6","type":"file","x":2150,"y":1005,"width":550,"height":100,"file":"个人通识知识系统_v2_A2/20 专题地图/Q15 武人、英雄与秩序/10 结构/06 跨文明对读路线.md","color":"2"}
+	],
+	"edges":[
+		{"id":"e-sys1","fromNode":"root","fromSide":"bottom","toNode":"sys1","toSide":"top"},
+		{"id":"e-sys2","fromNode":"root","fromSide":"bottom","toNode":"sys2","toSide":"top"},
+		{"id":"e-sys3","fromNode":"root","fromSide":"bottom","toNode":"sys3","toSide":"top"},
+		{"id":"e-sys4","fromNode":"root","fromSide":"bottom","toNode":"sys4","toSide":"top"},
+		{"id":"e-sys5","fromNode":"root","fromSide":"bottom","toNode":"sys5","toSide":"top"},
+		{"id":"e-sys6","fromNode":"root","fromSide":"bottom","toNode":"sys6","toSide":"top"},
+		{"id":"e-sys7","fromNode":"root","fromSide":"bottom","toNode":"sys7","toSide":"top"},
+		{"id":"e-sys8","fromNode":"root","fromSide":"bottom","toNode":"sys8","toSide":"top"},
+		{"id":"e-rs1","fromNode":"root","fromSide":"bottom","toNode":"rs1","toSide":"top"},
+		{"id":"e-rs2","fromNode":"root","fromSide":"bottom","toNode":"rs2","toSide":"top"},
+		{"id":"e-rs3","fromNode":"root","fromSide":"bottom","toNode":"rs3","toSide":"top"},
+		{"id":"e-rs4","fromNode":"root","fromSide":"bottom","toNode":"rs4","toSide":"top"},
+		{"id":"e-rs5","fromNode":"root","fromSide":"bottom","toNode":"rs5","toSide":"top"},
+		{"id":"e-rs6","fromNode":"root","fromSide":"bottom","toNode":"rs6","toSide":"top"},
+		{"id":"e-works","fromNode":"root","fromSide":"bottom","toNode":"works","toSide":"top"},
+		{"id":"e-structdb","fromNode":"root","fromSide":"bottom","toNode":"structdb","toSide":"top"}
+	]
+}

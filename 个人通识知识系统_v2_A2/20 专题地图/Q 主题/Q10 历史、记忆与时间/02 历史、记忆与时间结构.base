@@ -1,0 +1,47 @@
+filters:
+  and:
+    - 'topic_id == "WL-TOPIC-Q10-MEMORY"'
+
+properties:
+  file.name:
+    displayName: 节点
+  type:
+    displayName: 类型
+  dimension:
+    displayName: 维度
+  sequence:
+    displayName: 顺序
+  memory_dimension:
+    displayName: 记忆维度
+  id:
+    displayName: 稳定 ID
+
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - memory_dimension
+      - id
+
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order:
+      - file.name
+      - dimension
+      - id
+
+  - type: table
+    name: 八种体验
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+    order:
+      - sequence
+      - file.name
+      - memory_dimension
