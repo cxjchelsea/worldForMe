@@ -1,7 +1,8 @@
 filters:
   and:
-    - type == "work"
-    - topics.contains("WL-TOPIC-Q15")
+    - 'type == "work"'
+    - 'topics.contains("WL-TOPIC-Q15")'
+
 properties:
   file.name:
     displayName: 作品
@@ -15,6 +16,7 @@ properties:
     displayName: 阅读状态
   id:
     displayName: 稳定 ID
+
 views:
   - type: table
     name: 全部Q15作品
@@ -24,11 +26,12 @@ views:
       - martial_systems
       - q15_core_compare
       - read_status
+
   - type: table
     name: 总谱系跨文明对读核心
     filters:
       and:
-        - q15_core_compare == true
+        - 'q15_core_compare == true'
     order:
       - file.name
       - author
@@ -37,7 +40,7 @@ views:
     name: 武侠
     filters:
       and:
-        - martial_systems.contains("武侠")
+        - 'martial_systems.contains("武侠")'
     order:
       - file.name
       - author
@@ -46,7 +49,7 @@ views:
     name: 欧洲骑士
     filters:
       and:
-        - martial_systems.contains("欧洲骑士")
+        - 'martial_systems.contains("欧洲骑士")'
     order:
       - file.name
       - author
@@ -55,7 +58,7 @@ views:
     name: 日本武士／剑豪
     filters:
       and:
-        - martial_systems.contains("日本武士／剑豪")
+        - 'martial_systems.contains("日本武士／剑豪")'
     order:
       - file.name
       - author
@@ -64,7 +67,7 @@ views:
     name: 欧洲剑客／Swashbuckler
     filters:
       and:
-        - martial_systems.contains("欧洲剑客／Swashbuckler")
+        - 'martial_systems.contains("欧洲剑客／Swashbuckler")'
     order:
       - file.name
       - author
@@ -73,7 +76,7 @@ views:
     name: 西部／Western
     filters:
       and:
-        - martial_systems.contains("西部／Western")
+        - 'martial_systems.contains("西部／Western")'
     order:
       - file.name
       - author
@@ -82,7 +85,7 @@ views:
     name: Gaucho
     filters:
       and:
-        - martial_systems.contains("Gaucho")
+        - 'martial_systems.contains("Gaucho")'
     order:
       - file.name
       - author
@@ -91,7 +94,7 @@ views:
     name: 侠盗／Outlaw Hero
     filters:
       and:
-        - martial_systems.contains("侠盗／Outlaw Hero")
+        - 'martial_systems.contains("侠盗／Outlaw Hero")'
     order:
       - file.name
       - author
@@ -100,7 +103,7 @@ views:
     name: 海盗／Maritime Outlaw
     filters:
       and:
-        - martial_systems.contains("海盗／Maritime Outlaw")
+        - 'martial_systems.contains("海盗／Maritime Outlaw")'
     order:
       - file.name
       - author
