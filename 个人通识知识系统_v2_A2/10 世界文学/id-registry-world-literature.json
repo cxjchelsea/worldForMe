@@ -3,8 +3,7 @@
     "id": "WL",
     "name": "世界文学地图",
     "parent": "PGK-D01",
-    "source_version": "2.3+Q15",
-    "read_mapping_included": false
+    "source_version": "2.3+Q15"
   },
   "axes": [
     {
