@@ -30,15 +30,17 @@ Gauchesca不是所有阿根廷乡村文学，也不等于巴西全部Gaúcho文�
 
 ## 历史阶段
 
-- [[11 细分/01 前史：谁在定义Gaucho|前史：谁在定义Gaucho]]
-- [[11 细分/02 Hidalgo：Gauchesca形成|Hidalgo：Gauchesca形成]]
-- [[11 细分/03 政治Gauchesca与Santos Vega|政治Gauchesca与Santos Vega]]
-- [[11 细分/04 《Martín Fierro》与国家冲突|《Martín Fierro》与国家冲突]]
-- [[11 细分/05 Juan Moreira与大众Gaucho|Juan Moreira与大众Gaucho]]
-- [[11 细分/06 Santos Vega神话化与英语视角|Santos Vega神话化与英语视角]]
-- [[11 细分/07 Gaucho消失后的怀旧|Gaucho消失后的怀旧]]
-- [[11 细分/08 《Don Segundo Sombra》与成长|《Don Segundo Sombra》与成长]]
-- [[11 细分/09 Borges：重写民族神话|Borges：重写民族神话]]
-- [[11 细分/10 现代文学重新制造边疆|现代文学重新制造边疆]]
-- [[11 细分/11 边缘者重新获得Gaucho声音|边缘者重新获得Gaucho声音]]
-- [[11 细分/12 巴西Gaúcho传统|巴西Gaúcho传统]]
+阶段解释见 [[10 结构/02 历史与传统演进]]。作品按阶段或系统查看 [[03 Gaucho作品.base]]。
+
+- 前史：谁在定义Gaucho
+- Hidalgo：Gauchesca形成
+- 政治Gauchesca与Santos Vega
+- 《Martín Fierro》与国家冲突
+- Juan Moreira与大众Gaucho
+- Santos Vega神话化与英语视角
+- Gaucho消失后的怀旧
+- 《Don Segundo Sombra》与成长
+- Borges：重写民族神话
+- 现代文学重新制造边疆
+- 边缘者重新获得Gaucho声音
+- 巴西Gaúcho传统

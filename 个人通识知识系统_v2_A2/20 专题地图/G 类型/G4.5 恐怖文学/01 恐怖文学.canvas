@@ -11,16 +11,6 @@
       "color": "4"
     },
     {
-      "id": "g1",
-      "type": "group",
-      "x": 0,
-      "y": 230,
-      "width": 1100,
-      "height": 1200,
-      "label": "历史",
-      "color": "1"
-    },
-    {
       "id": "g2",
       "type": "group",
       "x": 1180,
@@ -99,86 +89,6 @@
       "height": 110,
       "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/02 恐怖文学结构.base",
       "color": "5"
-    },
-    {
-      "id": "h1",
-      "type": "file",
-      "x": 70,
-      "y": 430,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/01 现代恐怖以前的母体.md",
-      "color": "1"
-    },
-    {
-      "id": "h2",
-      "type": "file",
-      "x": 580,
-      "y": 430,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/02 18世纪Gothic形成.md",
-      "color": "1"
-    },
-    {
-      "id": "h3",
-      "type": "file",
-      "x": 70,
-      "y": 575,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/03 19世纪怪物、鬼故事与心理哥特.md",
-      "color": "1"
-    },
-    {
-      "id": "h4",
-      "type": "file",
-      "x": 580,
-      "y": 575,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/04 Weird Fiction与Lovecraft宇宙恐怖.md",
-      "color": "1"
-    },
-    {
-      "id": "h5",
-      "type": "file",
-      "x": 70,
-      "y": 720,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/05 20世纪中期心理恐怖与Southern Gothic.md",
-      "color": "1"
-    },
-    {
-      "id": "h6",
-      "type": "file",
-      "x": 580,
-      "y": 720,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/06 1960—80年代现代Horror爆发.md",
-      "color": "1"
-    },
-    {
-      "id": "h7",
-      "type": "file",
-      "x": 70,
-      "y": 865,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/07 文学恐怖、Cosmic与21世纪新分化.md",
-      "color": "1"
-    },
-    {
-      "id": "h8",
-      "type": "file",
-      "x": 580,
-      "y": 865,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 恐怖文学/11 历史细分/08 日本、中国、韩国与拉美全球恐怖.md",
-      "color": "1"
     }
   ],
   "edges": [
@@ -223,62 +133,6 @@
       "fromSide": "bottom",
       "toNode": "structdb",
       "toSide": "top"
-    },
-    {
-      "id": "e-h1",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h1",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h2",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h2",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h3",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h3",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h4",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h4",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h5",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h5",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h6",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h6",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h7",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h7",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h8",
-      "fromNode": "s1",
-      "fromSide": "left",
-      "toNode": "h8",
-      "toSide": "right"
     }
   ]
 }

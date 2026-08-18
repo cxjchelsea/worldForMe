@@ -11,16 +11,6 @@
       "color": "4"
     },
     {
-      "id": "g1",
-      "type": "group",
-      "x": 0,
-      "y": 230,
-      "width": 1100,
-      "height": 1200,
-      "label": "历史",
-      "color": "1"
-    },
-    {
       "id": "g2",
       "type": "group",
       "x": 1180,
@@ -109,96 +99,6 @@
       "height": 110,
       "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/02 冒险文学结构.base",
       "color": "5"
-    },
-    {
-      "id": "h1",
-      "type": "file",
-      "x": 70,
-      "y": 430,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/01 Quest远祖与前现代冒险.md",
-      "color": "1"
-    },
-    {
-      "id": "h2",
-      "type": "file",
-      "x": 580,
-      "y": 430,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/02 航海时代、Robinsonade与生存.md",
-      "color": "1"
-    },
-    {
-      "id": "h3",
-      "type": "file",
-      "x": 70,
-      "y": 575,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/03 历史冒险、Frontier与Dumas.md",
-      "color": "1"
-    },
-    {
-      "id": "h4",
-      "type": "file",
-      "x": 580,
-      "y": 575,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/04 科学冒险、Stevenson与Treasure Hunt.md",
-      "color": "1"
-    },
-    {
-      "id": "h5",
-      "type": "file",
-      "x": 70,
-      "y": 720,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/05 帝国冒险与Lost World黄金时代.md",
-      "color": "1"
-    },
-    {
-      "id": "h6",
-      "type": "file",
-      "x": 580,
-      "y": 720,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/06 荒野、极地、Pulp与间谍冒险.md",
-      "color": "1"
-    },
-    {
-      "id": "h7",
-      "type": "file",
-      "x": 70,
-      "y": 865,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/07 儿童Adventure与反帝国／反Adventure.md",
-      "color": "1"
-    },
-    {
-      "id": "h8",
-      "type": "file",
-      "x": 580,
-      "y": 865,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/08 女性冒险与拉美反丛林叙事.md",
-      "color": "1"
-    },
-    {
-      "id": "h9",
-      "type": "file",
-      "x": 70,
-      "y": 1010,
-      "width": 450,
-      "height": 105,
-      "file": "个人通识知识系统_v2_A2/20 专题地图/G 类型/G4.5 冒险文学/11 历史细分/09 现代生存、生态与类型融合.md",
-      "color": "1"
     }
   ],
   "edges": [
@@ -250,69 +150,6 @@
       "fromSide": "bottom",
       "toNode": "structdb",
       "toSide": "top"
-    },
-    {
-      "id": "e-h1",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h1",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h2",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h2",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h3",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h3",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h4",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h4",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h5",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h5",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h6",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h6",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h7",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h7",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h8",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h8",
-      "toSide": "right"
-    },
-    {
-      "id": "e-h9",
-      "fromNode": "s2",
-      "fromSide": "left",
-      "toNode": "h9",
-      "toSide": "right"
     }
   ]
 }
