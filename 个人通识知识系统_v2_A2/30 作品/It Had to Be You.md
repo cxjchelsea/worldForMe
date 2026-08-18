@@ -4,11 +4,11 @@ type: work
 title: It Had to Be You
 title_original: ''
 aliases: []
-author: Contemporary Romance
-author_source: batch5_source_inferred
+author: Nora Roberts
+author_source: bibliography_fix
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-Q2-LOVE
 topic_links:
@@ -25,9 +25,9 @@ batch5_source_refs:
 
 ## 基本信息
 
-- 作者：Contemporary Romance
+- 作者：Nora Roberts
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

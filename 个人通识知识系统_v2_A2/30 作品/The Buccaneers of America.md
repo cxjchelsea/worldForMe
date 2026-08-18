@@ -8,7 +8,7 @@ author: Alexandre Exquemelin
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-PIRATE
@@ -32,7 +32,7 @@ batch6_source_refs:
 ## 基本信息
 
 - 作者 / 归属：Alexandre Exquemelin
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## Q15位置
 

@@ -8,7 +8,7 @@ author: Robert Marasco
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-G45-HORROR
 topic_links:
@@ -30,7 +30,7 @@ batch1_source_refs:
 
 - 作者：Robert Marasco
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

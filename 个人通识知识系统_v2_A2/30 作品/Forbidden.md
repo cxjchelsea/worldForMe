@@ -4,11 +4,11 @@ type: work
 title: Forbidden
 title_original: ''
 aliases: []
-author: 黑人Historical Romance
-author_source: batch5_source_inferred
+author: Beverly Jenkins
+author_source: title_map
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-Q2-LOVE
 topic_links:
@@ -25,9 +25,9 @@ batch5_source_refs:
 
 ## 基本信息
 
-- 作者：黑人Historical Romance
+- 作者：Beverly Jenkins
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

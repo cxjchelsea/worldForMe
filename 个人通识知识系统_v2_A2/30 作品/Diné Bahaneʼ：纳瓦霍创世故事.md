@@ -5,11 +5,11 @@ title: Diné Bahaneʼ：纳瓦霍创世故事
 title_original: Diné Bahaneʼ
 aliases:
 - Diné Bahaneʼ
-author: ''
-author_source: traditional_or_pending
+author: 佚名
+author_source: title_map
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-G1-MYTH
 topic_links:
@@ -27,11 +27,11 @@ batch3_source_refs:
 
 ## 基本信息
 
-- 作者 / 归属：传统文本 / 待书目校验
+- 作者 / 归属：佚名
 - 原文名：Diné Bahaneʼ
 - 其他题名：Diné Bahaneʼ
 - 年代 / 首次成书时间：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

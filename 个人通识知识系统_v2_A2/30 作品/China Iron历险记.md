@@ -9,7 +9,7 @@ author: 加夫列拉·卡贝松·卡马拉
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-R6-LATAM
 - WL-TOPIC-Q15
@@ -55,7 +55,7 @@ batch6_source_refs:
 
 - 作者：加夫列拉·卡贝松·卡马拉
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

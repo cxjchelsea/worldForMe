@@ -1,0 +1,42 @@
+filters:
+  and:
+    - type == "pgk_reading"
+properties:
+  file.name:
+    displayName: 书名
+  author:
+    displayName: 作者
+  domains:
+    displayName: 通识领域
+  read_status:
+    displayName: 阅读状态
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部通识试读
+    order:
+      - file.name
+      - author
+      - domains
+      - read_status
+      - id
+  - type: table
+    name: 按领域
+    groupBy:
+      property: domains
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - read_status == "已读"
+    order:
+      - file.name
+      - author
+      - domains

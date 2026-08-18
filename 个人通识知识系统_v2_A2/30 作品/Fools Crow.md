@@ -8,7 +8,7 @@ author: James Welch
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-G44-HISTORICAL
 - WL-TOPIC-Q15
@@ -44,7 +44,7 @@ batch6_source_refs:
 
 - 作者：James Welch
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

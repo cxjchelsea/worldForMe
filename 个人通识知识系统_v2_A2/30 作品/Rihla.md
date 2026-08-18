@@ -9,7 +9,7 @@ author: Ibn Battuta
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-G7-TRAVEL
 topic_links:
@@ -33,7 +33,7 @@ batch3_source_refs:
 - 作者 / 归属：Ibn Battuta
 - 其他题名：Rihla / 伊本·白图泰游记
 - 年代 / 首次成书时间：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

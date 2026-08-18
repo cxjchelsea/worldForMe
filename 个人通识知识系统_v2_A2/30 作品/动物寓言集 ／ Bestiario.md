@@ -4,11 +4,11 @@ type: work
 title: 动物寓言集 / Bestiario
 title_original: ''
 aliases: []
-author: ''
-author_source: pending
+author: 胡利奥·科塔萨尔
+author_source: heading
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-R6-LATAM
 topic_links:
@@ -25,9 +25,9 @@ batch4_source_refs:
 
 ## 基本信息
 
-- 作者：待书目校验
+- 作者：胡利奥·科塔萨尔
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：未读
 
 ## 专题位置
 

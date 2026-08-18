@@ -4,11 +4,11 @@ type: work
 title: Monte Walsh
 title_original: ''
 aliases: []
-author: 跟 Western 里
-author_source: batch6_source_inferred
+author: Jack Schaefer
+author_source: title_map
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-WESTERN
@@ -42,8 +42,8 @@ batch6_source_refs:
 
 ## 基本信息
 
-- 作者 / 归属：跟 Western 里
-- 阅读状态：未映射
+- 作者 / 归属：Jack Schaefer
+- 阅读状态：未读
 
 ## Q15位置
 

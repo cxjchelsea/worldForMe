@@ -165,10 +165,10 @@ views:
       - mystery_priority
       - read_status
   - type: table
-    name: 阅读状态未映射
+    name: 未读
     filters:
       and:
-        - read_status == "未映射"
+        - read_status == "未读"
     order:
       - file.name
       - author

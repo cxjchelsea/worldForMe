@@ -4,11 +4,11 @@ type: work
 title: Roman de Silence
 title_original: ''
 aliases: []
-author: ''
-author_source: pending_or_traditional
+author: Heldris of Cornwall
+author_source: title_map
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 未读
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-KNIGHT
@@ -30,8 +30,8 @@ batch6_source_refs:
 
 ## 基本信息
 
-- 作者 / 归属：待书目校验 / 传统文本
-- 阅读状态：未映射
+- 作者 / 归属：Heldris of Cornwall
+- 阅读状态：未读
 
 ## Q15位置
 

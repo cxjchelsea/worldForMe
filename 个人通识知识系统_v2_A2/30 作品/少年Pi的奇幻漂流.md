@@ -9,7 +9,20 @@ author: 扬·马特尔
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []
-read_status: 未映射
+read_status: 已读
+axis_t:
+- T6
+axis_r:
+- R10
+axis_m: []
+axis_g:
+- G4.3
+axis_n:
+- N2
+axis_q:
+- Q1
+- Q11
+axis_source: read_calibrated
 topics:
 - WL-TOPIC-N2-UNRELIABLE
 topic_links:
@@ -30,7 +43,16 @@ batch5_source_refs:
 
 - 作者：扬·马特尔
 - 首次出版年：待统一书目校验
-- 阅读状态：未映射
+- 阅读状态：已读
+
+## 六轴坐标
+
+- T 时间：T6 当代全球文学
+- R 地域：R10 跨区域文学传统
+- M 思潮：暂不标
+- G 类型：G4.3 社会与人物型小说
+- N 叙事：N2 聚焦与可靠性
+- Q 主题：Q1 个体与存在；Q11 宗教、伦理与超越
 
 ## 专题位置
 
