@@ -11,27 +11,44 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   history_cluster:
     displayName: 历史区块
+  mechanism_cluster:
+    displayName: 类型机制
   id:
     displayName: 稳定 ID
 
 views:
   - type: table
     name: 全部知识节点
-    order:
-      - file.name
-      - dimension
-      - sequence
-      - history_cluster
-      - id
-
+    order: [file.name, dimension, sequence, parent, history_cluster, mechanism_cluster, id]
   - type: table
     name: 核心结构
     filters:
       and:
         - 'type == "literature_topic_structure"'
-    order:
-      - file.name
-      - dimension
-      - id
+        - 'parent == "WL-TOPIC-G45-ADVENTURE"'
+    order: [sequence, file.name, dimension, id]
+  - type: table
+    name: 历史九区块
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+        - 'dimension == "history"'
+    order: [sequence, file.name, history_cluster, id]
+  - type: table
+    name: 冒险结构深化
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-G45-ADVENTURE-TYPE-SYSTEM"'
+    order: [sequence, file.name, mechanism_cluster, id]
+  - type: table
+    name: 帝国与反冒险深化
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-G45-ADVENTURE-BRIDGES"'
+    order: [sequence, file.name, mechanism_cluster, id]
