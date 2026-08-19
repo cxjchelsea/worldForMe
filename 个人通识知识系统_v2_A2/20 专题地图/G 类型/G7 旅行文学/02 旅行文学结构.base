@@ -11,6 +11,8 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   history_cluster:
     displayName: 历史阶段
   id:
@@ -23,23 +25,41 @@ views:
       - file.name
       - dimension
       - sequence
+      - parent
       - history_cluster
       - id
+
   - type: table
     name: 核心结构
     filters:
       and:
         - 'type == "literature_topic_structure"'
     order:
+      - sequence
       - file.name
       - dimension
       - id
+
   - type: table
     name: 八个历史阶段
     filters:
       and:
         - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-G7-TRAVEL-HISTORY"'
     order:
       - sequence
       - file.name
       - history_cluster
+      - id
+
+  - type: table
+    name: 旅行机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - parent
+      - id

@@ -2,7 +2,9 @@
 id: "WL-TOPIC-G7-TRAVEL-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-G7-TRAVEL"
+parent: "WL-TOPIC-G7-TRAVEL"
 dimension: "definition"
+sequence: 1
 ---
 # 边界：Travel Writing、冒险与旅行小说
 
