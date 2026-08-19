@@ -2,9 +2,11 @@
 id: "WL-TOPIC-Q15-SYSTEM-08"
 type: "literature_topic_section"
 topic_id: "WL-TOPIC-Q15"
+parent: "WL-TOPIC-Q15-SYSTEMS"
 dimension: "system"
 sequence: 8
 system_name: "海盗／Maritime Outlaw"
+system_class: "海洋法外生态"
 ---
 # 海盗文学
 

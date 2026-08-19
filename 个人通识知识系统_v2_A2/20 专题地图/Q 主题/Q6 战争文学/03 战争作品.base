@@ -47,11 +47,7 @@ views:
       and:
         - 'war_priority == "★"'
         - 'read_status == "未读"'
-    order:
-      - file.name
-      - author
-      - war_history_stage
-      - read_status
+    order: [file.name, author, war_history_stage, read_status]
   - type: table
     name: 系统扩展 ◆
     filters:
@@ -76,6 +72,70 @@ views:
       and:
         - '!war_axes.isEmpty()'
     order: [file.name, author, war_axes, war_history_stage]
+
+  - type: table
+    name: 问题 战斗与士兵
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("英雄主义")'
+            - 'war_axes.contains("普通士兵")'
+            - 'war_axes.contains("反战")'
+            - 'war_axes.contains("荒诞")'
+            - 'war_axes.contains("军事制度")'
+            - 'war_axes.contains("战俘")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+  - type: table
+    name: 问题 平民与占领
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("平民")'
+            - 'war_axes.contains("占领")'
+            - 'war_axes.contains("女性")'
+            - 'war_axes.contains("儿童")'
+            - 'war_axes.contains("战争与爱情")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+  - type: table
+    name: 问题 灭绝与核暴力
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("Holocaust/Genocide")'
+            - 'war_axes.contains("轰炸与核战争")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+  - type: table
+    name: 问题 内战与殖民战争
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("内战")'
+            - 'war_axes.contains("殖民战争")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+  - type: table
+    name: 问题 创伤与记忆
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("创伤/Afterwar")'
+            - 'war_axes.contains("战争记忆")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+  - type: table
+    name: 问题 真相与责任
+    filters:
+      and:
+        - or:
+            - 'war_axes.contains("战争真相与叙事")'
+            - 'war_axes.contains("加害者/Complicity")'
+            - 'war_axes.contains("战争×类型融合")'
+    order: [file.name, author, war_axes, war_history_stage, war_priority, read_status]
+
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - 'read_status == "未读"'
+    order: [file.name, author, war_priority, war_history_stage, read_status]
   - type: table
     name: 已读
     filters:
