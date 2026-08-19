@@ -14,7 +14,7 @@ properties:
   sf_history:
     displayName: 历史位置
   sf_themes:
-    displayName: 思想母题
+    displayName: 类型／母题标签
   sf_region:
     displayName: 原专题地域入口
   read_status:
@@ -91,7 +91,7 @@ views:
       - sf_history
       - read_status
   - type: table
-    name: 主题已明确标注
+    name: 横轴标签已明确标注
     filters:
       and:
         - "!sf_themes.isEmpty()"
@@ -106,71 +106,67 @@ views:
     filters:
       and:
         - sf_themes.contains("AI / 机器人")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: 第一接触
     filters:
       and:
         - sf_themes.contains("第一接触")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
+  - type: table
+    name: 时间旅行
+    filters:
+      and:
+        - sf_themes.contains("时间旅行")
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: 反乌托邦
     filters:
       and:
         - sf_themes.contains("反乌托邦")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: Hard SF
     filters:
       and:
         - sf_themes.contains("Hard SF")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: Cyberpunk
     filters:
       and:
         - sf_themes.contains("Cyberpunk")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
+  - type: table
+    name: 太空歌剧
+    filters:
+      and:
+        - sf_themes.contains("太空歌剧")
+    order: [file.name, author, sf_history_cluster, sf_priority]
+  - type: table
+    name: 军事科幻
+    filters:
+      and:
+        - sf_themes.contains("军事科幻")
+    order: [file.name, author, sf_history_cluster, sf_priority]
+  - type: table
+    name: 社会／人类学科幻
+    filters:
+      and:
+        - sf_themes.contains("社会科学 / 人类学科幻")
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: 后人类
     filters:
       and:
         - sf_themes.contains("后人类")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: 生态与Climate Fiction
     filters:
       and:
         - sf_themes.contains("生态 / Climate Fiction")
-    order:
-      - file.name
-      - author
-      - sf_history_cluster
-      - sf_priority
+    order: [file.name, author, sf_history_cluster, sf_priority]
   - type: table
     name: 地域已明确标注
     filters:

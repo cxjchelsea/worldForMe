@@ -13,6 +13,8 @@ properties:
     displayName: 顺序
   history_cluster:
     displayName: 历史大区块
+  mechanism_cluster:
+    displayName: 类型机制
   parent:
     displayName: 父节点
   id:
@@ -21,17 +23,59 @@ properties:
 views:
   - type: table
     name: 全部知识节点
-    order: [file.name, dimension, sequence, history_cluster, id]
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - parent
+      - history_cluster
+      - mechanism_cluster
+      - id
+
   - type: table
-    name: 核心结构节点
+    name: 核心结构
     filters:
       and:
         - 'type == "literature_topic_structure"'
-    order: [file.name, dimension, id]
+        - 'parent == "WL-TOPIC-G45-SF"'
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - id
+
   - type: table
     name: 历史十二区块
     filters:
       and:
         - 'type == "literature_topic_section"'
-        - 'dimension == "history"'
-    order: [sequence, file.name, history_cluster, id]
+        - 'parent == "WL-TOPIC-G45-SF-HISTORY"'
+    order:
+      - sequence
+      - file.name
+      - history_cluster
+      - id
+
+  - type: table
+    name: 类型与母题深化
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-G45-SF-TYPE-SYSTEM"'
+    order:
+      - sequence
+      - file.name
+      - mechanism_cluster
+      - id
+
+  - type: table
+    name: 地域与桥接深化
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-G45-SF-BRIDGES"'
+    order:
+      - sequence
+      - file.name
+      - mechanism_cluster
+      - id
