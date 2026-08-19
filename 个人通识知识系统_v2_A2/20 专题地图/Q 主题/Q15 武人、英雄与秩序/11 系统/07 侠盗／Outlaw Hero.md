@@ -2,9 +2,11 @@
 id: "WL-TOPIC-Q15-SYSTEM-07"
 type: "literature_topic_section"
 topic_id: "WL-TOPIC-Q15"
+parent: "WL-TOPIC-Q15-SYSTEMS"
 dimension: "system"
 sequence: 7
 system_name: "侠盗／Outlaw Hero"
+system_class: "跨文明法外英雄传统"
 ---
 # 侠盗文学
 
