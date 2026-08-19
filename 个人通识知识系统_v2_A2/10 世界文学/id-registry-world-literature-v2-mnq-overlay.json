@@ -1,0 +1,20 @@
+{
+  "registry_version": "2.4-taxonomy-v2-mnq",
+  "scope": ["M", "N", "Q"],
+  "extends": "id-registry-world-literature.json",
+  "merge_rule": "same id overrides base; new id extends base",
+  "status": "active_overlay_until_full_v2_fold",
+  "nodes": [
+    {"id":"WL-M3","code":"M3","name":"现代主义与先锋派","axis":"M","parent":"WL-M","level":1,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-M3.1","code":"M3.1","name":"现代主义 / Modernism","axis":"M","parent":"WL-M3","level":2,"node_kind":"taxonomy_leaf","anchorable":true,"topic_map":["20 专题地图/M 思潮/M3 现代主义文学/00 现代主义文学.md"]},
+    {"id":"WL-N2","code":"N2","name":"聚焦与可靠性","axis":"N","parent":"WL-N","level":1,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-N2.1","code":"N2.1","name":"聚焦 / Focalization","axis":"N","parent":"WL-N2","level":2,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-N2.2","code":"N2.2","name":"叙述可靠性 / Narratorial Reliability","axis":"N","parent":"WL-N2","level":2,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-N2.2.1","code":"N2.2.1","name":"可靠叙述","axis":"N","parent":"WL-N2.2","level":3,"node_kind":"taxonomy_leaf","anchorable":true,"topic_map":[]},
+    {"id":"WL-N2.2.2","code":"N2.2.2","name":"不可靠叙述","axis":"N","parent":"WL-N2.2","level":3,"node_kind":"taxonomy_leaf","anchorable":true,"topic_map":["20 专题地图/N 叙事/N2 不可靠叙述/00 不可靠叙述.md"]},
+    {"id":"WL-Q2","code":"Q2","name":"爱、欲望与亲密关系","axis":"Q","parent":"WL-Q","level":1,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-Q2.1","code":"Q2.1","name":"爱情","axis":"Q","parent":"WL-Q2","level":2,"node_kind":"taxonomy_leaf","anchorable":true,"topic_map":["20 专题地图/Q 主题/Q2 爱情文学/00 爱情文学.md"]},
+    {"id":"WL-Q6","code":"Q6","name":"战争、暴力与创伤","axis":"Q","parent":"WL-Q","level":1,"node_kind":"taxonomy_group","anchorable":false,"topic_map":[]},
+    {"id":"WL-Q6.1","code":"Q6.1","name":"战争","axis":"Q","parent":"WL-Q6","level":2,"node_kind":"taxonomy_leaf","anchorable":true,"topic_map":["20 专题地图/Q 主题/Q6 战争文学/00 战争文学.md"]}
+  ]
+}
