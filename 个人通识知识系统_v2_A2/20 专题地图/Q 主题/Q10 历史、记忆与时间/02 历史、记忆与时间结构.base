@@ -11,6 +11,8 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   memory_dimension:
     displayName: 记忆维度
   id:
@@ -21,8 +23,10 @@ views:
     name: 全部知识节点
     order:
       - file.name
+      - type
       - dimension
       - sequence
+      - parent
       - memory_dimension
       - id
 
@@ -37,11 +41,25 @@ views:
       - id
 
   - type: table
-    name: 八种体验
+    name: 八个记忆问题
     filters:
       and:
         - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q10-MEMORY-DIMENSIONS"'
     order:
       - sequence
       - file.name
       - memory_dimension
+      - id
+
+  - type: table
+    name: 记忆机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - parent
+      - id

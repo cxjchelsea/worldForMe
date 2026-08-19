@@ -11,6 +11,8 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   unreliable_mode:
     displayName: 不可靠机制
   id:
@@ -21,8 +23,10 @@ views:
     name: 全部知识节点
     order:
       - file.name
+      - type
       - dimension
       - sequence
+      - parent
       - unreliable_mode
       - id
 
@@ -37,11 +41,13 @@ views:
       - id
 
   - type: table
-    name: 十一种体验
+    name: 十一种不可靠机制
     filters:
       and:
         - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-N2-UNRELIABLE-MODES"'
     order:
       - sequence
       - file.name
       - unreliable_mode
+      - id
