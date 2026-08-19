@@ -2,9 +2,11 @@
 id: "WL-TOPIC-Q15-SYSTEM-06"
 type: "literature_topic_section"
 topic_id: "WL-TOPIC-Q15"
+parent: "WL-TOPIC-Q15-SYSTEMS"
 dimension: "system"
 sequence: 6
 system_name: "Gaucho"
+system_class: "文明型武人传统"
 ---
 # Gaucho文学
 

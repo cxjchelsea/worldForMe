@@ -1,6 +1,7 @@
 filters:
   and:
-    - topic_id == "WL-TOPIC-Q15"
+    - 'topic_id == "WL-TOPIC-Q15"'
+
 properties:
   file.name:
     displayName: 节点
@@ -10,10 +11,17 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   system_name:
     displayName: 武人系统
+  system_class:
+    displayName: 系统类别
+  compare_cluster:
+    displayName: 比较维度
   id:
     displayName: 稳定 ID
+
 views:
   - type: table
     name: 全部Q15知识节点
@@ -21,23 +29,59 @@ views:
       - file.name
       - dimension
       - sequence
+      - parent
       - system_name
+      - system_class
+      - compare_cluster
       - id
+
   - type: table
     name: 核心结构
     filters:
       and:
-        - type == "literature_topic_structure"
+        - 'type == "literature_topic_structure"'
+        - 'parent == "WL-TOPIC-Q15"'
     order:
+      - sequence
       - file.name
       - dimension
       - id
+
   - type: table
     name: 八个系统
     filters:
       and:
-        - type == "literature_topic_section"
+        - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q15-SYSTEMS"'
     order:
       - sequence
       - file.name
       - system_name
+      - system_class
+      - id
+
+  - type: table
+    name: 按系统类别
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q15-SYSTEMS"'
+    groupBy:
+      property: system_class
+      direction: ASC
+    order:
+      - sequence
+      - file.name
+      - system_name
+
+  - type: table
+    name: 六个比较维度
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q15-COMPARE"'
+    order:
+      - sequence
+      - file.name
+      - compare_cluster
+      - id
