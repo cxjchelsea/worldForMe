@@ -1,7 +1,6 @@
 filters:
   and:
     - 'topic_id == "WL-TOPIC-Q2-LOVE"'
-
 properties:
   file.name:
     displayName: 节点
@@ -15,33 +14,25 @@ properties:
     displayName: 历史阶段
   id:
     displayName: 稳定 ID
-
 views:
   - type: table
     name: 全部知识节点
-    order:
-      - file.name
-      - dimension
-      - sequence
-      - love_history_stage
-      - id
-
+    order: [file.name, type, dimension, sequence, love_history_stage, id]
   - type: table
     name: 核心结构
     filters:
       and:
         - 'type == "literature_topic_structure"'
-    order:
-      - file.name
-      - dimension
-      - id
-
+    order: [file.name, dimension, id]
   - type: table
     name: 九个历史阶段
     filters:
       and:
         - 'type == "literature_topic_section"'
-    order:
-      - sequence
-      - file.name
-      - love_history_stage
+    order: [sequence, file.name, love_history_stage]
+  - type: table
+    name: 类型机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order: [file.name, dimension, id]

@@ -1,7 +1,8 @@
 ---
 id: "WL-TOPIC-G43-BILDUNGSROMAN-COUNTER"
-type: "literature_topic_structure"
+type: "literature_topic_mechanism"
 topic_id: "WL-TOPIC-G43-BILDUNGSROMAN"
+parent: "WL-TOPIC-G43-BILDUNGSROMAN-BRIDGE"
 dimension: "counter_traditions"
 ---
 # 谁有资格成长：女性、种族、殖民与Queer

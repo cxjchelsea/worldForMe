@@ -1,7 +1,8 @@
 ---
 id: "WL-TOPIC-G43-FAMILY-NATION"
-type: "literature_topic_structure"
+type: "literature_topic_mechanism"
 topic_id: "WL-TOPIC-G43-FAMILY"
+parent: "WL-TOPIC-G43-FAMILY-BRIDGE"
 dimension: "family_and_history"
 ---
 # Family Saga × Nation与断裂家谱
