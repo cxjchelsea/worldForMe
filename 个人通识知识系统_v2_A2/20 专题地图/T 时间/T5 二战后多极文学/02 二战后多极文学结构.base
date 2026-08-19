@@ -11,6 +11,8 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   postwar_stage:
     displayName: 时间阶段
   id:
@@ -21,8 +23,10 @@ views:
     name: 全部知识节点
     order:
       - file.name
+      - type
       - dimension
       - sequence
+      - parent
       - postwar_stage
       - id
 
@@ -41,7 +45,21 @@ views:
     filters:
       and:
         - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-T5-POSTWAR-HISTORY"'
     order:
       - sequence
       - file.name
       - postwar_stage
+      - id
+
+  - type: table
+    name: 战后机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - parent
+      - id

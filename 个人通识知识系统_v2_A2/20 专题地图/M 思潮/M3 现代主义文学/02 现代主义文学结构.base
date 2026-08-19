@@ -11,6 +11,8 @@ properties:
     displayName: 维度
   sequence:
     displayName: 顺序
+  parent:
+    displayName: 父节点
   modernism_tradition_cluster:
     displayName: 传统入口
   id:
@@ -21,8 +23,10 @@ views:
     name: 全部知识节点
     order:
       - file.name
+      - type
       - dimension
       - sequence
+      - parent
       - modernism_tradition_cluster
       - id
 
@@ -45,3 +49,16 @@ views:
       - sequence
       - file.name
       - modernism_tradition_cluster
+      - id
+
+  - type: table
+    name: 现代主义机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - parent
+      - id
