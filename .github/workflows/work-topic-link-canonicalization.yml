@@ -1,3 +1,4 @@
+# Temporary self-deleting repair workflow; final feature-tree diff must contain only 30 作品 changes.
 name: Work Topic Link Canonicalization
 
 on:
