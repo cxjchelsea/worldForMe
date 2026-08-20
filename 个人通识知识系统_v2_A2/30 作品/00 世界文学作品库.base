@@ -113,6 +113,22 @@ views:
       - axis_g
       - axis_q
   - type: table
+    name: 已读按作者
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: author
+      direction: ASC
+    order:
+      - file.name
+      - axis_t
+      - axis_r
+      - axis_g
+      - axis_q
+  - type: table
     name: 需复核
     filters:
       and:
