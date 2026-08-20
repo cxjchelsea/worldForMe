@@ -1,0 +1,72 @@
+filters:
+  and:
+    - type == "work"
+properties:
+  file.name:
+    displayName: 作品
+  title:
+    displayName: 标准书名
+  author:
+    displayName: 作者
+  year:
+    displayName: 首次出版年
+  read_status:
+    displayName: 阅读状态
+  topics:
+    displayName: 专题
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_m:
+    displayName: M 思潮
+  axis_g:
+    displayName: G 类型
+  axis_n:
+    displayName: N 叙事
+  axis_q:
+    displayName: Q 主题
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 按作者
+    groupBy:
+      property: author
+      direction: ASC
+    order:
+      - file.name
+      - read_status
+      - year
+      - topics
+      - id
+  - type: table
+    name: 已读作者作品
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: author
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - axis_t
+      - axis_r
+      - axis_g
+      - axis_q
+  - type: table
+    name: 未读作者作品
+    filters:
+      and:
+        - read_status == "未读"
+    groupBy:
+      property: author
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - topics
+      - id
