@@ -4,7 +4,8 @@ type: work
 title: War Trash
 title_original: ''
 aliases: []
-author: Ha Jin
+author: 哈金
+author_original: Ha Jin
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

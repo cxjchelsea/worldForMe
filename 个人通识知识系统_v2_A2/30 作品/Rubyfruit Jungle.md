@@ -4,7 +4,8 @@ type: work
 title: Rubyfruit Jungle
 title_original: ''
 aliases: []
-author: Rita Mae Brown
+author: 丽塔·梅·布朗
+author_original: Rita Mae Brown
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

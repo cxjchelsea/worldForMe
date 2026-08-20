@@ -4,7 +4,8 @@ type: work
 title: Sarajevo Marlboro
 title_original: ''
 aliases: []
-author: Miljenko Jergović
+author: 米连科·耶尔戈维奇
+author_original: Miljenko Jergović
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

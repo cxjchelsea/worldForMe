@@ -5,7 +5,8 @@ title: The Gilda Stories
 title_original: Gilda Stories
 aliases:
 - Gilda Stories
-author: Jewelle Gomez
+author: 朱厄尔·戈麦斯
+author_original: Jewelle Gomez
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

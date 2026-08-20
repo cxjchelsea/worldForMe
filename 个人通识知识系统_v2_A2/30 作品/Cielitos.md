@@ -4,7 +4,8 @@ type: work
 title: Cielitos
 title_original: ''
 aliases: []
-author: Hidalgo
+author: 巴托洛梅·伊达尔戈
+author_original: Hidalgo
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

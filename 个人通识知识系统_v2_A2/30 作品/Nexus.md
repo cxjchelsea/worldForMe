@@ -4,7 +4,8 @@ type: work
 title: Nexus
 title_original: ''
 aliases: []
-author: Ramez Naam
+author: 拉梅兹·纳姆
+author_original: Ramez Naam
 author_source: explicit_line
 year: null
 literary_traditions: []

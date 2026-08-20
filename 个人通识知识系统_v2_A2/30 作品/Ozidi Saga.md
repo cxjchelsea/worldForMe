@@ -4,7 +4,8 @@ type: work
 title: Ozidi Saga
 title_original: ''
 aliases: []
-author: 中非
+author: 佚名
+author_original: 中非
 author_source: heading
 year: null
 literary_traditions: []

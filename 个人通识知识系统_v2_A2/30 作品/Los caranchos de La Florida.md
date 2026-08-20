@@ -4,7 +4,8 @@ type: work
 title: Los caranchos de La Florida
 title_original: ''
 aliases: []
-author: Benito Lynch
+author: 贝尼托·林奇
+author_original: Benito Lynch
 author_source: title_map
 year: null
 literary_traditions: []

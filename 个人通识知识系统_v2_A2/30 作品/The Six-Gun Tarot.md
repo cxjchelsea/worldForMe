@@ -4,7 +4,8 @@ type: work
 title: The Six-Gun Tarot
 title_original: ''
 aliases: []
-author: R.S. Belcher
+author: R.S.贝尔彻
+author_original: R.S. Belcher
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

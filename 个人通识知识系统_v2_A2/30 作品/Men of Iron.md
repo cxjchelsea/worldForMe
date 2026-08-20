@@ -4,7 +4,8 @@ type: work
 title: Men of Iron
 title_original: ''
 aliases: []
-author: Howard Pyle
+author: 霍华德·派尔
+author_original: Howard Pyle
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

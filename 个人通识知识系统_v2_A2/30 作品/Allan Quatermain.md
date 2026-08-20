@@ -4,7 +4,8 @@ type: work
 title: Allan Quatermain
 title_original: ''
 aliases: []
-author: Rider Haggard
+author: 哈格德
+author_original: Rider Haggard
 author_source: heading
 year: null
 literary_traditions: []

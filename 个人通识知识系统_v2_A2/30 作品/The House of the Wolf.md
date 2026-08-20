@@ -4,7 +4,8 @@ type: work
 title: The House of the Wolf
 title_original: ''
 aliases: []
-author: Stanley Weyman
+author: 斯坦利·韦曼
+author_original: Stanley Weyman
 author_source: title_map
 year: null
 literary_traditions: []

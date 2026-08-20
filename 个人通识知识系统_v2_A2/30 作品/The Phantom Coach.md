@@ -4,7 +4,8 @@ type: work
 title: The Phantom Coach
 title_original: ''
 aliases: []
-author: Amelia B. Edwards
+author: 阿梅莉亚·B.爱德华兹
+author_original: Amelia B. Edwards
 author_source: heading
 year: null
 literary_traditions: []

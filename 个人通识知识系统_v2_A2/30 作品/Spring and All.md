@@ -4,7 +4,8 @@ type: work
 title: Spring and All
 title_original: ''
 aliases: []
-author: William Carlos Williams
+author: 威廉·卡洛斯·威廉斯
+author_original: William Carlos Williams
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

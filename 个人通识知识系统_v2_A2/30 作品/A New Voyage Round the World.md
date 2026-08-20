@@ -4,7 +4,8 @@ type: work
 title: A New Voyage Round the World
 title_original: ''
 aliases: []
-author: William Dampier
+author: 威廉·丹皮尔
+author_original: William Dampier
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

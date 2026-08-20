@@ -4,7 +4,8 @@ type: work
 title: Things Have Gotten Worse Since We Last Spoke
 title_original: ''
 aliases: []
-author: Eric LaRocca
+author: 埃里克·拉罗卡
+author_original: Eric LaRocca
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

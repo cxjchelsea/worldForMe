@@ -4,7 +4,8 @@ type: work
 title: Destination Biafra
 title_original: ''
 aliases: []
-author: Buchi Emecheta
+author: 布奇·埃梅切塔
+author_original: Buchi Emecheta
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

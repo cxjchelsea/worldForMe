@@ -4,7 +4,8 @@ type: work
 title: So Far from God
 title_original: ''
 aliases: []
-author: Ana Castillo
+author: 安娜·卡斯蒂略
+author_original: Ana Castillo
 author_source: heading
 year: null
 literary_traditions: []

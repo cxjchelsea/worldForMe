@@ -4,7 +4,8 @@ type: work
 title: Dark Lover
 title_original: ''
 aliases: []
-author: J.R. Ward
+author: J.R.沃德
+author_original: J.R. Ward
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

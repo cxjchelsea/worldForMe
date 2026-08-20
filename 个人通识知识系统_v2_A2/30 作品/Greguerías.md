@@ -4,7 +4,8 @@ type: work
 title: Greguerías
 title_original: ''
 aliases: []
-author: Ramón Gómez de la Serna
+author: 拉蒙·戈麦斯·德拉塞尔纳
+author_original: Ramón Gómez de la Serna
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

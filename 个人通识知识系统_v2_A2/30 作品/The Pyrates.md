@@ -4,7 +4,8 @@ type: work
 title: The Pyrates
 title_original: ''
 aliases: []
-author: 解构
+author: 乔治·麦克唐纳·弗雷泽
+author_original: 解构
 author_source: heading
 year: null
 literary_traditions: []

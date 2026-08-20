@@ -4,7 +4,8 @@ type: work
 title: The Coral Island
 title_original: ''
 aliases: []
-author: Ballantyne
+author: R.M.巴兰坦
+author_original: Ballantyne
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

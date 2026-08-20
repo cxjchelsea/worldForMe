@@ -4,7 +4,8 @@ type: work
 title: Testament of Youth
 title_original: ''
 aliases: []
-author: Vera Brittain
+author: 薇拉·布里顿
+author_original: Vera Brittain
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

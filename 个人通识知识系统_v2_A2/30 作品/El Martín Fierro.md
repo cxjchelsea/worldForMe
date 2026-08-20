@@ -4,7 +4,8 @@ type: work
 title: El Martín Fierro
 title_original: ''
 aliases: []
-author: Borges / Margarita Guerrero
+author: 博尔赫斯 / 玛格丽塔·格雷罗
+author_original: Borges / Margarita Guerrero
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Tarr
 title_original: ''
 aliases: []
-author: Wyndham Lewis
+author: 温德姆·刘易斯
+author_original: Wyndham Lewis
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

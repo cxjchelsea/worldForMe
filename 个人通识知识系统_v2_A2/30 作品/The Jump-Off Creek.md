@@ -4,7 +4,8 @@ type: work
 title: The Jump-Off Creek
 title_original: ''
 aliases: []
-author: Molly Gloss
+author: 莫莉·格洛斯
+author_original: Molly Gloss
 author_source: heading
 year: null
 literary_traditions: []

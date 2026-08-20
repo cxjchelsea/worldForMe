@@ -4,7 +4,8 @@ type: work
 title: Arabian Sands
 title_original: ''
 aliases: []
-author: Wilfred Thesiger
+author: 威尔弗雷德·塞西格
+author_original: Wilfred Thesiger
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

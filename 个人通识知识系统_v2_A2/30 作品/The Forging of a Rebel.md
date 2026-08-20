@@ -4,7 +4,8 @@ type: work
 title: The Forging of a Rebel
 title_original: ''
 aliases: []
-author: Arturo Barea
+author: 阿图罗·巴雷亚
+author_original: Arturo Barea
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

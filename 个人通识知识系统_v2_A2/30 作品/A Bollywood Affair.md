@@ -4,7 +4,8 @@ type: work
 title: A Bollywood Affair
 title_original: ''
 aliases: []
-author: Sonali Dev
+author: 索纳利·德夫
+author_original: Sonali Dev
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

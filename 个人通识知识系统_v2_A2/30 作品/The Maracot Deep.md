@@ -4,7 +4,8 @@ type: work
 title: The Maracot Deep
 title_original: ''
 aliases: []
-author: Conan Doyle再补
+author: 柯南·道尔
+author_original: Conan Doyle再补
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

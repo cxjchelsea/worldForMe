@@ -4,7 +4,8 @@ type: work
 title: The Book of Not
 title_original: ''
 aliases: []
-author: Tsitsi Dangarembga
+author: 齐齐·丹加雷姆加
+author_original: Tsitsi Dangarembga
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

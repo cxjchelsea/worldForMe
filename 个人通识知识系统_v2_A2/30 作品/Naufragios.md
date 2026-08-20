@@ -5,7 +5,8 @@ title: Naufragios
 title_original: ''
 aliases:
 - 沉船记 / Naufragios
-author: Cabeza de Vaca
+author: 卡贝萨·德·巴卡
+author_original: Cabeza de Vaca
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

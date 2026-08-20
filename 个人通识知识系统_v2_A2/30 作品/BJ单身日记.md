@@ -4,7 +4,8 @@ type: work
 title: BJ单身日记
 title_original: ''
 aliases: []
-author: Helen Fielding
+author: 海伦·菲尔丁
+author_original: Helen Fielding
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

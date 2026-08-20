@@ -4,7 +4,8 @@ type: work
 title: Monte Walsh
 title_original: ''
 aliases: []
-author: Jack Schaefer
+author: 杰克·谢弗
+author_original: Jack Schaefer
 author_source: title_map
 year: null
 literary_traditions: []

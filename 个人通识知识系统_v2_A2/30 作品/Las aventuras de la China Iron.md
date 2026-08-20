@@ -4,7 +4,8 @@ type: work
 title: Las aventuras de la China Iron
 title_original: ''
 aliases: []
-author: Cabezón Cámara
+author: 加布里埃拉·卡贝松·卡马拉
+author_original: Cabezón Cámara
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

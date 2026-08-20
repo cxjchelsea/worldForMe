@@ -4,7 +4,8 @@ type: work
 title: The Acts of King Arthur and His Noble Knights
 title_original: ''
 aliases: []
-author: John Steinbeck
+author: 约翰·斯坦贝克
+author_original: John Steinbeck
 author_source: heading
 year: null
 literary_traditions: []

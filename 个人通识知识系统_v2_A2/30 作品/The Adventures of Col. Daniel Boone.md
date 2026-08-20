@@ -4,7 +4,8 @@ type: work
 title: The Adventures of Col. Daniel Boone
 title_original: ''
 aliases: []
-author: John Filson
+author: 约翰·菲尔森
+author_original: John Filson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Travels with a Donkey in the Cévennes
 title_original: ''
 aliases: []
-author: Stevenson
+author: 罗伯特·路易斯·史蒂文森
+author_original: Stevenson
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

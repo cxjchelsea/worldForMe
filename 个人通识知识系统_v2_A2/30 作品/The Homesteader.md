@@ -4,7 +4,8 @@ type: work
 title: The Homesteader
 title_original: ''
 aliases: []
-author: Oscar Micheaux
+author: 奥斯卡·米肖
+author_original: Oscar Micheaux
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

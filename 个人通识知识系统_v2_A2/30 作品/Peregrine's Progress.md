@@ -4,7 +4,8 @@ type: work
 title: Peregrine's Progress
 title_original: ''
 aliases: []
-author: Farnol
+author: 杰弗里·法诺尔
+author_original: Farnol
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Loney
 title_original: ''
 aliases: []
-author: Andrew Michael Hurley
+author: 安德鲁·迈克尔·赫尔利
+author_original: Andrew Michael Hurley
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

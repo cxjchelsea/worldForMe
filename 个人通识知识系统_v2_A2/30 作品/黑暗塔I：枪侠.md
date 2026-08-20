@@ -4,7 +4,8 @@ type: work
 title: 黑暗塔I：枪侠
 title_original: ''
 aliases: []
-author: Stephen King
+author: 斯蒂芬·金
+author_original: Stephen King
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

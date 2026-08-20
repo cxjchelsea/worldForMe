@@ -4,7 +4,8 @@ type: work
 title: Sir Orfeo
 title_original: ''
 aliases: []
-author: 英国
+author: 佚名
+author_original: 英国
 author_source: heading
 year: null
 literary_traditions: []

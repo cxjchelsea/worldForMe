@@ -4,7 +4,8 @@ type: work
 title: A Woman's Journey Round the World
 title_original: ''
 aliases: []
-author: Ida Pfeiffer
+author: 伊达·普费弗尔
+author_original: Ida Pfeiffer
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

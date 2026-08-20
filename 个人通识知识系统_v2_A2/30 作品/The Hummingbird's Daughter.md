@@ -4,7 +4,8 @@ type: work
 title: The Hummingbird's Daughter
 title_original: ''
 aliases: []
-author: Luis Alberto Urrea
+author: 路易斯·阿尔贝托·乌雷亚
+author_original: Luis Alberto Urrea
 author_source: heading
 year: null
 literary_traditions: []

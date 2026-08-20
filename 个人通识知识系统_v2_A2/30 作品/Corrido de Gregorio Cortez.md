@@ -4,7 +4,8 @@ type: work
 title: Corrido de Gregorio Cortez
 title_original: ''
 aliases: []
-author: Gregorio Cortez
+author: 佚名
+author_original: Gregorio Cortez
 author_source: heading
 year: null
 literary_traditions: []

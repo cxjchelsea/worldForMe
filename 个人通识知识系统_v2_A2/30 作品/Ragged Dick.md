@@ -4,7 +4,8 @@ type: work
 title: Ragged Dick
 title_original: ''
 aliases: []
-author: Horatio Alger
+author: 霍雷肖·阿尔杰
+author_original: Horatio Alger
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

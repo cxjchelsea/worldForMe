@@ -4,7 +4,8 @@ type: work
 title: I Will Repay
 title_original: ''
 aliases: []
-author: Baroness Orczy
+author: 奥希兹男爵夫人
+author_original: Baroness Orczy
 author_source: title_map
 year: null
 literary_traditions: []

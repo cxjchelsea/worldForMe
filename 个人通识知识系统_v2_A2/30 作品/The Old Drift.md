@@ -4,7 +4,8 @@ type: work
 title: The Old Drift
 title_original: ''
 aliases: []
-author: Namwali Serpell
+author: 纳姆瓦利·瑟佩尔
+author_original: Namwali Serpell
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

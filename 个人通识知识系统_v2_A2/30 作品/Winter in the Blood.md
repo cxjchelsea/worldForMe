@@ -4,7 +4,8 @@ type: work
 title: Winter in the Blood
 title_original: ''
 aliases: []
-author: James Welch
+author: 詹姆斯·韦尔奇
+author_original: James Welch
 author_source: heading
 year: null
 literary_traditions: []

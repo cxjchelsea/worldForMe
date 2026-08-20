@@ -4,7 +4,8 @@ type: work
 title: Palmerín de Inglaterra
 title_original: ''
 aliases: []
-author: Francisco de Moraes
+author: 弗朗西斯科·德·莫拉埃斯
+author_original: Francisco de Moraes
 author_source: title_map
 year: null
 literary_traditions: []

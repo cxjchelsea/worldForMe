@@ -4,7 +4,8 @@ type: work
 title: Ceremony
 title_original: ''
 aliases: []
-author: Leslie Marmon Silko
+author: 莱斯利·马蒙·西尔科
+author_original: Leslie Marmon Silko
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Don Segundo Sombra
 title_original: ''
 aliases: []
-author: Güiraldes
+author: 里卡多·吉拉尔德斯
+author_original: Güiraldes
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

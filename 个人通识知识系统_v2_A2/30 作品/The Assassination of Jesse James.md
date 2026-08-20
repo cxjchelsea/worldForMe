@@ -4,7 +4,8 @@ type: work
 title: The Assassination of Jesse James...
 title_original: ''
 aliases: []
-author: Ron Hansen
+author: 罗恩·汉森
+author_original: Ron Hansen
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

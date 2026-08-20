@@ -5,7 +5,8 @@ title: 'Looking for Transwonderland: Travels in Nigeria'
 title_original: Looking for Transwonderland
 aliases:
 - Looking for Transwonderland
-author: Noo Saro-Wiwa
+author: 努·萨罗-维瓦
+author_original: Noo Saro-Wiwa
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

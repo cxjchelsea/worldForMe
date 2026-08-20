@@ -4,7 +4,8 @@ type: work
 title: Frenchman's Creek
 title_original: ''
 aliases: []
-author: du Maurier
+author: 达芙妮·杜穆里埃
+author_original: du Maurier
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

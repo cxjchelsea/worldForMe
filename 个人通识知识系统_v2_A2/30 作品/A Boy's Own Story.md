@@ -4,7 +4,8 @@ type: work
 title: A Boy's Own Story
 title_original: ''
 aliases: []
-author: Edmund White
+author: 埃德蒙·怀特
+author_original: Edmund White
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

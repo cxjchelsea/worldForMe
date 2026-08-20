@@ -4,7 +4,8 @@ type: work
 title: Primitive Rebels
 title_original: ''
 aliases: []
-author: Eric Hobsbawm
+author: 艾瑞克·霍布斯鲍姆
+author_original: Eric Hobsbawm
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

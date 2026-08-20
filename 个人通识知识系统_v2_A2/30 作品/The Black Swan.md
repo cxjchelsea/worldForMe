@@ -4,7 +4,8 @@ type: work
 title: The Black Swan
 title_original: ''
 aliases: []
-author: Rafael Sabatini
+author: 拉斐尔·萨巴蒂尼
+author_original: Rafael Sabatini
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

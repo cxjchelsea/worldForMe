@@ -4,7 +4,8 @@ type: work
 title: Dungeon Crawler Carl
 title_original: ''
 aliases: []
-author: Matt Dinniman
+author: 马特·丁尼曼
+author_original: Matt Dinniman
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Who Remembers the Sea
 title_original: ''
 aliases: []
-author: Mohammed Dib
+author: 穆罕默德·迪布
+author_original: Mohammed Dib
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

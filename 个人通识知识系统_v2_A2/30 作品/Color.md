@@ -4,7 +4,8 @@ type: work
 title: Color
 title_original: ''
 aliases: []
-author: Countee Cullen
+author: 康蒂·卡伦
+author_original: Countee Cullen
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

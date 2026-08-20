@@ -4,7 +4,8 @@ type: work
 title: The Last Duty
 title_original: ''
 aliases: []
-author: Isidore Okpewho
+author: 伊西多尔·奥克佩沃
+author_original: Isidore Okpewho
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

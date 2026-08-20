@@ -4,7 +4,8 @@ type: work
 title: Malaeska
 title_original: ''
 aliases: []
-author: Ann S. Stephens
+author: 安·S.斯蒂芬斯
+author_original: Ann S. Stephens
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

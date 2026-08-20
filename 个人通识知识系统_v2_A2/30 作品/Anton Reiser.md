@@ -4,7 +4,8 @@ type: work
 title: Anton Reiser
 title_original: ''
 aliases: []
-author: Karl Philipp Moritz
+author: 卡尔·菲利普·莫里茨
+author_original: Karl Philipp Moritz
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

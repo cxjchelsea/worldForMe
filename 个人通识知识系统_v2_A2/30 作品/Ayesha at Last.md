@@ -4,7 +4,8 @@ type: work
 title: Ayesha at Last
 title_original: ''
 aliases: []
-author: Uzma Jalaluddin
+author: 乌兹玛·贾拉勒丁
+author_original: Uzma Jalaluddin
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

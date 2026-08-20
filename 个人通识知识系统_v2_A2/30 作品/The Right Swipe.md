@@ -4,7 +4,8 @@ type: work
 title: The Right Swipe
 title_original: ''
 aliases: []
-author: Alisha Rai
+author: 阿丽莎·拉伊
+author_original: Alisha Rai
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

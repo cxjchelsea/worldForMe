@@ -4,7 +4,8 @@ type: work
 title: Tracks
 title_original: ''
 aliases: []
-author: Robyn Davidson
+author: 罗宾·戴维森
+author_original: Robyn Davidson
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

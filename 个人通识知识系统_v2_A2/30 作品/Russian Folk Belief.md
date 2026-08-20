@@ -4,7 +4,8 @@ type: work
 title: Russian Folk Belief
 title_original: ''
 aliases: []
-author: Linda Ivanits
+author: 琳达·伊万尼茨
+author_original: Linda Ivanits
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

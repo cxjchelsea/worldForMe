@@ -4,7 +4,8 @@ type: work
 title: The Ceremonies
 title_original: ''
 aliases: []
-author: T.E.D. Klein
+author: T.E.D.克莱因
+author_original: T.E.D. Klein
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

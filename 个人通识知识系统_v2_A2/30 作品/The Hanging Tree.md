@@ -4,7 +4,8 @@ type: work
 title: The Hanging Tree
 title_original: ''
 aliases: []
-author: Dorothy M. Johnson
+author: 多萝西·M.约翰逊
+author_original: Dorothy M. Johnson
 author_source: title_map
 year: null
 literary_traditions: []

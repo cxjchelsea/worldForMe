@@ -4,7 +4,8 @@ type: work
 title: The Sunne in Splendour
 title_original: ''
 aliases: []
-author: Sharon Kay Penman
+author: 莎伦·凯·彭曼
+author_original: Sharon Kay Penman
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

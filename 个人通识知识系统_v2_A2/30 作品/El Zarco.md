@@ -4,7 +4,8 @@ type: work
 title: El Zarco
 title_original: ''
 aliases: []
-author: Ignacio Manuel Altamirano
+author: 伊格纳西奥·曼努埃尔·阿尔塔米拉诺
+author_original: Ignacio Manuel Altamirano
 author_source: heading
 year: null
 literary_traditions: []

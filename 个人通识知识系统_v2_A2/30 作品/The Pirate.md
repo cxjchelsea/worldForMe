@@ -4,7 +4,8 @@ type: work
 title: The Pirate
 title_original: ''
 aliases: []
-author: Walter Scott
+author: 沃尔特·司各特
+author_original: Walter Scott
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

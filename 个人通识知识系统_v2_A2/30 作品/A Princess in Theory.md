@@ -4,7 +4,8 @@ type: work
 title: A Princess in Theory
 title_original: ''
 aliases: []
-author: Alyssa Cole
+author: 艾莉莎·科尔
+author_original: Alyssa Cole
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

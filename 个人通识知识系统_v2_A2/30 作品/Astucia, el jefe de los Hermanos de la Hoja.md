@@ -5,7 +5,8 @@ title: Astucia, el jefe de los Hermanos de la Hoja
 title_original: Astucia
 aliases:
 - Astucia
-author: Luis G. Inclán
+author: 路易斯·G.因克兰
+author_original: Luis G. Inclán
 author_source: heading
 year: null
 literary_traditions: []

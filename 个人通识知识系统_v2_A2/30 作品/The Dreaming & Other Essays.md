@@ -4,7 +4,8 @@ type: work
 title: The Dreaming & Other Essays
 title_original: ''
 aliases: []
-author: W.E.H. Stanner
+author: W.E.H.斯坦纳
+author_original: W.E.H. Stanner
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

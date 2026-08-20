@@ -4,7 +4,8 @@ type: work
 title: Black Lamb and Grey Falcon
 title_original: ''
 aliases: []
-author: Rebecca West
+author: 丽贝卡·韦斯特
+author_original: Rebecca West
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

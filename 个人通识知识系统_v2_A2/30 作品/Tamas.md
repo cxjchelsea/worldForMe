@@ -4,7 +4,8 @@ type: work
 title: Tamas
 title_original: ''
 aliases: []
-author: Bhisham Sahni
+author: 比沙姆·萨赫尼
+author_original: Bhisham Sahni
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Merlin
 title_original: ''
 aliases: []
-author: T.H. White
+author: T.H.怀特
+author_original: T.H. White
 author_source: search_heading
 year: null
 literary_traditions: []

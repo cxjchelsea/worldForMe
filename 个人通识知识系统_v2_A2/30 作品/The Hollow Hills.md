@@ -4,7 +4,8 @@ type: work
 title: The Hollow Hills
 title_original: ''
 aliases: []
-author: Mary Stewart
+author: 玛丽·斯图尔特
+author_original: Mary Stewart
 author_source: heading
 year: null
 literary_traditions: []

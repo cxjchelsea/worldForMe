@@ -4,7 +4,8 @@ type: work
 title: Sundown
 title_original: ''
 aliases: []
-author: John Joseph Mathews
+author: 约翰·约瑟夫·马修斯
+author_original: John Joseph Mathews
 author_source: heading
 year: null
 literary_traditions: []

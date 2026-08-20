@@ -4,7 +4,8 @@ type: work
 title: Beirut Blues
 title_original: ''
 aliases: []
-author: Hanan al-Shaykh
+author: 哈南·谢赫
+author_original: Hanan al-Shaykh
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

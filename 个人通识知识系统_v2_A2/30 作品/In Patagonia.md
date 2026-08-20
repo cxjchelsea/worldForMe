@@ -4,7 +4,8 @@ type: work
 title: In Patagonia
 title_original: ''
 aliases: []
-author: Bruce Chatwin
+author: 布鲁斯·查特文
+author_original: Bruce Chatwin
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

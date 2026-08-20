@@ -4,7 +4,8 @@ type: work
 title: The Thousand Crimes of Ming Tsu
 title_original: ''
 aliases: []
-author: Tom Lin
+author: 汤姆·林
+author_original: Tom Lin
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

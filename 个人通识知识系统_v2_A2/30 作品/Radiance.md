@@ -4,7 +4,8 @@ type: work
 title: Radiance
 title_original: ''
 aliases: []
-author: Grace Draven
+author: 格蕾丝·德雷文
+author_original: Grace Draven
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

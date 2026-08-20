@@ -4,7 +4,8 @@ type: work
 title: Exquisite Corpse
 title_original: ''
 aliases: []
-author: Poppy Z. Brite
+author: 波比·Z.布赖特
+author_original: Poppy Z. Brite
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

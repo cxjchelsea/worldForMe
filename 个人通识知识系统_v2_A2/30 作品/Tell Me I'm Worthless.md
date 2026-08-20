@@ -4,7 +4,8 @@ type: work
 title: Tell Me I'm Worthless
 title_original: ''
 aliases: []
-author: Alison Rumfitt
+author: 艾莉森·拉姆菲特
+author_original: Alison Rumfitt
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

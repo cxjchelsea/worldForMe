@@ -4,7 +4,8 @@ type: work
 title: Our Sunshine
 title_original: ''
 aliases: []
-author: Robert Drewe
+author: 罗伯特·德鲁
+author_original: Robert Drewe
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Perceval
 title_original: ''
 aliases: []
-author: Chrétien
+author: 克雷蒂安·德·特鲁瓦
+author_original: Chrétien
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

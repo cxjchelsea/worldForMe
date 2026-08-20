@@ -4,7 +4,8 @@ type: work
 title: The Valleys of the Assassins
 title_original: ''
 aliases: []
-author: Freya Stark
+author: 弗雷娅·斯塔克
+author_original: Freya Stark
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

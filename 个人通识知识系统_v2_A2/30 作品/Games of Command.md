@@ -4,7 +4,8 @@ type: work
 title: Games of Command
 title_original: ''
 aliases: []
-author: Linnea Sinclair
+author: 林妮娅·辛克莱
+author_original: Linnea Sinclair
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

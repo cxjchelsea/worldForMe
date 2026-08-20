@@ -4,7 +4,8 @@ type: work
 title: Kinmont Willie
 title_original: ''
 aliases: []
-author: Walter Scott
+author: 沃尔特·司各特
+author_original: Walter Scott
 author_source: heading
 year: null
 literary_traditions: []

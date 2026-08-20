@@ -4,7 +4,8 @@ type: work
 title: Territory
 title_original: ''
 aliases: []
-author: Emma Bull
+author: 艾玛·布尔
+author_original: Emma Bull
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

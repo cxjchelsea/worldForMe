@@ -4,7 +4,8 @@ type: work
 title: These Thousand Hills
 title_original: ''
 aliases: []
-author: A.B. Guthrie Jr.
+author: A.B.格思里
+author_original: A.B. Guthrie Jr.
 author_source: heading
 year: null
 literary_traditions: []

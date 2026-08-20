@@ -4,7 +4,8 @@ type: work
 title: Erec
 title_original: ''
 aliases: []
-author: Hartmann von Aue
+author: 哈特曼·冯·奥埃
+author_original: Hartmann von Aue
 author_source: title_map
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: With Wolfe in Canada
 title_original: ''
 aliases: []
-author: G. A. Henty
+author: G.A.亨蒂
+author_original: G. A. Henty
 author_source: heading
 year: null
 literary_traditions: []

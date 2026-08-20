@@ -4,7 +4,8 @@ type: work
 title: Ambiguity Machines and Other Stories
 title_original: ''
 aliases: []
-author: Vandana Singh
+author: 万达娜·辛格
+author_original: Vandana Singh
 author_source: explicit_line
 year: null
 literary_traditions: []

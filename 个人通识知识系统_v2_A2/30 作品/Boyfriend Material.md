@@ -4,7 +4,8 @@ type: work
 title: Boyfriend Material
 title_original: ''
 aliases: []
-author: Alexis Hall
+author: 亚历克西斯·霍尔
+author_original: Alexis Hall
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

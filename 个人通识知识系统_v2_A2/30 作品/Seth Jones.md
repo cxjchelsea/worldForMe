@@ -4,7 +4,8 @@ type: work
 title: Seth Jones
 title_original: ''
 aliases: []
-author: Edward S. Ellis
+author: 爱德华·S.埃利斯
+author_original: Edward S. Ellis
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Well at the World's End
 title_original: ''
 aliases: []
-author: William Morris
+author: 威廉·莫里斯
+author_original: William Morris
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Agents of Dreamland
 title_original: ''
 aliases: []
-author: Kiernan
+author: 凯特琳·R.基尔南
+author_original: Kiernan
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

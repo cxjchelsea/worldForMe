@@ -4,7 +4,8 @@ type: work
 title: Torto Arado
 title_original: ''
 aliases: []
-author: 乡村
+author: 伊塔马尔·维埃拉·儒尼奥尔
+author_original: 乡村
 author_source: heading
 year: null
 literary_traditions: []

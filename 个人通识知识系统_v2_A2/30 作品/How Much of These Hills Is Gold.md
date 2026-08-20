@@ -4,7 +4,8 @@ type: work
 title: How Much of These Hills Is Gold
 title_original: ''
 aliases: []
-author: C Pam Zhang
+author: 张沧畔
+author_original: C Pam Zhang
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Kalpa Imperial
 title_original: ''
 aliases: []
-author: Angélica Gorodischer
+author: 安赫利卡·戈罗迪舍尔
+author_original: Angélica Gorodischer
 author_source: explicit_line
 year: null
 literary_traditions: []

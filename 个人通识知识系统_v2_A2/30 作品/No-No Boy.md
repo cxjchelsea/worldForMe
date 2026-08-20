@@ -4,7 +4,8 @@ type: work
 title: No-No Boy
 title_original: ''
 aliases: []
-author: John Okada
+author: 约翰·冈田
+author_original: John Okada
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

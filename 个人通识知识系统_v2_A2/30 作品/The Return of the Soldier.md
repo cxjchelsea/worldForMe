@@ -4,7 +4,8 @@ type: work
 title: The Return of the Soldier
 title_original: ''
 aliases: []
-author: Rebecca West
+author: 丽贝卡·韦斯特
+author_original: Rebecca West
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

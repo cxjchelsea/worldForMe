@@ -4,7 +4,8 @@ type: work
 title: Moxyland
 title_original: ''
 aliases: []
-author: Lauren Beukes
+author: 劳伦·博克斯
+author_original: Lauren Beukes
 author_source: explicit_line
 year: null
 literary_traditions: []

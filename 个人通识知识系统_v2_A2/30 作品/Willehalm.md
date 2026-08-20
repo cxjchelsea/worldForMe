@@ -4,7 +4,8 @@ type: work
 title: Willehalm
 title_original: ''
 aliases: []
-author: Wolfram von Eschenbach
+author: 沃尔夫拉姆·冯·埃申巴赫
+author_original: Wolfram von Eschenbach
 author_source: title_map
 year: null
 literary_traditions: []

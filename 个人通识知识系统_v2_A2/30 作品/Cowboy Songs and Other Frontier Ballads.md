@@ -4,7 +4,8 @@ type: work
 title: Cowboy Songs and Other Frontier Ballads
 title_original: ''
 aliases: []
-author: John A. Lomax
+author: 约翰·A.洛马克斯
+author_original: John A. Lomax
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

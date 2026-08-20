@@ -4,7 +4,8 @@ type: work
 title: In Parenthesis
 title_original: ''
 aliases: []
-author: David Jones
+author: 戴维·琼斯
+author_original: David Jones
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

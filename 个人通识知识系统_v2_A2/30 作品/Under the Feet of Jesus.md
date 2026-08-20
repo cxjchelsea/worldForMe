@@ -4,7 +4,8 @@ type: work
 title: Under the Feet of Jesus
 title_original: ''
 aliases: []
-author: Helena María Viramontes
+author: 海伦娜·玛丽亚·比拉蒙特斯
+author_original: Helena María Viramontes
 author_source: heading
 year: null
 literary_traditions: []

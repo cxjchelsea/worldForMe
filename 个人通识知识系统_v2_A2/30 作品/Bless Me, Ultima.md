@@ -4,7 +4,8 @@ type: work
 title: Bless Me, Ultima
 title_original: ''
 aliases: []
-author: Rudolfo Anaya
+author: 鲁道夫·阿纳亚
+author_original: Rudolfo Anaya
 author_source: heading
 year: null
 literary_traditions: []

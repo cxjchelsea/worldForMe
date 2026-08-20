@@ -4,7 +4,8 @@ type: work
 title: Nine Coaches Waiting
 title_original: ''
 aliases: []
-author: Mary Stewart
+author: 玛丽·斯图尔特
+author_original: Mary Stewart
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

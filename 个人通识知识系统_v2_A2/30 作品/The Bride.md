@@ -4,7 +4,8 @@ type: work
 title: The Bride
 title_original: ''
 aliases: []
-author: Julie Garwood
+author: 朱莉·加伍德
+author_original: Julie Garwood
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

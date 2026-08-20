@@ -4,7 +4,8 @@ type: work
 title: Benito Cereno
 title_original: ''
 aliases: []
-author: Herman Melville
+author: 赫尔曼·麦尔维尔
+author_original: Herman Melville
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

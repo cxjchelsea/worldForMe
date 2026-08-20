@@ -4,7 +4,8 @@ type: work
 title: Pirate Freedom
 title_original: ''
 aliases: []
-author: Gene Wolfe
+author: 吉恩·沃尔夫
+author_original: Gene Wolfe
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

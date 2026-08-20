@@ -4,7 +4,8 @@ type: work
 title: Afsaneh / 传说
 title_original: ''
 aliases: []
-author: Nima Yushij
+author: 尼玛·尤什吉
+author_original: Nima Yushij
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

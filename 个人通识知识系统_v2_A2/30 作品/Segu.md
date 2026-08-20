@@ -4,7 +4,8 @@ type: work
 title: Segu
 title_original: ''
 aliases: []
-author: Maryse Condé
+author: 玛丽斯·孔戴
+author_original: Maryse Condé
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

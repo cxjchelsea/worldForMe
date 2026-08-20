@@ -4,7 +4,8 @@ type: work
 title: Undertones of War
 title_original: ''
 aliases: []
-author: Edmund Blunden
+author: 埃德蒙·布伦登
+author_original: Edmund Blunden
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

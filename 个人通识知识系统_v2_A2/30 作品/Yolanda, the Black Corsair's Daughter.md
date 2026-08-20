@@ -4,7 +4,8 @@ type: work
 title: Yolanda, the Black Corsair's Daughter
 title_original: ''
 aliases: []
-author: Emilio Salgari
+author: 埃米利奥·萨尔加里
+author_original: Emilio Salgari
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

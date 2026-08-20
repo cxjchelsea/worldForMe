@@ -4,7 +4,8 @@ type: work
 title: Hood
 title_original: ''
 aliases: []
-author: Stephen R. Lawhead
+author: 斯蒂芬·R.劳黑德
+author_original: Stephen R. Lawhead
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

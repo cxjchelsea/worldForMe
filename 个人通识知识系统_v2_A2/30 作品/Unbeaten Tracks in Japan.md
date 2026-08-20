@@ -4,7 +4,8 @@ type: work
 title: Unbeaten Tracks in Japan
 title_original: ''
 aliases: []
-author: Bird
+author: 伊莎贝拉·伯德
+author_original: Bird
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

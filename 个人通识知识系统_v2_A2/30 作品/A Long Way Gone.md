@@ -4,7 +4,8 @@ type: work
 title: A Long Way Gone
 title_original: ''
 aliases: []
-author: Ishmael Beah
+author: 伊斯梅尔·比亚
+author_original: Ishmael Beah
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

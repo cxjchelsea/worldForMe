@@ -4,7 +4,8 @@ type: work
 title: The Life and Adventures of Nat Love
 title_original: ''
 aliases: []
-author: Nat Love
+author: 纳特·洛夫
+author_original: Nat Love
 author_source: heading
 year: null
 literary_traditions: []

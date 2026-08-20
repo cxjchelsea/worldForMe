@@ -4,7 +4,8 @@ type: work
 title: The Sisters Brothers
 title_original: ''
 aliases: []
-author: Patrick deWitt
+author: 帕特里克·德威特
+author_original: Patrick deWitt
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

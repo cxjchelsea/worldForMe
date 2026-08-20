@@ -4,7 +4,8 @@ type: work
 title: Sozaboy
 title_original: ''
 aliases: []
-author: Saro-Wiwa
+author: 肯·萨罗-维瓦
+author_original: Saro-Wiwa
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

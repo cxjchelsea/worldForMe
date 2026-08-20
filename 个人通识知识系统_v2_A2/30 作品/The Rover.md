@@ -4,7 +4,8 @@ type: work
 title: The Rover
 title_original: ''
 aliases: []
-author: Conrad
+author: 约瑟夫·康拉德
+author_original: Conrad
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

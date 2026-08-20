@@ -4,7 +4,8 @@ type: work
 title: Before She Sleeps
 title_original: ''
 aliases: []
-author: Bina Shah
+author: 比娜·沙阿
+author_original: Bina Shah
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

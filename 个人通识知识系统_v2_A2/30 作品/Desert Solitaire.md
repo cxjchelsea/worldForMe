@@ -4,7 +4,8 @@ type: work
 title: Desert Solitaire
 title_original: ''
 aliases: []
-author: Edward Abbey
+author: 爱德华·艾比
+author_original: Edward Abbey
 author_source: title_map
 year: null
 literary_traditions: []

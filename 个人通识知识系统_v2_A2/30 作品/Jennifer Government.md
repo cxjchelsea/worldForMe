@@ -4,7 +4,8 @@ type: work
 title: Jennifer Government
 title_original: ''
 aliases: []
-author: Max Barry
+author: 马克斯·巴里
+author_original: Max Barry
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

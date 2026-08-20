@@ -4,7 +4,8 @@ type: work
 title: Teatro Grottesco
 title_original: ''
 aliases: []
-author: Ligotti
+author: 托马斯·利戈蒂
+author_original: Ligotti
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

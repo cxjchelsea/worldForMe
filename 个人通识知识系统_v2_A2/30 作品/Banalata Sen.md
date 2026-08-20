@@ -4,7 +4,8 @@ type: work
 title: Banalata Sen
 title_original: ''
 aliases: []
-author: Jibanananda Das
+author: 吉巴纳南达·达斯
+author_original: Jibanananda Das
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Those Across the River
 title_original: ''
 aliases: []
-author: Christopher Buehlman
+author: 克里斯托弗·比尔曼
+author_original: Christopher Buehlman
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

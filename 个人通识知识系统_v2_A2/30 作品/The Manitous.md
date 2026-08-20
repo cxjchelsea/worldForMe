@@ -4,7 +4,8 @@ type: work
 title: The Manitous
 title_original: ''
 aliases: []
-author: Basil Johnston
+author: 巴兹尔·约翰斯顿
+author_original: Basil Johnston
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

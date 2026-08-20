@@ -4,7 +4,8 @@ type: work
 title: The Last Good Kiss
 title_original: ''
 aliases: []
-author: James Crumley
+author: 詹姆斯·克拉姆利
+author_original: James Crumley
 author_source: heading
 year: null
 literary_traditions: []

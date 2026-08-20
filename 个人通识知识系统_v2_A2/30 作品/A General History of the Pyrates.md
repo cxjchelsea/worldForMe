@@ -4,7 +4,8 @@ type: work
 title: A General History of the Pyrates
 title_original: ''
 aliases: []
-author: Captain Charles Johnson
+author: 查尔斯·约翰逊船长
+author_original: Captain Charles Johnson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

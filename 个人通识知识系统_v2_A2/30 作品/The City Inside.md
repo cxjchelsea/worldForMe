@@ -4,7 +4,8 @@ type: work
 title: The City Inside
 title_original: ''
 aliases: []
-author: Samit Basu
+author: 萨米特·巴苏
+author_original: Samit Basu
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

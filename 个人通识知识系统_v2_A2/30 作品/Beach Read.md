@@ -4,7 +4,8 @@ type: work
 title: Beach Read
 title_original: ''
 aliases: []
-author: Emily Henry
+author: 埃米莉·亨利
+author_original: Emily Henry
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

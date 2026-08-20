@@ -4,7 +4,8 @@ type: work
 title: The Good Old Boys
 title_original: ''
 aliases: []
-author: Elmer Kelton
+author: 埃尔默·凯尔顿
+author_original: Elmer Kelton
 author_source: title_map
 year: null
 literary_traditions: []

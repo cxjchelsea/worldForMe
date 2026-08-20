@@ -4,7 +4,8 @@ type: work
 title: People of the Book
 title_original: ''
 aliases: []
-author: Geraldine Brooks
+author: 杰拉尔丁·布鲁克斯
+author_original: Geraldine Brooks
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

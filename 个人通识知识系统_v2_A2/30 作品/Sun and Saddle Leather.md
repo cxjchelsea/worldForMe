@@ -4,7 +4,8 @@ type: work
 title: Sun and Saddle Leather
 title_original: ''
 aliases: []
-author: Charles Badger Clark
+author: 查尔斯·巴杰·克拉克
+author_original: Charles Badger Clark
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

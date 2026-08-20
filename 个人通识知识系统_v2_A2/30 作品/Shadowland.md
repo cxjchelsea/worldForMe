@@ -4,7 +4,8 @@ type: work
 title: Shadowland
 title_original: ''
 aliases: []
-author: Peter Straub
+author: 彼得·斯特劳布
+author_original: Peter Straub
 author_source: heading
 year: null
 literary_traditions: []

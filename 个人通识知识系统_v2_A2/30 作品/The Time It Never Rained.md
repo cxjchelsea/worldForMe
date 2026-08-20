@@ -4,7 +4,8 @@ type: work
 title: The Time It Never Rained
 title_original: ''
 aliases: []
-author: Kelton
+author: 埃尔默·凯尔顿
+author_original: Kelton
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

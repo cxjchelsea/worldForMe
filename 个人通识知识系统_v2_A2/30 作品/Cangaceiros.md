@@ -4,7 +4,8 @@ type: work
 title: Cangaceiros
 title_original: ''
 aliases: []
-author: 巴西
+author: 若泽·林斯·多雷戈
+author_original: 巴西
 author_source: heading
 year: null
 literary_traditions: []

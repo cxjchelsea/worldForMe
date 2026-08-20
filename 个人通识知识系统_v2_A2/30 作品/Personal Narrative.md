@@ -4,7 +4,8 @@ type: work
 title: Personal Narrative
 title_original: ''
 aliases: []
-author: Humboldt
+author: 亚历山大·冯·洪堡
+author_original: Humboldt
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

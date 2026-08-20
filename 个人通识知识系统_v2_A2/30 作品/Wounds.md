@@ -4,7 +4,8 @@ type: work
 title: Wounds
 title_original: ''
 aliases: []
-author: Nathan Ballingrud
+author: 内森·巴林拉德
+author_original: Nathan Ballingrud
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

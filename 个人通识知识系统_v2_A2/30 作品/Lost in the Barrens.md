@@ -4,7 +4,8 @@ type: work
 title: Lost in the Barrens
 title_original: ''
 aliases: []
-author: Farley Mowat
+author: 法利·莫厄特
+author_original: Farley Mowat
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

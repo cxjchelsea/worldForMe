@@ -4,7 +4,8 @@ type: work
 title: In the Castle of My Skin
 title_original: ''
 aliases: []
-author: George Lamming
+author: 乔治·拉明
+author_original: George Lamming
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

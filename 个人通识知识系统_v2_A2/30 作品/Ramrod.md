@@ -4,7 +4,8 @@ type: work
 title: Ramrod
 title_original: ''
 aliases: []
-author: Luke Short
+author: 卢克·肖特
+author_original: Luke Short
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

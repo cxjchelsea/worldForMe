@@ -4,7 +4,8 @@ type: work
 title: The Brave Cowboy
 title_original: ''
 aliases: []
-author: Abbey
+author: 爱德华·艾比
+author_original: Abbey
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

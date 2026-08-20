@@ -4,7 +4,8 @@ type: work
 title: The Adventures of Robin Hood
 title_original: ''
 aliases: []
-author: Roger Lancelyn Green
+author: 罗杰·兰塞林·格林
+author_original: Roger Lancelyn Green
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

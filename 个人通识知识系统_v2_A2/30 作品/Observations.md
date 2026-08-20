@@ -4,7 +4,8 @@ type: work
 title: Observations
 title_original: ''
 aliases: []
-author: Marianne Moore
+author: 玛丽安娜·穆尔
+author_original: Marianne Moore
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

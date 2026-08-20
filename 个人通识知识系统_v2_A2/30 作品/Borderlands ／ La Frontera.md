@@ -4,7 +4,8 @@ type: work
 title: Borderlands / La Frontera
 title_original: ''
 aliases: []
-author: Gloria Anzaldúa
+author: 格洛丽亚·安扎尔杜亚
+author_original: Gloria Anzaldúa
 author_source: heading
 year: null
 literary_traditions: []

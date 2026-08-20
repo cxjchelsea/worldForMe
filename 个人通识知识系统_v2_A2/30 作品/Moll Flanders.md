@@ -5,7 +5,8 @@ title: Moll Flanders
 title_original: ''
 aliases:
 - 摩尔·弗兰德斯
-author: Daniel Defoe
+author: 丹尼尔·笛福
+author_original: Daniel Defoe
 author_source: heading
 year: null
 literary_traditions: []

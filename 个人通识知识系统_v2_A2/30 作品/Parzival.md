@@ -4,7 +4,8 @@ type: work
 title: Parzival
 title_original: ''
 aliases: []
-author: Wolfram的
+author: 沃尔夫拉姆·冯·埃申巴赫
+author_original: Wolfram的
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

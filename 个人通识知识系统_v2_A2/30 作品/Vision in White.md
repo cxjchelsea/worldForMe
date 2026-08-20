@@ -4,7 +4,8 @@ type: work
 title: Vision in White
 title_original: ''
 aliases: []
-author: Nora Roberts
+author: 诺拉·罗伯茨
+author_original: Nora Roberts
 author_source: bibliography_fix
 year: null
 literary_traditions: []

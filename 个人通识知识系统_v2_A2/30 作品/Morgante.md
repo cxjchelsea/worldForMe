@@ -4,7 +4,8 @@ type: work
 title: Morgante
 title_original: ''
 aliases: []
-author: Luigi Pulci
+author: 路易吉·普尔奇
+author_original: Luigi Pulci
 author_source: title_map
 year: null
 literary_traditions: []

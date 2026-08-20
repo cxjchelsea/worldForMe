@@ -4,7 +4,8 @@ type: work
 title: Cracking India
 title_original: ''
 aliases: []
-author: Bapsi Sidhwa
+author: 巴普西·西德瓦
+author_original: Bapsi Sidhwa
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

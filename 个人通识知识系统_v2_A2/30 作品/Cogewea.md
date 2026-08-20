@@ -4,7 +4,8 @@ type: work
 title: Cogewea
 title_original: ''
 aliases: []
-author: Mourning Dove
+author: 哀鸽
+author_original: Mourning Dove
 author_source: search_heading
 year: null
 literary_traditions: []

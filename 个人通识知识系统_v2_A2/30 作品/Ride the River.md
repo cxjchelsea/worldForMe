@@ -4,7 +4,8 @@ type: work
 title: Ride the River
 title_original: ''
 aliases: []
-author: "Louis L'Amour"
+author: "路易斯·拉穆尔"
+author_original: Louis L'Amour
 author_source: title_map
 year: null
 literary_traditions: []

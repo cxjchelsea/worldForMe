@@ -4,7 +4,8 @@ type: work
 title: Joseph d'Arimathie
 title_original: ''
 aliases: []
-author: Robert de Boron
+author: 罗贝尔·德·博龙
+author_original: Robert de Boron
 author_source: title_map
 year: null
 literary_traditions: []

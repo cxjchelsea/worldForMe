@@ -4,7 +4,8 @@ type: work
 title: Close Range
 title_original: ''
 aliases: []
-author: Proulx
+author: 安妮·普鲁
+author_original: Proulx
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

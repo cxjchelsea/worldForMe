@@ -4,7 +4,8 @@ type: work
 title: The Corsair
 title_original: ''
 aliases: []
-author: Byron
+author: 拜伦
+author_original: Byron
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

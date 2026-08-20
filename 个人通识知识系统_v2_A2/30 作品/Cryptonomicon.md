@@ -4,7 +4,8 @@ type: work
 title: Cryptonomicon
 title_original: ''
 aliases: []
-author: Neal Stephenson
+author: 尼尔·斯蒂芬森
+author_original: Neal Stephenson
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

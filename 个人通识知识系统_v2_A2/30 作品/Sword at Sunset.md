@@ -4,7 +4,8 @@ type: work
 title: Sword at Sunset
 title_original: ''
 aliases: []
-author: Rosemary Sutcliff
+author: 罗斯玛丽·萨克利夫
+author_original: Rosemary Sutcliff
 author_source: heading
 year: null
 literary_traditions: []

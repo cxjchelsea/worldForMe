@@ -4,7 +4,8 @@ type: work
 title: Devil in Winter
 title_original: ''
 aliases: []
-author: Lisa Kleypas
+author: 丽莎·克莱帕斯
+author_original: Lisa Kleypas
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

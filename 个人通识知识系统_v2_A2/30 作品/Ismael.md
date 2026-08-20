@@ -4,7 +4,8 @@ type: work
 title: Ismael
 title_original: ''
 aliases: []
-author: Acevedo Díaz
+author: 阿塞韦多·迪亚斯
+author_original: Acevedo Díaz
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

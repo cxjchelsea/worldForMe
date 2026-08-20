@@ -4,7 +4,8 @@ type: work
 title: Fourth Wing
 title_original: ''
 aliases: []
-author: Rebecca Yarros
+author: 丽贝卡·亚罗斯
+author_original: Rebecca Yarros
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

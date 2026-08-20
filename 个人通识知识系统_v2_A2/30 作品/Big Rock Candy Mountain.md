@@ -4,7 +4,8 @@ type: work
 title: Big Rock Candy Mountain
 title_original: ''
 aliases: []
-author: Wallace Stegner
+author: 华莱士·斯特格纳
+author_original: Wallace Stegner
 author_source: heading
 year: null
 literary_traditions: []

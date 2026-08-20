@@ -4,7 +4,8 @@ type: work
 title: Lendas do Sul
 title_original: ''
 aliases: []
-author: Simões Lopes Neto
+author: 西蒙斯·洛佩斯·内托
+author_original: Simões Lopes Neto
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Letters Written during a Short Residence in Sweden, Norway, and Denmark
 title_original: ''
 aliases: []
-author: Mary Wollstonecraft
+author: 玛丽·沃斯通克拉夫特
+author_original: Mary Wollstonecraft
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

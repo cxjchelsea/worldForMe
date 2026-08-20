@@ -4,7 +4,8 @@ type: work
 title: A Court of Thorns and Roses
 title_original: ''
 aliases: []
-author: Sarah J. Maas
+author: 萨拉·J.马斯
+author_original: Sarah J. Maas
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

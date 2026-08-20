@@ -4,7 +4,8 @@ type: work
 title: Sóngoro cosongo
 title_original: ''
 aliases: []
-author: Nicolás Guillén
+author: 尼古拉斯·纪廉
+author_original: Nicolás Guillén
 author_source: heading
 year: null
 literary_traditions: []

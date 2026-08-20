@@ -4,7 +4,8 @@ type: work
 title: Song for the Unraveling of the World
 title_original: ''
 aliases: []
-author: Brian Evenson
+author: 布赖恩·埃文森
+author_original: Brian Evenson
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

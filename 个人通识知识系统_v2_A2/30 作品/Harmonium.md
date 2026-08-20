@@ -4,7 +4,8 @@ type: work
 title: Harmonium
 title_original: ''
 aliases: []
-author: Wallace Stevens
+author: 华莱士·史蒂文斯
+author_original: Wallace Stevens
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

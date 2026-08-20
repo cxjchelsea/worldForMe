@@ -4,7 +4,8 @@ type: work
 title: Dispatches
 title_original: ''
 aliases: []
-author: Michael Herr
+author: 迈克尔·赫尔
+author_original: Michael Herr
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

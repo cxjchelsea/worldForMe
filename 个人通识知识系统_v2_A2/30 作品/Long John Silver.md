@@ -4,7 +4,8 @@ type: work
 title: Long John Silver
 title_original: ''
 aliases: []
-author: Björn Larsson
+author: 比约恩·拉尔森
+author_original: Björn Larsson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Drum-Taps
 title_original: ''
 aliases: []
-author: Whitman
+author: 沃尔特·惠特曼
+author_original: Whitman
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Yoruba Myths
 title_original: ''
 aliases: []
-author: Ulli Beier
+author: 乌利·拜尔
+author_original: Ulli Beier
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

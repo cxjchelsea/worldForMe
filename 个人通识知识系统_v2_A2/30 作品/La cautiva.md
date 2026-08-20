@@ -4,7 +4,8 @@ type: work
 title: La cautiva
 title_original: ''
 aliases: []
-author: Echeverría
+author: 埃斯特万·埃切维里亚
+author_original: Echeverría
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

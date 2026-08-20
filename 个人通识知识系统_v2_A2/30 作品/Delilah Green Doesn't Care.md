@@ -4,7 +4,8 @@ type: work
 title: Delilah Green Doesn't Care
 title_original: ''
 aliases: []
-author: Ashley Herring Blake
+author: 阿什莉·赫林·布莱克
+author_original: Ashley Herring Blake
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

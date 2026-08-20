@@ -4,7 +4,8 @@ type: work
 title: 'Facundo: Civilization and Barbarism'
 title_original: ''
 aliases: []
-author: Domingo Faustino Sarmiento
+author: 萨米恩托
+author_original: Domingo Faustino Sarmiento
 author_source: title_map
 year: null
 literary_traditions: []

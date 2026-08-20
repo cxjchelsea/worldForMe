@@ -4,7 +4,8 @@ type: work
 title: Smoky the Cowhorse
 title_original: ''
 aliases: []
-author: Will James
+author: 威尔·詹姆斯
+author_original: Will James
 author_source: heading
 year: null
 literary_traditions: []

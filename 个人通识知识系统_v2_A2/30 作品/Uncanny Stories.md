@@ -4,7 +4,8 @@ type: work
 title: Uncanny Stories
 title_original: ''
 aliases: []
-author: May Sinclair
+author: 梅·辛克莱
+author_original: May Sinclair
 author_source: heading
 year: null
 literary_traditions: []

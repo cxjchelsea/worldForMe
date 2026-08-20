@@ -4,7 +4,8 @@ type: work
 title: Dead in the West
 title_original: ''
 aliases: []
-author: Joe R. Lansdale
+author: 乔·R.兰斯代尔
+author_original: Joe R. Lansdale
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

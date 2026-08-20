@@ -4,7 +4,8 @@ type: work
 title: The Rainbow Trail
 title_original: ''
 aliases: []
-author: Zane Grey
+author: 赞恩·格雷
+author_original: Zane Grey
 author_source: title_map
 year: null
 literary_traditions: []

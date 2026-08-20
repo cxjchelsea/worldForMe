@@ -4,7 +4,8 @@ type: work
 title: Manhunt
 title_original: ''
 aliases: []
-author: Gretchen Felker-Martin
+author: 格蕾琴·费尔克-马丁
+author_original: Gretchen Felker-Martin
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

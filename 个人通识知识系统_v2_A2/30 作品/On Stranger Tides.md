@@ -4,7 +4,8 @@ type: work
 title: On Stranger Tides
 title_original: ''
 aliases: []
-author: Tim Powers
+author: 蒂姆·鲍尔斯
+author_original: Tim Powers
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

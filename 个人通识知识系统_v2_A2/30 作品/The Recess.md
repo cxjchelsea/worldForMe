@@ -4,7 +4,8 @@ type: work
 title: The Recess
 title_original: ''
 aliases: []
-author: Sophia Lee
+author: 索菲娅·李
+author_original: Sophia Lee
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: O Cabeleira
 title_original: ''
 aliases: []
-author: Franklin Távora
+author: 富兰克林·塔沃拉
+author_original: Franklin Távora
 author_source: heading
 year: null
 literary_traditions: []

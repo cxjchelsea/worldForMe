@@ -4,7 +4,8 @@ type: work
 title: The Lady and the Monk
 title_original: ''
 aliases: []
-author: Pico Iyer
+author: 皮科·艾尔
+author_original: Pico Iyer
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

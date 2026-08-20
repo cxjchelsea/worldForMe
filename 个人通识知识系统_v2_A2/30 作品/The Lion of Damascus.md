@@ -4,7 +4,8 @@ type: work
 title: The Lion of Damascus
 title_original: ''
 aliases: []
-author: Salgari
+author: 埃米利奥·萨尔加里
+author_original: Salgari
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

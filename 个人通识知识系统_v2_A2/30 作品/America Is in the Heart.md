@@ -4,7 +4,8 @@ type: work
 title: America Is in the Heart
 title_original: ''
 aliases: []
-author: Carlos Bulosan
+author: 卡洛斯·布洛桑
+author_original: Carlos Bulosan
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

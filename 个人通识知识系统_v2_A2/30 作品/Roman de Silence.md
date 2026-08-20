@@ -4,7 +4,8 @@ type: work
 title: Roman de Silence
 title_original: ''
 aliases: []
-author: Heldris of Cornwall
+author: 康沃尔的埃尔德里斯
+author_original: Heldris of Cornwall
 author_source: title_map
 year: null
 literary_traditions: []

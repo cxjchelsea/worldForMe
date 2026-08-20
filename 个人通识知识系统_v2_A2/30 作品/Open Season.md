@@ -4,7 +4,8 @@ type: work
 title: Open Season
 title_original: ''
 aliases: []
-author: C.J. Box
+author: C.J.博克斯
+author_original: C.J. Box
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

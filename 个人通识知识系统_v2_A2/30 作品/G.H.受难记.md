@@ -4,7 +4,8 @@ type: work
 title: G.H.受难记
 title_original: ''
 aliases: []
-author: Clarice Lispector
+author: 克拉丽丝·利斯佩克托
+author_original: Clarice Lispector
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

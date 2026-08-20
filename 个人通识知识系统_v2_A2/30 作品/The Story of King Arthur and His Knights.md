@@ -4,7 +4,8 @@ type: work
 title: The Story of King Arthur and His Knights
 title_original: ''
 aliases: []
-author: Howard Pyle
+author: 霍华德·派尔
+author_original: Howard Pyle
 author_source: title_map
 year: null
 literary_traditions: []

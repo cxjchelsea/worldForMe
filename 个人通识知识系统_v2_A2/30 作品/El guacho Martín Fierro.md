@@ -4,7 +4,8 @@ type: work
 title: El guacho Martín Fierro
 title_original: ''
 aliases: []
-author: Fariña
+author: 法里尼亚
+author_original: Fariña
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: A Small Place
 title_original: ''
 aliases: []
-author: Jamaica Kincaid
+author: 牙买加·金凯德
+author_original: Jamaica Kincaid
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

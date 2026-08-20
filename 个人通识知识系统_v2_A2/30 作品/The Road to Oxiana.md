@@ -4,7 +4,8 @@ type: work
 title: The Road to Oxiana
 title_original: ''
 aliases: []
-author: Robert Byron
+author: 罗伯特·拜伦
+author_original: Robert Byron
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

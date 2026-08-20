@@ -4,7 +4,8 @@ type: work
 title: Warlock
 title_original: ''
 aliases: []
-author: Oakley Hall
+author: 奥克利·霍尔
+author_original: Oakley Hall
 author_source: heading
 year: null
 literary_traditions: []

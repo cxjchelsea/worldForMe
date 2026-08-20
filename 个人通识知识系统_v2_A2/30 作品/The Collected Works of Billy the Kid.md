@@ -4,7 +4,8 @@ type: work
 title: The Collected Works of Billy the Kid
 title_original: ''
 aliases: []
-author: Ondaatje
+author: 迈克尔·翁达杰
+author_original: Ondaatje
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

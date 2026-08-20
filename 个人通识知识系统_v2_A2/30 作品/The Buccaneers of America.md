@@ -4,7 +4,8 @@ type: work
 title: The Buccaneers of America
 title_original: ''
 aliases: []
-author: Alexandre Exquemelin
+author: 亚历山大·埃斯克梅林
+author_original: Alexandre Exquemelin
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

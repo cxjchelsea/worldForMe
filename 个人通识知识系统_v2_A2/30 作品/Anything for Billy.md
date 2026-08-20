@@ -4,7 +4,8 @@ type: work
 title: Anything for Billy
 title_original: ''
 aliases: []
-author: Larry McMurtry
+author: 拉里·麦克默特里
+author_original: Larry McMurtry
 author_source: heading
 year: null
 literary_traditions: []

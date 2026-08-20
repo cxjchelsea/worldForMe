@@ -4,7 +4,8 @@ type: work
 title: That Old Ace in the Hole
 title_original: ''
 aliases: []
-author: Annie Proulx
+author: 安妮·普鲁
+author_original: Annie Proulx
 author_source: title_map
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Delirium
 title_original: ''
 aliases: []
-author: Lauren Oliver
+author: 劳伦·奥利弗
+author_original: Lauren Oliver
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

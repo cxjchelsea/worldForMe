@@ -4,7 +4,8 @@ type: work
 title: Prose Tristan
 title_original: ''
 aliases: []
-author: Prose Tristan
+author: 佚名
+author_original: Prose Tristan
 author_source: heading
 year: null
 literary_traditions: []

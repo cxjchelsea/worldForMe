@@ -4,7 +4,8 @@ type: work
 title: Hormiga Negra
 title_original: ''
 aliases: []
-author: Eduardo Gutiérrez
+author: 爱德华多·古铁雷斯
+author_original: Eduardo Gutiérrez
 author_source: title_map
 year: null
 literary_traditions: []

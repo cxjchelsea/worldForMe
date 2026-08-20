@@ -4,7 +4,8 @@ type: work
 title: The Book of the Order of Chivalry
 title_original: ''
 aliases: []
-author: Ramon Llull
+author: 拉蒙·柳利
+author_original: Ramon Llull
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

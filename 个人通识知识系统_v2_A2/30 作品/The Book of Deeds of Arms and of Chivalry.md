@@ -4,7 +4,8 @@ type: work
 title: The Book of Deeds of Arms and of Chivalry
 title_original: ''
 aliases: []
-author: Christine de Pizan
+author: 克里斯蒂娜·德·皮桑
+author_original: Christine de Pizan
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

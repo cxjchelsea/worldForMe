@@ -4,7 +4,8 @@ type: work
 title: Maid Marian
 title_original: ''
 aliases: []
-author: Peacock
+author: 托马斯·洛夫·皮科克
+author_original: Peacock
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

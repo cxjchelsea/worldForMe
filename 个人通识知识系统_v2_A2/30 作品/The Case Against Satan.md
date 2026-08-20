@@ -4,7 +4,8 @@ type: work
 title: The Case Against Satan
 title_original: ''
 aliases: []
-author: Ray Russell
+author: 雷·拉塞尔
+author_original: Ray Russell
 author_source: heading
 year: null
 literary_traditions: []

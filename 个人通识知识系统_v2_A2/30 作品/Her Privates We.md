@@ -4,7 +4,8 @@ type: work
 title: Her Privates We
 title_original: ''
 aliases: []
-author: Frederic Manning
+author: 弗雷德里克·曼宁
+author_original: Frederic Manning
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

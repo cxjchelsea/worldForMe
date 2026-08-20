@@ -4,7 +4,8 @@ type: work
 title: The Viscount Who Loved Me
 title_original: ''
 aliases: []
-author: Julia Quinn
+author: 朱莉娅·奎因
+author_original: Julia Quinn
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

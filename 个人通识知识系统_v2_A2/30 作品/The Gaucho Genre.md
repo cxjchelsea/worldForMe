@@ -4,7 +4,8 @@ type: work
 title: The Gaucho Genre
 title_original: ''
 aliases: []
-author: Josefina Ludmer
+author: 约瑟菲娜·卢德梅尔
+author_original: Josefina Ludmer
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

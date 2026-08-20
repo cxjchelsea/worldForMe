@@ -4,7 +4,8 @@ type: work
 title: Destry Rides Again
 title_original: ''
 aliases: []
-author: Max Brand
+author: 马克斯·布兰德
+author_original: Max Brand
 author_source: heading
 year: null
 literary_traditions: []

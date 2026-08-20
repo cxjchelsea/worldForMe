@@ -4,7 +4,8 @@ type: work
 title: Sherwood
 title_original: ''
 aliases: []
-author: Parke Godwin
+author: 帕克·戈德温
+author_original: Parke Godwin
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

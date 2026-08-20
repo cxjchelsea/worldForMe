@@ -4,7 +4,8 @@ type: work
 title: Harvest Home
 title_original: ''
 aliases: []
-author: Thomas Tryon
+author: 托马斯·特赖恩
+author_original: Thomas Tryon
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

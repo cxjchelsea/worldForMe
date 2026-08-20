@@ -4,7 +4,8 @@ type: work
 title: A Time of Gifts
 title_original: ''
 aliases: []
-author: Patrick Leigh Fermor
+author: 帕特里克·利·弗莫尔
+author_original: Patrick Leigh Fermor
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

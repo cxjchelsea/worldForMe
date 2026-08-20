@@ -4,7 +4,8 @@ type: work
 title: The Pirate's Daughter
 title_original: ''
 aliases: []
-author: Margaret Cezair-Thompson
+author: 玛格丽特·塞泽尔-汤普森
+author_original: Margaret Cezair-Thompson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

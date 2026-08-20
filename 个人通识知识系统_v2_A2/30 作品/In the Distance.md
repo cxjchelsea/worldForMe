@@ -4,7 +4,8 @@ type: work
 title: In the Distance
 title_original: ''
 aliases: []
-author: Hernan Diaz
+author: 埃尔南·迪亚斯
+author_original: Hernan Diaz
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

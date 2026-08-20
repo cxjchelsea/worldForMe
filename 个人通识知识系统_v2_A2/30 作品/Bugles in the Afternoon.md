@@ -4,7 +4,8 @@ type: work
 title: Bugles in the Afternoon
 title_original: ''
 aliases: []
-author: Ernest Haycox
+author: 欧内斯特·海科克斯
+author_original: Ernest Haycox
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

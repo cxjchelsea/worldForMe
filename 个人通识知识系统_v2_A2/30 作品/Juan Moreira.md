@@ -4,7 +4,8 @@ type: work
 title: Juan Moreira
 title_original: ''
 aliases: []
-author: Gutiérrez
+author: 爱德华多·古铁雷斯
+author_original: Gutiérrez
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Cogewea, the Half-Blood
 title_original: ''
 aliases: []
-author: Mourning Dove
+author: 哀鸽
+author_original: Mourning Dove
 author_source: heading
 year: null
 literary_traditions: []

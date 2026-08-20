@@ -4,7 +4,8 @@ type: work
 title: Almanac of the Dead
 title_original: ''
 aliases: []
-author: Leslie Marmon Silko
+author: 莱斯利·马蒙·西尔科
+author_original: Leslie Marmon Silko
 author_source: heading
 year: null
 literary_traditions: []

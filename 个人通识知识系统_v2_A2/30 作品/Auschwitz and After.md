@@ -4,7 +4,8 @@ type: work
 title: Auschwitz and After
 title_original: ''
 aliases: []
-author: Charlotte Delbo
+author: 夏洛特·德尔博
+author_original: Charlotte Delbo
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

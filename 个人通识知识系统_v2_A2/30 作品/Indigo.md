@@ -4,7 +4,8 @@ type: work
 title: Indigo
 title_original: ''
 aliases: []
-author: Beverly Jenkins
+author: 贝弗利·詹金斯
+author_original: Beverly Jenkins
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

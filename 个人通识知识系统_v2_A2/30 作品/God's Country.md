@@ -4,7 +4,8 @@ type: work
 title: God's Country
 title_original: ''
 aliases: []
-author: Percival Everett
+author: 珀西瓦尔·埃弗里特
+author_original: Percival Everett
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

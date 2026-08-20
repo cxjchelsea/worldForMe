@@ -4,7 +4,8 @@ type: work
 title: Roman de Brut
 title_original: ''
 aliases: []
-author: Wace
+author: 瓦斯
+author_original: Wace
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

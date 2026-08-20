@@ -4,7 +4,8 @@ type: work
 title: The Untamed
 title_original: ''
 aliases: []
-author: Max Brand
+author: 马克斯·布兰德
+author_original: Max Brand
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

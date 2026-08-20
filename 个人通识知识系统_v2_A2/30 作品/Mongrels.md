@@ -4,7 +4,8 @@ type: work
 title: Mongrels
 title_original: ''
 aliases: []
-author: Stephen Graham Jones
+author: 斯蒂芬·格雷厄姆·琼斯
+author_original: Stephen Graham Jones
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

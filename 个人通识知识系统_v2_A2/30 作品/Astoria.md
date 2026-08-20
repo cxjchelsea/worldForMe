@@ -4,7 +4,8 @@ type: work
 title: Astoria
 title_original: ''
 aliases: []
-author: Irving
+author: 华盛顿·欧文
+author_original: Irving
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

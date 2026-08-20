@@ -4,7 +4,8 @@ type: work
 title: Iwein
 title_original: ''
 aliases: []
-author: Hartmann
+author: 哈特曼·冯·奥埃
+author_original: Hartmann
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

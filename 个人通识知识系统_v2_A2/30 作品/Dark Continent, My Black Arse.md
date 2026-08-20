@@ -4,7 +4,8 @@ type: work
 title: Dark Continent, My Black Arse
 title_original: ''
 aliases: []
-author: Sihle Khumalo
+author: 西赫勒·库马洛
+author_original: Sihle Khumalo
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

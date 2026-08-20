@@ -4,7 +4,8 @@ type: work
 title: The Scar
 title_original: ''
 aliases: []
-author: China Miéville
+author: 查纳·米耶维
+author_original: China Miéville
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

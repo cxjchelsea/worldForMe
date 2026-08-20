@@ -4,7 +4,8 @@ type: work
 title: Tirant lo Blanc
 title_original: ''
 aliases: []
-author: Joanot Martorell
+author: 若阿诺特·马托雷尔
+author_original: Joanot Martorell
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

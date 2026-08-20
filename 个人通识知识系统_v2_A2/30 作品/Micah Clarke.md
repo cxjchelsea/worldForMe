@@ -4,7 +4,8 @@ type: work
 title: Micah Clarke
 title_original: ''
 aliases: []
-author: Conan Doyle
+author: 柯南·道尔
+author_original: Conan Doyle
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Wedding Date
 title_original: ''
 aliases: []
-author: Jasmine Guillory
+author: 贾丝明·吉洛里
+author_original: Jasmine Guillory
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

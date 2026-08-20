@@ -4,7 +4,8 @@ type: work
 title: An African in Greenland
 title_original: ''
 aliases: []
-author: Kpomassie
+author: 托戈·科波马西
+author_original: Kpomassie
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

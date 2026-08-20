@@ -4,7 +4,8 @@ type: work
 title: News of the World
 title_original: ''
 aliases: []
-author: Paulette Jiles
+author: 波莱特·贾尔斯
+author_original: Paulette Jiles
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

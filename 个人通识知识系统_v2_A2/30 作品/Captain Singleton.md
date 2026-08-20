@@ -4,7 +4,8 @@ type: work
 title: Captain Singleton
 title_original: ''
 aliases: []
-author: Daniel Defoe
+author: 丹尼尔·笛福
+author_original: Daniel Defoe
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

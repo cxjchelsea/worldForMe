@@ -4,7 +4,8 @@ type: work
 title: Changó, el gran putas
 title_original: ''
 aliases: []
-author: Afro-Latin史诗性书写
+author: 曼努埃尔·萨帕塔·奥利韦利亚
+author_original: Afro-Latin史诗性书写
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

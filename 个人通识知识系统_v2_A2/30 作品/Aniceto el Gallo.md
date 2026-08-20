@@ -4,7 +4,8 @@ type: work
 title: Aniceto el Gallo
 title_original: ''
 aliases: []
-author: Hilario Ascasubi
+author: 阿斯卡苏比
+author_original: Hilario Ascasubi
 author_source: heading
 year: null
 literary_traditions: []

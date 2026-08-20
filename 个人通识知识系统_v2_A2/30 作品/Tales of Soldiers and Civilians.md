@@ -4,7 +4,8 @@ type: work
 title: Tales of Soldiers and Civilians
 title_original: ''
 aliases: []
-author: Ambrose Bierce
+author: 安布罗斯·比尔斯
+author_original: Ambrose Bierce
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

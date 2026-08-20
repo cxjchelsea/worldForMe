@@ -4,7 +4,8 @@ type: work
 title: Imperium
 title_original: ''
 aliases: []
-author: Robert Harris
+author: 罗伯特·哈里斯
+author_original: Robert Harris
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: "work"
 title: "A代表不在场证明"
 title_original: "A Is for Alibi"
 aliases: []
-author: "Sue Grafton"
+author: "苏·格拉夫顿"
+author_original: Sue Grafton
 author_source: "author_heading"
 year: null
 literary_traditions: []

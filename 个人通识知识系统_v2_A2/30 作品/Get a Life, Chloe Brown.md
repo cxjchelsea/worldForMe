@@ -4,7 +4,8 @@ type: work
 title: Get a Life, Chloe Brown
 title_original: ''
 aliases: []
-author: Talia Hibbert
+author: 塔莉娅·希伯特
+author_original: Talia Hibbert
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

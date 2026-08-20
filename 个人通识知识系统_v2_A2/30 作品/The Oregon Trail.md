@@ -4,7 +4,8 @@ type: work
 title: The Oregon Trail
 title_original: ''
 aliases: []
-author: Francis Parkman
+author: 弗朗西斯·帕克曼
+author_original: Francis Parkman
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

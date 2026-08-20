@@ -4,7 +4,8 @@ type: work
 title: Always Only You
 title_original: ''
 aliases: []
-author: Chloe Liese
+author: 克洛伊·利泽
+author_original: Chloe Liese
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

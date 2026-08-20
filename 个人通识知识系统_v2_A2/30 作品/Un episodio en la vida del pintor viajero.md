@@ -4,7 +4,8 @@ type: work
 title: Un episodio en la vida del pintor viajero
 title_original: ''
 aliases: []
-author: César Aira
+author: 塞萨尔·艾拉
+author_original: César Aira
 author_source: heading
 year: null
 literary_traditions: []

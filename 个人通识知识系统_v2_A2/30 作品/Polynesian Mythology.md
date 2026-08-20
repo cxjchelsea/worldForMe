@@ -4,7 +4,8 @@ type: work
 title: Polynesian Mythology
 title_original: ''
 aliases: []
-author: George Grey
+author: 乔治·格雷
+author_original: George Grey
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

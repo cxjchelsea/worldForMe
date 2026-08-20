@@ -4,7 +4,8 @@ type: work
 title: The Old Ways
 title_original: ''
 aliases: []
-author: Robert Macfarlane
+author: 罗伯特·麦克法伦
+author_original: Robert Macfarlane
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: A Hunger Like No Other
 title_original: ''
 aliases: []
-author: Kresley Cole
+author: 克雷斯莉·科尔
+author_original: Kresley Cole
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Lancelot
 title_original: ''
 aliases: []
-author: 古代
+author: 克雷蒂安·德·特鲁瓦
+author_original: 古代
 author_source: search_heading
 year: null
 literary_traditions: []

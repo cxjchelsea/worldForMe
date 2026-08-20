@@ -4,7 +4,8 @@ type: work
 title: The Middle Passage
 title_original: ''
 aliases: []
-author: V.S. Naipaul
+author: V.S.奈保尔
+author_original: V.S. Naipaul
 author_source: title_map
 year: null
 literary_traditions: []

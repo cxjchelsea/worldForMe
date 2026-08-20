@@ -4,7 +4,8 @@ type: work
 title: Little Brother
 title_original: ''
 aliases: []
-author: Cory Doctorow
+author: 科里·多克托罗
+author_original: Cory Doctorow
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

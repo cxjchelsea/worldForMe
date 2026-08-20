@@ -4,7 +4,8 @@ type: work
 title: A Lady's Life in the Rocky Mountains
 title_original: ''
 aliases: []
-author: Isabella Bird
+author: 伊莎贝拉·伯德
+author_original: Isabella Bird
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Gestaltes en diere
 title_original: ''
 aliases: []
-author: N. P. van Wyk Louw
+author: N.P.范维克·劳
+author_original: N. P. van Wyk Louw
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

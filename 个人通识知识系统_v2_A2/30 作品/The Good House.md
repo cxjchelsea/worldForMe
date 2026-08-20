@@ -4,7 +4,8 @@ type: work
 title: The Good House
 title_original: ''
 aliases: []
-author: Tananarive Due
+author: 塔纳纳里夫·杜
+author_original: Tananarive Due
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

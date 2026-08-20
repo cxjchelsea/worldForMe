@@ -4,7 +4,8 @@ type: work
 title: A Knight's Own Book of Chivalry
 title_original: ''
 aliases: []
-author: Geoffroi de Charny
+author: 若弗鲁瓦·德·沙尔尼
+author_original: Geoffroi de Charny
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

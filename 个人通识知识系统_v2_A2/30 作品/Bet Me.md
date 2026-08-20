@@ -4,7 +4,8 @@ type: work
 title: Bet Me
 title_original: ''
 aliases: []
-author: Jennifer Crusie
+author: 珍妮弗·克鲁西
+author_original: Jennifer Crusie
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

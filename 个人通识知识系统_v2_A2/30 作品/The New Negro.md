@@ -4,7 +4,8 @@ type: work
 title: The New Negro
 title_original: ''
 aliases: []
-author: Alain Locke 编
+author: 阿兰·洛克
+author_original: Alain Locke 编
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

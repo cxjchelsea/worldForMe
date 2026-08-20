@@ -4,7 +4,8 @@ type: work
 title: The Squatter and the Don
 title_original: ''
 aliases: []
-author: Helen Hunt Jackson
+author: 海伦·亨特·杰克逊
+author_original: Helen Hunt Jackson
 author_source: heading
 year: null
 literary_traditions: []

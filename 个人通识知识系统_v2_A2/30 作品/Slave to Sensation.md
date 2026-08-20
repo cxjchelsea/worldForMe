@@ -4,7 +4,8 @@ type: work
 title: Slave to Sensation
 title_original: ''
 aliases: []
-author: Nalini Singh
+author: 纳莉妮·辛格
+author_original: Nalini Singh
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

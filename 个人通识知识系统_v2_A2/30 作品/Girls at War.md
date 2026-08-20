@@ -4,7 +4,8 @@ type: work
 title: Girls at War
 title_original: ''
 aliases: []
-author: Chinua Achebe
+author: 钦努阿·阿契贝
+author_original: Chinua Achebe
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

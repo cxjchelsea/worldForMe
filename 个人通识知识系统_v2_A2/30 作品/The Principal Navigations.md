@@ -4,7 +4,8 @@ type: work
 title: The Principal Navigations...
 title_original: ''
 aliases: []
-author: Richard Hakluyt
+author: 理查德·哈克卢特
+author_original: Richard Hakluyt
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Arrivants
 title_original: ''
 aliases: []
-author: Kamau Brathwaite
+author: 卡莫·布拉思韦特
+author_original: Kamau Brathwaite
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

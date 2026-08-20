@@ -4,7 +4,8 @@ type: work
 title: Travels in West Africa
 title_original: ''
 aliases: []
-author: Mary Kingsley
+author: 玛丽·金斯利
+author_original: Mary Kingsley
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

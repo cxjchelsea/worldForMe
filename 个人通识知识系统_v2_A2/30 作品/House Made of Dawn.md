@@ -4,7 +4,8 @@ type: work
 title: House Made of Dawn
 title_original: ''
 aliases: []
-author: N. Scott Momaday
+author: N.斯科特·莫马迪
+author_original: N. Scott Momaday
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Just Like Home
 title_original: ''
 aliases: []
-author: Sarah Gailey
+author: 萨拉·盖利
+author_original: Sarah Gailey
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

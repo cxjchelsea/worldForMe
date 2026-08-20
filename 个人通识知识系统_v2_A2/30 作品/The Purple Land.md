@@ -4,7 +4,8 @@ type: work
 title: The Purple Land
 title_original: ''
 aliases: []
-author: Hudson
+author: W.H.赫德森
+author_original: Hudson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

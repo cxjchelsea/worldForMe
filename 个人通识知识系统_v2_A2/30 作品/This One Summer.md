@@ -4,7 +4,8 @@ type: work
 title: This One Summer
 title_original: ''
 aliases: []
-author: Mariko & Jillian Tamaki
+author: 玉木真理子 / 吉莉安·玉木
+author_original: Mariko & Jillian Tamaki
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

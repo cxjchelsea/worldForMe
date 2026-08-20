@@ -4,7 +4,8 @@ type: work
 title: Dreaming in Cuban
 title_original: ''
 aliases: []
-author: Cristina García
+author: 克里斯蒂娜·加西亚
+author_original: Cristina García
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

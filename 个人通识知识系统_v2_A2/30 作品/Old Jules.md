@@ -4,7 +4,8 @@ type: work
 title: Old Jules
 title_original: ''
 aliases: []
-author: Mari Sandoz
+author: 玛丽·桑多兹
+author_original: Mari Sandoz
 author_source: heading
 year: null
 literary_traditions: []

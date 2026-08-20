@@ -4,7 +4,8 @@ type: work
 title: Jerilderie Letter
 title_original: ''
 aliases: []
-author: Ned Kelly
+author: 内德·凯利
+author_original: Ned Kelly
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

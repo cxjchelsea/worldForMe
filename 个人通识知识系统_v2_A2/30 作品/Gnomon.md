@@ -4,7 +4,8 @@ type: work
 title: Gnomon
 title_original: ''
 aliases: []
-author: Nick Harkaway
+author: 尼克·哈卡维
+author_original: Nick Harkaway
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

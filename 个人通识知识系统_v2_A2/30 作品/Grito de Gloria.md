@@ -4,7 +4,8 @@ type: work
 title: Grito de Gloria
 title_original: ''
 aliases: []
-author: Acevedo Díaz
+author: 阿塞韦多·迪亚斯
+author_original: Acevedo Díaz
 author_source: heading
 year: null
 literary_traditions: []

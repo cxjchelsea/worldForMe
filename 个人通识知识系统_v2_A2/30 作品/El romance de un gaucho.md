@@ -4,7 +4,8 @@ type: work
 title: El romance de un gaucho
 title_original: ''
 aliases: []
-author: Lynch
+author: 贝尼托·林奇
+author_original: Lynch
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

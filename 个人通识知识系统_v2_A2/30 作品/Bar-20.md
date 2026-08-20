@@ -4,7 +4,8 @@ type: work
 title: Bar-20
 title_original: ''
 aliases: []
-author: Clarence E. Mulford
+author: 克拉伦斯·E.马尔福德
+author_original: Clarence E. Mulford
 author_source: heading
 year: null
 literary_traditions: []

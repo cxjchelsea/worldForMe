@@ -4,7 +4,8 @@ type: work
 title: Across the Black Waters
 title_original: ''
 aliases: []
-author: Mulk Raj Anand
+author: 穆尔克·拉吉·安纳德
+author_original: Mulk Raj Anand
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

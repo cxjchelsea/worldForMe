@@ -4,7 +4,8 @@ type: work
 title: The Absolutely True Diary of a Part-Time Indian
 title_original: ''
 aliases: []
-author: Sherman Alexie
+author: 谢尔曼·阿莱克西
+author_original: Sherman Alexie
 author_source: title_map
 year: null
 literary_traditions: []

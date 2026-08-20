@@ -4,7 +4,8 @@ type: work
 title: The Red Tree
 title_original: ''
 aliases: []
-author: Caitlín R. Kiernan
+author: 凯特琳·R.基尔南
+author_original: Caitlín R. Kiernan
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

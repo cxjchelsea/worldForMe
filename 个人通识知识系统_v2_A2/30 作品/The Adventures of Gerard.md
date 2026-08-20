@@ -4,7 +4,8 @@ type: work
 title: The Adventures of Gerard
 title_original: ''
 aliases: []
-author: Brigadier Gerard
+author: 柯南·道尔
+author_original: Brigadier Gerard
 author_source: heading
 year: null
 literary_traditions: []

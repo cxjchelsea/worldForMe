@@ -4,7 +4,8 @@ type: work
 title: Travels through France and Italy
 title_original: ''
 aliases: []
-author: Smollett
+author: 斯摩莱特
+author_original: Smollett
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

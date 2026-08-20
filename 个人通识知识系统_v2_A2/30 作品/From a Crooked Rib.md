@@ -4,7 +4,8 @@ type: work
 title: From a Crooked Rib
 title_original: ''
 aliases: []
-author: Nuruddin Farah
+author: 努鲁丁·法拉赫
+author_original: Nuruddin Farah
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

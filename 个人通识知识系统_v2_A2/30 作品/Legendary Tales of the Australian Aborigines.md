@@ -4,7 +4,8 @@ type: work
 title: Legendary Tales of the Australian Aborigines
 title_original: ''
 aliases: []
-author: David Unaipon
+author: 戴维·乌奈庞
+author_original: David Unaipon
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Imago Sequence
 title_original: ''
 aliases: []
-author: Laird Barron
+author: 莱尔德·巴伦
+author_original: Laird Barron
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Lone Women
 title_original: ''
 aliases: []
-author: Victor LaValle
+author: 维克多·拉瓦勒
+author_original: Victor LaValle
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

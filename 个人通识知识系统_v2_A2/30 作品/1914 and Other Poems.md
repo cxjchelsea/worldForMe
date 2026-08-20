@@ -4,7 +4,8 @@ type: work
 title: 1914 and Other Poems
 title_original: ''
 aliases: []
-author: Rupert Brooke
+author: 鲁珀特·布鲁克
+author_original: Rupert Brooke
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

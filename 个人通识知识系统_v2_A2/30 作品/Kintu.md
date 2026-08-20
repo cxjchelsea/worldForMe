@@ -4,7 +4,8 @@ type: work
 title: Kintu
 title_original: ''
 aliases: []
-author: 与Makumbi
+author: 珍妮弗·南布西·马昆比
+author_original: 与Makumbi
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

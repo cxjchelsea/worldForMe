@@ -4,7 +4,8 @@ type: work
 title: 'Grande Sertão: Veredas'
 title_original: ''
 aliases: []
-author: Guimarães Rosa
+author: 吉马朗埃斯·罗萨
+author_original: Guimarães Rosa
 author_source: heading
 year: null
 literary_traditions: []

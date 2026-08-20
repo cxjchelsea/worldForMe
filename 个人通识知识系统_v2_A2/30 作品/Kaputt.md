@@ -4,7 +4,8 @@ type: work
 title: Kaputt
 title_original: ''
 aliases: []
-author: Curzio Malaparte
+author: 库尔齐奥·马拉帕尔特
+author_original: Curzio Malaparte
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

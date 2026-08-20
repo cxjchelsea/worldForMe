@@ -4,7 +4,8 @@ type: work
 title: Human Sacrifices
 title_original: ''
 aliases: []
-author: María Fernanda Ampuero
+author: 玛丽亚·费尔南达·安普埃罗
+author_original: María Fernanda Ampuero
 author_source: heading
 year: null
 literary_traditions: []

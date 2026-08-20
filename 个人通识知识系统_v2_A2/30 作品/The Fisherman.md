@@ -4,7 +4,8 @@ type: work
 title: The Fisherman
 title_original: ''
 aliases: []
-author: John Langan
+author: 约翰·兰根
+author_original: John Langan
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

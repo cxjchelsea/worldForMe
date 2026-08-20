@@ -4,7 +4,8 @@ type: work
 title: Reservation Blues
 title_original: ''
 aliases: []
-author: Sherman Alexie
+author: 谢尔曼·阿莱克西
+author_original: Sherman Alexie
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

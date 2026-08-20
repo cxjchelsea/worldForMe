@@ -4,7 +4,8 @@ type: work
 title: Feed
 title_original: ''
 aliases: []
-author: M.T. Anderson
+author: M.T.安德森
+author_original: M.T. Anderson
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

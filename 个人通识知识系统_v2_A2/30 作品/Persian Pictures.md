@@ -4,7 +4,8 @@ type: work
 title: Persian Pictures
 title_original: ''
 aliases: []
-author: Gertrude Bell
+author: 格特鲁德·贝尔
+author_original: Gertrude Bell
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

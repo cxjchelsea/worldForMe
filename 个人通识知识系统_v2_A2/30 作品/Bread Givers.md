@@ -4,7 +4,8 @@ type: work
 title: Bread Givers
 title_original: ''
 aliases: []
-author: Anzia Yezierska
+author: 安齐娅·叶济尔斯卡
+author_original: Anzia Yezierska
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

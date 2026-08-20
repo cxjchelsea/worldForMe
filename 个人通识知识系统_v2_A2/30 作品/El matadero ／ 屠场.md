@@ -4,7 +4,8 @@ type: work
 title: El matadero / 屠场
 title_original: ''
 aliases: []
-author: Esteban Echeverría
+author: 埃斯特万·埃切维里亚
+author_original: Esteban Echeverría
 author_source: heading
 year: null
 literary_traditions: []

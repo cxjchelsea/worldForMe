@@ -4,7 +4,8 @@ type: work
 title: The Surrendered
 title_original: ''
 aliases: []
-author: Chang-rae Lee
+author: 李昌来
+author_original: Chang-rae Lee
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

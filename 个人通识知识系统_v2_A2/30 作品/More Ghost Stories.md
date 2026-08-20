@@ -4,7 +4,8 @@ type: work
 title: More Ghost Stories
 title_original: ''
 aliases: []
-author: M.R. James
+author: M.R.詹姆斯
+author_original: M.R. James
 author_source: heading
 year: null
 literary_traditions: []

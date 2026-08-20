@@ -4,7 +4,8 @@ type: work
 title: Vox
 title_original: ''
 aliases: []
-author: Christina Dalcher
+author: 克里斯蒂娜·达尔彻
+author_original: Christina Dalcher
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

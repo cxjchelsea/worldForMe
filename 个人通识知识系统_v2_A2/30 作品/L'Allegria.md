@@ -4,7 +4,8 @@ type: work
 title: L'Allegria
 title_original: ''
 aliases: []
-author: Giuseppe Ungaretti
+author: 朱塞佩·翁加雷蒂
+author_original: Giuseppe Ungaretti
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

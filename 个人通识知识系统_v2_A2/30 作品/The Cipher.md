@@ -4,7 +4,8 @@ type: work
 title: The Cipher
 title_original: ''
 aliases: []
-author: Kathe Koja
+author: 凯丝·科娅
+author_original: Kathe Koja
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Minty Alley
 title_original: ''
 aliases: []
-author: C. L. R. James
+author: C.L.R.詹姆斯
+author_original: C. L. R. James
 author_source: heading
 year: null
 literary_traditions: []

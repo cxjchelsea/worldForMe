@@ -4,7 +4,8 @@ type: work
 title: Dance Hall of the Dead
 title_original: ''
 aliases: []
-author: Tony Hillerman
+author: 托尼·希勒曼
+author_original: Tony Hillerman
 author_source: heading
 year: null
 literary_traditions: []

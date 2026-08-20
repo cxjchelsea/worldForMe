@@ -4,7 +4,8 @@ type: work
 title: Black Leopard, Red Wolf
 title_original: ''
 aliases: []
-author: Marlon James
+author: 马龙·詹姆斯
+author_original: Marlon James
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

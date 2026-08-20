@@ -4,7 +4,8 @@ type: work
 title: Tadeo Isidoro Cruz小传
 title_original: ''
 aliases: []
-author: Borges
+author: 博尔赫斯
+author_original: Borges
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

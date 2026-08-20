@@ -4,7 +4,8 @@ type: work
 title: Little Big Man
 title_original: ''
 aliases: []
-author: Thomas Berger
+author: 托马斯·伯杰
+author_original: Thomas Berger
 author_source: heading
 year: null
 literary_traditions: []

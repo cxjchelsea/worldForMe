@@ -4,7 +4,8 @@ type: work
 title: Facial Justice
 title_original: ''
 aliases: []
-author: L.P. Hartley
+author: L.P.哈特利
+author_original: L.P. Hartley
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Night Watchman
 title_original: ''
 aliases: []
-author: Louise Erdrich
+author: 路易丝·厄德里奇
+author_original: Louise Erdrich
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

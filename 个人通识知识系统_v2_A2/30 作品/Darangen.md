@@ -4,7 +4,8 @@ type: work
 title: Darangen
 title_original: ''
 aliases: []
-author: 菲律宾Maranao
+author: 佚名
+author_original: 菲律宾Maranao
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Doll Who Ate His Mother
 title_original: ''
 aliases: []
-author: Ramsey Campbell
+author: 拉姆齐·坎贝尔
+author_original: Ramsey Campbell
 author_source: heading
 year: null
 literary_traditions: []

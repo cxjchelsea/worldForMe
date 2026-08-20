@@ -4,7 +4,8 @@ type: work
 title: Crick Crack, Monkey
 title_original: ''
 aliases: []
-author: Merle Hodge
+author: 默尔·霍奇
+author_original: Merle Hodge
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Before I Let Go
 title_original: ''
 aliases: []
-author: Kennedy Ryan
+author: 肯尼迪·瑞安
+author_original: Kennedy Ryan
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

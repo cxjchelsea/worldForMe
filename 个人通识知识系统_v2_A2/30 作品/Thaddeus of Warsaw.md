@@ -4,7 +4,8 @@ type: work
 title: Thaddeus of Warsaw
 title_original: ''
 aliases: []
-author: Jane Porter
+author: 简·波特
+author_original: Jane Porter
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Outlawed
 title_original: ''
 aliases: []
-author: Anna North
+author: 安娜·诺斯
+author_original: Anna North
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

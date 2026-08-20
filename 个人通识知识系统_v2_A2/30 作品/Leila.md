@@ -4,7 +4,8 @@ type: work
 title: Leila
 title_original: ''
 aliases: []
-author: Prayaag Akbar
+author: 普拉亚格·阿克巴尔
+author_original: Prayaag Akbar
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Kernok the Pirate
 title_original: ''
 aliases: []
-author: Eugène Sue
+author: 欧仁·苏
+author_original: Eugène Sue
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

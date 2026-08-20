@@ -4,7 +4,8 @@ type: work
 title: West with the Night
 title_original: ''
 aliases: []
-author: Beryl Markham
+author: 贝丽尔·马卡姆
+author_original: Beryl Markham
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

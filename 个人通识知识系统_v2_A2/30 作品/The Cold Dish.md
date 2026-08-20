@@ -4,7 +4,8 @@ type: work
 title: The Cold Dish
 title_original: ''
 aliases: []
-author: Craig Johnson
+author: 克雷格·约翰逊
+author_original: Craig Johnson
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

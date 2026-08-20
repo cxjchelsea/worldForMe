@@ -4,7 +4,8 @@ type: work
 title: In an Antique Land
 title_original: ''
 aliases: []
-author: Amitav Ghosh
+author: 阿米塔夫·高希
+author_original: Amitav Ghosh
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

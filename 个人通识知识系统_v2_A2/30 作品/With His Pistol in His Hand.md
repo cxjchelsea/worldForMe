@@ -4,7 +4,8 @@ type: work
 title: With His Pistol in His Hand
 title_original: ''
 aliases: []
-author: Américo Paredes
+author: 阿梅里科·帕雷德斯
+author_original: Américo Paredes
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

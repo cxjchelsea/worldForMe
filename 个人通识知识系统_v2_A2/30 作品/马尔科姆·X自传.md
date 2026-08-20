@@ -4,7 +4,8 @@ type: work
 title: 马尔科姆·X自传
 title_original: ''
 aliases: []
-author: Malcolm X / Alex Haley
+author: 马尔科姆·X / 亚历克斯·哈利
+author_original: Malcolm X / Alex Haley
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

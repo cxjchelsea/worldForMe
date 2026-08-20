@@ -4,7 +4,8 @@ type: work
 title: How the Soldier Repairs the Gramophone
 title_original: ''
 aliases: []
-author: Saša Stanišić
+author: 萨沙·斯塔尼希奇
+author_original: Saša Stanišić
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

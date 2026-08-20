@@ -4,7 +4,8 @@ type: work
 title: A Tour on the Prairies
 title_original: ''
 aliases: []
-author: Washington Irving
+author: 华盛顿·欧文
+author_original: Washington Irving
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

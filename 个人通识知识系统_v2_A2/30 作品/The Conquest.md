@@ -4,7 +4,8 @@ type: work
 title: The Conquest
 title_original: ''
 aliases: []
-author: Oscar Micheaux
+author: 奥斯卡·米肖
+author_original: Oscar Micheaux
 author_source: heading
 year: null
 literary_traditions: []

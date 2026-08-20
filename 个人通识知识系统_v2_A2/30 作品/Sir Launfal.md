@@ -4,7 +4,8 @@ type: work
 title: Sir Launfal
 title_original: ''
 aliases: []
-author: Thomas Chestre
+author: 托马斯·切斯特
+author_original: Thomas Chestre
 author_source: title_map
 year: null
 literary_traditions: []

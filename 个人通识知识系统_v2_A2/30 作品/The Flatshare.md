@@ -4,7 +4,8 @@ type: work
 title: The Flatshare
 title_original: ''
 aliases: []
-author: Beth O'Leary
+author: 贝丝·奥利里
+author_original: Beth O'Leary
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

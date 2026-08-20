@@ -4,7 +4,8 @@ type: work
 title: Unsouled
 title_original: ''
 aliases: []
-author: Will Wight
+author: 威尔·怀特
+author_original: Will Wight
 author_source: heading
 year: null
 literary_traditions: []

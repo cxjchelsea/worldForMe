@@ -4,7 +4,8 @@ type: work
 title: Facundo
 title_original: ''
 aliases: []
-author: Sarmiento
+author: 萨米恩托
+author_original: Sarmiento
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

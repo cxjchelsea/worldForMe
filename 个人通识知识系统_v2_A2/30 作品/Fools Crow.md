@@ -4,7 +4,8 @@ type: work
 title: Fools Crow
 title_original: ''
 aliases: []
-author: James Welch
+author: 詹姆斯·韦尔奇
+author_original: James Welch
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

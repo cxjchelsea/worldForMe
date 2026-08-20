@@ -4,7 +4,8 @@ type: work
 title: Masterman Ready
 title_original: ''
 aliases: []
-author: Marryat
+author: 弗雷德里克·马里亚特
+author_original: Marryat
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

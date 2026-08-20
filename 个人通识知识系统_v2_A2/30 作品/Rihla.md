@@ -5,7 +5,8 @@ title: Rihla
 title_original: ''
 aliases:
 - Rihla / 伊本·白图泰游记
-author: Ibn Battuta
+author: 伊本·白图泰
+author_original: Ibn Battuta
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

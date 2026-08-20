@@ -4,7 +4,8 @@ type: work
 title: Biografía de Tadeo Isidoro Cruz
 title_original: ''
 aliases: []
-author: Jorge Luis Borges
+author: 博尔赫斯
+author_original: Jorge Luis Borges
 author_source: title_map
 year: null
 literary_traditions: []

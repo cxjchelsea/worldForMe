@@ -4,7 +4,8 @@ type: work
 title: QualityLand
 title_original: ''
 aliases: []
-author: Marc-Uwe Kling
+author: 马克-乌韦·克林
+author_original: Marc-Uwe Kling
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

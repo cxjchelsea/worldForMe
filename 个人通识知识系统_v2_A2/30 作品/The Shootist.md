@@ -4,7 +4,8 @@ type: work
 title: The Shootist
 title_original: ''
 aliases: []
-author: Glendon Swarthout
+author: 格伦登·斯沃索特
+author_original: Glendon Swarthout
 author_source: title_map
 year: null
 literary_traditions: []

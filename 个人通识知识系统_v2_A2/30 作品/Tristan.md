@@ -4,7 +4,8 @@ type: work
 title: Tristan
 title_original: ''
 aliases: []
-author: Béroul
+author: 贝鲁尔
+author_original: Béroul
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

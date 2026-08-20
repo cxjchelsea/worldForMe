@@ -4,7 +4,8 @@ type: work
 title: Paulino Lucero
 title_original: ''
 aliases: []
-author: Ascasubi
+author: 阿斯卡苏比
+author_original: Ascasubi
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

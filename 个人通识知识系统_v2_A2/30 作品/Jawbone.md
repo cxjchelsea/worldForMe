@@ -4,7 +4,8 @@ type: work
 title: Jawbone
 title_original: ''
 aliases: []
-author: Mónica Ojeda
+author: 莫妮卡·奥赫达
+author_original: Mónica Ojeda
 author_source: heading
 year: null
 literary_traditions: []

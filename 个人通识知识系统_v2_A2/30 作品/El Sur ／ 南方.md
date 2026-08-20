@@ -4,7 +4,8 @@ type: work
 title: El Sur / 南方
 title_original: ''
 aliases: []
-author: Jorge Luis Borges
+author: 博尔赫斯
+author_original: Jorge Luis Borges
 author_source: title_map
 year: null
 literary_traditions: []

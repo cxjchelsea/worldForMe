@@ -4,7 +4,8 @@ type: work
 title: Uninhabited House
 title_original: ''
 aliases: []
-author: Charlotte Riddell
+author: 夏洛特·里德尔
+author_original: Charlotte Riddell
 author_source: heading
 year: null
 literary_traditions: []

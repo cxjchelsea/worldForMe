@@ -4,7 +4,8 @@ type: work
 title: Whitney, My Love
 title_original: ''
 aliases: []
-author: Judith McNaught
+author: 朱迪思·麦克诺特
+author_original: Judith McNaught
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

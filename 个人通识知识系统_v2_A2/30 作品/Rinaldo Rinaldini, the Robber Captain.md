@@ -4,7 +4,8 @@ type: work
 title: Rinaldo Rinaldini, the Robber Captain
 title_original: ''
 aliases: []
-author: Christian August Vulpius
+author: 克里斯蒂安·奥古斯特·武尔皮乌斯
+author_original: Christian August Vulpius
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Los bandidos de Río Frío
 title_original: ''
 aliases: []
-author: Manuel Payno
+author: 曼努埃尔·派诺
+author_original: Manuel Payno
 author_source: heading
 year: null
 literary_traditions: []

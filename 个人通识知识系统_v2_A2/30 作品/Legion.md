@@ -4,7 +4,8 @@ type: work
 title: Legion
 title_original: ''
 aliases: []
-author: William Peter Blatty
+author: 威廉·彼得·布拉蒂
+author_original: William Peter Blatty
 author_source: heading
 year: null
 literary_traditions: []

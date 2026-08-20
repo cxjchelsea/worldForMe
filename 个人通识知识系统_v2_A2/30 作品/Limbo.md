@@ -4,7 +4,8 @@ type: work
 title: Limbo
 title_original: ''
 aliases: []
-author: Bernard Wolfe
+author: 伯纳德·沃尔夫
+author_original: Bernard Wolfe
 author_source: batch2_source_inferred
 year: null
 literary_traditions: []

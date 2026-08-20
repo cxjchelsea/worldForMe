@@ -4,7 +4,8 @@ type: work
 title: The Ritual
 title_original: ''
 aliases: []
-author: Adam Nevill
+author: 亚当·内维尔
+author_original: Adam Nevill
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

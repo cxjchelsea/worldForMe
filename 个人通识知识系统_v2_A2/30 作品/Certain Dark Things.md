@@ -4,7 +4,8 @@ type: work
 title: Certain Dark Things
 title_original: ''
 aliases: []
-author: Silvia Moreno-Garcia
+author: 西尔维娅·莫雷诺-加西亚
+author_original: Silvia Moreno-Garcia
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

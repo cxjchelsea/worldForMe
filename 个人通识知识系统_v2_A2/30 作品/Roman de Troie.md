@@ -4,7 +4,8 @@ type: work
 title: Roman de Troie
 title_original: ''
 aliases: []
-author: Benoît de Sainte-Maure
+author: 伯努瓦·德·圣莫尔
+author_original: Benoît de Sainte-Maure
 author_source: title_map
 year: null
 literary_traditions: []

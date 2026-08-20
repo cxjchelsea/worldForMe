@@ -4,7 +4,8 @@ type: work
 title: Love Only Once
 title_original: ''
 aliases: []
-author: Johanna Lindsey
+author: 约翰娜·林赛
+author_original: Johanna Lindsey
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

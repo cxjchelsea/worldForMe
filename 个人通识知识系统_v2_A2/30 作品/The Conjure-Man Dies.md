@@ -4,7 +4,8 @@ type: work
 title: The Conjure-Man Dies
 title_original: ''
 aliases: []
-author: Rudolph Fisher
+author: 鲁道夫·费希尔
+author_original: Rudolph Fisher
 author_source: batch4_source_inferred
 year: null
 literary_traditions: []

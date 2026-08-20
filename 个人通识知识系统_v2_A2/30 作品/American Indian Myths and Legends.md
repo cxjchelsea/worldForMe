@@ -4,7 +4,8 @@ type: work
 title: American Indian Myths and Legends
 title_original: ''
 aliases: []
-author: Richard Erdoes / Alfonso Ortiz
+author: 理查德·厄尔多斯 / 阿方索·奥尔蒂斯
+author_original: Richard Erdoes / Alfonso Ortiz
 author_source: title_map
 year: null
 literary_traditions: []

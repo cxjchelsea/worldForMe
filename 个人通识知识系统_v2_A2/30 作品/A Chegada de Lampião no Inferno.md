@@ -4,7 +4,8 @@ type: work
 title: A Chegada de Lampião no Inferno
 title_original: ''
 aliases: []
-author: José Pacheco
+author: 何塞·帕切科
+author_original: José Pacheco
 author_source: title_map
 year: null
 literary_traditions: []

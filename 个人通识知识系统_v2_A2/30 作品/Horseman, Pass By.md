@@ -4,7 +4,8 @@ type: work
 title: Horseman, Pass By
 title_original: ''
 aliases: []
-author: Larry McMurtry
+author: 拉里·麦克默特里
+author_original: Larry McMurtry
 author_source: title_map
 year: null
 literary_traditions: []

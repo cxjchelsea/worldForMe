@@ -4,7 +4,8 @@ type: work
 title: The Chant of Jimmie Blacksmith
 title_original: ''
 aliases: []
-author: Thomas Keneally
+author: 托马斯·基尼利
+author_original: Thomas Keneally
 author_source: heading
 year: null
 literary_traditions: []

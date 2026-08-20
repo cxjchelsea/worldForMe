@@ -4,7 +4,8 @@ type: work
 title: My Side of the Mountain
 title_original: ''
 aliases: []
-author: Jean Craighead George
+author: 琼·克雷格黑德·乔治
+author_original: Jean Craighead George
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

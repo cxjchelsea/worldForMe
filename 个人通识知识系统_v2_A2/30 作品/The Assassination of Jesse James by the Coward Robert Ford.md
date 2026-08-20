@@ -4,7 +4,8 @@ type: work
 title: The Assassination of Jesse James by the Coward Robert Ford
 title_original: ''
 aliases: []
-author: Ron Hansen
+author: 罗恩·汉森
+author_original: Ron Hansen
 author_source: heading
 year: null
 literary_traditions: []

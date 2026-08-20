@@ -4,7 +4,8 @@ type: work
 title: The Light at the End
 title_original: ''
 aliases: []
-author: John Skipp / Craig Spector
+author: 约翰·斯基普 / 克雷格·斯佩克特
+author_original: John Skipp / Craig Spector
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

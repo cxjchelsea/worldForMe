@@ -4,7 +4,8 @@ type: work
 title: Excalibur
 title_original: ''
 aliases: []
-author: Bernard Cornwell
+author: 伯纳德·康威尔
+author_original: Bernard Cornwell
 author_source: heading
 year: null
 literary_traditions: []

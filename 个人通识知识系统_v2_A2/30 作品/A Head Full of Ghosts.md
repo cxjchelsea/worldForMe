@@ -4,7 +4,8 @@ type: work
 title: A Head Full of Ghosts
 title_original: ''
 aliases: []
-author: Paul Tremblay
+author: 保罗·特朗布莱
+author_original: Paul Tremblay
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

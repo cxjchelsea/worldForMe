@@ -4,7 +4,8 @@ type: work
 title: Red, White & Royal Blue
 title_original: ''
 aliases: []
-author: Casey McQuiston
+author: 凯西·麦奎斯顿
+author_original: Casey McQuiston
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: Buffalo Wagons
 title_original: ''
 aliases: []
-author: Elmer Kelton
+author: 埃尔默·凯尔顿
+author_original: Elmer Kelton
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

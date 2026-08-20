@@ -4,7 +4,8 @@ type: work
 title: La liebre
 title_original: ''
 aliases: []
-author: Aira
+author: 塞萨尔·艾拉
+author_original: Aira
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

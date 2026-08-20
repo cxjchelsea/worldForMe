@@ -4,7 +4,8 @@ type: work
 title: El gaucho Martín Fierro
 title_original: ''
 aliases: []
-author: Hernández
+author: 何塞·埃尔南德斯
+author_original: Hernández
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

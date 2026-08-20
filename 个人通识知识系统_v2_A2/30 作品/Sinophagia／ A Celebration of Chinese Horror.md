@@ -4,7 +4,8 @@ type: work
 title: 'Sinophagia: A Celebration of Chinese Horror'
 title_original: ''
 aliases: []
-author: Xueting C. Ni
+author: 倪雪婷
+author_original: Xueting C. Ni
 author_source: title_map
 year: null
 literary_traditions: []

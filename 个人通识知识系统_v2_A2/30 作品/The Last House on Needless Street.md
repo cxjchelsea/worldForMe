@@ -4,7 +4,8 @@ type: work
 title: The Last House on Needless Street
 title_original: ''
 aliases: []
-author: Catriona Ward
+author: 卡特里奥娜·沃德
+author_original: Catriona Ward
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

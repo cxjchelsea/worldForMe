@@ -4,7 +4,8 @@ type: work
 title: The Kiss Quotient
 title_original: ''
 aliases: []
-author: Helen Hoang
+author: 海伦·黄
+author_original: Helen Hoang
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

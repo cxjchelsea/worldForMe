@@ -4,7 +4,8 @@ type: work
 title: Redeployment
 title_original: ''
 aliases: []
-author: Phil Klay
+author: 菲尔·克莱
+author_original: Phil Klay
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

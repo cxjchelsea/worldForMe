@@ -4,7 +4,8 @@ type: work
 title: The Saga of Billy the Kid
 title_original: ''
 aliases: []
-author: Walter Noble Burns
+author: 沃尔特·诺布尔·伯恩斯
+author_original: Walter Noble Burns
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

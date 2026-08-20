@@ -4,7 +4,8 @@ type: work
 title: The Boy Hunters
 title_original: ''
 aliases: []
-author: Mayne Reid
+author: 梅恩·里德
+author_original: Mayne Reid
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: The Led-Horse Claim
 title_original: ''
 aliases: []
-author: Mary Hallock Foote
+author: 玛丽·哈洛克·富特
+author_original: Mary Hallock Foote
 author_source: heading
 year: null
 literary_traditions: []

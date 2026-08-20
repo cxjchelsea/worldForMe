@@ -4,7 +4,8 @@ type: work
 title: The Yellow Birds
 title_original: ''
 aliases: []
-author: Kevin Powers
+author: 凯文·鲍尔斯
+author_original: Kevin Powers
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

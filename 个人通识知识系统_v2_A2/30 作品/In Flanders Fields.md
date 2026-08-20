@@ -4,7 +4,8 @@ type: work
 title: In Flanders Fields
 title_original: ''
 aliases: []
-author: John McCrae
+author: 约翰·麦克雷
+author_original: John McCrae
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

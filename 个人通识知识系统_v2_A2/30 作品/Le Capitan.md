@@ -4,7 +4,8 @@ type: work
 title: Le Capitan
 title_original: ''
 aliases: []
-author: Le Capitan
+author: 米歇尔·泽瓦科
+author_original: Le Capitan
 author_source: heading
 year: null
 literary_traditions: []

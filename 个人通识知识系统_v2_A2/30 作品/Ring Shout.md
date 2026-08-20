@@ -4,7 +4,8 @@ type: work
 title: Ring Shout
 title_original: ''
 aliases: []
-author: P. Djèlí Clark
+author: P.杰利·克拉克
+author_original: P. Djèlí Clark
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

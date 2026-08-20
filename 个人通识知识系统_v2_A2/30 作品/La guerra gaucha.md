@@ -4,7 +4,8 @@ type: work
 title: La guerra gaucha
 title_original: ''
 aliases: []
-author: Lugones
+author: 莱奥波尔多·卢贡内斯
+author_original: Lugones
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

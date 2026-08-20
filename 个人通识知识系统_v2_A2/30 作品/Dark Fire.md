@@ -4,7 +4,8 @@ type: work
 title: Dark Fire
 title_original: ''
 aliases: []
-author: C.J. Sansom
+author: C.J.桑瑟姆
+author_original: C.J. Sansom
 author_source: heading
 year: null
 literary_traditions: []

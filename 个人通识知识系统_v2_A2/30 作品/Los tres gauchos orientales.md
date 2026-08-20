@@ -4,7 +4,8 @@ type: work
 title: Los tres gauchos orientales
 title_original: ''
 aliases: []
-author: Lussich
+author: 安东尼奥·卢西奇
+author_original: Lussich
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

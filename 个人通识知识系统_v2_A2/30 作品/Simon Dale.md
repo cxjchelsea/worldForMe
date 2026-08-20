@@ -4,7 +4,8 @@ type: work
 title: Simon Dale
 title_original: ''
 aliases: []
-author: Anthony Hope
+author: 安东尼·霍普
+author_original: Anthony Hope
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

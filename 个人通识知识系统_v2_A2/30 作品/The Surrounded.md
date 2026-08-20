@@ -4,7 +4,8 @@ type: work
 title: The Surrounded
 title_original: ''
 aliases: []
-author: "D'Arcy McNickle"
+author: "达西·麦克尼克尔"
+author_original: D'Arcy McNickle
 author_source: heading
 year: null
 literary_traditions: []

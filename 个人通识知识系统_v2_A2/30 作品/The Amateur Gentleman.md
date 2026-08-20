@@ -4,7 +4,8 @@ type: work
 title: The Amateur Gentleman
 title_original: ''
 aliases: []
-author: Jeffery Farnol
+author: 杰弗里·法诺尔
+author_original: Jeffery Farnol
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

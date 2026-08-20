@@ -5,7 +5,8 @@ title: Missionary Travels and Researches in South Africa
 title_original: Missionary Travels
 aliases:
 - Missionary Travels
-author: Livingstone
+author: 戴维·利文斯通
+author_original: Livingstone
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

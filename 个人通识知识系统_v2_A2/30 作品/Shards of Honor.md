@@ -4,7 +4,8 @@ type: work
 title: Shards of Honor
 title_original: ''
 aliases: []
-author: Lois McMaster Bujold
+author: 洛伊斯·麦克马斯特·比约德
+author_original: Lois McMaster Bujold
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

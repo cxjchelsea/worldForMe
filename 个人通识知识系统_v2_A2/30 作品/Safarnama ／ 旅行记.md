@@ -5,7 +5,8 @@ title: Safarnama / 旅行记
 title_original: Safarnama
 aliases:
 - Safarnama
-author: Nasir Khusraw
+author: 纳赛尔·霍斯陆
+author_original: Nasir Khusraw
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

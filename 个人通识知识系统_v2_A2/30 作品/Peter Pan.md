@@ -4,7 +4,8 @@ type: work
 title: Peter Pan
 title_original: ''
 aliases: []
-author: J.M. Barrie
+author: J.M.巴里
+author_original: J.M. Barrie
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

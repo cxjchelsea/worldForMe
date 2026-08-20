@@ -4,7 +4,8 @@ type: work
 title: O Gaúcho
 title_original: ''
 aliases: []
-author: José de Alencar
+author: 若泽·德·阿伦卡尔
+author_original: José de Alencar
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

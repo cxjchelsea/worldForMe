@@ -4,7 +4,8 @@ type: work
 title: Inland
 title_original: ''
 aliases: []
-author: Téa Obreht
+author: 特娅·奥布雷赫特
+author_original: Téa Obreht
 author_source: heading
 year: null
 literary_traditions: []

@@ -4,7 +4,8 @@ type: work
 title: An Area of Darkness
 title_original: ''
 aliases: []
-author: Naipaul
+author: V.S.奈保尔
+author_original: Naipaul
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

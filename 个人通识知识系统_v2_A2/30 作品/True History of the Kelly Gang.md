@@ -4,7 +4,8 @@ type: work
 title: True History of the Kelly Gang
 title_original: ''
 aliases: []
-author: Peter Carey
+author: 彼得·凯里
+author_original: Peter Carey
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

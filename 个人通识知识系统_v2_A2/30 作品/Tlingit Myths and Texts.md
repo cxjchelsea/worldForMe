@@ -4,7 +4,8 @@ type: work
 title: Tlingit Myths and Texts
 title_original: ''
 aliases: []
-author: John R. Swanton
+author: 约翰·R.斯旺顿
+author_original: John R. Swanton
 author_source: title_map
 year: null
 literary_traditions: []

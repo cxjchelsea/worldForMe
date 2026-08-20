@@ -4,7 +4,8 @@ type: work
 title: Flashman
 title_original: ''
 aliases: []
-author: Flashman系列，从
+author: 乔治·麦克唐纳·弗雷泽
+author_original: Flashman系列，从
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

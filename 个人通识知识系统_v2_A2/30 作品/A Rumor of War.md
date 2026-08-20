@@ -4,7 +4,8 @@ type: work
 title: A Rumor of War
 title_original: ''
 aliases: []
-author: Philip Caputo
+author: 菲利普·卡普托
+author_original: Philip Caputo
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

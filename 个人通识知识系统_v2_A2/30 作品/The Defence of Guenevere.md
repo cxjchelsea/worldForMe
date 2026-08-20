@@ -4,7 +4,8 @@ type: work
 title: The Defence of Guenevere
 title_original: ''
 aliases: []
-author: William Morris
+author: 威廉·莫里斯
+author_original: William Morris
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

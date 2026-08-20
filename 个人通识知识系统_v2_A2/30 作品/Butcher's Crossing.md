@@ -4,7 +4,8 @@ type: work
 title: Butcher's Crossing
 title_original: ''
 aliases: []
-author: John Williams
+author: 约翰·威廉斯
+author_original: John Williams
 author_source: heading
 year: null
 literary_traditions: []

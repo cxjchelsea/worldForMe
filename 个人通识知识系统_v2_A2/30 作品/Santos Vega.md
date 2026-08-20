@@ -4,7 +4,8 @@ type: work
 title: Santos Vega
 title_original: ''
 aliases: []
-author: Obligado
+author: 拉斐尔·奥夫利加多
+author_original: Obligado
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

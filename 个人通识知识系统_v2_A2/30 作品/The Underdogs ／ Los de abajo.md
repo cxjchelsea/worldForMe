@@ -4,7 +4,8 @@ type: work
 title: The Underdogs / Los de abajo
 title_original: ''
 aliases: []
-author: Mariano Azuela
+author: 马里亚诺·阿苏埃拉
+author_original: Mariano Azuela
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []

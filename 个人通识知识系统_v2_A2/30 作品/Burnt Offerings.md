@@ -4,7 +4,8 @@ type: work
 title: Burnt Offerings
 title_original: ''
 aliases: []
-author: Robert Marasco
+author: 罗伯特·马拉斯科
+author_original: Robert Marasco
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

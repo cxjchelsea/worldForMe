@@ -4,7 +4,8 @@ type: work
 title: Scary Stories to Tell in the Dark
 title_original: ''
 aliases: []
-author: Alvin Schwartz
+author: 阿尔文·施瓦茨
+author_original: Alvin Schwartz
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

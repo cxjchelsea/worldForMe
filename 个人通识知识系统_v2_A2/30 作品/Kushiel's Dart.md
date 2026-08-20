@@ -4,7 +4,8 @@ type: work
 title: Kushiel's Dart
 title_original: ''
 aliases: []
-author: Jacqueline Carey
+author: 杰奎琳·凯里
+author_original: Jacqueline Carey
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

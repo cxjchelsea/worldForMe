@@ -4,7 +4,8 @@ type: work
 title: The Old Patagonian Express
 title_original: ''
 aliases: []
-author: Paul Theroux
+author: 保罗·索鲁
+author_original: Paul Theroux
 author_source: batch3_source_inferred
 year: null
 literary_traditions: []

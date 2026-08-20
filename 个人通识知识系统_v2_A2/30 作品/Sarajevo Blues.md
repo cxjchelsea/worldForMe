@@ -4,7 +4,8 @@ type: work
 title: Sarajevo Blues
 title_original: ''
 aliases: []
-author: Semezdin Mehmedinović
+author: 塞梅兹丁·梅赫梅迪诺维奇
+author_original: Semezdin Mehmedinović
 author_source: batch5_source_inferred
 year: null
 literary_traditions: []

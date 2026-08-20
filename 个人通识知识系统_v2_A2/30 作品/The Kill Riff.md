@@ -4,7 +4,8 @@ type: work
 title: The Kill Riff
 title_original: ''
 aliases: []
-author: David J. Schow
+author: 戴维·J.肖
+author_original: David J. Schow
 author_source: batch1_source_inferred
 year: null
 literary_traditions: []

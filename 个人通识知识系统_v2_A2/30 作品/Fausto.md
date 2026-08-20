@@ -4,7 +4,8 @@ type: work
 title: Fausto
 title_original: ''
 aliases: []
-author: del Campo的
+author: 埃斯塔尼斯劳·德尔·坎波
+author_original: del Campo的
 author_source: batch6_source_inferred
 year: null
 literary_traditions: []
