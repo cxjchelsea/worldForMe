@@ -1,0 +1,55 @@
+filters:
+  and:
+    - type == "author"
+properties:
+  file.name:
+    displayName: 作者实体
+  name:
+    displayName: 标准姓名
+  aliases:
+    displayName: 别名 / 其他译名
+  birth_year:
+    displayName: 生年
+  death_year:
+    displayName: 卒年
+  regions:
+    displayName: 地域 / 文学传统
+  movements:
+    displayName: 思潮 / 美学关联
+  author_status:
+    displayName: 追读状态
+  author_map_status:
+    displayName: 作者专题
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部作者实体
+    order:
+      - file.name
+      - aliases
+      - author_status
+      - author_map_status
+      - regions
+      - movements
+      - id
+  - type: table
+    name: 正在追读
+    filters:
+      and:
+        - author_status == "追读"
+    order:
+      - file.name
+      - author_map_status
+      - regions
+      - id
+  - type: table
+    name: 已建作者专题
+    filters:
+      and:
+        - author_map_status == "已建立"
+    order:
+      - file.name
+      - author_status
+      - regions
+      - id
