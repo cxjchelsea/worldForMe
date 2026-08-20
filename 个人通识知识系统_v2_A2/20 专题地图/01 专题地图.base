@@ -12,8 +12,8 @@ properties:
     displayName: 角色
   parent_topic:
     displayName: 上级专题
-  source_status:
-    displayName: 迁移状态
+  path_status:
+    displayName: 路径状态
   id:
     displayName: 稳定 ID
 views:
