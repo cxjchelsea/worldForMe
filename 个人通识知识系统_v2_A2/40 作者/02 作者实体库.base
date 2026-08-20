@@ -16,10 +16,6 @@ properties:
     displayName: 地域
   note.movements:
     displayName: 思潮
-  note.author_status:
-    displayName: 追读状态
-  note.reading_goal:
-    displayName: 追读目标
   note.author_map_status:
     displayName: 专题状态
   note.id:
@@ -34,24 +30,6 @@ views:
       - death_year
       - regions
       - movements
-      - author_status
-      - reading_goal
-      - author_map_status
-      - id
-  - type: table
-    name: 正在追读
-    filters:
-      and:
-        - author_status == "追读"
-    order:
-      - file.name
-      - aliases
-      - birth_year
-      - death_year
-      - regions
-      - movements
-      - author_status
-      - reading_goal
       - author_map_status
       - id
   - type: table
@@ -66,7 +44,5 @@ views:
       - death_year
       - regions
       - movements
-      - author_status
-      - reading_goal
       - author_map_status
       - id

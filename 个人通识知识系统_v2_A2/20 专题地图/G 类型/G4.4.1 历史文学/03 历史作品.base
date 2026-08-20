@@ -7,12 +7,8 @@ properties:
     displayName: "作品"
   note.author:
     displayName: "作者"
-  note.year:
-    displayName: "年份"
   note.read_status:
     displayName: "阅读状态"
-  note.author_reading_priority:
-    displayName: "追读优先级"
   note.topic_links:
     displayName: "专题"
   note.topics:
@@ -43,9 +39,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -65,9 +59,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -88,9 +80,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -110,9 +100,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -132,9 +120,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -154,9 +140,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
@@ -178,9 +162,7 @@ views:
     order:
       - file.name
       - author
-      - year
       - read_status
-      - author_reading_priority
       - topic_links
       - historical_priority
       - historical_history_cluster
