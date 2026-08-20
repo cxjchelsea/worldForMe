@@ -1,0 +1,122 @@
+filters:
+  and:
+    - type == "work"
+    - canon_level != null
+formulas:
+  level_zh: if(canon_level, canon_level.replace("Extended", "扩展").replace("Major", "主要").replace("Core", "核心"), "")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.canon_level:
+    displayName: 层级
+  formula.level_zh:
+    displayName: 层级
+  note.canon_era:
+    displayName: 时代
+  note.canon_region:
+    displayName: 地域
+  note.canon_genre:
+    displayName: 类型
+  note.read_status:
+    displayName: 阅读状态
+  note.topic_links:
+    displayName: 专题
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域轴
+  note.axis_g:
+    displayName: 类型轴
+  note.canon_id:
+    displayName: 名著编号
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 按层级
+    groupBy:
+      property: formula.level_zh
+      direction: ASC
+    order:
+      - formula.level_zh
+      - file.name
+      - author
+      - canon_era
+      - canon_region
+      - canon_genre
+      - read_status
+      - topic_links
+  - type: table
+    name: 按时代
+    groupBy:
+      property: canon_era
+      direction: ASC
+    order:
+      - canon_era
+      - formula.level_zh
+      - file.name
+      - author
+      - canon_region
+      - canon_genre
+      - read_status
+      - topic_links
+  - type: table
+    name: 按地域
+    groupBy:
+      property: canon_region
+      direction: ASC
+    order:
+      - canon_region
+      - formula.level_zh
+      - file.name
+      - author
+      - canon_era
+      - canon_genre
+      - read_status
+      - topic_links
+  - type: table
+    name: 按类型
+    groupBy:
+      property: canon_genre
+      direction: ASC
+    order:
+      - canon_genre
+      - formula.level_zh
+      - file.name
+      - author
+      - canon_era
+      - canon_region
+      - read_status
+      - topic_links
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    groupBy:
+      property: formula.level_zh
+      direction: ASC
+    order:
+      - formula.level_zh
+      - file.name
+      - author
+      - canon_era
+      - canon_region
+      - canon_genre
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: formula.level_zh
+      direction: ASC
+    order:
+      - formula.level_zh
+      - file.name
+      - author
+      - topic_links
