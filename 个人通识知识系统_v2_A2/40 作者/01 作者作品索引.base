@@ -8,10 +8,14 @@ properties:
     displayName: 标准书名
   author:
     displayName: 作者
+  author_original:
+    displayName: 作者原文名
   year:
     displayName: 首次出版年
   read_status:
     displayName: 阅读状态
+  author_reading_priority:
+    displayName: 作者追读优先级
   topics:
     displayName: 专题
   axis_t:
@@ -37,6 +41,7 @@ views:
     order:
       - file.name
       - read_status
+      - author_reading_priority
       - year
       - topics
       - id
@@ -67,6 +72,7 @@ views:
       direction: ASC
     order:
       - file.name
+      - author_reading_priority
       - year
       - topics
       - id
