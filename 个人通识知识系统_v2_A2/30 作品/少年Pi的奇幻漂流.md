@@ -26,7 +26,7 @@ axis_source: read_calibrated
 topics:
 - WL-TOPIC-N2-UNRELIABLE
 topic_links:
-- '[[20 专题地图/N 叙事/N2 不可靠叙述/00 不可靠叙述]]'
+- '[[20 专题地图/N 叙事/N2.2.2 不可靠叙述/00 不可靠叙述]]'
 unreliable_priority: ★
 unreliable_modes:
 - 叙事真相
@@ -56,7 +56,7 @@ batch5_source_refs:
 
 ## 专题位置
 
-- [[20 专题地图/N 叙事/N2 不可靠叙述/00 不可靠叙述|不可靠叙述]]
+- [[20 专题地图/N 叙事/N2.2.2 不可靠叙述/00 不可靠叙述|不可靠叙述]]
   - 优先级：★
   - 不可靠机制：叙事真相
 

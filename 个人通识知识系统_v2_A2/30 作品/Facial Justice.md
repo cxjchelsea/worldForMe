@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-G46-DYSTOPIA
 topic_links:
-- '[[20 专题地图/G 类型/G4.6 反乌托邦文学/00 反乌托邦文学]]'
+- '[[20 专题地图/G 类型/G4.6.2 反乌托邦文学/00 反乌托邦文学]]'
 dystopia_priority: ◆
 dystopia_history_cluster: 现代经典形成：我们、美丽新世界、1984与冷战
 dystopia_control_modes: []
@@ -32,7 +32,7 @@ batch2_source_refs:
 
 ## 专题位置
 
-- [[20 专题地图/G 类型/G4.6 反乌托邦文学/00 反乌托邦文学|反乌托邦文学]]
+- [[20 专题地图/G 类型/G4.6.2 反乌托邦文学/00 反乌托邦文学|反乌托邦文学]]
   - 专题优先级：◆
   - 历史位置：现代经典形成：我们、美丽新世界、1984与冷战
 

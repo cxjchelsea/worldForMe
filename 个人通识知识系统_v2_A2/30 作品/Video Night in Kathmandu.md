@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-G7-TRAVEL
 topic_links:
-- '[[20 专题地图/G 类型/G7 旅行文学/00 旅行文学]]'
+- '[[20 专题地图/G 类型/G7.4 旅行文学/00 旅行文学]]'
 travel_priority: ★
 travel_history_cluster: 后殖民、Diaspora与Tourist时代
 travel_axes: []
@@ -32,7 +32,7 @@ batch3_source_refs:
 
 ## 专题位置
 
-- [[20 专题地图/G 类型/G7 旅行文学/00 旅行文学|旅行文学]]
+- [[20 专题地图/G 类型/G7.4 旅行文学/00 旅行文学|旅行文学]]
   - 专题优先级：★
   - 历史位置：后殖民、Diaspora与Tourist时代
 
