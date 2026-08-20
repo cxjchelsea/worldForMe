@@ -1,0 +1,124 @@
+filters:
+  and:
+    - type == "work"
+    - or:
+        - awards.contains("WL-AWARD-BOOKER")
+        - awards.contains("WL-AWARD-PULITZER-FICTION")
+        - awards.contains("WL-AWARD-MAODUN")
+        - awards.contains("WL-AWARD-HUGO")
+        - awards.contains("WL-AWARD-NEBULA")
+        - awards.contains("WL-AWARD-EDGAR")
+properties:
+  file.name:
+    displayName: 作品
+  title:
+    displayName: 标准书名
+  author:
+    displayName: 作者
+  awards:
+    displayName: 奖项
+  award_reading_priority:
+    displayName: 奖项追读优先级
+  read_status:
+    displayName: 阅读状态
+  year:
+    displayName: 首次出版年
+  topics:
+    displayName: 专题
+  axis_t:
+    displayName: T 时间
+  axis_r:
+    displayName: R 地域
+  axis_g:
+    displayName: G 类型
+  axis_q:
+    displayName: Q 主题
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 追读总览
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - read_status
+      - award_reading_priority
+      - year
+      - topics
+      - id
+  - type: table
+    name: 下一本
+    filters:
+      and:
+        - award_reading_priority == "下一本"
+        - read_status == "未读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - topics
+      - id
+  - type: table
+    name: 核心未读
+    filters:
+      and:
+        - award_reading_priority == "核心"
+        - read_status == "未读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - topics
+      - id
+  - type: table
+    name: 延伸未读
+    filters:
+      and:
+        - award_reading_priority == "延伸"
+        - read_status == "未读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - year
+      - topics
+      - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - axis_t
+      - axis_r
+      - axis_g
+      - axis_q
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - award_reading_priority
+      - year
+      - topics
+      - id

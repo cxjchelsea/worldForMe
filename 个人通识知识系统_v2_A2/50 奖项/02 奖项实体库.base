@@ -1,0 +1,60 @@
+filters:
+  and:
+    - type == "award"
+properties:
+  file.name:
+    displayName: 奖项实体
+  name:
+    displayName: 标准名称
+  name_original:
+    displayName: 原文名
+  aliases:
+    displayName: 别名
+  award_object:
+    displayName: 颁奖对象
+  award_scope:
+    displayName: 范围
+  related_topics:
+    displayName: 相关专题
+  award_status:
+    displayName: 追读状态
+  reading_goal:
+    displayName: 追读目标
+  award_map_status:
+    displayName: 奖项专题
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 全部奖项实体
+    order:
+      - file.name
+      - name_original
+      - award_object
+      - award_scope
+      - award_status
+      - reading_goal
+      - award_map_status
+      - id
+  - type: table
+    name: 正在追读
+    filters:
+      and:
+        - award_status == "追读"
+    order:
+      - file.name
+      - reading_goal
+      - award_map_status
+      - award_scope
+      - id
+  - type: table
+    name: 已建奖项专题
+    filters:
+      and:
+        - award_map_status == "已建立"
+    order:
+      - file.name
+      - award_status
+      - reading_goal
+      - award_scope
+      - id

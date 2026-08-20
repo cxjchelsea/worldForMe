@@ -1,0 +1,147 @@
+filters:
+  and:
+    - type == "work"
+    - or:
+        - awards.contains("WL-AWARD-BOOKER")
+        - awards.contains("WL-AWARD-PULITZER-FICTION")
+        - awards.contains("WL-AWARD-MAODUN")
+        - awards.contains("WL-AWARD-HUGO")
+        - awards.contains("WL-AWARD-NEBULA")
+        - awards.contains("WL-AWARD-EDGAR")
+properties:
+  file.name:
+    displayName: 作品
+  title:
+    displayName: 标准书名
+  author:
+    displayName: 作者
+  awards:
+    displayName: 奖项
+  award_reading_priority:
+    displayName: 奖项追读优先级
+  year:
+    displayName: 首次出版年
+  read_status:
+    displayName: 阅读状态
+  topics:
+    displayName: 专题
+  axis_g:
+    displayName: G 类型
+  id:
+    displayName: 稳定 ID
+views:
+  - type: table
+    name: 按奖项
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 布克奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-BOOKER")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 普利策小说奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-PULITZER-FICTION")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 茅盾文学奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-MAODUN")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 雨果奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-HUGO")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 星云奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-NEBULA")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 埃德加奖
+    filters:
+      and:
+        - awards.contains("WL-AWARD-EDGAR")
+    order:
+      - file.name
+      - author
+      - read_status
+      - award_reading_priority
+      - year
+      - id
+  - type: table
+    name: 已读获奖作品
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - axis_g
+      - id
+  - type: table
+    name: 未读获奖作品
+    filters:
+      and:
+        - read_status == "未读"
+    groupBy:
+      property: awards
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - award_reading_priority
+      - year
+      - topics
+      - id
