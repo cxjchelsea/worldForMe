@@ -31,6 +31,9 @@ properties:
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh
@@ -45,7 +48,6 @@ views:
     filters:
       and:
         - 'type == "literature_topic_structure"'
-        - 'parent == "WL-TOPIC-G46-DYSTOPIA"'
     order:
       - file.name
       - formula.type_zh
@@ -56,41 +58,10 @@ views:
       - mechanism_cluster
       - id
   - type: table
-    name: 历史六区块
+    name: 细分
     filters:
       and:
         - 'type == "literature_topic_section"'
-        - 'dimension == "history"'
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - history_cluster
-      - mechanism_cluster
-      - id
-  - type: table
-    name: 控制机制深化
-    filters:
-      and:
-        - 'type == "literature_topic_structure"'
-        - 'parent == "WL-TOPIC-G46-DYSTOPIA-TYPE-SYSTEM"'
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - history_cluster
-      - mechanism_cluster
-      - id
-  - type: table
-    name: Critical与全球传统深化
-    filters:
-      and:
-        - 'type == "literature_topic_structure"'
-        - 'parent == "WL-TOPIC-G46-DYSTOPIA-BRIDGES"'
     order:
       - file.name
       - formula.type_zh

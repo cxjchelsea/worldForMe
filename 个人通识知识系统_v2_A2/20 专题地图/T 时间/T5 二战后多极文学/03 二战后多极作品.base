@@ -39,7 +39,7 @@ properties:
     displayName: 机制
 views:
   - type: table
-    name: 全部T5作品
+    name: 全部作品
     order:
       - file.name
       - author
@@ -125,7 +125,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按时间阶段
+    name: 按历史
     groupBy:
       property: postwar_stage
       direction: ASC
@@ -147,10 +147,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 横轴已标注
+    name: 未读
     filters:
       and:
-        - "!postwar_axes.isEmpty()"
+        - read_status == "未读"
     order:
       - file.name
       - author

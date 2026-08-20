@@ -37,7 +37,48 @@ properties:
     displayName: "总谱系核心"
 views:
   - type: table
-    name: 全部Q15作品
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - q15_core_compare == true
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 按武人系统
+    groupBy:
+      property: martial_systems
+      direction: ASC
     order:
       - file.name
       - author
@@ -134,7 +175,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 欧洲剑客／Swashbuckler
+    name: 欧洲剑客
     filters:
       and:
         - martial_systems.contains("欧洲剑客／Swashbuckler")
@@ -154,7 +195,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 西部／Western
+    name: 西部
     filters:
       and:
         - martial_systems.contains("西部／Western")
@@ -194,7 +235,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 侠盗／Outlaw Hero
+    name: 侠盗
     filters:
       and:
         - martial_systems.contains("侠盗／Outlaw Hero")
@@ -214,10 +255,30 @@ views:
       - axis_q
       - id
   - type: table
-    name: 海盗／Maritime Outlaw
+    name: 海盗
     filters:
       and:
         - martial_systems.contains("海盗／Maritime Outlaw")
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
     order:
       - file.name
       - author
@@ -240,27 +301,6 @@ views:
         - or:
             - read_status == "已读"
             - read_status == "重读"
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - martial_systems
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 骨架未读
-    filters:
-      and:
-        - q15_core_compare == true
-        - read_status == "未读"
     order:
       - file.name
       - author

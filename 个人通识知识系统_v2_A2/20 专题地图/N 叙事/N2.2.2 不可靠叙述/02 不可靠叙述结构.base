@@ -30,6 +30,9 @@ properties:
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh
@@ -52,11 +55,10 @@ views:
       - unreliable_mode
       - id
   - type: table
-    name: 十一种不可靠机制
+    name: 细分
     filters:
       and:
         - 'type == "literature_topic_section"'
-        - 'parent == "WL-TOPIC-N2-UNRELIABLE-MODES"'
     order:
       - file.name
       - formula.type_zh

@@ -41,7 +41,7 @@ properties:
     displayName: "地域标签"
 views:
   - type: table
-    name: 全部奇幻作品
+    name: 全部作品
     order:
       - file.name
       - author
@@ -144,7 +144,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史区块
+    name: 按历史
     groupBy:
       property: fantasy_history_cluster
       direction: ASC
@@ -165,31 +165,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 子类型已标注
+    name: 未读
     filters:
       and:
-        - "!fantasy_subgenres.isEmpty()"
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - fantasy_priority
-      - fantasy_history_cluster
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 地域已标注
-    filters:
-      and:
-        - "!fantasy_region.isEmpty()"
+        - read_status == "未读"
     order:
       - file.name
       - author

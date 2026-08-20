@@ -29,6 +29,9 @@ properties:
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh
@@ -41,7 +44,7 @@ views:
     name: 核心结构
     filters:
       and:
-        - type == "literature_topic_structure"
+        - 'type == "literature_topic_structure"'
     order:
       - file.name
       - formula.type_zh
@@ -51,10 +54,10 @@ views:
       - love_history_stage
       - id
   - type: table
-    name: 九个历史阶段
+    name: 细分
     filters:
       and:
-        - type == "literature_topic_section"
+        - 'type == "literature_topic_section"'
     order:
       - file.name
       - formula.type_zh
@@ -64,10 +67,10 @@ views:
       - love_history_stage
       - id
   - type: table
-    name: 类型机制深化
+    name: 机制深化
     filters:
       and:
-        - type == "literature_topic_mechanism"
+        - 'type == "literature_topic_mechanism"'
     order:
       - file.name
       - formula.type_zh

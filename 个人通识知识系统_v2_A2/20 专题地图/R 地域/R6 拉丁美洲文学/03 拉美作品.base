@@ -4,42 +4,42 @@ filters:
     - topics.contains("WL-TOPIC-R6-LATAM")
 properties:
   file.name:
-    displayName: "作品"
+    displayName: 作品
   note.author:
-    displayName: "作者"
+    displayName: 作者
   note.year:
-    displayName: "年份"
+    displayName: 年份
   note.read_status:
-    displayName: "阅读状态"
+    displayName: 阅读状态
   note.author_reading_priority:
-    displayName: "追读优先级"
+    displayName: 追读优先级
   note.topic_links:
-    displayName: "专题"
+    displayName: 专题
   note.topics:
-    displayName: "专题编号"
+    displayName: 专题编号
   note.axis_t:
-    displayName: "时间"
+    displayName: 时间
   note.axis_r:
-    displayName: "地域"
+    displayName: 地域
   note.axis_m:
-    displayName: "思潮"
+    displayName: 思潮
   note.axis_g:
-    displayName: "类型"
+    displayName: 类型
   note.axis_n:
-    displayName: "叙事"
+    displayName: 叙事
   note.axis_q:
-    displayName: "主题"
+    displayName: 主题
   note.id:
-    displayName: "编号"
+    displayName: 编号
   note.latam_priority:
-    displayName: "优先级"
+    displayName: 优先级
   note.latam_history_stage:
-    displayName: "历史位置"
+    displayName: 历史位置
   note.latam_axes:
-    displayName: "机制"
+    displayName: 机制
 views:
   - type: table
-    name: 全部拉美作品
+    name: 全部作品
     order:
       - file.name
       - author
@@ -125,7 +125,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史阶段
+    name: 按历史
     groupBy:
       property: latam_history_stage
       direction: ASC
@@ -147,10 +147,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 横轴已标注
+    name: 未读
     filters:
       and:
-        - "!latam_axes.isEmpty()"
+        - read_status == "未读"
     order:
       - file.name
       - author

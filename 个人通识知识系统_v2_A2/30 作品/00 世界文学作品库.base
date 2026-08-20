@@ -161,6 +161,102 @@ views:
       - axis_q
       - id
   - type: table
+    name: 已读按思潮
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_m
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 已读按类型
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 已读按叙事
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_n
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 已读按主题
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    groupBy:
+      property: axis_q
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
     name: 已读按作者
     filters:
       and:

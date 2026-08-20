@@ -45,7 +45,7 @@ properties:
     displayName: "地域标签"
 views:
   - type: table
-    name: 全部科幻作品
+    name: 全部作品
     order:
       - file.name
       - author
@@ -131,32 +131,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史区块
+    name: 按历史
     groupBy:
       property: sf_history_cluster
       direction: ASC
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - sf_priority
-      - sf_history_cluster
-      - sf_themes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 横轴标签已明确标注
-    filters:
-      and:
-        - "!sf_themes.isEmpty()"
     order:
       - file.name
       - author
@@ -263,7 +241,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: Hard SF
+    name: 硬科幻
     filters:
       and:
         - sf_themes.contains("Hard SF")
@@ -285,7 +263,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: Cyberpunk
+    name: 赛博朋克
     filters:
       and:
         - sf_themes.contains("Cyberpunk")
@@ -395,35 +373,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 生态与Climate Fiction
+    name: 生态与气候小说
     filters:
       and:
         - sf_themes.contains("生态 / Climate Fiction")
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - sf_priority
-      - sf_history_cluster
-      - sf_themes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 地域已明确标注
-    filters:
-      and:
-        - sf_region != ""
-    groupBy:
-      property: sf_region
-      direction: ASC
     order:
       - file.name
       - author
@@ -446,28 +399,6 @@ views:
     filters:
       and:
         - read_status == "未读"
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - sf_priority
-      - sf_history_cluster
-      - sf_themes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 需复核
-    filters:
-      and:
-        - verification_status == "需复核"
     order:
       - file.name
       - author

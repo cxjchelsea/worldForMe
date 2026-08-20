@@ -32,7 +32,10 @@ properties:
     displayName: 编号
 views:
   - type: table
-    name: 全部Q15知识节点
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh
@@ -47,8 +50,7 @@ views:
     name: 核心结构
     filters:
       and:
-        - type == "literature_topic_structure"
-        - parent == "WL-TOPIC-Q15"
+        - 'type == "literature_topic_structure"'
     order:
       - file.name
       - formula.type_zh
@@ -60,11 +62,10 @@ views:
       - compare_cluster
       - id
   - type: table
-    name: 八个系统
+    name: 细分
     filters:
       and:
-        - type == "literature_topic_section"
-        - parent == "WL-TOPIC-Q15-SYSTEMS"
+        - 'type == "literature_topic_section"'
     order:
       - file.name
       - formula.type_zh
@@ -79,27 +80,11 @@ views:
     name: 按系统类别
     filters:
       and:
-        - type == "literature_topic_section"
-        - parent == "WL-TOPIC-Q15-SYSTEMS"
+        - 'type == "literature_topic_section"'
+        - 'parent == "WL-TOPIC-Q15-SYSTEMS"'
     groupBy:
       property: system_class
       direction: ASC
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - system_name
-      - system_class
-      - compare_cluster
-      - id
-  - type: table
-    name: 六个比较维度
-    filters:
-      and:
-        - type == "literature_topic_section"
-        - parent == "WL-TOPIC-Q15-COMPARE"
     order:
       - file.name
       - formula.type_zh

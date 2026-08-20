@@ -4,9 +4,6 @@ filters:
     - id.startsWith("WL-")
 formulas:
   axis_zh: if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 类型").replace("N", "N 叙事").replace("Q", "Q 主题"), "")
-  kind_zh: if(node_kind, node_kind.replace("transregional_network_group", "跨区域网络").replace("diaspora_network", "离散网络").replace("regional_cluster", "区域簇").replace("taxonomy_group", "分组").replace("taxonomy_leaf", "叶节点").replace("facet_group", "分面组").replace("period", "时期"), "")
-  coverage_zh: if(coverage_priority, coverage_priority.replace("Interest", "兴趣").replace("Expand", "拓展").replace("Core", "基础"), "")
-  parent_zh: if(parent, parent.replace("WL-G4.3", "社会与人物型小说").replace("WL-G4.4", "历史与现实类型").replace("WL-G4.5", "现代类型文学").replace("WL-G4.6", "思辨与思想类型").replace("WL-N2.2", "叙述可靠性").replace("WL-R10", "跨区域文学传统").replace("WL-G1", "口述与民间文学").replace("WL-G4", "小说").replace("WL-G7", "纪实文学").replace("WL-M3", "现代主义与先锋派").replace("WL-N2", "聚焦与可靠性").replace("WL-Q2", "爱、欲望与亲密关系").replace("WL-Q6", "战争、暴力与创伤").replace("WL-G", "G 类型").replace("WL-M", "M 思潮").replace("WL-N", "N 叙事").replace("WL-Q", "Q 主题").replace("WL-R", "R 地域").replace("WL-T", "T 时间"), "")
 properties:
   file.name:
     displayName: 节点
@@ -14,45 +11,18 @@ properties:
     displayName: 轴
   note.axis:
     displayName: 轴
-  note.code:
-    displayName: 编码
-  note.level:
-    displayName: 层级
-  formula.kind_zh:
-    displayName: 节点类型
-  note.node_kind:
-    displayName: 节点类型
-  note.importance:
-    displayName: 重要度
-  formula.coverage_zh:
-    displayName: 阅读经验
-  note.coverage_priority:
-    displayName: 阅读经验
-  note.time_range:
-    displayName: 时间范围
   note.topic_map:
     displayName: 专题地图
-  formula.parent_zh:
-    displayName: 父节点
-  note.parent:
-    displayName: 父节点
-  note.id:
-    displayName: 编号
 views:
   - type: table
     name: 全部节点
+    groupBy:
+      property: formula.axis_zh
+      direction: ASC
     order:
       - file.name
       - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
       - topic_map
-      - formula.parent_zh
-      - id
     columnSize:
       file.name: 285
   - type: table
@@ -66,73 +36,7 @@ views:
     order:
       - file.name
       - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
       - topic_map
-      - formula.parent_zh
-      - id
-  - type: table
-    name: S级文学史骨架
-    filters:
-      and:
-        - importance == "S"
-    groupBy:
-      property: formula.axis_zh
-      direction: ASC
-    order:
-      - file.name
-      - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
-      - topic_map
-      - formula.parent_zh
-      - id
-  - type: table
-    name: Core阅读经验
-    filters:
-      and:
-        - coverage_priority == "Core"
-    groupBy:
-      property: formula.axis_zh
-      direction: ASC
-    order:
-      - file.name
-      - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
-      - topic_map
-      - formula.parent_zh
-      - id
-  - type: table
-    name: G轴小说细分
-    filters:
-      and:
-        - axis == "G"
-        - level == 2
-    order:
-      - file.name
-      - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
-      - topic_map
-      - formula.parent_zh
-      - id
   - type: table
     name: 尚未接入专题
     filters:
@@ -144,26 +48,4 @@ views:
     order:
       - file.name
       - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
       - topic_map
-      - formula.parent_zh
-      - id
-  - type: table
-    name: 技术审计
-    order:
-      - file.name
-      - formula.axis_zh
-      - code
-      - level
-      - formula.kind_zh
-      - importance
-      - formula.coverage_zh
-      - time_range
-      - topic_map
-      - formula.parent_zh
-      - id

@@ -32,6 +32,9 @@ properties:
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh
@@ -46,7 +49,6 @@ views:
     filters:
       and:
         - 'type == "literature_topic_structure"'
-        - 'parent == "WL-TOPIC-Q6-WAR"'
     order:
       - file.name
       - formula.type_zh
@@ -57,54 +59,10 @@ views:
       - question_cluster
       - id
   - type: table
-    name: 七个历史阶段
+    name: 细分
     filters:
       and:
         - 'type == "literature_topic_section"'
-        - 'parent == "WL-TOPIC-Q6-WAR-HISTORY"'
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - war_history_stage
-      - question_cluster
-      - id
-  - type: table
-    name: 六个核心问题群
-    filters:
-      and:
-        - 'type == "literature_topic_section"'
-        - 'parent == "WL-TOPIC-Q6-WAR-AXES"'
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - war_history_stage
-      - question_cluster
-      - id
-  - type: table
-    name: 历史节点
-    filters:
-      and:
-        - 'dimension == "history"'
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - formula.parent_zh
-      - war_history_stage
-      - question_cluster
-      - id
-  - type: table
-    name: 问题节点
-    filters:
-      and:
-        - 'dimension == "core_question"'
     order:
       - file.name
       - formula.type_zh

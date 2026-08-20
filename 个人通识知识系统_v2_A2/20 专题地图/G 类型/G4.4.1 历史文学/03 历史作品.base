@@ -39,7 +39,7 @@ properties:
     displayName: "机制"
 views:
   - type: table
-    name: 全部历史作品
+    name: 全部作品
     order:
       - file.name
       - author
@@ -125,32 +125,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史区块
+    name: 按历史
     groupBy:
       property: historical_history_cluster
       direction: ASC
-    order:
-      - file.name
-      - author
-      - year
-      - read_status
-      - author_reading_priority
-      - topic_links
-      - historical_priority
-      - historical_history_cluster
-      - historical_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_n
-      - axis_q
-      - id
-  - type: table
-    name: 横轴已标注
-    filters:
-      and:
-        - "!historical_axes.isEmpty()"
     order:
       - file.name
       - author

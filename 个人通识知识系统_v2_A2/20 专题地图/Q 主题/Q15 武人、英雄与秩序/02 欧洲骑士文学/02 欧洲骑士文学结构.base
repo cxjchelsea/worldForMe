@@ -30,6 +30,9 @@ properties:
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
       - formula.type_zh

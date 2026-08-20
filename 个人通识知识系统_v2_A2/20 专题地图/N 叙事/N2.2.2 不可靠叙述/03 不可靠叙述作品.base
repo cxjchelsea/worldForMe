@@ -38,7 +38,71 @@ properties:
     displayName: "机制"
 views:
   - type: table
-    name: 全部N2作品
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - unreliable_priority
+      - unreliable_modes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - 'unreliable_priority == "★"'
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - unreliable_priority
+      - unreliable_modes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 骨架未读
+    filters:
+      and:
+        - 'unreliable_priority == "★"'
+        - 'read_status == "未读"'
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - unreliable_priority
+      - unreliable_modes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
+  - type: table
+    name: 按机制
+    groupBy:
+      property: unreliable_modes
+      direction: ASC
     order:
       - file.name
       - author
@@ -287,12 +351,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读
+    name: 未读
     filters:
       and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+        - read_status == "未读"
     order:
       - file.name
       - author
@@ -310,11 +372,12 @@ views:
       - axis_q
       - id
   - type: table
-    name: 骨架未读
+    name: 已读
     filters:
       and:
-        - 'unreliable_priority == "★"'
-        - 'read_status == "未读"'
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
     order:
       - file.name
       - author
