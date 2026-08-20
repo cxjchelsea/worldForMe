@@ -1,39 +1,73 @@
 filters:
   and:
     - type == "literature_topic_map"
+formulas:
+  axis_zh: if(primary_anchor, primary_anchor.replace("WL-N2.2.2", "N 叙事").replace("WL-M3.1", "M 思潮").replace("WL-G4.3.1", "G 类型").replace("WL-G4.3.4", "G 类型").replace("WL-G4.4.1", "G 类型").replace("WL-G4.5.1", "G 类型").replace("WL-G4.5.2", "G 类型").replace("WL-G4.5.3", "G 类型").replace("WL-G4.5.4", "G 类型").replace("WL-G4.5.5", "G 类型").replace("WL-G4.6.2", "G 类型").replace("WL-G7.4", "G 类型").replace("WL-G1.1", "G 类型").replace("WL-Q2.1", "Q 主题").replace("WL-Q6.1", "Q 主题").replace("WL-Q10", "Q 主题").replace("WL-Q15", "Q 主题").replace("WL-T5", "T 时间").replace("WL-R6", "R 地域"), "")
+  role_zh: if(topic_role, topic_role.replace("q15_subsystem", "子专题").replace("umbrella", "伞形专题").replace("direct", "直接专题"), "")
+  mode_zh: if(anchor_mode, anchor_mode.replace("umbrella", "伞形").replace("exact", "整节点").replace("leaf", "叶节点"), "")
+  anchor_zh: if(primary_anchor, primary_anchor.replace("WL-N2.2.2", "N2.2.2 不可靠叙述").replace("WL-G4.3.1", "G4.3.1 成长").replace("WL-G4.3.4", "G4.3.4 家族").replace("WL-G4.4.1", "G4.4.1 历史").replace("WL-G4.5.1", "G4.5.1 推理").replace("WL-G4.5.2", "G4.5.2 科幻").replace("WL-G4.5.3", "G4.5.3 奇幻").replace("WL-G4.5.4", "G4.5.4 恐怖").replace("WL-G4.5.5", "G4.5.5 冒险").replace("WL-G4.6.2", "G4.6.2 反乌托邦").replace("WL-M3.1", "M3.1 现代主义").replace("WL-Q2.1", "Q2.1 爱情").replace("WL-Q6.1", "Q6.1 战争").replace("WL-G7.4", "G7.4 旅行").replace("WL-G1.1", "G1.1 神话").replace("WL-Q10", "Q10 历史、记忆与时间").replace("WL-Q15", "Q15 武人、英雄与秩序").replace("WL-T5", "T5 二战后多极").replace("WL-R6", "R6 拉丁美洲"), "")
+  parent_zh: if(parent_topic, parent_topic.replace("WL-TOPIC-Q15", "世界武人、边疆与法外英雄文学"), "")
 properties:
   file.name:
     displayName: 专题
-  name:
-    displayName: 名称
-  primary_anchor:
-    displayName: 主锚点
-  topic_role:
+  formula.axis_zh:
+    displayName: 轴
+  formula.role_zh:
     displayName: 角色
-  parent_topic:
+  formula.mode_zh:
+    displayName: 挂载
+  formula.anchor_zh:
+    displayName: 主锚点
+  formula.parent_zh:
     displayName: 上级专题
-  path_status:
+  note.primary_anchor:
+    displayName: 主锚点
+  note.topic_role:
+    displayName: 角色
+  note.anchor_mode:
+    displayName: 挂载
+  note.parent_topic:
+    displayName: 上级专题
+  note.path_status:
     displayName: 路径状态
-  id:
-    displayName: 稳定 ID
+  note.id:
+    displayName: 编号
 views:
   - type: table
     name: 全部专题
     order:
       - file.name
-      - primary_anchor
-      - topic_role
-      - parent_topic
+      - formula.axis_zh
+      - formula.role_zh
+      - formula.mode_zh
+      - formula.anchor_zh
+      - formula.parent_zh
+      - id
+  - type: table
+    name: 按轴
+    groupBy:
+      property: formula.axis_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.axis_zh
+      - formula.role_zh
+      - formula.mode_zh
+      - formula.anchor_zh
+      - formula.parent_zh
       - id
   - type: table
     name: 按主锚点
     groupBy:
-      property: primary_anchor
+      property: formula.anchor_zh
       direction: ASC
     order:
       - file.name
-      - topic_role
-      - parent_topic
+      - formula.axis_zh
+      - formula.role_zh
+      - formula.mode_zh
+      - formula.anchor_zh
+      - formula.parent_zh
       - id
   - type: table
     name: 直接专题
@@ -42,7 +76,11 @@ views:
         - topic_role == "direct"
     order:
       - file.name
-      - primary_anchor
+      - formula.axis_zh
+      - formula.role_zh
+      - formula.mode_zh
+      - formula.anchor_zh
+      - formula.parent_zh
       - id
   - type: table
     name: Q15武人体系
@@ -50,7 +88,10 @@ views:
       and:
         - primary_anchor == "WL-Q15"
     order:
-      - topic_role
       - file.name
-      - parent_topic
+      - formula.axis_zh
+      - formula.role_zh
+      - formula.mode_zh
+      - formula.anchor_zh
+      - formula.parent_zh
       - id

@@ -2,6 +2,7 @@
 id: "WL-TOPIC-G43-BILDUNGSROMAN-COUNTER"
 type: "literature_topic_mechanism"
 topic_id: "WL-TOPIC-G43-BILDUNGSROMAN"
+sequence: 2
 parent: "WL-TOPIC-G43-BILDUNGSROMAN-BRIDGE"
 dimension: "counter_traditions"
 ---

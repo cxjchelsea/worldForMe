@@ -2,6 +2,8 @@
 id: "WL-TOPIC-G44-HISTORICAL-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-G44-HISTORICAL"
+parent: "WL-TOPIC-G44-HISTORICAL"
+sequence: 1
 dimension: "definition"
 ---
 # 边界：历史文学、Historical Fiction与见证

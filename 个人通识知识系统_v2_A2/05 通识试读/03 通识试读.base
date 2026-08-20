@@ -4,31 +4,34 @@ filters:
 properties:
   file.name:
     displayName: 书名
-  author:
+  note.author:
     displayName: 作者
-  domains:
-    displayName: 通识领域
-  read_status:
+  note.domain_links:
+    displayName: 领域
+  note.domains:
+    displayName: 领域编号
+  note.read_status:
     displayName: 阅读状态
-  id:
-    displayName: 稳定 ID
+  note.id:
+    displayName: 编号
 views:
   - type: table
     name: 全部通识试读
     order:
       - file.name
       - author
-      - domains
+      - domain_links
       - read_status
       - id
   - type: table
     name: 按领域
     groupBy:
-      property: domains
+      property: domain_links
       direction: ASC
     order:
       - file.name
       - author
+      - domain_links
       - read_status
       - id
   - type: table
@@ -39,4 +42,6 @@ views:
     order:
       - file.name
       - author
-      - domains
+      - domain_links
+      - read_status
+      - id

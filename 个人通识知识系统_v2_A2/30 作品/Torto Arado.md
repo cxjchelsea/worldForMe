@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-R6-LATAM
 topic_links:
-- '[[20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学]]'
+- '[[20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学|拉丁美洲文学]]'
 latam_priority: ''
 latam_history_stage: ''
 latam_axes:

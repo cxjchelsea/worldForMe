@@ -4,48 +4,65 @@ filters:
     - topics.contains("WL-TOPIC-G45-SF")
 properties:
   file.name:
-    displayName: 作品
-  author:
-    displayName: 作者
-  sf_priority:
-    displayName: 科幻优先级
-  sf_history_cluster:
-    displayName: 历史大区块
-  sf_history:
-    displayName: 历史位置
-  sf_themes:
-    displayName: 类型／母题标签
-  sf_region:
-    displayName: 原专题地域入口
-  read_status:
-    displayName: 阅读状态
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  verification_status:
-    displayName: 校验状态
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.author_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.sf_priority:
+    displayName: "优先级"
+  note.sf_history_cluster:
+    displayName: "历史位置"
+  note.sf_themes:
+    displayName: "机制"
+  note.verification_status:
+    displayName: "校验状态"
+  note.sf_history:
+    displayName: "细部历史"
+  note.sf_region:
+    displayName: "地域标签"
 views:
   - type: table
     name: 全部科幻作品
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - sf_priority
       - sf_history_cluster
       - sf_themes
-      - sf_region
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 核心骨架 ★
     filters:
@@ -54,9 +71,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
       - sf_history_cluster
       - sf_themes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 骨架未读
     filters:
@@ -66,8 +94,20 @@ views:
     order:
       - file.name
       - author
-      - sf_history_cluster
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 系统扩展 ◆
     filters:
@@ -76,9 +116,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
       - sf_history_cluster
       - sf_themes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 按历史区块
     groupBy:
@@ -87,9 +138,20 @@ views:
     order:
       - file.name
       - author
-      - sf_priority
-      - sf_history
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 横轴标签已明确标注
     filters:
@@ -98,75 +160,262 @@ views:
     order:
       - file.name
       - author
-      - sf_themes
-      - sf_history_cluster
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: AI与机器人
     filters:
       and:
         - sf_themes.contains("AI / 机器人")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 第一接触
     filters:
       and:
         - sf_themes.contains("第一接触")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 时间旅行
     filters:
       and:
         - sf_themes.contains("时间旅行")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 反乌托邦
     filters:
       and:
         - sf_themes.contains("反乌托邦")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: Hard SF
     filters:
       and:
         - sf_themes.contains("Hard SF")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: Cyberpunk
     filters:
       and:
         - sf_themes.contains("Cyberpunk")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 太空歌剧
     filters:
       and:
         - sf_themes.contains("太空歌剧")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 军事科幻
     filters:
       and:
         - sf_themes.contains("军事科幻")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 社会／人类学科幻
     filters:
       and:
         - sf_themes.contains("社会科学 / 人类学科幻")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 后人类
     filters:
       and:
         - sf_themes.contains("后人类")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 生态与Climate Fiction
     filters:
       and:
         - sf_themes.contains("生态 / Climate Fiction")
-    order: [file.name, author, sf_history_cluster, sf_priority]
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 地域已明确标注
     filters:
@@ -178,8 +427,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - sf_priority
       - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 未读
     filters:
@@ -188,9 +449,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - sf_priority
       - sf_history_cluster
-      - read_status
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 需复核
     filters:
@@ -199,7 +471,19 @@ views:
     order:
       - file.name
       - author
-      - review_note
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 已读
@@ -211,10 +495,17 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - sf_priority
+      - sf_history_cluster
+      - sf_themes
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_n
       - axis_q
-      - read_status
+      - id

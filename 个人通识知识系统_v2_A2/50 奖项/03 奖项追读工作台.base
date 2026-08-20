@@ -10,31 +10,37 @@ filters:
         - awards.contains("WL-AWARD-EDGAR")
 properties:
   file.name:
-    displayName: 作品
-  title:
-    displayName: 标准书名
-  author:
-    displayName: 作者
-  awards:
-    displayName: 奖项
-  award_reading_priority:
-    displayName: 奖项追读优先级
-  read_status:
-    displayName: 阅读状态
-  year:
-    displayName: 首次出版年
-  topics:
-    displayName: 专题
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_g:
-    displayName: G 类型
-  axis_q:
-    displayName: Q 主题
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.award_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.title:
+    displayName: "标准书名"
+  note.awards:
+    displayName: "奖项"
 views:
   - type: table
     name: 追读总览
@@ -43,10 +49,17 @@ views:
       direction: ASC
     order:
       - file.name
+      - author
+      - year
       - read_status
       - award_reading_priority
-      - year
-      - topics
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 下一本
@@ -59,8 +72,17 @@ views:
       direction: ASC
     order:
       - file.name
+      - author
       - year
-      - topics
+      - read_status
+      - award_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 核心未读
@@ -73,8 +95,17 @@ views:
       direction: ASC
     order:
       - file.name
+      - author
       - year
-      - topics
+      - read_status
+      - award_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 延伸未读
@@ -87,8 +118,17 @@ views:
       direction: ASC
     order:
       - file.name
+      - author
       - year
-      - topics
+      - read_status
+      - award_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 已读
@@ -104,10 +144,16 @@ views:
       - file.name
       - author
       - year
+      - read_status
+      - award_reading_priority
+      - topic_links
       - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_n
       - axis_q
+      - id
   - type: table
     name: 未读
     filters:
@@ -118,7 +164,15 @@ views:
       direction: ASC
     order:
       - file.name
-      - award_reading_priority
+      - author
       - year
-      - topics
+      - read_status
+      - award_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id

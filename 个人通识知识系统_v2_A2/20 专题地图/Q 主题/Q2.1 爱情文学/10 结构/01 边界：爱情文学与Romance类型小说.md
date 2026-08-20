@@ -2,6 +2,8 @@
 id: "WL-TOPIC-Q2-LOVE-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-Q2-LOVE"
+parent: "WL-TOPIC-Q2-LOVE"
+sequence: 1
 dimension: "definition"
 ---
 # 边界：爱情文学与Romance类型小说

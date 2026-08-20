@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
-- '[[20 专题地图/M 思潮/M3.1 现代主义文学/00 现代主义文学]]'
+- '[[20 专题地图/M 思潮/M3.1 现代主义文学/00 现代主义文学|现代主义文学]]'
 modernism_priority: ★
 modernism_tradition_cluster: 南亚、波斯与阿拉伯现代主义
 modernism_axes: []

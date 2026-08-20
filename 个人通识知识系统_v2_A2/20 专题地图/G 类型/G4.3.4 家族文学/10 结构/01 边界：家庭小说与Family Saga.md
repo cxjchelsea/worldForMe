@@ -2,6 +2,8 @@
 id: "WL-TOPIC-G43-FAMILY-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-G43-FAMILY"
+parent: "WL-TOPIC-G43-FAMILY"
+sequence: 1
 dimension: "definition"
 ---
 # 边界：家庭小说与Family Saga

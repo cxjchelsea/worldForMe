@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-G45-SF
 topic_links:
-- '[[20 专题地图/G 类型/G4.5.2 科幻文学/00 科幻文学]]'
+- '[[20 专题地图/G 类型/G4.5.2 科幻文学/00 科幻文学|科幻文学]]'
 sf_priority: ◆
 sf_history_cluster: 全球科幻传统
 sf_history: 拉丁美洲科幻

@@ -2,6 +2,8 @@
 id: "WL-TOPIC-M3-MODERNISM-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-M3-MODERNISM"
+parent: "WL-TOPIC-M3-MODERNISM"
+sequence: 1
 dimension: "definition"
 ---
 # 边界：Modernism不是现代文学的同义词

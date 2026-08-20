@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-Q6-WAR
 topic_links:
-- '[[20 专题地图/Q 主题/Q6.1 战争文学/00 战争文学]]'
+- '[[20 专题地图/Q 主题/Q6.1 战争文学/00 战争文学|战争文学]]'
 war_priority: ★
 war_history_stage: 朝鲜、越南、去殖民与后殖民战争
 war_axes: []

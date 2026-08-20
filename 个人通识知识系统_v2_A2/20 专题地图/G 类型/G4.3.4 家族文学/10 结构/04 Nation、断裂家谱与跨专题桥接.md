@@ -2,6 +2,8 @@
 id: "WL-TOPIC-G43-FAMILY-BRIDGE"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-G43-FAMILY"
+parent: "WL-TOPIC-G43-FAMILY"
+sequence: 4
 dimension: "bridge"
 ---
 # Nation、断裂家谱与跨专题桥接

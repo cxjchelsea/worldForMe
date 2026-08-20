@@ -4,44 +4,60 @@ filters:
     - topics.contains("WL-TOPIC-G45-FANTASY")
 properties:
   file.name:
-    displayName: 作品
-  author:
-    displayName: 作者
-  fantasy_priority:
-    displayName: 奇幻优先级
-  fantasy_history_cluster:
-    displayName: 历史区块
-  fantasy_subgenres:
-    displayName: 子类型
-  fantasy_region:
-    displayName: 地域入口
-  read_status:
-    displayName: 阅读状态
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.author_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.fantasy_priority:
+    displayName: "优先级"
+  note.fantasy_history_cluster:
+    displayName: "历史位置"
+  note.fantasy_subgenres:
+    displayName: "子类型"
+  note.fantasy_region:
+    displayName: "地域标签"
 views:
   - type: table
     name: 全部奇幻作品
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - fantasy_priority
       - fantasy_history_cluster
-      - fantasy_subgenres
-      - fantasy_region
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 核心骨架 ★
     filters:
@@ -50,9 +66,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_history_cluster
-      - fantasy_subgenres
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 骨架未读
     filters:
@@ -62,8 +88,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_history_cluster
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 系统扩展 ◆
     filters:
@@ -72,9 +109,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_history_cluster
-      - fantasy_subgenres
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 边界 △
     filters:
@@ -83,8 +130,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_history_cluster
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 按历史区块
     groupBy:
@@ -93,8 +151,19 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - fantasy_priority
-      - fantasy_subgenres
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 子类型已标注
     filters:
@@ -103,8 +172,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_subgenres
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 地域已标注
     filters:
@@ -113,8 +193,19 @@ views:
     order:
       - file.name
       - author
-      - fantasy_region
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - fantasy_priority
+      - fantasy_history_cluster
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 已读
     filters:
@@ -125,10 +216,16 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - fantasy_priority
+      - fantasy_history_cluster
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_n
       - axis_q
-      - read_status
+      - id

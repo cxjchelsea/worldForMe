@@ -2,19 +2,23 @@ filters:
   and:
     - type == "domain"
     - id.startsWith("PGK-D")
+formulas:
+  status_zh: if(exploration_status, exploration_status.replace("unexplored", "未探索").replace("interested", "有持续兴趣").replace("mapped", "已建立专题地图").replace("trial", "已试读"), "")
 properties:
   file.name:
     displayName: 领域
-  id:
-    displayName: 稳定 ID
-  parent_name:
+  note.parent_name:
     displayName: 知识世界
-  priority:
+  note.priority:
     displayName: 优先级
-  exploration_status:
+  formula.status_zh:
     displayName: 探索状态
-  child_map:
+  note.exploration_status:
+    displayName: 探索状态
+  note.child_map:
     displayName: 下一级地图
+  note.id:
+    displayName: 编号
 views:
   - type: table
     name: 全部领域
@@ -22,7 +26,7 @@ views:
       - file.name
       - parent_name
       - priority
-      - exploration_status
+      - formula.status_zh
       - child_map
       - id
     sort:
@@ -37,8 +41,9 @@ views:
       direction: ASC
     order:
       - file.name
+      - parent_name
       - priority
-      - exploration_status
+      - formula.status_zh
       - child_map
       - id
   - type: table
@@ -53,5 +58,6 @@ views:
       - file.name
       - parent_name
       - priority
-      - exploration_status
+      - formula.status_zh
       - child_map
+      - id

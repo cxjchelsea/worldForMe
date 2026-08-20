@@ -4,38 +4,55 @@ filters:
     - topics.contains("WL-TOPIC-Q15")
 properties:
   file.name:
-    displayName: 作品
-  author:
-    displayName: 作者
-  martial_systems:
-    displayName: 武人系统
-  q15_core_compare:
-    displayName: 总谱系核心
-  read_status:
-    displayName: 阅读状态
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.author_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.martial_systems:
+    displayName: "武人系统"
+  note.q15_core_compare:
+    displayName: "总谱系核心"
 views:
   - type: table
     name: 全部Q15作品
     order:
       - file.name
       - author
-      - martial_systems
-      - q15_core_compare
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 总谱系跨文明对读核心
     filters:
@@ -44,7 +61,18 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 武侠
     filters:
@@ -53,7 +81,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 欧洲骑士
     filters:
@@ -62,7 +101,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 日本武士／剑豪
     filters:
@@ -71,7 +121,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 欧洲剑客／Swashbuckler
     filters:
@@ -80,7 +141,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 西部／Western
     filters:
@@ -89,7 +161,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: Gaucho
     filters:
@@ -98,7 +181,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 侠盗／Outlaw Hero
     filters:
@@ -107,7 +201,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 海盗／Maritime Outlaw
     filters:
@@ -116,7 +221,18 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 已读
     filters:
@@ -127,13 +243,18 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_n
       - axis_q
-      - read_status
+      - id
   - type: table
     name: 骨架未读
     filters:
@@ -143,4 +264,15 @@ views:
     order:
       - file.name
       - author
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - martial_systems
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id

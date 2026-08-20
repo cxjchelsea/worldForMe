@@ -12,7 +12,7 @@ read_status: "未读"
 topics:
   - "WL-TOPIC-G45-MYSTERY"
 topic_links:
-  - "[[20 专题地图/G 类型/G4.5.1 推理文学/00 推理文学]]"
+  - '[[20 专题地图/G 类型/G4.5.1 推理文学/00 推理文学|推理文学]]'
 mystery_priority: "◆"
 mystery_history_cluster:
   - "日本推理传统"

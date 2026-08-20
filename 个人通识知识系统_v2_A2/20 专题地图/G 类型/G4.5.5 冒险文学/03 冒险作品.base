@@ -4,41 +4,59 @@ filters:
     - topics.contains("WL-TOPIC-G45-ADVENTURE")
 properties:
   file.name:
-    displayName: 作品
-  author:
-    displayName: 作者
-  adventure_priority:
-    displayName: 冒险优先级
-  adventure_history_cluster:
-    displayName: 历史区块
-  adventure_axes:
-    displayName: 冒险结构横轴
-  read_status:
-    displayName: 阅读状态
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.author_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.adventure_priority:
+    displayName: "优先级"
+  note.adventure_history_cluster:
+    displayName: "历史位置"
+  note.adventure_axes:
+    displayName: "机制"
 views:
   - type: table
     name: 全部冒险作品
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - adventure_priority
       - adventure_history_cluster
       - adventure_axes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 核心骨架 ★
     filters:
@@ -47,9 +65,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - adventure_priority
       - adventure_history_cluster
       - adventure_axes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 骨架未读
     filters:
@@ -59,8 +88,20 @@ views:
     order:
       - file.name
       - author
-      - adventure_history_cluster
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - adventure_priority
+      - adventure_history_cluster
+      - adventure_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 系统扩展 ◆
     filters:
@@ -69,9 +110,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - adventure_priority
       - adventure_history_cluster
       - adventure_axes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 边界 △
     filters:
@@ -80,9 +132,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - adventure_priority
       - adventure_history_cluster
       - adventure_axes
-      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 按历史区块
     groupBy:
@@ -91,8 +154,20 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - adventure_priority
+      - adventure_history_cluster
       - adventure_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 横轴已标注
     filters:
@@ -101,8 +176,20 @@ views:
     order:
       - file.name
       - author
-      - adventure_axes
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - adventure_priority
+      - adventure_history_cluster
+      - adventure_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
+      - id
   - type: table
     name: 已读
     filters:
@@ -113,10 +200,17 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - adventure_priority
+      - adventure_history_cluster
+      - adventure_axes
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_n
       - axis_q
-      - read_status
+      - id

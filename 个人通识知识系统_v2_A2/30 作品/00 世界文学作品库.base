@@ -4,45 +4,55 @@ filters:
 properties:
   file.name:
     displayName: 作品
-  title:
-    displayName: 标准书名
-  aliases:
-    displayName: 其他题名
-  author:
+  note.author:
     displayName: 作者
-  year:
-    displayName: 首次出版年
-  topics:
-    displayName: 专题
-  read_status:
+  note.year:
+    displayName: 年份
+  note.read_status:
     displayName: 阅读状态
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  verification_status:
+  note.author_reading_priority:
+    displayName: 追读优先级
+  note.topic_links:
+    displayName: 专题
+  note.topics:
+    displayName: 专题编号
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_n:
+    displayName: 叙事
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+  note.title:
+    displayName: 标准书名
+  note.aliases:
+    displayName: 其他题名
+  note.verification_status:
     displayName: 校验状态
-  id:
-    displayName: 稳定 ID
 views:
   - type: table
     name: 全部作品
     order:
       - file.name
       - author
-      - topics
+      - year
       - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
-    columnSize:
-      note.topics: 503
   - type: table
     name: 未读
     filters:
@@ -51,7 +61,16 @@ views:
     order:
       - file.name
       - author
-      - topics
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 在读
@@ -61,7 +80,16 @@ views:
     order:
       - file.name
       - author
-      - topics
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 已读
@@ -73,6 +101,10 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - axis_t
       - axis_r
       - axis_m
@@ -93,9 +125,17 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_n
       - axis_q
+      - id
   - type: table
     name: 已读按地域
     filters:
@@ -109,9 +149,17 @@ views:
     order:
       - file.name
       - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - axis_t
+      - axis_r
+      - axis_m
       - axis_g
+      - axis_n
       - axis_q
+      - id
   - type: table
     name: 已读按作者
     filters:
@@ -124,10 +172,18 @@ views:
       direction: ASC
     order:
       - file.name
+      - author
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_n
       - axis_q
+      - id
   - type: table
     name: 需复核
     filters:
@@ -136,6 +192,14 @@ views:
     order:
       - file.name
       - author
-      - aliases
-      - verification_status
+      - year
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id

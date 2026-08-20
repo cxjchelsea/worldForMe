@@ -13,7 +13,7 @@ read_status: 未读
 topics:
 - WL-TOPIC-G44-HISTORICAL
 topic_links:
-- '[[20 专题地图/G 类型/G4.4.1 历史文学/00 历史文学]]'
+- '[[20 专题地图/G 类型/G4.4.1 历史文学/00 历史文学|历史文学]]'
 historical_priority: ◆
 historical_history_cluster: 早期现代、革命、19世纪与奴隶制
 historical_axes: []

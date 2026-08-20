@@ -4,40 +4,51 @@ filters:
     - author == "余华"
 properties:
   file.name:
-    displayName: 作品
-  title:
-    displayName: 标准书名
-  read_status:
-    displayName: 阅读状态
-  author_reading_priority:
-    displayName: 追读优先级
-  year:
-    displayName: 首次出版年
-  topics:
-    displayName: 专题
-  axis_t:
-    displayName: T 时间
-  axis_r:
-    displayName: R 地域
-  axis_m:
-    displayName: M 思潮
-  axis_g:
-    displayName: G 类型
-  axis_n:
-    displayName: N 叙事
-  axis_q:
-    displayName: Q 主题
-  id:
-    displayName: 稳定 ID
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.year:
+    displayName: "年份"
+  note.read_status:
+    displayName: "阅读状态"
+  note.author_reading_priority:
+    displayName: "追读优先级"
+  note.topic_links:
+    displayName: "专题"
+  note.topics:
+    displayName: "专题编号"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_m:
+    displayName: "思潮"
+  note.axis_g:
+    displayName: "类型"
+  note.axis_n:
+    displayName: "叙事"
+  note.axis_q:
+    displayName: "主题"
+  note.id:
+    displayName: "编号"
+  note.title:
+    displayName: "标准书名"
 views:
   - type: table
     name: 全部作品
     order:
       - file.name
+      - author
+      - year
       - read_status
       - author_reading_priority
-      - year
-      - topics
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 已读
@@ -48,10 +59,18 @@ views:
             - read_status == "重读"
     order:
       - file.name
+      - author
       - year
+      - read_status
+      - author_reading_priority
+      - topic_links
       - axis_t
+      - axis_r
+      - axis_m
       - axis_g
+      - axis_n
       - axis_q
+      - id
   - type: table
     name: 未读
     filters:
@@ -59,17 +78,33 @@ views:
         - read_status == "未读"
     order:
       - file.name
-      - author_reading_priority
+      - author
       - year
-      - topics
+      - read_status
+      - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 按出版年
     order:
-      - year
       - file.name
+      - author
+      - year
       - read_status
       - author_reading_priority
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id
   - type: table
     name: 追读计划
@@ -81,7 +116,15 @@ views:
             - author_reading_priority == "延伸"
     order:
       - file.name
+      - author
+      - year
       - read_status
       - author_reading_priority
-      - year
+      - topic_links
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_n
+      - axis_q
       - id

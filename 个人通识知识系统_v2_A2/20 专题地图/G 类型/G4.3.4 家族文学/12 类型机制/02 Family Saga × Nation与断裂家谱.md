@@ -2,6 +2,7 @@
 id: "WL-TOPIC-G43-FAMILY-NATION"
 type: "literature_topic_mechanism"
 topic_id: "WL-TOPIC-G43-FAMILY"
+sequence: 2
 parent: "WL-TOPIC-G43-FAMILY-BRIDGE"
 dimension: "family_and_history"
 ---

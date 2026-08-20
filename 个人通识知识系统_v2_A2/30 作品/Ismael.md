@@ -14,8 +14,8 @@ topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-GAUCHO
 topic_links:
-- '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学]]'
-- '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/06 Gaucho文学/00 Gaucho文学]]'
+- '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/00 世界武人、边疆与法外英雄文学|世界武人、边疆与法外英雄文学]]'
+- '[[20 专题地图/Q 主题/Q15 武人、英雄与秩序/06 Gaucho文学/00 Gaucho文学|Gaucho文学]]'
 martial_systems:
 - Gaucho
 q15_core_compare: false

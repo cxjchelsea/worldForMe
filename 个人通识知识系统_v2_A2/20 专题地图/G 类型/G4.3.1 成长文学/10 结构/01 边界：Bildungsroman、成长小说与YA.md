@@ -2,6 +2,8 @@
 id: "WL-TOPIC-G43-BILDUNGSROMAN-BOUNDARY"
 type: "literature_topic_structure"
 topic_id: "WL-TOPIC-G43-BILDUNGSROMAN"
+parent: "WL-TOPIC-G43-BILDUNGSROMAN"
+sequence: 1
 dimension: "definition"
 ---
 # 边界：Bildungsroman、成长小说与YA
