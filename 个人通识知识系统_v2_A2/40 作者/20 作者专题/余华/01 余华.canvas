@@ -1,0 +1,94 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "x": 980,
+      "y": 0,
+      "width": 480,
+      "height": 120,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/00 余华.md",
+      "color": "4"
+    },
+    {
+      "id": "entity",
+      "type": "file",
+      "x": 360,
+      "y": 0,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/10 作者实体/余华.md",
+      "color": "5"
+    },
+    {
+      "id": "works",
+      "type": "file",
+      "x": 1660,
+      "y": 0,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/02 余华作品.base",
+      "color": "4"
+    },
+    {
+      "id": "stage",
+      "type": "file",
+      "x": 0,
+      "y": 280,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/10 结构/01 创作阶段.md",
+      "color": "1"
+    },
+    {
+      "id": "lineage",
+      "type": "file",
+      "x": 520,
+      "y": 280,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/10 结构/02 作品谱系.md",
+      "color": "2"
+    },
+    {
+      "id": "theme",
+      "type": "file",
+      "x": 1040,
+      "y": 280,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/10 结构/03 核心主题与母题.md",
+      "color": "3"
+    },
+    {
+      "id": "style",
+      "type": "file",
+      "x": 1560,
+      "y": 280,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/10 结构/04 风格与叙事机制.md",
+      "color": "6"
+    },
+    {
+      "id": "route",
+      "type": "file",
+      "x": 2080,
+      "y": 280,
+      "width": 420,
+      "height": 100,
+      "file": "个人通识知识系统_v2_A2/40 作者/20 作者专题/余华/10 结构/05 阅读路线.md",
+      "color": "5"
+    }
+  ],
+  "edges": [
+    { "id": "e-entity", "fromNode": "entity", "toNode": "home" },
+    { "id": "e-works", "fromNode": "home", "toNode": "works" },
+    { "id": "e-stage", "fromNode": "home", "toNode": "stage" },
+    { "id": "e-lineage", "fromNode": "stage", "toNode": "lineage" },
+    { "id": "e-theme", "fromNode": "lineage", "toNode": "theme" },
+    { "id": "e-style", "fromNode": "lineage", "toNode": "style" },
+    { "id": "e-route", "fromNode": "theme", "toNode": "route" },
+    { "id": "e-style-route", "fromNode": "style", "toNode": "route" }
+  ]
+}

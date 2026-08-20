@@ -64,6 +64,14 @@ views:
       - topics
       - id
   - type: table
+    name: 按出版年
+    order:
+      - year
+      - file.name
+      - read_status
+      - author_reading_priority
+      - id
+  - type: table
     name: 追读计划
     filters:
       and:
