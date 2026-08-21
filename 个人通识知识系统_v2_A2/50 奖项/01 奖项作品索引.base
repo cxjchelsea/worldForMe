@@ -175,6 +175,17 @@ views:
       - axis_n
       - axis_q
       - id
+    columnSize:
+      file.name: 94
+      note.author: 74
+      note.read_status: 113
+      note.topic_links: 111
+      note.axis_t: 212
+      note.axis_r: 143
+      note.axis_m: 215
+      note.axis_g: 230
+      note.axis_n: 304
+      note.axis_q: 368
   - type: table
     name: 已读获奖作品
     filters:

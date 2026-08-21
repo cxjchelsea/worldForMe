@@ -1,1 +1,25 @@
-{"nodes":[{"id":"root","type":"file","x":700,"y":0,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学.md"},{"id":"s1","type":"file","x":0,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/01 边界：拉美、加勒比、拉美裔与语言世界.md"},{"id":"s2","type":"file","x":470,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/02 九阶段文学史.md"},{"id":"s3","type":"file","x":940,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/03 区域谱系与核心问题.md"},{"id":"s4","type":"file","x":1410,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/04 内部多样性与跨专题桥接.md"},{"id":"s5","type":"file","x":1880,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/05 阅读路线.md"},{"id":"m1","type":"file","x":920,"y":410,"width":450,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/12 区域机制/01 十五条拉美问题横轴.md"},{"id":"m2","type":"file","x":1420,"y":410,"width":450,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/12 区域机制/02 Boom之外：巴西、原住民、Afro-Latin与女性.md"},{"id":"structdb","type":"file","x":580,"y":600,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/02 拉丁美洲文学结构.base"},{"id":"works","type":"file","x":1080,"y":600,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/03 拉美作品.base"}],"edges":[{"id":"e1","fromNode":"root","toNode":"s1"},{"id":"e2","fromNode":"root","toNode":"s2"},{"id":"e3","fromNode":"root","toNode":"s3"},{"id":"e4","fromNode":"root","toNode":"s4"},{"id":"e5","fromNode":"root","toNode":"s5"},{"id":"e6","fromNode":"s3","toNode":"m1"},{"id":"e7","fromNode":"s4","toNode":"m2"},{"id":"e8","fromNode":"root","toNode":"structdb"},{"id":"e9","fromNode":"root","toNode":"works"}]}
+{
+	"nodes":[
+		{"id":"root","type":"file","x":700,"y":0,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/00 拉丁美洲文学.md"},
+		{"id":"s1","type":"file","x":0,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/01 边界：拉美、加勒比、拉美裔与语言世界.md"},
+		{"id":"s2","type":"file","x":470,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/02 九阶段文学史.md"},
+		{"id":"s3","type":"file","x":940,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/03 区域谱系与核心问题.md"},
+		{"id":"s4","type":"file","x":1410,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/04 内部多样性与跨专题桥接.md"},
+		{"id":"s5","type":"file","x":1880,"y":220,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/10 结构/05 阅读路线.md"},
+		{"id":"m1","type":"file","x":920,"y":410,"width":450,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/12 区域机制/01 十五条拉美问题横轴.md"},
+		{"id":"m2","type":"file","x":1420,"y":410,"width":450,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/12 区域机制/02 Boom之外：巴西、原住民、Afro-Latin与女性.md"},
+		{"id":"structdb","type":"file","x":580,"y":600,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/02 拉丁美洲文学结构.base"},
+		{"id":"works","type":"file","x":1080,"y":600,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/20 专题地图/R 地域/R6 拉丁美洲文学/03 拉美作品.base"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","toNode":"s1","fromSide":"bottom","toSide":"top"},
+		{"id":"e2","fromNode":"root","toNode":"s2","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"root","toNode":"s3","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"root","toNode":"s4","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"root","toNode":"s5","fromSide":"right","toSide":"left"},
+		{"id":"e6","fromNode":"s3","toNode":"m1","fromSide":"bottom","toSide":"top"},
+		{"id":"e7","fromNode":"s4","toNode":"m2","fromSide":"bottom","toSide":"top"},
+		{"id":"e8","fromNode":"root","toNode":"structdb","fromSide":"bottom","toSide":"top"},
+		{"id":"e9","fromNode":"root","toNode":"works","fromSide":"bottom","toSide":"top"}
+	]
+}
