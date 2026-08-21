@@ -1,0 +1,22 @@
+---
+id: WL-QH8.7
+type: literature_node
+name: "神圣"
+code: QH8.7
+axis: Q
+parent: WL-QH8
+level: 3
+coverage_priority: Expand
+node_kind: taxonomy_leaf
+anchorable: true
+topic_map: null
+source_version: "2.8-q-facets"
+---
+
+# QH8.7 神圣
+
+> 路径：Q轴 → QH8 信仰、伦理与超越 → **QH8.7 神圣**
+
+## 专题地图
+
+> 暂未接入。专题从本叶展开。

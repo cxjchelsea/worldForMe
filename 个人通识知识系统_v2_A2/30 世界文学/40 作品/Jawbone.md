@@ -1,0 +1,44 @@
+---
+id: WL-WORK-0505
+type: work
+title: Jawbone
+title_original: ''
+aliases: []
+author: 莫妮卡·奥赫达
+author_original: Mónica Ojeda
+author_source: heading
+year: null
+literary_traditions: []
+read_status: 未读
+topics:
+- WL-TOPIC-G45-HORROR
+topic_links:
+- '[[../30 专题/QT4 恐怖/00 恐怖文学|恐怖文学]]'
+horror_priority: ★
+horror_history_cluster: 日本、中国、韩国与拉美全球恐怖
+horror_subgenres: []
+horror_region:
+- 拉丁美洲
+verification_status: 自动通过
+bibliography_status: metadata_pending
+batch1_source_refs:
+- 恐怖书单.md:1094
+- 恐怖书单.md:1759
+---
+# Jawbone
+
+## 基本信息
+
+- 作者：Mónica Ojeda
+- 首次出版年：待统一书目校验
+- 阅读状态：未读
+
+## 专题位置
+
+- [[../30 专题/QT4 恐怖/00 恐怖文学|恐怖文学]]
+  - 专题优先级：★
+  - 历史位置：日本、中国、韩国与拉美全球恐怖
+
+## 数据说明
+
+> 本文件是中央作品库中的唯一作品实体。专题 Markdown 不重复维护完整书目；后续其他专题命中本书时复用此文件。

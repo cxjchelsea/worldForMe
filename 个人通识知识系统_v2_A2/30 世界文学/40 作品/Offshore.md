@@ -1,0 +1,44 @@
+---
+id: WL-WORK-3046
+type: work
+title: Offshore
+title_original: Offshore
+aliases: []
+author: 佩内洛普·菲茨杰拉德
+author_original: Penelope Fitzgerald
+year:
+read_status: 未读
+awards:
+  - WL-AWARD-BOOKER
+axis_t:
+  - T5 二战后多极文学
+axis_r:
+  - R4 欧洲文学
+axis_g:
+  - G3 小说
+axis_source: award_v1
+topics: []
+topic_links: []
+verification_status: 需复核
+bibliography_status: metadata_pending
+---
+
+# Offshore
+
+## 基本信息
+
+- 作者：佩内洛普·菲茨杰拉德
+- 原名：Offshore
+- 阅读状态：未读
+
+## 奖项
+
+- 布克奖
+
+## 五轴坐标
+
+- T 时间：T5 二战后多极文学
+- R 地域：R4 欧洲文学
+- M 思潮：暂不标
+- G 体裁：G3 小说
+- Q 内容：暂不标
