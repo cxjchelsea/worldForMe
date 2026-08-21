@@ -25,6 +25,12 @@ topics:
 topic_links:
   - '[[../30 专题/QT1 推理与犯罪叙事/00 推理文学|推理文学]]'
 mystery_priority: "★"
+mystery_pool_v2: "core"
+mystery_layer:
+  - "文学史骨架"
+  - "类型重要"
+  - "大众入口"
+  - "当代代表"
 mystery_history_cluster:
   - "日本推理传统"
 mystery_history:
