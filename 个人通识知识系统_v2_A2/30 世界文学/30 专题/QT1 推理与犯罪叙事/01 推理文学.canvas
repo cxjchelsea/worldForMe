@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"root","type":"file","x":1220,"y":0,"width":520,"height":130,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/00 推理文学.md","color":"4"},
+		{"id":"g-core","type":"group","x":0,"y":250,"width":1000,"height":1050,"label":"G轴核心结构","color":"2"},
+		{"id":"g-history","type":"group","x":1080,"y":250,"width":1000,"height":1050,"label":"历史主分支","color":"1"},
+		{"id":"g-mech","type":"group","x":2160,"y":250,"width":820,"height":760,"label":"类型机制深化","color":"3"},
+		{"id":"g-data","type":"group","x":2160,"y":1050,"width":820,"height":500,"label":"数据与阅读入口","color":"5"},
+		{"id":"boundary","type":"file","x":170,"y":330,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/10 结构/01 定义与边界.md","color":"2"},
+		{"id":"history","type":"file","x":170,"y":500,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/10 结构/02 历史演进.md","color":"1"},
+		{"id":"system","type":"file","x":170,"y":670,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/10 结构/03 类型谱系与核心机制.md","color":"3"},
+		{"id":"bridge","type":"file","x":170,"y":840,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/10 结构/04 跨类型与地域桥接.md","color":"5"},
+		{"id":"reading","type":"file","x":170,"y":1010,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/10 结构/05 阅读路线.md","color":"6"},
+		{"id":"h1","type":"file","x":1160,"y":340,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/01 前史、侦探诞生与黄金时代.md","color":"1"},
+		{"id":"h2","type":"file","x":1600,"y":340,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/02 美国犯罪小说传统与类型扩张.md","color":"1"},
+		{"id":"h3","type":"file","x":1160,"y":520,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/03 日本推理传统.md","color":"1"},
+		{"id":"h4","type":"file","x":1600,"y":520,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/04 北欧与欧洲大陆犯罪文学.md","color":"1"},
+		{"id":"h5","type":"file","x":1160,"y":700,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/05 中文推理与边界类型.md","color":"1"},
+		{"id":"h6","type":"file","x":1600,"y":700,"width":400,"height":105,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/11 历史细分/06 边界类型：间谍、盗窃与犯罪者小说.md","color":"1"},
+		{"id":"tech","type":"file","x":2310,"y":340,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/12 类型机制/01 谜题与结构技法.md","color":"2"},
+		{"id":"mode","type":"file","x":2310,"y":520,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/12 类型机制/02 犯罪小说模式.md","color":"3"},
+		{"id":"region","type":"file","x":2310,"y":700,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/12 类型机制/03 地域传统.md","color":"5"},
+		{"id":"worksdb","type":"file","x":2310,"y":1130,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/03 推理作品.base","color":"4"},
+		{"id":"structuredb","type":"file","x":2310,"y":1300,"width":520,"height":110,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QT1 推理与犯罪叙事/02 推理文学结构.base","color":"5"}
+	],
+	"edges":[
+		{"id":"e-root-boundary","fromNode":"root","fromSide":"bottom","toNode":"boundary","toSide":"top"},
+		{"id":"e-root-history","fromNode":"root","fromSide":"bottom","toNode":"history","toSide":"top"},
+		{"id":"e-root-system","fromNode":"root","fromSide":"bottom","toNode":"system","toSide":"top"},
+		{"id":"e-root-bridge","fromNode":"root","fromSide":"bottom","toNode":"bridge","toSide":"top"},
+		{"id":"e-root-reading","fromNode":"root","fromSide":"bottom","toNode":"reading","toSide":"top"},
+		{"id":"e-root-works","fromNode":"root","fromSide":"bottom","toNode":"worksdb","toSide":"top"},
+		{"id":"e-root-structure","fromNode":"root","fromSide":"bottom","toNode":"structuredb","toSide":"top"},
+		{"id":"e-history-h1","fromNode":"history","fromSide":"right","toNode":"h1","toSide":"left"},
+		{"id":"e-history-h2","fromNode":"history","fromSide":"right","toNode":"h2","toSide":"left"},
+		{"id":"e-history-h3","fromNode":"history","fromSide":"right","toNode":"h3","toSide":"left"},
+		{"id":"e-history-h4","fromNode":"history","fromSide":"right","toNode":"h4","toSide":"left"},
+		{"id":"e-history-h5","fromNode":"history","fromSide":"right","toNode":"h5","toSide":"left"},
+		{"id":"e-history-h6","fromNode":"history","fromSide":"right","toNode":"h6","toSide":"left"},
+		{"id":"e-system-tech","fromNode":"system","fromSide":"right","toNode":"tech","toSide":"left"},
+		{"id":"e-system-mode","fromNode":"system","fromSide":"right","toNode":"mode","toSide":"left"},
+		{"id":"e-bridge-region","fromNode":"bridge","fromSide":"right","toNode":"region","toSide":"left"}
+	]
+}

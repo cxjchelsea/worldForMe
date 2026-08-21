@@ -686,7 +686,7 @@
     {
       "id": "WL-QT1",
       "axis": "Q",
-      "name": "推理",
+      "name": "推理与犯罪叙事",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
@@ -716,7 +716,7 @@
     {
       "id": "WL-QT4",
       "axis": "Q",
-      "name": "恐怖",
+      "name": "恐怖与哥特",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
@@ -726,7 +726,7 @@
     {
       "id": "WL-QT5",
       "axis": "Q",
-      "name": "冒险",
+      "name": "冒险与探索叙事",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
@@ -736,7 +736,7 @@
     {
       "id": "WL-QT6",
       "axis": "Q",
-      "name": "反乌托邦",
+      "name": "乌托邦、反乌托邦与社会想象",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
@@ -756,7 +756,7 @@
     {
       "id": "WL-QT8",
       "axis": "Q",
-      "name": "文化类型传统",
+      "name": "英雄、边疆与法外者文化传统",
       "parent": "WL-QT",
       "node_kind": "taxonomy_group",
       "anchorable": false,
@@ -846,7 +846,7 @@
     {
       "id": "WL-QT9",
       "axis": "Q",
-      "name": "神话",
+      "name": "神话、传说与民间叙事",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
@@ -856,49 +856,54 @@
     {
       "id": "WL-QT10",
       "axis": "Q",
-      "name": "旅行书写",
+      "name": "惊悚与悬疑叙事",
       "parent": "WL-QT",
       "node_kind": "taxonomy_leaf",
       "anchorable": true,
-      "coverage_priority": "Expand",
-      "legacy_from": "WL-Q16.8"
+      "coverage_priority": "Core",
+      "legacy_from": "WL-Q16.8",
+      "note": "reused: former 旅行书写 remounted to WL-QT14"
     },
     {
       "id": "WL-QT11",
       "axis": "Q",
-      "name": "传说",
+      "name": "爱情与浪漫叙事",
       "parent": "WL-QT",
-      "node_kind": "retired",
-      "anchorable": false,
-      "coverage_priority": "Interest"
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
+      "coverage_priority": "Core",
+      "note": "reused number; old folk-type meaning retired into QT9 or G"
     },
     {
       "id": "WL-QT12",
       "axis": "Q",
-      "name": "童话",
+      "name": "灾变、末世与后末日叙事",
       "parent": "WL-QT",
-      "node_kind": "retired",
-      "anchorable": false,
-      "coverage_priority": "Interest"
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
+      "coverage_priority": "Core",
+      "note": "reused number; old folk-type meaning retired into QT9 or G"
     },
     {
       "id": "WL-QT13",
       "axis": "Q",
-      "name": "民间故事",
+      "name": "讽刺叙事",
       "parent": "WL-QT",
-      "node_kind": "retired",
-      "anchorable": false,
-      "coverage_priority": "Interest"
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
+      "coverage_priority": "Expand",
+      "note": "reused number; old folk-type meaning retired into QT9 or G"
     },
     {
       "id": "WL-QT14",
       "axis": "Q",
-      "name": "寓言",
+      "name": "旅行与游记",
       "parent": "WL-QT",
-      "node_kind": "retired",
-      "anchorable": false,
-      "coverage_priority": "Interest",
-      "legacy_from": "WL-G1.5"
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
+      "coverage_priority": "Expand",
+      "legacy_from": "WL-G1.5",
+      "note": "reused number; old folk-type meaning retired into QT9 or G"
     },
     {
       "id": "WL-QH",
@@ -2422,7 +2427,7 @@
     },
     {
       "topic_id": "WL-TOPIC-G7-TRAVEL",
-      "anchor": "WL-QT10",
+      "anchor": "WL-QT14",
       "anchor_mode": "leaf"
     },
     {

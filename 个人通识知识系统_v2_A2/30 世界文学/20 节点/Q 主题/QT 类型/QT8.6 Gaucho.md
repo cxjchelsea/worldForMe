@@ -16,7 +16,7 @@ source_version: "2.8-q-facets"
 
 # QT8.6 Gaucho
 
-> 路径：Q轴 → QT8 文化类型传统 → **QT8.6 Gaucho**
+> 路径：Q轴 → QT8 英雄、边疆与法外者文化传统 → **QT8.6 Gaucho**
 
 ## 专题地图
 
