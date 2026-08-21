@@ -27,6 +27,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 侠盗书单.md:1355
 - 侠盗书单.md:2056
+canon_id: CANON-203
+canon_level: Core
 ---
 # Grande Sertão: Veredas
 

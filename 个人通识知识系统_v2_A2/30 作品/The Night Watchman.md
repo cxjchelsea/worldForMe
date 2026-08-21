@@ -10,6 +10,8 @@ author_source: batch2_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+awards:
+- WL-AWARD-PULITZER-FICTION
 topics:
 - WL-TOPIC-G44-HISTORICAL
 topic_links:

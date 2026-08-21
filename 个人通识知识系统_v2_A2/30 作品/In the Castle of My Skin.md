@@ -22,6 +22,8 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1221
 - 成长书单.md:2388
+canon_id: CANON-278
+canon_level: Major
 ---
 # In the Castle of My Skin
 

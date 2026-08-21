@@ -22,6 +22,8 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1245
 - 成长书单.md:2390
+canon_id: CANON-261
+canon_level: Major
 ---
 # Nervous Conditions
 

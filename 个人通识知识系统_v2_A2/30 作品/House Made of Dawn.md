@@ -10,6 +10,8 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+awards:
+- WL-AWARD-PULITZER-FICTION
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-WESTERN

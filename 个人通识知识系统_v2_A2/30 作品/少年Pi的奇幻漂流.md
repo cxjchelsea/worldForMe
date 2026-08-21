@@ -10,6 +10,8 @@ author_source: batch5_source_inferred
 year: null
 literary_traditions: []
 read_status: 已读
+awards:
+- WL-AWARD-BOOKER
 axis_t:
 - T6 当代全球文学
 axis_r:

@@ -10,6 +10,8 @@ author_source: batch6_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+awards:
+- WL-AWARD-BOOKER
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-OUTLAW
