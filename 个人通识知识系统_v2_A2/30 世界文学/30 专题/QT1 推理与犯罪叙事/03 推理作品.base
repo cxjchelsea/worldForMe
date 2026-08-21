@@ -20,13 +20,15 @@ properties:
   note.axis_m:
     displayName: 思潮
   note.axis_g:
-    displayName: 类型
+    displayName: 体裁 / 形式
   note.axis_q:
-    displayName: 主题
+    displayName: Q 类型 / 主题
   note.id:
     displayName: 编号
   note.mystery_priority:
-    displayName: 优先级
+    displayName: 专题优先级
+  note.mystery_layer:
+    displayName: 阅读与传播层
   note.mystery_history_cluster:
     displayName: 历史位置
   note.verification_status:
@@ -46,14 +48,15 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_q
+      - topic_links
       - id
   - type: table
     name: 核心骨架 ★
@@ -64,14 +67,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
       - id
   - type: table
     name: 骨架未读
@@ -82,15 +81,10 @@ views:
     order:
       - file.name
       - author
-      - read_status
-      - topic_links
-      - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
       - id
   - type: table
     name: 系统扩展 ◆
@@ -101,14 +95,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
       - id
   - type: table
     name: 深挖候选 ○
@@ -119,14 +109,64 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
+      - mystery_layer
+      - mystery_history_cluster
+      - axis_t
+      - axis_r
+      - id
+  - type: table
+    name: 文学史骨架
+    filters:
+      and:
+        - mystery_layer.contains("文学史骨架")
+    order:
+      - file.name
+      - author
+      - read_status
       - mystery_priority
       - mystery_history_cluster
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
+      - id
+  - type: table
+    name: 类型重要
+    filters:
+      and:
+        - mystery_layer.contains("类型重要")
+    order:
+      - file.name
+      - author
+      - read_status
+      - mystery_priority
+      - mystery_mode
+      - mystery_technique
+      - axis_r
+      - id
+  - type: table
+    name: 大众入口
+    filters:
+      and:
+        - mystery_layer.contains("大众入口")
+    order:
+      - file.name
+      - author
+      - read_status
+      - mystery_priority
+      - mystery_history_cluster
+      - axis_r
+      - id
+  - type: table
+    name: 当代代表
+    filters:
+      and:
+        - mystery_layer.contains("当代代表")
+    order:
+      - file.name
+      - author
+      - read_status
+      - mystery_priority
+      - mystery_history_cluster
+      - axis_r
       - id
   - type: table
     name: 按历史
@@ -137,14 +177,23 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - mystery_priority
-      - mystery_history_cluster
+      - mystery_layer
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
+      - id
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - mystery_priority
+      - mystery_layer
+      - mystery_history_cluster
       - id
   - type: table
     name: 未读
@@ -154,15 +203,10 @@ views:
     order:
       - file.name
       - author
-      - read_status
-      - topic_links
       - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
-      - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
       - id
   - type: table
     name: 已读
@@ -174,13 +218,8 @@ views:
     order:
       - file.name
       - author
-      - read_status
-      - topic_links
       - mystery_priority
+      - mystery_layer
       - mystery_history_cluster
-      - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
       - id
