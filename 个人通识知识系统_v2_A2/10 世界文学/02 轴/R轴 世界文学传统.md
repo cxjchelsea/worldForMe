@@ -32,17 +32,9 @@ node_model: "region_tradition_plus_transregional_networks"
 
 ## v2 规则
 
-R 轴允许不同 `node_kind` 共存：
+全局坐标只有 R1–R10。国家／语言／内部传统在专题中细分，不预建成全局子节点。
 
-- `regional_cluster`
-- `civilizational_cluster`
-- `national_or_language_tradition`
-- `transregional_network_group`
-- `diaspora_network`
-
-这不是要求所有传统必须服从纯地理行政区划，而是明确它们是什么类型的“地域／传统”节点。
-
-同一文学网络只能有一个 canonical node；其他地域节点通过关系指向它，不重复创建第二个坐标。例如**非洲离散文学 canonical 统一为 R10.2**，R7 只保留关系入口。
+唯一例外：**非洲离散文学 canonical 统一为 R10.2**，R7 只保留关系入口，避免再出现 `R7.7`。
 
 ## 返回
 

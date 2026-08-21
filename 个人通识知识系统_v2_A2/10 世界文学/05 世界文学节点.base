@@ -3,7 +3,7 @@ filters:
     - type == "literature_node"
     - id.startsWith("WL-")
 formulas:
-  axis_zh: if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 类型").replace("N", "N 叙事").replace("Q", "Q 主题"), "")
+  axis_zh: if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 类型").replace("Q", "Q 主题"), "")
 properties:
   file.name:
     displayName: 节点
@@ -26,7 +26,7 @@ views:
     columnSize:
       file.name: 285
   - type: table
-    name: 六轴一级节点
+    name: 五轴一级节点
     filters:
       and:
         - level == 1

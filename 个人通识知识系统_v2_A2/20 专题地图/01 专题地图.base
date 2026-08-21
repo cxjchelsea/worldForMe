@@ -2,7 +2,7 @@ filters:
   and:
     - type == "literature_topic_map"
 formulas:
-  axis_zh: if(primary_anchor, primary_anchor.replace("WL-N2.2.2", "N 叙事").replace("WL-M3.1", "M 思潮").replace("WL-G4.3.1", "G 类型").replace("WL-G4.3.4", "G 类型").replace("WL-G4.4.1", "G 类型").replace("WL-G4.5.1", "G 类型").replace("WL-G4.5.2", "G 类型").replace("WL-G4.5.3", "G 类型").replace("WL-G4.5.4", "G 类型").replace("WL-G4.5.5", "G 类型").replace("WL-G4.6.2", "G 类型").replace("WL-G7.4", "G 类型").replace("WL-G1.1", "G 类型").replace("WL-Q2.1", "Q 主题").replace("WL-Q6.1", "Q 主题").replace("WL-Q10", "Q 主题").replace("WL-Q15", "Q 主题").replace("WL-T5", "T 时间").replace("WL-R6", "R 地域"), "")
+  axis_zh: if(primary_anchor, primary_anchor.replace("WL-M3.1", "M 思潮").replace("WL-G4.3.1", "G 类型").replace("WL-G4.3.4", "G 类型").replace("WL-G4.4.1", "G 类型").replace("WL-G4.5.1", "G 类型").replace("WL-G4.5.2", "G 类型").replace("WL-G4.5.3", "G 类型").replace("WL-G4.5.4", "G 类型").replace("WL-G4.5.5", "G 类型").replace("WL-G4.6.2", "G 类型").replace("WL-G7.4", "G 类型").replace("WL-G1.1", "G 类型").replace("WL-Q2.1", "Q 主题").replace("WL-Q6.1", "Q 主题").replace("WL-Q15.1", "Q 主题").replace("WL-Q15.2", "Q 主题").replace("WL-Q15.3", "Q 主题").replace("WL-Q15.4", "Q 主题").replace("WL-Q15.5", "Q 主题").replace("WL-Q15.6", "Q 主题").replace("WL-Q15.7", "Q 主题").replace("WL-Q15.8", "Q 主题").replace("WL-Q10", "Q 主题").replace("WL-Q15", "Q 主题").replace("WL-T5", "T 时间").replace("WL-R6", "R 地域"), "")
   code_zh: if(primary_anchor, primary_anchor.replace("WL-", ""), "")
 properties:
   file.name:
