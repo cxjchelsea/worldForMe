@@ -921,50 +921,50 @@
     {
       "id": "WL-QH1.1",
       "axis": "Q",
-      "name": "自我",
+      "name": "身份",
       "parent": "WL-QH1",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.1"
     },
     {
       "id": "WL-QH1.2",
       "axis": "Q",
-      "name": "自由",
+      "name": "自由与选择",
       "parent": "WL-QH1",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.3"
     },
     {
       "id": "WL-QH1.3",
       "axis": "Q",
-      "name": "选择",
+      "name": "孤独",
       "parent": "WL-QH1",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.4"
     },
     {
       "id": "WL-QH1.4",
       "axis": "Q",
-      "name": "孤独",
+      "name": "死亡",
       "parent": "WL-QH1",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.5"
     },
     {
       "id": "WL-QH1.5",
       "axis": "Q",
-      "name": "荒诞",
+      "name": "意义与荒诞",
       "parent": "WL-QH1",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.6"
     },
@@ -973,25 +973,27 @@
       "axis": "Q",
       "name": "死亡",
       "parent": "WL-QH1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q1.7"
+      "legacy_from": "WL-Q1.7",
+      "canonical": "WL-QH1"
     },
     {
       "id": "WL-QH1.7",
       "axis": "Q",
       "name": "人生意义",
       "parent": "WL-QH1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q1.8"
+      "legacy_from": "WL-Q1.8",
+      "canonical": "WL-QH1"
     },
     {
       "id": "WL-QH2",
       "axis": "Q",
-      "name": "关系、家庭与成长",
+      "name": "爱、家庭与成长",
       "parent": "WL-QH",
       "node_kind": "taxonomy_group",
       "anchorable": false,
@@ -1000,10 +1002,10 @@
     {
       "id": "WL-QH2.1",
       "axis": "Q",
-      "name": "亲密关系",
+      "name": "爱情与欲望",
       "parent": "WL-QH2",
-      "node_kind": "taxonomy_group",
-      "anchorable": false,
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q2"
     },
@@ -1012,77 +1014,84 @@
       "axis": "Q",
       "name": "爱情",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q2.1"
+      "legacy_from": "WL-Q2.1",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.2",
       "axis": "Q",
       "name": "欲望",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q2.2"
+      "legacy_from": "WL-Q2.2",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.3",
       "axis": "Q",
       "name": "婚姻",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q2.3"
+      "legacy_from": "WL-Q2.3",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.4",
       "axis": "Q",
       "name": "友谊",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q2.4"
+      "legacy_from": "WL-Q2.4",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.5",
       "axis": "Q",
       "name": "背叛",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q2.5"
+      "legacy_from": "WL-Q2.5",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.6",
       "axis": "Q",
       "name": "失去",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q2.6"
+      "legacy_from": "WL-Q2.6",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.1.7",
       "axis": "Q",
       "name": "哀悼",
       "parent": "WL-QH2.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q2.7"
+      "legacy_from": "WL-Q2.7",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.2",
       "axis": "Q",
-      "name": "家庭",
+      "name": "婚姻与亲密关系",
       "parent": "WL-QH2",
-      "node_kind": "taxonomy_group",
+      "node_kind": "taxonomy_leaf",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q3"
@@ -1092,58 +1101,63 @@
       "axis": "Q",
       "name": "父母与子女",
       "parent": "WL-QH2.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q3.1"
+      "legacy_from": "WL-Q3.1",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.2.2",
       "axis": "Q",
       "name": "兄弟姐妹",
       "parent": "WL-QH2.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q3.2"
+      "legacy_from": "WL-Q3.2",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.2.3",
       "axis": "Q",
       "name": "家族",
       "parent": "WL-QH2.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q3.3"
+      "legacy_from": "WL-Q3.3",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.2.4",
       "axis": "Q",
       "name": "代际冲突",
       "parent": "WL-QH2.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q3.4"
+      "legacy_from": "WL-Q3.4",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.2.5",
       "axis": "Q",
       "name": "家族秘密",
       "parent": "WL-QH2.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q3.8"
+      "legacy_from": "WL-Q3.8",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.3",
       "axis": "Q",
-      "name": "成长",
+      "name": "家庭与家族",
       "parent": "WL-QH2",
-      "node_kind": "taxonomy_group",
-      "anchorable": false,
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
       "coverage_priority": "Core"
     },
     {
@@ -1151,30 +1165,33 @@
       "axis": "Q",
       "name": "童年",
       "parent": "WL-QH2.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q3.5"
+      "legacy_from": "WL-Q3.5",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.3.2",
       "axis": "Q",
       "name": "成长",
       "parent": "WL-QH2.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q3.6"
+      "legacy_from": "WL-Q3.6",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH2.3.3",
       "axis": "Q",
       "name": "教育",
       "parent": "WL-QH2.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q3.7"
+      "legacy_from": "WL-Q3.7",
+      "canonical": "WL-QH2"
     },
     {
       "id": "WL-QH3",
@@ -1188,19 +1205,19 @@
     {
       "id": "WL-QH3.1",
       "axis": "Q",
-      "name": "身份",
+      "name": "性别与身体",
       "parent": "WL-QH3",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q1.2"
     },
     {
       "id": "WL-QH3.2",
       "axis": "Q",
-      "name": "性别、身体与性",
+      "name": "性与欲望",
       "parent": "WL-QH3",
-      "node_kind": "taxonomy_group",
+      "node_kind": "taxonomy_leaf",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q7"
@@ -1210,87 +1227,95 @@
       "axis": "Q",
       "name": "女性处境",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q7.1"
+      "legacy_from": "WL-Q7.1",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.2",
       "axis": "Q",
       "name": "男性气质",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q7.2"
+      "legacy_from": "WL-Q7.2",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.3",
       "axis": "Q",
       "name": "性别角色",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q7.3"
+      "legacy_from": "WL-Q7.3",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.4",
       "axis": "Q",
       "name": "身体",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q7.4"
+      "legacy_from": "WL-Q7.4",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.5",
       "axis": "Q",
       "name": "性",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q7.5"
+      "legacy_from": "WL-Q7.5",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.6",
       "axis": "Q",
       "name": "生育",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q7.6"
+      "legacy_from": "WL-Q7.6",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.7",
       "axis": "Q",
       "name": "母职",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q7.7"
+      "legacy_from": "WL-Q7.7",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.2.8",
       "axis": "Q",
       "name": "酷儿经验",
       "parent": "WL-QH3.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q7.8"
+      "legacy_from": "WL-Q7.8",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3",
       "axis": "Q",
-      "name": "种族、族群与殖民",
+      "name": "种族与族群",
       "parent": "WL-QH3",
-      "node_kind": "taxonomy_group",
+      "node_kind": "taxonomy_leaf",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q8"
@@ -1300,87 +1325,95 @@
       "axis": "Q",
       "name": "种族",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.1"
+      "legacy_from": "WL-Q8.1",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.2",
       "axis": "Q",
       "name": "族群",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.2"
+      "legacy_from": "WL-Q8.2",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.3",
       "axis": "Q",
       "name": "奴隶制",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.3"
+      "legacy_from": "WL-Q8.3",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.4",
       "axis": "Q",
       "name": "帝国",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.4"
+      "legacy_from": "WL-Q8.4",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.5",
       "axis": "Q",
       "name": "殖民",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.5"
+      "legacy_from": "WL-Q8.5",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.6",
       "axis": "Q",
       "name": "反殖民",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.6"
+      "legacy_from": "WL-Q8.6",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.7",
       "axis": "Q",
       "name": "去殖民",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q8.7"
+      "legacy_from": "WL-Q8.7",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.3.8",
       "axis": "Q",
       "name": "文化冲突",
       "parent": "WL-QH3.3",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q8.8"
+      "legacy_from": "WL-Q8.8",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4",
       "axis": "Q",
-      "name": "迁徙、流亡与归属",
+      "name": "民族与文化身份",
       "parent": "WL-QH3",
-      "node_kind": "taxonomy_group",
+      "node_kind": "taxonomy_leaf",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q9"
@@ -1390,80 +1423,88 @@
       "axis": "Q",
       "name": "移民",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q9.1"
+      "legacy_from": "WL-Q9.1",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.2",
       "axis": "Q",
       "name": "难民",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q9.2"
+      "legacy_from": "WL-Q9.2",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.3",
       "axis": "Q",
       "name": "流亡",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q9.3"
+      "legacy_from": "WL-Q9.3",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.4",
       "axis": "Q",
       "name": "离散",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q9.4"
+      "legacy_from": "WL-Q9.4",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.5",
       "axis": "Q",
       "name": "故乡",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q9.5"
+      "legacy_from": "WL-Q9.5",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.6",
       "axis": "Q",
       "name": "无家",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q9.6"
+      "legacy_from": "WL-Q9.6",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.7",
       "axis": "Q",
       "name": "文化混杂",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q9.7"
+      "legacy_from": "WL-Q9.7",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH3.4.8",
       "axis": "Q",
       "name": "归属",
       "parent": "WL-QH3.4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q9.8"
+      "legacy_from": "WL-Q9.8",
+      "canonical": "WL-QH3"
     },
     {
       "id": "WL-QH4",
@@ -1481,57 +1522,57 @@
       "name": "阶级",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q4.1"
     },
     {
       "id": "WL-QH4.2",
       "axis": "Q",
-      "name": "贫困",
+      "name": "贫困与财富",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q4.2"
     },
     {
       "id": "WL-QH4.3",
       "axis": "Q",
-      "name": "财富",
+      "name": "劳动与资本",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q4.3"
     },
     {
       "id": "WL-QH4.4",
       "axis": "Q",
-      "name": "劳动",
+      "name": "城市与乡村",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q4.4"
     },
     {
       "id": "WL-QH4.5",
       "axis": "Q",
-      "name": "工业化",
+      "name": "社会流动",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q4.5"
     },
     {
       "id": "WL-QH4.6",
       "axis": "Q",
-      "name": "城市化",
+      "name": "边缘与排斥",
       "parent": "WL-QH4",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q4.6"
     },
@@ -1540,20 +1581,22 @@
       "axis": "Q",
       "name": "乡村",
       "parent": "WL-QH4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q4.7"
+      "legacy_from": "WL-Q4.7",
+      "canonical": "WL-QH4"
     },
     {
       "id": "WL-QH4.8",
       "axis": "Q",
       "name": "消费社会",
       "parent": "WL-QH4",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q4.8"
+      "legacy_from": "WL-Q4.8",
+      "canonical": "WL-QH4"
     },
     {
       "id": "WL-QH5",
@@ -1568,60 +1611,60 @@
     {
       "id": "WL-QH5.1",
       "axis": "Q",
-      "name": "国家",
+      "name": "权力",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q5.1"
     },
     {
       "id": "WL-QH5.2",
       "axis": "Q",
-      "name": "政治",
+      "name": "国家与政治",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q5.2"
     },
     {
       "id": "WL-QH5.3",
       "axis": "Q",
-      "name": "革命",
+      "name": "法律与正义",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q5.3"
     },
     {
       "id": "WL-QH5.4",
       "axis": "Q",
-      "name": "法律",
+      "name": "革命与反抗",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q5.4"
     },
     {
       "id": "WL-QH5.5",
       "axis": "Q",
-      "name": "官僚制度",
+      "name": "自由与控制",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q5.5"
     },
     {
       "id": "WL-QH5.6",
       "axis": "Q",
-      "name": "极权",
+      "name": "制度与官僚",
       "parent": "WL-QH5",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q5.6"
     },
@@ -1630,35 +1673,38 @@
       "axis": "Q",
       "name": "监控",
       "parent": "WL-QH5",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q5.7"
+      "legacy_from": "WL-Q5.7",
+      "canonical": "WL-QH5"
     },
     {
       "id": "WL-QH5.8",
       "axis": "Q",
       "name": "审查",
       "parent": "WL-QH5",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q5.8"
+      "legacy_from": "WL-Q5.8",
+      "canonical": "WL-QH5"
     },
     {
       "id": "WL-QH5.9",
       "axis": "Q",
       "name": "个体与制度",
       "parent": "WL-QH5",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q5.9"
+      "legacy_from": "WL-Q5.9",
+      "canonical": "WL-QH5"
     },
     {
       "id": "WL-QH6",
       "axis": "Q",
-      "name": "暴力、战争与创伤",
+      "name": "战争、暴力与创伤",
       "parent": "WL-QH",
       "node_kind": "taxonomy_group",
       "anchorable": false,
@@ -1678,50 +1724,50 @@
     {
       "id": "WL-QH6.2",
       "axis": "Q",
-      "name": "屠杀",
+      "name": "暴力",
       "parent": "WL-QH6",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q6.2"
     },
     {
       "id": "WL-QH6.3",
       "axis": "Q",
-      "name": "种族灭绝",
+      "name": "创伤",
       "parent": "WL-QH6",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q6.3"
     },
     {
       "id": "WL-QH6.4",
       "axis": "Q",
-      "name": "革命暴力",
+      "name": "复仇",
       "parent": "WL-QH6",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q6.4"
     },
     {
       "id": "WL-QH6.5",
       "axis": "Q",
-      "name": "国家暴力",
+      "name": "罪责",
       "parent": "WL-QH6",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q6.5"
     },
     {
       "id": "WL-QH6.6",
       "axis": "Q",
-      "name": "家庭暴力",
+      "name": "幸存",
       "parent": "WL-QH6",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q6.6"
     },
@@ -1730,30 +1776,33 @@
       "axis": "Q",
       "name": "生存",
       "parent": "WL-QH6",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q6.7"
+      "legacy_from": "WL-Q6.7",
+      "canonical": "WL-QH6"
     },
     {
       "id": "WL-QH6.8",
       "axis": "Q",
       "name": "创伤",
       "parent": "WL-QH6",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q6.8"
+      "legacy_from": "WL-Q6.8",
+      "canonical": "WL-QH6"
     },
     {
       "id": "WL-QH6.9",
       "axis": "Q",
       "name": "创伤后记忆",
       "parent": "WL-QH6",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q6.9"
+      "legacy_from": "WL-Q6.9",
+      "canonical": "WL-QH6"
     },
     {
       "id": "WL-QH7",
@@ -1768,50 +1817,50 @@
     {
       "id": "WL-QH7.1",
       "axis": "Q",
-      "name": "个人记忆",
+      "name": "记忆与遗忘",
       "parent": "WL-QH7",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q10.1"
     },
     {
       "id": "WL-QH7.2",
       "axis": "Q",
-      "name": "家族记忆",
+      "name": "个人与家族记忆",
       "parent": "WL-QH7",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q10.2"
     },
     {
       "id": "WL-QH7.3",
       "axis": "Q",
-      "name": "集体记忆",
+      "name": "集体与历史记忆",
       "parent": "WL-QH7",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q10.3"
     },
     {
       "id": "WL-QH7.4",
       "axis": "Q",
-      "name": "历史创伤",
+      "name": "时间",
       "parent": "WL-QH7",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q10.4"
     },
     {
       "id": "WL-QH7.5",
       "axis": "Q",
-      "name": "遗忘",
+      "name": "代际传承",
       "parent": "WL-QH7",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q10.5"
     },
@@ -1820,30 +1869,33 @@
       "axis": "Q",
       "name": "历史重写",
       "parent": "WL-QH7",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q10.6"
+      "legacy_from": "WL-Q10.6",
+      "canonical": "WL-QH7"
     },
     {
       "id": "WL-QH7.7",
       "axis": "Q",
       "name": "代际记忆",
       "parent": "WL-QH7",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q10.7"
+      "legacy_from": "WL-Q10.7",
+      "canonical": "WL-QH7"
     },
     {
       "id": "WL-QH7.8",
       "axis": "Q",
       "name": "时间",
       "parent": "WL-QH7",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q10.8"
+      "legacy_from": "WL-Q10.8",
+      "canonical": "WL-QH7"
     },
     {
       "id": "WL-QH8",
@@ -1858,30 +1910,30 @@
     {
       "id": "WL-QH8.1",
       "axis": "Q",
-      "name": "信仰",
+      "name": "善恶与伦理",
       "parent": "WL-QH8",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q11.1"
     },
     {
       "id": "WL-QH8.2",
       "axis": "Q",
-      "name": "怀疑",
+      "name": "罪与救赎",
       "parent": "WL-QH8",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q11.2"
     },
     {
       "id": "WL-QH8.3",
       "axis": "Q",
-      "name": "罪",
+      "name": "神圣与世俗",
       "parent": "WL-QH8",
       "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q11.3"
     },
@@ -1890,57 +1942,62 @@
       "axis": "Q",
       "name": "救赎",
       "parent": "WL-QH8",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q11.4"
+      "legacy_from": "WL-Q11.4",
+      "canonical": "WL-QH8"
     },
     {
       "id": "WL-QH8.5",
       "axis": "Q",
       "name": "善恶",
       "parent": "WL-QH8",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q11.5"
+      "legacy_from": "WL-Q11.5",
+      "canonical": "WL-QH8"
     },
     {
       "id": "WL-QH8.6",
       "axis": "Q",
       "name": "命运",
       "parent": "WL-QH8",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q11.6"
+      "legacy_from": "WL-Q11.6",
+      "canonical": "WL-QH8"
     },
     {
       "id": "WL-QH8.7",
       "axis": "Q",
       "name": "神圣",
       "parent": "WL-QH8",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q11.7"
+      "legacy_from": "WL-Q11.7",
+      "canonical": "WL-QH8"
     },
     {
       "id": "WL-QH8.8",
       "axis": "Q",
       "name": "超越",
       "parent": "WL-QH8",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "legacy_alias",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q11.8"
+      "legacy_from": "WL-Q11.8",
+      "canonical": "WL-QH8"
     },
     {
       "id": "WL-QH9",
       "axis": "Q",
       "name": "技术、自然与现代性",
       "parent": "WL-QH",
-      "node_kind": "taxonomy_group",
+      "node_kind": "retired",
       "anchorable": false,
       "coverage_priority": "Core"
     },
@@ -1949,7 +2006,7 @@
       "axis": "Q",
       "name": "科学与技术",
       "parent": "WL-QH9",
-      "node_kind": "taxonomy_group",
+      "node_kind": "retired",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q12"
@@ -1959,97 +2016,106 @@
       "axis": "Q",
       "name": "科学",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.1"
+      "legacy_from": "WL-Q12.1",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.2",
       "axis": "Q",
       "name": "技术",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.2"
+      "legacy_from": "WL-Q12.2",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.3",
       "axis": "Q",
       "name": "机器",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q12.3"
+      "legacy_from": "WL-Q12.3",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.4",
       "axis": "Q",
       "name": "工业文明",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.4"
+      "legacy_from": "WL-Q12.4",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.5",
       "axis": "Q",
       "name": "人工智能",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Interest",
-      "legacy_from": "WL-Q12.5"
+      "legacy_from": "WL-Q12.5",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.6",
       "axis": "Q",
       "name": "生物技术",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Interest",
-      "legacy_from": "WL-Q12.6"
+      "legacy_from": "WL-Q12.6",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.7",
       "axis": "Q",
       "name": "未来",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.7"
+      "legacy_from": "WL-Q12.7",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.8",
       "axis": "Q",
       "name": "技术控制",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.8"
+      "legacy_from": "WL-Q12.8",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.1.9",
       "axis": "Q",
       "name": "人之边界",
       "parent": "WL-QH9.1",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q12.9"
+      "legacy_from": "WL-Q12.9",
+      "canonical": "WL-QH9.1"
     },
     {
       "id": "WL-QH9.2",
       "axis": "Q",
       "name": "自然与非人类",
       "parent": "WL-QH9",
-      "node_kind": "taxonomy_group",
+      "node_kind": "retired",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q13"
@@ -2059,87 +2125,95 @@
       "axis": "Q",
       "name": "自然",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q13.1"
+      "legacy_from": "WL-Q13.1",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.2",
       "axis": "Q",
       "name": "土地",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q13.2"
+      "legacy_from": "WL-Q13.2",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.3",
       "axis": "Q",
       "name": "动物",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q13.3"
+      "legacy_from": "WL-Q13.3",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.4",
       "axis": "Q",
       "name": "环境",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
-      "legacy_from": "WL-Q13.4"
+      "legacy_from": "WL-Q13.4",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.5",
       "axis": "Q",
       "name": "灾难",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q13.5"
+      "legacy_from": "WL-Q13.5",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.6",
       "axis": "Q",
       "name": "气候变化",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q13.6"
+      "legacy_from": "WL-Q13.6",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.7",
       "axis": "Q",
       "name": "人类世",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q13.7"
+      "legacy_from": "WL-Q13.7",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH9.2.8",
       "axis": "Q",
       "name": "人与非人生命",
       "parent": "WL-QH9.2",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
-      "legacy_from": "WL-Q13.8"
+      "legacy_from": "WL-Q13.8",
+      "canonical": "WL-QH9.2"
     },
     {
       "id": "WL-QH10",
       "axis": "Q",
       "name": "语言、知识与艺术",
       "parent": "WL-QH",
-      "node_kind": "taxonomy_group",
+      "node_kind": "retired",
       "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14"
@@ -2149,8 +2223,8 @@
       "axis": "Q",
       "name": "语言",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.1"
     },
@@ -2159,8 +2233,8 @@
       "axis": "Q",
       "name": "真相",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.2"
     },
@@ -2169,8 +2243,8 @@
       "axis": "Q",
       "name": "知识",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.3"
     },
@@ -2179,8 +2253,8 @@
       "axis": "Q",
       "name": "写作",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.4"
     },
@@ -2189,8 +2263,8 @@
       "axis": "Q",
       "name": "阅读",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q14.5"
     },
@@ -2199,8 +2273,8 @@
       "axis": "Q",
       "name": "艺术",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.6"
     },
@@ -2209,8 +2283,8 @@
       "axis": "Q",
       "name": "作家身份",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Expand",
       "legacy_from": "WL-Q14.7"
     },
@@ -2219,8 +2293,8 @@
       "axis": "Q",
       "name": "表征",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.8"
     },
@@ -2229,10 +2303,55 @@
       "axis": "Q",
       "name": "虚构与现实",
       "parent": "WL-QH10",
-      "node_kind": "taxonomy_leaf",
-      "anchorable": true,
+      "node_kind": "retired",
+      "anchorable": false,
       "coverage_priority": "Core",
       "legacy_from": "WL-Q14.9"
+    },
+    {
+      "id": "WL-QH2.4",
+      "axis": "Q",
+      "name": "亲子与代际",
+      "parent": "WL-QH2",
+      "node_kind": "taxonomy_leaf",
+      "anchorable": false,
+      "coverage_priority": "Core"
+    },
+    {
+      "id": "WL-QH2.5",
+      "axis": "Q",
+      "name": "童年与成长",
+      "parent": "WL-QH2",
+      "node_kind": "taxonomy_leaf",
+      "anchorable": true,
+      "coverage_priority": "Core"
+    },
+    {
+      "id": "WL-QH3.5",
+      "axis": "Q",
+      "name": "迁徙与流亡",
+      "parent": "WL-QH3",
+      "node_kind": "taxonomy_leaf",
+      "anchorable": false,
+      "coverage_priority": "Core"
+    },
+    {
+      "id": "WL-QH3.6",
+      "axis": "Q",
+      "name": "故乡与归属",
+      "parent": "WL-QH3",
+      "node_kind": "taxonomy_leaf",
+      "anchorable": false,
+      "coverage_priority": "Core"
+    },
+    {
+      "id": "WL-QH3.7",
+      "axis": "Q",
+      "name": "殖民身份",
+      "parent": "WL-QH3",
+      "node_kind": "taxonomy_leaf",
+      "anchorable": false,
+      "coverage_priority": "Core"
     }
   ],
   "topic_anchors": [
@@ -2258,12 +2377,12 @@
     },
     {
       "topic_id": "WL-TOPIC-G43-BILDUNGSROMAN",
-      "anchor": "WL-QH2.3.2",
+      "anchor": "WL-QH2.5",
       "anchor_mode": "leaf"
     },
     {
       "topic_id": "WL-TOPIC-G43-FAMILY",
-      "anchor": "WL-QH2.2.3",
+      "anchor": "WL-QH2.3",
       "anchor_mode": "leaf"
     },
     {
@@ -2308,7 +2427,7 @@
     },
     {
       "topic_id": "WL-TOPIC-Q2-LOVE",
-      "anchor": "WL-QH2.1.1",
+      "anchor": "WL-QH2.1",
       "anchor_mode": "leaf"
     },
     {
@@ -2472,37 +2591,37 @@
         },
         {
           "code": "Q1.1",
-          "canonical": "WL-QH1.1",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.3",
-          "canonical": "WL-QH1.2",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.4",
-          "canonical": "WL-QH1.3",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.5",
-          "canonical": "WL-QH1.4",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.6",
-          "canonical": "WL-QH1.5",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.7",
-          "canonical": "WL-QH1.6",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q1.8",
-          "canonical": "WL-QH1.7",
+          "canonical": "WL-QH1",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2512,37 +2631,37 @@
         },
         {
           "code": "Q2.1",
-          "canonical": "WL-QH2.1.1",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.2",
-          "canonical": "WL-QH2.1.2",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.3",
-          "canonical": "WL-QH2.1.3",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.4",
-          "canonical": "WL-QH2.1.4",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.5",
-          "canonical": "WL-QH2.1.5",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.6",
-          "canonical": "WL-QH2.1.6",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q2.7",
-          "canonical": "WL-QH2.1.7",
+          "canonical": "WL-QH2.1",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2552,42 +2671,42 @@
         },
         {
           "code": "Q3.1",
-          "canonical": "WL-QH2.2.1",
+          "canonical": "WL-QH2.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.2",
-          "canonical": "WL-QH2.2.2",
+          "canonical": "WL-QH2.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.3",
-          "canonical": "WL-QH2.2.3",
+          "canonical": "WL-QH2.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.4",
-          "canonical": "WL-QH2.2.4",
+          "canonical": "WL-QH2.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.8",
-          "canonical": "WL-QH2.2.5",
+          "canonical": "WL-QH2.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.5",
-          "canonical": "WL-QH2.3.1",
+          "canonical": "WL-QH2.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.6",
-          "canonical": "WL-QH2.3.2",
+          "canonical": "WL-QH2.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q3.7",
-          "canonical": "WL-QH2.3.3",
+          "canonical": "WL-QH2.3",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2602,42 +2721,42 @@
         },
         {
           "code": "Q7.1",
-          "canonical": "WL-QH3.2.1",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.2",
-          "canonical": "WL-QH3.2.2",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.3",
-          "canonical": "WL-QH3.2.3",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.4",
-          "canonical": "WL-QH3.2.4",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.5",
-          "canonical": "WL-QH3.2.5",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.6",
-          "canonical": "WL-QH3.2.6",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.7",
-          "canonical": "WL-QH3.2.7",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q7.8",
-          "canonical": "WL-QH3.2.8",
+          "canonical": "WL-QH3.2",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2647,42 +2766,42 @@
         },
         {
           "code": "Q8.1",
-          "canonical": "WL-QH3.3.1",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.2",
-          "canonical": "WL-QH3.3.2",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.3",
-          "canonical": "WL-QH3.3.3",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.4",
-          "canonical": "WL-QH3.3.4",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.5",
-          "canonical": "WL-QH3.3.5",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.6",
-          "canonical": "WL-QH3.3.6",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.7",
-          "canonical": "WL-QH3.3.7",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q8.8",
-          "canonical": "WL-QH3.3.8",
+          "canonical": "WL-QH3.3",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2692,42 +2811,42 @@
         },
         {
           "code": "Q9.1",
-          "canonical": "WL-QH3.4.1",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.2",
-          "canonical": "WL-QH3.4.2",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.3",
-          "canonical": "WL-QH3.4.3",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.4",
-          "canonical": "WL-QH3.4.4",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.5",
-          "canonical": "WL-QH3.4.5",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.6",
-          "canonical": "WL-QH3.4.6",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.7",
-          "canonical": "WL-QH3.4.7",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q9.8",
-          "canonical": "WL-QH3.4.8",
+          "canonical": "WL-QH3.4",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2737,42 +2856,42 @@
         },
         {
           "code": "Q4.1",
-          "canonical": "WL-QH4.1",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.2",
-          "canonical": "WL-QH4.2",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.3",
-          "canonical": "WL-QH4.3",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.4",
-          "canonical": "WL-QH4.4",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.5",
-          "canonical": "WL-QH4.5",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.6",
-          "canonical": "WL-QH4.6",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.7",
-          "canonical": "WL-QH4.7",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q4.8",
-          "canonical": "WL-QH4.8",
+          "canonical": "WL-QH4",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2782,47 +2901,47 @@
         },
         {
           "code": "Q5.1",
-          "canonical": "WL-QH5.1",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.2",
-          "canonical": "WL-QH5.2",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.3",
-          "canonical": "WL-QH5.3",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.4",
-          "canonical": "WL-QH5.4",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.5",
-          "canonical": "WL-QH5.5",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.6",
-          "canonical": "WL-QH5.6",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.7",
-          "canonical": "WL-QH5.7",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.8",
-          "canonical": "WL-QH5.8",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q5.9",
-          "canonical": "WL-QH5.9",
+          "canonical": "WL-QH5",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2837,42 +2956,42 @@
         },
         {
           "code": "Q6.2",
-          "canonical": "WL-QH6.2",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.3",
-          "canonical": "WL-QH6.3",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.4",
-          "canonical": "WL-QH6.4",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.5",
-          "canonical": "WL-QH6.5",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.6",
-          "canonical": "WL-QH6.6",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.7",
-          "canonical": "WL-QH6.7",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.8",
-          "canonical": "WL-QH6.8",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q6.9",
-          "canonical": "WL-QH6.9",
+          "canonical": "WL-QH6",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2882,42 +3001,42 @@
         },
         {
           "code": "Q10.1",
-          "canonical": "WL-QH7.1",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.2",
-          "canonical": "WL-QH7.2",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.3",
-          "canonical": "WL-QH7.3",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.4",
-          "canonical": "WL-QH7.4",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.5",
-          "canonical": "WL-QH7.5",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.6",
-          "canonical": "WL-QH7.6",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.7",
-          "canonical": "WL-QH7.7",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q10.8",
-          "canonical": "WL-QH7.8",
+          "canonical": "WL-QH7",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2927,42 +3046,42 @@
         },
         {
           "code": "Q11.1",
-          "canonical": "WL-QH8.1",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.2",
-          "canonical": "WL-QH8.2",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.3",
-          "canonical": "WL-QH8.3",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.4",
-          "canonical": "WL-QH8.4",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.5",
-          "canonical": "WL-QH8.5",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.6",
-          "canonical": "WL-QH8.6",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.7",
-          "canonical": "WL-QH8.7",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q11.8",
-          "canonical": "WL-QH8.8",
+          "canonical": "WL-QH8",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -2972,47 +3091,47 @@
         },
         {
           "code": "Q12.1",
-          "canonical": "WL-QH9.1.1",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.2",
-          "canonical": "WL-QH9.1.2",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.3",
-          "canonical": "WL-QH9.1.3",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.4",
-          "canonical": "WL-QH9.1.4",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.5",
-          "canonical": "WL-QH9.1.5",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.6",
-          "canonical": "WL-QH9.1.6",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.7",
-          "canonical": "WL-QH9.1.7",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.8",
-          "canonical": "WL-QH9.1.8",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q12.9",
-          "canonical": "WL-QH9.1.9",
+          "canonical": "WL-QH9.1",
           "meaning": "q_renumber_2_8"
         },
         {
@@ -3022,42 +3141,42 @@
         },
         {
           "code": "Q13.1",
-          "canonical": "WL-QH9.2.1",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.2",
-          "canonical": "WL-QH9.2.2",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.3",
-          "canonical": "WL-QH9.2.3",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.4",
-          "canonical": "WL-QH9.2.4",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.5",
-          "canonical": "WL-QH9.2.5",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.6",
-          "canonical": "WL-QH9.2.6",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.7",
-          "canonical": "WL-QH9.2.7",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {
           "code": "Q13.8",
-          "canonical": "WL-QH9.2.8",
+          "canonical": "WL-QH9.2",
           "meaning": "q_renumber_2_8"
         },
         {

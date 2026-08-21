@@ -1,37 +1,36 @@
 filters:
   and:
-    - 'type == "work"'
-    - 'topics.contains("WL-TOPIC-G7-TRAVEL")'
-
+    - type == "work"
+    - topics.contains("WL-TOPIC-G7-TRAVEL")
 properties:
   file.name:
-    displayName: "作品"
+    displayName: 作品
   note.author:
-    displayName: "作者"
+    displayName: 作者
   note.read_status:
-    displayName: "阅读状态"
+    displayName: 阅读状态
   note.topic_links:
-    displayName: "专题"
+    displayName: 专题
   note.topics:
-    displayName: "专题编号"
+    displayName: 专题编号
   note.axis_t:
-    displayName: "时间"
+    displayName: 时间
   note.axis_r:
-    displayName: "地域"
+    displayName: 地域
   note.axis_m:
-    displayName: "思潮"
+    displayName: 思潮
   note.axis_g:
-    displayName: "类型"
+    displayName: 类型
   note.axis_q:
-    displayName: "主题"
+    displayName: 主题
   note.id:
-    displayName: "编号"
+    displayName: 编号
   note.travel_priority:
-    displayName: "优先级"
+    displayName: 优先级
   note.travel_history_cluster:
-    displayName: "历史位置"
+    displayName: 历史位置
   note.travel_axes:
-    displayName: "机制"
+    displayName: 机制
 views:
   - type: table
     name: 全部作品
@@ -53,7 +52,7 @@ views:
     name: 核心骨架 ★
     filters:
       and:
-        - 'travel_priority == "★"'
+        - travel_priority == "★"
     order:
       - file.name
       - author
@@ -72,8 +71,8 @@ views:
     name: 骨架未读
     filters:
       and:
-        - 'travel_priority == "★"'
-        - 'read_status == "未读"'
+        - travel_priority == "★"
+        - read_status == "未读"
     order:
       - file.name
       - author
@@ -92,7 +91,7 @@ views:
     name: 系统扩展 ◆
     filters:
       and:
-        - 'travel_priority == "◆"'
+        - travel_priority == "◆"
     order:
       - file.name
       - author

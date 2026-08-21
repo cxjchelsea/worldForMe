@@ -1,35 +1,34 @@
 filters:
   and:
-    - 'type == "work"'
-    - 'topics.contains("WL-TOPIC-Q10-MEMORY")'
-
+    - type == "work"
+    - topics.contains("WL-TOPIC-Q10-MEMORY")
 properties:
   file.name:
-    displayName: "作品"
+    displayName: 作品
   note.author:
-    displayName: "作者"
+    displayName: 作者
   note.read_status:
-    displayName: "阅读状态"
+    displayName: 阅读状态
   note.topic_links:
-    displayName: "专题"
+    displayName: 专题
   note.topics:
-    displayName: "专题编号"
+    displayName: 专题编号
   note.axis_t:
-    displayName: "时间"
+    displayName: 时间
   note.axis_r:
-    displayName: "地域"
+    displayName: 地域
   note.axis_m:
-    displayName: "思潮"
+    displayName: 思潮
   note.axis_g:
-    displayName: "类型"
+    displayName: 类型
   note.axis_q:
-    displayName: "主题"
+    displayName: 主题
   note.id:
-    displayName: "编号"
+    displayName: 编号
   note.memory_priority:
-    displayName: "优先级"
+    displayName: 优先级
   note.memory_dimensions:
-    displayName: "机制"
+    displayName: 机制
 views:
   - type: table
     name: 全部作品
@@ -50,7 +49,7 @@ views:
     name: 核心骨架 ★
     filters:
       and:
-        - 'memory_priority == "★"'
+        - memory_priority == "★"
     order:
       - file.name
       - author
@@ -68,8 +67,8 @@ views:
     name: 骨架未读
     filters:
       and:
-        - 'memory_priority == "★"'
-        - 'read_status == "未读"'
+        - memory_priority == "★"
+        - read_status == "未读"
     order:
       - file.name
       - author
@@ -105,7 +104,7 @@ views:
     name: 个人记忆
     filters:
       and:
-        - 'memory_dimensions.contains("个人记忆")'
+        - memory_dimensions.contains("个人记忆")
     order:
       - file.name
       - author
@@ -123,7 +122,7 @@ views:
     name: 家族记忆
     filters:
       and:
-        - 'memory_dimensions.contains("家族记忆")'
+        - memory_dimensions.contains("家族记忆")
     order:
       - file.name
       - author
@@ -141,7 +140,7 @@ views:
     name: 集体记忆
     filters:
       and:
-        - 'memory_dimensions.contains("集体记忆")'
+        - memory_dimensions.contains("集体记忆")
     order:
       - file.name
       - author
@@ -159,7 +158,7 @@ views:
     name: 历史创伤
     filters:
       and:
-        - 'memory_dimensions.contains("历史创伤")'
+        - memory_dimensions.contains("历史创伤")
     order:
       - file.name
       - author
@@ -177,7 +176,7 @@ views:
     name: 遗忘
     filters:
       and:
-        - 'memory_dimensions.contains("遗忘")'
+        - memory_dimensions.contains("遗忘")
     order:
       - file.name
       - author
@@ -195,7 +194,7 @@ views:
     name: 历史重写
     filters:
       and:
-        - 'memory_dimensions.contains("历史重写")'
+        - memory_dimensions.contains("历史重写")
     order:
       - file.name
       - author
@@ -213,7 +212,7 @@ views:
     name: 代际记忆
     filters:
       and:
-        - 'memory_dimensions.contains("代际记忆")'
+        - memory_dimensions.contains("代际记忆")
     order:
       - file.name
       - author
@@ -231,7 +230,7 @@ views:
     name: 时间
     filters:
       and:
-        - 'memory_dimensions.contains("时间")'
+        - memory_dimensions.contains("时间")
     order:
       - file.name
       - author

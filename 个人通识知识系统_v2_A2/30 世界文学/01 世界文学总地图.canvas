@@ -43,15 +43,13 @@
 		{"id":"WL-QT","type":"file","x":1045,"y":1535,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QT 类型/QT 类型与叙事传统.md","color":"6"},
 		{"id":"WL-QH","type":"file","x":1480,"y":1535,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH 主题与人类问题.md","color":"6"},
 		{"id":"WL-QH1","type":"file","x":1045,"y":1660,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH1 自我、存在与生命.md","color":"6"},
-		{"id":"WL-QH2","type":"file","x":1480,"y":1660,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH2 关系、家庭与成长.md","color":"6"},
+		{"id":"WL-QH2","type":"file","x":1480,"y":1660,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH2 爱、家庭与成长.md","color":"6"},
 		{"id":"WL-QH3","type":"file","x":1915,"y":1660,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH3 身份、身体与归属.md","color":"6"},
 		{"id":"WL-QH4","type":"file","x":2350,"y":1660,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH4 社会、阶级与劳动.md","color":"6"},
 		{"id":"WL-QH5","type":"file","x":1045,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH5 权力、制度与秩序.md","color":"6"},
-		{"id":"WL-QH6","type":"file","x":1480,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH6 暴力、战争与创伤.md","color":"6"},
+		{"id":"WL-QH6","type":"file","x":1480,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH6 战争、暴力与创伤.md","color":"6"},
 		{"id":"WL-QH7","type":"file","x":1915,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH7 历史、记忆与时间.md","color":"6"},
-		{"id":"WL-QH8","type":"file","x":2350,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH8 信仰、伦理与超越.md","color":"6"},
-		{"id":"WL-QH9","type":"file","x":1045,"y":1910,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH9 技术、自然与现代性.md","color":"6"},
-		{"id":"WL-QH10","type":"file","x":1480,"y":1910,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH10 语言、知识与艺术.md","color":"6"}
+		{"id":"WL-QH8","type":"file","x":2350,"y":1785,"width":405,"height":95,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QH 主题/QH8 信仰、伦理与超越.md","color":"6"}
 	],
 	"edges":[
 		{"id":"E-WL-WL-T","fromNode":"WL","fromSide":"bottom","toNode":"WL-T","toSide":"top"},
@@ -97,8 +95,6 @@
 		{"id":"E-WL-QH-WL-QH5","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH5","toSide":"top"},
 		{"id":"E-WL-QH-WL-QH6","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH6","toSide":"top"},
 		{"id":"E-WL-QH-WL-QH7","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH7","toSide":"top"},
-		{"id":"E-WL-QH-WL-QH8","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH8","toSide":"top"},
-		{"id":"E-WL-QH-WL-QH9","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH9","toSide":"top"},
-		{"id":"E-WL-QH-WL-QH10","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH10","toSide":"top"}
+		{"id":"E-WL-QH-WL-QH8","fromNode":"WL-QH","fromSide":"bottom","toNode":"WL-QH8","toSide":"top"}
 	]
 }

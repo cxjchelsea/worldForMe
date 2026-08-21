@@ -11,12 +11,12 @@ node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
   - "[[../../../30 专题/QH6.1 战争/00 战争文学]]"
-source_version: "2.8-q-facets"
+source_version: "2.10-qh-user"
 ---
 
 # QH6.1 战争
 
-> 路径：Q轴 → QH6 暴力、战争与创伤 → **QH6.1 战争**
+> 路径：Q轴 → QH6 战争、暴力与创伤 → **QH6.1 战争**
 
 ## 专题地图
 
