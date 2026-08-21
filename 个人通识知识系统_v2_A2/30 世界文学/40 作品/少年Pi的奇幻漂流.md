@@ -10,19 +10,20 @@ author_source: batch5_source_inferred
 year: null
 literary_traditions: []
 read_status: 已读
-awards:
-- WL-AWARD-BOOKER
 axis_t:
 - T6 当代全球文学
 axis_r:
 - R10 跨区域文学传统
-axis_m: []
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
 - QH1 自我、存在与生命
 - QH8 信仰、伦理与超越
 axis_source: read_calibrated
+awards:
+- WL-AWARD-BOOKER
 topics: []
 topic_links: []
 verification_status: 自动通过

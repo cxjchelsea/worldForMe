@@ -10,6 +10,16 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r:
+- R6 拉丁美洲与加勒比
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.6 Gaucho
+axis_source: inferred
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-GAUCHO

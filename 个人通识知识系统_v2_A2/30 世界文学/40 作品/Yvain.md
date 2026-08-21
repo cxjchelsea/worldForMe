@@ -9,6 +9,17 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T1 中古多中心文学世界
+axis_r:
+- R4 欧洲文学
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.2 欧洲骑士
+axis_source: inferred
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-KNIGHT

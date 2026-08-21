@@ -10,6 +10,18 @@ author_source: batch6_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T6 当代全球文学
+axis_r:
+- R9 大洋洲与太平洋
+axis_m:
+- M5 战后与当代美学范式
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.7 侠盗
+axis_source: inferred
 awards:
 - WL-AWARD-BOOKER
 topics:

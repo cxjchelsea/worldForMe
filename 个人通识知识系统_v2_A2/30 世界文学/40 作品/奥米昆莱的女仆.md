@@ -10,6 +10,13 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r:
+- R6 拉丁美洲与加勒比
+axis_m: []
+axis_g: []
+axis_q: []
+axis_source: inferred
 topics:
 - WL-TOPIC-R6-LATAM
 topic_links:

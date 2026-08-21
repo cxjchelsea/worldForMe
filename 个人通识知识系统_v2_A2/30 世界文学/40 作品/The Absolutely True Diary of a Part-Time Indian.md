@@ -10,6 +10,15 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r:
+- R5 北美文学
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QH2.3.2 成长
+axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
 topic_links:

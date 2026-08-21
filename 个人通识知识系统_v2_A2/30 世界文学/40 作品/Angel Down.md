@@ -8,15 +8,18 @@ author: 丹尼尔·克劳斯
 author_original: Daniel Kraus
 year:
 read_status: 未读
+axis_t:
+- T6 当代全球文学
+axis_r:
+- R5 北美文学
+axis_m:
+- M5 战后与当代美学范式
+axis_g:
+- G3 小说
+axis_q: []
+axis_source: inferred
 awards:
   - WL-AWARD-PULITZER-FICTION
-axis_t:
-  - T6 当代全球文学
-axis_r:
-  - R5 北美文学
-axis_g:
-  - G3 小说
-axis_source: award_v1
 topics: []
 topic_links: []
 verification_status: 需复核

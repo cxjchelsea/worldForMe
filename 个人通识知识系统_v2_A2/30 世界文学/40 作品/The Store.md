@@ -8,15 +8,18 @@ author: T.S.斯特里布林
 author_original: T. S. Stribling
 year:
 read_status: 未读
+axis_t:
+- T4 全球现代主义时代
+axis_r:
+- R5 北美文学
+axis_m:
+- M3 现代主义与先锋派
+axis_g:
+- G3 小说
+axis_q: []
+axis_source: inferred
 awards:
   - WL-AWARD-PULITZER-FICTION
-axis_t:
-  - T4 全球现代主义时代
-axis_r:
-  - R5 北美文学
-axis_g:
-  - G3 小说
-axis_source: award_v1
 topics: []
 topic_links: []
 verification_status: 需复核

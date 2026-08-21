@@ -11,6 +11,15 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r: []
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.7 侠盗
+axis_source: inferred
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-OUTLAW

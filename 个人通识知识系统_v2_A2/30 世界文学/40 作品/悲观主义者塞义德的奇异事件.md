@@ -10,6 +10,14 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T5 二战后多极文学
+axis_r: []
+axis_m:
+- M5 战后与当代美学范式
+axis_g: []
+axis_q: []
+axis_source: inferred
 topics:
 - WL-TOPIC-T5-POSTWAR
 topic_links:

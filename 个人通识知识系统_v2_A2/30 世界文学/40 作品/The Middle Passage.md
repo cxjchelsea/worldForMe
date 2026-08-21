@@ -10,6 +10,16 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T5 二战后多极文学
+axis_r:
+- R10 跨区域文学传统
+axis_m:
+- M5 战后与当代美学范式
+axis_g:
+- G6.3 旅行书写
+axis_q: []
+axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
 topic_links:

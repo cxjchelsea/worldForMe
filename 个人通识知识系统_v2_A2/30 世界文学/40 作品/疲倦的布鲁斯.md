@@ -10,6 +10,13 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r: []
+axis_m:
+- M3.1 现代主义 / Modernism
+axis_g: []
+axis_q: []
+axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:

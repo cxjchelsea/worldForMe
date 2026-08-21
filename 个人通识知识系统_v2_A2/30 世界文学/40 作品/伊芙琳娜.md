@@ -10,6 +10,14 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r: []
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QH2.1.1 爱情
+axis_source: inferred
 topics:
 - WL-TOPIC-Q2-LOVE
 topic_links:

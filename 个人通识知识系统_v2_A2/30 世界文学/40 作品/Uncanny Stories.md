@@ -10,6 +10,14 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r: []
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QT4 恐怖
+axis_source: inferred
 topics:
 - WL-TOPIC-G45-HORROR
 topic_links:

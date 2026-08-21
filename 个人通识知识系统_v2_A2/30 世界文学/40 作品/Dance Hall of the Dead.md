@@ -10,6 +10,16 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r:
+- R5 北美文学
+axis_m: []
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.5 西部
+axis_source: inferred
 awards:
 - WL-AWARD-EDGAR
 topics:

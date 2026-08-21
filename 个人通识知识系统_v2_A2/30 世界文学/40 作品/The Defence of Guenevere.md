@@ -10,6 +10,18 @@ author_source: batch6_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T3 19世纪现代文学体系
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M2 19世纪文学思潮
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.2 欧洲骑士
+axis_source: inferred
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-KNIGHT

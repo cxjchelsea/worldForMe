@@ -10,6 +10,18 @@ author_source: batch6_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t:
+- T6 当代全球文学
+axis_r:
+- R5 北美文学
+axis_m:
+- M5 战后与当代美学范式
+axis_g:
+- G3 小说
+axis_q:
+- QT8 文化类型传统
+- QT8.5 西部
+axis_source: inferred
 topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-WESTERN

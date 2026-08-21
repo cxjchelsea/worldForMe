@@ -11,6 +11,18 @@ author_source: batch1_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r:
+- R5 北美文学
+axis_m: []
+axis_g:
+- G6.3 旅行书写
+- G3 小说
+axis_q:
+- QT5 冒险
+- QT8 文化类型传统
+- QT8.5 西部
+axis_source: inferred
 topics:
 - WL-TOPIC-G45-ADVENTURE
 - WL-TOPIC-G7-TRAVEL

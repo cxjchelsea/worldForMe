@@ -10,6 +10,13 @@ author_source: batch3_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+axis_t: []
+axis_r: []
+axis_m: []
+axis_g:
+- G6.3 旅行书写
+axis_q: []
+axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
 topic_links:
