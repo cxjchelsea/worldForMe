@@ -1,0 +1,92 @@
+filters:
+  and:
+    - type == "work"
+    - axis_t.contains("T1 中古多中心文学世界")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.axis_r:
+    displayName: 地域
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.verification_status:
+    displayName: 校验状态
+  note.t1_priority:
+    displayName: T1优先级
+  note.t1_network:
+    displayName: 文学网络
+  note.t1_role:
+    displayName: T1角色
+views:
+  - type: table
+    name: 全部 T1 作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - t1_priority
+      - t1_network
+      - t1_role
+      - axis_r
+      - axis_g
+      - axis_q
+      - verification_status
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - t1_network
+      - t1_role
+      - axis_r
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - t1_network
+      - t1_role
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - t1_role
+  - type: table
+    name: 按类型
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - t1_network
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+    order:
+      - file.name
+      - author
+      - verification_status
+      - t1_network
