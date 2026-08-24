@@ -38,6 +38,34 @@ views:
       - axis_q
       - verification_status
   - type: table
+    name: 骨架与重点
+    filters:
+      and:
+        - or:
+            - t1_priority == "★"
+            - t1_priority == "◆"
+    groupBy:
+      property: t1_network
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - t1_priority
+      - t1_role
+      - read_status
+  - type: table
+    name: 按文学网络
+    groupBy:
+      property: t1_network
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - t1_priority
+      - t1_role
+      - read_status
+      - verification_status
+  - type: table
     name: 未读
     filters:
       and:
@@ -69,6 +97,7 @@ views:
       - file.name
       - author
       - read_status
+      - t1_network
       - t1_role
   - type: table
     name: 按类型
@@ -90,3 +119,4 @@ views:
       - author
       - verification_status
       - t1_network
+      - t1_role
