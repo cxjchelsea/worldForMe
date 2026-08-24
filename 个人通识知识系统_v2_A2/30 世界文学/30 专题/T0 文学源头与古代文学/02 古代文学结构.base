@@ -1,0 +1,73 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-T0-ANCIENT"
+formulas:
+  type_zh: type.replace("literature_topic_structure", "核心结构").replace("literature_topic_section", "专题分支").replace("literature_topic_mechanism", "形成机制")
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.parent:
+    displayName: 父节点
+  note.civilization:
+    displayName: 文明
+  note.period:
+    displayName: 时段
+  note.mechanism:
+    displayName: 机制
+  note.importance:
+    displayName: 重要度
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - dimension
+      - sequence
+      - parent
+      - civilization
+      - mechanism
+      - importance
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order:
+      - file.name
+      - sequence
+      - dimension
+      - id
+  - type: table
+    name: 文明传统
+    filters:
+      and:
+        - 'dimension == "civilization"'
+    order:
+      - file.name
+      - sequence
+      - period
+      - mechanism
+      - id
+  - type: table
+    name: 形成机制
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - file.name
+      - sequence
+      - civilization
+      - id
