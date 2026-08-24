@@ -1,0 +1,62 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-T2-EARLY-MODERN"
+properties:
+  file.name:
+    displayName: 节点
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.parent:
+    displayName: 上级
+  note.space:
+    displayName: 文学空间
+  note.mechanism:
+    displayName: 机制
+  note.importance:
+    displayName: 重要度
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - space
+      - mechanism
+      - importance
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - dimension != "literary_space"
+        - dimension != "mechanism"
+    order:
+      - sequence
+      - file.name
+      - dimension
+      - importance
+  - type: table
+    name: 文学空间
+    filters:
+      and:
+        - dimension == "literary_space"
+    order:
+      - sequence
+      - file.name
+      - space
+      - importance
+  - type: table
+    name: 形成机制
+    filters:
+      and:
+        - dimension == "mechanism"
+    order:
+      - sequence
+      - file.name
+      - mechanism
+      - importance
