@@ -1,0 +1,75 @@
+filters:
+  and:
+    - type == "work"
+    - axis_t.contains("T0 文学源头与古代文学")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.topics:
+    displayName: 专题编号
+  note.verification_status:
+    displayName: 校验状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部 T0 作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_r
+      - axis_g
+      - axis_q
+      - verification_status
+      - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - axis_r
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_r
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_g
+      - axis_q
+      - id
