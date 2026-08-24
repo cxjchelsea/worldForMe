@@ -2361,8 +2361,38 @@
   ],
   "topic_anchors": [
     {
+      "topic_id": "WL-TOPIC-T0-ANCIENT",
+      "anchor": "WL-T0",
+      "anchor_mode": "exact"
+    },
+    {
+      "topic_id": "WL-TOPIC-T1-MEDIEVAL",
+      "anchor": "WL-T1",
+      "anchor_mode": "exact"
+    },
+    {
+      "topic_id": "WL-TOPIC-T2-EARLY-MODERN",
+      "anchor": "WL-T2",
+      "anchor_mode": "exact"
+    },
+    {
+      "topic_id": "WL-TOPIC-T3-NINETEENTH-CENTURY",
+      "anchor": "WL-T3",
+      "anchor_mode": "exact"
+    },
+    {
+      "topic_id": "WL-TOPIC-T4-GLOBAL-MODERNISM",
+      "anchor": "WL-T4",
+      "anchor_mode": "exact"
+    },
+    {
       "topic_id": "WL-TOPIC-T5-POSTWAR",
       "anchor": "WL-T5",
+      "anchor_mode": "exact"
+    },
+    {
+      "topic_id": "WL-TOPIC-T6-CONTEMPORARY-GLOBAL",
+      "anchor": "WL-T6",
       "anchor_mode": "exact"
     },
     {
