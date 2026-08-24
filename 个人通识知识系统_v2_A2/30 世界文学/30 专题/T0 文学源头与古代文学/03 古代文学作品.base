@@ -73,3 +73,29 @@ views:
       - axis_g
       - axis_q
       - id
+  - type: table
+    name: 按类型
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_r
+      - axis_q
+      - verification_status
+      - id
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+    order:
+      - file.name
+      - author
+      - verification_status
+      - axis_r
+      - axis_g
+      - axis_q
+      - id
