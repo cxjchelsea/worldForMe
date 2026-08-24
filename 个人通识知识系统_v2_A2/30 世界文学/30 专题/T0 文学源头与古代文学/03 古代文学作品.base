@@ -45,16 +45,35 @@ views:
       - verification_status
       - id
   - type: table
-    name: T0 骨架 ★
+    name: T0 骨架路线
     filters:
       and:
-        - t0_priority == "★"
+        - or:
+            - file.name == "吉尔伽美什史诗"
+            - file.name == "埃努玛·埃利什"
+            - file.name == "埃及亡灵书"
+            - file.name == "创世记"
+            - file.name == "约伯记"
+            - file.name == "伊利亚特"
+            - file.name == "奥德赛"
+            - file.name == "俄狄浦斯王"
+            - file.name == "埃涅阿斯纪"
+            - file.name == "变形记"
+            - file.name == "梨俱吠陀"
+            - file.name == "摩诃婆罗多"
+            - file.name == "罗摩衍那"
+            - file.name == "诗经"
+            - file.name == "楚辞"
+            - file.name == "史记"
+            - file.name == "左传"
     order:
       - file.name
       - author
       - read_status
+      - t0_priority
       - t0_civilization
       - t0_role
+      - axis_r
       - axis_g
       - verification_status
       - id
@@ -101,20 +120,6 @@ views:
       - t0_role
       - axis_r
       - axis_g
-      - id
-  - type: table
-    name: 按文明
-    groupBy:
-      property: t0_civilization
-      direction: ASC
-    order:
-      - file.name
-      - author
-      - read_status
-      - t0_priority
-      - t0_role
-      - axis_g
-      - verification_status
       - id
   - type: table
     name: 按地域
