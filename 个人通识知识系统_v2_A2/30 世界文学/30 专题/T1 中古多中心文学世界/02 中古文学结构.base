@@ -1,0 +1,57 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-T1-MEDIEVAL"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.parent:
+    displayName: 父节点
+  note.importance:
+    displayName: 重要度
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - type
+      - dimension
+      - sequence
+      - parent
+      - importance
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - type == "literature_topic_structure"
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - importance
+  - type: table
+    name: 文学网络
+    filters:
+      and:
+        - dimension == "literary_network"
+    order:
+      - file.name
+      - sequence
+      - importance
+  - type: table
+    name: 传播与制度机制
+    filters:
+      and:
+        - dimension == "transmission_mechanism"
+    order:
+      - file.name
+      - sequence
+      - importance
