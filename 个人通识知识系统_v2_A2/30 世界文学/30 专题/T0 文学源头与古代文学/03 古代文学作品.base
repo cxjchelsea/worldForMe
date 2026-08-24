@@ -9,6 +9,12 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
+  note.t0_priority:
+    displayName: T0优先级
+  note.t0_civilization:
+    displayName: T0文明
+  note.t0_role:
+    displayName: T0角色
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -30,9 +36,40 @@ views:
       - file.name
       - author
       - read_status
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_r
       - axis_g
       - axis_q
+      - verification_status
+      - id
+  - type: table
+    name: T0 骨架 ★
+    filters:
+      and:
+        - t0_priority == "★"
+    order:
+      - file.name
+      - author
+      - read_status
+      - t0_civilization
+      - t0_role
+      - axis_g
+      - verification_status
+      - id
+  - type: table
+    name: T0 理解扩展 ◆
+    filters:
+      and:
+        - t0_priority == "◆"
+    order:
+      - file.name
+      - author
+      - read_status
+      - t0_civilization
+      - t0_role
+      - axis_g
       - verification_status
       - id
   - type: table
@@ -43,9 +80,11 @@ views:
     order:
       - file.name
       - author
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_r
       - axis_g
-      - axis_q
       - id
   - type: table
     name: 已读
@@ -57,9 +96,25 @@ views:
     order:
       - file.name
       - author
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_r
       - axis_g
-      - axis_q
+      - id
+  - type: table
+    name: 按文明
+    groupBy:
+      property: t0_civilization
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - t0_priority
+      - t0_role
+      - axis_g
+      - verification_status
       - id
   - type: table
     name: 按地域
@@ -70,6 +125,9 @@ views:
       - file.name
       - author
       - read_status
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_g
       - axis_q
       - id
@@ -82,6 +140,9 @@ views:
       - file.name
       - author
       - read_status
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_r
       - axis_q
       - verification_status
@@ -91,10 +152,14 @@ views:
     filters:
       and:
         - verification_status != "自动通过"
+        - verification_status != "手工核验"
     order:
       - file.name
       - author
       - verification_status
+      - t0_priority
+      - t0_civilization
+      - t0_role
       - axis_r
       - axis_g
       - axis_q
