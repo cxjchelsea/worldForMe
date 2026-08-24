@@ -9,20 +9,28 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
+  note.topics:
+    displayName: 专题
+  note.t1_priority:
+    displayName: 优先级
+  note.t1_network:
+    displayName: 历史位置
+  note.t1_role:
+    displayName: 机制
+  note.axis_t:
+    displayName: 时间
   note.axis_r:
     displayName: 地域
+  note.axis_m:
+    displayName: 思潮
   note.axis_g:
     displayName: 类型
   note.axis_q:
     displayName: 主题
+  note.id:
+    displayName: 编号
   note.verification_status:
     displayName: 校验状态
-  note.t1_priority:
-    displayName: T1优先级
-  note.t1_network:
-    displayName: 文学网络
-  note.t1_role:
-    displayName: T1角色
 views:
   - type: table
     name: 全部 T1 作品
@@ -30,13 +38,16 @@ views:
       - file.name
       - author
       - read_status
+      - topics
       - t1_priority
       - t1_network
       - t1_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
       - axis_q
-      - verification_status
+      - id
   - type: table
     name: 骨架与重点
     filters:
@@ -50,9 +61,17 @@ views:
     order:
       - file.name
       - author
-      - t1_priority
-      - t1_role
       - read_status
+      - topics
+      - t1_priority
+      - t1_network
+      - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按文学网络
     groupBy:
@@ -61,10 +80,17 @@ views:
     order:
       - file.name
       - author
-      - t1_priority
-      - t1_role
       - read_status
-      - verification_status
+      - topics
+      - t1_priority
+      - t1_network
+      - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 未读
     filters:
@@ -73,9 +99,17 @@ views:
     order:
       - file.name
       - author
+      - read_status
+      - topics
+      - t1_priority
       - t1_network
       - t1_role
+      - axis_t
       - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 已读
     filters:
@@ -86,8 +120,17 @@ views:
     order:
       - file.name
       - author
+      - read_status
+      - topics
+      - t1_priority
       - t1_network
       - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按地域
     groupBy:
@@ -97,8 +140,16 @@ views:
       - file.name
       - author
       - read_status
+      - topics
+      - t1_priority
       - t1_network
       - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按类型
     groupBy:
@@ -108,7 +159,16 @@ views:
       - file.name
       - author
       - read_status
+      - topics
+      - t1_priority
       - t1_network
+      - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 待校验
     filters:
@@ -118,5 +178,13 @@ views:
       - file.name
       - author
       - verification_status
+      - topics
+      - t1_priority
       - t1_network
       - t1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
