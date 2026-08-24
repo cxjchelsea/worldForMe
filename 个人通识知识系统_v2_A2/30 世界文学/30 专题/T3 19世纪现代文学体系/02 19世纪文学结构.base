@@ -1,0 +1,60 @@
+filters:
+  and:
+    - type == "literature_topic_structure"
+    - topic_id == "WL-TOPIC-T3-NINETEENTH-CENTURY"
+properties:
+  file.name:
+    displayName: 节点
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.parent:
+    displayName: 上级
+  note.region:
+    displayName: 文学空间
+  note.mechanism:
+    displayName: 机制
+  note.importance:
+    displayName: 重要度
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - region
+      - mechanism
+      - importance
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - file.inFolder("10 核心结构")
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - importance
+  - type: table
+    name: 文学体系与空间
+    filters:
+      and:
+        - file.inFolder("11 文学体系与空间")
+    order:
+      - file.name
+      - region
+      - importance
+  - type: table
+    name: 生产与传播机制
+    filters:
+      and:
+        - file.inFolder("12 现代文学生产机制")
+    order:
+      - file.name
+      - mechanism
+      - importance
