@@ -9,26 +9,28 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
+  note.topics:
+    displayName: 专题
   note.t0_priority:
-    displayName: T0优先级
+    displayName: 优先级
   note.t0_civilization:
-    displayName: T0文明
+    displayName: 历史位置
   note.t0_role:
-    displayName: T0角色
+    displayName: 机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
     displayName: 地域
+  note.axis_m:
+    displayName: 思潮
   note.axis_g:
     displayName: 类型
   note.axis_q:
     displayName: 主题
-  note.topics:
-    displayName: 专题编号
-  note.verification_status:
-    displayName: 校验状态
   note.id:
     displayName: 编号
+  note.verification_status:
+    displayName: 校验状态
 views:
   - type: table
     name: 全部 T0 作品
@@ -36,13 +38,15 @@ views:
       - file.name
       - author
       - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
       - axis_q
-      - verification_status
       - id
   - type: table
     name: T0 骨架路线
@@ -70,12 +74,15 @@ views:
       - file.name
       - author
       - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
-      - verification_status
+      - axis_q
       - id
   - type: table
     name: T0 理解扩展 ◆
@@ -86,10 +93,15 @@ views:
       - file.name
       - author
       - read_status
+      - topics
+      - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
       - axis_g
-      - verification_status
+      - axis_q
       - id
   - type: table
     name: 未读
@@ -99,11 +111,16 @@ views:
     order:
       - file.name
       - author
+      - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_q
       - id
   - type: table
     name: 已读
@@ -115,11 +132,16 @@ views:
     order:
       - file.name
       - author
+      - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_q
       - id
   - type: table
     name: 按地域
@@ -130,9 +152,13 @@ views:
       - file.name
       - author
       - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
       - axis_g
       - axis_q
       - id
@@ -145,12 +171,15 @@ views:
       - file.name
       - author
       - read_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
+      - axis_g
       - axis_q
-      - verification_status
       - id
   - type: table
     name: 待校验
@@ -162,10 +191,13 @@ views:
       - file.name
       - author
       - verification_status
+      - topics
       - t0_priority
       - t0_civilization
       - t0_role
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
       - axis_q
       - id
