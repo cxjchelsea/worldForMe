@@ -6,6 +6,8 @@ dimension: literary_field
 sequence: 3
 parent: WL-TOPIC-T5-POSTWAR
 importance: ★
+period: 约1945—1980
+mechanism: Boom、魔幻与革命叙事
 ---
 # 拉丁美洲 Boom 与革命经验
 

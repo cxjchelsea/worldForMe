@@ -9,8 +9,10 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topics:
+  note.topic_links:
     displayName: 专题
+  note.topics:
+    displayName: 专题编号
   note.t1_priority:
     displayName: 优先级
   note.t1_network:
@@ -38,7 +40,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -62,7 +64,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -81,7 +83,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -100,7 +102,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -121,7 +123,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -140,7 +142,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -159,7 +161,7 @@ views:
       - file.name
       - author
       - read_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role
@@ -178,7 +180,7 @@ views:
       - file.name
       - author
       - verification_status
-      - topics
+      - topic_links
       - t1_priority
       - t1_network
       - t1_role

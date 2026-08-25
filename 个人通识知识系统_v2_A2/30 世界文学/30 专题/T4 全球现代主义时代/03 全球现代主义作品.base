@@ -9,8 +9,10 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topics:
+  note.topic_links:
     displayName: 专题
+  note.topics:
+    displayName: 专题编号
   note.t4_priority:
     displayName: 优先级
   note.t4_history_position:
@@ -34,7 +36,20 @@ properties:
 views:
   - type: table
     name: 全部 T4 作品
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: T4 骨架路线
     filters:
@@ -55,7 +70,20 @@ views:
             - file.name == "盲枭"
             - file.name == "他们眼望上苍"
             - file.name == "太阳照常升起"
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 骨架与重点
     filters:
@@ -63,13 +91,39 @@ views:
         - or:
             - t4_priority == "★"
             - t4_priority == "◆"
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 未读
     filters:
       and:
         - read_status == "未读"
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 已读
     filters:
@@ -77,23 +131,74 @@ views:
         - or:
             - read_status == "已读"
             - read_status == "重读"
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按地域
     groupBy:
       property: axis_r
       direction: ASC
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按类型
     groupBy:
       property: axis_g
       direction: ASC
-    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 待校验
     filters:
       and:
         - verification_status != "自动通过"
         - verification_status != "手工核验"
-    order: [file.name, author, verification_status, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+    order:
+      - file.name
+      - author
+      - verification_status
+      - t4_priority
+      - t4_history_position
+      - t4_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id

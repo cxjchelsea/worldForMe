@@ -1,60 +1,106 @@
 filters:
   and:
     - topic_id == "WL-TOPIC-T3-NINETEENTH-CENTURY"
+formulas:
+  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", if(dimension == "mechanism", "形成机制", if(dimension == "transmission_mechanism", "形成机制", if(dimension == "literary_space", "专题分支", if(dimension == "literary_field", "专题分支", if(dimension == "field", "专题分支", if(dimension == "civilization", "专题分支", if(dimension == "literary_network", "专题分支", "核心结构")))))))))
+  dimension_zh: if(dimension, dimension.replace("digital_climate_technology", "数字、气候与技术社会").replace("transmission_mechanism", "传播与制度机制").replace("transmission_system", "语言、宗教、教育与传播").replace("cross_civilization", "跨文明比较").replace("historical_system", "历史体系").replace("cold_war_system", "冷战体系").replace("literary_network", "文学网络").replace("literary_field", "文学场域").replace("literary_space", "文学空间").replace("genre_globalization", "类型全球化").replace("polycentric_world", "多中心世界").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("cross_region", "跨区域比较").replace("postwar_axes", "战后横轴").replace("global_market", "全球市场").replace("civilization", "文明传统").replace("decolonization", "去殖民").replace("transmission", "媒介与传播").replace("comparison", "比较").replace("definition", "定义与边界").replace("production", "形式实验与文学场").replace("mechanism", "形成机制").replace("migration", "迁徙与离散").replace("identity", "身份、性别与代表权").replace("history", "时间框架与分期").replace("memory", "记忆、创伤与历史重写").replace("field", "文学场域"), "")
+  parent_zh: if(parent, parent.replace("WL-TOPIC-T5-POSTWAR-HISTORY", "四阶段时间演进").replace("WL-TOPIC-T5-POSTWAR-BRIDGE", "战后问题与跨专题桥接").replace("WL-TOPIC-T5-POSTWAR-SYSTEM", "战后世界体系与多中心结构").replace("WL-TOPIC-T0-ANCIENT", "文学源头与古代文学").replace("WL-TOPIC-T1-MEDIEVAL", "中古多中心文学世界").replace("WL-TOPIC-T2-EARLY-MODERN", "早期现代文学").replace("WL-TOPIC-T3-NINETEENTH-CENTURY", "19世纪现代文学体系").replace("WL-TOPIC-T4-GLOBAL-MODERNISM", "全球现代主义时代").replace("WL-TOPIC-T5-POSTWAR", "二战后多极文学").replace("WL-TOPIC-T6-CONTEMPORARY-GLOBAL", "当代全球文学"), "")
+  history_zh: if(postwar_stage, postwar_stage, if(period, period, if(civilization, civilization, "")))
 properties:
   file.name:
     displayName: 节点
-  note.dimension:
+  formula.type_zh:
+    displayName: 类型
+  formula.dimension_zh:
     displayName: 维度
   note.sequence:
     displayName: 顺序
-  note.parent:
-    displayName: 上级
-  note.region:
-    displayName: 文学空间
+  formula.parent_zh:
+    displayName: 父节点
+  formula.history_zh:
+    displayName: 历史位置
   note.mechanism:
     displayName: 机制
-  note.importance:
-    displayName: 重要度
   note.id:
     displayName: 编号
 views:
   - type: table
     name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
       - file.name
-      - dimension
+      - formula.type_zh
+      - formula.dimension_zh
       - sequence
-      - region
+      - formula.parent_zh
+      - formula.history_zh
       - mechanism
-      - importance
       - id
   - type: table
     name: 核心结构
     filters:
       and:
-        - dimension != "literary_space"
-        - dimension != "mechanism"
+        - 'type != "literature_topic_section"'
+        - 'type != "literature_topic_mechanism"'
+        - 'dimension != "literary_space"'
+        - 'dimension != "mechanism"'
+        - 'dimension != "literary_field"'
+        - 'dimension != "field"'
+        - 'dimension != "civilization"'
+        - 'dimension != "literary_network"'
+        - 'dimension != "transmission_mechanism"'
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
     order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
       - sequence
-      - file.name
-      - dimension
-      - importance
-  - type: table
-    name: 文学体系与空间
-    filters:
-      and:
-        - dimension == "literary_space"
-    order:
-      - file.name
-      - region
-      - importance
-  - type: table
-    name: 生产与传播机制
-    filters:
-      and:
-        - dimension == "mechanism"
-    order:
-      - file.name
+      - formula.parent_zh
+      - formula.history_zh
       - mechanism
-      - importance
+      - id
+  - type: table
+    name: 专题分支
+    filters:
+      or:
+        - 'type == "literature_topic_section"'
+        - 'dimension == "literary_space"'
+        - 'dimension == "literary_field"'
+        - 'dimension == "field"'
+        - 'dimension == "civilization"'
+        - 'dimension == "literary_network"'
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.parent_zh
+      - formula.history_zh
+      - mechanism
+      - id
+  - type: table
+    name: 形成机制
+    filters:
+      or:
+        - 'type == "literature_topic_mechanism"'
+        - 'dimension == "mechanism"'
+        - 'dimension == "transmission_mechanism"'
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.parent_zh
+      - formula.history_zh
+      - mechanism
+      - id
