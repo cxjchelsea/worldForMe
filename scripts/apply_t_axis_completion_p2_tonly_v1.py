@@ -10,6 +10,7 @@ AUTHOR_ONLY=AUDIT/'p2_author_only_t_safe_v1.csv'
 LIFESPAN=AUDIT/'p2_author_lifespan_safe_v1.csv'
 WORK_AUTHOR=AUDIT/'p2_work_author_key_safe_v1.csv'
 WIKIPEDIA_WIKIDATA=AUDIT/'p2_wikipedia_wikidata_safe_v1.csv'
+WORK_DATE_V2=AUDIT/'p2_work_date_v2_safe.csv'
 REPORT=AUDIT/'T_AXIS_COMPLETION_P2_TONLY_V1.md'
 MARKER=AUDIT/'APPLY_T_AXIS_COMPLETION_P2_TONLY_V1'
 T_LABELS={
@@ -43,6 +44,7 @@ def load_candidates():
         (LIFESPAN,'lifespan_status','SAFE_T_LIFESPAN_RANGE','lifespan_proven_t','lifespan_crosscheck'),
         (WORK_AUTHOR,'work_author_key_status','SAFE_T_DIRECT_WORK_AUTHOR','proven_t','direct_work_author'),
         (WIKIPEDIA_WIKIDATA,'ww_status','SAFE_T_WORK_P577','ww_proven_t','wikipedia_wikidata_p577'),
+        (WORK_DATE_V2,'wd2_status','SAFE_T_WORK_DATE_V2','wd2_proven_t','work_date_v2'),
     ]
     for path,status_key,status_value,t_key,src in specs:
         if not path.exists(): continue
