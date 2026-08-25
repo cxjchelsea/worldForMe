@@ -2,16 +2,16 @@
 id: WL-WORK-1363
 type: work
 title: Ozidi Saga
-title_original: ''
+title_original: 'The Ozidi Saga'
 aliases: []
 author: 佚名
 author_original: 中非
 author_source: heading
-year: null
+year: 1977
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T0 文学源头与古代文学
+- T5 二战后多极文学
 axis_r: []
 axis_m: []
 axis_g:
@@ -27,6 +27,7 @@ myth_priority: ◆
 myth_tradition_cluster: 非洲
 myth_motifs: []
 verification_status: 自动通过
+review_note: 'T-axis REVIEW V1：当前可识别文本为J. P. Clark整理、翻译并于1977年出版的口传史诗文本，按文本实体归T5'
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:848

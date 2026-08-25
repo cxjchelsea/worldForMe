@@ -4,9 +4,9 @@
 
 - T0–T6 作品总数：**2145**
 - 匹配经典母库：**299**
-- PASS：**305**
+- PASS：**317**
 - MOVE_CANDIDATE：**6**
 - BOUNDARY：**10**
-- REVIEW：**1824**
+- REVIEW：**1812**
 
 下一阶段应人工核验 MOVE_CANDIDATE / BOUNDARY，并继续为 REVIEW 引入其他可靠年代证据。

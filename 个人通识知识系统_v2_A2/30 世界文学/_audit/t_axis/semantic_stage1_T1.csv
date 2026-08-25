@@ -1,5 +1,6 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id
 Cligès.md,Cligès,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2185
+Darangen.md,Darangen,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1352
 Erec et Enide.md,Erec et Enide,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2219
 "Lancelot, the Knight of the Cart.md","Lancelot, the Knight of the Cart",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2266
 Lancelot.md,Lancelot,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2264
@@ -39,6 +40,7 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 悬诗.md,悬诗,多位诗人,T1,,CANON-245,约6世纪,T1,PASS,HIGH,CANON-245 首次成书_出版时间=约6世纪,需复核,WL-WORK-3187
 扎哈克.md,扎哈克,菲尔多西,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1463
 散文埃达.md,散文埃达,斯诺里·斯图鲁松,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1466
+斯里拉玛传.md,斯里拉玛传,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1467
 新编五代史平话.md,新编五代史平话,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,人工核验,WL-WORK-T1-WUDAI-PINGHUA
 本达希申.md,本达希申,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1472
 李白诗选.md,李白诗选,李白,T1,,CANON-239,8世纪,T1,PASS,HIGH,CANON-239 首次成书_出版时间=8世纪,需复核,WL-WORK-3183

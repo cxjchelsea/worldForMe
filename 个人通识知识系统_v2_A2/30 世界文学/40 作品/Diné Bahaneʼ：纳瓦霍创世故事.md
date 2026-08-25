@@ -2,16 +2,16 @@
 id: WL-WORK-1354
 type: work
 title: Diné Bahaneʼ：纳瓦霍创世故事
-title_original: Diné Bahaneʼ
+title_original: 'Diné Bahaneʼ: The Navajo Creation Story'
 aliases:
 - Diné Bahaneʼ
 author: 佚名
 author_source: title_map
-year: null
+year: 1984
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T0 文学源头与古代文学
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:
@@ -27,6 +27,7 @@ myth_priority: ★
 myth_tradition_cluster: 美洲与大洋洲
 myth_motifs: []
 verification_status: 自动通过
+review_note: 'T-axis REVIEW V1：当前实体题名对应Paul G. Zolbrod 1984年整理/英译本；按具体文本实体归T6，而非按神话内容归古代'
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:1408

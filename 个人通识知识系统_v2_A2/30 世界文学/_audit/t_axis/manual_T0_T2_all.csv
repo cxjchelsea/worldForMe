@@ -1,7 +1,4 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id,manual_status,manual_suggested_t,manual_confidence,manual_note
-Darangen.md,Darangen,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1352,REVIEW,,MEDIUM,口传史诗传统年代缺少足够精确的文本定型依据；“古老”不能直接等同T0
-Diné Bahaneʼ：纳瓦霍创世故事.md,Diné Bahaneʼ：纳瓦霍创世故事,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1354,REVIEW,,HIGH,作品实体代表口传传统还是现代记录本需先明确；不能因创世神话题材直接归T0
-Ozidi Saga.md,Ozidi Saga,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1363,REVIEW,,MEDIUM,口传史诗与20世纪记录文本需区分实体口径；T0依据不足
 云使.md,云使,迦梨陀娑,T0,,CANON-227,约4—5世纪,T0,PASS,HIGH,CANON-227 首次成书_出版时间=约4—5世纪,手工核验,WL-WORK-3176,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 以诺一书.md,以诺一书,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1399,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 伊利亚特.md,伊利亚特,荷马,T0,,CANON-002,约前8世纪,T0,PASS,HIGH,CANON-002 首次成书_出版时间=约前8世纪,自动通过,WL-WORK-0581,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -25,23 +22,19 @@ Ozidi Saga.md,Ozidi Saga,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动�
 埃及亡灵书.md,埃及亡灵书,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1433,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 埃拉史诗.md,埃拉史诗,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1434,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 埃涅阿斯纪.md,埃涅阿斯纪,维吉尔,T0,,CANON-008,前29—前19,T0,PASS,HIGH,CANON-008 首次成书_出版时间=前29—前19,自动通过,WL-WORK-0640,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
-太阳传说.md,太阳传说,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1436,REVIEW,,MEDIUM,需确认是否指纳瓦特尔《太阳传说/Legend of the Suns》及具体文本版本；若为殖民时期记录则应T2
 奥德赛.md,奥德赛,荷马,T0,,CANON-003,约前8世纪,T0,PASS,HIGH,CANON-003 首次成书_出版时间=约前8世纪,自动通过,WL-WORK-0653,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 女神颂.md,女神颂,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1442,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 女英雄书简.md,女英雄书简,奥维德,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1443,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
-姆温多史诗.md,姆温多史诗,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1444,REVIEW,,MEDIUM,口传史诗与20世纪记录/出版文本需区分实体口径；T0依据不足
 安提戈涅.md,安提戈涅,索福克勒斯,T0,,CANON-006,约前441,T0,PASS,HIGH,CANON-006 首次成书_出版时间=约前441,自动通过,WL-WORK-1445,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 山海经.md,山海经,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1448,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 岁时记.md,岁时记,奥维德,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1449,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 工作与时日.md,工作与时日,赫西俄德,T0,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-1451,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 巴力神话组诗.md,巴力神话组诗,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1452,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
-巴里公主.md,巴里公主,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1454,REVIEW,,MEDIUM,韩国巫歌/口传神话传统的文本化年代复杂，T0依据不足
 希波吕托斯.md,希波吕托斯,欧里庇得斯,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1456,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 庄子.md,庄子,庄周及后学,T0,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-T0-ZHUANGZI,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 恩基与宁玛赫.md,恩基与宁玛赫,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1459,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 恩基与宁胡尔萨格.md,恩基与宁胡尔萨格,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1460,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 摩诃婆罗多.md,摩诃婆罗多,毗耶娑,T0,,CANON-011,约前4世纪—4世纪,T0,PASS,HIGH,CANON-011 首次成书_出版时间=约前4世纪—4世纪,自动通过,WL-WORK-1130,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
-斯里拉玛传.md,斯里拉玛传,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1467,REVIEW,,MEDIUM,东南亚《罗摩衍那》改写需确认具体文本身份与成书年代；T0缺乏依据
 本生经.md,本生经,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1471,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 梨俱吠陀.md,梨俱吠陀,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1475,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 棺椁铭文.md,棺椁铭文,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1476,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -77,6 +70,7 @@ Ozidi Saga.md,Ozidi Saga,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动�
 陶渊明诗选.md,陶渊明诗选,陶渊明,T0,,CANON-241,4—5世纪,T0,PASS,HIGH,CANON-241 首次成书_出版时间=4—5世纪,需复核,WL-WORK-3185,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 高人的箴言.md,高人的箴言,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1519,PASS,T0,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Cligès.md,Cligès,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2185,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Darangen.md,Darangen,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1352,REVIEW,,MEDIUM,口传史诗传统年代缺少足够精确的文本定型依据；“古老”不能直接等同T0
 Erec et Enide.md,Erec et Enide,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2219,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Lancelot, the Knight of the Cart.md","Lancelot, the Knight of the Cart",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2266,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Lancelot.md,Lancelot,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2264,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -116,6 +110,7 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 悬诗.md,悬诗,多位诗人,T1,,CANON-245,约6世纪,T1,PASS,HIGH,CANON-245 首次成书_出版时间=约6世纪,需复核,WL-WORK-3187,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 扎哈克.md,扎哈克,菲尔多西,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1463,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 散文埃达.md,散文埃达,斯诺里·斯图鲁松,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1466,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+斯里拉玛传.md,斯里拉玛传,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1467,REVIEW,,MEDIUM,东南亚《罗摩衍那》改写需确认具体文本身份与成书年代；T0缺乏依据
 新编五代史平话.md,新编五代史平话,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,人工核验,WL-WORK-T1-WUDAI-PINGHUA,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 本达希申.md,本达希申,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1472,MOVE,T1,HIGH,现存中古波斯语编纂本主要形成于伊斯兰时期早期约9世纪
 李白诗选.md,李白诗选,李白,T1,,CANON-239,8世纪,T1,PASS,HIGH,CANON-239 首次成书_出版时间=8世纪,需复核,WL-WORK-3183,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -170,6 +165,7 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 后水浒传.md,后水浒传,陈忱,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2478,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 哈姆雷特.md,哈姆雷特,威廉·莎士比亚,T2,1600,CANON-069,约1600—1601,T2,PASS,HIGH,note.year=1600,手工核验,WL-WORK-2825,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 堂吉诃德.md,堂吉诃德,塞万提斯,T2,1605,CANON-068,1605/1615,T2,PASS,HIGH,note.year=1605,手工核验,WL-WORK-1042,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+太阳传说.md,太阳传说,佚名,T2,1558,,,T2,PASS,HIGH,note.year=1558,自动通过,WL-WORK-1436,REVIEW,,MEDIUM,需确认是否指纳瓦特尔《太阳传说/Legend of the Suns》及具体文本版本；若为殖民时期记录则应T2
 失乐园（弥尔顿）.md,失乐园,约翰·弥尔顿,T2,1667,CANON-075,1667,T2,PASS,HIGH,note.year=1667,手工核验,WL-WORK-T2-PARADISE-LOST,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 奇兰巴兰书.md,奇兰巴兰书,佚名,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1438,MOVE,T2,HIGH,尤卡坦玛雅《奇兰巴兰书》主要写定于17—18世纪殖民时期
 奥之细道.md,奥之细道,松尾芭蕉,T2,1702,CANON-050,1702,T2,PASS,HIGH,note.year=1702,手工核验,WL-WORK-1440,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
