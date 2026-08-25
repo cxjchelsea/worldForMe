@@ -51,10 +51,10 @@ views:
             - file.name == "百年孤独.md"
             - file.name == "金阁寺.md"
             - file.name == "砂女.md"
-            - file.name == "第五号屠宰场.md"
             - file.name == "洛丽塔.md"
-            - file.name == "季风.md"
-            - file.name == "移民.md"
+            - file.name == "日瓦戈医生.md"
+            - file.name == "开往巴基斯坦的列车.md"
+            - file.name == "太阳下的人们.md"
     order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
     name: 骨架与重点
