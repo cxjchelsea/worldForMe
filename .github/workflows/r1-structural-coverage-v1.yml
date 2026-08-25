@@ -1,0 +1,32 @@
+name: R1 structural coverage audit V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_r1_structural_coverage_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r1/r1_structural_coverage_v1.csv'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r1/RUN_R1_STRUCTURAL_COVERAGE_V1'
+      - '.github/workflows/r1-structural-coverage-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run R1 structural coverage audit
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r1/RUN_R1_STRUCTURAL_COVERAGE_V1') != ''
+        run: python scripts/audit_r1_structural_coverage_v1.py
+      - name: Commit summary
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r1/R1_STRUCTURAL_COVERAGE_SUMMARY_V1.md'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "audit: record R1 structural coverage summary V1"
+          git push
