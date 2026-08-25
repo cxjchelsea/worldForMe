@@ -7,10 +7,11 @@ aliases: []
 author: 伊格纳西奥·曼努埃尔·阿尔塔米拉诺
 author_original: Ignacio Manuel Altamirano
 author_source: heading
-year: null
+year: 1888
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T3 十九世纪文学
 axis_r: []
 axis_m: []
 axis_g:

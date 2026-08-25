@@ -7,10 +7,11 @@ aliases: []
 author: 斯蒂芬·R.劳黑德
 author_original: Stephen R. Lawhead
 author_source: batch6_source_inferred
-year: null
+year: 2006
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

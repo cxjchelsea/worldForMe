@@ -7,10 +7,11 @@ aliases: []
 author: 斯坦利·韦曼
 author_original: Stanley Weyman
 author_source: title_map
-year: null
+year: 1901
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r:
 - R4 欧洲文学
 axis_m: []

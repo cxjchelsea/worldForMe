@@ -7,10 +7,11 @@ aliases: []
 author: 贝弗利·詹金斯
 author_original: Beverly Jenkins
 author_source: batch5_source_inferred
-year: null
+year: 1996
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:
