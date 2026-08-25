@@ -1,0 +1,71 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-R1-WEST-ASIA-MEDITERRANEAN"
+formulas:
+  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", if(dimension == "internal_tradition", "内部传统", if(dimension == "literary_network", "跨区域网络", if(dimension == "mechanism", "形成机制", "核心结构")))))
+  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("comparison", "比较").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨区域网络").replace("mechanism", "形成机制"), "")
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  formula.dimension_zh:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.period:
+    displayName: 历史位置
+  note.mechanism:
+    displayName: 机制
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部 R1 知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - sequence
+      - period
+      - mechanism
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - dimension != "internal_tradition"
+        - dimension != "literary_network"
+        - dimension != "mechanism"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - period
+      - mechanism
+      - id
+  - type: table
+    name: 内部传统
+    filters:
+      and:
+        - dimension == "internal_tradition"
+    order:
+      - file.name
+      - sequence
+      - period
+      - mechanism
+      - id
+  - type: table
+    name: 跨区域网络
+    filters:
+      and:
+        - dimension == "literary_network"
+    order:
+      - file.name
+      - sequence
+      - period
+      - mechanism
+      - id
