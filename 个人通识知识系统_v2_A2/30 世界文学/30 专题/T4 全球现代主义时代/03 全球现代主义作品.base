@@ -1,0 +1,78 @@
+filters:
+  and:
+    - type == "work"
+    - axis_t.contains("T4 全球现代主义时代")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.topics:
+    displayName: 专题
+  note.t4_priority:
+    displayName: 优先级
+  note.t4_history_position:
+    displayName: 历史位置
+  note.t4_mechanism:
+    displayName: 机制
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+  note.verification_status:
+    displayName: 校验状态
+views:
+  - type: table
+    name: 全部 T4 作品
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 骨架与重点
+    filters:
+      and:
+        - or:
+            - t4_priority == "★"
+            - t4_priority == "◆"
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 按类型
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order: [file.name, author, read_status, topics, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
+    order: [file.name, author, verification_status, t4_priority, t4_history_position, t4_mechanism, axis_t, axis_r, axis_m, axis_g, axis_q, id]
