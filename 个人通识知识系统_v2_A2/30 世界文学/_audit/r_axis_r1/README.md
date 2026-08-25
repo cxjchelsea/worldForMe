@@ -4,25 +4,25 @@
 
 ## Population
 
-- Total canonical Work entities: **3209**
-- Works currently mapped to R1: **81**
-- R1 share of canonical Works: **2.5%**
+- Total canonical Work entities: **3213**
+- Works currently mapped to R1: **84**
+- R1 share of canonical Works: **2.6%**
 
 ## R1 metadata completeness
 
-- Missing `year`: **64**
-- Missing `r1_priority`: **81**
-- Missing `r1_tradition`: **81**
-- Missing `r1_role`: **81**
+- Missing `year`: **65**
+- Missing `r1_priority`: **80**
+- Missing `r1_tradition`: **1**
+- Missing `r1_role`: **80**
 
 ## T distribution inside R1
 
 - T0: **42**
-- T1: **17**
-- T2: **1**
-- T3: **0**
-- T4: **1**
-- T5: **15**
+- T1: **18**
+- T2: **2**
+- T3: **1**
+- T4: **2**
+- T5: **14**
 - T6: **4**
 
 ## Provenance coverage
