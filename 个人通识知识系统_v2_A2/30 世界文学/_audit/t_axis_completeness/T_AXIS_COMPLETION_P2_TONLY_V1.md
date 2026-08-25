@@ -1,9 +1,9 @@
 # T-axis Completion P2 T-only V1
 
-- Safe unique candidates available: **47**
+- Safe unique candidates available: **85**
 - Evidence conflicts blocked: **0**
-- Works applied: **47**
-- Skipped: **0**
+- Works applied: **38**
+- Skipped: **47**
 
 - Mutated field: `axis_t` only.
 - `year` intentionally remains unchanged/null when no exact work-level year is verified.
@@ -11,52 +11,93 @@
 
 ## Applied
 
-- `1914 and Other Poems.md` | `WL-WORK-1931` | T4 | evidence=lifespan_crosscheck
-- `A Long Way Gone.md` | `WL-WORK-1935` | T6 | evidence=lifespan_crosscheck
-- `A New Voyage Round the World.md` | `WL-WORK-0490` | T2 | evidence=lifespan_crosscheck
-- `A Woman's Journey Round the World.md` | `WL-WORK-1345` | T3 | evidence=lifespan_crosscheck
-- `Anton Reiser.md` | `WL-WORK-0915` | T2 | evidence=lifespan_crosscheck
-- `Beach Read.md` | `WL-WORK-1944` | T6 | evidence=lifespan_crosscheck
-- `Book Lovers.md` | `WL-WORK-1949` | T6 | evidence=lifespan_crosscheck
-- `Boyfriend Material.md` | `WL-WORK-1950` | T6 | evidence=lifespan_crosscheck
-- `Certain Dark Things.md` | `WL-WORK-0495` | T6 | evidence=lifespan_crosscheck
-- `Dark Lover.md` | `WL-WORK-1952` | T6 | evidence=lifespan_crosscheck
-- `El gaucho Martín Fierro.md` | `WL-WORK-2205` | T3 | evidence=lifespan_crosscheck
-- `Exquisite Corpse.md` | `WL-WORK-0500` | T6 | evidence=lifespan_crosscheck
-- `Feed.md` | `WL-WORK-0925` | T6 | evidence=lifespan_crosscheck
-- `Fourth Wing.md` | `WL-WORK-1959` | T6 | evidence=lifespan_crosscheck
-- `Her Privates We.md` | `WL-WORK-1964` | T4 | evidence=lifespan_crosscheck
-- `How Much of These Hills Is Gold.md` | `WL-WORK-2244` | T6 | evidence=lifespan_crosscheck
-- `Human Sacrifices.md` | `WL-WORK-0503` | T6 | evidence=lifespan_crosscheck
-- `Jawbone.md` | `WL-WORK-0505` | T6 | evidence=lifespan_crosscheck
-- `Jennifer Government.md` | `WL-WORK-0931` | T6 | evidence=lifespan_crosscheck
-- `Just Like Home.md` | `WL-WORK-0506` | T6 | evidence=lifespan_crosscheck
-- `La vuelta de Martín Fierro.md` | `WL-WORK-2263` | T3 | evidence=lifespan_crosscheck
-- `Letters Written during a Short Residence in Sweden, Norway, and Denmark.md` | `WL-WORK-1360` | T2 | evidence=lifespan_crosscheck
-- `Lone Women.md` | `WL-WORK-2274` | T6 | evidence=lifespan_crosscheck
-- `Looking for Transwonderland／ Travels in Nigeria.md` | `WL-WORK-1361` | T6 | evidence=lifespan_crosscheck
-- `QualityLand.md` | `WL-WORK-0939` | T6 | evidence=lifespan_crosscheck
-- `Reservation Blues.md` | `WL-WORK-2315` | T6 | evidence=lifespan_crosscheck
-- `Ring Shout.md` | `WL-WORK-0516` | T6 | evidence=lifespan_crosscheck
-- `Slave to Sensation.md` | `WL-WORK-1982` | T6 | evidence=lifespan_crosscheck
-- `The Absolutely True Diary of a Part-Time Indian.md` | `WL-WORK-0946` | T6 | evidence=lifespan_crosscheck
-- `The Boy Hunters.md` | `WL-WORK-0525` | T3 | evidence=lifespan_crosscheck
-- `The Kiss Quotient.md` | `WL-WORK-1989` | T6 | evidence=lifespan_crosscheck
-- `The Ritual.md` | `WL-WORK-0546` | T6 | evidence=lifespan_crosscheck
-- `The Road to Oxiana.md` | `WL-WORK-1380` | T4 | evidence=lifespan_crosscheck
-- `The Sisters Brothers.md` | `WL-WORK-2406` | T6 | evidence=lifespan_crosscheck
-- `The Surrendered.md` | `WL-WORK-1993` | T6 | evidence=lifespan_crosscheck
-- `The Viscount Who Loved Me.md` | `WL-WORK-1994` | T6 | evidence=lifespan_crosscheck
-- `The Yellow Birds.md` | `WL-WORK-1996` | T6 | evidence=lifespan_crosscheck
-- `Those Across the River.md` | `WL-WORK-0550` | T6 | evidence=lifespan_crosscheck
-- `两扇门的房子不好守.md` | `WL-WORK-2442` | T2 | evidence=lifespan_crosscheck
-- `传奇与拿铁.md` | `WL-WORK-0582` | T6 | evidence=lifespan_crosscheck
-- `园丁之犬.md` | `WL-WORK-2483` | T2 | evidence=lifespan_crosscheck
-- `幽灵小姐.md` | `WL-WORK-2515` | T2 | evidence=lifespan_crosscheck
-- `弗拉卡斯上尉.md` | `WL-WORK-2519` | T3 | evidence=lifespan_crosscheck
-- `归乡.md` | `WL-WORK-1101` | T6 | evidence=lifespan_crosscheck
-- `拉莫娜.md` | `WL-WORK-2528` | T3 | evidence=lifespan_crosscheck
-- `申诉.md` | `WL-WORK-0145` | T6 | evidence=lifespan_crosscheck
-- `白狼.md` | `WL-WORK-2580` | T3 | evidence=lifespan_crosscheck
+- `Aniceto el Gallo.md` | `WL-WORK-2160` | T3 | evidence=author_only
+- `Astucia, el jefe de los Hermanos de la Hoja.md` | `WL-WORK-2164` | T3 | evidence=author_only
+- `Cogewea, the Half-Blood.md` | `WL-WORK-2188` | T4 | evidence=author_only
+- `Hormiga Negra.md` | `WL-WORK-2241` | T3 | evidence=author_only
+- `Morgante.md` | `WL-WORK-2287` | T1 | evidence=author_only
+- `O Cabeleira.md` | `WL-WORK-2291` | T3 | evidence=author_only
+- `O Gaúcho.md` | `WL-WORK-2292` | T3 | evidence=author_only
+- `Russian Folk Belief.md` | `WL-WORK-1369` | T6 | evidence=author_only
+- `Safarnama ／ 旅行记.md` | `WL-WORK-1370` | T1 | evidence=author_only
+- `Sarajevo Marlboro.md` | `WL-WORK-1980` | T6 | evidence=author_only
+- `The Book of the Order of Chivalry.md` | `WL-WORK-2366` | T1 | evidence=author_only
+- `The Oregon Trail.md` | `WL-WORK-2396` | T3 | evidence=author_only
+- `Tirant lo Blanc.md` | `WL-WORK-2422` | T1 | evidence=author_only
+- `Travels through France and Italy.md` | `WL-WORK-1386` | T2 | evidence=author_only
+- `Willehalm.md` | `WL-WORK-2430` | T1 | evidence=author_only
+- `聪明的恋人.md` | `WL-WORK-2604` | T2 | evidence=author_only
+- `解放了的耶路撒冷.md` | `WL-WORK-2618` | T2 | evidence=author_only
+- `A General History of the Pyrates.md` | `WL-WORK-2152` | T2 | evidence=author_only
+- `Cockfight.md` | `WL-WORK-0496` | T6 | evidence=author_only
+- `Cogewea.md` | `WL-WORK-2187` | T4 | evidence=author_only
+- `Facundo／ Civilization and Barbarism.md` | `WL-WORK-2224` | T3 | evidence=author_only
+- `Harvest Home.md` | `WL-WORK-0502` | T2 | evidence=author_only
+- `How the Soldier Repairs the Gramophone.md` | `WL-WORK-1965` | T6 | evidence=author_only
+- `Juan Cuello.md` | `WL-WORK-2254` | T3 | evidence=author_only
+- `Masterman Ready.md` | `WL-WORK-0510` | T3 | evidence=author_only
+- `Naufragios.md` | `WL-WORK-0515` | T2 | evidence=author_only
+- `Roman de Brut.md` | `WL-WORK-2330` | T1 | evidence=author_only
+- `Smoky the Cowhorse.md` | `WL-WORK-2344` | T4 | evidence=author_only
+- `The Adventures of Col. Daniel Boone.md` | `WL-WORK-2355` | T2 | evidence=author_only
+- `The Ballad of Black Tom.md` | `WL-WORK-0524` | T6 | evidence=author_only
+- `The Conjure-Man Dies.md` | `WL-WORK-1542` | T4 | evidence=author_only
+- `The Headless Horseman.md` | `WL-WORK-0535` | T3 | evidence=author_only
+- `The Imago Sequence.md` | `WL-WORK-0536` | T6 | evidence=author_only
+- `The Old Ways.md` | `WL-WORK-1378` | T6 | evidence=author_only
+- `The Principal Navigations.md` | `WL-WORK-1379` | T2 | evidence=author_only
+- `The Squatter and the Don.md` | `WL-WORK-2408` | T3 | evidence=author_only
+- `穿绿裤子的唐·希尔.md` | `WL-WORK-2587` | T2 | evidence=author_only
+- `雇员们.md` | `WL-WORK-0482` | T6 | evidence=author_only
+
+## Skipped
+
+- `1914 and Other Poems.md` — already has T
+- `A Long Way Gone.md` — already has T
+- `A New Voyage Round the World.md` — already has T
+- `A Woman's Journey Round the World.md` — already has T
+- `Anton Reiser.md` — already has T
+- `Beach Read.md` — already has T
+- `Book Lovers.md` — already has T
+- `Boyfriend Material.md` — already has T
+- `Certain Dark Things.md` — already has T
+- `Exquisite Corpse.md` — already has T
+- `Fourth Wing.md` — already has T
+- `Her Privates We.md` — already has T
+- `How Much of These Hills Is Gold.md` — already has T
+- `Human Sacrifices.md` — already has T
+- `Jawbone.md` — already has T
+- `Just Like Home.md` — already has T
+- `Letters Written during a Short Residence in Sweden, Norway, and Denmark.md` — already has T
+- `Lone Women.md` — already has T
+- `Looking for Transwonderland／ Travels in Nigeria.md` — already has T
+- `QualityLand.md` — already has T
+- `Reservation Blues.md` — already has T
+- `Ring Shout.md` — already has T
+- `Slave to Sensation.md` — already has T
+- `The Absolutely True Diary of a Part-Time Indian.md` — already has T
+- `The Boy Hunters.md` — already has T
+- `The Kiss Quotient.md` — already has T
+- `The Road to Oxiana.md` — already has T
+- `The Surrendered.md` — already has T
+- `The Viscount Who Loved Me.md` — already has T
+- `The Yellow Birds.md` — already has T
+- `Those Across the River.md` — already has T
+- `两扇门的房子不好守.md` — already has T
+- `传奇与拿铁.md` — already has T
+- `园丁之犬.md` — already has T
+- `幽灵小姐.md` — already has T
+- `弗拉卡斯上尉.md` — already has T
+- `归乡.md` — already has T
+- `拉莫娜.md` — already has T
+- `申诉.md` — already has T
+- `白狼.md` — already has T
+- `Dark Lover.md` — already has T
+- `El gaucho Martín Fierro.md` — already has T
+- `Feed.md` — already has T
+- `Jennifer Government.md` — already has T
+- `La vuelta de Martín Fierro.md` — already has T
+- `The Ritual.md` — already has T
+- `The Sisters Brothers.md` — already has T
 
 `T_AXIS_COMPLETION_P2_TONLY_V1 = APPLIED_AND_VERIFIED`
