@@ -1,0 +1,25 @@
+name: T-axis completion P2 T-only V1
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/APPLY_T_AXIS_COMPLETION_P2_TONLY_V1'
+  workflow_dispatch:
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Apply authorized P2 T-only completion
+        run: python scripts/apply_t_axis_completion_p2_tonly_v1.py
+      - name: Commit P2 T-only completion
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          git commit -m 'fix: apply safe P2 T-only completion' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main

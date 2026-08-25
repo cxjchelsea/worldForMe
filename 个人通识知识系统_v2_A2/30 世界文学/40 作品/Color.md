@@ -7,10 +7,11 @@ aliases: []
 author: 康蒂·卡伦
 author_original: Countee Cullen
 author_source: batch4_source_inferred
-year: null
+year: 1925
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 全球现代主义时代
 axis_r: []
 axis_m:
 - M3.1 现代主义 / Modernism

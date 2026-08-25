@@ -7,10 +7,11 @@ aliases: []
 author: 乔·R.兰斯代尔
 author_original: Joe R. Lansdale
 author_source: batch6_source_inferred
-year: null
+year: 1986
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r:
 - R5 北美文学
 axis_m: []

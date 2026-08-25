@@ -10,7 +10,8 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T1 中古多中心文学世界
 axis_r:
 - R4 欧洲文学
 axis_m: []

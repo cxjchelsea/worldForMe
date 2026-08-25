@@ -7,10 +7,11 @@ aliases: []
 author: 鲁道夫·阿纳亚
 author_original: Rudolfo Anaya
 author_source: heading
-year: null
+year: 1972
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r:
 - R5 北美文学
 axis_m: []

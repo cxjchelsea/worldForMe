@@ -7,10 +7,11 @@ aliases: []
 author: 牙买加·金凯德
 author_original: Jamaica Kincaid
 author_source: batch3_source_inferred
-year: null
+year: 1988
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

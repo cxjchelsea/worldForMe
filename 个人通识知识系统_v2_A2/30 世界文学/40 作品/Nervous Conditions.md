@@ -7,10 +7,11 @@ aliases: []
 author: 齐齐·丹加雷姆加
 author_original: Tsitsi Dangarembga
 author_source: batch2_source_inferred
-year: null
+year: 1988
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

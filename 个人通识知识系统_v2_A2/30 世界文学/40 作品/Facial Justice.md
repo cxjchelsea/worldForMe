@@ -7,10 +7,11 @@ aliases: []
 author: L.P.哈特利
 author_original: L.P. Hartley
 author_source: batch2_source_inferred
-year: null
+year: 1960
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r: []
 axis_m: []
 axis_g:

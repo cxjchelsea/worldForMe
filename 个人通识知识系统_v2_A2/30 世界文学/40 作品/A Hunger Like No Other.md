@@ -7,10 +7,11 @@ aliases: []
 author: 克雷斯莉·科尔
 author_original: Kresley Cole
 author_source: batch5_source_inferred
-year: null
+year: 2006
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

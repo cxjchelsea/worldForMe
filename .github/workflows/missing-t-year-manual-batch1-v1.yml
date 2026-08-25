@@ -1,0 +1,22 @@
+name: Missing-T year manual batch 1 V1
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/APPLY_MISSING_T_YEAR_MANUAL_BATCH1_V1'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply manual year backfill batch 1
+        run: python scripts/apply_missing_t_year_manual_batch1_v1.py
+      - name: Commit manual batch 1
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill'
+          git commit -m 'fix: apply missing-T year manual batch 1'
+          git pull --rebase origin main
+          git push

@@ -7,10 +7,11 @@ aliases: []
 author: N.斯科特·莫马迪
 author_original: N. Scott Momaday
 author_source: heading
-year: null
+year: 1968
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r:
 - R5 北美文学
 axis_m: []

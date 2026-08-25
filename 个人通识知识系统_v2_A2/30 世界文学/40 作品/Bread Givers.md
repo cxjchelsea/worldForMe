@@ -7,10 +7,11 @@ aliases: []
 author: 安齐娅·叶济尔斯卡
 author_original: Anzia Yezierska
 author_source: batch2_source_inferred
-year: null
+year: 1925
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 全球现代主义时代
 axis_r: []
 axis_m: []
 axis_g:

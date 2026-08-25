@@ -7,10 +7,11 @@ aliases: []
 author: 尼克·哈卡维
 author_original: Nick Harkaway
 author_source: batch2_source_inferred
-year: null
+year: 2017
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

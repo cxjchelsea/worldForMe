@@ -7,10 +7,11 @@ aliases: []
 author: 西蒙斯·洛佩斯·内托
 author_original: Simões Lopes Neto
 author_source: heading
-year: null
+year: 1914
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 全球现代主义时代
 axis_r:
 - R6 拉丁美洲与加勒比
 axis_m: []

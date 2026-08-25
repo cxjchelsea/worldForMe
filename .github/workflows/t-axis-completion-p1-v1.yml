@@ -1,0 +1,36 @@
+name: T-axis completion P1 V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/apply_t_axis_completion_p1_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/APPLY_T_AXIS_COMPLETION_P1_V1'
+      - '.github/workflows/t-axis-completion-p1-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Apply authorized P1 T-axis completion
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/APPLY_T_AXIS_COMPLETION_P1_V1') != ''
+        run: python scripts/apply_t_axis_completion_p1_v1.py
+      - name: Commit P1 T-axis completion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学'
+          if git diff --cached --quiet; then
+            echo "No P1 T-axis completion changes"
+          else
+            git commit -m "fix: complete P1 canon award T-axis metadata"
+            git push
+          fi

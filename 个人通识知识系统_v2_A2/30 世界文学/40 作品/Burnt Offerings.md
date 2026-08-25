@@ -7,10 +7,11 @@ aliases: []
 author: 罗伯特·马拉斯科
 author_original: Robert Marasco
 author_source: batch1_source_inferred
-year: null
+year: 1973
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r: []
 axis_m: []
 axis_g:

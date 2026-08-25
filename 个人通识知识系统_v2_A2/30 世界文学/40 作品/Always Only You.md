@@ -7,10 +7,11 @@ aliases: []
 author: 克洛伊·利泽
 author_original: Chloe Liese
 author_source: batch5_source_inferred
-year: null
+year: 2020
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r:
 - R2 东亚文学
 axis_m: []

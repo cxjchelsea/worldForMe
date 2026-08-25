@@ -7,10 +7,11 @@ aliases: []
 author: 夏洛特·德尔博
 author_original: Charlotte Delbo
 author_source: batch5_source_inferred
-year: null
+year: 1971
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r: []
 axis_m: []
 axis_g:

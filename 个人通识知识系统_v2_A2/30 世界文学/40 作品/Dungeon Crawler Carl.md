@@ -7,10 +7,11 @@ aliases: []
 author: 马特·丁尼曼
 author_original: Matt Dinniman
 author_source: batch1_source_inferred
-year: null
+year: 2020
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

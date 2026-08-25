@@ -7,10 +7,11 @@ aliases: []
 author: 哈特曼·冯·奥埃
 author_original: Hartmann von Aue
 author_source: title_map
-year: null
+year: 1185
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T1 中古多中心文学世界
 axis_r:
 - R4 欧洲文学
 axis_m: []

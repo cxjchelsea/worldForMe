@@ -11,7 +11,8 @@ author_source: batch3_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T1 中古多中心文学世界
 axis_r: []
 axis_m: []
 axis_g:

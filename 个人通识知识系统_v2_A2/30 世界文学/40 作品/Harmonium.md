@@ -7,10 +7,11 @@ aliases: []
 author: 华莱士·史蒂文斯
 author_original: Wallace Stevens
 author_source: batch4_source_inferred
-year: null
+year: 1923
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 全球现代主义时代
 axis_r: []
 axis_m:
 - M3.1 现代主义 / Modernism

@@ -7,10 +7,11 @@ aliases: []
 author: 努鲁丁·法拉赫
 author_original: Nuruddin Farah
 author_source: batch2_source_inferred
-year: null
+year: 1970
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r: []
 axis_m: []
 axis_g:

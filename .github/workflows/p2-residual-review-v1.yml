@@ -1,0 +1,25 @@
+name: P2 residual review V1
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_P2_RESIDUAL_REVIEW_V1'
+  workflow_dispatch:
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Build P2 residual queue
+        run: python scripts/build_p2_residual_queue_v1.py
+      - name: Commit residual queue
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          git commit -m 'audit: build P2 residual review queue' || exit 0
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -7,10 +7,11 @@ aliases: []
 author: 约翰·威廉斯
 author_original: John Williams
 author_source: heading
-year: null
+year: 1960
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 二战后多极文学
 axis_r:
 - R5 北美文学
 axis_m: []

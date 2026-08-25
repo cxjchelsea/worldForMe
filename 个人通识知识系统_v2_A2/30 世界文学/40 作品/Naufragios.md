@@ -11,7 +11,8 @@ author_source: batch1_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T2 早期现代文学
 axis_r:
 - R5 北美文学
 axis_m: []
