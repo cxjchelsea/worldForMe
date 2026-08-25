@@ -1,0 +1,20 @@
+name: Missing-T reprint batch1B apply V1
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/APPLY_MISSING_T_YEAR_REPRINT_BATCH1B_V1'
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/apply_missing_t_year_reprint_batch1b_v1.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/REPRINT_BATCH1B_APPLY_V1.md' '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/APPLY_MISSING_T_YEAR_REPRINT_BATCH1B_V1'
+          git commit -m 'data: apply missing-T reprint batch1B years'
+          git pull --rebase origin main
+          git push
