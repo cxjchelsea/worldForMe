@@ -38,6 +38,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:1425
+t3_priority: △
+t3_history_position: 欧洲现代文学市场 · 小说
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
 ---
 # Micah Clarke
 

@@ -42,6 +42,12 @@ first_source_line: 920
 mystery_source_lines:
   - "920"
   - "1285"
+t6_priority: △
+t6_history_position: 东亚全球化与记忆文学 · 小说
+t6_mechanism:
+- 记忆、创伤与历史重写
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 
 # 嫌疑人X的献身

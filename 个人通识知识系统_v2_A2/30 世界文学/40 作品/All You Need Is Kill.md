@@ -11,7 +11,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
+axis_r:
+- R2 东亚文学
 axis_m:
 - M5 战后与当代美学范式
 axis_g:
@@ -37,6 +38,12 @@ first_source_line: 526
 sf_source_lines:
 - '526'
 - '1144'
+t6_priority: △
+t6_history_position: 当代全球类型文学场域 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 数字平台、气候与技术社会
+- 全球市场、翻译与奖项
 ---
 
 # All You Need Is Kill

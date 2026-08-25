@@ -32,6 +32,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch5_source_refs:
 - 爱情书单.md:1064
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # It Had to Be You
 

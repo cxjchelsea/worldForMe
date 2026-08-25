@@ -41,6 +41,10 @@ batch6_source_refs:
 - 海盗书单.md:1245
 - 海盗书单.md:1363
 - 海盗书单.md:630
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_mechanism:
+- 小杂志、翻译、流亡与跨国网络
 ---
 # The Rover
 

@@ -11,7 +11,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
-axis_r: []
+axis_r:
+- R9 大洋洲与太平洋
 axis_m: []
 axis_g:
 - G3 小说
@@ -30,6 +31,11 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:1409
 - 神话书单.md:951
+t2_priority: △
+t2_history_position: 海洋亚洲与跨区域接触 · 小说
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 俗语化、翻译与新读者共同体
 ---
 # Kumulipo
 

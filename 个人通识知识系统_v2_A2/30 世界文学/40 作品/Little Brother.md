@@ -34,6 +34,12 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 反乌托邦书单.md:1038
 - 反乌托邦书单.md:721
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 数字平台、气候与技术社会
+- 全球市场、翻译与奖项
 ---
 # Little Brother
 

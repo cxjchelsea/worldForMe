@@ -39,6 +39,11 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:1186
 - 骑士书单.md:1884
+t3_priority: △
+t3_history_position: 欧洲现代文学市场 · 小说
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
 ---
 # The Defence of Guenevere
 

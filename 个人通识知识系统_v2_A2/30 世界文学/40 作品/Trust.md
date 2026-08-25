@@ -24,6 +24,10 @@ topics: []
 topic_links: []
 verification_status: 需复核
 bibliography_status: metadata_pending
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_mechanism:
+- 全球市场、翻译与奖项
 ---
 
 # Trust

@@ -51,12 +51,48 @@ views:
       - axis_q
       - id
   - type: table
-    name: 骨架与重点
+    name: 核心 ★
     filters:
       and:
-        - or:
-            - t2_priority == "★"
-            - t2_priority == "◆"
+        - t2_priority == "★"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t2_priority
+      - t2_history_position
+      - t2_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 重点 ◆
+    filters:
+      and:
+        - t2_priority == "◆"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t2_priority
+      - t2_history_position
+      - t2_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - t2_priority == "△"
     order:
       - file.name
       - author
@@ -112,9 +148,47 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按历史位置
+    groupBy:
+      property: t2_history_position
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t2_priority
+      - t2_history_position
+      - t2_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 按地域
     groupBy:
       property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t2_priority
+      - t2_history_position
+      - t2_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按思潮
+    groupBy:
+      property: axis_m
       direction: ASC
     order:
       - file.name
@@ -150,6 +224,25 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按主题
+    groupBy:
+      property: axis_q
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t2_priority
+      - t2_history_position
+      - t2_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 待校验
     filters:
       and:
@@ -159,9 +252,13 @@ views:
       - file.name
       - author
       - verification_status
+      - topic_links
       - t2_priority
       - t2_history_position
       - t2_mechanism
+      - axis_t
       - axis_r
+      - axis_m
       - axis_g
+      - axis_q
       - id

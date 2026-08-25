@@ -32,6 +32,10 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:923
+t3_priority: △
+t3_history_position: 欧洲现代文学市场 · 纪实与文学非虚构
+t3_mechanism:
+- 职业作者、版权与文学市场
 ---
 # Pictures from Italy
 

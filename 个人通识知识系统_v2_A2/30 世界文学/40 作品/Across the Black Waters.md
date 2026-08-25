@@ -33,6 +33,12 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:2322
 - 战争书单.md:756
+t4_priority: △
+t4_history_position: 南亚殖民现代性与多语言文学 · 小说
+t4_mechanism:
+- 心理、主体与叙事视角
+- 世界大战、革命与政治极化
+- 帝国、殖民、反殖民与文化翻译
 ---
 # Across the Black Waters
 

@@ -12,7 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
-axis_r: []
+axis_r:
+- R3 南亚文学
 axis_m:
 - M5 战后与当代美学范式
 axis_g:
@@ -31,6 +32,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch2_source_refs:
 - 历史书单.md:896
+postwar_priority: △
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 去殖民、民族国家与后殖民转向
 ---
 # Tamas
 

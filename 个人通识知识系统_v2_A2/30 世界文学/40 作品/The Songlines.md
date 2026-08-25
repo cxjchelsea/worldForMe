@@ -32,6 +32,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:1174
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 纪实与文学非虚构
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # The Songlines
 

@@ -32,6 +32,12 @@ batch5_source_refs:
 - 不可靠叙述书单.md:373
 - 不可靠叙述书单.md:471
 - 不可靠叙述书单.md:505
+t6_priority: △
+t6_history_position: 跨区域与离散文学场域 · 小说
+t6_mechanism:
+- 迁徙、离散与跨国家庭
+- 身份、性别与代表权
+- 类型全球化与文类融合
 ---
 # 少年Pi的奇幻漂流
 

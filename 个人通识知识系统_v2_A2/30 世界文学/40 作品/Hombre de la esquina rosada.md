@@ -38,6 +38,12 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:839
+t4_priority: △
+t4_history_position: 拉丁美洲先锋派与现代城市文学 · 小说
+t4_mechanism:
+- 都市、技术与感知革命
+- 帝国、殖民、反殖民与文化翻译
+- 小杂志、翻译、流亡与跨国网络
 ---
 # Hombre de la esquina rosada
 

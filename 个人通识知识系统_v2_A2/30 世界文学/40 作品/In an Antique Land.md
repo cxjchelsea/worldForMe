@@ -33,6 +33,12 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:1354
 - 旅行书单.md:2100
+t6_priority: △
+t6_history_position: 南亚与全球离散文学 · 纪实与文学非虚构
+t6_mechanism:
+- 迁徙、离散与跨国家庭
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # In an Antique Land
 

@@ -16,7 +16,8 @@ axis_r:
 - R4 欧洲文学
 axis_m:
 - M3.1 现代主义 / Modernism
-axis_g: []
+axis_g:
+- G1 诗歌
 axis_q: []
 axis_source: inferred
 topics:
@@ -30,6 +31,10 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:189
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 综合文类
+t4_mechanism:
+- 小杂志、翻译、流亡与跨国网络
 ---
 # J. Alfred Prufrock的情歌
 

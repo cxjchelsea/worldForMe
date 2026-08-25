@@ -12,7 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
+axis_r:
+- R5 北美文学
 axis_m: []
 axis_g:
 - G3 小说
@@ -32,6 +33,11 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:1408
 - 神话书单.md:922
+t6_priority: △
+t6_history_position: 当代全球类型文学场域 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # Diné Bahaneʼ：纳瓦霍创世故事
 

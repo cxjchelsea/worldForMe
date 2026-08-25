@@ -51,25 +51,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: T6 骨架路线
+    name: 核心 ★
     filters:
       and:
-        - or:
-            - file.name == "午夜之子"
-            - file.name == "宠儿"
-            - file.name == "使女的故事"
-            - file.name == "长日将尽"
-            - file.name == "活着"
-            - file.name == "挪威的森林"
-            - file.name == "三体"
-            - file.name == "微物之神"
-            - file.name == "耻"
-            - file.name == "半轮黄日"
-            - file.name == "霍乱时期的爱情"
-            - file.name == "2666"
-            - file.name == "我的名字叫红"
-            - file.name == "追风筝的人"
-            - file.name == "素食者"
+        - t6_priority == "★"
     order:
       - file.name
       - author
@@ -85,12 +70,29 @@ views:
       - axis_q
       - id
   - type: table
-    name: 骨架与重点
+    name: 重点 ◆
     filters:
       and:
-        - or:
-            - t6_priority == "★"
-            - t6_priority == "◆"
+        - t6_priority == "◆"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t6_priority
+      - t6_history_position
+      - t6_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - t6_priority == "△"
     order:
       - file.name
       - author
@@ -146,9 +148,47 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按历史位置
+    groupBy:
+      property: t6_history_position
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t6_priority
+      - t6_history_position
+      - t6_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 按地域
     groupBy:
       property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t6_priority
+      - t6_history_position
+      - t6_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按思潮
+    groupBy:
+      property: axis_m
       direction: ASC
     order:
       - file.name
@@ -184,6 +224,25 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按主题
+    groupBy:
+      property: axis_q
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t6_priority
+      - t6_history_position
+      - t6_mechanism
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 待校验
     filters:
       and:
@@ -193,6 +252,7 @@ views:
       - file.name
       - author
       - verification_status
+      - topic_links
       - t6_priority
       - t6_history_position
       - t6_mechanism

@@ -39,6 +39,11 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:2288
 - 西部书单.md:695
+postwar_priority: △
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 冷战、审查与意识形态体系
 ---
 # Hondo
 

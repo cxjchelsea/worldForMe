@@ -32,6 +32,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch1_source_refs:
 - 冒险书单.md:722
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_mechanism:
+- 都市、技术与感知革命
+- 小杂志、翻译、流亡与跨国网络
 ---
 # The Wrecker
 

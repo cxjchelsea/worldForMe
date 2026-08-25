@@ -41,6 +41,11 @@ batch6_source_refs:
 - 侠盗书单.md:2056
 canon_id: CANON-203
 canon_level: Core
+postwar_priority: ◆
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 去殖民、民族国家与后殖民转向
 ---
 # Grande Sertão: Veredas
 

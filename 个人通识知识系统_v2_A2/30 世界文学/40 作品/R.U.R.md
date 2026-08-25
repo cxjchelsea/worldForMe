@@ -48,6 +48,11 @@ dystopia_control_modes:
 batch2_source_refs:
 - 反乌托邦书单.md:1154
 - 反乌托邦书单.md:896
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_mechanism:
+- 都市、技术与感知革命
+- 小杂志、翻译、流亡与跨国网络
 ---
 # R.U.R.
 

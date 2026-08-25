@@ -47,6 +47,11 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 侠盗书单.md:50
 - 海盗书单.md:325
+t2_priority: △
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 宗教改革、教派竞争与文本政治
 ---
 # Moll Flanders
 

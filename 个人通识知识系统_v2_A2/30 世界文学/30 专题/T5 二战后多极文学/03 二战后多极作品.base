@@ -51,25 +51,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: T5 骨架路线
+    name: 核心 ★
     filters:
       and:
-        - or:
-            - file.name == "1984.md"
-            - file.name == "等待戈多.md"
-            - file.name == "看不见的人.md"
-            - file.name == "第二十二条军规.md"
-            - file.name == "金色笔记.md"
-            - file.name == "铁皮鼓.md"
-            - file.name == "瓦解.md"
-            - file.name == "佩德罗·巴拉莫.md"
-            - file.name == "百年孤独.md"
-            - file.name == "金阁寺.md"
-            - file.name == "砂女.md"
-            - file.name == "洛丽塔.md"
-            - file.name == "日瓦戈医生.md"
-            - file.name == "开往巴基斯坦的列车.md"
-            - file.name == "太阳下的人们.md"
+        - postwar_priority == "★"
     order:
       - file.name
       - author
@@ -85,12 +70,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 骨架与重点
+    name: 重点 ◆
     filters:
       and:
-        - or:
-            - postwar_priority == "★"
-            - postwar_priority == "◆"
+        - postwar_priority == "◆"
     order:
       - file.name
       - author
@@ -106,29 +89,10 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史
-    groupBy:
-      property: postwar_stage
-      direction: ASC
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
-  - type: table
-    name: 按地域
-    groupBy:
-      property: axis_r
-      direction: ASC
+    name: 扩展 △
+    filters:
+      and:
+        - postwar_priority == "△"
     order:
       - file.name
       - author
@@ -184,6 +148,101 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按历史位置
+    groupBy:
+      property: postwar_stage
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - postwar_priority
+      - postwar_stage
+      - postwar_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - postwar_priority
+      - postwar_stage
+      - postwar_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按思潮
+    groupBy:
+      property: axis_m
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - postwar_priority
+      - postwar_stage
+      - postwar_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按类型
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - postwar_priority
+      - postwar_stage
+      - postwar_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按主题
+    groupBy:
+      property: axis_q
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - postwar_priority
+      - postwar_stage
+      - postwar_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 待校验
     filters:
       and:
@@ -193,6 +252,7 @@ views:
       - file.name
       - author
       - verification_status
+      - topic_links
       - postwar_priority
       - postwar_stage
       - postwar_axes

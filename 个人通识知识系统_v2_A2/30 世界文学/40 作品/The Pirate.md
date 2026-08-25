@@ -39,6 +39,11 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 海盗书单.md:1344
 - 海盗书单.md:367
+t3_priority: △
+t3_history_position: 欧洲现代文学市场 · 小说
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
 ---
 # The Pirate
 

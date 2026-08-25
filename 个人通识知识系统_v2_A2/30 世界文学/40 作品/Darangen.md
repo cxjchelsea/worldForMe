@@ -12,7 +12,9 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T1 中古多中心文学世界
-axis_r: []
+axis_r:
+- R3 南亚文学
+- R8 东南亚文学
 axis_m: []
 axis_g:
 - G3 小说
@@ -31,6 +33,12 @@ review_note: 'T-axis REVIEW V1：口传史诗明确早于14世纪菲律宾伊斯
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:794
+t1_priority: △
+t1_network: 南亚—东南亚多语言传统（补充）
+t1_role:
+- 口传、讲唱与表演
+- 保存与再经典化
+- 手稿、书写与区域性印刷
 ---
 # Darangen
 

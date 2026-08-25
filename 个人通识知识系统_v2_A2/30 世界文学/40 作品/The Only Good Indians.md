@@ -36,6 +36,11 @@ batch1_source_refs:
 - 恐怖书单.md:1368
 - 恐怖书单.md:1753
 - 恐怖书单.md:947
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # The Only Good Indians
 

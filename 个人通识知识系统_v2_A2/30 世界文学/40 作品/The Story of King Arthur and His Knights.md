@@ -38,6 +38,10 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:1230
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_mechanism:
+- 小杂志、翻译、流亡与跨国网络
 ---
 # The Story of King Arthur and His Knights
 

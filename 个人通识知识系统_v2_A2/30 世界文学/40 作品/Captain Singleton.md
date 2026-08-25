@@ -40,6 +40,11 @@ batch6_source_refs:
 - 海盗书单.md:1338
 - 海盗书单.md:294
 - 海盗书单.md:302
+t2_priority: △
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 宗教改革、教派竞争与文本政治
 ---
 # Captain Singleton
 

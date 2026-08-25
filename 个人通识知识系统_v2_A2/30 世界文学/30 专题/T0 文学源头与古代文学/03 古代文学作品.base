@@ -53,27 +53,10 @@ views:
     columnSize:
       file.name: 173
   - type: table
-    name: T0 骨架路线
+    name: 核心 ★
     filters:
       and:
-        - or:
-            - file.name == "吉尔伽美什史诗"
-            - file.name == "埃努玛·埃利什"
-            - file.name == "埃及亡灵书"
-            - file.name == "创世记"
-            - file.name == "约伯记"
-            - file.name == "伊利亚特"
-            - file.name == "奥德赛"
-            - file.name == "俄狄浦斯王"
-            - file.name == "埃涅阿斯纪"
-            - file.name == "变形记"
-            - file.name == "梨俱吠陀"
-            - file.name == "摩诃婆罗多"
-            - file.name == "罗摩衍那"
-            - file.name == "诗经"
-            - file.name == "楚辞"
-            - file.name == "史记"
-            - file.name == "左传"
+        - t0_priority == "★"
     order:
       - file.name
       - author
@@ -89,10 +72,29 @@ views:
       - axis_q
       - id
   - type: table
-    name: T0 理解扩展 ◆
+    name: 重点 ◆
     filters:
       and:
         - t0_priority == "◆"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t0_priority
+      - t0_civilization
+      - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - t0_priority == "△"
     order:
       - file.name
       - author
@@ -148,6 +150,25 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按历史位置
+    groupBy:
+      property: t0_civilization
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t0_priority
+      - t0_civilization
+      - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 按地域
     groupBy:
       property: axis_r
@@ -167,9 +188,47 @@ views:
       - axis_q
       - id
   - type: table
+    name: 按思潮
+    groupBy:
+      property: axis_m
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t0_priority
+      - t0_civilization
+      - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
     name: 按类型
     groupBy:
       property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - t0_priority
+      - t0_civilization
+      - t0_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按主题
+    groupBy:
+      property: axis_q
       direction: ASC
     order:
       - file.name

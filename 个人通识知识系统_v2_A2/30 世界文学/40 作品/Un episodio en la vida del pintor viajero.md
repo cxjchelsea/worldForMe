@@ -38,6 +38,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:916
+t6_priority: △
+t6_history_position: 拉丁美洲与后爆炸时代 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # Un episodio en la vida del pintor viajero
 

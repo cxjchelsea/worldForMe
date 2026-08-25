@@ -19,6 +19,7 @@ axis_q:
 - QH2.1 爱情与欲望
 - QH4 社会、阶级与劳动
 - QH9 殖民、迁徙与身份
+axis_source: inferred
 topics: []
 topic_links: []
 t3_priority: ◆

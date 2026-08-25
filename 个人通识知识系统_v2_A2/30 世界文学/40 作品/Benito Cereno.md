@@ -41,6 +41,12 @@ batch6_source_refs:
 - 海盗书单.md:1169
 - 海盗书单.md:1364
 - 海盗书单.md:644
+t3_priority: △
+t3_history_position: 北美文学与跨大西洋市场 · 小说
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
+- 翻译、帝国与跨洋市场
 ---
 # Benito Cereno
 

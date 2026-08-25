@@ -36,6 +36,11 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:294
+t1_priority: △
+t1_network: 拉丁基督教与欧洲俗语文学圈
+t1_role:
+- 手稿、书写与区域性印刷
+- 教育、宫廷与宗教机构
 ---
 # Lancelot, the Knight of the Cart
 

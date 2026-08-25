@@ -33,6 +33,11 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:1184
 - 旅行书单.md:2098
+postwar_priority: △
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 去殖民、民族国家与后殖民转向
 ---
 # An Area of Darkness
 

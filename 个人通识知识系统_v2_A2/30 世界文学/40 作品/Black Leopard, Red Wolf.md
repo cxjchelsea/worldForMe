@@ -38,6 +38,12 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 海盗书单.md:817
+t6_priority: △
+t6_history_position: 跨区域与离散文学场域 · 小说
+t6_mechanism:
+- 迁徙、离散与跨国家庭
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # Black Leopard, Red Wolf
 

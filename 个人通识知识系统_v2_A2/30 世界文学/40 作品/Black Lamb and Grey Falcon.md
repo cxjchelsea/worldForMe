@@ -34,6 +34,10 @@ batch3_source_refs:
 - 旅行书单.md:1026
 - 旅行书单.md:2086
 - 旅行书单.md:2140
+t4_priority: △
+t4_history_position: 西欧与英美现代主义场域 · 纪实与文学非虚构
+t4_mechanism:
+- 小杂志、翻译、流亡与跨国网络
 ---
 # Black Lamb and Grey Falcon
 

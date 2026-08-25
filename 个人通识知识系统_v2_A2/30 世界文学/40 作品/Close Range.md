@@ -39,6 +39,11 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:1259
 - 西部书单.md:2328
+t6_priority: △
+t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 ---
 # Close Range
 
