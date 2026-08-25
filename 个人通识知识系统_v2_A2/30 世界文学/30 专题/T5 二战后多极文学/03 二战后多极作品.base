@@ -1,7 +1,7 @@
 filters:
   and:
     - type == "work"
-    - topics.contains("WL-TOPIC-T5-POSTWAR")
+    - axis_t.contains("T5 二战后多极文学")
 properties:
   file.name:
     displayName: 作品
@@ -9,10 +9,14 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
   note.topics:
-    displayName: 专题编号
+    displayName: 专题
+  note.postwar_priority:
+    displayName: 优先级
+  note.postwar_stage:
+    displayName: 历史位置
+  note.postwar_axes:
+    displayName: 机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -25,125 +29,59 @@ properties:
     displayName: 主题
   note.id:
     displayName: 编号
-  note.postwar_priority:
-    displayName: 优先级
-  note.postwar_stage:
-    displayName: 历史位置
-  note.postwar_axes:
-    displayName: 机制
+  note.verification_status:
+    displayName: 校验状态
 views:
   - type: table
-    name: 全部作品
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+    name: 全部 T5 作品
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
-    name: 核心骨架 ★
+    name: T5 骨架路线
     filters:
       and:
-        - postwar_priority == "★"
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+        - or:
+            - file.name == "1984.md"
+            - file.name == "等待戈多.md"
+            - file.name == "看不见的人.md"
+            - file.name == "第二十二条军规.md"
+            - file.name == "金色笔记.md"
+            - file.name == "铁皮鼓.md"
+            - file.name == "瓦解.md"
+            - file.name == "佩德罗·巴拉莫.md"
+            - file.name == "百年孤独.md"
+            - file.name == "金阁寺.md"
+            - file.name == "砂女.md"
+            - file.name == "第五号屠宰场.md"
+            - file.name == "洛丽塔.md"
+            - file.name == "季风.md"
+            - file.name == "移民.md"
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
-    name: 骨架未读
+    name: 骨架与重点
     filters:
       and:
-        - postwar_priority == "★"
-        - read_status == "未读"
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
-  - type: table
-    name: 系统扩展 ◆
-    filters:
-      and:
-        - postwar_priority == "◆"
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+        - or:
+            - postwar_priority == "★"
+            - postwar_priority == "◆"
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
     name: 按历史
     groupBy:
       property: postwar_stage
       direction: ASC
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
     name: 未读
     filters:
       and:
         - read_status == "未读"
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
   - type: table
     name: 已读
     filters:
@@ -151,17 +89,11 @@ views:
         - or:
             - read_status == "已读"
             - read_status == "重读"
-    order:
-      - file.name
-      - author
-      - read_status
-      - topic_links
-      - postwar_priority
-      - postwar_stage
-      - postwar_axes
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
-      - id
+    order: [file.name, author, read_status, topics, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
+    order: [file.name, author, verification_status, postwar_priority, postwar_stage, postwar_axes, axis_t, axis_r, axis_m, axis_g, axis_q, id]
