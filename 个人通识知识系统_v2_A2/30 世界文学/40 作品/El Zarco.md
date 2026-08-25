@@ -11,7 +11,7 @@ year: 1888
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T3 十九世纪文学
+- T3 19世纪现代文学体系
 axis_r: []
 axis_m: []
 axis_g:

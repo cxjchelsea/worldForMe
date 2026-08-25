@@ -11,7 +11,7 @@ year: 1185
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T1 中古文学
+- T1 中古多中心文学世界
 axis_r:
 - R4 欧洲文学
 axis_m: []

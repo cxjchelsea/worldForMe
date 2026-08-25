@@ -11,7 +11,7 @@ year: 1901
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 现代主义前夜与现代主义文学
+- T4 全球现代主义时代
 axis_r:
 - R4 欧洲文学
 axis_m: []

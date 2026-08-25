@@ -11,7 +11,7 @@ year: 1960
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 战后文学
+- T5 二战后多极文学
 axis_r:
 - R5 北美文学
 axis_m: []

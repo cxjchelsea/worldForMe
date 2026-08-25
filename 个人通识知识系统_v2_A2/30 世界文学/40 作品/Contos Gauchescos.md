@@ -11,7 +11,7 @@ year: 1912
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 现代主义前夜与现代主义文学
+- T4 全球现代主义时代
 axis_r:
 - R6 拉丁美洲与加勒比
 axis_m: []
