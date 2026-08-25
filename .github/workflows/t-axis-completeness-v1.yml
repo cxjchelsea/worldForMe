@@ -1,0 +1,38 @@
+name: T-axis completeness audit V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_t_axis_completeness_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_T_AXIS_COMPLETENESS_V1'
+      - '.github/workflows/t-axis-completeness-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run authorized T-axis completeness audit
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_T_AXIS_COMPLETENESS_V1') != ''
+        run: python scripts/audit_t_axis_completeness_v1.py
+
+      - name: Commit T-axis completeness report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          if git diff --cached --quiet; then
+            echo "No T-axis completeness report changes"
+          else
+            git commit -m "audit: record T-axis completeness V1"
+            git push
+          fi

@@ -1,0 +1,36 @@
+name: Missing-T internal year evidence V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_missing_t_internal_year_evidence_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_MISSING_T_INTERNAL_YEAR_EVIDENCE_V1'
+      - '.github/workflows/missing-t-internal-year-evidence-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run internal year-evidence audit
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_MISSING_T_INTERNAL_YEAR_EVIDENCE_V1') != ''
+        run: python scripts/audit_missing_t_internal_year_evidence_v1.py
+      - name: Commit internal year-evidence report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          if git diff --cached --quiet; then
+            echo "No internal year-evidence changes"
+          else
+            git commit -m "audit: record missing-T internal year evidence V1"
+            git push
+          fi
