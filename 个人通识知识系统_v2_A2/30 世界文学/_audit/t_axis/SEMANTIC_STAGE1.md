@@ -4,8 +4,8 @@
 
 - T0–T6 作品总数：**2145**
 - 匹配经典母库：**299**
-- PASS：**301**
-- MOVE_CANDIDATE：**10**
+- PASS：**304**
+- MOVE_CANDIDATE：**7**
 - BOUNDARY：**10**
 - REVIEW：**1824**
 

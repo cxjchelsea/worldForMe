@@ -1,8 +1,10 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id,manual_status,manual_suggested_t,manual_confidence,manual_note
 Captain Singleton.md,Captain Singleton,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2182,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Kumulipo.md,Kumulipo,佚名,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1358,MOVE,T2,HIGH,夏威夷创世颂歌通常与17—18世纪王族传统相关，不能按神话内容归T0
 Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2285,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 三国演义.md,三国演义,罗贯中,T2,,CANON-030,14世纪,T1,MOVE_CANDIDATE,HIGH,CANON-030 首次成书_出版时间=14世纪,手工核验,WL-WORK-0965,PASS,T2,HIGH,故事/素材较早，但现存长篇小说的成型与刊刻主要按明代16世纪文本体系处理；保留T2
 乌多尔弗的秘密.md,乌多尔弗的秘密,安·拉德克利夫,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0570,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+乌托邦.md,乌托邦,托马斯·莫尔,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0257,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 九云梦.md,九云梦,金万重,T2,,CANON-060,约1687,T2,PASS,HIGH,CANON-060 首次成书_出版时间=约1687,需复核,WL-WORK-2820,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 仲夏夜之梦.md,仲夏夜之梦,莎士比亚,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2010,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 伪君子.md,伪君子,莫里哀,T2,1664,CANON-076,1664,T2,PASS,HIGH,note.year=1664,手工核验,WL-WORK-2830,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -17,9 +19,11 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 哈姆雷特.md,哈姆雷特,威廉·莎士比亚,T2,1600,CANON-069,约1600—1601,T2,PASS,HIGH,note.year=1600,手工核验,WL-WORK-2825,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 堂吉诃德.md,堂吉诃德,塞万提斯,T2,1605,CANON-068,1605/1615,T2,PASS,HIGH,note.year=1605,手工核验,WL-WORK-1042,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 失乐园（弥尔顿）.md,失乐园,约翰·弥尔顿,T2,1667,CANON-075,1667,T2,PASS,HIGH,note.year=1667,手工核验,WL-WORK-T2-PARADISE-LOST,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+奇兰巴兰书.md,奇兰巴兰书,佚名,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1438,MOVE,T2,HIGH,尤卡坦玛雅《奇兰巴兰书》主要写定于17—18世纪殖民时期
 奥之细道.md,奥之细道,松尾芭蕉,T2,1702,CANON-050,1702,T2,PASS,HIGH,note.year=1702,手工核验,WL-WORK-1440,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 奥赛罗.md,奥赛罗,威廉·莎士比亚,T2,,CANON-072,约1603—1604,T2,PASS,HIGH,CANON-072 首次成书_出版时间=约1603—1604,需复核,WL-WORK-2828,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 好色一代男.md,好色一代男,井原西鹤,T2,1682,,,T2,PASS,HIGH,note.year=1682,手工核验,WL-WORK-T2-KOSHOKU-ICHIDAI-OTOKO,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+威廉·迈斯特的学习时代.md,威廉·迈斯特的学习时代,歌德,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1061,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 宿命论者雅克和他的主人.md,宿命论者雅克和他的主人,德尼·狄德罗,T2,,CANON-200,1796,T2,PASS,HIGH,CANON-200 首次成书_出版时间=1796,需复核,WL-WORK-3156,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 少年维特的烦恼.md,少年维特的烦恼,歌德,T2,,CANON-086,1774,T2,PASS,HIGH,CANON-086 首次成书_出版时间=1774,自动通过,WL-WORK-2055,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 巨人传.md,巨人传,弗朗索瓦·拉伯雷,T2,,CANON-212,1532—1564,T2,PASS,HIGH,CANON-212 首次成书_出版时间=1532—1564,需复核,WL-WORK-3164,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -29,6 +33,8 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 微型巨人.md,微型巨人,伏尔泰,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0261,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 意大利人.md,意大利人,安·拉德克利夫,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0697,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 感伤旅行.md,感伤旅行,劳伦斯·斯特恩,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1462,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+拉玛坚.md,拉玛坚,佚名,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1465,MOVE,T2,HIGH,泰国现存经典《拉玛坚》主要定型于18世纪末
+新大西岛.md,新大西岛,弗朗西斯·培根,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0258,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 新爱洛伊丝.md,新爱洛伊丝,卢梭,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2077,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 旅行书（埃夫利亚·切莱比）.md,旅行书,埃夫利亚·切莱比,T2,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-T2-SEYAHATNAME,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 春香传.md,春香传,佚名,T2,,CANON-059,约18—19世纪,T3,MOVE_CANDIDATE,HIGH,CANON-059 首次成书_出版时间=约18—19世纪,需复核,WL-WORK-2819,BOUNDARY,T2,MEDIUM,朝鲜口传/盘索里传统跨18—19世纪；当前T2可保留，但应标记T2/T3边界
@@ -43,8 +49,8 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 水浒后传.md,水浒后传,陈忱,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2563,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 汤姆·琼斯.md,汤姆·琼斯,亨利·菲尔丁,T2,,CANON-082,1749,T2,PASS,HIGH,CANON-082 首次成书_出版时间=1749,自动通过,WL-WORK-1178,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 波波尔·乌.md,波波尔·乌,佚名,T2,,CANON-285,约16世纪记录,T2,PASS,HIGH,CANON-285 首次成书_出版时间=约16世纪记录,手工核验,WL-WORK-1481,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
-浮士德.md,浮士德,歌德,T2,,CANON-087,1808/1832,T3,MOVE_CANDIDATE,HIGH,CANON-087 首次成书_出版时间=1808/1832,需复核,WL-WORK-2834,MOVE,T3,HIGH,完整作品第一部1808、第二部1832；虽创作始于18世纪，作为完整作品实体主归T3
 浮生六记.md,浮生六记,沈复,T2,,,,,REVIEW,,缺少可靠年代证据,个人补录,WL-WORK-2688,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+炽焰世界.md,炽焰世界,玛格丽特·卡文迪许,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0259,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 爱弥儿.md,爱弥儿,卢梭,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1207,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 牡丹亭.md,牡丹亭,汤显祖,T2,,CANON-034,1598,T2,PASS,HIGH,CANON-034 首次成书_出版时间=1598,手工核验,WL-WORK-2097,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 第一梦（索尔·胡安娜）.md,第一梦,索尔·胡安娜·伊内斯·德拉克鲁斯,T2,1692,,,T2,PASS,HIGH,note.year=1692,手工核验,WL-WORK-T2-PRIMERO-SUENO,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -60,6 +66,7 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 西游记.md,西游记,吴承恩,T2,,CANON-032,16世纪,T2,PASS,HIGH,CANON-032 首次成书_出版时间=16世纪,手工核验,WL-WORK-0838,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 费德尔.md,费德尔,让·拉辛,T2,,CANON-078,1677,T2,PASS,HIGH,CANON-078 首次成书_出版时间=1677,需复核,WL-WORK-2832,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 金瓶梅.md,金瓶梅,兰陵笑笑生,T2,,CANON-033,约1610,T2,PASS,HIGH,CANON-033 首次成书_出版时间=约1610,手工核验,WL-WORK-1307,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+铁手骑士葛兹·冯·贝利欣根.md,铁手骑士葛兹·冯·贝利欣根,歌德,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2628,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 雨月物语.md,雨月物语,上田秋成,T2,,CANON-237,1776,T2,PASS,HIGH,CANON-237 首次成书_出版时间=1776,自动通过,WL-WORK-0869,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 项狄传.md,项狄传,劳伦斯·斯特恩,T2,,CANON-084,1759—1767,T2,PASS,HIGH,CANON-084 首次成书_出版时间=1759—1767,需复核,WL-WORK-2833,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 鲁滨逊漂流记.md,鲁滨逊漂流记,丹尼尔·笛福,T2,1719,CANON-080,1719,T2,PASS,HIGH,note.year=1719,手工核验,WL-WORK-0889,PASS,T2,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符

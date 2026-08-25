@@ -10,7 +10,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T0 文学源头与古代文学
+- T2 早期现代文学
 axis_r: []
 axis_m: []
 axis_g:

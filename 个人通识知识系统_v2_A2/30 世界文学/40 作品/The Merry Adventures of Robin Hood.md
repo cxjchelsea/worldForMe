@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- T3 19世纪现代文学体系
 axis_r:
 - R5 北美文学
 axis_m:
