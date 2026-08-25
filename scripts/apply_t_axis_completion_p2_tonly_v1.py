@@ -8,6 +8,7 @@ WORKS=ROOT/'40 作品'
 AUDIT=ROOT/'_audit/t_axis_completeness'
 AUTHOR_ONLY=AUDIT/'p2_author_only_t_safe_v1.csv'
 LIFESPAN=AUDIT/'p2_author_lifespan_safe_v1.csv'
+WORK_AUTHOR=AUDIT/'p2_work_author_key_safe_v1.csv'
 REPORT=AUDIT/'T_AXIS_COMPLETION_P2_TONLY_V1.md'
 MARKER=AUDIT/'APPLY_T_AXIS_COMPLETION_P2_TONLY_V1'
 T_LABELS={
@@ -35,32 +36,25 @@ def replace_axis_t(fm:str,label:str)->str:
     return '\n'.join(out)
 
 def load_candidates():
-    by_key={}; conflicts=[]
-    sources=[]
-    if AUTHOR_ONLY.exists():
-        with AUTHOR_ONLY.open(encoding='utf-8-sig',newline='') as f:
+    by_key={}; conflicts=[]; conflict_keys=set(); sources=[]
+    specs=[
+        (AUTHOR_ONLY,'author_only_status','SAFE_T_AUTHOR_RANGE','author_only_proven_t','author_only'),
+        (LIFESPAN,'lifespan_status','SAFE_T_LIFESPAN_RANGE','lifespan_proven_t','lifespan_crosscheck'),
+        (WORK_AUTHOR,'work_author_key_status','SAFE_T_DIRECT_WORK_AUTHOR','proven_t','direct_work_author'),
+    ]
+    for path,status_key,status_value,t_key,src in specs:
+        if not path.exists(): continue
+        with path.open(encoding='utf-8-sig',newline='') as f:
             for r in csv.DictReader(f):
-                if r.get('author_only_status')=='SAFE_T_AUTHOR_RANGE':
-                    sources.append((r,r.get('author_only_proven_t',''),'author_only'))
-    if LIFESPAN.exists():
-        with LIFESPAN.open(encoding='utf-8-sig',newline='') as f:
-            for r in csv.DictReader(f):
-                if r.get('lifespan_status')=='SAFE_T_LIFESPAN_RANGE':
-                    sources.append((r,r.get('lifespan_proven_t',''),'lifespan_crosscheck'))
+                if r.get(status_key)==status_value:
+                    sources.append((r,r.get(t_key,''),src))
     for r,t,src in sources:
         key=(r.get('id',''),r.get('file',''))
-        if t not in T_LABELS: continue
+        if key in conflict_keys or t not in T_LABELS: continue
         if key in by_key and by_key[key]['t']!=t:
-            conflicts.append((key,by_key[key]['t'],t))
-            by_key.pop(key,None)
-            continue
-        if key not in by_key:
-            by_key[key]={'row':r,'t':t,'sources':[src]}
-        elif src not in by_key[key]['sources']:
-            by_key[key]['sources'].append(src)
-    if conflicts:
-        conflict_keys={k for k,_,_ in conflicts}
-        for k in conflict_keys: by_key.pop(k,None)
+            conflicts.append((key,by_key[key]['t'],t));by_key.pop(key,None);conflict_keys.add(key);continue
+        if key not in by_key: by_key[key]={'row':r,'t':t,'sources':[src]}
+        elif src not in by_key[key]['sources']: by_key[key]['sources'].append(src)
     return list(by_key.values()),conflicts
 
 def main():
@@ -70,14 +64,12 @@ def main():
     applied=[];skipped=[]
     for item in rows:
         r=item['row']; t=item['t']; evidence='+'.join(item['sources'])
-        fn=r.get('file',''); tid=r.get('id','')
-        p=WORKS/fn
+        fn=r.get('file',''); tid=r.get('id',''); p=WORKS/fn
         if not p.exists(): skipped.append((fn,'file missing')); continue
         text=p.read_text(encoding='utf-8');m=fm_span(text);fm=m.group(1)
         if scalar(fm,'id')!=tid: skipped.append((fn,'id mismatch')); continue
         if re.search(r'(?m)^axis_t:\s*\n\s*-\s*T[0-6]\b',fm): skipped.append((fn,'already has T')); continue
-        fm=replace_axis_t(fm,T_LABELS[t])
-        p.write_text(text[:m.start(1)]+fm+text[m.end(1):],encoding='utf-8')
+        fm=replace_axis_t(fm,T_LABELS[t]);p.write_text(text[:m.start(1)]+fm+text[m.end(1):],encoding='utf-8')
         applied.append((fn,tid,t,evidence))
     lines=['# T-axis Completion P2 T-only V1','',f'- Safe unique candidates available: **{len(rows)}**',f'- Evidence conflicts blocked: **{len(conflicts)}**',f'- Works applied: **{len(applied)}**',f'- Skipped: **{len(skipped)}**','', '- Mutated field: `axis_t` only.','- `year` intentionally remains unchanged/null when no exact work-level year is verified.','- R/M/G/Q/topics/priority/history/mechanism unchanged.','','## Applied','']
     for fn,tid,t,evidence in applied: lines.append(f'- `{fn}` | `{tid}` | {t} | evidence={evidence}')
@@ -88,8 +80,7 @@ def main():
         lines += ['','## Skipped','']
         for fn,why in skipped: lines.append(f'- `{fn}` — {why}')
     lines += ['','`T_AXIS_COMPLETION_P2_TONLY_V1 = APPLIED_AND_VERIFIED`','']
-    REPORT.write_text('\n'.join(lines),encoding='utf-8')
-    MARKER.unlink()
+    REPORT.write_text('\n'.join(lines),encoding='utf-8');MARKER.unlink()
     print(f'candidates={len(rows)} conflicts={len(conflicts)} applied={len(applied)} skipped={len(skipped)}')
 
 if __name__=='__main__': main()
