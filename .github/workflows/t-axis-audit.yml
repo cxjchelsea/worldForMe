@@ -9,9 +9,11 @@ on:
       - 'scripts/summarize_t_axis_stage1.py'
       - 'scripts/manual_t0_t2_review.py'
       - 'scripts/build_t_axis_compact_review.py'
+      - 'scripts/apply_t_axis_corrections_v1.py'
       - '世界文学经典母库_V1.csv'
       - '世界文学经典母库_V2_增量_CANON-196-300.csv'
       - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_CORRECTIONS_V1'
       - '.github/workflows/t-axis-audit.yml'
   workflow_dispatch:
 
@@ -26,6 +28,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
+      - name: Apply authorized T-axis correction V1
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_CORRECTIONS_V1') != ''
+        run: python scripts/apply_t_axis_corrections_v1.py
 
       - name: Run full T-axis inventory scan
         run: python scripts/audit_t_axis.py
@@ -42,14 +48,15 @@ jobs:
       - name: Build compact population review views
         run: python scripts/build_t_axis_compact_review.py
 
-      - name: Commit audit reports
+      - name: Commit correction and audit reports
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品'
           git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis'
           if git diff --cached --quiet; then
-            echo "No audit report changes"
+            echo "No correction or audit report changes"
           else
-            git commit -m "audit: refresh T-axis classification report"
+            git commit -m "fix: apply reviewed T-axis corrections"
             git push
           fi
