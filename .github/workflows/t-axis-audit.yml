@@ -11,11 +11,13 @@ on:
       - 'scripts/build_t_axis_compact_review.py'
       - 'scripts/apply_t_axis_corrections_v1.py'
       - 'scripts/apply_t_axis_boundary_v1.py'
+      - 'scripts/apply_t_axis_review_resolution_v1.py'
       - '世界文学经典母库_V1.csv'
       - '世界文学经典母库_V2_增量_CANON-196-300.csv'
       - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
       - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_CORRECTIONS_V1'
       - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_BOUNDARY_V1'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_REVIEW_RESOLUTION_V1'
       - '.github/workflows/t-axis-audit.yml'
   workflow_dispatch:
 
@@ -38,6 +40,10 @@ jobs:
       - name: Apply authorized T-axis boundary resolution V1
         if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_BOUNDARY_V1') != ''
         run: python scripts/apply_t_axis_boundary_v1.py
+
+      - name: Apply authorized T-axis REVIEW resolution V1
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis/APPLY_T_AXIS_REVIEW_RESOLUTION_V1') != ''
+        run: python scripts/apply_t_axis_review_resolution_v1.py
 
       - name: Run full T-axis inventory scan
         run: python scripts/audit_t_axis.py
