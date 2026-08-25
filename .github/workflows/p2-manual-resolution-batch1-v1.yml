@@ -1,0 +1,34 @@
+name: P2 manual resolution batch 1 V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/apply_p2_manual_resolution_batch1_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/APPLY_P2_MANUAL_RESOLUTION_BATCH1_V1'
+      - '.github/workflows/p2-manual-resolution-batch1-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply manual resolution batch 1
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/APPLY_P2_MANUAL_RESOLUTION_BATCH1_V1') != ''
+        run: python scripts/apply_p2_manual_resolution_batch1_v1.py
+      - name: Commit manual resolution batch 1
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "fix: apply P2 manual resolution batch 1"
+            git push
+          fi
