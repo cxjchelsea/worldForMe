@@ -1,0 +1,13 @@
+﻿status,score,file_a,id_a,title_a,author_a,year_a,file_b,id_b,title_b,author_b,year_b,reason
+HIGH_CONFIDENCE,0.990,Noli Me Tangere.md,WL-WORK-T3-NOLI-ME-TANGERE,Noli Me Tangere,何塞·黎刹,,社会毒瘤.md,WL-WORK-3171,社会毒瘤,何塞·黎刹,read_status: 未读,same normalized title/original/alias + same author
+HIGH_CONFIDENCE,0.990,Rihla.md,WL-WORK-1368,Rihla,伊本·白图泰,,伊本·白图泰游记.md,WL-WORK-T1-RIHLA,伊本·白图泰游记,伊本·白图泰,,same normalized title/original/alias + same author
+HIGH_CONFIDENCE,0.990,佐罗的诅咒.md,WL-WORK-2448,佐罗的诅咒,约翰斯顿·麦卡利,,卡皮斯特拉诺的诅咒.md,WL-WORK-2470,卡皮斯特拉诺的诅咒,约翰斯顿·麦卡利,,same normalized title/original/alias + same author
+HIGH_CONFIDENCE,0.990,白鲸.md,WL-WORK-T3-MOBY-DICK,白鲸,赫尔曼·梅尔维尔,,莫比·迪克.md,WL-WORK-2844,莫比·迪克,赫尔曼·梅尔维尔,read_status: 未读,same normalized title/original/alias + same author
+REVIEW,0.923,阿尔戈船英雄纪.md,WL-WORK-0865,阿尔戈船英雄纪,阿波罗尼奥斯,,阿尔戈英雄纪.md,WL-WORK-1515,阿尔戈英雄纪,阿波罗尼奥斯,,similar title + same author
+REVIEW,0.889,开往巴基斯坦的列车.md,WL-WORK-T5-TRAIN-PAKISTAN,开往巴基斯坦的列车,库什万特·辛格,1956,开往巴基斯坦的火车.md,WL-WORK-1098,开往巴基斯坦的火车,库什万特·辛格,,similar title + same author
+REVIEW,0.872,Estoire del Saint Graal.md,WL-WORK-2220,Estoire del Saint Graal,佚名,,Queste del Saint Graal.md,WL-WORK-2311,Queste del Saint Graal,佚名,,similar title + same author
+TITLE_COLLISION,0.200,Facundo.md,WL-WORK-2223,Facundo,萨米恩托,,法昆多.md,WL-WORK-1765,法昆多,多明戈·福斯蒂诺·萨米恩托,,same normalized title but author differs/unknown
+TITLE_COLLISION,0.200,人世间.md,WL-WORK-2887,人世间,梁晓声,read_status: 未读,人世间（普拉姆迪亚）.md,WL-WORK-3172,人世间,普拉姆迪亚·阿南达·杜尔,read_status: 未读,same normalized title but author differs/unknown
+TITLE_COLLISION,0.200,凯瑟琳·安·波特短篇小说集.md,WL-WORK-2992,凯瑟琳·安·波特短篇小说集,凯瑟琳·安·波特,read_status: 未读,琼·斯塔福德短篇小说集.md,WL-WORK-2995,琼·斯塔福德短篇小说集,琼·斯塔福德,read_status: 未读,same normalized title but author differs/unknown
+TITLE_COLLISION,0.200,历史.md,WL-WORK-1422,历史,希罗多德,,历史（莫兰特）.md,WL-WORK-3162,历史,埃尔莎·莫兰特,read_status: 未读,same normalized title but author differs/unknown
+TITLE_COLLISION,0.200,失乐园.md,WL-WORK-2049,失乐园,渡边淳一,,失乐园（弥尔顿）.md,WL-WORK-T2-PARADISE-LOST,失乐园,约翰·弥尔顿,1667,same normalized title but author differs/unknown
