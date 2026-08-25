@@ -1,9 +1,9 @@
 # T-axis Completion P2 T-only V1
 
-- Safe unique candidates available: **91**
+- Safe unique candidates available: **94**
 - Evidence conflicts blocked: **0**
-- Works applied: **6**
-- Skipped: **85**
+- Works applied: **3**
+- Skipped: **91**
 
 - Mutated field: `axis_t` only.
 - `year` intentionally remains unchanged/null when no exact work-level year is verified.
@@ -11,12 +11,9 @@
 
 ## Applied
 
-- `Missionary Travels and Researches in South Africa.md` | `WL-WORK-1362` | T3 | evidence=direct_work_author
-- `The Book of Deeds of Arms and of Chivalry.md` | `WL-WORK-2364` | T1 | evidence=direct_work_author
-- `A Boy's Own Story.md` | `WL-WORK-0913` | T6 | evidence=wikipedia_wikidata_p577
-- `A Time of Gifts.md` | `WL-WORK-1344` | T5 | evidence=wikipedia_wikidata_p577
-- `Almanac of the Dead.md` | `WL-WORK-2159` | T6 | evidence=wikipedia_wikidata_p577
-- `America Is in the Heart.md` | `WL-WORK-0914` | T5 | evidence=wikipedia_wikidata_p577
+- `Arabian Sands.md` | `WL-WORK-1349` | T5 | evidence=work_date_v2
+- `A代表不在场证明.md` | `WL-WORK-0095` | T6 | evidence=work_date_v2
+- `A Lady's Life in the Rocky Mountains.md` | `WL-WORK-1342` | T3 | evidence=work_date_v2
 
 ## Skipped
 
@@ -105,5 +102,11 @@
 - `La vuelta de Martín Fierro.md` — already has T
 - `The Ritual.md` — already has T
 - `The Sisters Brothers.md` — already has T
+- `Missionary Travels and Researches in South Africa.md` — already has T
+- `The Book of Deeds of Arms and of Chivalry.md` — already has T
+- `A Boy's Own Story.md` — already has T
+- `A Time of Gifts.md` — already has T
+- `Almanac of the Dead.md` — already has T
+- `America Is in the Heart.md` — already has T
 
 `T_AXIS_COMPLETION_P2_TONLY_V1 = APPLIED_AND_VERIFIED`
