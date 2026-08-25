@@ -7,6 +7,7 @@ on:
       - 'scripts/audit_t_axis.py'
       - 'scripts/enrich_t_axis_audit.py'
       - 'scripts/summarize_t_axis_stage1.py'
+      - 'scripts/manual_t0_t2_review.py'
       - '世界文学经典母库_V1.csv'
       - '世界文学经典母库_V2_增量_CANON-196-300.csv'
       - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
@@ -33,6 +34,9 @@ jobs:
 
       - name: Split focused candidate reports
         run: python scripts/summarize_t_axis_stage1.py
+
+      - name: Persist manual T0-T2 screening
+        run: python scripts/manual_t0_t2_review.py
 
       - name: Commit audit reports
         run: |
