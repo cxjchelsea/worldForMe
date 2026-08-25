@@ -1,8 +1,18 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id
+A General History of the Pyrates.md,A General History of the Pyrates,查尔斯·约翰逊船长,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2152
+A New Voyage Round the World.md,A New Voyage Round the World,威廉·丹皮尔,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0490
+Anton Reiser.md,Anton Reiser,卡尔·菲利普·莫里茨,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0915
 Captain Singleton.md,Captain Singleton,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2182
+Harvest Home.md,Harvest Home,托马斯·特赖恩,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0502
 Kumulipo.md,Kumulipo,佚名,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1358
+"Letters Written during a Short Residence in Sweden, Norway, and Denmark.md","Letters Written during a Short Residence in Sweden, Norway, and Denmark",玛丽·沃斯通克拉夫特,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1360
 Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2285
+Naufragios.md,Naufragios,卡贝萨·德·巴卡,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0515
+The Adventures of Col. Daniel Boone.md,The Adventures of Col. Daniel Boone,约翰·菲尔森,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2355
+The Principal Navigations.md,The Principal Navigations...,理查德·哈克卢特,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1379
+Travels through France and Italy.md,Travels through France and Italy,斯摩莱特,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1386
 三国演义.md,三国演义,罗贯中,T2,,CANON-030,14世纪,T1,MOVE_CANDIDATE,HIGH,CANON-030 首次成书_出版时间=14世纪,手工核验,WL-WORK-0965
+两扇门的房子不好守.md,两扇门的房子不好守,卡尔德隆,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2442
 乌多尔弗的秘密.md,乌多尔弗的秘密,安·拉德克利夫,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0570
 乌托邦.md,乌托邦,托马斯·莫尔,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0257
 九云梦.md,九云梦,金万重,T2,,CANON-060,约1687,T2,PASS,HIGH,CANON-060 首次成书_出版时间=约1687,需复核,WL-WORK-2820
@@ -17,6 +27,7 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 厌世者.md,厌世者,莫里哀,T2,,CANON-077,1666,T2,PASS,HIGH,CANON-077 首次成书_出版时间=1666,需复核,WL-WORK-2831
 后水浒传.md,后水浒传,陈忱,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2478
 哈姆雷特.md,哈姆雷特,威廉·莎士比亚,T2,1600,CANON-069,约1600—1601,T2,PASS,HIGH,note.year=1600,手工核验,WL-WORK-2825
+园丁之犬.md,园丁之犬,洛佩·德·维加,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2483
 堂吉诃德.md,堂吉诃德,塞万提斯,T2,1605,CANON-068,1605/1615,T2,PASS,HIGH,note.year=1605,手工核验,WL-WORK-1042
 太阳传说.md,太阳传说,佚名,T2,1558,,,T2,PASS,HIGH,note.year=1558,自动通过,WL-WORK-1436
 失乐园（弥尔顿）.md,失乐园,约翰·弥尔顿,T2,1667,CANON-075,1667,T2,PASS,HIGH,note.year=1667,手工核验,WL-WORK-T2-PARADISE-LOST
@@ -30,6 +41,7 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 巨人传.md,巨人传,弗朗索瓦·拉伯雷,T2,,CANON-212,1532—1564,T2,PASS,HIGH,CANON-212 首次成书_出版时间=1532—1564,需复核,WL-WORK-3164
 巴布尔回忆录.md,巴布尔回忆录,巴布尔,T2,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-T2-BABURNAMA
 帕梅拉.md,帕梅拉,塞缪尔·理查逊,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2061
+幽灵小姐.md,幽灵小姐,卡尔德隆,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2515
 征服新西班牙信史.md,征服新西班牙信史,贝尔纳尔·迪亚斯·德尔·卡斯蒂略,T2,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-1697
 微型巨人.md,微型巨人,伏尔泰,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0261
 意大利人.md,意大利人,安·拉德克利夫,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0697
@@ -54,6 +66,7 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 炽焰世界.md,炽焰世界,玛格丽特·卡文迪许,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0259
 爱弥儿.md,爱弥儿,卢梭,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1207
 牡丹亭.md,牡丹亭,汤显祖,T2,,CANON-034,1598,T2,PASS,HIGH,CANON-034 首次成书_出版时间=1598,手工核验,WL-WORK-2097
+穿绿裤子的唐·希尔.md,穿绿裤子的唐·希尔,蒂尔索·德·莫利纳,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2587
 第一梦（索尔·胡安娜）.md,第一梦,索尔·胡安娜·伊内斯·德拉克鲁斯,T2,1692,,,T2,PASS,HIGH,note.year=1692,手工核验,WL-WORK-T2-PRIMERO-SUENO
 第十二夜.md,第十二夜,莎士比亚,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2112
 等待的岁月.md,等待的岁月,圆地文子,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1242
@@ -62,9 +75,11 @@ Moll Flanders.md,Moll Flanders,丹尼尔·笛福,T2,,,,,REVIEW,,缺少可靠年�
 罗摩功行录.md,罗摩功行录,杜勒西达斯,T2,1574,,,T2,PASS,HIGH,note.year=1574,手工核验,WL-WORK-T2-RAMCHARITMANAS
 老实人.md,老实人,伏尔泰,T2,1759,CANON-083,1759,T2,PASS,HIGH,note.year=1759,手工核验,WL-WORK-2122
 聊斋志异.md,聊斋志异,蒲松龄,T2,,CANON-035,约1679—1707,T2,PASS,HIGH,CANON-035 首次成书_出版时间=约1679—1707,手工核验,WL-WORK-0816
+聪明的恋人.md,聪明的恋人,洛佩·德·维加,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2604
 莎士比亚十四行诗.md,莎士比亚十四行诗,莎士比亚,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2126
 蒙田随笔.md,蒙田随笔,米歇尔·德·蒙田,T2,,CANON-209,1580—1588,T2,PASS,HIGH,CANON-209 首次成书_出版时间=1580—1588,需复核,WL-WORK-3161
 西游记.md,西游记,吴承恩,T2,,CANON-032,16世纪,T2,PASS,HIGH,CANON-032 首次成书_出版时间=16世纪,手工核验,WL-WORK-0838
+解放了的耶路撒冷.md,解放了的耶路撒冷,托尔夸托·塔索,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2618
 费德尔.md,费德尔,让·拉辛,T2,,CANON-078,1677,T2,PASS,HIGH,CANON-078 首次成书_出版时间=1677,需复核,WL-WORK-2832
 金瓶梅.md,金瓶梅,兰陵笑笑生,T2,,CANON-033,约1610,T2,PASS,HIGH,CANON-033 首次成书_出版时间=约1610,手工核验,WL-WORK-1307
 铁手骑士葛兹·冯·贝利欣根.md,铁手骑士葛兹·冯·贝利欣根,歌德,T2,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2628

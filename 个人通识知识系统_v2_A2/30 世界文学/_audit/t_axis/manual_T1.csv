@@ -2,10 +2,19 @@
 Cligès.md,Cligès,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2185,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Darangen.md,Darangen,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1352,REVIEW,,MEDIUM,口传史诗传统年代缺少足够精确的文本定型依据；“古老”不能直接等同T0
 Erec et Enide.md,Erec et Enide,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2219,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Erec.md,Erec,哈特曼·冯·奥埃,T1,1185,,,T1,PASS,HIGH,note.year=1185,自动通过,WL-WORK-2218,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Iwein.md,Iwein,哈特曼·冯·奥埃,T1,1200,,,T1,PASS,HIGH,note.year=1200,自动通过,WL-WORK-2250,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Lancelot, the Knight of the Cart.md","Lancelot, the Knight of the Cart",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2266,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Lancelot.md,Lancelot,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2264,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Morgante.md,Morgante,路易吉·普尔奇,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2287,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Perceval, the Story of the Grail.md","Perceval, the Story of the Grail",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2304,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Perceval.md,Perceval,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2303,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Roman de Brut.md,Roman de Brut,瓦斯,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2330,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Safarnama ／ 旅行记.md,Safarnama / 旅行记,纳赛尔·霍斯陆,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1370,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+The Book of Deeds of Arms and of Chivalry.md,The Book of Deeds of Arms and of Chivalry,克里斯蒂娜·德·皮桑,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2364,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+The Book of the Order of Chivalry.md,The Book of the Order of Chivalry,拉蒙·柳利,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2366,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Tirant lo Blanc.md,Tirant lo Blanc,若阿诺特·马托雷尔,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2422,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Willehalm.md,Willehalm,沃尔夫拉姆·冯·埃申巴赫,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2430,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Yvain, the Knight of the Lion.md","Yvain, the Knight of the Lion",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2435,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2434,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 一千零一夜.md,一千零一夜,佚名,T1,,CANON-015,约8—14世纪形成,T1,PASS,HIGH,CANON-015 首次成书_出版时间=约8—14世纪形成,自动通过,WL-WORK-0558,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
