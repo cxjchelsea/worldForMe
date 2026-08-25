@@ -21,30 +21,56 @@ properties:
 views:
   - type: table
     name: 全部知识节点
-    order: [file.name, type, dimension, sequence, parent, postwar_stage, importance, id]
+    order:
+      - file.name
+      - type
+      - dimension
+      - sequence
+      - parent
+      - postwar_stage
+      - importance
+      - id
   - type: table
     name: 核心结构
     filters:
       and:
         - type == "literature_topic_structure"
-    order: [file.name, dimension, sequence, importance, id]
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - importance
+      - id
   - type: table
     name: 四阶段时间纵轴
     filters:
       and:
         - type == "literature_topic_section"
         - dimension != "literary_field"
-    order: [file.name, postwar_stage, sequence, id]
+    order:
+      - file.name
+      - postwar_stage
+      - sequence
+      - id
   - type: table
     name: 多极文学场域
     filters:
       and:
         - type == "literature_topic_section"
         - dimension == "literary_field"
-    order: [file.name, sequence, importance, id]
+    order:
+      - file.name
+      - sequence
+      - importance
+      - id
   - type: table
     name: 战后机制
     filters:
       and:
         - type == "literature_topic_mechanism"
-    order: [file.name, dimension, sequence, importance, id]
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - importance
+      - id

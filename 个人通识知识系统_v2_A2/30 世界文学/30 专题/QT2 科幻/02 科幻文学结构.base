@@ -47,7 +47,7 @@ views:
     name: 核心结构
     filters:
       and:
-        - 'type == "literature_topic_structure"'
+        - type == "literature_topic_structure"
     order:
       - file.name
       - formula.type_zh
@@ -61,7 +61,7 @@ views:
     name: 细分
     filters:
       and:
-        - 'type == "literature_topic_section"'
+        - type == "literature_topic_section"
     order:
       - file.name
       - formula.type_zh

@@ -1,1 +1,27 @@
-{"nodes":[{"id":"root","type":"file","x":620,"y":0,"width":520,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/00 全球现代主义时代.md"},{"id":"question","type":"text","x":0,"y":0,"width":420,"height":130,"text":"核心问题\n当旧的现实主义叙事、民族文学秩序与进步信念不足以解释都市、战争、殖民和心理经验时，文学怎样重新发明时间、主体、语言与形式？"},{"id":"formation","type":"file","x":620,"y":170,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/10 核心结构/03 全球现代主义如何形成.md"},{"id":"spaces","type":"text","x":80,"y":340,"width":500,"height":210,"text":"七个现代主义文学场域\n西欧与英美高峰现代主义\n俄国/中东欧与革命先锋派\n东亚现代主义与新文学\n南亚殖民现代性\n拉丁美洲先锋派\n阿拉伯/土耳其/波斯转型\n黑人现代主义、非洲与加勒比"},{"id":"mechanisms","type":"text","x":700,"y":340,"width":500,"height":210,"text":"五种生产与断裂机制\n都市、技术与感知革命\n心理、主体与叙事视角\n世界大战、革命与政治极化\n帝国/殖民/反殖民与文化翻译\n小杂志、翻译、流亡与跨国网络"},{"id":"changes","type":"text","x":1320,"y":340,"width":440,"height":210,"text":"核心转变\n线性时间 → 记忆/断裂时间\n稳定主体 → 分裂/异化主体\n统一叙述 → 多视角/意识流\n国别文学 → 跨国翻译与流亡网络\n欧洲中心现代化 → 多重现代性"},{"id":"works","type":"file","x":620,"y":650,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/03 全球现代主义作品.base"},{"id":"reading","type":"file","x":620,"y":800,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/10 核心结构/06 阅读路线.md"},{"id":"previous","type":"file","x":160,"y":980,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T3 19世纪现代文学体系/00 19世纪现代文学体系.md"},{"id":"next","type":"file","x":1080,"y":980,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T5 二战后多极文学/00 二战后多极文学.md"}],"edges":[{"id":"e1","fromNode":"root","toNode":"question"},{"id":"e2","fromNode":"root","toNode":"formation"},{"id":"e3","fromNode":"formation","toNode":"spaces"},{"id":"e4","fromNode":"formation","toNode":"mechanisms"},{"id":"e5","fromNode":"formation","toNode":"changes"},{"id":"e6","fromNode":"spaces","toNode":"works"},{"id":"e7","fromNode":"mechanisms","toNode":"works"},{"id":"e8","fromNode":"changes","toNode":"works"},{"id":"e9","fromNode":"works","toNode":"reading"},{"id":"e10","fromNode":"previous","toNode":"root"},{"id":"e11","fromNode":"root","toNode":"next"}]}
+{
+	"nodes":[
+		{"id":"root","type":"file","x":620,"y":0,"width":520,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/00 全球现代主义时代.md"},
+		{"id":"question","type":"text","x":0,"y":0,"width":420,"height":130,"text":"核心问题\n当旧的现实主义叙事、民族文学秩序与进步信念不足以解释都市、战争、殖民和心理经验时，文学怎样重新发明时间、主体、语言与形式？"},
+		{"id":"formation","type":"file","x":620,"y":170,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/10 核心结构/03 全球现代主义如何形成.md"},
+		{"id":"spaces","type":"text","x":80,"y":340,"width":500,"height":210,"text":"七个现代主义文学场域\n西欧与英美高峰现代主义\n俄国/中东欧与革命先锋派\n东亚现代主义与新文学\n南亚殖民现代性\n拉丁美洲先锋派\n阿拉伯/土耳其/波斯转型\n黑人现代主义、非洲与加勒比"},
+		{"id":"mechanisms","type":"text","x":700,"y":340,"width":500,"height":210,"text":"五种生产与断裂机制\n都市、技术与感知革命\n心理、主体与叙事视角\n世界大战、革命与政治极化\n帝国/殖民/反殖民与文化翻译\n小杂志、翻译、流亡与跨国网络"},
+		{"id":"changes","type":"text","x":1320,"y":340,"width":440,"height":210,"text":"核心转变\n线性时间 → 记忆/断裂时间\n稳定主体 → 分裂/异化主体\n统一叙述 → 多视角/意识流\n国别文学 → 跨国翻译与流亡网络\n欧洲中心现代化 → 多重现代性"},
+		{"id":"works","type":"file","x":620,"y":650,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/03 全球现代主义作品.base"},
+		{"id":"reading","type":"file","x":620,"y":800,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T4 全球现代主义时代/10 核心结构/06 阅读路线.md"},
+		{"id":"previous","type":"file","x":160,"y":980,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T3 19世纪现代文学体系/00 19世纪现代文学体系.md"},
+		{"id":"next","type":"file","x":1080,"y":980,"width":420,"height":80,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T5 二战后多极文学/00 二战后多极文学.md"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"root","toNode":"question","fromSide":"left","toSide":"right"},
+		{"id":"e2","fromNode":"root","toNode":"formation","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"formation","toNode":"spaces","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"formation","toNode":"mechanisms","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"formation","toNode":"changes","fromSide":"bottom","toSide":"left"},
+		{"id":"e6","fromNode":"spaces","toNode":"works","fromSide":"bottom","toSide":"top"},
+		{"id":"e7","fromNode":"mechanisms","toNode":"works","fromSide":"bottom","toSide":"top"},
+		{"id":"e8","fromNode":"changes","toNode":"works","fromSide":"left","toSide":"top"},
+		{"id":"e9","fromNode":"works","toNode":"reading","fromSide":"bottom","toSide":"top"},
+		{"id":"e10","fromNode":"previous","toNode":"root","fromSide":"top","toSide":"bottom"},
+		{"id":"e11","fromNode":"root","toNode":"next","fromSide":"bottom","toSide":"top"}
+	]
+}

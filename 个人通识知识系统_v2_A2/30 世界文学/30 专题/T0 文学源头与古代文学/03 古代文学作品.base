@@ -48,6 +48,8 @@ views:
       - axis_g
       - axis_q
       - id
+    columnSize:
+      file.name: 173
   - type: table
     name: T0 骨架路线
     filters:

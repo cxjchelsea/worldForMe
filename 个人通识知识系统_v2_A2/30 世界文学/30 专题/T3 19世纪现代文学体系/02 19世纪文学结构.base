@@ -1,6 +1,5 @@
 filters:
   and:
-    - type == "literature_topic_structure"
     - topic_id == "WL-TOPIC-T3-NINETEENTH-CENTURY"
 properties:
   file.name:
@@ -34,17 +33,18 @@ views:
     name: 核心结构
     filters:
       and:
-        - file.inFolder("10 核心结构")
+        - dimension != "literary_space"
+        - dimension != "mechanism"
     order:
+      - sequence
       - file.name
       - dimension
-      - sequence
       - importance
   - type: table
     name: 文学体系与空间
     filters:
       and:
-        - file.inFolder("11 文学体系与空间")
+        - dimension == "literary_space"
     order:
       - file.name
       - region
@@ -53,7 +53,7 @@ views:
     name: 生产与传播机制
     filters:
       and:
-        - file.inFolder("12 现代文学生产机制")
+        - dimension == "mechanism"
     order:
       - file.name
       - mechanism

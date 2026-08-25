@@ -95,12 +95,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按时间
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按时间
     groupBy:
       property: axis_t
       direction: ASC
@@ -116,12 +111,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按地域
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按地域
     groupBy:
       property: axis_r
       direction: ASC
@@ -137,12 +127,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按思潮
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按思潮
     groupBy:
       property: axis_m
       direction: ASC
@@ -158,12 +143,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按类型
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按类型
     groupBy:
       property: axis_g
       direction: ASC
@@ -179,12 +159,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按主题
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按主题
     groupBy:
       property: axis_q
       direction: ASC
@@ -200,12 +175,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 已读按作者
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
+    name: 按作者
     groupBy:
       property: author
       direction: ASC

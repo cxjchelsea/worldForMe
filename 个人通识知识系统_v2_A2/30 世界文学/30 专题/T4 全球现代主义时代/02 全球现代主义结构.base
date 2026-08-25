@@ -21,22 +21,39 @@ properties:
 views:
   - type: table
     name: 全部知识节点
-    order: [file.name, dimension, sequence, space, mechanism, importance, id]
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - space
+      - mechanism
+      - importance
+      - id
   - type: table
     name: 核心结构
     filters:
       and:
         - file.path.contains("10 核心结构")
-    order: [file.name, dimension, sequence, importance]
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - importance
   - type: table
     name: 文学场域
     filters:
       and:
         - file.path.contains("11 现代主义文学场域")
-    order: [file.name, space, importance]
+    order:
+      - file.name
+      - space
+      - importance
   - type: table
     name: 生产与断裂机制
     filters:
       and:
         - file.path.contains("12 现代主义生产与断裂机制")
-    order: [file.name, mechanism, importance]
+    order:
+      - file.name
+      - mechanism
+      - importance
