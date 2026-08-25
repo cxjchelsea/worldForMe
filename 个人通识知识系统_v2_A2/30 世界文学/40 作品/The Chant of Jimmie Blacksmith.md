@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- T5 二战后多极文学
 axis_r:
 - R9 大洋洲与太平洋
 axis_m:

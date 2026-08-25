@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T0 文学源头与古代文学
+- T1 中古多中心文学世界
 axis_r: []
 axis_m: []
 axis_g:
@@ -27,6 +27,7 @@ myth_priority: ◆
 myth_tradition_cluster: 东南亚
 myth_motifs: []
 verification_status: 自动通过
+review_note: 'T-axis REVIEW V1：口传史诗明确早于14世纪菲律宾伊斯兰化，但无可靠证据支持公元500年前定型；按可证实传统形成期归T1'
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:794
