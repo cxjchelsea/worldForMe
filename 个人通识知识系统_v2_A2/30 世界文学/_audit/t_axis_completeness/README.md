@@ -5,15 +5,15 @@
 ## Population
 
 - Total canonical Work entities: **3209**
-- With valid T0–T6 coordinate: **2260**
-- Missing / invalid T coordinate: **949**
+- With valid T0–T6 coordinate: **2262**
+- Missing / invalid T coordinate: **947**
 - Missing/invalid with aggregate/oral/tradition hint: **59**
 
 ## Missing-T classification
 
 - MISSING_T_AUTO_CANDIDATE: **0**
 - MISSING_T_BOUNDARY_YEAR: **0**
-- MISSING_T_REVIEW_NO_YEAR: **949**
+- MISSING_T_REVIEW_NO_YEAR: **947**
 - INVALID_T_LABEL: **0**
 
 ## Current valid T distribution
@@ -24,7 +24,7 @@
 - T3: **220**
 - T4: **392**
 - T5: **614**
-- T6: **792**
+- T6: **794**
 
 ## Governance interpretation
 
