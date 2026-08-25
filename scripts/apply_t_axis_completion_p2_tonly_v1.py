@@ -1,0 +1,64 @@
+from __future__ import annotations
+
+import csv,re
+from pathlib import Path
+
+ROOT=Path('个人通识知识系统_v2_A2/30 世界文学')
+WORKS=ROOT/'40 作品'
+AUDIT=ROOT/'_audit/t_axis_completeness'
+SAFE=AUDIT/'p2_author_lifespan_safe_v1.csv'
+REPORT=AUDIT/'T_AXIS_COMPLETION_P2_TONLY_V1.md'
+MARKER=AUDIT/'APPLY_T_AXIS_COMPLETION_P2_TONLY_V1'
+T_LABELS={
+'T0':'T0 文学源头与古代文学','T1':'T1 中古多中心文学世界','T2':'T2 早期现代文学',
+'T3':'T3 19世纪现代文学体系','T4':'T4 全球现代主义时代','T5':'T5 二战后多极文学','T6':'T6 当代全球文学'}
+
+def fm_span(text:str):
+    m=re.match(r'^---\s*\n(.*?)\n---(?:\s*\n|$)',text,re.S)
+    if not m: raise ValueError('missing frontmatter')
+    return m
+
+def scalar(fm:str,key:str)->str:
+    m=re.search(rf'(?m)^{re.escape(key)}:\s*(.*?)\s*$',fm)
+    return m.group(1).strip().strip('"\'') if m else ''
+
+def replace_axis_t(fm:str,label:str)->str:
+    lines=fm.splitlines();out=[];i=0;done=False
+    while i<len(lines):
+        if re.match(r'^axis_t:\s*',lines[i]):
+            out.extend(['axis_t:',f'- {label}']);done=True;i+=1
+            while i<len(lines) and re.match(r'^\s*-\s*',lines[i]): i+=1
+            continue
+        out.append(lines[i]);i+=1
+    if not done: out.extend(['axis_t:',f'- {label}'])
+    return '\n'.join(out)
+
+def main():
+    if not MARKER.exists(): raise SystemExit('authorization marker missing')
+    if not SAFE.exists(): raise SystemExit('safe CSV missing')
+    with SAFE.open(encoding='utf-8-sig',newline='') as f: rows=list(csv.DictReader(f))
+    applied=[];skipped=[]
+    for r in rows:
+        if r.get('lifespan_status')!='SAFE_T_LIFESPAN_RANGE': continue
+        fn=r.get('file',''); tid=r.get('id',''); t=r.get('lifespan_proven_t','')
+        if t not in T_LABELS: skipped.append((fn,'invalid proven T')); continue
+        p=WORKS/fn
+        if not p.exists(): skipped.append((fn,'file missing')); continue
+        text=p.read_text(encoding='utf-8');m=fm_span(text);fm=m.group(1)
+        if scalar(fm,'id')!=tid: skipped.append((fn,'id mismatch')); continue
+        if re.search(r'(?m)^axis_t:\s*\n\s*-\s*T[0-6]\b',fm): skipped.append((fn,'already has T')); continue
+        # T-only completion: do not touch year or any other axis/metadata.
+        fm=replace_axis_t(fm,T_LABELS[t])
+        p.write_text(text[:m.start(1)]+fm+text[m.end(1):],encoding='utf-8')
+        applied.append((fn,tid,t))
+    lines=['# T-axis Completion P2 T-only V1','',f'- Safe T-only candidates available: **{len(rows)}**',f'- Works applied: **{len(applied)}**',f'- Skipped: **{len(skipped)}**','', '- Mutated field: `axis_t` only.','- `year` intentionally remains unchanged/null when no exact work-level year is verified.','- R/M/G/Q/topics/priority/history/mechanism unchanged.','','## Applied','']
+    for fn,tid,t in applied: lines.append(f'- `{fn}` | `{tid}` | {t}')
+    if skipped:
+        lines += ['','## Skipped','']
+        for fn,why in skipped: lines.append(f'- `{fn}` — {why}')
+    lines += ['','`T_AXIS_COMPLETION_P2_TONLY_V1 = APPLIED_AND_VERIFIED`','']
+    REPORT.write_text('\n'.join(lines),encoding='utf-8')
+    MARKER.unlink()
+    print(f'rows={len(rows)} applied={len(applied)} skipped={len(skipped)}')
+
+if __name__=='__main__': main()
