@@ -22,7 +22,7 @@ def year_from_date(s):
 
 def classify(row):
     title=row.get('deep_title') or row.get('title') or ''
-    author=row.get('author') or ''
+    author=row.get('author_original') or row.get('author') or ''
     y=int(row['canonical_year_candidate'])
     q=urllib.parse.urlencode({'title':title,'author':author,'limit':5,'fields':'title,author_name,author_key,first_publish_year'})
     try:
@@ -47,7 +47,6 @@ def classify(row):
             pass
     birth=min(births) if births else None
     death=max(deaths) if deaths else None
-    # Hard impossible/implausible gates only. Do not infer a year from lifespan.
     if birth and y < birth-10:
         return 'REVIEW_PRE_BIRTH',str(birth),str(death or ''),'candidate predates author birth implausibly'
     if death and y > death+15:
