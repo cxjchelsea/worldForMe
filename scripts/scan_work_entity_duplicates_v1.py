@@ -10,6 +10,7 @@ from pathlib import Path
 ROOT = Path("个人通识知识系统_v2_A2/30 世界文学/40 作品")
 OUT = Path("个人通识知识系统_v2_A2/30 世界文学/_audit/entity_dedup_scan")
 MARKER = OUT / "RUN_ENTITY_DEDUP_SCAN_V1"
+GUARD = OUT / "NEGATIVE_MATCH_GUARD_V1.csv"
 
 
 def frontmatter(text: str) -> str:
@@ -71,16 +72,24 @@ def title_keys(r: dict) -> set[str]:
     return {norm(x) for x in vals if len(norm(x)) >= 2}
 
 
-def same_author(a: dict, b: dict) -> bool:
-    return bool(author_keys(a) & author_keys(b))
-
-
 def year_gap(a: dict, b: dict) -> int | None:
     try:
         ya, yb = int(a["year"]), int(b["year"])
         return abs(ya - yb)
     except Exception:
         return None
+
+
+def load_guard() -> set[tuple[str, str]]:
+    pairs: set[tuple[str, str]] = set()
+    if not GUARD.exists():
+        return pairs
+    with GUARD.open("r", encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            a, b = row.get("file_a", ""), row.get("file_b", "")
+            if a and b and row.get("decision") == "DO_NOT_MERGE":
+                pairs.add(tuple(sorted((a, b))))
+    return pairs
 
 
 def classify(a: dict, b: dict) -> tuple[str, float, str]:
@@ -119,6 +128,7 @@ def main() -> None:
     if not MARKER.exists():
         raise SystemExit("scan authorization marker missing")
     OUT.mkdir(parents=True, exist_ok=True)
+    guards = load_guard()
 
     works = []
     for p in sorted(ROOT.glob("*.md"), key=lambda x: x.name.casefold()):
@@ -140,6 +150,8 @@ def main() -> None:
     rows = []
     for i, a in enumerate(works):
         for b in works[i + 1:]:
+            if tuple(sorted((a["file"], b["file"]))) in guards:
+                continue
             status, score, reason = classify(a, b)
             if not status:
                 continue
@@ -162,6 +174,7 @@ def main() -> None:
     md = [
         "# Canonical Work Duplicate Candidate Scan V1", "",
         f"- Work entities scanned: **{len(works)}**",
+        f"- Negative-match guards honored: **{len(guards)}**",
         f"- HIGH_CONFIDENCE pairs: **{counts['HIGH_CONFIDENCE']}**",
         f"- REVIEW pairs: **{counts['REVIEW']}**",
         f"- TITLE_COLLISION pairs: **{counts['TITLE_COLLISION']}**", "",
@@ -169,22 +182,13 @@ def main() -> None:
         "## HIGH_CONFIDENCE", "",
     ]
     high = [r for r in rows if r["status"] == "HIGH_CONFIDENCE"]
-    if high:
-        for r in high:
-            md.append(f"- `{r['file_a']}` ↔ `{r['file_b']}` — {r['reason']}")
-    else:
-        md.append("- None")
+    md += [f"- `{r['file_a']}` ↔ `{r['file_b']}` — {r['reason']}" for r in high] if high else ["- None"]
     md += ["", "## REVIEW", ""]
     rev = [r for r in rows if r["status"] == "REVIEW"]
-    if rev:
-        for r in rev[:200]:
-            md.append(f"- `{r['file_a']}` ↔ `{r['file_b']}` — score {r['score']}; {r['reason']}")
-    else:
-        md.append("- None")
+    md += [f"- `{r['file_a']}` ↔ `{r['file_b']}` — score {r['score']}; {r['reason']}" for r in rev[:200]] if rev else ["- None"]
     md += ["", "## TITLE_COLLISION", "", "Same/similar titles with different or unresolved authors are explicitly not auto-merge candidates.", ""]
     col = [r for r in rows if r["status"] == "TITLE_COLLISION"]
-    for r in col[:200]:
-        md.append(f"- `{r['file_a']}` ↔ `{r['file_b']}` — {r['reason']}")
+    md += [f"- `{r['file_a']}` ↔ `{r['file_b']}` — {r['reason']}" for r in col[:200]] if col else ["- None"]
     md += ["", "`ENTITY_DEDUP_SCAN_V1 = COMPLETE_READ_ONLY_SCAN`", ""]
     (OUT / "ENTITY_DEDUP_SCAN_V1.md").write_text("\n".join(md), encoding="utf-8", newline="\n")
     MARKER.unlink()
