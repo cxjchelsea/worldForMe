@@ -1,0 +1,20 @@
+name: Render missing-T reprint batch1 list V1
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/RUN_RENDER_MISSING_T_REPRINT_BATCH1_V1'
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/render_missing_t_reprint_batch1_v1.py
+      - run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/REPRINT_BATCH1_V1.list.md'
+          git commit -m 'audit: render missing-T reprint batch1 list'
+          git pull --rebase origin main
+          git push
