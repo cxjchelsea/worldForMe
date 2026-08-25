@@ -44,6 +44,25 @@ def parse_t0_t2_moves() -> list[tuple[str, str, str]]:
     return moves
 
 
+def resolve_review_filename(stem: str) -> str:
+    """Resolve a reviewed display title to the existing canonical Markdown filename.
+
+    Audit prose uses ordinary '/' in display titles, while repository filenames sanitize
+    that character to the full-width '／'. No fuzzy title matching is permitted here.
+    """
+    candidates = [f"{stem}.md"]
+    if "/" in stem:
+        candidates.append(f"{stem.replace('/', '／')}.md")
+
+    existing = [name for name in candidates if (WORKS_DIR / name).exists()]
+    if len(existing) == 1:
+        return existing[0]
+    if len(existing) > 1:
+        raise RuntimeError(f"Ambiguous reviewed filename for {stem!r}: {existing}")
+    # Return the literal candidate so the later existence check produces a precise failure.
+    return candidates[0]
+
+
 def parse_t3_t6_moves() -> list[tuple[str, str, str]]:
     text = MANUAL_T3_T6.read_text(encoding="utf-8")
     moves: list[tuple[str, str, str]] = []
@@ -69,7 +88,7 @@ def parse_t3_t6_moves() -> list[tuple[str, str, str]]:
 
         if source and target and line.startswith("- "):
             item = line[2:].strip()
-            # Audit bullets use: - 《title》——year or - `filename stem`——year
+            # Audit bullets use: - 《title》——year or - `title`——year.
             title_part = item.split("——", 1)[0].strip()
             if title_part.startswith("`") and title_part.endswith("`"):
                 stem = title_part[1:-1]
@@ -77,7 +96,7 @@ def parse_t3_t6_moves() -> list[tuple[str, str, str]]:
                 stem = title_part[1:-1]
             else:
                 raise RuntimeError(f"Unrecognized MOVE bullet: {raw_line}")
-            moves.append((f"{stem}.md", source, target))
+            moves.append((resolve_review_filename(stem), source, target))
 
     return moves
 
@@ -145,8 +164,7 @@ def main() -> None:
                 f"Refusing unexpected mutation for {filename}: audit source={source}, current axis_t={values}"
             )
 
-        new_text = replace_axis_t(text, target)
-        path.write_text(new_text, encoding="utf-8", newline="\n")
+        path.write_text(replace_axis_t(text, target), encoding="utf-8", newline="\n")
         changed_moves += 1
         corrected.append(f"- `{filename}`: {source} → {target}")
 
@@ -165,7 +183,6 @@ def main() -> None:
         path.write_text(replace_axis_t(text, target), encoding="utf-8", newline="\n")
         double_hang_changes += 1
 
-    # Final invariant check for every reviewed MOVE.
     for filename, _, target in moves:
         values = axis_values((WORKS_DIR / filename).read_text(encoding="utf-8"))
         if values != [T_LABELS[target]]:
@@ -204,7 +221,6 @@ def main() -> None:
     ]
     REPORT.write_text("\n".join(report_lines), encoding="utf-8", newline="\n")
 
-    # One-shot marker: removing it prevents future automatic canonical mutation.
     MARKER.unlink()
     print(
         f"Applied T-axis correction V1: moves={len(moves)}, changed={changed_moves}, "
