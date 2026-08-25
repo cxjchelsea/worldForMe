@@ -1,0 +1,23 @@
+name: Missing-T Wikipedia year research V2
+on:
+  push:
+    paths:
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill/RUN_MISSING_T_YEAR_WIKIPEDIA_V2'
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Research broader Wikipedia work-page years
+        run: python scripts/research_missing_t_years_wikipedia_v2.py
+      - name: Commit Wikipedia V2 outputs
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_year_backfill'
+          git commit -m 'audit: research broader Wikipedia years V2'
+          git pull --rebase origin main
+          git push
