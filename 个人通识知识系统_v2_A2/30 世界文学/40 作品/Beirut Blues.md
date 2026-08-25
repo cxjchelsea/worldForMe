@@ -37,6 +37,7 @@ batch5_source_refs:
 - 战争书单.md:1624
 t6_priority: ★
 t6_history_position: 西亚、中东战争迁徙与跨语际写作 · 小说
+r1_tradition: 阿拉伯文学传统
 ---
 # Beirut Blues
 

@@ -39,6 +39,7 @@ batch3_source_refs:
 - 旅行书单.md:287
 t1_priority: ★
 t1_network: 波斯语文学世界
+r1_tradition: 波斯—伊朗文学传统
 ---
 # Safarnama / 旅行记
 
