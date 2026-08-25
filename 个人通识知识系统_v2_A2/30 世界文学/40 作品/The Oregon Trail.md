@@ -12,9 +12,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T3 19世纪现代文学体系
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
+- 翻译、帝国与跨洋市场
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M2 19世纪文学思潮
 axis_g:
 - G3 小说
 axis_q:
@@ -38,6 +43,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:137
 - 西部书单.md:2248
+t3_priority: △
+t3_history_position: 北美文学与跨大西洋市场 · 小说
 ---
 # The Oregon Trail
 

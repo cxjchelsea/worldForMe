@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
-axis_m: []
+t6_mechanism:
+- 身份、性别与代表权
+- 全球市场、翻译与奖项
+axis_r:
+- R7 非洲文学
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -33,6 +38,8 @@ batch2_source_refs:
 - 成长书单.md:2390
 canon_id: CANON-261
 canon_level: Major
+t6_priority: ★
+t6_history_position: 非洲与黑人离散文学 · 小说
 ---
 # Nervous Conditions
 

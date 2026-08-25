@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_mechanism:
+- 帝国、殖民、反殖民与文化翻译
+- 小杂志、翻译、流亡与跨国网络
 axis_r:
 - R6 拉丁美洲与加勒比
-axis_m: []
+axis_m:
+- M3 现代主义与先锋派
 axis_g:
 - G3 小说
 axis_q:
@@ -39,6 +43,8 @@ batch6_source_refs:
 - Gaucho书单.md:1050
 - Gaucho书单.md:1062
 - Gaucho书单.md:1766
+t4_priority: ★
+t4_history_position: 拉丁美洲先锋派与现代城市文学 · 小说
 ---
 # Contos Gauchescos
 

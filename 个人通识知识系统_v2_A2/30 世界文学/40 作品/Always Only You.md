@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_mechanism:
+- 身份、性别与代表权
+- 全球市场、翻译与奖项
 axis_r:
 - R2 东亚文学
-axis_m: []
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -31,6 +35,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch5_source_refs:
 - 爱情书单.md:1248
+t6_priority: ◆
+t6_history_position: 东亚全球化与记忆文学 · 小说
 ---
 # Always Only You
 

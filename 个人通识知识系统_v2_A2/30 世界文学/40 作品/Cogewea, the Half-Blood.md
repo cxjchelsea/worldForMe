@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_mechanism:
+- 都市、技术与感知革命
+- 小杂志、翻译、流亡与跨国网络
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M3 现代主义与先锋派
 axis_g:
 - G3 小说
 axis_q:
@@ -37,6 +41,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:861
+t4_priority: ★
+t4_history_position: 英美现代类型文学与纸浆杂志场域 · 小说
 ---
 # Cogewea, the Half-Blood
 

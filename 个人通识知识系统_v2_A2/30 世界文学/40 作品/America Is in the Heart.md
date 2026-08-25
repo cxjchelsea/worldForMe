@@ -12,8 +12,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
-axis_r: []
-axis_m: []
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 去殖民、民族国家与后殖民转向
+axis_r:
+- R5 北美文学
+- R8 东南亚文学
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -30,6 +36,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1622
+postwar_priority: ★
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
 ---
 # America Is in the Heart
 

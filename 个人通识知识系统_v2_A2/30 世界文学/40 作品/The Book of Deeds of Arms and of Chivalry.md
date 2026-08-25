@@ -12,6 +12,9 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T1 中古多中心文学世界
+t1_role:
+- 手稿、书写与区域性印刷
+- 教育、宫廷与宗教机构
 axis_r:
 - R4 欧洲文学
 axis_m: []
@@ -37,6 +40,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:1018
+t1_priority: △
+t1_network: 拉丁基督教与欧洲俗语文学圈
 ---
 # The Book of Deeds of Arms and of Chivalry
 

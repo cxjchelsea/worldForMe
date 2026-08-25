@@ -12,8 +12,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T3 19世纪现代文学体系
-axis_r: []
-axis_m: []
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
+- 翻译、帝国与跨洋市场
+axis_r:
+- R9 大洋洲与太平洋
+axis_m:
+- M2 19世纪文学思潮
 axis_g:
 - G3 小说
 axis_q:
@@ -37,6 +43,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 侠盗书单.md:1009
 - 侠盗书单.md:2032
+t3_priority: △
+t3_history_position: 帝国、殖民与多语言文学空间 · 小说
 ---
 # Jerilderie Letter
 

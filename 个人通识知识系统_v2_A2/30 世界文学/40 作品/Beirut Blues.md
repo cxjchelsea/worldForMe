@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
-axis_m: []
+t6_mechanism:
+- 记忆、创伤与历史重写
+- 全球市场、翻译与奖项
+axis_r:
+- R1 西亚—地中海古老传统
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -30,6 +35,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:1624
+t6_priority: ★
+t6_history_position: 西亚、中东战争迁徙与跨语际写作 · 小说
 ---
 # Beirut Blues
 

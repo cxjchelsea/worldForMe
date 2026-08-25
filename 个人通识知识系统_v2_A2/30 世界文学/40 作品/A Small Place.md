@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
-axis_m: []
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
+axis_r:
+- R6 拉丁美洲与加勒比
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G6 纪实与文学非虚构
 axis_q:
@@ -32,6 +37,8 @@ batch3_source_refs:
 - 旅行书单.md:1377
 - 旅行书单.md:2101
 - 旅行书单.md:2142
+t6_priority: ★
+t6_history_position: 当代全球类型文学场域 · 纪实与文学非虚构
 ---
 # A Small Place
 

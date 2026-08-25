@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 俗语化、翻译与新读者共同体
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M1 早期现代思想与美学
 axis_g:
 - G3 小说
 axis_q:
@@ -37,6 +41,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:134
+t2_priority: △
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
 ---
 # The Adventures of Col. Daniel Boone
 

@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
-axis_r: []
-axis_m: []
+t4_mechanism:
+- 都市、技术与感知革命
+- 小杂志、翻译、流亡与跨国网络
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M3 现代主义与先锋派
 axis_g:
 - G6 纪实与文学非虚构
 axis_q:
@@ -32,6 +37,8 @@ batch3_source_refs:
 - 旅行书单.md:1000
 - 旅行书单.md:2085
 - 旅行书单.md:2139
+t4_priority: ★
+t4_history_position: 西欧与英美现代主义场域 · 纪实与文学非虚构
 ---
 # The Road to Oxiana
 

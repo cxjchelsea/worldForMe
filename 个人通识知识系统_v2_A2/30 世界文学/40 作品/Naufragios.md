@@ -13,9 +13,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 帝国、航海、殖民与旅行书写
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M1 早期现代思想与美学
 axis_g:
 - G3 小说
 axis_q:
@@ -56,6 +60,8 @@ western_axes: []
 batch6_source_refs:
 - 西部书单.md:132
 - 西部书单.md:2247
+t2_priority: ★
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
 ---
 # Naufragios
 

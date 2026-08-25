@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
-axis_r: []
-axis_m: []
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 帝国、航海、殖民与旅行书写
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M1 早期现代思想与美学
 axis_g:
 - G3 小说
 axis_q:
@@ -38,6 +43,8 @@ batch6_source_refs:
 - 海盗书单.md:1333
 - 海盗书单.md:247
 - 海盗书单.md:757
+t2_priority: ★
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
 ---
 # A General History of the Pyrates
 

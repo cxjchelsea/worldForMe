@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
-axis_r: []
-axis_m: []
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 冷战、审查与意识形态体系
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G6 纪实与文学非虚构
 axis_q:
@@ -31,6 +36,8 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:1046
 - 旅行书单.md:2087
+postwar_priority: ★
+postwar_stage: 1945—1980：时期归属已确认，阶段待核
 ---
 # A Time of Gifts
 

@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
-axis_m: []
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
+axis_r:
+- R5 北美文学
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -32,6 +37,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch1_source_refs:
 - 奇幻书单.md:1444
+t6_priority: ★
+t6_history_position: 当代全球类型文学场域 · 小说
 ---
 # Dungeon Crawler Carl
 

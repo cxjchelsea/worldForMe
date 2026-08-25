@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
-axis_r: []
-axis_m: []
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 俗语化、翻译与新读者共同体
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M1 早期现代思想与美学
 axis_g:
 - G3 小说
 axis_q:
@@ -31,6 +36,8 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:205
 - 成长书单.md:2324
+t2_priority: ★
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
 ---
 # Anton Reiser
 

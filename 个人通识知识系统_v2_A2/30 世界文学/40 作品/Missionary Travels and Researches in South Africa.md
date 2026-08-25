@@ -13,8 +13,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T3 19世纪现代文学体系
-axis_r: []
-axis_m: []
+t3_mechanism:
+- 报刊、连载与大众读者
+- 职业作者、版权与文学市场
+- 翻译、帝国与跨洋市场
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M2 19世纪文学思潮
 axis_g:
 - G6 纪实与文学非虚构
 axis_q:
@@ -32,6 +38,8 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:2057
 - 旅行书单.md:771
+t3_priority: ★
+t3_history_position: 欧洲现代文学市场 · 纪实与文学非虚构
 ---
 # Missionary Travels and Researches in South Africa
 

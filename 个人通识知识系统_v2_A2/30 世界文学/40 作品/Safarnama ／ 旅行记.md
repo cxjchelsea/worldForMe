@@ -13,7 +13,12 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T1 中古多中心文学世界
-axis_r: []
+t1_role:
+- 旅行文学与见闻书写
+- 跨区域伊斯兰世界的文本化观察
+- 口述经验向书面旅行叙事的转化
+axis_r:
+- R1 西亚—地中海古老传统
 axis_m: []
 axis_g:
 - G6 纪实与文学非虚构
@@ -32,6 +37,8 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:2008
 - 旅行书单.md:287
+t1_priority: ★
+t1_network: 波斯语文学世界
 ---
 # Safarnama / 旅行记
 

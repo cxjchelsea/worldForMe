@@ -12,8 +12,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
-axis_r: []
-axis_m: []
+t4_mechanism:
+- 世界大战、革命与政治极化
+- 帝国、殖民、反殖民与文化翻译
+- 小杂志、翻译、流亡与跨国网络
+axis_r:
+- R9 大洋洲与太平洋
+axis_m:
+- M3 现代主义与先锋派
 axis_g:
 - G3 小说
 axis_q:
@@ -30,6 +36,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:710
+t4_priority: ★
+t4_history_position: 英联邦与大洋洲现代文学场域 · 小说
 ---
 # Her Privates We
 

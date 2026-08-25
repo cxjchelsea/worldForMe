@@ -12,9 +12,12 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_mechanism:
+- 小杂志、翻译、流亡与跨国网络
 axis_r:
 - R4 欧洲文学
-axis_m: []
+axis_m:
+- M3 现代主义与先锋派
 axis_g:
 - G3 小说
 axis_q:
@@ -37,6 +40,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:675
+t4_priority: ◆
+t4_history_position: 西欧与英美现代主义场域 · 小说
 ---
 # Count Hannibal
 

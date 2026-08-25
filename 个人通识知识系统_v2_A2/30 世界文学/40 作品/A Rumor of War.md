@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
-axis_r: []
-axis_m: []
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 冷战、审查与意识形态体系
+axis_r:
+- R5 北美文学
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -30,6 +35,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:1342
+postwar_priority: △
+postwar_stage: 1975—1980：革命激情退潮与后现代成熟
 ---
 # A Rumor of War
 

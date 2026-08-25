@@ -12,10 +12,15 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
-axis_r: []
+t4_mechanism:
+- 帝国、殖民、反殖民与文化翻译
+- 小杂志、翻译、流亡与跨国网络
+axis_r:
+- R7 非洲文学
 axis_m:
 - M3.1 现代主义 / Modernism
-axis_g: []
+axis_g:
+- G1 诗歌
 axis_q: []
 axis_source: inferred
 topics:
@@ -29,6 +34,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:979
+t4_priority: ◆
+t4_history_position: 黑人现代主义、非洲与加勒比 · 诗歌
 ---
 # Gestaltes en diere
 

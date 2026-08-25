@@ -12,8 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
-axis_r: []
-axis_m: []
+t2_mechanism:
+- 印刷、书籍市场与读者扩大
+- 帝国、航海、殖民与旅行书写
+axis_r:
+- R4 欧洲文学
+axis_m:
+- M1 早期现代思想与美学
 axis_g:
 - G6 纪实与文学非虚构
 axis_q:
@@ -30,6 +35,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:671
+t2_priority: ★
+t2_history_position: 欧洲印刷、宗教与俗语文学 · 纪实与文学非虚构
 ---
 # Letters Written during a Short Residence in Sweden, Norway, and Denmark
 

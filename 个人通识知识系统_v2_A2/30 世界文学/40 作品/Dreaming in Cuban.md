@@ -12,8 +12,14 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
-axis_r: []
-axis_m: []
+t6_mechanism:
+- 迁徙、离散与跨国家庭
+- 全球市场、翻译与奖项
+axis_r:
+- R5 北美文学
+- R6 拉丁美洲与加勒比
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -37,6 +43,8 @@ batch2_source_refs:
 - 家族书单.md:2305
 - 家族书单.md:2352
 - 家族书单.md:2608
+t6_priority: ★
+t6_history_position: 跨区域与离散文学场域 · 小说
 ---
 # Dreaming in Cuban
 

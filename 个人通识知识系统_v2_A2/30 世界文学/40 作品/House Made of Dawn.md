@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_axes:
+- 从欧洲中心到多中心世界文学
+- 冷战、审查与意识形态体系
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -40,6 +44,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:2300
 - 西部书单.md:887
+postwar_priority: ★
+postwar_stage: 1965—1975：文学爆炸与全球分叉
 ---
 # House Made of Dawn
 

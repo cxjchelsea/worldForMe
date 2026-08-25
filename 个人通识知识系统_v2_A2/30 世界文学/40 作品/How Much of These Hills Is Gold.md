@@ -12,9 +12,13 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_mechanism:
+- 类型全球化与文类融合
+- 全球市场、翻译与奖项
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- M5 战后与当代美学范式
 axis_g:
 - G3 小说
 axis_q:
@@ -38,6 +42,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:1393
 - 西部书单.md:2335
+t6_priority: ★
+t6_history_position: 当代全球类型文学场域 · 小说
 ---
 # How Much of These Hills Is Gold
 
