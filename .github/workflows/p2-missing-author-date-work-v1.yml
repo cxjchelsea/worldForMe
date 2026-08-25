@@ -1,0 +1,34 @@
+name: P2 missing-author-date work V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_p2_missing_author_date_work_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_P2_MISSING_AUTHOR_DATE_WORK_V1'
+      - '.github/workflows/p2-missing-author-date-work-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run missing-author-date work audit
+        if: hashFiles('个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness/RUN_P2_MISSING_AUTHOR_DATE_WORK_V1') != ''
+        run: python scripts/audit_p2_missing_author_date_work_v1.py
+      - name: Commit report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis_completeness'
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "audit: record P2 missing-author-date work V1"
+            git push
+          fi
