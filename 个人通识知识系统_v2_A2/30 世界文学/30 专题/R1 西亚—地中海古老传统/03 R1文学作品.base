@@ -1,0 +1,124 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R1 西亚—地中海古老传统")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.year:
+    displayName: 年份
+  note.read_status:
+    displayName: 阅读状态
+  note.r1_priority:
+    displayName: R1优先级
+  note.r1_tradition:
+    displayName: 内部传统
+  note.r1_role:
+    displayName: R1机制/意义
+  note.axis_t:
+    displayName: 时间
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+  note.verification_status:
+    displayName: 校验状态
+views:
+  - type: table
+    name: 全部 R1 作品
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r1_priority == "★"
+    order:
+      - file.name
+      - author
+      - year
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - id
+  - type: table
+    name: 重点 ◆
+    filters:
+      and:
+        - r1_priority == "◆"
+    order:
+      - file.name
+      - author
+      - year
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - id
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - r1_priority == "△"
+    order:
+      - file.name
+      - author
+      - year
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - id
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r1_tradition
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - year
+      - r1_priority
+      - r1_role
+      - axis_t
+      - id
+  - type: table
+    name: 待读映射
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - year
+      - r1_priority
+      - r1_tradition
+      - axis_t
+      - id
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
+    order:
+      - file.name
+      - author
+      - year
+      - verification_status
+      - id
