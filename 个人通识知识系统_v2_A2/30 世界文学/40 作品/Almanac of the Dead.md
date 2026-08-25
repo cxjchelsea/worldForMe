@@ -10,7 +10,8 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r:
 - R5 北美文学
 axis_m: []
