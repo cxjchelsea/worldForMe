@@ -33,6 +33,8 @@ def scalar(fm: str, key: str) -> str:
     if not m:
         return ""
     value = m.group(1).strip()
+    if value.lower() in {"null", "none", "~"}:
+        return ""
     if (value.startswith('"') and value.endswith('"')) or (value.startswith("'") and value.endswith("'")):
         value = value[1:-1]
     return value
@@ -40,7 +42,6 @@ def scalar(fm: str, key: str) -> str:
 
 def list_field(fm: str, key: str) -> list[str]:
     lines = fm.splitlines()
-    out: list[str] = []
     for i, line in enumerate(lines):
         if re.match(rf"^{re.escape(key)}:\s*\[\s*\]\s*$", line):
             return []
@@ -51,12 +52,19 @@ def list_field(fm: str, key: str) -> list[str]:
                 return []
             return [x.strip().strip('"\'') for x in raw.split(",")]
         if re.match(rf"^{re.escape(key)}:\s*$", line):
+            out: list[str] = []
             for nxt in lines[i + 1 :]:
-                if not nxt.startswith((" ", "\t")):
-                    break
+                # YAML sequence entries in this repository are often top-level:
+                # axis_t:\n- T5 ...
                 m = re.match(r"^\s*-\s*(.*?)\s*$", nxt)
                 if m:
                     out.append(m.group(1).strip().strip('"\''))
+                    continue
+                # Stop at the next top-level key or any non-list content.
+                if re.match(r"^[A-Za-z0-9_\u4e00-\u9fff].*?:", nxt):
+                    break
+                if nxt.strip() and not nxt.startswith((" ", "\t")):
+                    break
             return out
     return []
 
