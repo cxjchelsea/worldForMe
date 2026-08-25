@@ -7,10 +7,11 @@ aliases: []
 author: 迈克尔·赫尔
 author_original: Michael Herr
 author_source: batch5_source_inferred
-year: null
+year: 1977
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 战后文学
 axis_r: []
 axis_m: []
 axis_g:

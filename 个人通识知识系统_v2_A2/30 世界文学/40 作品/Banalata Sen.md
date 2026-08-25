@@ -7,10 +7,11 @@ aliases: []
 author: 吉巴纳南达·达斯
 author_original: Jibanananda Das
 author_source: batch4_source_inferred
-year: null
+year: 1942
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r: []
 axis_m:
 - M3.1 现代主义 / Modernism

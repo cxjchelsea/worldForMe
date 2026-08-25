@@ -7,10 +7,11 @@ aliases: []
 author: 艾莉莎·科尔
 author_original: Alyssa Cole
 author_source: batch5_source_inferred
-year: null
+year: 2018
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

@@ -7,10 +7,11 @@ aliases: []
 author: 内德·凯利
 author_original: Ned Kelly
 author_source: batch6_source_inferred
-year: null
+year: 1879
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T3 十九世纪文学
 axis_r: []
 axis_m: []
 axis_g:

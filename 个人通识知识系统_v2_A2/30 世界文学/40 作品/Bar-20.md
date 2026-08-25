@@ -7,10 +7,11 @@ aliases: []
 author: 克拉伦斯·E.马尔福德
 author_original: Clarence E. Mulford
 author_source: heading
-year: null
+year: 1907
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r:
 - R5 北美文学
 axis_m: []

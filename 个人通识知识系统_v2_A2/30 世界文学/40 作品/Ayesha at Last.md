@@ -7,10 +7,11 @@ aliases: []
 author: 乌兹玛·贾拉勒丁
 author_original: Uzma Jalaluddin
 author_source: batch5_source_inferred
-year: null
+year: 2018
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T6 当代全球文学
 axis_r: []
 axis_m: []
 axis_g:

@@ -7,10 +7,11 @@ aliases: []
 author: 约翰·A.洛马克斯
 author_original: John A. Lomax
 author_source: batch6_source_inferred
-year: null
+year: 1910
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r:
 - R5 北美文学
 axis_m: []

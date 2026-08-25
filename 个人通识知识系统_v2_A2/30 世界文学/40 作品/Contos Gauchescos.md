@@ -7,10 +7,11 @@ aliases: []
 author: 西蒙斯·洛佩斯·内托
 author_original: Simões Lopes Neto
 author_source: batch6_source_inferred
-year: null
+year: 1912
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r:
 - R6 拉丁美洲与加勒比
 axis_m: []

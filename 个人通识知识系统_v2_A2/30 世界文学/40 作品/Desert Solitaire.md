@@ -7,10 +7,11 @@ aliases: []
 author: 爱德华·艾比
 author_original: Edward Abbey
 author_source: title_map
-year: null
+year: 1968
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T5 战后文学
 axis_r:
 - R5 北美文学
 axis_m: []

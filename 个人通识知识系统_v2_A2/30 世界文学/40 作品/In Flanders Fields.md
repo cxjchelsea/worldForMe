@@ -7,10 +7,11 @@ aliases: []
 author: 约翰·麦克雷
 author_original: John McCrae
 author_source: batch5_source_inferred
-year: null
+year: 1915
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- T4 现代主义前夜与现代主义文学
 axis_r: []
 axis_m: []
 axis_g:
