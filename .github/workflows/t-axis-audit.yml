@@ -1,0 +1,37 @@
+name: T-axis audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_t_axis.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
+      - '.github/workflows/t-axis-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run T-axis audit
+        run: python scripts/audit_t_axis.py
+
+      - name: Commit audit reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/t_axis'
+          if git diff --cached --quiet; then
+            echo "No audit report changes"
+          else
+            git commit -m "audit: refresh T-axis classification report"
+            git push
+          fi
