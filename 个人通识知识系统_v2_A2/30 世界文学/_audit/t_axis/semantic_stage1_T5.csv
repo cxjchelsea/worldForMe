@@ -1,18 +1,31 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id
 1984.md,1984,乔治·奥威尔,T5,,CANON-142,1949,T5,PASS,HIGH,CANON-142 首次成书_出版时间=1949,自动通过,WL-WORK-0488
 2001：太空漫游.md,2001：太空漫游,阿瑟·克拉克,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0309
+A Man Called Horse.md,A Man Called Horse,多萝西·M.约翰逊,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2156
+A Rumor of War.md,A Rumor of War,菲利普·卡普托,T5,1977,,,T5,PASS,HIGH,note.year=1977,自动通过,WL-WORK-1937
+A Time of Gifts.md,A Time of Gifts,帕特里克·利·弗莫尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1344
+America Is in the Heart.md,America Is in the Heart,卡洛斯·布洛桑,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0914
 An Area of Darkness.md,An Area of Darkness,V.S.奈保尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1348
 Arabella.md,Arabella,乔吉特·海耶,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1940
+Arabian Sands.md,Arabian Sands,威尔弗雷德·塞西格,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1349
+Auschwitz and After.md,Auschwitz and After,夏洛特·德尔博,T5,1971,,,T5,PASS,HIGH,note.year=1971,自动通过,WL-WORK-1941
 Bandits.md,Bandits,艾瑞克·霍布斯鲍姆,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2165
-Biografía de Tadeo Isidoro Cruz.md,Biografía de Tadeo Isidoro Cruz,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2172
+"Bless Me, Ultima.md","Bless Me, Ultima",鲁道夫·阿纳亚,T5,1972,,,T5,PASS,HIGH,note.year=1972,自动通过,WL-WORK-2174
+Buffalo Wagons.md,Buffalo Wagons,埃尔默·凯尔顿,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2177
+Burnt Offerings.md,Burnt Offerings,罗伯特·马拉斯科,T5,1973,,,T5,PASS,HIGH,note.year=1973,自动通过,WL-WORK-0494
+Butcher's Crossing.md,Butcher's Crossing,约翰·威廉斯,T5,1960,,,T5,PASS,HIGH,note.year=1960,自动通过,WL-WORK-2179
+Ceremony.md,Ceremony,莱斯利·马蒙·西尔科,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0918
 Cotillion.md,Cotillion,乔吉特·海耶,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1951
 "Crick Crack, Monkey.md","Crick Crack, Monkey",默尔·霍奇,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1528
+Dance Hall of the Dead.md,Dance Hall of the Dead,托尼·希勒曼,T5,1973,,,T5,PASS,HIGH,note.year=1973,自动通过,WL-WORK-2195
+Desert Solitaire.md,Desert Solitaire,爱德华·艾比,T5,1968,,,T5,PASS,HIGH,note.year=1968,自动通过,WL-WORK-2199
+Dispatches.md,Dispatches,迈克尔·赫尔,T5,1977,,,T5,PASS,HIGH,note.year=1977,自动通过,WL-WORK-1956
 El escritor argentino y la tradición.md,El escritor argentino y la tradición,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2203
-El fin ／ 结局.md,El fin / 结局,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2204
 El muerto.md,El muerto,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2210
-El Sur ／ 南方.md,El Sur / 南方,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2213
+Facial Justice.md,Facial Justice,L.P.哈特利,T5,1960,,,T5,PASS,HIGH,note.year=1960,自动通过,WL-WORK-0924
 Flint.md,Flint,路易斯·拉穆尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2228
 Forfeit.md,Forfeit,迪克·弗朗西斯,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-3097
+From a Crooked Rib.md,From a Crooked Rib,努鲁丁·法拉赫,T5,1970,,,T5,PASS,HIGH,note.year=1970,自动通过,WL-WORK-0927
 G.H.受难记.md,G.H.受难记,克拉丽丝·利斯佩克托,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1529
 G.（伯杰）.md,G.,约翰·伯杰,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-3038
 Girls at War.md,Girls at War,钦努阿·阿契贝,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1962
@@ -21,11 +34,13 @@ Holiday.md,Holiday,斯坦利·米德尔顿,T5,,,,,REVIEW,,缺少可靠年代证�
 Hondo.md,Hondo,路易斯·拉穆尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2239
 Hopscotch.md,Hopscotch,布赖恩·加菲尔德,T5,,CANON-182,1963,T5,PASS,HIGH,CANON-182 首次成书_出版时间=1963,需复核,WL-WORK-3102
 "Horseman, Pass By.md","Horseman, Pass By",拉里·麦克默特里,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2242
+House Made of Dawn.md,House Made of Dawn,N.斯科特·莫马迪,T5,1968,,,T5,PASS,HIGH,note.year=1968,自动通过,WL-WORK-2243
 In Patagonia.md,In Patagonia,布鲁斯·查特文,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1356
 In the Castle of My Skin.md,In the Castle of My Skin,乔治·拉明,T5,,CANON-278,1953,T5,PASS,HIGH,CANON-278 首次成书_出版时间=1953,自动通过,WL-WORK-0930
 India／ A Wounded Civilization.md,India: A Wounded Civilization,V.S.奈保尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1357
 La noche de los dones.md,La noche de los dones,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2261
 Leaving Cheyenne.md,Leaving Cheyenne,拉里·麦克默特里,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2270
+Monte Walsh.md,Monte Walsh,杰克·谢弗,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2286
 Nine Coaches Waiting.md,Nine Coaches Waiting,玛丽·斯图尔特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1975
 Offshore.md,Offshore,佩内洛普·菲茨杰拉德,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-3046
 Ozidi Saga.md,Ozidi Saga,佚名,T5,1977,,,T5,PASS,HIGH,note.year=1977,自动通过,WL-WORK-1363
@@ -33,7 +48,7 @@ Primitive Rebels.md,Primitive Rebels,艾瑞克·霍布斯鲍姆,T5,,,,,REVIEW,,�
 Promised Land.md,Promised Land,罗伯特·B·帕克,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-3103
 Room to Swing.md,Room to Swing,埃德·莱西,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-3086
 Sabu.md,Sabu,山本周五郎,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2334
-Tadeo Isidoro Cruz小传.md,Tadeo Isidoro Cruz小传,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2351
+Tadeo Isidoro Cruz小传.md,Tadeo Isidoro Cruz小传,博尔赫斯,T5,1949,,,T5,PASS,HIGH,note.year=1949,人工核验,WL-WORK-2351
 Tamas.md,Tamas,比沙姆·萨赫尼,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0944
 The Acts of King Arthur and His Noble Knights.md,The Acts of King Arthur and His Noble Knights,约翰·斯坦贝克,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2354
 The Arrivants.md,The Arrivants,卡莫·布拉思韦特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1541
@@ -45,6 +60,7 @@ The Eighth Circle.md,The Eighth Circle,斯坦利·埃林,T5,,,,,REVIEW,,缺少�
 The Hollow Hills.md,The Hollow Hills,玛丽·斯图尔特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2382
 The Last Enchantment.md,The Last Enchantment,玛丽·斯图尔特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2387
 The Middle Passage.md,The Middle Passage,V.S.奈保尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1376
+The Shootist.md,The Shootist,格伦登·斯沃索特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2405
 The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2983
 一个背叛日本的日本人.md,一个背叛日本的日本人,松本清张,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0164
 一个逃亡黑奴的传记.md,一个逃亡黑奴的传记,米格尔·巴内特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1545
@@ -118,6 +134,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 再见，哥伦布.md,再见，哥伦布,菲利普·罗斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1594
 冲击波骑士.md,冲击波骑士,约翰·布鲁纳,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0998
 冷肉.md,冷肉,萨达特·哈桑·曼托,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1596
+凯恩舰哗变.md,凯恩舰哗变,赫尔曼·沃克,T5,1951,,,T5,PASS,HIGH,note.year=1951,自动通过,WL-WORK-2025
 凯瑟琳·安·波特短篇小说集.md,凯瑟琳·安·波特短篇小说集,凯瑟琳·安·波特,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2992
 分裂的天空.md,分裂的天空,克里斯塔·沃尔夫,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1597
 列车正点到达.md,列车正点到达,海因里希·伯尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1598
@@ -138,7 +155,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 华冈青洲之妻.md,华冈青洲之妻,有吉佐和子,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1010
 华氏451.md,华氏451,雷·布拉德伯里,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0319
 南太平洋故事.md,南太平洋故事,詹姆斯·A·米奇纳,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2981
-南方.md,南方,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2468
+南方.md,南方,博尔赫斯,T5,1953,,,T5,PASS,HIGH,note.year=1953,人工核验,WL-WORK-2468
 危险幻象.md,危险幻象,哈兰·埃里森,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-0367
 历史（莫兰特）.md,历史,埃尔莎·莫兰特,T5,,CANON-210,1974,T5,PASS,HIGH,CANON-210 首次成书_出版时间=1974,需复核,WL-WORK-3162
 去你四散的身躯.md,去你四散的身躯,菲利普·何塞·法默,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2903
@@ -215,6 +232,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 如果在冬夜，一个旅人.md,如果在冬夜，一个旅人,伊塔洛·卡尔维诺,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1662
 如果我死在战区.md,如果我死在战区,蒂姆·奥布莱恩,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1663
 如果这是一个人.md,如果这是一个人,普里莫·莱维,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1664
+如此漫长的信.md,如此漫长的信,玛丽亚玛·芭,T5,1979,,,T5,PASS,HIGH,note.year=1979,自动通过,WL-WORK-2051
 姆温多史诗.md,姆温多史诗,佚名,T5,1969,,,T5,PASS,HIGH,note.year=1969,自动通过,WL-WORK-1444
 嫉妒.md,嫉妒,阿兰·罗伯-格里耶,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1666
 孤独的伦敦人.md,孤独的伦敦人,萨姆·塞尔文,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1667
@@ -224,6 +242,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 守屋人.md,守屋人,雪莉·安·格劳,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2991
 安妮日记.md,安妮日记,安妮·弗兰克,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1066
 安德森维尔.md,安德森维尔,麦金莱·坎特,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2985
+安息角.md,安息角,华莱士·斯特格纳,T5,1971,,,T5,PASS,HIGH,note.year=1971,自动通过,WL-WORK-2503
 安珀志：安珀九王子.md,安珀志：安珀九王子,罗杰·泽拉兹尼,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0665
 安静的场所.md,安静的场所,松本清张,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0165
 宫间街.md,宫间街,纳吉布·马哈福兹,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1069
@@ -247,8 +266,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 广阔腹地：条条小径.md,广阔腹地：条条小径,吉马朗埃斯·罗萨,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1691
 庭院深深.md,庭院深深,琼瑶,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2064
 开往伍德斯托克的末班车.md,开往伍德斯托克的末班车,科林·德克斯特,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0105
-开往巴基斯坦的列车.md,开往巴基斯坦的列车,库什万特·辛格,T5,1956,CANON-233,1956,T5,PASS,HIGH,note.year=1956,手工核验,WL-WORK-T5-TRAIN-PAKISTAN
-开往巴基斯坦的火车.md,开往巴基斯坦的火车,库什万特·辛格,T5,,CANON-233,1956,T5,PASS,HIGH,CANON-233 首次成书_出版时间=1956,自动通过,WL-WORK-1098
+开往巴基斯坦的列车.md,开往巴基斯坦的列车,库什万特·辛格,T5,1956,CANON-233,1956,T5,PASS,HIGH,note.year=1956,人工核验,WL-WORK-T5-TRAIN-PAKISTAN
 开罗三部曲.md,开罗三部曲,纳吉布·马哈福兹,T5,,CANON-191,1956—1957,T5,PASS,HIGH,CANON-191 首次成书_出版时间=1956—1957,需复核,WL-WORK-2852
 异乡异客.md,异乡异客,罗伯特·海因莱因,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0302
 弗兰德公路.md,弗兰德公路,克洛德·西蒙,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1692
@@ -328,6 +346,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 本阵杀人事件.md,本阵杀人事件,横沟正史,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0151
 机器人大师.md,机器人大师,斯坦尼斯瓦夫·莱姆,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0333
 机器人短篇全集.md,机器人短篇全集,艾萨克·阿西莫夫,T5,,,,,REVIEW,,缺少可靠年代证据,个人补录,WL-WORK-2666
+杀戮天使.md,杀戮天使,迈克尔·沙拉,T5,1974,,,T5,PASS,HIGH,note.year=1974,自动通过,WL-WORK-1153
 杀死一只知更鸟.md,杀死一只知更鸟,哈珀·李,T5,,CANON-171,1960,T5,PASS,HIGH,CANON-171 首次成书_出版时间=1960,自动通过,WL-WORK-1154
 权力问题.md,权力问题,贝茜·黑德,T5,,CANON-266,1973,T5,PASS,HIGH,CANON-266 首次成书_出版时间=1973,需复核,WL-WORK-3202
 杰米·麦克菲特斯的旅行.md,杰米·麦克菲特斯的旅行,罗伯特·刘易斯·泰勒,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2987
@@ -468,7 +487,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 纳特·特纳的自白.md,纳特·特纳的自白,威廉·斯蒂伦,T5,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-2994
 组织部来了个年轻人.md,组织部来了个年轻人,王蒙,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1830
 细雪.md,细雪,谷崎润一郎,T5,1948,CANON-054,1943—1948,T5,PASS,HIGH,note.year=1948,自动通过,WL-WORK-1258
-结局.md,结局,博尔赫斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2597
+结局.md,结局,博尔赫斯,T5,1953,,,T5,PASS,HIGH,note.year=1953,人工核验,WL-WORK-2597
 绝代双骄.md,绝代双骄,古龙,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2598
 维吉尔之死.md,维吉尔之死,赫尔曼·布洛赫,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1832
 绿房子.md,绿房子,巴尔加斯·略萨,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1833
@@ -507,6 +526,7 @@ The Town.md,The Town,康拉德·里克特,T5,,,,,REVIEW,,缺少可靠年代证�
 被禁锢的头脑.md,被禁锢的头脑,切斯瓦夫·米沃什,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1863
 裸体午餐.md,裸体午餐,威廉·S.巴勒斯,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1864
 裸者与死者.md,裸者与死者,诺曼·梅勒,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1284
+西行之路.md,西行之路,A.B.格思里,T5,1949,,,T5,PASS,HIGH,note.year=1949,自动通过,WL-WORK-2616
 观众.md,观众,瓦茨拉夫·哈维尔,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1869
 警察讨厌鬼.md,警察讨厌鬼,埃德·麦克贝恩,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0100
 让开！让开！.md,让开！让开！,哈里·哈里森,T5,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0341
