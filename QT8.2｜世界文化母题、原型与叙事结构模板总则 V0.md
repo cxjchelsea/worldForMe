@@ -1,10 +1,10 @@
 # QT8.2｜世界文化母题、原型与叙事结构模板总则 V0
 
-> 状态：`TEMPLATE_V0_DRAFT_AFTER_QT8.1_DUAL_REFERENCE_TOPICS`
+> 状态：`TEMPLATE_V0_REVISED_AFTER_MOTIF_PILOT_A_PASS_B`
 >
 > 适用范围：QT8.2 横向抽象层中的 motif / archetype / plot_pattern / symbol 专题。
 >
-> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题。
+> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题；并由“洪水与灾后重建” motif Pilot A 进行第一轮反向修订。
 
 ---
 
@@ -57,61 +57,44 @@ QT8.2 固定采用：
 
 现有 20 个一级母题簇保持相对稳定，但它们不是本体学唯一归属。一个对象可多标签关联多个簇。
 
-例如：
-
-```text
-“洪水与灾后重建” motif
-├─ QT8.2.2 毁灭、灾变与世界重生
-├─ QT8.2.15 牺牲、罪、救赎与替罪（条件关系）
-└─ QT8.2.20 时间、记忆、循环与失落世界（后世关系）
-```
-
 ---
 
 # 三、四类对象的最小定义
 
 ## 3.1 motif｜母题
 
-反复出现的基本叙事单元或关系，例如兄弟相残、禁忌知识、洪水幸存、王者归来。
+反复出现的基本叙事单元或关系。回答：**故事反复在发生什么？**
 
-它回答：**故事反复在发生什么？**
+motif Pilot A 新增治理：
 
-不等于抽象 theme。
+```text
+required_invariants
+= 缺少后不再属于该 motif 的最低条件
+
+optional_slots
+= 高频但非必选的变体槽位
+```
 
 ## 3.2 archetype｜文化原型
 
 可被反复调用的角色／人物模型。
 
-分为：
+- `abstract_archetype`
+- `named_archetype`
 
-- `abstract_archetype`：抽象角色原型，如 Trickster、智慧王、受苦义人；
-- `named_archetype`：由具体人物长期重写后形成的命名型文化原型，如所罗门王、亚瑟王、梅林、孙悟空。
-
-它回答：**谁成为可重复调用的文化角色模型？**
+回答：**谁成为可重复调用的文化角色模型？**
 
 ## 3.3 plot_pattern｜叙事结构
 
-多个叙事节点之间稳定、可复用的顺序与关系，例如：
-
-```text
-预言 → 逃避 → 实现
-离乡 → 试炼 → 归乡
-压迫 → 出走 → 边界穿越 → 新秩序
-```
-
-它回答：**故事通常怎样展开？**
+多个叙事节点之间稳定、可复用的顺序与关系。回答：**故事通常怎样展开？**
 
 ## 3.4 symbol｜文化意象／符号
 
-超出单一情节道具功能，并在多个文本、时代或媒介中形成稳定可识别意义的物件、空间或意象。
-
-它回答：**什么形象获得了可持续复用的文化含义？**
+超出单一情节道具功能，并在多个文本、时代或媒介中形成稳定可识别意义的物件、空间或意象。回答：**什么形象获得了可持续复用的文化含义？**
 
 ---
 
 # 四、共享专题骨架
-
-四类对象统一使用以下十个职责，但中间重点随对象类型变化：
 
 ```text
 00 对象主页
@@ -127,18 +110,38 @@ QT8.2 固定采用：
 10 阅读与研究
 ```
 
-这十项是**职责**，不是强制十个独立文件。Pilot 可按材料合并，但不得遗漏功能。
+这十项是职责，不强制十个独立文件。
 
 ---
 
 # 五、来源谱系治理
 
-每个 QT8.2 对象必须回指 QT8.1，而不能写成“这个母题自古就有”。
+每个 QT8.2 对象必须尽可能回指 QT8.1，并显式保存 `source_status`。
+
+至少允许：
+
+```text
+reference_topic
+reference_topic_source_story_pending_index
+external_source_pending_qt81_topic
+external_source_verified_text_only
+unknown_source_status
+```
+
+因此：
+
+```text
+QT8.2 已核证一个来源实例
+≠ QT8.1 已完成该来源传统
+```
+
+这允许 QT8.2 先发现跨文化组件，又不会反向冒充来源层已经建成。
 
 至少记录：
 
 ```text
 source_traditions
+source_status
 source_figures_or_stories
 source_texts
 early_witnesses
@@ -146,33 +149,11 @@ defining_texts
 later_reworkings
 ```
 
-并区分：
-
-```text
-来源人物／故事
-≠ 抽象组件
-≠ 后世命名型文化原型
-```
-
-例如：
-
-```text
-所罗门（QT8.1 来源人物）
-        ↓ 原型化
-智慧王／魔法王／审判者等关系
-        ↓
-所罗门（QT8.2 named_archetype）
-```
-
-两者不得合并成同一层职责。
-
 ---
 
 # 六、关系模型
 
 ## 6.1 relation_type
-
-对象之间与后世文本之间可使用：
 
 - `direct_adaptation`
 - `explicit_reference`
@@ -186,14 +167,36 @@ later_reworkings
 
 ## 6.2 evidence_level
 
-关系证据与关系类型分开记录：
-
 - `documented`
 - `strongly_supported`
 - `probable`
 - `possible`
 - `similarity_only`
 - `unknown`
+
+## 6.3 relation record 原子性
+
+Flood Pilot A Pass B 新增稳定候选规则：
+
+> **一条 relation record 只表达一个 relation_type，并配一个 evidence_level。**
+
+例如同一对对象既存在文本结构相似，又可能存在历史传播时，应拆成：
+
+```yaml
+source: A
+target: B
+relation_type: structural_similarity
+evidence_level: documented
+```
+
+以及：
+
+```yaml
+source: A
+target: B
+relation_type: historical_transmission
+evidence_level: possible
+```
 
 治理底线：
 
@@ -214,7 +217,15 @@ relation_type ≠ evidence_level
 - 重要后世重写
 - 推荐阅读文本
 
-但文本的完整作品信息仍由 `40 作品` 或唯一主作品节点承担。QT8.2 专题只记录“该作品如何参与这个叙事组件的形成与重写”。
+还必须区分：
+
+```text
+故事传统形成时间
+≠ 文学版本形成时间
+≠ 现存抄本／泥版年代
+```
+
+文本完整作品信息仍由唯一作品主节点承担。
 
 ---
 
@@ -238,12 +249,12 @@ G / 其他 QT = 具体文学类型
 
 | 类型 | 最重要的问题 |
 |---|---|
-| motif | 叙事单元、变体、功能、组合方式 |
+| motif | required invariants、optional slots、变体、功能、组合方式 |
 | archetype | 角色功能、来源人物、原型化过程、命名型与抽象型关系 |
 | plot_pattern | 节点顺序、必选槽位、可变槽位、结构变体 |
 | symbol | 来源物象、symbol 准入、稳定意义、语义漂移、跨媒介复用 |
 
-对应四个模板文件：
+对应：
 
 - [[QT8.2｜母题型专题模板 V0]]
 - [[QT8.2｜文化原型型专题模板 V0]]
@@ -252,44 +263,45 @@ G / 其他 QT = 具体文学类型
 
 ---
 
-# 十、Pilot 选择原则
+# 十、Pilot 策略
 
-V0 不批量建立 20 个母题簇专题包，而优先用真实对象验证四类模板。
-
-建议第一轮 Pilot：
+V0 不批量建设 20 个母题簇，而用真实对象逐类验证。
 
 ```text
-motif
+Pilot A motif
 → 洪水与灾后重建
 
-archetype
-→ 受苦义人（抽象原型）或所罗门王（命名型原型）
+Pilot B archetype
+→ 受苦义人
+→ 所罗门王 named archetype 压力测试
 
-plot_pattern
+Pilot C plot_pattern
 → 预言 → 逃避 → 实现
 
-symbol
-→ 巴别塔或迷宫
+Pilot D symbol
+→ 巴别塔
 ```
 
-其中优先级应由“能否同时调用 QT8.1.1 与 QT8.1.2 的来源材料”决定。
+Pilot A 已进入 Content Pass B；当前产生的规则先作为 V0 修订，不构成 V1 Freeze。
 
 ---
 
 # 十一、V0 验收条件
 
-四类模板经过 Pilot 后，至少应验证：
-
 - [ ] 四类对象边界可实际区分
 - [ ] 一个来源故事可同时映射多类对象而不冲突
 - [ ] 一级母题簇可以作为多标签导航
 - [ ] 来源谱系可以稳定回指 QT8.1
+- [ ] `source_status` 可处理不完整来源层
 - [ ] relation_type 与 evidence_level 能分离
+- [ ] relation record 可保持单一关系类型
 - [ ] 文本谱系不会复制作品主节点
 - [ ] named_archetype 不会退化成人物百科
 - [ ] symbol 准入规则能挡住普通道具
 - [ ] plot_pattern 不会被写成 motif 列表
-- [ ] 后世作品实例只承担证据和出口，不变成作品百科
+- [ ] 后世作品实例只承担证据和出口
 - [ ] 四种模板能够共用一套 Base / relation 数据模型
 
-完成至少一轮跨来源 Pilot 后，才能讨论 `QT8.2 Template V1 Freeze`。
+四类 Pilot 完成前：
+
+`QT8.2_TEMPLATE_STATUS = V0_DRAFT / NOT_FROZEN`
