@@ -1,0 +1,295 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "file": "00 欧洲文学.md",
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 120
+    },
+    {
+      "id": "t1",
+      "type": "file",
+      "file": "11 内部传统/01 中世纪拉丁基督教与俗语奠基传统.md",
+      "x": 450,
+      "y": -700,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t2",
+      "type": "file",
+      "file": "11 内部传统/02 英国—爱尔兰文学传统.md",
+      "x": 810,
+      "y": -700,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t3",
+      "type": "file",
+      "file": "11 内部传统/03 法语文学传统.md",
+      "x": 1170,
+      "y": -700,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t4",
+      "type": "file",
+      "file": "11 内部传统/04 意大利文学传统.md",
+      "x": 450,
+      "y": -480,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t5",
+      "type": "file",
+      "file": "11 内部传统/05 伊比利亚文学传统.md",
+      "x": 810,
+      "y": -480,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t6",
+      "type": "file",
+      "file": "11 内部传统/06 德语文学传统.md",
+      "x": 1170,
+      "y": -480,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t7",
+      "type": "file",
+      "file": "11 内部传统/07 低地国家文学传统.md",
+      "x": 450,
+      "y": -260,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t8",
+      "type": "file",
+      "file": "11 内部传统/08 北欧文学传统.md",
+      "x": 810,
+      "y": -260,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t9",
+      "type": "file",
+      "file": "11 内部传统/09 俄罗斯文学传统.md",
+      "x": 1170,
+      "y": -260,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t10",
+      "type": "file",
+      "file": "11 内部传统/10 中欧文学传统.md",
+      "x": 450,
+      "y": -40,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t11",
+      "type": "file",
+      "file": "11 内部传统/11 巴尔干与东南欧文学传统.md",
+      "x": 810,
+      "y": -40,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t12",
+      "type": "file",
+      "file": "11 内部传统/12 现代希腊文学传统.md",
+      "x": 1170,
+      "y": -40,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "12 跨传统网络/01 拉丁基督教—大学与手稿网络.md",
+      "x": -900,
+      "y": -650,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "12 跨传统网络/02 印刷—宗教改革与俗语标准化网络.md",
+      "x": -550,
+      "y": -650,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "12 跨传统网络/03 文艺复兴—古典复兴与人文主义网络.md",
+      "x": -900,
+      "y": -440,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "12 跨传统网络/04 启蒙—沙龙报刊与共和国书信网络.md",
+      "x": -550,
+      "y": -440,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "12 跨传统网络/05 浪漫主义—民族文学与民间传统网络.md",
+      "x": -900,
+      "y": -230,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "12 跨传统网络/06 现实主义—自然主义与都市出版网络.md",
+      "x": -550,
+      "y": -230,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "12 跨传统网络/07 现代主义跨城市网络.md",
+      "x": -900,
+      "y": -20,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "n8",
+      "type": "file",
+      "file": "12 跨传统网络/08 战争—流亡—极权与记忆网络.md",
+      "x": -550,
+      "y": -20,
+      "width": 300,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "root",
+      "toNode": "t1"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "t2"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "t3"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "t4"
+    },
+    {
+      "id": "e5",
+      "fromNode": "root",
+      "toNode": "t5"
+    },
+    {
+      "id": "e6",
+      "fromNode": "root",
+      "toNode": "t6"
+    },
+    {
+      "id": "e7",
+      "fromNode": "root",
+      "toNode": "t7"
+    },
+    {
+      "id": "e8",
+      "fromNode": "root",
+      "toNode": "t8"
+    },
+    {
+      "id": "e9",
+      "fromNode": "root",
+      "toNode": "t9"
+    },
+    {
+      "id": "e10",
+      "fromNode": "root",
+      "toNode": "t10"
+    },
+    {
+      "id": "e11",
+      "fromNode": "root",
+      "toNode": "t11"
+    },
+    {
+      "id": "e12",
+      "fromNode": "root",
+      "toNode": "t12"
+    },
+    {
+      "id": "en1",
+      "fromNode": "root",
+      "toNode": "n1"
+    },
+    {
+      "id": "en2",
+      "fromNode": "root",
+      "toNode": "n2"
+    },
+    {
+      "id": "en3",
+      "fromNode": "root",
+      "toNode": "n3"
+    },
+    {
+      "id": "en4",
+      "fromNode": "root",
+      "toNode": "n4"
+    },
+    {
+      "id": "en5",
+      "fromNode": "root",
+      "toNode": "n5"
+    },
+    {
+      "id": "en6",
+      "fromNode": "root",
+      "toNode": "n6"
+    },
+    {
+      "id": "en7",
+      "fromNode": "root",
+      "toNode": "n7"
+    },
+    {
+      "id": "en8",
+      "fromNode": "root",
+      "toNode": "n8"
+    }
+  ]
+}

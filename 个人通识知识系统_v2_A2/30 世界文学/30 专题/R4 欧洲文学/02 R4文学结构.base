@@ -1,0 +1,26 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-R4-EUROPE"
+properties:
+  file.name:
+    displayName: 节点
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部 R4 知识节点
+    order: [file.name, dimension, sequence]
+  - type: table
+    name: 内部传统
+    filters:
+      and:
+        - dimension == "internal_tradition"
+    order: [file.name, sequence]
+  - type: table
+    name: 跨传统网络
+    filters:
+      and:
+        - dimension == "literary_network"
+    order: [file.name, sequence]

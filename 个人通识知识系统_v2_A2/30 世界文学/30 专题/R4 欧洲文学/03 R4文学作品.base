@@ -1,0 +1,27 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R4 欧洲文学")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r4_priority: {displayName: R4优先级}
+  note.r4_tradition: {displayName: 内部传统}
+  note.r4_role: {displayName: R4机制/意义}
+  note.axis_t: {displayName: 时间}
+  note.read_status: {displayName: 阅读状态}
+views:
+  - type: table
+    name: 全部 R4 作品
+    order: [file.name, author, year, r4_priority, r4_tradition, r4_role, axis_t]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r4_priority == "★"
+    order: [file.name, author, year, r4_tradition, r4_role]
+  - type: table
+    name: 按内部传统
+    groupBy: {property: r4_tradition, direction: ASC}
+    order: [file.name, author, year, r4_priority, r4_role]
