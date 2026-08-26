@@ -1,0 +1,31 @@
+name: m-axis-base-semantic-repair-v2
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/repair_m_axis_base_semantics_v2.py'
+      - '.github/workflows/m-axis-base-semantic-repair-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Apply M-axis Base semantic repair
+        run: python scripts/repair_m_axis_base_semantics_v2.py
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学'
+          git commit -m 'fix(m-axis): repair Base semantics and metadata'
+          git push origin HEAD:main
