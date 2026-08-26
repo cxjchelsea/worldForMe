@@ -31,7 +31,7 @@
 
 ## R9
 
-- Active canonical Works: **68**
+- Active canonical Works: **69**
 - Structural slots: **56**
 - COVERED: **54**
 - MISSING: **2**
