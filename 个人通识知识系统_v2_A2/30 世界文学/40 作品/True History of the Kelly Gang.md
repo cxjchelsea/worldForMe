@@ -25,6 +25,7 @@ axis_source: inferred
 awards:
 - WL-AWARD-BOOKER
 topics:
+  - WL-TOPIC-R9-OCEANIA-PACIFIC
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-OUTLAW
 topic_links:
@@ -47,6 +48,9 @@ t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
+r9_tradition: "澳大利亚殖民—国家文学传统"
+r9_priority: "◆"
+r9_role: "历史与国家神话反思"
 ---
 # True History of the Kelly Gang
 

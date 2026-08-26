@@ -1,0 +1,27 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R9 大洋洲与太平洋")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r9_priority: {displayName: R9优先级}
+  note.r9_tradition: {displayName: 内部传统}
+  note.r9_role: {displayName: R9机制/意义}
+views:
+  - type: table
+    name: 全部 R9 作品
+    order: [file.name, author, year, r9_priority, r9_tradition, r9_role]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r9_priority == "★"
+    order: [file.name, author, r9_tradition, r9_role]
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r9_tradition
+      direction: ASC
+    order: [file.name, author, year, r9_priority, r9_role]
