@@ -10,15 +10,39 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: null
-source_version: "2.12-qt8-restructure"
+source_version: "2.17-qt8.2-archetype-pilot-b"
 ---
  
 # QT8.2.15 牺牲、罪、救赎与替罪
 
-> 路径：Q轴 → QT8 → QT8.2 世界文化母题与原型 → **QT8.2.15 牺牲、罪、救赎与替罪**
+> 路径：Q轴 → QT8 → QT8.2 世界文化母题、原型与叙事结构 → **QT8.2.15 牺牲、罪、救赎与替罪**
 
-本节点为母题型专题叶节点。正式专题地图应研究：母题定义与边界、子母题／原型词表、核心结构、跨文明实例、文本溯源、传播与独立同构、历史变体、后世作品、与其他母题的关系、支撑书目。
+本节点继续作为一级母题簇／问题域容器，不直接承担所有重型研究。其下可以逐步建立 motif / archetype / plot_pattern / symbol 等具体 QT8.2 component；对象可同时关联其他母题簇，不采用唯一归属树。
 
-## 专题地图
+## 已建立组件
 
-待 QT8.1 积累足够跨文明材料后建立；骨架阶段不预建空专题包。
+### 受苦义人｜archetype Pilot B
+
+→ [[../../../30 专题/QT8.2.15 牺牲、罪、救赎与替罪/受苦义人/00 受苦义人|受苦义人]]
+
+当前状态：`PILOT_B_CONTENT_PASS_A`
+
+对象类型：
+
+```text
+archetype
+→ abstract_archetype
+```
+
+本 Pilot 当前用于验证：
+
+- archetype 与 theme / trait / plot_pattern 的边界；
+- `core_functions / variable_features`；
+- source figure 与 archetype 分层；
+- `source_status` 在 archetype 上的跨类型复用；
+- functional similarity 与 historical transmission 分离；
+- Shared Data Layer V0 在 archetype 类型上的复用。
+
+## 后续建设原则
+
+本母题簇不因为概念上相关就批量生成组件。只有当具体对象能够通过对应模板准入并具有来源／文本证据时，才建立正式 component。
