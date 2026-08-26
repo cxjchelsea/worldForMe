@@ -1,0 +1,22 @@
+name: R10 author cleanup V1
+on:
+  push:
+    paths:
+      - 'scripts/apply_r10_author_cleanup_v1.py'
+      - '.github/workflows/r10-author-cleanup-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/apply_r10_author_cleanup_v1.py
+      - name: Commit cleanup
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/30 专题/R10 跨区域文学传统/00 跨区域文学传统.md' '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_acceptance/R10_AUTHOR_CLEANUP_V1.md'
+          git diff --cached --quiet || git commit -m 'fix: clean R10 author metadata'
+          git push
