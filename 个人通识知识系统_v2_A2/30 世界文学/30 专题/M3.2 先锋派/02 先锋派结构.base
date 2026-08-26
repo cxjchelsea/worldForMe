@@ -1,0 +1,8 @@
+filters:
+  and:
+    - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/")
+views:
+  - type: table
+    name: M3.2 结构
+    order:
+      - file.name
