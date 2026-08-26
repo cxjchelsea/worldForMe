@@ -24,3 +24,5 @@ jobs:
           path: |
             reports/m32_coverage_audit.md
             reports/m32_coverage_audit.json
+
+# rerun-after-repair: 2026-08-26
