@@ -1,4 +1,5 @@
 name: R8 structural completion V1
+# trigger: execute R8 completion after workflow registration
 on:
   push:
     paths:
@@ -15,7 +16,7 @@ jobs:
       - name: Commit R8 completion
         run: |
           git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git config user.email 41898282+cxjchelsea@users.noreply.github.com
           git add .
           git diff --cached --quiet || git commit -m "feat: complete R8 Southeast Asian literature topic map"
           git push
