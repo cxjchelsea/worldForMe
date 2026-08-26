@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: null
-source_version: "2.19-qt8.2-solomon-named-archetype-pilot"
+source_version: "2.20-qt8.2-solomon-named-archetype-pass-b"
 ---
  
 # QT8.2.8 王权、合法性与秩序更替
@@ -25,7 +25,7 @@ source_version: "2.19-qt8.2-solomon-named-archetype-pilot"
 
 → [[../../../30 专题/QT8.2.8 王权、合法性与秩序更替/所罗门王/00 所罗门王|所罗门王]]
 
-当前状态：`PILOT_B1_CONTENT_PASS_A`
+当前状态：`PILOT_B1_READY_FOR_ACCEPTANCE`
 
 对象类型：
 
@@ -34,15 +34,21 @@ archetype
 → named_archetype
 ```
 
-本 Pilot 当前用于验证：
+Pass B 已支持：
 
 - `source_figure` 与 `named_archetype` 分层；
-- `identity_anchor` 是否是命名型原型必需字段；
+- `identity_anchor` 成为命名型原型必要模型；
+- identity anchor 进一步拆为 `required_identity_anchors / supporting_identity_anchors`；
 - `core_functions / variable_features` 在命名型对象上的复用；
-- 智慧王、圣殿建造者、知识权威、魔法王等接受层如何发生特征选择与漂移；
-- Jewish / Christian / Islamic / esoteric reception 是否可以在不倒灌来源层的情况下统一建模；
-- `figure_rewriting` 是否需要成为共享 work relation_type。
+- 来源层高重要特征不自动等于跨接受史 core function；
+- `builder_and_centralizer` 降级为 `temple_builder_and_centralizer / variable_feature`；
+- core functions 收束为智慧／裁判、神授王权、卓越知识权威；
+- `figure_rewriting` 正式进入共享 work relation vocabulary；
+- `character_or_name_borrowing / figure_rewriting / direct_adaptation` 三者边界可执行；
+- Jewish / Christian / Islamic / esoteric reception 可在不倒灌来源层的情况下统一建模。
 
 ## 后续建设原则
 
 本节点不因为“王者相关”就批量生成文化原型。只有具体对象通过对应模板准入并具有来源／接受证据后，才建立正式 component。
+
+下一步：**Pilot B.1 Acceptance Review**。
