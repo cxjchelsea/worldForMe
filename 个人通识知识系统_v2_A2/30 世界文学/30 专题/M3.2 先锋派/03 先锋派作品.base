@@ -1,6 +1,7 @@
 filters:
   and:
     - type == "work"
+    - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
     - topics.contains("WL-TOPIC-M3.2-AVANT-GARDE")
 properties:
   file.name:
@@ -16,15 +17,17 @@ properties:
   note.m32_priority:
     displayName: 优先级
   note.m32_movement_cluster:
-    displayName: 运动
+    displayName: 先锋运动
+  note.m32_history_position:
+    displayName: 历史位置
   note.m32_axes:
-    displayName: 机制
+    displayName: 专题机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
     displayName: 地域
   note.axis_m:
-    displayName: 思潮
+    displayName: M轴坐标
   note.axis_g:
     displayName: 类型
   note.axis_q:
@@ -43,6 +46,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -62,6 +66,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -81,6 +86,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -100,6 +106,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -119,6 +126,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -140,6 +148,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -148,7 +157,27 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按运动
+    name: 按历史位置
+    groupBy:
+      property: m32_history_position
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m32_priority
+      - m32_movement_cluster
+      - m32_history_position
+      - m32_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按先锋运动
     groupBy:
       property: m32_movement_cluster
       direction: ASC
@@ -159,6 +188,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -178,6 +208,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -186,7 +217,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按思潮
+    name: 按M轴坐标
     groupBy:
       property: axis_m
       direction: ASC
@@ -197,6 +228,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -216,6 +248,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -235,6 +268,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r
@@ -255,6 +289,7 @@ views:
       - topic_links
       - m32_priority
       - m32_movement_cluster
+      - m32_history_position
       - m32_axes
       - axis_t
       - axis_r

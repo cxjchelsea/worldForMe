@@ -27,9 +27,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ◆
-modernism_tradition_cluster: 殖民与跨国现代主义
-modernism_axes: []
+modernism_priority: "◆"
+modernism_tradition_cluster: "殖民与跨国现代主义"
+modernism_axes: "[]"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -38,6 +38,7 @@ t4_priority: ◆
 t4_history_position: 黑人现代主义、非洲与加勒比 · 诗歌
 r7_priority: "△"
 r7_role: "区域扩展阅读（非结构锚点）"
+modernism_history_position: "黑人现代主义、非洲与加勒比 · 诗歌"
 ---
 # Gestaltes en diere
 

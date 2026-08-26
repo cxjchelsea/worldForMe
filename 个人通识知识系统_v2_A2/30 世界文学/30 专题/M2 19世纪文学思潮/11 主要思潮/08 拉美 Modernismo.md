@@ -5,6 +5,7 @@ topic_id: "WL-TOPIC-M2-19C-MOVEMENTS"
 parent: "WL-TOPIC-M2-19C-MOVEMENTS"
 dimension: "movement"
 sequence: 8
+history_position: "内部分类与横向展开"
 ---
 # 拉美 Modernismo
 

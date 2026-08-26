@@ -27,9 +27,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ◆
-modernism_tradition_cluster: 南亚、波斯与阿拉伯现代主义
-modernism_axes: []
+modernism_priority: "◆"
+modernism_tradition_cluster: "南亚、波斯与阿拉伯现代主义"
+modernism_axes: "[]"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -40,6 +40,7 @@ r3_tradition: "孟加拉与东部语言文学传统"
 r3_role:
 - "孟加拉现代诗"
 r3_priority: ◆
+modernism_history_position: "南亚殖民现代性与多语言文学 · 诗歌"
 ---
 # Banalata Sen
 

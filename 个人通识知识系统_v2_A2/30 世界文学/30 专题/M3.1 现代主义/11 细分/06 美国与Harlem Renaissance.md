@@ -7,6 +7,7 @@ dimension: "tradition"
 sequence: 6
 modernism_tradition_cluster: "美国与Harlem Renaissance"
 source_lines: "460-597"
+history_position: "内部分类与横向展开"
 ---
 # 美国与Harlem Renaissance
 

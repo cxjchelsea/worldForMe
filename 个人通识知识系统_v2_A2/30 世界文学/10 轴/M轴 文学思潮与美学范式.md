@@ -55,7 +55,7 @@ M1：人、理性、自然、国家与古典传统如何被重新定义？
 
 ## v2.7 集成状态
 
-`M_AXIS_STATUS = FROZEN_MATURE`
+`M_AXIS_STATUS = FROZEN_MATURE_BASE_SEMANTICS_REPAIRED`
 
 - 7 个实际叶专题均已建立并完成书目覆盖：M1 76、M2 85、M3.1 149、M3.2 68、M4 90、M5.1 80、M5.2 74。
 - 所有叶节点均已接入唯一专题主页；`topic_map` 统一为单一路径字符串，taxonomy group 继续保持 `topic_map: null`。

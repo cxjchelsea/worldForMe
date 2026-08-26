@@ -15,15 +15,17 @@ axis_q: []
 axis_source: manual_m32_structural_gap_fill_v1
 topics:
 - WL-TOPIC-M3.2-AVANT-GARDE
-topic_links: []
-m32_priority: ★
-m32_movement_cluster: 意大利未来主义
+topic_links:
+- '[[../30 专题/M3.2 先锋派/00 先锋派|先锋派]]'
+m32_priority: "★"
+m32_movement_cluster: "意大利未来主义"
 m32_axes:
 - 声音诗
 - 排版实验
 - 战争机器
 verification_status: 手工核验
 bibliography_status: structural_anchor_metadata_pending
+m32_history_position: "1909后第一波先锋宣言与技术崇拜"
 ---
 # Zang Tumb Tuuum
 

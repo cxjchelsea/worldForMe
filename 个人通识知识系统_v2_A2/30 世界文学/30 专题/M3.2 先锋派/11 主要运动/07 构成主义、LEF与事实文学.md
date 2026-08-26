@@ -5,6 +5,7 @@ topic_id: "WL-TOPIC-M3.2-AVANT-GARDE"
 parent: "WL-TOPIC-M3.2-AVANT-GARDE"
 dimension: "movement"
 sequence: 7
+history_position: "内部分类与横向展开"
 ---
 # 构成主义、LEF与事实文学
 

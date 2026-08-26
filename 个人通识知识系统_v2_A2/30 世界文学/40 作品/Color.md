@@ -26,8 +26,8 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ◆
-modernism_tradition_cluster: 美国与Harlem Renaissance
+modernism_priority: "◆"
+modernism_tradition_cluster: "美国与Harlem Renaissance"
 modernism_axes:
 - 种族与黑人现代主义
 verification_status: 自动通过
@@ -38,6 +38,7 @@ t4_priority: ◆
 t4_history_position: 西欧与英美现代主义场域 · 诗歌
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
+modernism_history_position: "西欧与英美现代主义场域 · 诗歌"
 ---
 # Color
 

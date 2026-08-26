@@ -5,6 +5,7 @@ topic_id: "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
 parent: "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
 dimension: "movement"
 sequence: 9
+history_position: "内部分类与横向展开"
 ---
 # 拉丁美洲Boom
 

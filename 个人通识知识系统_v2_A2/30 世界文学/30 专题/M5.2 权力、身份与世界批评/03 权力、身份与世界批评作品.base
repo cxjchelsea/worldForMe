@@ -1,6 +1,7 @@
 filters:
   and:
     - type == "work"
+    - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
     - topics.contains("WL-TOPIC-M5.2-POWER-IDENTITY-WORLD")
 properties:
   file.name:
@@ -16,17 +17,17 @@ properties:
   note.m52_priority:
     displayName: 优先级
   note.m52_framework_cluster:
-    displayName: 框架
-  note.m52_role:
-    displayName: 角色
+    displayName: 批评框架
+  note.m52_history_position:
+    displayName: 历史位置
   note.m52_axes:
-    displayName: 机制
+    displayName: 专题机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
     displayName: 地域
   note.axis_m:
-    displayName: 思潮
+    displayName: M轴坐标
   note.axis_g:
     displayName: 类型
   note.axis_q:
@@ -45,7 +46,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -65,7 +66,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -85,7 +86,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -105,7 +106,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -125,7 +126,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -147,7 +148,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -156,7 +157,27 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按框架
+    name: 按历史位置
+    groupBy:
+      property: m52_history_position
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m52_priority
+      - m52_framework_cluster
+      - m52_history_position
+      - m52_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按批评框架
     groupBy:
       property: m52_framework_cluster
       direction: ASC
@@ -167,7 +188,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -187,7 +208,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -196,7 +217,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按思潮
+    name: 按M轴坐标
     groupBy:
       property: axis_m
       direction: ASC
@@ -207,7 +228,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -227,7 +248,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -247,7 +268,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r
@@ -268,7 +289,7 @@ views:
       - topic_links
       - m52_priority
       - m52_framework_cluster
-      - m52_role
+      - m52_history_position
       - m52_axes
       - axis_t
       - axis_r

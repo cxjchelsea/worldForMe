@@ -23,8 +23,8 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ★
-modernism_tradition_cluster: 美国与Harlem Renaissance
+modernism_priority: "★"
+modernism_tradition_cluster: "美国与Harlem Renaissance"
 modernism_axes:
 - 种族与黑人现代主义
 - 性别与女性现代主义
@@ -37,6 +37,7 @@ t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
+modernism_history_position: "哈莱姆文艺复兴与黑人现代主义"
 ---
 # Passing
 

@@ -7,6 +7,7 @@ dimension: "tradition"
 sequence: 8
 modernism_tradition_cluster: "拉丁美洲与Brazilian Modernismo"
 source_lines: "665-724"
+history_position: "内部分类与横向展开"
 ---
 # 拉丁美洲与Brazilian Modernismo
 

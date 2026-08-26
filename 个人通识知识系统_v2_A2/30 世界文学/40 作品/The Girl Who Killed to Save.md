@@ -23,8 +23,8 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ★
-modernism_tradition_cluster: 殖民与跨国现代主义
+modernism_priority: "★"
+modernism_tradition_cluster: "殖民与跨国现代主义"
 modernism_axes:
 - 帝国与殖民现代性
 - 现代主义戏剧
@@ -37,6 +37,7 @@ t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
+modernism_history_position: "南非黑人现代主义与全球现代主义扩展"
 ---
 # The Girl Who Killed to Save
 
