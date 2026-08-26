@@ -1,0 +1,24 @@
+name: m-axis-integration-closure-v1
+on:
+  push:
+    branches: [topic/m-axis-integration-closure-v1]
+    paths:
+      - 'scripts/close_m_axis_integration_v1.py'
+      - '.github/workflows/m-axis-integration-closure-v1.yml'
+permissions:
+  contents: write
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic/m-axis-integration-closure-v1
+      - run: python scripts/close_m_axis_integration_v1.py
+      - run: |
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "个人通识知识系统_v2_A2/30 世界文学/20 节点/M 思潮" "个人通识知识系统_v2_A2/30 世界文学/30 专题"
+          git commit -m "feat(m-axis): align integration with approved T-axis format"
+          git push origin HEAD:topic/m-axis-integration-closure-v1
