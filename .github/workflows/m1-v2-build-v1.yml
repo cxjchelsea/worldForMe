@@ -1,0 +1,33 @@
+name: m1-v2-build-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m1-v2
+    paths:
+      - 'scripts/apply_m1_v2_structure_and_bibliography_v1.py'
+      - '.github/workflows/m1-v2-build-v1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic/m-axis-m1-v2
+      - name: Build M1 V2 topic and bibliography
+        run: python scripts/apply_m1_v2_structure_and_bibliography_v1.py
+      - name: Commit generated topic and mappings
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "个人通识知识系统_v2_A2/30 世界文学/30 专题/M1 早期现代思想与美学" "个人通识知识系统_v2_A2/30 世界文学/40 作品"
+          git commit -m "feat(m1): build V2 topic and bibliography"
+          git push origin HEAD:topic/m-axis-m1-v2
