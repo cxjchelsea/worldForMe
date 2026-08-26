@@ -3,9 +3,9 @@
 - Total canonical Works: **3247**
 - Works currently mapped to R3: **57**
 - Structural slots: **63**
-- Covered: **19**
-- Missing: **44**
-- Coverage: **30.2%**
+- Covered: **18**
+- Missing: **45**
+- Coverage: **28.6%**
 
 | Tradition | Slot | Status | Anchor | Priority |
 |---|---|---|---|---|
@@ -32,7 +32,7 @@
 | 泰米尔与南印度文学传统 | 泰卢固古典文学 | MISSING | — | P1 |
 | 泰米尔与南印度文学传统 | 卡纳达古典文学 | MISSING | — | P1 |
 | 泰米尔与南印度文学传统 | 马拉雅拉姆现代小说 | MISSING | — | P1 |
-| 泰米尔与南印度文学传统 | 现代泰米尔文学 | MISSING | — | P1 |
+| 泰米尔与南印度文学传统 | 现代南印度小说 | MISSING | — | P1 |
 | 北印度俗语—Bhakti与印地文学传统 | 卡比尔诗歌 | MISSING | — | P0 |
 | 北印度俗语—Bhakti与印地文学传统 | 克里希纳Bhakti诗 | MISSING | — | P1 |
 | 北印度俗语—Bhakti与印地文学传统 | 罗摩Bhakti史诗 | COVERED | 罗摩功行录 | P0 |
@@ -63,7 +63,7 @@
 | 僧伽罗—斯里兰卡文学传统 | 巴利编年史 | MISSING | — | P0 |
 | 僧伽罗—斯里兰卡文学传统 | 古典僧伽罗诗文 | MISSING | — | P1 |
 | 僧伽罗—斯里兰卡文学传统 | 现代僧伽罗小说 | MISSING | — | P0 |
-| 僧伽罗—斯里兰卡文学传统 | 斯里兰卡英语/战争文学 | COVERED | 英国病人 | P1 |
+| 僧伽罗—斯里兰卡文学传统 | 斯里兰卡英语/战争文学 | MISSING | — | P1 |
 | 尼泊尔—喜马拉雅文学传统 | 尼泊尔语罗摩衍那 | MISSING | — | P0 |
 | 尼泊尔—喜马拉雅文学传统 | 尼泊尔现代长诗 | MISSING | — | P0 |
 | 尼泊尔—喜马拉雅文学传统 | 尼泊尔现代小说 | MISSING | — | P1 |
@@ -104,25 +104,26 @@
 - 泰米尔与南印度文学传统 / 泰米尔Bhakti女性诗 → 安达尔诗歌|Andal
 - 泰米尔与南印度文学传统 / 泰卢固古典文学 → 摩诃婆罗多（泰卢固）|Andhra Mahabharatam
 - 泰米尔与南印度文学传统 / 卡纳达古典文学 → 维克拉玛尔朱那胜利记|Vikramarjuna Vijaya
-- 泰米尔与南印度文学传统 / 马拉雅拉姆现代小说 → 山羊的一生|Pathummayude Aadu|Chemmeen|虾
-- 泰米尔与南印度文学传统 / 现代泰米尔文学 → 火焰|Samskara|Ponniyin Selvan
+- 泰米尔与南印度文学传统 / 马拉雅拉姆现代小说 → Chemmeen|虾
+- 泰米尔与南印度文学传统 / 现代南印度小说 → Samskara|葬礼
 - 北印度俗语—Bhakti与印地文学传统 / 克里希纳Bhakti诗 → 苏尔达斯诗选|Sursagar
 - 北印度俗语—Bhakti与印地文学传统 / 女性Bhakti诗 → 米拉拜诗选|Mirabai
-- 北印度俗语—Bhakti与印地文学传统 / 印地短篇现实主义 → 棋手|Premchand short stories|两个公牛
+- 北印度俗语—Bhakti与印地文学传统 / 印地短篇现实主义 → 棋手|两个公牛
 - 北印度俗语—Bhakti与印地文学传统 / 现代印地诗歌 → 卡马亚尼|Kamayani
 - 波斯语—Hindavi—乌尔都文学传统 / 南亚波斯/Hindavi诗 → 阿米尔·霍斯陆诗选|Amir Khusrau
 - 波斯语—Hindavi—乌尔都文学传统 / 伊克巴尔现代诗 → 伊克巴尔诗选|Bal-e-Jibril|Bang-e-Dara
 - 波斯语—Hindavi—乌尔都文学传统 / dastan长篇叙事 → 阿米尔·哈姆扎传奇|Dastan-e-Amir Hamza
 - 孟加拉与东部语言文学传统 / 早期孟加拉佛教诗 → 查尔亚歌|Charyapada
-- 孟加拉与东部语言文学传统 / 孟加拉小说形成 → 毒树|Anandamath|阿难陀寺
-- 孟加拉与东部语言文学传统 / 孟加拉现实主义小说 → 斯里坎特|Pather Panchali|道路之歌
+- 孟加拉与东部语言文学传统 / 孟加拉小说形成 → 阿难陀寺|Anandamath
+- 孟加拉与东部语言文学传统 / 孟加拉现实主义小说 → 道路之歌|Pather Panchali
 - 孟加拉与东部语言文学传统 / 纳兹鲁尔 → 反叛者|Bidrohi
 - 旁遮普—信德与西北文学传统 / 旁遮普苏菲诗 → 布莱·沙阿诗选|Bulleh Shah
 - 旁遮普—信德与西北文学传统 / 信德苏菲诗 → 沙阿·阿卜杜勒·拉蒂夫诗选|Shah Jo Risalo
-- 旁遮普—信德与西北文学传统 / 旁遮普分治文学 → 针陀与其他故事|Pinjar|骨笼
+- 旁遮普—信德与西北文学传统 / 旁遮普分治文学 → Pinjar|骨笼
 - 僧伽罗—斯里兰卡文学传统 / 古典僧伽罗诗文 → 鸽使诗|Selalihini Sandesaya
+- 僧伽罗—斯里兰卡文学传统 / 斯里兰卡英语/战争文学 → 安尼尔的鬼魂|Anil’s Ghost|Anils Ghost
 - 尼泊尔—喜马拉雅文学传统 / 尼泊尔现代小说 → 蓝色含羞草|Shirish Ko Phool
-- 南亚英语文学传统 / 印度英语地方小说 → 马尔古迪的日子|Swami and Friends|斯瓦米和朋友
+- 南亚英语文学传统 / 印度英语地方小说 → 斯瓦米和朋友|Swami and Friends
 - 南亚英语文学传统 / 跨国历史小说 → 玻璃宫|The Glass Palace
 
 `R3_STRUCTURAL_COVERAGE_V1 = AUDITED_READ_ONLY`
