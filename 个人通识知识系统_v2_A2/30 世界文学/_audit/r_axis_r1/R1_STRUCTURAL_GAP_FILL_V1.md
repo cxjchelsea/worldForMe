@@ -43,4 +43,14 @@
 - A distinct canonical Work `İntibah.md` was created for Namık Kemal to avoid same-title collision.
 - Ugaritic ritual/ritual-text slot remains intentionally PARTIAL: no synthetic anthology was invented merely to force a 100% score.
 
-`R1_STRUCTURAL_GAP_FILL_V1 = APPLIED_AND_VERIFIED_PENDING_REAUDIT`
+## Re-audit result
+
+- Structural slots: **74**
+- COVERED: **73**
+- PARTIAL: **1**
+- MISSING: **0**
+- Weighted structural coverage: **99.3%**
+- P0 gaps: **0**
+- P1 gaps: **0**
+
+`R1_STRUCTURAL_GAP_FILL_V1 = APPLIED_AND_VERIFIED`
