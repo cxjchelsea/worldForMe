@@ -1,23 +1,10 @@
 ---
-id: WL-QT8.4
-type: literature_node
-name: "欧洲剑客"
-code: QT8.4
-axis: Q
-parent: WL-QT8
-level: 3
-coverage_priority: Interest
-node_kind: taxonomy_leaf
-anchorable: true
-topic_map:
-  - "[[../../../30 专题/QT8.4 欧洲剑客/00 欧洲剑客文学]]"
-source_version: "2.8-q-facets"
+type: literature_redirect
+deprecated: true
+redirect_to: "[[QT8.3.5 欧洲剑客／披风剑客]]"
+source_version: "2.12-qt8-restructure"
 ---
 
-# QT8.4 欧洲剑客
+# 已迁移
 
-> 路径：Q轴 → QT8 英雄、边疆与法外者文化传统 → **QT8.4 欧洲剑客**
-
-## 专题地图
-
-- [[../../../30 专题/QT8.4 欧洲剑客/00 欧洲剑客文学|欧洲剑客文学]]
+本节点已在 QT8 重构中迁移至 [[QT8.3.5 欧洲剑客／披风剑客]]。保留此文件仅用于兼容旧 Obsidian 链接；不再作为 taxonomy 节点。

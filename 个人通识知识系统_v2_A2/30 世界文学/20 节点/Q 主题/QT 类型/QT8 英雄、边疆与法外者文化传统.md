@@ -1,50 +1,10 @@
 ---
-id: WL-QT8
-type: literature_node
-name: "英雄、边疆与法外者文化传统"
-code: QT8
-axis: Q
-parent: WL-QT
-level: 2
-coverage_priority: Interest
-node_kind: taxonomy_group
-anchorable: false
-aliases:
-- "QT8 文化类型传统"
-topic_map:
-  - "[[../../../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学]]"
-source_version: "2.11-qt-expand"
+type: literature_redirect
+deprecated: true
+redirect_to: "[[QT8 世界文化母题、原型与叙事传统]]"
+source_version: "2.12-qt8-restructure"
 ---
 
-# QT8 英雄、边疆与法外者文化传统
+# 已迁移
 
-> 路径：Q轴 → QT 类型与叙事传统 → **QT8 英雄、边疆与法外者文化传统**
-
-比旧称「文化类型传统」更准确：武侠、骑士、武士、剑客、西部、Gaucho、侠盗、海盗都是英雄／边疆／法外者传统。
-
-```text
-QT8  英雄、边疆与法外者文化传统
-├─ QT8.1 武侠  ← 已有专题
-├─ QT8.2 欧洲骑士  ← 已有专题
-├─ QT8.3 日本武士与剑豪  ← 已有专题
-├─ QT8.4 欧洲剑客  ← 已有专题
-├─ QT8.5 西部  ← 已有专题
-├─ QT8.6 Gaucho  ← 已有专题
-├─ QT8.7 侠盗  ← 已有专题
-└─ QT8.8 海盗  ← 已有专题
-```
-
-## 子节点
-
-- [[QT8.1 武侠]]
-- [[QT8.2 欧洲骑士]]
-- [[QT8.3 日本武士与剑豪]]
-- [[QT8.4 欧洲剑客]]
-- [[QT8.5 西部]]
-- [[QT8.6 Gaucho]]
-- [[QT8.7 侠盗]]
-- [[QT8.8 海盗]]
-
-## 专题地图
-
-- [[../../../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学|世界武人、边疆与法外英雄文学]]
+本节点已在 QT8 重构中迁移至 [[QT8 世界文化母题、原型与叙事传统]]。保留此文件仅用于兼容旧 Obsidian 链接；不再作为 taxonomy 节点。

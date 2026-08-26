@@ -1,23 +1,10 @@
 ---
-id: WL-QT8.1
-type: literature_node
-name: "武侠"
-code: QT8.1
-axis: Q
-parent: WL-QT8
-level: 3
-coverage_priority: Interest
-node_kind: taxonomy_leaf
-anchorable: true
-topic_map:
-  - "[[../../../30 专题/QT8.1 武侠/00 武侠文学]]"
-source_version: "2.8-q-facets"
+type: literature_redirect
+deprecated: true
+redirect_to: "[[QT8.3.1 中国武侠]]"
+source_version: "2.12-qt8-restructure"
 ---
 
-# QT8.1 武侠
+# 已迁移
 
-> 路径：Q轴 → QT8 英雄、边疆与法外者文化传统 → **QT8.1 武侠**
-
-## 专题地图
-
-- [[../../../30 专题/QT8.1 武侠/00 武侠文学|武侠文学]]
+本节点已在 QT8 重构中迁移至 [[QT8.3.1 中国武侠]]。保留此文件仅用于兼容旧 Obsidian 链接；不再作为 taxonomy 节点。
