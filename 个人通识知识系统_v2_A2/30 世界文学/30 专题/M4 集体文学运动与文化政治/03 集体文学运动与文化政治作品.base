@@ -2,7 +2,10 @@ filters:
   and:
     - type == "work"
     - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
-    - topics.contains("WL-TOPIC-M4-COLLECTIVE-MOVEMENTS")
+    - or:
+        - m4_priority == "★"
+        - m4_priority == "◆"
+        - m4_priority == "△"
 properties:
   file.name:
     displayName: 作品
@@ -17,7 +20,7 @@ properties:
   note.m4_priority:
     displayName: 优先级
   note.m4_movement_cluster:
-    displayName: 集体运动
+    displayName: 专题思潮
   note.m4_history_position:
     displayName: 历史位置
   note.m4_axes:
@@ -177,7 +180,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按集体运动
+    name: 按专题思潮
     groupBy:
       property: m4_movement_cluster
       direction: ASC
@@ -285,7 +288,7 @@ views:
     order:
       - file.name
       - author
-      - read_status
+      - verification_status
       - topic_links
       - m4_priority
       - m4_movement_cluster

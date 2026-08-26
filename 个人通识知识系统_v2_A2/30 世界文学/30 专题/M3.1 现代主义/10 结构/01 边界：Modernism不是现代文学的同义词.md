@@ -6,6 +6,7 @@ parent: "WL-TOPIC-M3-MODERNISM"
 dimension: "definition"
 sequence: 1
 history_position: "专题入口与边界"
+parent_name: "现代主义"
 ---
 # 边界：Modernism不是现代文学的同义词
 

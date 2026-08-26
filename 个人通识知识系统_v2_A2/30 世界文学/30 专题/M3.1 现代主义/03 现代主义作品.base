@@ -2,7 +2,10 @@ filters:
   and:
     - type == "work"
     - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
-    - topics.contains("WL-TOPIC-M3-MODERNISM")
+    - or:
+        - modernism_priority == "★"
+        - modernism_priority == "◆"
+        - modernism_priority == "△"
 properties:
   file.name:
     displayName: 作品
@@ -17,7 +20,7 @@ properties:
   note.modernism_priority:
     displayName: 优先级
   note.modernism_tradition_cluster:
-    displayName: 现代主义传统
+    displayName: 专题思潮
   note.modernism_history_position:
     displayName: 历史位置
   note.modernism_axes:
@@ -177,7 +180,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按现代主义传统
+    name: 按专题思潮
     groupBy:
       property: modernism_tradition_cluster
       direction: ASC
@@ -285,7 +288,7 @@ views:
     order:
       - file.name
       - author
-      - read_status
+      - verification_status
       - topic_links
       - modernism_priority
       - modernism_tradition_cluster

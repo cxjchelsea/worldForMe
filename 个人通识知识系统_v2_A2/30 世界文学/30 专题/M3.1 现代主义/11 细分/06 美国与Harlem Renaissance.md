@@ -8,6 +8,7 @@ sequence: 6
 modernism_tradition_cluster: "美国与Harlem Renaissance"
 source_lines: "460-597"
 history_position: "内部分类与横向展开"
+parent_name: "02 全球现代主义传统"
 ---
 # 美国与Harlem Renaissance
 

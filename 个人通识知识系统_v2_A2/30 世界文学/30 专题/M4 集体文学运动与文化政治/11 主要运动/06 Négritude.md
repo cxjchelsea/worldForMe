@@ -6,6 +6,7 @@ parent: "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
 dimension: "movement"
 sequence: 6
 history_position: "内部分类与横向展开"
+parent_name: "集体文学运动与文化政治"
 ---
 # Négritude
 

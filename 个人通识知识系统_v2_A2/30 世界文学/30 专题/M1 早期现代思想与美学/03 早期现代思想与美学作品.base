@@ -2,7 +2,10 @@ filters:
   and:
     - type == "work"
     - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
-    - topics.contains("WL-TOPIC-M1-EARLY-MODERN")
+    - or:
+        - m1_priority == "★"
+        - m1_priority == "◆"
+        - m1_priority == "△"
 properties:
   file.name:
     displayName: 作品
@@ -285,7 +288,7 @@ views:
     order:
       - file.name
       - author
-      - read_status
+      - verification_status
       - topic_links
       - m1_priority
       - m1_movement_cluster

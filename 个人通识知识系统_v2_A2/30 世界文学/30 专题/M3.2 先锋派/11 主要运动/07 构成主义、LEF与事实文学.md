@@ -6,6 +6,7 @@ parent: "WL-TOPIC-M3.2-AVANT-GARDE"
 dimension: "movement"
 sequence: 7
 history_position: "内部分类与横向展开"
+parent_name: "先锋派"
 ---
 # 构成主义、LEF与事实文学
 

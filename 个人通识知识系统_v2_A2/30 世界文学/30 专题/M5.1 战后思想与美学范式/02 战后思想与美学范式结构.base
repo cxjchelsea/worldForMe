@@ -2,8 +2,10 @@ filters:
   and:
     - topic_id == "WL-TOPIC-M5.1-POSTWAR-AESTHETICS"
 formulas:
-  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", "核心结构"))
+  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", if(dimension == "mechanism", "形成机制", "核心结构")))
   dimension_zh: if(dimension, dimension.replace("tradition", "传统与地域").replace("movement", "思潮与运动").replace("paradigm", "美学范式").replace("framework", "批评框架").replace("historical_system", "谱系与内部结构").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("transmission", "传播与地域").replace("comparison", "比较与边界").replace("definition", "定义与边界").replace("history", "时间框架与问题意识").replace("mechanism", "形成机制"), "")
+  history_zh: if(history_position, history_position, "—")
+  mechanism_zh: if(mechanism, mechanism, "—")
 properties:
   file.name:
     displayName: 节点
@@ -13,18 +15,27 @@ properties:
     displayName: 维度
   note.sequence:
     displayName: 顺序
-  note.parent:
+  note.parent_name:
     displayName: 父节点
-  note.history_position:
+  formula.history_zh:
     displayName: 历史位置
-  note.mechanism:
+  formula.mechanism_zh:
     displayName: 机制
   note.id:
     displayName: 编号
 views:
   - type: table
     name: 全部知识节点
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, history_position, mechanism, id]
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
+  - type: table
+    name: 按类型
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
   - type: table
     name: 核心结构
     filters:
@@ -32,17 +43,26 @@ views:
         - 'type != "literature_topic_section"'
         - 'type != "literature_topic_mechanism"'
         - 'dimension != "mechanism"'
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, history_position, mechanism, id]
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
   - type: table
     name: 专题分支
     filters:
       and:
         - 'type == "literature_topic_section"'
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, history_position, mechanism, id]
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
   - type: table
     name: 形成机制
     filters:
       or:
         - 'type == "literature_topic_mechanism"'
         - 'dimension == "mechanism"'
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, history_position, mechanism, id]
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]

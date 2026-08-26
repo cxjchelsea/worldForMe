@@ -20,6 +20,7 @@ mechanism:
 - 种族与黑人现代主义
 - 意识与内在世界
 - 现代主义戏剧
+parent_name: "04 全球现代主义与跨专题桥接"
 ---
 # Global Modernism与殖民现代性
 
