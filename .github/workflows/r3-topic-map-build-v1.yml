@@ -1,0 +1,31 @@
+name: R3 topic map build V1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/build_r3_topic_map_v1.py'
+      - '.github/workflows/r3-topic-map-build-v1.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build R3 topic map
+        run: python scripts/build_r3_topic_map_v1.py
+      - name: Commit R3 topic map
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/30 专题/R3 南亚文学' \
+                  '个人通识知识系统_v2_A2/30 世界文学/20 节点/R 地域/R3 南亚文学.md'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "feat: build R3 South Asian literature topic map"
+          git pull --rebase origin main
+          git push
