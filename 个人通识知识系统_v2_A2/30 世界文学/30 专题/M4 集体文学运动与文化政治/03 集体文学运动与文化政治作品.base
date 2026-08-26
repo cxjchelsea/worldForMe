@@ -1,0 +1,8 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-M4-COLLECTIVE-MOVEMENTS")
+views:
+  - type: table
+    name: 全部作品
+    order: [file.name, m4_priority, m4_movement_cluster, m4_axes]

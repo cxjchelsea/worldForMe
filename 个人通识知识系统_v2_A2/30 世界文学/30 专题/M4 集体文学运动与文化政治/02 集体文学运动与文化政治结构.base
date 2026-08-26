@@ -1,0 +1,6 @@
+filters:
+  and:
+    - file.inFolder("10 核心结构") || file.inFolder("11 主要运动") || file.inFolder("12 集体机制") || file.inFolder("13 边界与转型")
+views:
+  - type: table
+    name: 结构
