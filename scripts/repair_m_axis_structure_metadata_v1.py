@@ -2,6 +2,7 @@ from __future__ import annotations
 import re, subprocess
 from pathlib import Path
 
+# Triggered after the repair workflow was installed; keep this script one-shot and retire it after audit.
 ROOT = Path(__file__).resolve().parents[1]
 LIT = ROOT/'个人通识知识系统_v2_A2'/'30 世界文学'
 TOPICS = LIT/'30 专题'
