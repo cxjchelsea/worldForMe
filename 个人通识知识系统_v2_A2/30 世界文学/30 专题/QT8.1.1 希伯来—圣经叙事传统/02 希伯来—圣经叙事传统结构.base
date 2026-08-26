@@ -1,0 +1,37 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QT811"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部结构节点
+    order:
+      - sequence
+      - file.name
+      - type
+      - dimension
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'sequence < 20'
+    order:
+      - sequence
+      - file.name
+  - type: table
+    name: QT8.2 映射
+    filters:
+      and:
+        - 'dimension == "qt82_mapping"'
+    order:
+      - sequence
+      - file.name
