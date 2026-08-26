@@ -1,0 +1,11 @@
+---
+id: "WL-TOPIC-R6-N5"
+type: "literature_topic_section"
+topic_id: "WL-TOPIC-R6-LATAM"
+dimension: "literary_network"
+sequence: 5
+---
+
+# 革命—Indigenismo与人民文学网络
+
+墨西哥革命、古巴革命、土地改革、indigenismo 与左翼文化运动重组文学公共性。

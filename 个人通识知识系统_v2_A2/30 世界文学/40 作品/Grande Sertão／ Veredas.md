@@ -23,6 +23,7 @@ axis_q:
 - QT8.7 侠盗
 axis_source: inferred
 topics:
+  - WL-TOPIC-R6-LATAM
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-OUTLAW
 topic_links:
@@ -46,6 +47,9 @@ postwar_stage: 1945—1980：时期归属已确认，阶段待核
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
+r6_tradition: "巴西葡语文学传统"
+r6_role: "现代长篇"
+r6_priority: "★"
 ---
 # Grande Sertão: Veredas
 

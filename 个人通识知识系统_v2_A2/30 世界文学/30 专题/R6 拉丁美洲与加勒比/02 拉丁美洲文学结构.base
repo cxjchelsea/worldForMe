@@ -79,3 +79,16 @@ views:
       - formula.parent_zh
       - latam_history_stage
       - id
+
+  - type: table
+    name: 内部传统（R标准）
+    filters:
+      and:
+        - dimension == "internal_tradition"
+    order: [file.name, sequence]
+  - type: table
+    name: 跨传统网络（R标准）
+    filters:
+      and:
+        - dimension == "literary_network"
+    order: [file.name, sequence]

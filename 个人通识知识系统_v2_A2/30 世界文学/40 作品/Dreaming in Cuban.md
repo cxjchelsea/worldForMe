@@ -28,6 +28,7 @@ axis_q:
 - QH2.3 家庭与家族
 axis_source: inferred
 topics:
+  - WL-TOPIC-R6-LATAM
 - WL-TOPIC-G43-FAMILY
 topic_links:
 - '[[../30 专题/QH2.3 家庭与家族/00 家庭与家族|家庭与家族]]'
@@ -50,6 +51,9 @@ t6_history_position: 跨区域与离散文学场域 · 小说
 r5_tradition: "拉美裔—奇卡诺美国文学传统"
 r5_role: "古巴裔美国离散"
 r5_priority: "◆"
+r6_tradition: "西语加勒比文学传统"
+r6_role: "加勒比女性离散"
+r6_priority: "◆"
 ---
 # Dreaming in Cuban
 

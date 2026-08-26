@@ -28,6 +28,9 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 拉美书单.md:360
+r6_tradition: "Afro-Latin—Afro-Caribbean文学传统"
+r6_role: "古巴黑人诗学"
+r6_priority: "★"
 ---
 # Sóngoro cosongo
 
