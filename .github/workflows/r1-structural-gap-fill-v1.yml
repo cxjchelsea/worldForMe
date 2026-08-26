@@ -26,7 +26,9 @@ jobs:
       - name: Re-audit R1 structural coverage
         run: python scripts/audit_r1_structural_coverage_v1.py
       - name: Re-audit R1 topic coverage
-        run: python scripts/audit_r1_topic_coverage_v1.py
+        run: |
+          printf 'authorized by R1 structural gap fill V1\n' > '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r1/RUN_R1_TOPIC_COVERAGE_V1'
+          python scripts/audit_r1_topic_coverage_v1.py
       - name: Commit complete R1 structural gap fill
         run: |
           git config user.name "github-actions[bot]"
