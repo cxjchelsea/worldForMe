@@ -1,0 +1,28 @@
+name: m31-coverage-audit-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m3.1-v2
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run M3.1 coverage audit
+        run: python scripts/audit_m31_coverage_v1.py
+
+      - name: Upload audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: m31-coverage-audit
+          path: |
+            reports/m31_coverage_audit.md
+            reports/m31_coverage_audit.json
