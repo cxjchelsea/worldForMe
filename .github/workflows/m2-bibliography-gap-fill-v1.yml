@@ -22,7 +22,7 @@ jobs:
         run: python scripts/apply_m2_bibliography_gap_fill_v1.py
       - name: Commit gap fill
         run: |
-          if git diff --quiet; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "No changes"
             exit 0
           fi
