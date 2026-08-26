@@ -15,6 +15,15 @@ TOPICS = {
     'R10': ('R10 跨区域文学传统', None, 'WL-TOPIC-R10-TRANSREGIONAL'),
 }
 
+ORDER_FIELDS = [
+    'file.name', 'formula.author_zh', 'formula.read_status_zh', 'formula.topic_zh',
+    'formula.priority_zh', 'formula.tradition_zh', 'formula.role_zh',
+    'formula.axis_t_zh', 'formula.axis_r_zh', 'formula.axis_m_zh',
+    'formula.axis_g_zh', 'formula.axis_q_zh', 'formula.id_zh',
+    'formula.verification_zh',
+]
+ORDER = '\n'.join(f'      - {x}' for x in ORDER_FIELDS)
+
 
 def make_base(code, folder, axis_label, topic_id):
     pfx = code.lower()
@@ -76,45 +85,36 @@ properties:
 views:
   - type: table
     name: {all_name}
-    order: &standard_order
-      - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+    order:
+{ORDER}
   - type: table
     name: 核心 ★
     filters:
       and:
         - formula.priority_zh == "★"
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 重点 ◆
     filters:
       and:
         - formula.priority_zh == "◆"
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 扩展 △
     filters:
       and:
         - formula.priority_zh == "△"
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 未读
     filters:
       and:
         - formula.read_status_zh == "未读"
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 已读
     filters:
@@ -122,44 +122,51 @@ views:
         - or:
             - formula.read_status_zh == "已读"
             - formula.read_status_zh == "重读"
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 按{tradition_name}
     groupBy:
       property: formula.tradition_zh
       direction: ASC
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 按时间
     groupBy:
       property: formula.axis_t_zh
       direction: ASC
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 按思潮
     groupBy:
       property: formula.axis_m_zh
       direction: ASC
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 按类型
     groupBy:
       property: formula.axis_g_zh
       direction: ASC
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 按主题
     groupBy:
       property: formula.axis_q_zh
       direction: ASC
-    order: *standard_order
+    order:
+{ORDER}
   - type: table
     name: 待校验
     filters:
       and:
         - formula.verification_zh != "自动通过"
         - formula.verification_zh != "手工核验"
-    order: *standard_order
+    order:
+{ORDER}
 '''
 
 changed = []
@@ -182,6 +189,7 @@ AUD.write_text('''# R Axis Work Base Normalization V1
 - Views: **全部作品 / 核心 ★ / 重点 ◆ / 扩展 △ / 未读 / 已读 / 按内部传统 / 按时间 / 按思潮 / 按类型 / 按主题 / 待校验**
 - R10 remains filtered by topic membership, not synthetic `axis_r: R10`.
 - Display-layer fallbacks prevent blank cells without mutating canonical Work metadata.
+- View orders are explicit; no YAML anchors/aliases are used.
 
 `R_AXIS_WORK_BASE_NORMALIZATION_V1 = PASS`
 ''', encoding='utf-8')
