@@ -1,0 +1,24 @@
+name: m-axis-base-semantic-audit-v2
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit_m_axis_base_semantics_v2.py'
+      - '.github/workflows/m-axis-base-semantic-audit-v2.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Audit M-axis Base semantics
+        run: python scripts/audit_m_axis_base_semantics_v2.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m-axis-base-semantic-audit-v2
+          path: reports/m_axis_base_semantic_audit_v2.md
