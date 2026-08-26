@@ -1,0 +1,21 @@
+name: R axis structure base normalization V1
+on:
+  push:
+    paths:
+      - 'scripts/normalize_r_axis_structure_bases_v1.py'
+      - '.github/workflows/r-axis-structure-base-normalization-v1.yml'
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/normalize_r_axis_structure_bases_v1.py
+      - name: Commit normalized R-axis structure bases
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git diff --cached --quiet || git commit -m "feat: align R-axis structure bases with T-axis format"
+          git push
