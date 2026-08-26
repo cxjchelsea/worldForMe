@@ -1,1 +1,109 @@
-{"nodes":[{"id":"q","type":"text","text":"文学如何成为集体历史行动？","x":0,"y":0,"width":320,"height":80},{"id":"p","type":"text","text":"政治与阶级文学","x":-420,"y":180,"width":260,"height":70},{"id":"i","type":"text","text":"身份与文化解放","x":0,"y":180,"width":260,"height":70},{"id":"n","type":"text","text":"文学群体与跨国网络","x":420,"y":180,"width":280,"height":70}],"edges":[{"id":"e1","fromNode":"q","toNode":"p"},{"id":"e2","fromNode":"q","toNode":"i"},{"id":"e3","fromNode":"q","toNode":"n"}]}
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 120,
+      "file": "00 集体文学运动与文化政治.md"
+    },
+    {
+      "id": "ctx",
+      "type": "file",
+      "x": 0,
+      "y": -300,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/02 历史条件与问题意识.md"
+    },
+    {
+      "id": "p",
+      "type": "text",
+      "x": -520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "政治与阶级文学\n民族主义 / 无产阶级 / 革命 / 社会主义现实主义"
+    },
+    {
+      "id": "i",
+      "type": "text",
+      "x": 0,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "身份与文化解放\nHarlem / Négritude / 反殖民"
+    },
+    {
+      "id": "n",
+      "type": "text",
+      "x": 520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "文学群体与跨国网络\nBeat / Latin American Boom"
+    },
+    {
+      "id": "m",
+      "type": "file",
+      "x": 0,
+      "y": 500,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/04 集体机制与文学行动.md"
+    },
+    {
+      "id": "r",
+      "type": "file",
+      "x": 0,
+      "y": 760,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/07 阅读路线.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "ctx",
+      "toNode": "root"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "p"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "i"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "n"
+    },
+    {
+      "id": "e5",
+      "fromNode": "p",
+      "toNode": "m"
+    },
+    {
+      "id": "e6",
+      "fromNode": "i",
+      "toNode": "m"
+    },
+    {
+      "id": "e7",
+      "fromNode": "n",
+      "toNode": "m"
+    },
+    {
+      "id": "e8",
+      "fromNode": "m",
+      "toNode": "r"
+    }
+  ]
+}

@@ -1,57 +1,109 @@
 {
   "nodes": [
     {
-      "id": "q",
-      "type": "text",
-      "text": "谁有权定义主体、文明、性别、知识与世界？",
+      "id": "root",
+      "type": "file",
       "x": 0,
       "y": 0,
       "width": 360,
-      "height": 100
+      "height": 120,
+      "file": "00 权力、身份与世界批评.md"
+    },
+    {
+      "id": "ctx",
+      "type": "file",
+      "x": 0,
+      "y": -300,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/02 历史条件与问题意识.md"
     },
     {
       "id": "c",
       "type": "text",
-      "text": "殖民与知识权力\n后殖民 / 去殖民",
-      "x": -420,
-      "y": 180,
-      "width": 280,
-      "height": 120
+      "x": -520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "殖民与知识权力\n后殖民 → 去殖民"
     },
     {
       "id": "g",
       "type": "text",
-      "text": "性别、身体与身份\n女性主义 / 酷儿",
       "x": 0,
-      "y": 180,
-      "width": 280,
-      "height": 120
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "性别、身体与身份\n女性主义 → 酷儿"
     },
     {
       "id": "e",
       "type": "text",
-      "text": "人类与非人世界\n生态批评 / 生态文学",
-      "x": 420,
-      "y": 180,
-      "width": 280,
-      "height": 120
+      "x": 520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "人类与非人世界\n生态批评 → 生态文学"
+    },
+    {
+      "id": "m",
+      "type": "file",
+      "x": 0,
+      "y": 500,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/04 权力机制与文学重读.md"
+    },
+    {
+      "id": "route",
+      "type": "file",
+      "x": 0,
+      "y": 760,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/07 阅读路线.md"
     }
   ],
   "edges": [
     {
       "id": "e1",
-      "fromNode": "q",
-      "toNode": "c"
+      "fromNode": "ctx",
+      "toNode": "root"
     },
     {
       "id": "e2",
-      "fromNode": "q",
-      "toNode": "g"
+      "fromNode": "root",
+      "toNode": "c"
     },
     {
       "id": "e3",
-      "fromNode": "q",
+      "fromNode": "root",
+      "toNode": "g"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
       "toNode": "e"
+    },
+    {
+      "id": "e5",
+      "fromNode": "c",
+      "toNode": "m"
+    },
+    {
+      "id": "e6",
+      "fromNode": "g",
+      "toNode": "m"
+    },
+    {
+      "id": "e7",
+      "fromNode": "e",
+      "toNode": "m"
+    },
+    {
+      "id": "e8",
+      "fromNode": "m",
+      "toNode": "route"
     }
   ]
 }

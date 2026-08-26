@@ -1,3 +1,10 @@
+---
+type: literature_topic_section
+topic_id: WL-TOPIC-M3.2-AVANT-GARDE
+dimension: literary_field
+sequence: 7
+parent: WL-TOPIC-M3.2-AVANT-GARDE
+---
 # 构成主义、LEF与事实文学
 
 - 当前 canonical works：**5**

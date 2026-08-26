@@ -9,25 +9,256 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
+  note.topic_links:
+    displayName: 专题
+  note.topics:
+    displayName: 专题编号
   note.m2_priority:
     displayName: 优先级
   note.m2_movement_cluster:
     displayName: 思潮
   note.m2_axes:
     displayName: 机制
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+  note.verification_status:
+    displayName: 校验状态
 views:
   - type: table
     name: 全部作品
-    order: [file.name, author, read_status, m2_priority, m2_movement_cluster, m2_axes]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
-    name: 核心骨架 ★
+    name: 核心 ★
     filters:
       and:
         - m2_priority == "★"
-    order: [file.name, author, m2_movement_cluster, m2_axes]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 重点 ◆
+    filters:
+      and:
+        - m2_priority == "◆"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - m2_priority == "△"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
   - type: table
     name: 按思潮
     groupBy:
       property: m2_movement_cluster
       direction: ASC
-    order: [file.name, author, m2_priority, m2_axes]
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按地域
+    groupBy:
+      property: axis_r
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按思潮
+    groupBy:
+      property: axis_m
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按类型
+    groupBy:
+      property: axis_g
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 按主题
+    groupBy:
+      property: axis_q
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - m2_priority
+      - m2_movement_cluster
+      - m2_axes
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id

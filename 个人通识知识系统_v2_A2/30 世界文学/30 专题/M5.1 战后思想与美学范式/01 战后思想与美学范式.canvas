@@ -1,1 +1,109 @@
-{"nodes":[],"edges":[]}
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "file",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 120,
+      "file": "00 战后思想与美学范式.md"
+    },
+    {
+      "id": "ctx",
+      "type": "file",
+      "x": 0,
+      "y": -300,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/02 历史条件与问题意识.md"
+    },
+    {
+      "id": "e",
+      "type": "text",
+      "x": -520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "主体与意义危机\n存在主义 → 荒诞"
+    },
+    {
+      "id": "r",
+      "type": "text",
+      "x": 0,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "再现危机\n法国新小说"
+    },
+    {
+      "id": "t",
+      "type": "text",
+      "x": 520,
+      "y": 220,
+      "width": 360,
+      "height": 120,
+      "text": "现实与文本权威危机\n魔幻现实主义 / 后现代主义"
+    },
+    {
+      "id": "m",
+      "type": "file",
+      "x": 0,
+      "y": 500,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/04 美学机制与叙事重组.md"
+    },
+    {
+      "id": "route",
+      "type": "file",
+      "x": 0,
+      "y": 760,
+      "width": 360,
+      "height": 120,
+      "file": "10 核心结构/07 阅读路线.md"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "ctx",
+      "toNode": "root"
+    },
+    {
+      "id": "e2",
+      "fromNode": "root",
+      "toNode": "e"
+    },
+    {
+      "id": "e3",
+      "fromNode": "root",
+      "toNode": "r"
+    },
+    {
+      "id": "e4",
+      "fromNode": "root",
+      "toNode": "t"
+    },
+    {
+      "id": "e5",
+      "fromNode": "e",
+      "toNode": "m"
+    },
+    {
+      "id": "e6",
+      "fromNode": "r",
+      "toNode": "m"
+    },
+    {
+      "id": "e7",
+      "fromNode": "t",
+      "toNode": "m"
+    },
+    {
+      "id": "e8",
+      "fromNode": "m",
+      "toNode": "route"
+    }
+  ]
+}

@@ -1,3 +1,10 @@
+---
+type: literature_topic_section
+topic_id: WL-TOPIC-M2-19C-MOVEMENTS
+dimension: literary_field
+sequence: 8
+parent: WL-TOPIC-M2-19C-MOVEMENTS
+---
 # 拉美 Modernismo
 
 ## 它回应什么问题

@@ -1,12 +1,9 @@
 ---
-id: "WL-TOPIC-M3-MODERNISM-T08"
-type: "literature_topic_section"
-topic_id: "WL-TOPIC-M3-MODERNISM"
-parent: "WL-TOPIC-M3-MODERNISM-TRADITIONS"
-dimension: "tradition"
+type: literature_topic_section
+topic_id: WL-TOPIC-M3-MODERNISM
+dimension: literary_field
 sequence: 8
-modernism_tradition_cluster: "拉丁美洲与Brazilian Modernismo"
-source_lines: "665-724"
+parent: WL-TOPIC-M3-MODERNISM
 ---
 # 拉丁美洲与Brazilian Modernismo
 

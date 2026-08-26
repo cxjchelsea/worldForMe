@@ -1,11 +1,9 @@
 ---
-id: "WL-TOPIC-M3-MODERNISM-GLOBAL"
-type: "literature_topic_mechanism"
-topic_id: "WL-TOPIC-M3-MODERNISM"
-parent: "WL-TOPIC-M3-MODERNISM-BRIDGE"
-dimension: "global_modernism"
+type: literature_topic_mechanism
+topic_id: WL-TOPIC-M3-MODERNISM
+dimension: mechanism
 sequence: 2
-canonical_data: "[[../03 现代主义作品.base]]"
+parent: WL-TOPIC-M3-MODERNISM
 ---
 # Global Modernism与殖民现代性
 
