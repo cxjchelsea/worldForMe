@@ -1,0 +1,21 @@
+name: m52-coverage-audit-v1
+on:
+  push:
+    branches: [topic/m-axis-m5.2-v2]
+    paths:
+      - 'scripts/audit_m52_coverage_v1.py'
+      - '.github/workflows/m52-coverage-audit-v1.yml'
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/audit_m52_coverage_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m52-coverage-audit
+          path: |
+            reports/m52_coverage_audit.md
+            reports/m52_coverage_audit.json

@@ -1,0 +1,19 @@
+name: m32-final-audit-v2
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m3.2-v2
+    paths:
+      - '.github/workflows/m32-final-audit-v2.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run repaired M3.2 audit
+        run: python scripts/audit_m32_coverage_v1.py

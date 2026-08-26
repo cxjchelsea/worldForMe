@@ -1,0 +1,27 @@
+name: m2-coverage-audit-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m2-v2
+    paths:
+      - 'scripts/audit_m2_coverage_v1.py'
+      - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
+      - '.github/workflows/m2-coverage-audit-v1.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run M2 final coverage audit
+        run: python scripts/audit_m2_coverage_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m2-coverage-audit
+          path: |
+            reports/m2_coverage_audit.md
+            reports/m2_coverage_audit.json

@@ -1,0 +1,48 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-M1-EARLY-MODERN"
+formulas:
+  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", "核心结构"))
+  dimension_zh: if(dimension, dimension.replace("tradition", "传统与地域").replace("movement", "思潮与运动").replace("paradigm", "美学范式").replace("framework", "批评框架").replace("historical_system", "谱系与内部结构").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("comparison", "边界与比较").replace("definition", "定义与边界").replace("history", "历史条件与问题意识").replace("mechanism", "形成机制").replace("transmission", "传播、地域与非同步性").replace("literary_field", "专题分支"), "")
+  parent_zh: if(parent == "WL-TOPIC-M1-EARLY-MODERN", "WL-TOPIC-M1-EARLY-MODERN", parent)
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  formula.dimension_zh:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  formula.parent_zh:
+    displayName: 父节点
+  note.mechanism:
+    displayName: 机制
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, formula.parent_zh, mechanism, id]
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type != "literature_topic_section"'
+        - 'type != "literature_topic_mechanism"'
+    order: [file.name, formula.dimension_zh, sequence, id]
+  - type: table
+    name: 专题分支
+    filters:
+      and:
+        - 'type == "literature_topic_section"'
+    order: [file.name, formula.dimension_zh, sequence, id]
+  - type: table
+    name: 形成机制
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order: [file.name, formula.dimension_zh, sequence, mechanism, id]

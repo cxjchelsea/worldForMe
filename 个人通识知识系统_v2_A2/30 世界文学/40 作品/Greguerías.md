@@ -27,7 +27,7 @@ topics:
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: ◆
-modernism_tradition_cluster: 伊比利亚与意大利
+modernism_tradition_cluster: 伊比利亚与意大利现代主义
 modernism_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending

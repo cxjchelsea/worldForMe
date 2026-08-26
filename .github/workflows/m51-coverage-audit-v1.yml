@@ -1,0 +1,13 @@
+name: m51-coverage-audit-v1
+on:
+  push:
+    branches: [topic/m-axis-m5.1-v2]
+    paths: ['scripts/audit_m51_coverage_v1.py','.github/workflows/m51-coverage-audit-v1.yml','个人通识知识系统_v2_A2/30 世界文学/40 作品/**','个人通识知识系统_v2_A2/30 世界文学/30 专题/M5.1 战后思想与美学范式/**']
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/audit_m51_coverage_v1.py

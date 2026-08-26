@@ -1,0 +1,33 @@
+name: m2-bibliography-gap-fill-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m2-v2
+    paths:
+      - 'scripts/apply_m2_bibliography_gap_fill_v1.py'
+      - '.github/workflows/m2-bibliography-gap-fill-v1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic/m-axis-m2-v2
+      - name: Fill M2 structural bibliography gaps
+        run: python scripts/apply_m2_bibliography_gap_fill_v1.py
+      - name: Commit gap fill
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "个人通识知识系统_v2_A2/30 世界文学/30 专题/M2 19世纪文学思潮" "个人通识知识系统_v2_A2/30 世界文学/40 作品"
+          git commit -m "feat(m2): fill structural bibliography gaps"
+          git push origin HEAD:topic/m-axis-m2-v2

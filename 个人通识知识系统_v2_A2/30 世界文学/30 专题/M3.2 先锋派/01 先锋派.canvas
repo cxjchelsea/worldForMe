@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "c",
+      "type": "text",
+      "text": "M3.2 先锋派\n攻击艺术制度本身",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 120
+    },
+    {
+      "id": "m",
+      "type": "text",
+      "text": "运动/宣言\n集体与杂志",
+      "x": -420,
+      "y": 220,
+      "width": 260,
+      "height": 100
+    },
+    {
+      "id": "mec",
+      "type": "text",
+      "text": "媒介破坏\n声音·排版·拼贴·表演",
+      "x": 0,
+      "y": 220,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "p",
+      "type": "text",
+      "text": "艺术—生活—政治\n重新连接",
+      "x": 420,
+      "y": 220,
+      "width": 280,
+      "height": 100
+    },
+    {
+      "id": "b",
+      "type": "text",
+      "text": "M3.1 现代主义\n形式/感知革命",
+      "x": -250,
+      "y": 430,
+      "width": 260,
+      "height": 100
+    },
+    {
+      "id": "a",
+      "type": "text",
+      "text": "历史先锋派\n制度/行动革命",
+      "x": 250,
+      "y": 430,
+      "width": 260,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "c",
+      "toNode": "m"
+    },
+    {
+      "id": "e2",
+      "fromNode": "c",
+      "toNode": "mec"
+    },
+    {
+      "id": "e3",
+      "fromNode": "c",
+      "toNode": "p"
+    },
+    {
+      "id": "e4",
+      "fromNode": "mec",
+      "toNode": "b"
+    },
+    {
+      "id": "e5",
+      "fromNode": "mec",
+      "toNode": "a"
+    }
+  ]
+}
