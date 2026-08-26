@@ -1,10 +1,10 @@
 # QT8.2｜世界文化母题、原型与叙事结构模板总则 V0
 
-> 状态：`TEMPLATE_V0_REVISED_AFTER_SHARED_DATA_LAYER_PASS`
+> 状态：`TEMPLATE_V0_REVISED_AFTER_ARCHETYPE_PILOT_B_PASS_A`
 >
 > 适用范围：QT8.2 横向抽象层中的 motif / archetype / plot_pattern / symbol 专题。
 >
-> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题；并由“洪水与灾后重建” motif Pilot A 及 Shared Data Layer Pass 进行反向修订。
+> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题；由“洪水与灾后重建” motif Pilot A、Shared Data Layer Pass，以及“受苦义人” archetype Pilot B Content Pass A 持续反向修订。
 
 ---
 
@@ -65,7 +65,7 @@ QT8.2 固定采用：
 
 反复出现的基本叙事单元或关系。回答：**故事反复在发生什么？**
 
-motif Pilot A 新增治理：
+motif Pilot A 已支持：
 
 ```text
 required_invariants
@@ -83,6 +83,25 @@ optional_slots
 - `named_archetype`
 
 回答：**谁成为可重复调用的文化角色模型？**
+
+archetype Pilot B Content Pass A 新增稳定候选：
+
+```text
+core_functions
+= 跨来源实例仍保留的稳定角色功能
+
+variable_features
+= 高频但非必选的情节实现、人格特征、结局或社会位置
+```
+
+治理底线：
+
+```text
+archetype core_functions
+≠ theme labels
+≠ personality traits
+≠ ordered plot slots
+```
 
 ## 3.3 plot_pattern｜叙事结构
 
@@ -149,6 +168,8 @@ defining_texts
 later_reworkings
 ```
 
+Pilot B 已证明 `source_status + qt82_source_reference` 可以从 motif 复用到 archetype，而无需重造来源 schema。
+
 ---
 
 # 六、关系模型
@@ -182,11 +203,14 @@ later_reworkings
 
 例如同一对对象既存在文本结构相似，又可能存在历史传播时，应拆成两条记录。
 
+Pilot B 进一步强调：抽象 archetype 的 `functional_similarity` 不自动提升为 `historical_transmission`。
+
 治理底线：
 
 ```text
 relation_type ≠ evidence_level
 结构相似 ≠ 历史传播
+功能相似 ≠ 历史传播
 高相似度 ≠ 高传播置信度
 ```
 
@@ -225,6 +249,8 @@ tradition_role
 canonical_work
 ```
 
+Pilot A 已用 motif 验证；Pilot B Content Pass A 已用两条 archetype 来源记录完成首次跨类型复用。
+
 ## 7.2 qt82_component_relation
 
 回答：
@@ -233,6 +259,8 @@ canonical_work
 
 只有 target 已经通过对应类型准入、成为正式 QT8.2 component 后，才创建正式 relation entity。候选 archetype / plot_pattern / symbol 不因另一个 Pilot 的发现而提前升级。
 
+当前 schema 已建立，真实跨类型 relation 仍等待后续正式 target。
+
 ## 7.3 qt82_work_reference
 
 回答：
@@ -240,6 +268,8 @@ canonical_work
 > 某个后世作品怎样调用、改编、继承或反转这个组件？
 
 同一作品若同时存在多个关系，应拆成多条原子 work reference。
+
+Pilot A 已验证；archetype 类型的 work reference 留给 Pilot B Content Pass B 验证。
 
 ## 7.4 解释层 ≠ 数据层
 
@@ -267,9 +297,10 @@ Base 只聚合数据实体，不把说明页伪装成关系记录。
 还必须区分：
 
 ```text
-故事传统形成时间
+故事／角色问题域形成时间
 ≠ 文学版本形成时间
 ≠ 现存抄本／泥版年代
+≠ 现代研究中的抽象与命名
 ```
 
 文本完整作品信息仍由唯一作品主节点承担。
@@ -297,7 +328,7 @@ G / 其他 QT = 具体文学类型
 | 类型 | 最重要的问题 |
 |---|---|
 | motif | required invariants、optional slots、变体、功能、组合方式 |
-| archetype | 角色功能、来源人物、原型化过程、命名型与抽象型关系 |
+| archetype | archetype kind、core functions、variable features、来源人物、原型化过程 |
 | plot_pattern | 节点顺序、必选槽位、可变槽位、结构变体 |
 | symbol | 来源物象、symbol 准入、稳定意义、语义漂移、跨媒介复用 |
 
@@ -333,10 +364,13 @@ V0 不批量建设 20 个母题簇，而用真实对象逐类验证。
 ```text
 Pilot A motif
 → 洪水与灾后重建
+→ CLOSED_ACCEPTED
 
 Pilot B archetype
 → 受苦义人
-→ 所罗门王 named archetype 压力测试
+→ CONTENT_PASS_A_COMPLETE
+→ 下一步 Content Pass B
+→ 之后所罗门王 named archetype 压力测试
 
 Pilot C plot_pattern
 → 预言 → 逃避 → 实现
@@ -345,7 +379,7 @@ Pilot D symbol
 → 巴别塔
 ```
 
-Pilot A 已完成 Content Pass B 与 Shared Data Layer Pass；仍需 Final Acceptance 后再进入 Pilot B。
+Pilot B 当前不直接进入 Acceptance：仍需后世 `qt82_work_reference` 验证，并在适当时机验证正式跨类型 `qt82_component_relation`。
 
 ---
 
@@ -358,10 +392,11 @@ Pilot A 已完成 Content Pass B 与 Shared Data Layer Pass；仍需 Final Accep
 - [ ] `source_status` 可处理不完整来源层
 - [ ] relation_type 与 evidence_level 能分离
 - [ ] relation record 可保持单一关系类型
-- [ ] `qt82_source_reference` 可复用
-- [ ] `qt82_component_relation` 可复用
-- [ ] `qt82_work_reference` 可复用
+- [x] `qt82_source_reference` 已跨 motif / archetype 两类复用
+- [ ] `qt82_component_relation` 完成真实跨类型复用
+- [ ] `qt82_work_reference` 跨 motif / archetype 两类复用
 - [ ] 文本谱系不会复制作品主节点
+- [ ] abstract archetype 准入稳定
 - [ ] named_archetype 不会退化成人物百科
 - [ ] symbol 准入规则能挡住普通道具
 - [ ] plot_pattern 不会被写成 motif 列表
