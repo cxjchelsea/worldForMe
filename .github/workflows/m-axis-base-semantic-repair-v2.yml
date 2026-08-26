@@ -3,6 +3,7 @@ on:
   push:
     branches: [main]
     paths:
+      - 'scripts/reconcile_m_axis_membership_from_frozen_v1.py'
       - 'scripts/repair_m_axis_base_semantics_v2.py'
       - '.github/workflows/m-axis-base-semantic-repair-v2.yml'
   workflow_dispatch:
@@ -16,6 +17,8 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+      - name: Reconcile frozen M-axis membership
+        run: python scripts/reconcile_m_axis_membership_from_frozen_v1.py
       - name: Apply M-axis Base semantic repair
         run: python scripts/repair_m_axis_base_semantics_v2.py
       - name: Commit changes
