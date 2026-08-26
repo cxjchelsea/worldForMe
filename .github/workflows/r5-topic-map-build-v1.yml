@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/build_r5_topic_map_v1.py'
+      - '.github/workflows/r5-topic-map-build-v1.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
