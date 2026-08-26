@@ -1,0 +1,50 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-R3-SOUTH-ASIA"
+formulas:
+  type_zh: if(dimension == "internal_tradition", "内部传统", if(dimension == "literary_network", "跨传统网络", "核心结构"))
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.period:
+    displayName: 历史位置
+  note.mechanism:
+    displayName: 机制
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部 R3 知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - dimension
+      - sequence
+      - period
+      - mechanism
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - dimension != "internal_tradition"
+        - dimension != "literary_network"
+  - type: table
+    name: 内部传统
+    filters:
+      and:
+        - dimension == "internal_tradition"
+  - type: table
+    name: 跨传统网络
+    filters:
+      and:
+        - dimension == "literary_network"
