@@ -1,26 +1,94 @@
 filters:
   and:
     - topic_id == "WL-TOPIC-R5-NORTH-AMERICA"
+formulas:
+  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(dimension == "mechanism", "形成机制", if(dimension == "transmission_mechanism", "形成机制", if(dimension == "literary_network", "形成机制", if(dimension == "internal_tradition", "专题分支", if(dimension == "literary_space", "专题分支", if(dimension == "literary_field", "专题分支", if(dimension == "field", "专题分支", if(dimension == "civilization", "专题分支", "核心结构")))))))))
+  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨传统网络").replace("mechanism", "形成机制").replace("transmission_mechanism", "传播机制").replace("comparison", "比较").replace("cross_region", "跨区域比较").replace("literary_field", "文学场域").replace("literary_space", "文学空间").replace("field", "文学场域").replace("civilization", "文明传统"), "综合结构")
+  sequence_zh: if(sequence, sequence, 0)
+  parent_zh: if(parent, parent, if(dimension == "internal_tradition", "北美文学｜内部传统", if(dimension == "literary_network", "北美文学｜跨传统网络", if(dimension == "mechanism", "北美文学｜形成机制", "北美文学"))))
+  history_zh: if(period, period, if(postwar_stage, postwar_stage, if(civilization, civilization, if(dimension == "definition", "全时段边界", if(dimension == "history", "历史纵向", if(dimension == "language_media", "跨时期媒介", if(dimension == "institution", "跨时期制度", if(dimension == "reading_route", "综合阅读", if(dimension == "internal_tradition", "传统纵向", if(dimension == "literary_network", "跨时期网络", if(dimension == "mechanism", "跨时期机制", "跨时期结构")))))))))))
+  mechanism_zh: if(mechanism, mechanism, if(dimension == "definition", "划定专题边界、归属原则与比较范围", if(dimension == "history", "组织文学传统的历史连续性、断裂与分期", if(dimension == "language_media", "解释语言、文字、口传、印刷与媒介如何塑造文学", if(dimension == "institution", "解释教育、宗教、出版、市场与文学制度如何形成", if(dimension == "reading_route", "组织核心阅读路径、比较顺序与扩展入口", if(dimension == "internal_tradition", "展开区域内部文学传统的形成、分化与延续", if(dimension == "literary_network", "连接内部传统并解释传播、翻译、迁徙与重组", if(dimension == "mechanism", "解释跨传统文学形成与传播机制", "说明该节点在专题结构中的作用"))))))))
+  id_zh: if(id, id, "待补编号")
 properties:
   file.name:
     displayName: 节点
-  note.dimension:
+  formula.type_zh:
+    displayName: 类型
+  formula.dimension_zh:
     displayName: 维度
-  note.sequence:
+  formula.sequence_zh:
     displayName: 顺序
+  formula.parent_zh:
+    displayName: 父节点
+  formula.history_zh:
+    displayName: 历史位置
+  formula.mechanism_zh:
+    displayName: 机制
+  formula.id_zh:
+    displayName: 编号
 views:
   - type: table
-    name: 全部 R5 知识节点
-    order: [file.name, dimension, sequence]
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - formula.sequence_zh
+      - formula.parent_zh
+      - formula.history_zh
+      - formula.mechanism_zh
+      - formula.id_zh
   - type: table
-    name: 内部传统
+    name: 核心结构
     filters:
       and:
-        - dimension == "internal_tradition"
-    order: [file.name, sequence]
+        - formula.type_zh == "核心结构"
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - formula.sequence_zh
+      - formula.parent_zh
+      - formula.history_zh
+      - formula.mechanism_zh
+      - formula.id_zh
   - type: table
-    name: 跨传统网络
+    name: 专题分支
     filters:
       and:
-        - dimension == "literary_network"
-    order: [file.name, sequence]
+        - formula.type_zh == "专题分支"
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - formula.sequence_zh
+      - formula.parent_zh
+      - formula.history_zh
+      - formula.mechanism_zh
+      - formula.id_zh
+  - type: table
+    name: 形成机制
+    filters:
+      and:
+        - formula.type_zh == "形成机制"
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - formula.sequence_zh
+      - formula.parent_zh
+      - formula.history_zh
+      - formula.mechanism_zh
+      - formula.id_zh
