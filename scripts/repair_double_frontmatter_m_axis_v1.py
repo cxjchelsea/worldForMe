@@ -6,19 +6,38 @@ WORKS = ROOT / '个人通识知识系统_v2_A2' / '30 世界文学' / '40 作品
 M_PREFIXES = ('m1_', 'm2_', 'modernism_', 'm32_', 'm4_', 'm51_', 'm52_')
 
 
-def split_two_frontmatters(text: str):
-    if not text.startswith('---\n'):
+def split_damaged_frontmatter(text: str):
+    """Return (overlay_fm, canonical_fm, body) for the damaged pattern.
+
+    Supported forms after the first valid frontmatter:
+      ---\n<canonical yaml>\n---\n<body>
+    or the observed broken form:
+      ---\n<canonical yaml to EOF>
+    The second segment is accepted only when it clearly looks like a work entity.
+    """
+    norm = text.replace('\r\n', '\n').replace('\r', '\n')
+    m = re.match(r'^---\s*\n(.*?)\n---\s*\n(.*)$', norm, flags=re.S)
+    if not m:
         return None
-    first_end = text.find('\n---\n', 4)
-    if first_end < 0:
+    first = m.group(1)
+    rest = m.group(2)
+    if not re.match(r'^---\s*\n', rest):
         return None
-    rest = text[first_end + 5:]
-    if not rest.startswith('---\n'):
+    rest = re.sub(r'^---\s*\n', '', rest, count=1)
+
+    # Prefer a proper closing delimiter when present; otherwise treat the rest as
+    # displaced canonical YAML only if it clearly contains a canonical work header.
+    m2 = re.match(r'^(.*?)\n---\s*\n(.*)$', rest, flags=re.S)
+    if m2:
+        second, body = m2.group(1), m2.group(2)
+    else:
+        second, body = rest, ''
+
+    if not re.search(r'(?m)^type:\s*["\']?work["\']?\s*$', second):
         return None
-    second_end = rest.find('\n---\n', 4)
-    if second_end < 0:
+    if not re.search(r'(?m)^id:\s*WL-WORK-', second):
         return None
-    return text[4:first_end], rest[4:second_end], rest[second_end + 5:]
+    return first, second.rstrip('\n'), body
 
 
 def field_blocks(fm: str):
@@ -41,6 +60,12 @@ def field_blocks(fm: str):
 
 
 def list_items(block):
+    if not block:
+        return []
+    # support both multiline YAML lists and simple inline lists
+    head = block[0].split(':', 1)[1].strip()
+    if head.startswith('[') and head.endswith(']'):
+        return [x.strip() for x in head[1:-1].split(',') if x.strip()]
     items = []
     for line in block[1:]:
         m = re.match(r'^\s*-\s*(.*)$', line)
@@ -58,25 +83,22 @@ def merge_frontmatter(first: str, second: str):
     sb = field_blocks(second)
     first_map = {k: b for k, b in fb}
     second_map = {k: b for k, b in sb}
-
-    # canonical second frontmatter remains authoritative except M-axis overlay fields.
     overlay_keys = {k for k in first_map if k.startswith(M_PREFIXES)}
 
-    # merge shared multi-value cross-axis fields instead of replacing them.
+    # Cross-axis lists must be unioned so M repair never drops T/R/G/Q or other topics.
     for key in ('topics', 'topic_links', 'axis_m'):
         vals = []
         for source in (second_map.get(key), first_map.get(key)):
-            if source:
-                for item in list_items(source):
-                    if item not in vals:
-                        vals.append(item)
+            for item in list_items(source):
+                if item not in vals:
+                    vals.append(item)
         if vals:
             second_map[key] = render_list(key, vals)
 
+    # The overlay block contains the most recent M-axis-specific metadata.
     for key in overlay_keys:
         second_map[key] = first_map[key]
 
-    # preserve original canonical field order; append newly introduced M fields at end.
     rendered = []
     seen = set()
     for key, _ in sb:
@@ -93,18 +115,23 @@ def merge_frontmatter(first: str, second: str):
     return '\n'.join(rendered).rstrip() + '\n'
 
 
+scanned = 0
 repaired = []
 for p in WORKS.glob('*.md'):
     text = p.read_text(encoding='utf-8', errors='strict')
-    parts = split_two_frontmatters(text)
+    parts = split_damaged_frontmatter(text)
     if not parts:
         continue
+    scanned += 1
     first, second, body = parts
     merged = merge_frontmatter(first, second)
-    new_text = '---\n' + merged + '---\n' + body
+    new_text = '---\n' + merged + '---\n'
+    if body:
+        new_text += body
     p.write_text(new_text, encoding='utf-8')
     repaired.append(p.name)
 
-print('repaired_double_frontmatter_count', len(repaired))
-for name in repaired[:50]:
+print('damaged_frontmatter_matches', scanned)
+print('repaired_frontmatter_count', len(repaired))
+for name in repaired[:100]:
     print('repaired', name)
