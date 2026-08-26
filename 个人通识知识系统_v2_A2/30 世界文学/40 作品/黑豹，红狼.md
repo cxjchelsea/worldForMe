@@ -13,7 +13,6 @@ read_status: 未读
 axis_t:
 - T6 当代全球文学
 axis_r:
-- R10 跨区域文学传统
 axis_m:
 - M5 战后与当代美学范式
 axis_g:
