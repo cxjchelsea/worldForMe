@@ -1,6 +1,6 @@
 # QT8.2｜共享数据层规范 V0
 
-> 状态：`SHARED_DATA_LAYER_V0_ESTABLISHED_AFTER_PILOT_A_REVIEW`
+> 状态：`SHARED_DATA_LAYER_V0_REVISED_AFTER_NAMED_ARCHETYPE_PASS_B`
 >
 > 适用范围：QT8.2 的 motif / archetype / plot_pattern / symbol 四类组件。
 >
@@ -109,7 +109,7 @@ work: ""
 work_role: later_reworking | adaptation | explicit_reuse | inversion | cross_media_reuse
 retained_features: []
 modified_features: []
-relation_type: direct_adaptation | explicit_reference | character_or_name_borrowing | structural_inheritance | motif_inversion | symbol_reuse | plot_pattern_inversion
+relation_type: direct_adaptation | explicit_reference | figure_rewriting | character_or_name_borrowing | structural_inheritance | motif_inversion | symbol_reuse | plot_pattern_inversion
 
 evidence_level: documented | strongly_supported | probable | possible | similarity_only | unknown
 source_evidence: []
@@ -118,7 +118,44 @@ sequence: 0
 status: active
 ```
 
-如果同一作品同时构成 `explicit_reference` 与 `motif_inversion`，必须建立两条 work reference，而不是在一个字段内并列。
+## 4.1 `figure_rewriting`
+
+Pilot B.1 所罗门王 named archetype 新增并验证：
+
+```text
+figure_rewriting
+= 同一可识别命名人物继续存在，
+  但角色功能、故事环境或身份结构被系统性重写
+```
+
+与相邻关系区分：
+
+```text
+character_or_name_borrowing
+= 主要借人物／名字，不要求系统性继承或重构人物功能
+
+figure_rewriting
+= 保留人物身份锚点，同时系统性改变其功能／叙事
+
+direct_adaptation
+= 明确以某一来源故事／文本为主要整体改编对象
+```
+
+示例：
+
+```text
+Testament of Solomon
+→ figure_rewriting
+
+Quranic Sulayman traditions
+→ figure_rewriting
+
+Key of Solomon
+→ 当前可保留 character_or_name_borrowing，
+  因其核心用途之一是以所罗门之名建立秘传知识权威
+```
+
+如果同一作品同时构成 `explicit_reference` 与 `figure_rewriting`，必须建立两条 work reference，而不是在一个字段内并列。
 
 ---
 
@@ -177,6 +214,7 @@ motif
 
 archetype
 → archetype_kind / core_functions / variable_features
+→ named_archetype 额外使用 required_identity_anchors / supporting_identity_anchors
 
 plot_pattern
 → core_slots / optional_slots / repeatable_slots / terminal_variants
@@ -189,18 +227,20 @@ symbol
 
 ---
 
-# 八、Pilot A 的应用规则
+# 八、Pilot 应用状态
 
-“洪水与灾后重建” Pilot 首批数据化：
+Pilot A｜洪水 motif：已验证 source/work schema 与 relation atomicity。
 
-- 《创世记》6–9 → `qt82_source_reference`
-- 《阿特拉哈西斯》洪水段 → `qt82_source_reference`
-- 《吉尔伽美什史诗》第 XI 泥版 → `qt82_source_reference`
-- 奥维德《变形记》第一卷丢卡利翁／皮拉 → `qt82_source_reference`
-- Darren Aronofsky《Noah》 → `qt82_work_reference / direct_adaptation`
-- Margaret Atwood《The Year of the Flood》 → 分别以 `explicit_reference` 与 `motif_inversion` 建两条 work reference
+Pilot B｜受苦义人 abstract archetype：已验证 source/work schema 跨类型复用。
 
-“洪水幸存者／第二祖先”“失序→毁灭→幸存→重建”“方舟”等当前仍保持 candidate，不建立正式 `qt82_component_relation`。
+Pilot B.1｜所罗门王 named archetype：新增并验证：
+
+```text
+required_identity_anchors / supporting_identity_anchors
+figure_rewriting
+```
+
+`qt82_component_relation` 仍遵守 promotion gate，不因一个专题发现 candidate 就提前建立正式跨类型边。
 
 ---
 
@@ -211,6 +251,7 @@ QT8.2_SHARED_DATA_LAYER = ESTABLISHED_V0
 QT8.2_SOURCE_REFERENCE_SCHEMA = ACTIVE
 QT8.2_COMPONENT_RELATION_SCHEMA = ACTIVE_WITH_PROMOTION_GATE
 QT8.2_WORK_REFERENCE_SCHEMA = ACTIVE
+QT8.2_FIGURE_REWRITING_RELATION = ACTIVE_AFTER_PILOT_B1_PASS_B
 QT8.2_RELATION_ATOMICITY = REQUIRED
 QT8.2_SHARED_BASE = REQUIRED
 ```
