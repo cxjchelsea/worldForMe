@@ -1,0 +1,46 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-R2-EAST-ASIA"
+formulas:
+  type_zh: if(type == "literature_topic_network", "跨传统网络", if(dimension == "internal_tradition", "内部传统", "核心结构"))
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  note.sequence:
+    displayName: 顺序
+  note.period:
+    displayName: 历史位置
+  note.mechanism:
+    displayName: 机制
+views:
+  - type: table
+    name: 全部 R2 知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - sequence
+      - period
+      - mechanism
+  - type: table
+    name: 内部传统
+    filters:
+      and:
+        - dimension == "internal_tradition"
+    order:
+      - file.name
+      - sequence
+      - period
+  - type: table
+    name: 跨传统网络
+    filters:
+      and:
+        - dimension == "literary_network"
+    order:
+      - file.name
+      - sequence
+      - mechanism
