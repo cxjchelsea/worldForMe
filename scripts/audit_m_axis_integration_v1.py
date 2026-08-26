@@ -3,6 +3,7 @@ import json, re, subprocess
 from pathlib import Path
 from collections import Counter
 
+# Final rerun after the last M5.2 maturity fix.
 ROOT=Path(__file__).resolve().parents[1]
 LIT=ROOT/'个人通识知识系统_v2_A2'/'30 世界文学'
 NODES=LIT/'20 节点'/'M 思潮'
