@@ -1,0 +1,26 @@
+name: m32-coverage-audit-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m3.2-v2
+    paths:
+      - 'scripts/audit_m32_coverage_v1.py'
+      - '.github/workflows/m32-coverage-audit-v1.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run M3.2 final coverage audit
+        run: python scripts/audit_m32_coverage_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m32-coverage-audit
+          path: |
+            reports/m32_coverage_audit.md
+            reports/m32_coverage_audit.json
