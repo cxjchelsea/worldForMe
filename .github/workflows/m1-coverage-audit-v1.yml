@@ -7,6 +7,8 @@ on:
     paths:
       - 'scripts/audit_m1_coverage_v1.py'
       - '.github/workflows/m1-coverage-audit-v1.yml'
+      - '个人通识知识系统_v2_A2/30 世界文学/30 专题/M1 早期现代思想与美学/**'
+      - '个人通识知识系统_v2_A2/30 世界文学/40 作品/**'
 
 permissions:
   contents: read
