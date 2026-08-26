@@ -1,10 +1,10 @@
 # QT8.2｜世界文化母题、原型与叙事结构模板总则 V0
 
-> 状态：`TEMPLATE_V0_REVISED_AFTER_MOTIF_PILOT_A_PASS_B`
+> 状态：`TEMPLATE_V0_REVISED_AFTER_SHARED_DATA_LAYER_PASS`
 >
 > 适用范围：QT8.2 横向抽象层中的 motif / archetype / plot_pattern / symbol 专题。
 >
-> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题；并由“洪水与灾后重建” motif Pilot A 进行第一轮反向修订。
+> 设计依据：QT8.1.1 希伯来—圣经叙事传统与 QT8.1.2 希腊—罗马神话传统两个已验收来源专题；并由“洪水与灾后重建” motif Pilot A 及 Shared Data Layer Pass 进行反向修订。
 
 ---
 
@@ -176,27 +176,11 @@ later_reworkings
 
 ## 6.3 relation record 原子性
 
-Flood Pilot A Pass B 新增稳定候选规则：
+稳定规则：
 
 > **一条 relation record 只表达一个 relation_type，并配一个 evidence_level。**
 
-例如同一对对象既存在文本结构相似，又可能存在历史传播时，应拆成：
-
-```yaml
-source: A
-target: B
-relation_type: structural_similarity
-evidence_level: documented
-```
-
-以及：
-
-```yaml
-source: A
-target: B
-relation_type: historical_transmission
-evidence_level: possible
-```
+例如同一对对象既存在文本结构相似，又可能存在历史传播时，应拆成两条记录。
 
 治理底线：
 
@@ -208,7 +192,70 @@ relation_type ≠ evidence_level
 
 ---
 
-# 七、文本谱系
+# 七、共享数据层
+
+Shared Data Layer Pass 后，QT8.2 正式固定三种最小数据实体：
+
+```text
+qt82_source_reference
+qt82_component_relation
+qt82_work_reference
+```
+
+完整 schema：[[QT8.2｜共享数据层规范 V0]]
+
+共享聚合入口：[[QT8.2｜共享数据.base]]
+
+## 7.1 qt82_source_reference
+
+回答：
+
+> 这个组件从哪个 QT8.1 来源传统／故事／文本中抽取？
+
+至少保存：
+
+```text
+component_id
+component_type
+source_tradition
+source_story
+source_text
+source_status
+tradition_role
+canonical_work
+```
+
+## 7.2 qt82_component_relation
+
+回答：
+
+> 两个正式 QT8.2 component 之间存在什么语义关系？
+
+只有 target 已经通过对应类型准入、成为正式 QT8.2 component 后，才创建正式 relation entity。候选 archetype / plot_pattern / symbol 不因另一个 Pilot 的发现而提前升级。
+
+## 7.3 qt82_work_reference
+
+回答：
+
+> 某个后世作品怎样调用、改编、继承或反转这个组件？
+
+同一作品若同时存在多个关系，应拆成多条原子 work reference。
+
+## 7.4 解释层 ≠ 数据层
+
+```text
+00–10 专题页面
+= 解释、论证、结构化阅读
+
+共享数据实体
+= 已确认的来源／关系／作品记录
+```
+
+Base 只聚合数据实体，不把说明页伪装成关系记录。
+
+---
+
+# 八、文本谱系
 
 每个 QT8.2 专题至少区分：
 
@@ -229,7 +276,7 @@ relation_type ≠ evidence_level
 
 ---
 
-# 八、与其他轴的职责边界
+# 九、与其他轴的职责边界
 
 ```text
 QT8.1 = 来源传统、人物、故事、文本形成
@@ -245,7 +292,7 @@ G / 其他 QT = 具体文学类型
 
 ---
 
-# 九、四类模板的差异重点
+# 十、四类模板的差异重点
 
 | 类型 | 最重要的问题 |
 |---|---|
@@ -261,9 +308,25 @@ G / 其他 QT = 具体文学类型
 - [[QT8.2｜叙事结构型专题模板 V0]]
 - [[QT8.2｜文化符号型专题模板 V0]]
 
+共享数据字段不覆盖类型专属字段：
+
+```text
+motif
+→ required_invariants / optional_slots
+
+archetype
+→ archetype_kind / core_functions / variable_features
+
+plot_pattern
+→ core_slots / optional_slots / repeatable_slots / terminal_variants
+
+symbol
+→ admission_evidence / stable_meanings / meaning_shifts
+```
+
 ---
 
-# 十、Pilot 策略
+# 十一、Pilot 策略
 
 V0 不批量建设 20 个母题簇，而用真实对象逐类验证。
 
@@ -282,11 +345,11 @@ Pilot D symbol
 → 巴别塔
 ```
 
-Pilot A 已进入 Content Pass B；当前产生的规则先作为 V0 修订，不构成 V1 Freeze。
+Pilot A 已完成 Content Pass B 与 Shared Data Layer Pass；仍需 Final Acceptance 后再进入 Pilot B。
 
 ---
 
-# 十一、V0 验收条件
+# 十二、V0 验收条件
 
 - [ ] 四类对象边界可实际区分
 - [ ] 一个来源故事可同时映射多类对象而不冲突
@@ -295,6 +358,9 @@ Pilot A 已进入 Content Pass B；当前产生的规则先作为 V0 修订，�
 - [ ] `source_status` 可处理不完整来源层
 - [ ] relation_type 与 evidence_level 能分离
 - [ ] relation record 可保持单一关系类型
+- [ ] `qt82_source_reference` 可复用
+- [ ] `qt82_component_relation` 可复用
+- [ ] `qt82_work_reference` 可复用
 - [ ] 文本谱系不会复制作品主节点
 - [ ] named_archetype 不会退化成人物百科
 - [ ] symbol 准入规则能挡住普通道具
