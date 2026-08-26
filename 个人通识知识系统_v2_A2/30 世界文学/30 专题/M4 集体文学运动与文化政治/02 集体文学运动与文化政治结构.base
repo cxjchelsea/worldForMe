@@ -3,7 +3,7 @@ filters:
     - topic_id == "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
 formulas:
   type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", "核心结构"))
-  dimension_zh: if(dimension, dimension.replace("historical_system", "谱系与内部结构").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("comparison", "边界与比较").replace("definition", "定义与边界").replace("history", "历史条件与问题意识").replace("mechanism", "形成机制").replace("transmission", "传播、地域与非同步性").replace("literary_field", "专题分支"), "")
+  dimension_zh: if(dimension, dimension.replace("tradition", "传统与地域").replace("movement", "思潮与运动").replace("paradigm", "美学范式").replace("framework", "批评框架").replace("historical_system", "谱系与内部结构").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("comparison", "边界与比较").replace("definition", "定义与边界").replace("history", "历史条件与问题意识").replace("mechanism", "形成机制").replace("transmission", "传播、地域与非同步性").replace("literary_field", "专题分支"), "")
   parent_zh: if(parent == "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS", "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS", parent)
 properties:
   file.name:

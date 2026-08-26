@@ -1,9 +1,12 @@
 ---
-type: literature_topic_section
-topic_id: WL-TOPIC-M3-MODERNISM
-dimension: literary_field
+id: "WL-TOPIC-M3-MODERNISM-T06"
+type: "literature_topic_section"
+topic_id: "WL-TOPIC-M3-MODERNISM"
+parent: "WL-TOPIC-M3-MODERNISM-TRADITIONS"
+dimension: "tradition"
 sequence: 6
-parent: WL-TOPIC-M3-MODERNISM
+modernism_tradition_cluster: "美国与Harlem Renaissance"
+source_lines: "460-597"
 ---
 # 美国与Harlem Renaissance
 

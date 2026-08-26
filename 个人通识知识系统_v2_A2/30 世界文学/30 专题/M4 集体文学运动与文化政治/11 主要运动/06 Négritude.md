@@ -1,9 +1,10 @@
 ---
-type: literature_topic_section
-topic_id: WL-TOPIC-M4-COLLECTIVE-MOVEMENTS
-dimension: literary_field
+id: "WL-M4-NODE-11-06"
+type: "literature_topic_section"
+topic_id: "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
+parent: "WL-TOPIC-M4-COLLECTIVE-MOVEMENTS"
+dimension: "movement"
 sequence: 6
-parent: WL-TOPIC-M4-COLLECTIVE-MOVEMENTS
 ---
 # Négritude
 

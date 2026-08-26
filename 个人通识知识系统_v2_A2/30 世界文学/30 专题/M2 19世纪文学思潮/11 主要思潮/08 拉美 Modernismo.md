@@ -1,9 +1,10 @@
 ---
-type: literature_topic_section
-topic_id: WL-TOPIC-M2-19C-MOVEMENTS
-dimension: literary_field
+id: "WL-M2-NODE-11-08"
+type: "literature_topic_section"
+topic_id: "WL-TOPIC-M2-19C-MOVEMENTS"
+parent: "WL-TOPIC-M2-19C-MOVEMENTS"
+dimension: "movement"
 sequence: 8
-parent: WL-TOPIC-M2-19C-MOVEMENTS
 ---
 # 拉美 Modernismo
 
