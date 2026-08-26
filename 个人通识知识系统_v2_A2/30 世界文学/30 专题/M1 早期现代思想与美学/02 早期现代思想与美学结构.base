@@ -1,0 +1,8 @@
+filters:
+  and:
+    - file.hasTag("#literature_topic_structure") || file.path.contains("M1 早期现代思想与美学")
+views:
+  - type: table
+    name: M1 结构
+    order:
+      - file.name

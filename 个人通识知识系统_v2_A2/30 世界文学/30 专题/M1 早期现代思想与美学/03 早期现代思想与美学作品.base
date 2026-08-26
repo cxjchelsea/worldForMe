@@ -1,0 +1,10 @@
+filters:
+  and:
+    - topics.contains("WL-TOPIC-M1-EARLY-MODERN")
+views:
+  - type: table
+    name: M1 作品
+    order:
+      - m1_priority
+      - m1_movement_cluster
+      - file.name
