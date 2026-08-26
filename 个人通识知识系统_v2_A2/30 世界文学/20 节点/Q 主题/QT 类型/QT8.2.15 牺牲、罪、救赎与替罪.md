@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: null
-source_version: "2.17-qt8.2-archetype-pilot-b"
+source_version: "2.18-qt8.2-archetype-pilot-b-pass-b"
 ---
  
 # QT8.2.15 牺牲、罪、救赎与替罪
@@ -25,7 +25,7 @@ source_version: "2.17-qt8.2-archetype-pilot-b"
 
 → [[../../../30 专题/QT8.2.15 牺牲、罪、救赎与替罪/受苦义人/00 受苦义人|受苦义人]]
 
-当前状态：`PILOT_B_CONTENT_PASS_A`
+当前状态：`PILOT_B_READY_FOR_ACCEPTANCE`
 
 对象类型：
 
@@ -34,14 +34,19 @@ archetype
 → abstract_archetype
 ```
 
-本 Pilot 当前用于验证：
+本 Pilot 已完成：
 
-- archetype 与 theme / trait / plot_pattern 的边界；
-- `core_functions / variable_features`；
+- archetype 与 theme / trait / plot_pattern 的边界验证；
+- `core_functions / variable_features` 验证；
 - source figure 与 archetype 分层；
+- 《约伯记》与 `Ludlul bēl nēmeqi` 的跨来源 functional comparison；
 - `source_status` 在 archetype 上的跨类型复用；
 - functional similarity 与 historical transmission 分离；
-- Shared Data Layer V0 在 archetype 类型上的复用。
+- Shared Data Layer V0 的 `qt82_source_reference` 复用；
+- Shared Data Layer V0 的 `qt82_work_reference` 复用；
+- Joseph Roth《Job》、MacLeish《J.B.》、Spark《The Only Problem》三种后世调用方式核证。
+
+正式 `qt82_component_relation` 继续等待 target component 自身完成准入。
 
 ## 后续建设原则
 
