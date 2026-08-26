@@ -1,0 +1,6 @@
+filters:
+  and:
+    - file.folder.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/M5.1 战后思想与美学范式")
+views:
+  - type: table
+    name: 结构

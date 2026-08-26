@@ -1,0 +1,9 @@
+filters:
+  and:
+    - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
+    - topics.contains("WL-TOPIC-M5.1-POSTWAR-AESTHETICS")
+views:
+  - type: table
+    name: 作品
+    groupBy:
+      property: m51_movement_cluster
