@@ -29,6 +29,9 @@ t6_history_position: 非洲与黑人离散文学 · 小说
 t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 全球市场、翻译与奖项
+r7_priority: "◆"
+r7_tradition: "南部非洲文学传统"
+r7_role: "当代南非种族/阶级"
 ---
 
 # The Promise

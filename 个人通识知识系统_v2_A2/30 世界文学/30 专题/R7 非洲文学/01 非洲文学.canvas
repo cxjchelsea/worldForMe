@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": "root",
+      "type": "text",
+      "text": "R7 非洲文学",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 100
+    },
+    {
+      "id": "t1",
+      "type": "file",
+      "file": "11 内部传统/01 口传—史诗与本土语言传统.md",
+      "x": -650,
+      "y": 160,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t2",
+      "type": "file",
+      "file": "11 内部传统/02 马格里布—北非多语文学传统.md",
+      "x": -650,
+      "y": 320,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t3",
+      "type": "file",
+      "file": "11 内部传统/03 西非英语文学传统.md",
+      "x": -650,
+      "y": 480,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t4",
+      "type": "file",
+      "file": "11 内部传统/04 西非法语文学传统.md",
+      "x": -650,
+      "y": 640,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t5",
+      "type": "file",
+      "file": "11 内部传统/05 东非—斯瓦希里文学传统.md",
+      "x": -650,
+      "y": 800,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t6",
+      "type": "file",
+      "file": "11 内部传统/06 非洲之角—埃塞俄比亚/厄立特里亚/索马里文学传统.md",
+      "x": 650,
+      "y": 160,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t7",
+      "type": "file",
+      "file": "11 内部传统/07 中非—大湖区文学传统.md",
+      "x": 650,
+      "y": 320,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t8",
+      "type": "file",
+      "file": "11 内部传统/08 南部非洲文学传统.md",
+      "x": 650,
+      "y": 480,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "t9",
+      "type": "file",
+      "file": "11 内部传统/09 葡语非洲文学传统.md",
+      "x": 650,
+      "y": 640,
+      "width": 360,
+      "height": 90
+    },
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "12 跨传统网络/01 口传—表演—书写转化网络.md",
+      "x": 0,
+      "y": 450,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "12 跨传统网络/02 殖民教育—任务学校与印刷网络.md",
+      "x": 0,
+      "y": 600,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "12 跨传统网络/03 Négritude—泛非主义与文化民族主义网络.md",
+      "x": 0,
+      "y": 750,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "12 跨传统网络/04 反殖民—独立与国家建构网络.md",
+      "x": 0,
+      "y": 900,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "12 跨传统网络/05 种族隔离—解放与转型记忆网络.md",
+      "x": 0,
+      "y": 1050,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "12 跨传统网络/06 战争—独裁—种族灭绝与见证网络.md",
+      "x": 0,
+      "y": 1200,
+      "width": 380,
+      "height": 90
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "12 跨传统网络/07 迁徙—城市—离散与全球出版网络.md",
+      "x": 0,
+      "y": 1350,
+      "width": 380,
+      "height": 90
+    }
+  ],
+  "edges": [
+    {
+      "id": "et1",
+      "fromNode": "root",
+      "toNode": "t1"
+    },
+    {
+      "id": "et2",
+      "fromNode": "root",
+      "toNode": "t2"
+    },
+    {
+      "id": "et3",
+      "fromNode": "root",
+      "toNode": "t3"
+    },
+    {
+      "id": "et4",
+      "fromNode": "root",
+      "toNode": "t4"
+    },
+    {
+      "id": "et5",
+      "fromNode": "root",
+      "toNode": "t5"
+    },
+    {
+      "id": "et6",
+      "fromNode": "root",
+      "toNode": "t6"
+    },
+    {
+      "id": "et7",
+      "fromNode": "root",
+      "toNode": "t7"
+    },
+    {
+      "id": "et8",
+      "fromNode": "root",
+      "toNode": "t8"
+    },
+    {
+      "id": "et9",
+      "fromNode": "root",
+      "toNode": "t9"
+    },
+    {
+      "id": "en1",
+      "fromNode": "root",
+      "toNode": "n1"
+    },
+    {
+      "id": "en2",
+      "fromNode": "root",
+      "toNode": "n2"
+    },
+    {
+      "id": "en3",
+      "fromNode": "root",
+      "toNode": "n3"
+    },
+    {
+      "id": "en4",
+      "fromNode": "root",
+      "toNode": "n4"
+    },
+    {
+      "id": "en5",
+      "fromNode": "root",
+      "toNode": "n5"
+    },
+    {
+      "id": "en6",
+      "fromNode": "root",
+      "toNode": "n6"
+    },
+    {
+      "id": "en7",
+      "fromNode": "root",
+      "toNode": "n7"
+    }
+  ]
+}

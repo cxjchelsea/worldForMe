@@ -1,0 +1,28 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R7 非洲文学")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r7_priority: {displayName: R7优先级}
+  note.r7_tradition: {displayName: 内部传统}
+  note.r7_role: {displayName: R7机制/意义}
+  note.axis_t: {displayName: 时间}
+views:
+  - type: table
+    name: 全部 R7 作品
+    order: [file.name, author, year, r7_priority, r7_tradition, r7_role, axis_t]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r7_priority == "★"
+    order: [file.name, author, r7_tradition, r7_role]
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r7_tradition
+      direction: ASC
+    order: [file.name, author, year, r7_priority, r7_role]

@@ -40,6 +40,9 @@ canon_id: CANON-261
 canon_level: Major
 t6_priority: ★
 t6_history_position: 非洲与黑人离散文学 · 小说
+r7_priority: "★"
+r7_tradition: "南部非洲文学传统"
+r7_role: "津巴布韦殖民成长"
 ---
 # Nervous Conditions
 

@@ -11,7 +11,8 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t: []
-axis_r: []
+axis_r:
+  - R7 非洲文学
 axis_m: []
 axis_g:
 - G3 小说
@@ -30,6 +31,9 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:1546
 - 战争书单.md:1556
+r7_priority: "★"
+r7_tradition: "中非—大湖区文学传统"
+r7_role: "卢旺达种族灭绝见证"
 ---
 # Murambi, The Book of Bones
 

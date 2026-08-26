@@ -37,6 +37,9 @@ batch5_source_refs:
 - 战争书单.md:1528
 t6_priority: △
 t6_history_position: 非洲与黑人离散文学 · 小说
+r7_priority: "◆"
+r7_tradition: "东非—斯瓦希里文学传统"
+r7_role: "当代战争儿童视角"
 ---
 # A Long Way Gone
 

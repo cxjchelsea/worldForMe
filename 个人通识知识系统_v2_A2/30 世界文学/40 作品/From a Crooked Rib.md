@@ -38,6 +38,9 @@ batch2_source_refs:
 - 成长书单.md:2391
 postwar_priority: ★
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r7_priority: "★"
+r7_tradition: "非洲之角—埃塞俄比亚/厄立特里亚/索马里文学传统"
+r7_role: "索马里现代小说"
 ---
 # From a Crooked Rib
 
