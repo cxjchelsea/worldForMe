@@ -1,0 +1,30 @@
+name: R2 structural gap fill V1
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/apply_r2_structural_gap_fill_v1.py'
+      - '.github/workflows/r2-structural-gap-fill-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply R2 structural gap fill
+        run: python scripts/apply_r2_structural_gap_fill_v1.py
+      - name: Re-audit R2 structural coverage
+        run: python scripts/audit_r2_structural_coverage_v1.py
+      - name: Re-audit R2 topic coverage
+        run: python scripts/audit_r2_topic_coverage_v1.py
+      - name: Commit R2 completion
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+cxjchelsea@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_r2'
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "feat: complete R2 structural work coverage V1"
+          git push
