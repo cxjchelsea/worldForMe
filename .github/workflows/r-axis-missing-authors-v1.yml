@@ -1,0 +1,22 @@
+name: R axis missing authors V1
+on:
+  push:
+    paths:
+      - 'scripts/audit_r_axis_missing_authors_v1.py'
+      - '.github/workflows/r-axis-missing-authors-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/audit_r_axis_missing_authors_v1.py
+      - name: Commit audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_acceptance/R_AXIS_MISSING_AUTHORS_V1.md'
+          git diff --cached --quiet || git commit -m 'audit: report R-axis missing authors'
+          git push
