@@ -1,8 +1,8 @@
 # QT8.2｜Template V0 Pilot Plan
 
-> 状态：`PILOT_A_ACCEPTED / READY_FOR_PILOT_B`
+> 状态：`PILOT_A_ACCEPTED / PILOT_B_CONTENT_PASS_A`
 >
-> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证。
+> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证，并开始由 archetype Pilot B 进行跨类型复用验证。
 
 ## 1. 目标
 
@@ -25,9 +25,7 @@ QT8.2｜共享数据.base
 
 **洪水与灾后重建**
 
-状态：
-
-`ACCEPTED_REFERENCE_MOTIF_V0`
+状态：`ACCEPTED_REFERENCE_MOTIF_V0`
 
 已验证：
 
@@ -39,15 +37,25 @@ QT8.2｜共享数据.base
 - `qt82_work_reference`；
 - 共享 Base。
 
-`qt82_component_relation` 已建立 schema，但正式跨类型记录等待后续对象完成准入。
+`qt82_component_relation` 已建立 schema，但正式跨类型记录等待相关对象完成自身准入。
 
-### Pilot B｜archetype｜下一阶段
+### Pilot B｜archetype｜进行中
 
 第一对象：**受苦义人**（abstract_archetype）
 
-来源入口：约伯；并可与古代近东相关受苦义人／正义受苦问题域比较。
+当前状态：`CONTENT_PASS_A_COMPLETE / ACCEPTANCE_NOT_YET`
 
-重点验证：
+第一轮来源：
+
+```text
+QT8.1.1
+→ 约伯／《约伯记》
+
+古代美索不达米亚（QT8.1 待建）
+→ Šubši-mēšrê-Šakkan／Ludlul bēl nēmeqi
+```
+
+Content Pass A 已初步支持：
 
 ```text
 abstract_archetype 准入
@@ -55,12 +63,22 @@ archetype vs theme
 core_functions / variable_features
 source_figure / archetype 分层
 functional_similarity vs historical_transmission
-首次正式跨类型 qt82_component_relation
+Shared Data Layer 的 source_status / qt82_source_reference 跨类型复用
 ```
+
+当前已经建立 2 条 archetype `qt82_source_reference`，但尚未建立正式 `qt82_work_reference` 或 `qt82_component_relation`。
+
+下一步 Content Pass B：
+
+1. 加深《约伯记》与 `Ludlul bēl nēmeqi` 的角色功能比较，不把问题域相似升级成直接依赖；
+2. 核证至少 2–3 个后世重写，用 `qt82_work_reference` 测试 archetype 的 retained / modified features；
+3. 检查是否有已经正式准入的 QT8.2 component 可作为首条跨类型 `qt82_component_relation` target；若没有则继续保持 candidate gate；
+4. 做 Pilot B Structure / Acceptance Review；
+5. 抽象 archetype 稳定后，再用**所罗门王**做 `named_archetype` 压力测试。
 
 第二候选：**所罗门王**（named_archetype_candidate）
 
-用于验证命名型原型是否能与 QT8.1 来源人物彻底分层。建议在“受苦义人”完成后作为 named archetype 专门压力测试。
+用于验证命名型原型是否能与 QT8.1 来源人物彻底分层；不在受苦义人尚未稳定时提前启动。
 
 ### Pilot C｜plot_pattern
 
@@ -88,13 +106,14 @@ functional_similarity vs historical_transmission
 
 | 维度 | 洪水 motif | 受苦义人 archetype | 预言结构 | 巴别塔 symbol |
 |---|---:|---:|---:|---:|
-| 来源回指 QT8.1 | PASS | 必须 | 必须 | 必须 |
-| 多来源比较 | PASS | 中 | 强 | 初期较弱 |
-| relation_type / evidence_level | PASS | 强 | 强 | 中 |
-| 文本谱系 | PASS | 强 | 强 | 强 |
-| 对象边界压力 | PASS | archetype vs theme | plot vs motif | symbol vs prop |
-| 后世重写 | PASS | 强 | 强 | 强 |
-| Shared Data Layer | PASS 首轮 | 跨类型验证 | 复用 | 复用 |
+| 来源回指 QT8.1 | PASS | PASS_SO_FAR | 必须 | 必须 |
+| 多来源比较 | PASS | PASS_SO_FAR | 强 | 初期较弱 |
+| relation_type / evidence_level | PASS | PASS_SO_FAR | 强 | 中 |
+| 文本谱系 | PASS | PASS_SO_FAR | 强 | 强 |
+| 对象边界压力 | PASS | PASS_SO_FAR | plot vs motif | symbol vs prop |
+| 后世重写 | PASS | PENDING_PASS_B | 强 | 强 |
+| Shared Data Layer | PASS 首轮 | SOURCE_SCHEMA_PASS_SO_FAR | 复用 | 复用 |
+| component relation 跨类型 | schema only | PENDING | 复用 | 复用 |
 
 ## 4. Pilot 输出
 
@@ -141,6 +160,10 @@ REMOVE
 
 ```text
 QT8.2_PILOT_A = CLOSED_ACCEPTED
-QT8.2_NEXT_STAGE = PILOT_B_SUFFERING_RIGHTEOUS_ARCHETYPE
+QT8.2_PILOT_B = CONTENT_PASS_A_COMPLETE
+QT8.2_ARCHETYPE_TEMPLATE_V0 = REVISED_AFTER_PILOT_B_PASS_A
+QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE_VALIDATION = PASS_SO_FAR
+QT8.2_PILOT_B_ACCEPTANCE = NOT_YET
+QT8.2_NEXT_STAGE = PILOT_B_CONTENT_PASS_B
 QT8.2_TEMPLATE_STATUS = V0_DRAFT / NOT_FROZEN
 ```
