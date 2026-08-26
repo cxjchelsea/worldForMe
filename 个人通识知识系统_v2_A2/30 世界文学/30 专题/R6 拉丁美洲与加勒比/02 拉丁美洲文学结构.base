@@ -1,8 +1,8 @@
 filters:
   and:
-    - topic_id == "WL-TOPIC-R6-LATAM-CARIBBEAN"
+    - topic_id == "WL-TOPIC-R6-LATAM"
 formulas:
-  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨传统网络").replace("mechanism", "形成机制").replace("comparison", "比较").replace("cross_region", "跨区域比较").replace("transmission_mechanism", "传播机制").replace("literary_field", "文学场域").replace("literary_space", "文学空间").replace("field", "文学场域").replace("civilization", "文明传统"), "")
+  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨传统网络").replace("mechanism", "形成机制").replace("comparison", "比较").replace("cross_region", "跨区域比较"), "")
 properties:
   file.name:
     displayName: 节点
