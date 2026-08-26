@@ -1,0 +1,22 @@
+name: R axis acceptance V1
+on:
+  push:
+    paths:
+      - 'scripts/audit_r_axis_acceptance_v1.py'
+      - '.github/workflows/r-axis-acceptance-v1.yml'
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/audit_r_axis_acceptance_v1.py
+      - name: Commit audit
+        if: always()
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_acceptance/'
+          git diff --cached --quiet || git commit -m "audit: record R-axis acceptance v1"
+          git push
