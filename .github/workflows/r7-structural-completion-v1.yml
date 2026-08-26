@@ -11,6 +11,8 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - name: Normalize R7 Horn tradition label
+        run: sed -i 's/厄立里亚/厄立特里亚/g' scripts/complete_r7_topic_map_v1.py
       - run: python scripts/complete_r7_topic_map_v1.py
       - name: Commit R7 completion
         run: |
