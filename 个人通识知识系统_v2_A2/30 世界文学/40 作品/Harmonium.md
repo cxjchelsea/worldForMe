@@ -28,7 +28,8 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "★"
 modernism_tradition_cluster: "美国与Harlem Renaissance"
-modernism_axes: "[]"
+modernism_axes:
+- 小杂志、翻译、流亡与跨国网络
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -38,6 +39,7 @@ t4_history_position: 西欧与英美现代主义场域 · 诗歌
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 modernism_history_position: "西欧与英美现代主义场域 · 诗歌"
+modernism_axes_source: "t4_mechanism_bridge"
 ---
 # Harmonium
 
