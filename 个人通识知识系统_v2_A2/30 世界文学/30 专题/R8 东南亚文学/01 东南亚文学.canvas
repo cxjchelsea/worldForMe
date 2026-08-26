@@ -1,0 +1,271 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "00 东南亚文学.md",
+      "x": 0,
+      "y": 0,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t1",
+      "type": "file",
+      "file": "11 内部传统/01 越南汉喃—国语文学传统.md",
+      "x": -660,
+      "y": 260,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t2",
+      "type": "file",
+      "file": "11 内部传统/02 泰国文学传统.md",
+      "x": -330,
+      "y": 260,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t3",
+      "type": "file",
+      "file": "11 内部传统/03 缅甸文学传统.md",
+      "x": 0,
+      "y": 260,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t4",
+      "type": "file",
+      "file": "11 内部传统/04 柬埔寨—老挝文学传统.md",
+      "x": 330,
+      "y": 260,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t5",
+      "type": "file",
+      "file": "11 内部传统/05 马来—Jawi文学传统.md",
+      "x": 660,
+      "y": 260,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t6",
+      "type": "file",
+      "file": "11 内部传统/06 印尼—爪哇与群岛文学传统.md",
+      "x": -660,
+      "y": 520,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t7",
+      "type": "file",
+      "file": "11 内部传统/07 菲律宾文学传统.md",
+      "x": -330,
+      "y": 520,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t8",
+      "type": "file",
+      "file": "11 内部传统/08 东帝汶—小巽他文学传统.md",
+      "x": 0,
+      "y": 520,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "t9",
+      "type": "file",
+      "file": "11 内部传统/09 新加坡—海峡多语文学传统.md",
+      "x": 330,
+      "y": 520,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "12 跨传统网络/01 梵文—巴利—佛教文本传播网络.md",
+      "x": 660,
+      "y": 520,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "12 跨传统网络/02 汉文—儒学与越南书写网络.md",
+      "x": -660,
+      "y": 780,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "12 跨传统网络/03 罗摩衍那—宫廷史诗改写网络.md",
+      "x": -330,
+      "y": 780,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "12 跨传统网络/04 伊斯兰—马来语—Jawi海上网络.md",
+      "x": 0,
+      "y": 780,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "12 跨传统网络/05 殖民语言—印刷与现代文类网络.md",
+      "x": 330,
+      "y": 780,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n6",
+      "type": "file",
+      "file": "12 跨传统网络/06 民族主义—革命—战争文学网络.md",
+      "x": 660,
+      "y": 780,
+      "width": 280,
+      "height": 80
+    },
+    {
+      "id": "n7",
+      "type": "file",
+      "file": "12 跨传统网络/07 港口—迁徙—区域与全球出版网络.md",
+      "x": -660,
+      "y": 1040,
+      "width": 280,
+      "height": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t1",
+      "toSide": "top"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t2",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t3",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t4",
+      "toSide": "top"
+    },
+    {
+      "id": "e5",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t5",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t6",
+      "toSide": "top"
+    },
+    {
+      "id": "e7",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t7",
+      "toSide": "top"
+    },
+    {
+      "id": "e8",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t8",
+      "toSide": "top"
+    },
+    {
+      "id": "e9",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "t9",
+      "toSide": "top"
+    },
+    {
+      "id": "e10",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n1",
+      "toSide": "top"
+    },
+    {
+      "id": "e11",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n2",
+      "toSide": "top"
+    },
+    {
+      "id": "e12",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n3",
+      "toSide": "top"
+    },
+    {
+      "id": "e13",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n4",
+      "toSide": "top"
+    },
+    {
+      "id": "e14",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n5",
+      "toSide": "top"
+    },
+    {
+      "id": "e15",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n6",
+      "toSide": "top"
+    },
+    {
+      "id": "e16",
+      "fromNode": "home",
+      "fromSide": "bottom",
+      "toNode": "n7",
+      "toSide": "top"
+    }
+  ]
+}

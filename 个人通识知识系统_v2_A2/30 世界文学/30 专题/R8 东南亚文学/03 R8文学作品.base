@@ -1,0 +1,28 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R8 东南亚文学")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r8_priority: {displayName: R8优先级}
+  note.r8_tradition: {displayName: 内部传统}
+  note.r8_role: {displayName: R8机制/意义}
+  note.axis_t: {displayName: 时间}
+views:
+  - type: table
+    name: 全部 R8 作品
+    order: [file.name, author, year, r8_priority, r8_tradition, r8_role, axis_t]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r8_priority == "★"
+    order: [file.name, author, r8_tradition, r8_role]
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r8_tradition
+      direction: ASC
+    order: [file.name, author, year, r8_priority, r8_role]
