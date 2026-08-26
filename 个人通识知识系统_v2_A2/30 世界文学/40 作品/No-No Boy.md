@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t: []
 axis_r:
+  - "R2 东亚文学"
+  - "R5 北美文学"
 - R2 东亚文学
 axis_m: []
 axis_g:
@@ -30,6 +32,9 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1630
+r5_tradition: "亚裔美国文学传统"
+r5_role: "日裔拘禁后身份"
+r5_priority: "★"
 ---
 # No-No Boy
 

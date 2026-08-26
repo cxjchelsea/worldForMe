@@ -16,6 +16,8 @@ t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 全球市场、翻译与奖项
 axis_r:
+  - "R5 北美文学"
+  - "R6 拉丁美洲与加勒比"
 - R5 北美文学
 - R6 拉丁美洲与加勒比
 axis_m:
@@ -45,6 +47,9 @@ batch2_source_refs:
 - 家族书单.md:2608
 t6_priority: ★
 t6_history_position: 跨区域与离散文学场域 · 小说
+r5_tradition: "拉美裔—奇卡诺美国文学传统"
+r5_role: "古巴裔美国离散"
+r5_priority: "◆"
 ---
 # Dreaming in Cuban
 

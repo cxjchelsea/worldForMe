@@ -16,6 +16,7 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
 axis_r:
+  - "R5 北美文学"
 - R5 北美文学
 axis_m:
 - M5 战后与当代美学范式
@@ -46,6 +47,9 @@ batch6_source_refs:
 - 西部书单.md:887
 postwar_priority: ★
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r5_tradition: "北美原住民文学传统"
+r5_role: "现代原住民小说奠基"
+r5_priority: "★"
 ---
 # House Made of Dawn
 

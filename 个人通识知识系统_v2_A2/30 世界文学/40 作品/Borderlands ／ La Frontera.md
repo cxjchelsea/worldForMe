@@ -16,6 +16,7 @@ t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 axis_r:
+  - "R5 北美文学"
 - R5 北美文学
 axis_m:
 - M5 战后与当代美学范式
@@ -44,6 +45,9 @@ batch6_source_refs:
 - 西部书单.md:2309
 t6_priority: △
 t6_history_position: 当代全球类型文学场域 · 小说
+r5_tradition: "拉美裔—奇卡诺美国文学传统"
+r5_role: "边境理论与混合文体"
+r5_priority: "★"
 ---
 # Borderlands / La Frontera
 

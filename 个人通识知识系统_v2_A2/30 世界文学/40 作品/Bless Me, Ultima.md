@@ -16,6 +16,7 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
 axis_r:
+  - "R5 北美文学"
 - R5 北美文学
 axis_m:
 - M5 战后与当代美学范式
@@ -44,6 +45,9 @@ batch6_source_refs:
 - 西部书单.md:2308
 postwar_priority: ★
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r5_tradition: "拉美裔—奇卡诺美国文学传统"
+r5_role: "奇卡诺成长小说"
+r5_priority: "★"
 ---
 # Bless Me, Ultima
 
