@@ -1,12 +1,12 @@
 ---
-id: WL-WORK-1581
+id: WL-WORK-3223
 type: work
-title: 他们眼望上苍
-title_original: Their Eyes Were Watching God
+title: Quicksand
+title_original: Quicksand
 aliases: []
-author: 佐拉·尼尔·赫斯顿
-author_original: Zora Neale Hurston
-year: null
+author: 内拉·拉森
+author_original: Nella Larsen
+year: 1928
 literary_traditions: []
 read_status: 未读
 axis_t:
@@ -18,42 +18,41 @@ axis_m:
 axis_g:
 - G3 小说
 axis_q: []
-axis_source: inferred
+axis_source: curated_m31_v2
 topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: ★
+modernism_priority: ◆
 modernism_tradition_cluster: 美国与Harlem Renaissance
 modernism_axes:
-- 黑人现代性
-- 女性主体
 - 种族与黑人现代主义
 - 性别与女性现代主义
-- 语言政治
-t4_priority: ★
+- 都市现代性
+- 跨国身份
+t4_priority: ◆
 t4_history_position: 哈莱姆文艺复兴与黑人现代主义
 t4_mechanism:
-- 都市、技术与感知革命
 - 帝国、殖民、反殖民与文化翻译
+- 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
-bibliography_status: metadata_pending
-batch4_source_refs:
-- 现代主义书单.md:583
+bibliography_status: curated
 ---
-# 他们眼望上苍
+# Quicksand
 
 ## 基本信息
 
-- 作者：Zora Neale Hurston
+- 作者：Nella Larsen
+- 首次出版年：1928
 - 阅读状态：未读
-
-## T4 位置
-
-- 优先级：★
-- 历史位置：哈莱姆文艺复兴与黑人现代主义
-- 机制：黑人现代性、语言政治与女性主体
 
 ## 专题位置
 
 - [[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]
+  - 专题优先级：◆
+  - 传统入口：美国与Harlem Renaissance
+  - 机制：种族与黑人现代主义；性别与女性现代主义；都市现代性；跨国身份
+
+## 数据说明
+
+> 本文件是中央作品库的唯一 Work 实体。此次作为 M3.1 V2 覆盖缺口补录。
