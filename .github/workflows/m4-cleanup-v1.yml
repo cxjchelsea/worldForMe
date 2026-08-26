@@ -1,0 +1,24 @@
+name: m4-cleanup-v1
+on:
+  push:
+    branches: [topic/m-axis-m4-v2]
+    paths:
+      - 'scripts/cleanup_m4_identity_collisions_v1.py'
+      - '.github/workflows/m4-cleanup-v1.yml'
+permissions:
+  contents: write
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: topic/m-axis-m4-v2
+      - run: python scripts/cleanup_m4_identity_collisions_v1.py
+      - run: |
+          if [ -z "$(git status --porcelain)" ]; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "个人通识知识系统_v2_A2/30 世界文学/40 作品"
+          git commit -m "fix(m4): reconcile canonical identity collisions"
+          git push origin HEAD:topic/m-axis-m4-v2
