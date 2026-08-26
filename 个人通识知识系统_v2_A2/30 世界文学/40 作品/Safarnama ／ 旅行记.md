@@ -13,6 +13,9 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T1 中古多中心文学世界
+t1_history_position: "跨区域传播、印刷与中古晚期转型的波斯语文学世界中，以“旅行文学与见闻书写”为主要路径的过渡节点（读前预判）"
+t1_stage: "约1250—1500：跨区域传播、印刷与中古晚期转型"
+t1_historical_role: "过渡"
 t1_role:
 - 旅行文学与见闻书写
 - 跨区域伊斯兰世界的文本化观察

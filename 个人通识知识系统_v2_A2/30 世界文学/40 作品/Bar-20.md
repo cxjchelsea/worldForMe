@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1890—1914：世纪末危机与现代主义酝酿"
+t4_historical_role: "转折"
 t4_mechanism:
 - 都市、技术与感知革命
 - 小杂志、翻译、流亡与跨国网络
@@ -43,7 +45,7 @@ batch6_source_refs:
 - 西部书单.md:2271
 - 西部书单.md:503
 t4_priority: ★
-t4_history_position: 英美现代类型文学与纸浆杂志场域 · 小说
+t4_history_position: "世纪末危机与现代主义酝酿，以“都市、技术与感知革命”为主要路径的转折节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

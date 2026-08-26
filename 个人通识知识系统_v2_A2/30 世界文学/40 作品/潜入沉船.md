@@ -18,14 +18,17 @@ axis_m:
 - M5 战后与当代美学范式
 axis_g:
 - G1 诗歌
-axis_q: []
+axis_q:
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-T5-POSTWAR
 topic_links:
 - '[[../30 专题/T5 二战后多极文学/00 二战后多极文学|二战后多极文学]]'
 postwar_priority: ★
-postwar_stage: 1965—1975：文学爆炸与全球分叉
+postwar_stage: "1965—1975：文学爆炸与全球分叉"
+postwar_history_position: "文学爆炸与全球分叉，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向

@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T3 19世纪现代文学体系
+t3_stage: "1870—1890：工业社会深化与世纪末转型"
+t3_historical_role: "跨区域转译"
 t3_mechanism:
 - 报刊、连载与大众读者
 - 职业作者、版权与文学市场
@@ -44,7 +46,7 @@ batch6_source_refs:
 - 侠盗书单.md:1009
 - 侠盗书单.md:2032
 t3_priority: △
-t3_history_position: 帝国、殖民与多语言文学空间 · 小说
+t3_history_position: "工业社会深化与世纪末转型，以“报刊、连载与大众读者”为主要路径的跨区域转译节点（读前预判）"
 r9_priority: "△"
 r9_role: "区域扩展阅读（非结构锚点）"
 ---

@@ -14,7 +14,8 @@ axis_t:
 - T6 当代全球文学
 axis_r:
 - R5 北美文学
-axis_m: []
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
 - G3 小说
 axis_q:
@@ -34,7 +35,9 @@ batch3_source_refs:
 - 神话书单.md:1408
 - 神话书单.md:922
 t6_priority: △
-t6_history_position: 当代全球类型文学场域 · 小说
+t6_history_position: "冷战晚期与全球文学重组，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
+t6_stage: "1980—1991：冷战晚期与全球文学重组"
+t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项

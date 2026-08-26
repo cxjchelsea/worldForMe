@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "扩散"
 t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 全球市场、翻译与奖项
@@ -47,7 +49,7 @@ batch2_source_refs:
 - 家族书单.md:2352
 - 家族书单.md:2608
 t6_priority: ★
-t6_history_position: 跨区域与离散文学场域 · 小说
+t6_history_position: "全球化出版与离散写作扩张，以“迁徙、离散与跨国家庭”为主要路径的扩散节点（读前预判）"
 r5_tradition: "拉美裔—奇卡诺美国文学传统"
 r5_role: "古巴裔美国离散"
 r5_priority: "◆"

@@ -10,14 +10,15 @@ year: 1935
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M3.1 现代主义 / Modernism
+- "M3.1 现代主义 / Modernism"
 axis_g:
-- G5 戏剧
-axis_q: []
+- "G2 戏剧"
+axis_q:
+- "QH5 权力、制度与秩序"
 axis_source: curated_m31_v2
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -25,19 +26,22 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "★"
 modernism_tradition_cluster: "殖民与跨国现代主义"
+modernism_topic_role: "文学动员与共同体建构"
 modernism_axes:
 - 帝国与殖民现代性
 - 现代主义戏剧
 - 非洲现代主义
 - 民族主义与现代性
 t4_priority: ★
-t4_history_position: 南非黑人现代主义与全球现代主义扩展
+t4_history_position: "南非黑人现代主义与全球现代主义扩展"
+t4_stage: "1930—1945：政治极化、反殖民与战时转型"
+t4_historical_role: "跨区域转译"
 t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
-modernism_history_position: "南非黑人现代主义与全球现代主义扩展"
+modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 组织化与集体扩展"
 ---
 # The Girl Who Killed to Save
 

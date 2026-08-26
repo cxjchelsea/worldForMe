@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
+t2_stage: "1600—1700：宫廷、城市、巴洛克与全球接触"
+t2_historical_role: "跨区域转译"
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 俗语化、翻译与新读者共同体
@@ -40,7 +42,7 @@ batch1_source_refs:
 - 恐怖书单.md:1717
 - 恐怖书单.md:688
 t2_priority: ★
-t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的跨区域转译节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

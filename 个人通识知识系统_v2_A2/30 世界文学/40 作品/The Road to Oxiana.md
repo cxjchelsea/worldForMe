@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1918—1930：高峰现代主义与全球扩展"
+t4_historical_role: "高峰"
 t4_mechanism:
 - 都市、技术与感知革命
 - 小杂志、翻译、流亡与跨国网络
@@ -38,7 +40,7 @@ batch3_source_refs:
 - 旅行书单.md:2085
 - 旅行书单.md:2139
 t4_priority: ★
-t4_history_position: 西欧与英美现代主义场域 · 纪实与文学非虚构
+t4_history_position: "高峰现代主义与全球扩展，以“都市、技术与感知革命”为主要路径的高峰节点（读前预判）"
 r4_priority: "△"
 r4_role: "区域扩展阅读（非结构锚点）"
 ---

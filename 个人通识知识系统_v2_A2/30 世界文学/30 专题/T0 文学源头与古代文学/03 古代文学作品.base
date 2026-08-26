@@ -9,16 +9,18 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
   note.topics:
     displayName: 专题编号
   note.t0_priority:
     displayName: 优先级
-  note.t0_civilization:
+  note.t0_history_position:
     displayName: 历史位置
+  note.t0_stage:
+    displayName: 内部分期
+  note.t0_historical_role:
+    displayName: 历史角色
   note.t0_role:
-    displayName: 机制
+    displayName: 形成机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -40,9 +42,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -61,9 +64,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -80,9 +84,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -99,9 +104,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -118,9 +124,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -139,9 +146,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -152,15 +160,16 @@ views:
   - type: table
     name: 按历史位置
     groupBy:
-      property: t0_civilization
+      property: t0_history_position
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -177,9 +186,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -196,9 +206,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -215,9 +226,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -234,9 +246,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r
@@ -254,9 +267,10 @@ views:
       - file.name
       - author
       - verification_status
-      - topic_links
       - t0_priority
-      - t0_civilization
+      - t0_history_position
+      - t0_stage
+      - t0_historical_role
       - t0_role
       - axis_t
       - axis_r

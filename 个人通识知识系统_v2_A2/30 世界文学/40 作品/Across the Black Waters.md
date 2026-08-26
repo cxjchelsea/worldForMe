@@ -34,7 +34,9 @@ batch5_source_refs:
 - 战争书单.md:2322
 - 战争书单.md:756
 t4_priority: △
-t4_history_position: 南亚殖民现代性与多语言文学 · 小说
+t4_history_position: "政治极化、反殖民与战时转型，以“心理、主体与叙事视角”为主要路径的形式突破节点（读前预判）"
+t4_stage: "1930—1945：政治极化、反殖民与战时转型"
+t4_historical_role: "形式突破"
 t4_mechanism:
 - 心理、主体与叙事视角
 - 世界大战、革命与政治极化

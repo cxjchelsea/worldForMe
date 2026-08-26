@@ -39,7 +39,9 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:1429
 t4_priority: △
-t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻译、流亡与跨国网络”为主要路径的高峰节点（读前预判）"
+t4_stage: "1918—1930：高峰现代主义与全球扩展"
+t4_historical_role: "高峰"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 r4_priority: "△"

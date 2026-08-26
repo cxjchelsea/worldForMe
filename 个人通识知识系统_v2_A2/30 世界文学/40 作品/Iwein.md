@@ -12,6 +12,9 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T1 中古多中心文学世界
+t1_history_position: "宫廷、宗教与俗语文学扩展的拉丁基督教与欧洲俗语文学圈中，以“口传、讲唱与表演”为主要路径的成熟节点（读前预判）"
+t1_stage: "约1000—1250：宫廷、宗教与俗语文学扩展"
+t1_historical_role: "成熟"
 t1_role:
 - 口传、讲唱与表演
 - 手稿、书写与区域性印刷

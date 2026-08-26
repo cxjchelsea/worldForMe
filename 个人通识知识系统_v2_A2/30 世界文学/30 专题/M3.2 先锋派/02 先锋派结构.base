@@ -2,67 +2,80 @@ filters:
   and:
     - topic_id == "WL-TOPIC-M3.2-AVANT-GARDE"
 formulas:
-  type_zh: if(type == "literature_topic_mechanism", "形成机制", if(type == "literature_topic_section", "专题分支", if(dimension == "mechanism", "形成机制", "核心结构")))
+  module_zh: if(file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/10 核心结构", "核心结构", if(file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/11 主要运动", "专题主体分支", if(file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/12 先锋机制", "机制与核心矛盾", if(file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/13 边界与转型", "内部扩展与转型", "其他"))))
   dimension_zh: if(dimension, dimension.replace("tradition", "传统与地域").replace("movement", "思潮与运动").replace("paradigm", "美学范式").replace("framework", "批评框架").replace("historical_system", "谱系与内部结构").replace("core_question", "核心问题").replace("reading_route", "阅读路线").replace("transmission", "传播与地域").replace("comparison", "比较与边界").replace("definition", "定义与边界").replace("history", "时间框架与问题意识").replace("mechanism", "形成机制"), "")
   history_zh: if(history_position, history_position, "—")
-  mechanism_zh: if(mechanism, mechanism, "—")
 properties:
   file.name:
     displayName: 节点
-  formula.type_zh:
-    displayName: 类型
+  formula.module_zh:
+    displayName: 所属模块
   formula.dimension_zh:
     displayName: 维度
   note.sequence:
     displayName: 顺序
-  note.parent_name:
-    displayName: 父节点
   formula.history_zh:
-    displayName: 历史位置
-  formula.mechanism_zh:
-    displayName: 机制
+    displayName: 节点作用
   note.id:
     displayName: 编号
 views:
   - type: table
     name: 全部知识节点
     groupBy:
-      property: formula.type_zh
+      property: formula.module_zh
       direction: ASC
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
-  - type: table
-    name: 按类型
-    groupBy:
-      property: formula.type_zh
-      direction: ASC
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
+    order:
+      - file.name
+      - formula.module_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.history_zh
+      - id
   - type: table
     name: 核心结构
     filters:
       and:
-        - 'type != "literature_topic_section"'
-        - 'type != "literature_topic_mechanism"'
-        - 'dimension != "mechanism"'
-    groupBy:
-      property: formula.type_zh
-      direction: ASC
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
+        - file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/10 核心结构"
+    order:
+      - file.name
+      - formula.module_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.history_zh
+      - id
   - type: table
-    name: 专题分支
+    name: 专题主体分支
     filters:
       and:
-        - 'type == "literature_topic_section"'
-    groupBy:
-      property: formula.type_zh
-      direction: ASC
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
+        - file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/11 主要运动"
+    order:
+      - file.name
+      - formula.module_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.history_zh
+      - id
   - type: table
-    name: 形成机制
+    name: 机制与核心矛盾
     filters:
-      or:
-        - 'type == "literature_topic_mechanism"'
-        - 'dimension == "mechanism"'
-    groupBy:
-      property: formula.type_zh
-      direction: ASC
-    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent_name, formula.history_zh, formula.mechanism_zh, id]
+      and:
+        - file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/12 先锋机制"
+    order:
+      - file.name
+      - formula.module_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.history_zh
+      - id
+  - type: table
+    name: 内部扩展与转型
+    filters:
+      and:
+        - file.folder == "个人通识知识系统_v2_A2/30 世界文学/30 专题/M3.2 先锋派/13 边界与转型"
+    order:
+      - file.name
+      - formula.module_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.history_zh
+      - id

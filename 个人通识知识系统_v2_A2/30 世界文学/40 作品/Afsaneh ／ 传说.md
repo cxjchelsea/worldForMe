@@ -10,12 +10,17 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
-axis_r: []
+axis_t:
+- "T4 全球现代主义时代"
+axis_r:
+- "R3 南亚文学"
 axis_m:
-- M3.1 现代主义 / Modernism
-axis_g: []
-axis_q: []
+- "M3.1 现代主义 / Modernism"
+axis_g:
+- "G3 小说"
+axis_q:
+- "QH3 身份、身体与归属"
+- "QH1 自我、存在与生命"
 axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -23,13 +28,14 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "★"
 modernism_tradition_cluster: "南亚、波斯与阿拉伯现代主义"
+modernism_topic_role: "核心典范与形式确立"
 modernism_axes:
 - 殖民现代性与语言转型
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:923
-modernism_history_position: "现代主义跨地域展开（具体阶段待中央年代元数据校准）"
+modernism_history_position: "殖民现代性与多语言文学转型 · 核心形成与典范确立"
 modernism_axes_source: "tradition_level_fallback"
 ---
 # Afsaneh / 传说

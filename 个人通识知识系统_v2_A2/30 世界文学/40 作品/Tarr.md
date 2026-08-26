@@ -10,12 +10,17 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
-axis_r: []
+axis_t:
+- "T4 全球现代主义时代"
+axis_r:
+- "R4 欧洲文学"
 axis_m:
-- M3.1 现代主义 / Modernism
-axis_g: []
-axis_q: []
+- "M3.1 现代主义 / Modernism"
+axis_g:
+- "G3 小说"
+axis_q:
+- "QH7 历史、记忆与时间"
+- "QH1 自我、存在与生命"
 axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -23,13 +28,14 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "◆"
 modernism_tradition_cluster: "英国—爱尔兰现代主义"
+modernism_topic_role: "专题扩展与变体生成"
 modernism_axes:
 - 主体、时间与叙事实验
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:245
-modernism_history_position: "现代主义跨地域展开（具体阶段待中央年代元数据校准）"
+modernism_history_position: "英爱高峰现代主义与形式革新 · 扩展、变体与后续发展"
 modernism_axes_source: "tradition_level_fallback"
 ---
 # Tarr

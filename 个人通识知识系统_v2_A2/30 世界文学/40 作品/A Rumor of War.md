@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_history_position: "革命激情退潮与后现代成熟，以“从欧洲中心到多中心世界文学”为主要路径的过渡节点（读前预判）"
+postwar_historical_role: "过渡"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
@@ -36,7 +38,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:1342
 postwar_priority: △
-postwar_stage: 1975—1980：革命激情退潮与后现代成熟
+postwar_stage: "1975—1980：革命激情退潮与后现代成熟"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

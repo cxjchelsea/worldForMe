@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
@@ -37,7 +39,7 @@ batch3_source_refs:
 - 旅行书单.md:1280
 - 旅行书单.md:2102
 t6_priority: ★
-t6_history_position: 当代全球类型文学场域 · 纪实与文学非虚构
+t6_history_position: "全球化出版与离散写作扩张，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r7_priority: "△"
 r7_role: "区域扩展阅读（非结构锚点）"
 ---

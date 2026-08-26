@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "1980—1991：冷战晚期与全球文学重组"
+t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
@@ -39,7 +41,7 @@ batch2_source_refs:
 canon_id: CANON-261
 canon_level: Major
 t6_priority: ★
-t6_history_position: 非洲与黑人离散文学 · 小说
+t6_history_position: "冷战晚期与全球文学重组，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r7_priority: "★"
 r7_tradition: "南部非洲文学传统"
 r7_role: "津巴布韦殖民成长"

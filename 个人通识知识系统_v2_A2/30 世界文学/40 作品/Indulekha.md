@@ -23,7 +23,9 @@ axis_source: inferred
 topics: []
 topic_links: []
 t3_priority: ◆
-t3_history_position: 殖民印度地方语言现代小说形成
+t3_history_position: "殖民印度地方语言现代小说形成"
+t3_stage: "1830—1870：市场扩张、现实主义与现代小说成熟"
+t3_historical_role: "阶段性代表"
 t3_mechanism:
 - 殖民教育与地方语言写作
 - 社会改革与现代小说

@@ -35,6 +35,9 @@ batch3_source_refs:
 - 神话书单.md:794
 t1_priority: △
 t1_network: 南亚—东南亚多语言传统（补充）
+t1_history_position: "传统保存与多中心网络形成的南亚—东南亚多语言传统（补充）中，以“口传、讲唱与表演”为主要路径的经典化节点（读前预判）"
+t1_stage: "约500—1000：传统保存与多中心网络形成"
+t1_historical_role: "经典化"
 t1_role:
 - 口传、讲唱与表演
 - 保存与再经典化

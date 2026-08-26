@@ -13,7 +13,8 @@ axis_t:
 - T2 早期现代文学
 axis_r:
 - R9 大洋洲与太平洋
-axis_m: []
+axis_m:
+- "M1 早期现代思想与美学"
 axis_g:
 - G3 小说
 axis_q:
@@ -32,7 +33,9 @@ batch3_source_refs:
 - 神话书单.md:1409
 - 神话书单.md:951
 t2_priority: △
-t2_history_position: 海洋亚洲与跨区域接触 · 小说
+t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的跨区域转译节点（读前预判）"
+t2_stage: "1600—1700：宫廷、城市、巴洛克与全球接触"
+t2_historical_role: "跨区域转译"
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 俗语化、翻译与新读者共同体

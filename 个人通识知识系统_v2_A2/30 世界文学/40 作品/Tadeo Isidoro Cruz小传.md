@@ -51,7 +51,9 @@ batch6_source_refs:
 - 侠盗书单.md:1141
 - 侠盗书单.md:2041
 postwar_priority: △
-postwar_stage: 1945—1955：废墟、罪责与重新开始
+postwar_stage: "1945—1955：废墟、罪责与重新开始"
+postwar_history_position: "废墟、罪责与重新开始，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向

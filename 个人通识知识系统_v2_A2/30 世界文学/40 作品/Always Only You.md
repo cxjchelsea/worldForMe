@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "2020—至今：疫情、气候与技术社会"
+t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
@@ -36,7 +38,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 爱情书单.md:1248
 t6_priority: ◆
-t6_history_position: 东亚全球化与记忆文学 · 小说
+t6_history_position: "疫情、气候与技术社会，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r2_priority: "△"
 r2_role: "区域扩展阅读（非结构锚点）"
 ---

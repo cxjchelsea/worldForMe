@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "反拨"
 t6_mechanism:
 - 记忆、创伤与历史重写
 - 全球市场、翻译与奖项
@@ -36,7 +38,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:1528
 t6_priority: △
-t6_history_position: 非洲与黑人离散文学 · 小说
+t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
 r7_priority: "◆"
 r7_tradition: "东非—斯瓦希里文学传统"
 r7_role: "当代战争儿童视角"

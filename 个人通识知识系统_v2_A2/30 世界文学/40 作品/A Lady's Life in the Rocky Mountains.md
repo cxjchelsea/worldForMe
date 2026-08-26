@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T3 19世纪现代文学体系
+t3_stage: "1830—1870：市场扩张、现实主义与现代小说成熟"
+t3_historical_role: "跨区域转译"
 t3_mechanism:
 - 报刊、连载与大众读者
 - 职业作者、版权与文学市场
@@ -38,7 +40,7 @@ batch3_source_refs:
 - 旅行书单.md:2060
 - 旅行书单.md:829
 t3_priority: ★
-t3_history_position: 欧洲现代文学市场 · 纪实与文学非虚构
+t3_history_position: "市场扩张、现实主义与现代小说成熟，以“报刊、连载与大众读者”为主要路径的跨区域转译节点（读前预判）"
 r4_priority: "△"
 r4_role: "区域扩展阅读（非结构锚点）"
 ---

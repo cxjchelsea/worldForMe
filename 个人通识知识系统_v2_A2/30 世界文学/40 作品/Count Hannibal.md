@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1890—1914：世纪末危机与现代主义酝酿"
+t4_historical_role: "转折"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
@@ -41,7 +43,7 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:675
 t4_priority: ◆
-t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_history_position: "世纪末危机与现代主义酝酿，以“小杂志、翻译、流亡与跨国网络”为主要路径的转折节点（读前预判）"
 r4_priority: "△"
 r4_role: "区域扩展阅读（非结构锚点）"
 ---

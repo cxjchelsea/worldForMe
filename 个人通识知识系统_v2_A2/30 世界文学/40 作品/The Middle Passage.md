@@ -13,6 +13,7 @@ read_status: 未读
 axis_t:
 - T5 二战后多极文学
 axis_r:
+- "R6 拉丁美洲与加勒比"
 axis_m:
 - M5 战后与当代美学范式
 axis_g:
@@ -32,7 +33,9 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 旅行书单.md:1186
 postwar_priority: △
-postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_stage: "1955—1965：世界真正多中心化"
+postwar_history_position: "世界真正多中心化，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向

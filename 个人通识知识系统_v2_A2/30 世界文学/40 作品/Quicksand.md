@@ -10,14 +10,15 @@ year: 1928
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3.1 现代主义 / Modernism
+- "M3.1 现代主义 / Modernism"
 axis_g:
-- G3 小说
-axis_q: []
+- "G3 小说"
+axis_q:
+- "QH5 权力、制度与秩序"
 axis_source: curated_m31_v2
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -25,19 +26,22 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "◆"
 modernism_tradition_cluster: "美国与Harlem Renaissance"
+modernism_topic_role: "传播扩散与跨地域连接"
 modernism_axes:
 - 种族与黑人现代主义
 - 性别与女性现代主义
 - 都市现代性
 - 跨国身份
 t4_priority: ◆
-t4_history_position: 哈莱姆文艺复兴与黑人现代主义
+t4_history_position: "哈莱姆文艺复兴与黑人现代主义"
+t4_stage: "1918—1930：高峰现代主义与全球扩展"
+t4_historical_role: "跨区域转译"
 t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
-modernism_history_position: "哈莱姆文艺复兴与黑人现代主义"
+modernism_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
 ---
 # Quicksand
 

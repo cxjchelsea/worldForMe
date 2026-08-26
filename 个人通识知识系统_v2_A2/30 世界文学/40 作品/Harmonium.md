@@ -11,16 +11,19 @@ year: 1923
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
+t4_stage: "1918—1930：高峰现代主义与全球扩展"
+t4_historical_role: "高峰"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3.1 现代主义 / Modernism
+- "M3.1 现代主义 / Modernism"
 axis_g:
-- G1 诗歌
-axis_q: []
+- "G1 诗歌"
+axis_q:
+- "QH1 自我、存在与生命"
 axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -28,6 +31,7 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "★"
 modernism_tradition_cluster: "美国与Harlem Renaissance"
+modernism_topic_role: "传播扩散与跨地域连接"
 modernism_axes:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 自动通过
@@ -35,10 +39,10 @@ bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:524
 t4_priority: ★
-t4_history_position: 西欧与英美现代主义场域 · 诗歌
+t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻译、流亡与跨国网络”为主要路径的高峰节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
-modernism_history_position: "西欧与英美现代主义场域 · 诗歌"
+modernism_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
 ---
 # Harmonium

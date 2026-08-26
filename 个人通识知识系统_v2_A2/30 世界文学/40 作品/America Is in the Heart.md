@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_history_position: "世界真正多中心化，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
@@ -37,7 +39,7 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1622
 postwar_priority: ★
-postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_stage: "1955—1965：世界真正多中心化"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 r8_priority: "△"

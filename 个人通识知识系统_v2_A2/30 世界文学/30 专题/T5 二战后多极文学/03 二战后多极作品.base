@@ -9,16 +9,18 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
   note.topics:
     displayName: 专题编号
   note.postwar_priority:
     displayName: 优先级
-  note.postwar_stage:
+  note.postwar_history_position:
     displayName: 历史位置
+  note.postwar_stage:
+    displayName: 内部分期
+  note.postwar_historical_role:
+    displayName: 历史角色
   note.postwar_axes:
-    displayName: 机制
+    displayName: 形成机制
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -40,9 +42,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -59,9 +62,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -78,9 +82,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -97,9 +102,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -116,9 +122,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -137,9 +144,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -148,7 +156,7 @@ views:
       - axis_q
       - id
   - type: table
-    name: 按历史位置
+    name: 按内部分期
     groupBy:
       property: postwar_stage
       direction: ASC
@@ -156,9 +164,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -175,9 +184,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -194,9 +204,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -213,9 +224,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -232,9 +244,10 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r
@@ -252,9 +265,10 @@ views:
       - file.name
       - author
       - verification_status
-      - topic_links
       - postwar_priority
+      - postwar_history_position
       - postwar_stage
+      - postwar_historical_role
       - postwar_axes
       - axis_t
       - axis_r

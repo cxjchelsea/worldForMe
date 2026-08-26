@@ -34,7 +34,9 @@ batch3_source_refs:
 - 旅行书单.md:2073
 - 旅行书单.md:935
 t3_priority: △
-t3_history_position: 欧洲现代文学市场 · 纪实与文学非虚构
+t3_history_position: "市场扩张、现实主义与现代小说成熟，以“职业作者、版权与文学市场”为主要路径的成熟节点（读前预判）"
+t3_stage: "1830—1870：市场扩张、现实主义与现代小说成熟"
+t3_historical_role: "成熟"
 t3_mechanism:
 - 职业作者、版权与文学市场
 r4_priority: "△"

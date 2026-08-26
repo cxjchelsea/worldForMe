@@ -11,16 +11,19 @@ year: 1917
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
+t4_stage: "1914—1918：战争断裂与先锋化"
+t4_historical_role: "转折"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M3.1 现代主义 / Modernism
+- "M3.1 现代主义 / Modernism"
 axis_g:
-- G4 散文与随笔
-axis_q: []
+- "G4 散文与随笔"
+axis_q:
+- "QH1 自我、存在与生命"
 axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -28,6 +31,7 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "◆"
 modernism_tradition_cluster: "伊比利亚与意大利现代主义"
+modernism_topic_role: "传播扩散与跨地域连接"
 modernism_axes:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 自动通过
@@ -35,10 +39,10 @@ bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:631
 t4_priority: ◆
-t4_history_position: 西欧与英美现代主义场域 · 散文与随笔
+t4_history_position: "战争断裂与先锋化，以“小杂志、翻译、流亡与跨国网络”为主要路径的转折节点（读前预判）"
 r4_priority: "△"
 r4_role: "区域扩展阅读（非结构锚点）"
-modernism_history_position: "西欧与英美现代主义场域 · 散文与随笔"
+modernism_history_position: "南欧现代主义与先锋互动 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
 ---
 # Greguerías

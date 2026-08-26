@@ -11,17 +11,20 @@ year: 1942
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
+t4_stage: "1930—1945：政治极化、反殖民与战时转型"
+t4_historical_role: "边缘突破"
 t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R3 南亚文学
+- "R3 南亚文学"
 axis_m:
-- M3.1 现代主义 / Modernism
+- "M3.1 现代主义 / Modernism"
 axis_g:
-- G1 诗歌
-axis_q: []
+- "G1 诗歌"
+axis_q:
+- "QH5 权力、制度与秩序"
 axis_source: inferred
 topics:
 - WL-TOPIC-M3-MODERNISM
@@ -29,6 +32,7 @@ topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
 modernism_priority: "◆"
 modernism_tradition_cluster: "南亚、波斯与阿拉伯现代主义"
+modernism_topic_role: "传播扩散与跨地域连接"
 modernism_axes:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
@@ -37,12 +41,12 @@ bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:908
 t4_priority: ◆
-t4_history_position: 南亚殖民现代性与多语言文学 · 诗歌
+t4_history_position: "政治极化、反殖民与战时转型，以“帝国、殖民、反殖民与文化翻译”为主要路径的边缘突破节点（读前预判）"
 r3_tradition: "孟加拉与东部语言文学传统"
 r3_role:
 - "孟加拉现代诗"
 r3_priority: ◆
-modernism_history_position: "南亚殖民现代性与多语言文学 · 诗歌"
+modernism_history_position: "殖民现代性与多语言文学转型 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
 ---
 # Banalata Sen

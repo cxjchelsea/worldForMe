@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_history_position: "文学爆炸与全球分叉，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
@@ -37,7 +39,7 @@ batch2_source_refs:
 - 成长书单.md:1271
 - 成长书单.md:2391
 postwar_priority: ★
-postwar_stage: 1965—1975：文学爆炸与全球分叉
+postwar_stage: "1965—1975：文学爆炸与全球分叉"
 r7_priority: "★"
 r7_tradition: "非洲之角—埃塞俄比亚/厄立特里亚/索马里文学传统"
 r7_role: "索马里现代小说"

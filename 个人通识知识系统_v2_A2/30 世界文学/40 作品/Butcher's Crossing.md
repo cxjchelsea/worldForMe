@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_history_position: "世界真正多中心化，以“从欧洲中心到多中心世界文学”为主要路径的扩散节点（读前预判）"
+postwar_historical_role: "扩散"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
@@ -43,7 +45,7 @@ batch6_source_refs:
 - 西部书单.md:2292
 - 西部书单.md:768
 postwar_priority: ★
-postwar_stage: 1955—1965：世界真正多中心化
+postwar_stage: "1955—1965：世界真正多中心化"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

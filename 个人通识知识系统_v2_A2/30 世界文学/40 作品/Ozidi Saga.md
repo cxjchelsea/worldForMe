@@ -14,7 +14,8 @@ axis_t:
 - T5 二战后多极文学
 axis_r:
 - R7 非洲文学
-axis_m: []
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
 - G3 小说
 axis_q:
@@ -33,7 +34,9 @@ bibliography_status: metadata_pending
 batch3_source_refs:
 - 神话书单.md:848
 postwar_priority: △
-postwar_stage: 1975—1980：革命激情退潮与后现代成熟
+postwar_stage: "1975—1980：革命激情退潮与后现代成熟"
+postwar_history_position: "革命激情退潮与后现代成熟，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
+postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向

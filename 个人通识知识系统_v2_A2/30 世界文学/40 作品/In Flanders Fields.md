@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1914—1918：战争断裂与先锋化"
+t4_historical_role: "转折"
 t4_mechanism:
 - 世界大战、革命与政治极化
 - 小杂志、翻译、流亡与跨国网络
@@ -36,7 +38,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:537
 t4_priority: ★
-t4_history_position: 西欧与英美现代主义场域 · 小说
+t4_history_position: "战争断裂与先锋化，以“世界大战、革命与政治极化”为主要路径的转折节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

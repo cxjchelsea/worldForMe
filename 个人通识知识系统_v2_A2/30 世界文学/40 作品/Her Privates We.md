@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1930—1945：政治极化、反殖民与战时转型"
+t4_historical_role: "转折"
 t4_mechanism:
 - 世界大战、革命与政治极化
 - 帝国、殖民、反殖民与文化翻译
@@ -37,7 +39,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 战争书单.md:710
 t4_priority: ★
-t4_history_position: 英联邦与大洋洲现代文学场域 · 小说
+t4_history_position: "政治极化、反殖民与战时转型，以“世界大战、革命与政治极化”为主要路径的转折节点（读前预判）"
 r9_priority: "△"
 r9_role: "区域扩展阅读（非结构锚点）"
 ---

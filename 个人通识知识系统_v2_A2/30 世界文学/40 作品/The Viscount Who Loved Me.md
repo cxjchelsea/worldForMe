@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
@@ -36,7 +38,7 @@ bibliography_status: metadata_pending
 batch5_source_refs:
 - 爱情书单.md:1018
 t6_priority: ★
-t6_history_position: 欧洲与北美全球出版中心 · 小说
+t6_history_position: "全球化出版与离散写作扩张，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

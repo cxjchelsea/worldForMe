@@ -1,1 +1,34 @@
-{"nodes":[{"id":"root","type":"file","x":600,"y":0,"width":520,"height":100,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/00 当代全球文学.md"},{"id":"question","type":"text","x":0,"y":0,"width":420,"height":120,"text":"核心问题\n地方历史、迁徙网络与全球市场怎样共同塑造当代文学？"},{"id":"period","type":"file","x":0,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/02 时间框架与分期.md"},{"id":"formation","type":"file","x":450,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/03 当代全球文学如何形成.md"},{"id":"market","type":"file","x":900,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/04 全球市场、翻译与奖项.md"},{"id":"compare","type":"file","x":1350,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/05 跨区域比较.md"},{"id":"fields","type":"text","x":140,"y":410,"width":520,"height":210,"text":"六个当代全球文学场域\n1 欧洲与北美全球出版中心\n2 东亚全球化与记忆文学\n3 南亚与全球离散文学\n4 非洲与黑人离散文学\n5 拉丁美洲与后爆炸时代\n6 西亚/中东战争迁徙与跨语际写作"},{"id":"mechanisms","type":"text","x":760,"y":410,"width":520,"height":210,"text":"五条当代全球化机制\n1 迁徙、离散与跨国家庭\n2 身份、性别与代表权\n3 记忆、创伤与历史重写\n4 类型全球化与文类融合\n5 数字平台、气候与技术社会"},{"id":"structdb","type":"file","x":150,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/02 当代全球文学结构.base"},{"id":"works","type":"file","x":670,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/03 当代全球文学作品.base"},{"id":"reading","type":"file","x":1190,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/06 阅读路线.md"},{"id":"route","type":"text","x":670,"y":900,"width":430,"height":100,"text":"阅读层级\n15 个骨架位置 → 约25个理解位置 → 问题驱动增量扩展"},{"id":"previous","type":"file","x":150,"y":1080,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T5 二战后多极文学/00 二战后多极文学.md"},{"id":"future","type":"text","x":1190,"y":1080,"width":430,"height":100,"text":"T6 是当前开放末端\n未来仅在出现足够明确的文学制度断裂时再建立 T7"}],"edges":[{"id":"e1","fromNode":"question","toNode":"root"},{"id":"e2","fromNode":"root","toNode":"period"},{"id":"e3","fromNode":"root","toNode":"formation"},{"id":"e4","fromNode":"root","toNode":"market"},{"id":"e5","fromNode":"root","toNode":"compare"},{"id":"e6","fromNode":"formation","toNode":"fields"},{"id":"e7","fromNode":"market","toNode":"mechanisms"},{"id":"e8","fromNode":"fields","toNode":"structdb"},{"id":"e9","fromNode":"mechanisms","toNode":"works"},{"id":"e10","fromNode":"structdb","toNode":"reading"},{"id":"e11","fromNode":"works","toNode":"reading"},{"id":"e12","fromNode":"reading","toNode":"route"},{"id":"e13","fromNode":"previous","toNode":"root"},{"id":"e14","fromNode":"root","toNode":"future"}]}
+{
+	"nodes":[
+		{"id":"root","type":"file","x":600,"y":0,"width":520,"height":100,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/00 当代全球文学.md"},
+		{"id":"question","type":"text","x":0,"y":0,"width":420,"height":120,"text":"核心问题\n地方历史、迁徙网络与全球市场怎样共同塑造当代文学？"},
+		{"id":"period","type":"file","x":0,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/02 时间框架与分期.md"},
+		{"id":"formation","type":"file","x":450,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/03 当代全球文学如何形成.md"},
+		{"id":"market","type":"file","x":900,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/04 全球市场、翻译与奖项.md"},
+		{"id":"compare","type":"file","x":1350,"y":210,"width":390,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/05 跨区域比较.md"},
+		{"id":"fields","type":"text","x":140,"y":410,"width":520,"height":210,"text":"六个当代全球文学场域\n1 欧洲与北美全球出版中心\n2 东亚全球化与记忆文学\n3 南亚与全球离散文学\n4 非洲与黑人离散文学\n5 拉丁美洲与后爆炸时代\n6 西亚/中东战争迁徙与跨语际写作"},
+		{"id":"mechanisms","type":"text","x":760,"y":410,"width":520,"height":210,"text":"五条当代全球化机制\n1 迁徙、离散与跨国家庭\n2 身份、性别与代表权\n3 记忆、创伤与历史重写\n4 类型全球化与文类融合\n5 数字平台、气候与技术社会"},
+		{"id":"structdb","type":"file","x":150,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/02 当代全球文学结构.base"},
+		{"id":"works","type":"file","x":670,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/03 当代全球文学作品.base"},
+		{"id":"reading","type":"file","x":1190,"y":720,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T6 当代全球文学/10 核心结构/06 阅读路线.md"},
+		{"id":"route","type":"text","x":670,"y":900,"width":430,"height":100,"text":"阅读层级\n15 个骨架位置 → 约25个理解位置 → 问题驱动增量扩展"},
+		{"id":"previous","type":"file","x":150,"y":1080,"width":430,"height":90,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T5 二战后多极文学/00 二战后多极文学.md"},
+		{"id":"future","type":"text","x":1190,"y":1080,"width":430,"height":100,"text":"T6 是当前开放末端\n未来仅在出现足够明确的文学制度断裂时再建立 T7"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"question","toNode":"root","fromSide":"right","toSide":"left"},
+		{"id":"e2","fromNode":"root","toNode":"period","fromSide":"bottom","toSide":"top"},
+		{"id":"e3","fromNode":"root","toNode":"formation","fromSide":"bottom","toSide":"top"},
+		{"id":"e4","fromNode":"root","toNode":"market","fromSide":"bottom","toSide":"top"},
+		{"id":"e5","fromNode":"root","toNode":"compare","fromSide":"bottom","toSide":"top"},
+		{"id":"e6","fromNode":"formation","toNode":"fields","fromSide":"bottom","toSide":"top"},
+		{"id":"e7","fromNode":"market","toNode":"mechanisms","fromSide":"bottom","toSide":"top"},
+		{"id":"e8","fromNode":"fields","toNode":"structdb","fromSide":"bottom","toSide":"top"},
+		{"id":"e9","fromNode":"mechanisms","toNode":"works","fromSide":"bottom","toSide":"top"},
+		{"id":"e10","fromNode":"structdb","toNode":"reading","fromSide":"right","toSide":"left"},
+		{"id":"e11","fromNode":"works","toNode":"reading","fromSide":"right","toSide":"left"},
+		{"id":"e12","fromNode":"reading","toNode":"route","fromSide":"bottom","toSide":"top"},
+		{"id":"e13","fromNode":"previous","toNode":"root","fromSide":"top","toSide":"bottom"},
+		{"id":"e14","fromNode":"root","toNode":"future","fromSide":"bottom","toSide":"top"}
+	]
+}

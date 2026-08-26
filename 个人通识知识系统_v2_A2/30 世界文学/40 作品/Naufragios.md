@@ -13,6 +13,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T2 早期现代文学
+t2_stage: "1600—1700：宫廷、城市、巴洛克与全球接触"
+t2_historical_role: "成熟"
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 帝国、航海、殖民与旅行书写
@@ -61,7 +63,7 @@ batch6_source_refs:
 - 西部书单.md:132
 - 西部书单.md:2247
 t2_priority: ★
-t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的成熟节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

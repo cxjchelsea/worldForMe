@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T6 当代全球文学
+t6_stage: "2020—至今：疫情、气候与技术社会"
+t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
@@ -38,7 +40,7 @@ bibliography_status: metadata_pending
 batch1_source_refs:
 - 奇幻书单.md:1444
 t6_priority: ★
-t6_history_position: 当代全球类型文学场域 · 小说
+t6_history_position: "疫情、气候与技术社会，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

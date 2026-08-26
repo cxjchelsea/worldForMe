@@ -13,6 +13,7 @@ read_status: 未读
 axis_t:
 - T6 当代全球文学
 axis_r:
+- "R5 北美文学"
 axis_m:
 - M5 战后与当代美学范式
 axis_g:
@@ -38,7 +39,9 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 海盗书单.md:817
 t6_priority: △
-t6_history_position: 跨区域与离散文学场域 · 小说
+t6_history_position: "全球化出版与离散写作扩张，以“迁徙、离散与跨国家庭”为主要路径的形式突破节点（读前预判）"
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "形式突破"
 t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 类型全球化与文类融合

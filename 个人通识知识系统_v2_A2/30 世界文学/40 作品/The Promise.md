@@ -16,7 +16,8 @@ axis_m:
 - M5 战后与当代美学范式
 axis_g:
 - G3 小说
-axis_q: []
+axis_q:
+- "QH3 身份、身体与归属"
 axis_source: inferred
 awards:
   - WL-AWARD-BOOKER
@@ -25,7 +26,9 @@ topic_links: []
 verification_status: 需复核
 bibliography_status: metadata_pending
 t6_priority: △
-t6_history_position: 非洲与黑人离散文学 · 小说
+t6_history_position: "全球化出版与离散写作扩张，以“迁徙、离散与跨国家庭”为主要路径的扩散节点（读前预判）"
+t6_stage: "1991—2008：全球化出版与离散写作扩张"
+t6_historical_role: "扩散"
 t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 全球市场、翻译与奖项
@@ -33,7 +36,6 @@ r7_priority: "◆"
 r7_tradition: "南部非洲文学传统"
 r7_role: "当代南非种族/阶级"
 ---
-
 # The Promise
 
 ## 基本信息

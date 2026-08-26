@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T5 二战后多极文学
+postwar_history_position: "文学爆炸与全球分叉，以“从欧洲中心到多中心世界文学”为主要路径的高峰节点（读前预判）"
+postwar_historical_role: "高峰"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
@@ -55,7 +57,7 @@ batch6_source_refs:
 - 西部书单.md:2286
 - 西部书单.md:683
 postwar_priority: ★
-postwar_stage: 1945—1980：时期归属已确认，阶段待核
+postwar_stage: "1965—1975：文学爆炸与全球分叉"
 r5_priority: "△"
 r5_role: "区域扩展阅读（非结构锚点）"
 ---

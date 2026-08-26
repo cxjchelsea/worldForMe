@@ -12,6 +12,8 @@ literary_traditions: []
 read_status: 未读
 axis_t:
 - T4 全球现代主义时代
+t4_stage: "1914—1918：战争断裂与先锋化"
+t4_historical_role: "边缘突破"
 t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
@@ -42,7 +44,7 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:1060
 t4_priority: ◆
-t4_history_position: 拉丁美洲先锋派与现代城市文学 · 小说
+t4_history_position: "战争断裂与先锋化，以“帝国、殖民、反殖民与文化翻译”为主要路径的边缘突破节点（读前预判）"
 r6_priority: "△"
 r6_role: "区域扩展阅读（非结构锚点）"
 ---
