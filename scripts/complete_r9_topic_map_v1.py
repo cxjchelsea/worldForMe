@@ -119,7 +119,7 @@ S=[
 ('密克罗尼西亚文学传统','核试验/迁徙记忆','辐射岛屿故事|Marshallese nuclear stories','◆'),
 ('密克罗尼西亚文学传统','关岛查莫罗文学','玛丽安娜群岛诗选|Guam Chamorro poems','★'),
 ('密克罗尼西亚文学传统','帕劳口述传统','帕劳故事集|Palauan legends','◆'),
-('密克罗尼西亚文学传统','密联邦航海/岛屿小说','微型岛屿故事集|Micronesian stories','◆'),
+('密克罗尼西亚文学传统','密联邦岛屿文学','My Urohs|Micronesian literature','◆'),
 ('密克罗尼西亚文学传统','军事基地/殖民记忆','殖民地之外的关岛|Guam military literature','◆'),
 
 ('法语太平洋—新喀里多尼亚文学传统','Kanak口述/独立','Kanak口述故事集|Kanak stories','★'),
