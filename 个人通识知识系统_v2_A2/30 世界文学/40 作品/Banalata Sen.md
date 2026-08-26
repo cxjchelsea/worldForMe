@@ -36,6 +36,10 @@ batch4_source_refs:
 - 现代主义书单.md:908
 t4_priority: ◆
 t4_history_position: 南亚殖民现代性与多语言文学 · 诗歌
+r3_tradition: "孟加拉与东部语言文学传统"
+r3_role:
+- "孟加拉现代诗"
+r3_priority: ◆
 ---
 # Banalata Sen
 
