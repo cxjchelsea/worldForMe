@@ -1,0 +1,26 @@
+name: m1-coverage-audit-v1
+
+on:
+  push:
+    branches:
+      - topic/m-axis-m1-v2
+    paths:
+      - 'scripts/audit_m1_coverage_v1.py'
+      - '.github/workflows/m1-coverage-audit-v1.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run M1 final coverage audit
+        run: python scripts/audit_m1_coverage_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m1-coverage-audit
+          path: |
+            reports/m1_coverage_audit.md
+            reports/m1_coverage_audit.json
