@@ -1,5 +1,5 @@
 name: m-axis-base-semantic-audit-v2
-# rerun after M3.1 mechanism completion
+# rerun after canonical frontmatter repair
 on:
   push:
     branches: [main]
