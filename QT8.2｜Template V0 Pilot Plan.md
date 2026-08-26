@@ -1,8 +1,8 @@
 # QT8.2｜Template V0 Pilot Plan
 
-> 状态：`PILOT_A_ACCEPTED / PILOT_B_ACCEPTED / PILOT_B1_CONTENT_PASS_A`
+> 状态：`PILOT_A_ACCEPTED / PILOT_B_ACCEPTED / PILOT_B1_READY_FOR_ACCEPTANCE`
 >
-> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证，并由 archetype Pilot B 完成 source / work 两类实体的跨类型复用验证。
+> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证，并由 archetype Pilot B / B.1 继续做跨类型与 named archetype 压力测试。
 
 ## 1. 目标
 
@@ -17,143 +17,121 @@ qt82_work_reference
 QT8.2｜共享数据.base
 ```
 
-后续 Pilot 不重新设计来源／作品关系 schema，只验证是否需要非破坏性扩展。
-
 ## 2. Pilot 顺序
 
 ### Pilot A｜motif｜已通过
 
-**洪水与灾后重建**
-
-状态：`ACCEPTED_REFERENCE_MOTIF_V0`
-
-已验证：`required_invariants / optional_slots`、来源治理、relation 原子性、source / work reference 与共享 Base。
+**洪水与灾后重建** → `ACCEPTED_REFERENCE_MOTIF_V0`
 
 ### Pilot B｜archetype｜abstract archetype 已通过
 
-**受苦义人**（abstract_archetype）
+**受苦义人** → `ACCEPTED_REFERENCE_ARCHETYPE_V0`
 
-状态：`ACCEPTED_REFERENCE_ARCHETYPE_V0`
+已验证 abstract archetype、archetype vs theme、`core_functions / variable_features`、source figure 分层、source/work schema 与 target gate。
 
-已验证：
+### Pilot B.1｜named archetype｜验收准备完成
+
+**所罗门王**
+
+当前：`CONTENT_PASS_A_COMPLETE / CONTENT_PASS_B_COMPLETE / READY_FOR_ACCEPTANCE`
+
+Pass B 已回答三个决定性问题：
 
 ```text
-abstract_archetype 准入
-archetype vs theme
-core_functions / variable_features
-source_figure / archetype 分层
-functional_similarity vs historical_transmission
-source / work reference 跨类型复用
-component relation target gate
+1. identity_anchor
+→ SUPPORTED
+→ 拆为 required_identity_anchors / supporting_identity_anchors
+
+2. builder_and_centralizer
+→ NOT_CORE
+→ temple_builder_and_centralizer / variable_feature
+
+3. figure_rewriting
+→ SUPPORTED
+→ 已加入 Shared Data Layer work relation vocabulary
 ```
 
-Acceptance Review：[[QT8.2｜Pilot B 受苦义人 Acceptance Review]]
-
-### Pilot B.1｜named archetype｜进行中
-
-**所罗门王**（named_archetype pressure test）
-
-当前状态：`CONTENT_PASS_A_COMPLETE / ACCEPTANCE_NOT_YET`
-
-来源：
+当前 named archetype 模型：
 
 ```text
-QT8.1.1
-→ 王权建立：扫罗—大卫—所罗门
-→ 《列王纪》中的所罗门
+required identity continuity
++
+supporting identity anchors
++
+stable core-function bundle
++
+reception-specific variable features
+=
+named archetype continuity
 ```
 
-Pass A 已建立：
+当前所罗门 core functions：
 
 ```text
-source figure Solomon
-→ 智慧王／审判者／圣殿建造者
-→ 智慧与知识权威
-→ 晚期古代驱魔／魔法王接受
-→ Quranic Sulayman
-→ Solomonic magic 权威名字
+wise_king_and_judge
+divinely_authorized_kingship
+extraordinary_knowledge_authority
 ```
 
-当前初步支持：
+关系治理：
 
 ```text
-named_archetype 与 source figure 可分层
-identity_anchor 是 named archetype 的专属字段候选
-core_functions / variable_features 可继续复用
-同一名字长期连续 ≠ 各传统叙事完全相同
+character_or_name_borrowing
+= 主要借人物／名字
+
+figure_rewriting
+= 同一人物持续可识别，但角色功能／故事系统被系统重写
+
+direct_adaptation
+= 以某一来源故事／文本为主要整体改编对象
 ```
 
-当前数据：
+真实数据调整：
 
 ```text
-1 × qt82_source_reference
-4 × qt82_work_reference
-```
-
-工作实例：
-
-```text
-Josephus, Antiquities 8.42–49
-→ explicit_reference / documented
-
 Testament of Solomon
-→ character_or_name_borrowing / documented
+→ figure_rewriting / documented
 
 Quranic Sulayman traditions
+→ figure_rewriting / documented
+
+Key of Solomon
 → character_or_name_borrowing / documented
 
-Key of Solomon / Clavicula Salomonis tradition
-→ character_or_name_borrowing / documented
+Josephus Antiquities 8.42–49
+→ explicit_reference / documented
 ```
 
-Pass A 暴露一个 relation schema 信号：
+下一步：**Pilot B.1 Acceptance Review**。
 
-```text
-figure_rewriting
-```
-
-named archetype 常出现“同一命名人物被系统重写”的关系，比 `character_or_name_borrowing` 更强，又不等于整部作品 `direct_adaptation`。当前仅记录为候选，不立即修改共享枚举。
-
-下一步 Pass B：
-
-1. 检查 `identity_anchor` 在 Jewish / Christian / Islamic / esoteric reception 中是否稳定；
-2. 判断 `wise_king_and_judge / sacral_royal_authority / knowledge_authority` 哪些真正属于 core functions；
-3. 检查 `builder_and_centralizer` 是否过度依赖来源层，应降为 variable feature；
-4. 用真实记录判断 `figure_rewriting` 是否应加入 Shared Data Layer；
-5. 做 named archetype Acceptance Review。
-
-只有本压力测试通过，archetype 类型才算同时覆盖 abstract / named 两个子型。
+只有该验收通过，archetype 类型才算同时覆盖 abstract / named 两个子型。
 
 ### Pilot C｜plot_pattern
 
 **预言 → 逃避 → 实现**
 
-重点：core_slots / optional_slots / repeatable_slots / terminal_variants，以及 plot vs motif 边界。
+重点：`core_slots / optional_slots / repeatable_slots / terminal_variants` 与 plot vs motif 边界。
 
 ### Pilot D｜symbol
 
-第一对象：**巴别塔**。
+**巴别塔**
 
-重点：source object → symbol 准入、稳定意义与语义漂移、symbol_reuse 与普通视觉相似分离。
+重点：source object → symbol 准入、稳定意义、语义漂移与 symbol_reuse。
 
 ## 3. 验证矩阵
 
 | 维度 | 洪水 motif | 受苦义人 abstract archetype | 所罗门王 named archetype | 预言结构 | 巴别塔 symbol |
 |---|---:|---:|---:|---:|---:|
-| 来源回指 QT8.1 | PASS | PASS | PASS_SO_FAR | 必须 | 必须 |
-| 多来源／多接受比较 | PASS | PASS | PASS_SO_FAR | 强 | 初期较弱 |
-| relation_type / evidence_level | PASS | PASS | SCHEMA_SIGNAL | 强 | 中 |
-| 文本谱系 | PASS | PASS | PASS_SO_FAR | 强 | 强 |
+| 来源回指 QT8.1 | PASS | PASS | PASS | 必须 | 必须 |
+| 多来源／多接受比较 | PASS | PASS | PASS | 强 | 初期较弱 |
+| relation_type / evidence_level | PASS | PASS | PASS_AFTER_REVISION | 强 | 中 |
+| 文本谱系 | PASS | PASS | PASS | 强 | 强 |
 | 对象边界压力 | PASS | PASS | PASS_SO_FAR | plot vs motif | symbol vs prop |
-| 后世重写 | PASS | PASS | PASS_A | 强 | 强 |
-| Shared Data Layer | PASS | SOURCE + WORK PASS | SOURCE + WORK PASS_SO_FAR | 复用 | 复用 |
+| 后世重写 | PASS | PASS | PASS | 强 | 强 |
+| Shared Data Layer | PASS | SOURCE + WORK PASS | SOURCE + WORK PASS | 复用 | 复用 |
 | component relation 跨类型 | schema only | DEFERRED_BY_TARGET_GATE | DEFERRED_BY_TARGET_GATE | 复用 | 复用 |
 
-## 4. Pilot 输出
-
-每个 Pilot 完成后至少产出：对象主页、定义与准入、来源谱系、结构／变体、文本证据、关系记录、后世实例、阅读与研究、共享数据层记录，并记录 KEEP / REVISE / ADD / REMOVE。
-
-## 5. Freeze Gate
+## 4. Freeze Gate
 
 只有当四类对象至少各完成一个 Pilot，并且四类边界无系统性冲突、Shared Data Layer 经跨类型复用、QT8.1 回指稳定、传播证据治理可执行、abstract / named archetype 均通过、symbol 与 plot_pattern 模型均通过，才允许：
 
@@ -164,14 +142,15 @@ named archetype 常出现“同一命名人物被系统重写”的关系，比 
 ```text
 QT8.2_PILOT_A = CLOSED_ACCEPTED
 QT8.2_PILOT_B = CLOSED_ACCEPTED
-QT8.2_PILOT_B1 = CONTENT_PASS_A_COMPLETE
+QT8.2_PILOT_B1_CONTENT_PASS_A = COMPLETE
+QT8.2_PILOT_B1_CONTENT_PASS_B = COMPLETE
 QT8.2_ABSTRACT_ARCHETYPE_VALIDATION = PASS
-QT8.2_NAMED_ARCHETYPE_VALIDATION = PASS_SO_FAR
-QT8.2_IDENTITY_ANCHOR_MODEL = CANDIDATE_SUPPORTED
-QT8.2_FIGURE_REWRITING_RELATION = CANDIDATE
+QT8.2_NAMED_ARCHETYPE_VALIDATION = READY_FOR_ACCEPTANCE
+QT8.2_IDENTITY_ANCHOR_MODEL = SUPPORTED
+QT8.2_FIGURE_REWRITING_RELATION = ACTIVE
 QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE_VALIDATION = PASS
 QT8.2_SHARED_WORK_SCHEMA_CROSS_TYPE_VALIDATION = PASS
 QT8.2_COMPONENT_RELATION = DEFERRED_BY_TARGET_GATE
-QT8.2_NEXT_STAGE = PILOT_B1_CONTENT_PASS_B
+QT8.2_NEXT_STAGE = PILOT_B1_ACCEPTANCE_REVIEW
 QT8.2_TEMPLATE_STATUS = V0_DRAFT / NOT_FROZEN
 ```
