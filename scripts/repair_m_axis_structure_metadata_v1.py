@@ -65,7 +65,7 @@ def default_id(code:str, rel:str):
 def classify(code:str, rel:str, base_raw:str):
     first=Path(rel).name[:2]
     seq=int(first) if first.isdigit() else 0
-    if rel.startswith('10 核心结构/'):
+    if rel.startswith('10 '):
         typ='literature_topic_structure'; dim=DIM_DEFAULT.get(first,'core_question')
     elif rel.startswith('11 '):
         typ='literature_topic_section'
