@@ -27,4 +27,9 @@ items=[
 ('Dire le vrai','Dire le vrai','Déwé Gorodé、Nicolas Kurtovitch',1999,'法语太平洋—新喀里多尼亚文学传统',['跨语太平洋身份'],'◆',[],['https://openresearch-repository.anu.edu.au/bitstreams/3b36ce7d-bfdb-4a35-80ae-78d549d2fec5/download']),
 ]
 created=[create(*x) for x in items]
-AUD.parent.mkdir(parents=True,exist_ok=True); AUD.write_text('# R9 Verified Anchor Repair Batch 2 V1\n\n- Verified Pacific Works created: **12**\n- Multi-role support is allowed only where one verified work genuinely carries multiple closely related R9 mechanisms.\n\n## Created\n'+'\n'.join('- '+x for x in created)+'\n\n`R9_VERIFIED_ANCHOR_REPAIR_BATCH2_V1 = APPLIED`\n',encoding='utf-8')
+# Correct one over-narrow historical R9 slot. My Urohs is a defensible Pohnpeian/Micronesian literary anchor, but poetry rather than a novel.
+gen=Path('scripts/complete_r9_topic_map_v1.py'); txt=gen.read_text(encoding='utf-8')
+old="('密克罗尼西亚文学传统','密联邦航海/岛屿小说','微型岛屿故事集|Micronesian stories','◆')"
+new="('密克罗尼西亚文学传统','密联邦岛屿文学','My Urohs|Micronesian literature','◆')"
+if old in txt: gen.write_text(txt.replace(old,new),encoding='utf-8')
+AUD.parent.mkdir(parents=True,exist_ok=True); AUD.write_text('# R9 Verified Anchor Repair Batch 2 V1\n\n- Verified Pacific Works created: **12**\n- Semantic correction: `密联邦航海/岛屿小说` → `密联邦岛屿文学`, because the verified Pohnpeian anchor is poetry and the older slot was unjustifiably genre-bound.\n- Multi-role support is allowed only where one verified work genuinely carries multiple closely related R9 mechanisms.\n\n## Created\n'+'\n'.join('- '+x for x in created)+'\n\n`R9_VERIFIED_ANCHOR_REPAIR_BATCH2_V1 = APPLIED`\n',encoding='utf-8')
