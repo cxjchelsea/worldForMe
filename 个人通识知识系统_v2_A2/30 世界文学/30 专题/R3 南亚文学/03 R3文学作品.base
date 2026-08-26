@@ -1,0 +1,67 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R3 南亚文学")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.year:
+    displayName: 年份
+  note.read_status:
+    displayName: 阅读状态
+  note.r3_priority:
+    displayName: R3优先级
+  note.r3_tradition:
+    displayName: 内部传统
+  note.r3_role:
+    displayName: R3机制/意义
+  note.axis_t:
+    displayName: 时间
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部 R3 作品
+    order:
+      - file.name
+      - author
+      - year
+      - read_status
+      - r3_priority
+      - r3_tradition
+      - r3_role
+      - axis_t
+      - id
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r3_priority == "★"
+  - type: table
+    name: 重点 ◆
+    filters:
+      and:
+        - r3_priority == "◆"
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - r3_priority == "△"
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r3_tradition
+      direction: ASC
+  - type: table
+    name: 待读映射
+    filters:
+      and:
+        - read_status == "未读"
