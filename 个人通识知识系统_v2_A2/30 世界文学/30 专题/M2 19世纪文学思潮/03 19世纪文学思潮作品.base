@@ -1,0 +1,33 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-M2-19C-MOVEMENTS")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.m2_priority:
+    displayName: 优先级
+  note.m2_movement_cluster:
+    displayName: 思潮
+  note.m2_axes:
+    displayName: 机制
+views:
+  - type: table
+    name: 全部作品
+    order: [file.name, author, read_status, m2_priority, m2_movement_cluster, m2_axes]
+  - type: table
+    name: 核心骨架 ★
+    filters:
+      and:
+        - m2_priority == "★"
+    order: [file.name, author, m2_movement_cluster, m2_axes]
+  - type: table
+    name: 按思潮
+    groupBy:
+      property: m2_movement_cluster
+      direction: ASC
+    order: [file.name, author, m2_priority, m2_axes]

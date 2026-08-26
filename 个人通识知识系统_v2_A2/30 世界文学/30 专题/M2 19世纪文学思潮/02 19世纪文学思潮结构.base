@@ -1,0 +1,8 @@
+filters:
+  and:
+    - file.inFolder("个人通识知识系统_v2_A2/30 世界文学/30 专题/M2 19世纪文学思潮")
+    - file.ext == "md"
+views:
+  - type: table
+    name: 专题结构
+    order: [file.name]
