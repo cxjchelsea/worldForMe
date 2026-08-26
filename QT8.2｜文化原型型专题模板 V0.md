@@ -2,7 +2,7 @@
 
 > 对象类型：`archetype`
 >
-> 状态：`V0_REVISED_AFTER_SUFFERING_RIGHTEOUS_PILOT_PASS_A`
+> 状态：`V0_REVISED_AFTER_SOLOMON_NAMED_ARCHETYPE_PASS_B`
 >
 > 前置治理：[[QT8.2｜世界文化母题、原型与叙事结构模板总则 V0]] + [[QT8.2｜共享数据层规范 V0]]
 
@@ -25,14 +25,27 @@ core_functions: []
 variable_features: []
 ```
 
+对于 `named_archetype`，额外使用：
+
+```yaml
+required_identity_anchors: []
+supporting_identity_anchors: []
+```
+
 其中：
 
 ```text
 core_functions
-= 跨来源实例仍必须保留的稳定角色功能；缺失后应重新判断是否仍属于该 archetype
+= 跨来源／接受实例仍必须保留的稳定角色功能
 
 variable_features
 = 高频但非必选的情节实现、人格特征、结局或社会位置
+
+required_identity_anchors
+= 保证命名人物仍被识别为“同一个文化人物”的最低身份连续
+
+supporting_identity_anchors
+= 高辨识度且长期稳定，但不等于纯身份同一性的最低条件
 ```
 
 治理：
@@ -42,6 +55,9 @@ core_functions
 ≠ ordered plot slots
 ≠ personality traits
 ≠ theme labels
+
+identity anchors
+≠ core functions
 ```
 
 主页至少回答：
@@ -50,10 +66,11 @@ core_functions
 2. 它与来源人物是什么关系？
 3. 它承担哪些 `core_functions`？
 4. 哪些只是 `variable_features`？
-5. 来自哪些 QT8.1 传统／文本，各自 `source_status` 是什么？
-6. 何时开始超出单一来源身份？
-7. 被后世怎样反复调用、改写或反转？
-8. 它承载哪些 motif、plot_pattern、symbol？
+5. 若为 named archetype，哪些是 `required_identity_anchors`，哪些只是 supporting anchors？
+6. 来自哪些 QT8.1 传统／文本，各自 `source_status` 是什么？
+7. 何时开始超出单一来源身份？
+8. 被后世怎样反复调用、改写或反转？
+9. 它承载哪些 motif、plot_pattern、symbol？
 
 ---
 
@@ -71,7 +88,7 @@ Trickster = archetype
 “欺骗与规则” = theme / motif problem domain，不是 archetype 本身
 ```
 
-Pilot B 新增工作规则：
+Pilot B 规则：
 
 > 抽象原型至少要能用一组 `core_functions` 跨两个实例进行核证；如果只能依赖某一具体人物的情节细节，说明抽象层次可能仍然过低。
 
@@ -81,11 +98,23 @@ Pilot B 新增工作规则：
 
 - 超出单一来源文本；
 - 跨时代持续被调用；
+- 具有可追踪的 `required_identity_anchors`；
 - 角色功能出现相对稳定抽象；
-- 能在新语境中脱离原始故事继续被识别；
+- 能在新语境中经过较大重写仍被识别；
 - 有足够文本／媒介证据支持原型化。
 
 “著名人物”不自动升级。
+
+Pilot B.1 所罗门王进一步固定：
+
+```text
+named archetype continuity
+= identity continuity
++ stable role-function continuity
++ reception-specific transformation
+```
+
+只有名字、没有稳定人物功能，可能只是 `character_or_name_borrowing`；只有相似功能、没有命名人物身份，则只能先做 abstract archetype / functional similarity。
 
 ---
 
@@ -115,7 +144,8 @@ unknown_source_status
 - 来源故事；
 - 早期文本；
 - 关键定型文本；
-- 早期再解释。
+- 早期再解释；
+- 身份锚点何时被保持、改变或弱化。
 
 来源数据使用 `qt82_source_reference`，不在说明页复制成另一套数据 schema。
 
@@ -131,32 +161,28 @@ core_functions
 variable_features
 ```
 
+named archetype 再额外区分：
+
+```text
+required_identity_anchors
++
+supporting_identity_anchors
+```
+
 建议同时观察：
 
 - 常见行动模式；
 - 与秩序的关系；
 - 与权威／共同体的关系；
 - 正向／负向／双重面向；
-- 可被替换的角色槽位。
+- 可被替换的角色槽位；
+- 来源层高重要特征是否真的能跨接受史保留。
 
-例如“智慧王”不能只写“有智慧”，而要研究：
+Pilot B.1 提醒：
 
-```text
-统治合法性
-+ 判断／裁决
-+ 知识权威
-+ 神圣或超自然知识
-+ 王权风险与反转
-```
+> `source-figure defining feature` 不自动等于 `named-archetype core function`。
 
-而王冠、具体宫廷事件或某一版本结局通常只是具体实现。
-
-Pilot B 的“受苦义人”进一步证明：
-
-```text
-稳定角色功能
-≠ 某一经典人物的完整剧情模板
-```
+例如来源层的“圣殿建造者”可以极其重要，却未必在后世每次所罗门重写中保持核心。
 
 ---
 
@@ -177,7 +203,16 @@ Pilot B 的“受苦义人”进一步证明：
 → 形成稳定文化模型
 ```
 
-对于 `abstract_archetype`，重点是多个实例如何支持共同角色功能；对于 `named_archetype`，必须回答具体人物“何时、如何变成原型”。
+对于 `abstract_archetype`，重点是多个实例如何支持共同角色功能。
+
+对于 `named_archetype`，必须额外回答：
+
+```text
+什么保证人物仍然是“这个人”？
+哪些 identity anchors 始终存在？
+哪些 source features 被后世抛弃？
+哪些新功能后来反而成为高辨识特征？
+```
 
 ---
 
@@ -210,27 +245,26 @@ Pilot B 的“受苦义人”进一步证明：
 
 抽象原型可跨文明比较，但不得把功能相似误作同一历史来源。
 
-例如：
+named archetype 还需要区分：
 
 ```text
-智慧王 A
-智慧王 B
+character_or_name_borrowing
+figure_rewriting
+direct_adaptation
 ```
 
-可以是：
-
-```yaml
-relation_type: functional_similarity
-evidence_level: documented
-```
-
-但不因此自动建立：
+其中：
 
 ```text
-historical_transmission
-```
+character_or_name_borrowing
+= 主要借人物／名字
 
-若存在传播证据，应另建独立 relation record。
+figure_rewriting
+= 同一可识别人物继续存在，但角色功能、故事环境或身份结构被系统重写
+
+direct_adaptation
+= 明确以某一来源故事／文本为主要整体改编对象
+```
 
 共享原子性规则：
 
@@ -260,17 +294,16 @@ one evidence_level
 
 正式关系使用 `qt82_component_relation`，但只有 target 已通过自身 QT8.2 准入后才能创建；candidate 不能因本专题发现而自动升级。
 
-命名型原型尤其适合建立对象网络，而不是单标签归类。
-
 ---
 
 # 08｜后世重写与身份漂移
 
 重点观察：
 
+- 哪些 `required_identity_anchors` 被保留；
+- 哪些 `supporting_identity_anchors` 被放大或弱化；
 - 哪些 `core_functions` 被保留；
-- 哪些 `variable_features` 被删除或替换；
-- 哪些特征被反转；
+- 哪些 `variable_features` 被删除、替换或新增；
 - 是否从宗教人物变成文学人物；
 - 是否从历史／传说人物变成抽象文化标签；
 - 是否进入政治修辞、心理学、流行文化或游戏角色系统。
@@ -322,7 +355,10 @@ source_evidence: []
 - [ ] 来源已进入 `qt82_source_reference`
 - [ ] 原型化／功能抽象过程有证据链
 - [ ] 命名型原型不是因为“著名”而建立
+- [ ] named archetype 已建立 `required_identity_anchors`
+- [ ] named archetype 已区分 supporting anchors、core functions 与 variable features
+- [ ] `character_or_name_borrowing / figure_rewriting / direct_adaptation` 已按证据区分
 - [ ] 至少一个 motif / plot_pattern / symbol 关系已识别；正式 target 未准入时允许保持 candidate
 - [ ] 跨传统 functional similarity 与 historical transmission 已区分
 - [ ] relation record 遵守原子性
-- [ ] 后世实例能说明 core / variable features 如何变化
+- [ ] 后世实例能说明 identity / core / variable features 如何变化
