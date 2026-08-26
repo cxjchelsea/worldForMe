@@ -1,0 +1,29 @@
+filters:
+  and:
+    - type == "work"
+    - axis_r.contains("R5 北美文学")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r5_priority: {displayName: R5优先级}
+  note.r5_tradition: {displayName: 内部传统}
+  note.r5_role: {displayName: R5机制/意义}
+  note.axis_t: {displayName: 时间}
+  note.read_status: {displayName: 阅读状态}
+views:
+  - type: table
+    name: 全部 R5 作品
+    order: [file.name, author, year, r5_priority, r5_tradition, r5_role, axis_t]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r5_priority == "★"
+    order: [file.name, author, r5_tradition, r5_role]
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: r5_tradition
+      direction: ASC
+    order: [file.name, author, year, r5_priority, r5_role]
