@@ -1,8 +1,8 @@
 # QT8.2｜Template V0 Pilot Plan
 
-> 状态：`PILOT_A_ACCEPTED / PILOT_B_CONTENT_PASS_A`
+> 状态：`PILOT_A_ACCEPTED / PILOT_B_READY_FOR_ACCEPTANCE`
 >
-> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证，并开始由 archetype Pilot B 进行跨类型复用验证。
+> 前置：QT8.1.1 与 QT8.1.2 已作为两个差异显著的来源 Reference Topic；QT8.2 四类模板 V0 已建立；Shared Data Layer V0 已由 motif Pilot A 首轮验证，并由 archetype Pilot B 完成 source / work 两类实体的跨类型复用验证。
 
 ## 1. 目标
 
@@ -39,13 +39,13 @@ QT8.2｜共享数据.base
 
 `qt82_component_relation` 已建立 schema，但正式跨类型记录等待相关对象完成自身准入。
 
-### Pilot B｜archetype｜进行中
+### Pilot B｜archetype｜验收准备完成
 
 第一对象：**受苦义人**（abstract_archetype）
 
-当前状态：`CONTENT_PASS_A_COMPLETE / ACCEPTANCE_NOT_YET`
+当前状态：`CONTENT_PASS_A_COMPLETE / CONTENT_PASS_B_COMPLETE / READY_FOR_ACCEPTANCE`
 
-第一轮来源：
+来源：
 
 ```text
 QT8.1.1
@@ -55,7 +55,7 @@ QT8.1.1
 → Šubši-mēšrê-Šakkan／Ludlul bēl nēmeqi
 ```
 
-Content Pass A 已初步支持：
+当前已支持：
 
 ```text
 abstract_archetype 准入
@@ -64,21 +64,41 @@ core_functions / variable_features
 source_figure / archetype 分层
 functional_similarity vs historical_transmission
 Shared Data Layer 的 source_status / qt82_source_reference 跨类型复用
+Shared Data Layer 的 qt82_work_reference 跨类型复用
 ```
 
-当前已经建立 2 条 archetype `qt82_source_reference`，但尚未建立正式 `qt82_work_reference` 或 `qt82_component_relation`。
+当前已建立：
 
-下一步 Content Pass B：
+```text
+2 × qt82_source_reference
+3 × qt82_work_reference
+```
 
-1. 加深《约伯记》与 `Ludlul bēl nēmeqi` 的角色功能比较，不把问题域相似升级成直接依赖；
-2. 核证至少 2–3 个后世重写，用 `qt82_work_reference` 测试 archetype 的 retained / modified features；
-3. 检查是否有已经正式准入的 QT8.2 component 可作为首条跨类型 `qt82_component_relation` target；若没有则继续保持 candidate gate；
-4. 做 Pilot B Structure / Acceptance Review；
-5. 抽象 archetype 稳定后，再用**所罗门王**做 `named_archetype` 压力测试。
+后世作品核证：
+
+```text
+Joseph Roth, Job
+→ direct_adaptation / documented
+
+Archibald MacLeish, J.B.
+→ direct_adaptation / documented
+
+Muriel Spark, The Only Problem
+→ explicit_reference / documented
+```
+
+当前未建立正式 `qt82_component_relation`。原因不是 schema 失败，而是 target gate 生效：相邻 motif / plot_pattern / symbol 尚未完成自身正式准入，不由本 Pilot 提前升级。
+
+下一步：
+
+1. 做 **Pilot B Acceptance Review**；
+2. 判断 `受苦义人` 是否可冻结为 `ACCEPTED_REFERENCE_ARCHETYPE_V0`；
+3. 记录 KEEP / REVISE / ADD / REMOVE；
+4. 若通过，再启动**所罗门王** `named_archetype` 压力测试。
 
 第二候选：**所罗门王**（named_archetype_candidate）
 
-用于验证命名型原型是否能与 QT8.1 来源人物彻底分层；不在受苦义人尚未稳定时提前启动。
+用于验证命名型原型是否能与 QT8.1 来源人物彻底分层；只在受苦义人 Pilot B 验收后启动。
 
 ### Pilot C｜plot_pattern
 
@@ -106,14 +126,14 @@ Shared Data Layer 的 source_status / qt82_source_reference 跨类型复用
 
 | 维度 | 洪水 motif | 受苦义人 archetype | 预言结构 | 巴别塔 symbol |
 |---|---:|---:|---:|---:|
-| 来源回指 QT8.1 | PASS | PASS_SO_FAR | 必须 | 必须 |
-| 多来源比较 | PASS | PASS_SO_FAR | 强 | 初期较弱 |
-| relation_type / evidence_level | PASS | PASS_SO_FAR | 强 | 中 |
-| 文本谱系 | PASS | PASS_SO_FAR | 强 | 强 |
-| 对象边界压力 | PASS | PASS_SO_FAR | plot vs motif | symbol vs prop |
-| 后世重写 | PASS | PENDING_PASS_B | 强 | 强 |
-| Shared Data Layer | PASS 首轮 | SOURCE_SCHEMA_PASS_SO_FAR | 复用 | 复用 |
-| component relation 跨类型 | schema only | PENDING | 复用 | 复用 |
+| 来源回指 QT8.1 | PASS | PASS | 必须 | 必须 |
+| 多来源比较 | PASS | PASS | 强 | 初期较弱 |
+| relation_type / evidence_level | PASS | PASS | 强 | 中 |
+| 文本谱系 | PASS | PASS | 强 | 强 |
+| 对象边界压力 | PASS | PASS | plot vs motif | symbol vs prop |
+| 后世重写 | PASS | PASS | 强 | 强 |
+| Shared Data Layer | PASS 首轮 | SOURCE + WORK PASS | 复用 | 复用 |
+| component relation 跨类型 | schema only | DEFERRED_BY_TARGET_GATE | 复用 | 复用 |
 
 ## 4. Pilot 输出
 
@@ -160,10 +180,13 @@ REMOVE
 
 ```text
 QT8.2_PILOT_A = CLOSED_ACCEPTED
-QT8.2_PILOT_B = CONTENT_PASS_A_COMPLETE
+QT8.2_PILOT_B_CONTENT_PASS_A = COMPLETE
+QT8.2_PILOT_B_CONTENT_PASS_B = COMPLETE
 QT8.2_ARCHETYPE_TEMPLATE_V0 = REVISED_AFTER_PILOT_B_PASS_A
-QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE_VALIDATION = PASS_SO_FAR
-QT8.2_PILOT_B_ACCEPTANCE = NOT_YET
-QT8.2_NEXT_STAGE = PILOT_B_CONTENT_PASS_B
+QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE_VALIDATION = PASS
+QT8.2_SHARED_WORK_SCHEMA_CROSS_TYPE_VALIDATION = PASS
+QT8.2_COMPONENT_RELATION = DEFERRED_BY_TARGET_GATE
+QT8.2_PILOT_B_ACCEPTANCE = READY_FOR_REVIEW
+QT8.2_NEXT_STAGE = PILOT_B_ACCEPTANCE_REVIEW
 QT8.2_TEMPLATE_STATUS = V0_DRAFT / NOT_FROZEN
 ```
