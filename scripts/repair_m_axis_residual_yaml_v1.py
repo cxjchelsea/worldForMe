@@ -1,6 +1,6 @@
 from __future__ import annotations
 from pathlib import Path
-import re,yaml,sys
+import re,yaml
 ROOT=Path(__file__).resolve().parents[1]
 W=ROOT/'个人通识知识系统_v2_A2'/'30 世界文学'/'40 作品'
 TARGETS={
@@ -44,36 +44,35 @@ def merge_overlay(overlay,canon):
  for k,_ in sb:
   if k not in seen:rendered+=sm[k];seen.add(k)
  for k,_ in fb:
-  if k not in seen and (any(k.startswith(pre) for pre in FIELDS)):
-   rendered+=sm[k];seen.add(k)
+  if k not in seen and any(k.startswith(pre) for pre in FIELDS):rendered+=sm[k];seen.add(k)
  return '\n'.join(rendered).rstrip()+'\n'
 def sanitize(fm):
- # Residual corruption from prior list-merges: a bare [] line indented under a YAML list.
- lines=[x for x in fm.splitlines() if not re.match(r'^\s*\[\]\s*$',x)]
+ lines=[]
+ for x in fm.splitlines():
+  if re.match(r'^\s*\[\]\s*$',x):continue
+  # All entity frontmatter sequences here are top-level properties; normalize corrupted mixed indentation.
+  m=re.match(r'^\s+-\s+(.*)$',x)
+  if m:x='- '+m.group(1)
+  lines.append(x)
  return '\n'.join(lines).rstrip()+'\n'
 def valid_yaml(fm):
  try:
-  d=yaml.safe_load(fm) or {}
-  return d if isinstance(d,dict) else None
+  d=yaml.safe_load(fm) or {}; return d if isinstance(d,dict) else None
  except Exception:return None
 
 def repair(p):
  text=norm(p.read_text(encoding='utf-8')); fm,rest=first_parts(text)
  if fm is None:raise RuntimeError(f'{p.name}: no frontmatter')
  fm=sanitize(fm); d=valid_yaml(fm)
- # If first block is an M overlay and canonical YAML is displaced after a second opener.
  if (not d or d.get('type')!='work') and re.match(r'^---\s*\n',rest):
   displaced=re.sub(r'^---\s*\n','',rest,count=1)
-  # optional closing delimiter; these damaged files often have none
   m=re.match(r'^(.*?)\n---\s*(?:\n|$)(.*)$',displaced,re.S)
   canon,body=(m.group(1),m.group(2)) if m else (displaced,'')
-  canon=sanitize(canon)
-  cd=valid_yaml(canon)
+  canon=sanitize(canon); cd=valid_yaml(canon)
   if not cd or cd.get('type')!='work':raise RuntimeError(f'{p.name}: displaced canonical YAML invalid')
-  merged=merge_overlay(fm,canon); md=valid_yaml(merged)
+  merged=sanitize(merge_overlay(fm,canon)); md=valid_yaml(merged)
   if not md or md.get('type')!='work':raise RuntimeError(f'{p.name}: merged YAML invalid')
   p.write_text('---\n'+merged+'---\n'+body,encoding='utf-8'); return 'merged-overlay'
- # Otherwise this is a malformed single frontmatter; sanitizing must make it canonical.
  if not d or d.get('type')!='work':raise RuntimeError(f'{p.name}: sanitized YAML still invalid/type={None if not d else d.get("type")}')
  _,oldrest=first_parts(text)
  p.write_text('---\n'+fm+'---\n'+oldrest,encoding='utf-8'); return 'sanitized'
@@ -81,9 +80,8 @@ def repair(p):
 for name in sorted(TARGETS):
  p=W/name
  if not p.exists():raise RuntimeError('missing target '+name)
- action=repair(p); print(action,name)
+ print(repair(p),name)
 
-# Strict Obsidian-style first-frontmatter validation.
 counts={}
 for code,(field,expected) in CFG.items():
  n=0
@@ -92,7 +90,6 @@ for code,(field,expected) in CFG.items():
   if fm is None:continue
   d=valid_yaml(fm)
   if d and d.get('type')=='work' and str(d.get(field,'')).strip() in VALID:n+=1
- counts[code]=n
- print(code,n,'expected',expected)
+ counts[code]=n; print(code,n,'expected',expected)
  if n!=expected:raise RuntimeError(f'{code}: {n} != {expected}')
 print('STRICT_OBSIDIAN_COUNTS_PASS',counts)
