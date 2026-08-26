@@ -1,0 +1,23 @@
+name: R9 verified anchor repair batch2 V1
+on:
+  push:
+    paths:
+      - 'scripts/apply_r9_verified_anchor_repair_batch2_v1.py'
+      - '.github/workflows/r9-verified-anchor-repair-batch2-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python scripts/apply_r9_verified_anchor_repair_batch2_v1.py
+      - run: python scripts/audit_r8_r9_verified_structural_coverage_v1.py
+      - name: Commit repair and revalidation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add scripts/complete_r9_topic_map_v1.py '个人通识知识系统_v2_A2/30 世界文学/40 作品' '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_acceptance/R9_VERIFIED_ANCHOR_REPAIR_BATCH2_V1.md' '个人通识知识系统_v2_A2/30 世界文学/_audit/r_axis_acceptance/R8_R9_VERIFIED_STRUCTURAL_COVERAGE_V1.md'
+          git diff --cached --quiet || git commit -m 'fix(r9): restore verified Pacific anchors batch 2'
+          git push
