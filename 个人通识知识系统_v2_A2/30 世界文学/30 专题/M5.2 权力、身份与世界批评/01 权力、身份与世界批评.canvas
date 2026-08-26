@@ -1,0 +1,57 @@
+{
+  "nodes": [
+    {
+      "id": "q",
+      "type": "text",
+      "text": "谁有权定义主体、文明、性别、知识与世界？",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 100
+    },
+    {
+      "id": "c",
+      "type": "text",
+      "text": "殖民与知识权力\n后殖民 / 去殖民",
+      "x": -420,
+      "y": 180,
+      "width": 280,
+      "height": 120
+    },
+    {
+      "id": "g",
+      "type": "text",
+      "text": "性别、身体与身份\n女性主义 / 酷儿",
+      "x": 0,
+      "y": 180,
+      "width": 280,
+      "height": 120
+    },
+    {
+      "id": "e",
+      "type": "text",
+      "text": "人类与非人世界\n生态批评 / 生态文学",
+      "x": 420,
+      "y": 180,
+      "width": 280,
+      "height": 120
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "q",
+      "toNode": "c"
+    },
+    {
+      "id": "e2",
+      "fromNode": "q",
+      "toNode": "g"
+    },
+    {
+      "id": "e3",
+      "fromNode": "q",
+      "toNode": "e"
+    }
+  ]
+}

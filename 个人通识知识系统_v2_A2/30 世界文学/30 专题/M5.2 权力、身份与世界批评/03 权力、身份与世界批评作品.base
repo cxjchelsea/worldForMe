@@ -1,0 +1,12 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-M5.2-POWER-IDENTITY-WORLD")
+views:
+  - type: table
+    name: 全部作品
+    order: [m52_priority, m52_framework_cluster, m52_role, author, file.name]
+  - type: table
+    name: ★ 核心
+    filters: m52_priority == "★"
+    order: [m52_framework_cluster, m52_role, author]

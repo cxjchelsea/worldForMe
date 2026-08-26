@@ -1,0 +1,7 @@
+filters:
+  and:
+    - file.inFolder("个人通识知识系统_v2_A2/30 世界文学/30 专题/M5.2 权力、身份与世界批评")
+views:
+  - type: table
+    name: 核心结构
+    order: [file.name]
