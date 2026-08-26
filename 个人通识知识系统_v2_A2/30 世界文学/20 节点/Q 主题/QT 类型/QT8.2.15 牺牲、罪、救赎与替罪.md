@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: null
-source_version: "2.18-qt8.2-archetype-pilot-b-pass-b"
+source_version: "2.19-qt8.2-archetype-pilot-b-accepted"
 ---
  
 # QT8.2.15 牺牲、罪、救赎与替罪
@@ -25,7 +25,7 @@ source_version: "2.18-qt8.2-archetype-pilot-b-pass-b"
 
 → [[../../../30 专题/QT8.2.15 牺牲、罪、救赎与替罪/受苦义人/00 受苦义人|受苦义人]]
 
-当前状态：`PILOT_B_READY_FOR_ACCEPTANCE`
+当前状态：`ACCEPTED_REFERENCE_ARCHETYPE_V0`
 
 对象类型：
 
@@ -34,7 +34,7 @@ archetype
 → abstract_archetype
 ```
 
-本 Pilot 已完成：
+本 Pilot 已通过：
 
 - archetype 与 theme / trait / plot_pattern 的边界验证；
 - `core_functions / variable_features` 验证；
@@ -44,9 +44,21 @@ archetype
 - functional similarity 与 historical transmission 分离；
 - Shared Data Layer V0 的 `qt82_source_reference` 复用；
 - Shared Data Layer V0 的 `qt82_work_reference` 复用；
-- Joseph Roth《Job》、MacLeish《J.B.》、Spark《The Only Problem》三种后世调用方式核证。
+- Joseph Roth《Job》、MacLeish《J.B.》、Spark《The Only Problem》三种后世调用方式核证；
+- component relation target gate。
 
 正式 `qt82_component_relation` 继续等待 target component 自身完成准入。
+
+## 下一阶段
+
+按照 QT8.2 Pilot Plan，archetype 类型下一步进入：
+
+```text
+所罗门王
+→ named_archetype pressure test
+```
+
+用于验证命名型文化原型与 QT8.1 来源人物能否稳定分层。
 
 ## 后续建设原则
 
