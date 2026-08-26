@@ -28,10 +28,22 @@ views:
       - sequence
       - file.name
   - type: table
-    name: QT8.2 映射
+    name: QT8.2 叙事组件与关系
     filters:
       and:
-        - 'dimension == "qt82_mapping"'
+        - 'sequence >= 20'
+        - 'sequence < 30'
     order:
       - sequence
       - file.name
+      - dimension
+  - type: table
+    name: 后世传播与阅读
+    filters:
+      and:
+        - 'sequence >= 30'
+        - 'sequence < 40'
+    order:
+      - sequence
+      - file.name
+      - dimension
