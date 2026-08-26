@@ -2,11 +2,14 @@ from pathlib import Path
 import re
 ROOT=Path('个人通识知识系统_v2_A2/30 世界文学'); W=ROOT/'40 作品'; AUD=ROOT/'_audit'/'r_axis_acceptance'/'R9_VERIFIED_ANCHOR_REPAIR_BATCH3_V1.md'; R9='R9 大洋洲与太平洋'; TOP='WL-TOPIC-R9-OCEANIA-PACIFIC'
 def q(s): return '"'+str(s).replace('\\','\\\\').replace('"','\\"')+'"'
+def safe_filename(title):
+ return re.sub(r'[<>:"/\\|?*]', ' - ' if ':' in title else '_', title).strip().rstrip('.')
 def create(title,orig,author,year,trad,role,prio,aliases,sources,note=''):
- p=W/(title+'.md')
+ safe=safe_filename(title)
+ p=W/(safe+'.md')
  if p.exists():
   txt=p.read_text(encoding='utf-8')
-  if re.search(r'(?m)^type:\s*work_candidate\s*$',txt): p=W/(title+'（已核验）.md')
+  if re.search(r'(?m)^type:\s*work_candidate\s*$',txt): p=W/(safe+'（已核验）.md')
  if p.exists(): return p.name
  wid='WL-WORK-R9-VERIFIED3-'+re.sub(r'[^A-Za-z0-9]+','-',orig).strip('-').upper()[:35]
  lines=[f'id: {q(wid)}','type: work',f'title: {q(title)}',f'title_original: {q(orig)}',f'author: {q(author)}',('year: null' if year is None else f'year: {year}'),'aliases:']+['  - '+q(a) for a in aliases]+['axis_r:','  - '+q(R9),'topics:','  - '+q(TOP),f'r9_priority: {q(prio)}',f'r9_tradition: {q(trad)}','r9_role:','  - '+q(role),'verification_status: "手工核验"','bibliography_status: "verified_r9_anchor_repair_batch3_v1"','bibliography_sources:']+['  - '+q(s) for s in sources]
