@@ -6,7 +6,7 @@ axis: M
 parent: WL
 role: primary
 priority_scheme: "S/A/B"
-source_version: "2.6-taxonomy-refactor"
+source_version: "2.7-integration-closure"
 ---
 
 # M轴：思潮 / 运动 / 美学范式
@@ -52,6 +52,18 @@ M1：人、理性、自然、国家与古典传统如何被重新定义？
 → M4：文学如何成为群体身份、文化解放与历史行动？  
 → M5.1：战后主体、现实、意义与叙事如何被重新组织？  
 → M5.2：谁有权定义主体、文明、性别、知识与世界？
+
+## v2.7 集成状态
+
+`M_AXIS_STATUS = FROZEN_MATURE`
+
+- 7 个实际叶专题均已建立并完成书目覆盖：M1 76、M2 85、M3.1 149、M3.2 68、M4 90、M5.1 80、M5.2 74。
+- 所有叶节点均已接入唯一专题主页；`topic_map` 统一为单一路径字符串，taxonomy group 继续保持 `topic_map: null`。
+- `02 结构.base` 与 `03 作品.base` 已按已验收的 T 轴 Base contract 统一：结构 Base 读取 `topic_id/type/dimension/sequence/parent`，作品 Base 提供核心/重点/扩展、已读/未读、专题内部分类及 T/R/M/G/Q 等多视图。
+- M 专题作品继续以 `topics` 作为专题投影过滤条件，而不是强迫 `axis_m` 成为唯一筛选条件，以保留合法的跨专题主坐标。
+- M3.1 等成熟专题原有的专属结构字段继续保留；统一公共 schema 不覆盖专题特有元数据。
+- 最终只读集成审计通过，且本次集成收尾对 `40 作品/` canonical work 文件改动为 0。
+- `year/title_original/author_original` 等中央书目元数据仍属于 `40 作品/` 的独立治理事项，不阻塞 M 轴成熟冻结。
 
 ## 返回
 
