@@ -1,0 +1,28 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QT812"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部结构节点
+    order:
+      - file.name
+      - type
+      - dimension
+      - sequence
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+    order:
+      - sequence
+      - file.name

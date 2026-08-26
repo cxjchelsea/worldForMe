@@ -1,0 +1,23 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QT812"
+    - 'type == "literature_topic_text"'
+properties:
+  file.name:
+    displayName: 文本节点
+  note.text_role:
+    displayName: 文本角色
+  note.period:
+    displayName: 时段
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 文本谱系
+    groupBy:
+      property: text_role
+      direction: ASC
+    order:
+      - sequence
+      - file.name
+      - period
