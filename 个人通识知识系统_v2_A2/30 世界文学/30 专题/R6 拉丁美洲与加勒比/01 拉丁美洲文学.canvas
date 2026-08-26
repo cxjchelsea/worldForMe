@@ -1,267 +1,43 @@
 {
-  "nodes": [
-    {
-      "id": "root",
-      "type": "text",
-      "text": "R6 拉丁美洲与加勒比\n多语言、多中心、殖民/后殖民文学系统",
-      "x": 0,
-      "y": 0,
-      "width": 320,
-      "height": 120
-    },
-    {
-      "id": "t0",
-      "type": "file",
-      "file": "11 内部传统/01 前哥伦布—原住民文学传统.md",
-      "x": -700,
-      "y": 220,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t1",
-      "type": "file",
-      "file": "11 内部传统/02 殖民编年史—巴洛克与克里奥尔文学传统.md",
-      "x": -370,
-      "y": 220,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t2",
-      "type": "file",
-      "file": "11 内部传统/03 墨西哥—中美洲文学传统.md",
-      "x": -40,
-      "y": 220,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t3",
-      "type": "file",
-      "file": "11 内部传统/04 安第斯文学传统.md",
-      "x": 290,
-      "y": 220,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t4",
-      "type": "file",
-      "file": "11 内部传统/05 南锥体—拉普拉塔文学传统.md",
-      "x": 620,
-      "y": 220,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t5",
-      "type": "file",
-      "file": "11 内部传统/06 巴西葡语文学传统.md",
-      "x": -700,
-      "y": 440,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t6",
-      "type": "file",
-      "file": "11 内部传统/07 西语加勒比文学传统.md",
-      "x": -370,
-      "y": 440,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t7",
-      "type": "file",
-      "file": "11 内部传统/08 海地—法语与克里奥尔加勒比传统.md",
-      "x": -40,
-      "y": 440,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t8",
-      "type": "file",
-      "file": "11 内部传统/09 英语加勒比文学传统.md",
-      "x": 290,
-      "y": 440,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "t9",
-      "type": "file",
-      "file": "11 内部传统/10 Afro-Latin—Afro-Caribbean文学传统.md",
-      "x": 620,
-      "y": 440,
-      "width": 280,
-      "height": 100
-    },
-    {
-      "id": "n0",
-      "type": "file",
-      "file": "12 跨传统网络/01 征服—殖民档案与反档案网络.md",
-      "x": -530,
-      "y": 700,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n1",
-      "type": "file",
-      "file": "12 跨传统网络/02 奴隶制—种植园与黑色大西洋网络.md",
-      "x": -180,
-      "y": 700,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n2",
-      "type": "file",
-      "file": "12 跨传统网络/03 独立—民族国家与文明/野蛮网络.md",
-      "x": 170,
-      "y": 700,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n3",
-      "type": "file",
-      "file": "12 跨传统网络/04 Modernismo—先锋与跨大西洋现代性网络.md",
-      "x": 520,
-      "y": 700,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n4",
-      "type": "file",
-      "file": "12 跨传统网络/05 革命—Indigenismo与人民文学网络.md",
-      "x": -530,
-      "y": 920,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n5",
-      "type": "file",
-      "file": "12 跨传统网络/06 Boom—翻译与世界出版网络.md",
-      "x": -180,
-      "y": 920,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n6",
-      "type": "file",
-      "file": "12 跨传统网络/07 独裁—Testimonio与记忆网络.md",
-      "x": 170,
-      "y": 920,
-      "width": 300,
-      "height": 100
-    },
-    {
-      "id": "n7",
-      "type": "file",
-      "file": "12 跨传统网络/08 迁徙—边境—离散与全球拉美网络.md",
-      "x": 520,
-      "y": 920,
-      "width": 300,
-      "height": 100
-    }
-  ],
-  "edges": [
-    {
-      "id": "e-t0",
-      "fromNode": "root",
-      "toNode": "t0"
-    },
-    {
-      "id": "e-t1",
-      "fromNode": "root",
-      "toNode": "t1"
-    },
-    {
-      "id": "e-t2",
-      "fromNode": "root",
-      "toNode": "t2"
-    },
-    {
-      "id": "e-t3",
-      "fromNode": "root",
-      "toNode": "t3"
-    },
-    {
-      "id": "e-t4",
-      "fromNode": "root",
-      "toNode": "t4"
-    },
-    {
-      "id": "e-t5",
-      "fromNode": "root",
-      "toNode": "t5"
-    },
-    {
-      "id": "e-t6",
-      "fromNode": "root",
-      "toNode": "t6"
-    },
-    {
-      "id": "e-t7",
-      "fromNode": "root",
-      "toNode": "t7"
-    },
-    {
-      "id": "e-t8",
-      "fromNode": "root",
-      "toNode": "t8"
-    },
-    {
-      "id": "e-t9",
-      "fromNode": "root",
-      "toNode": "t9"
-    },
-    {
-      "id": "e-n0",
-      "fromNode": "root",
-      "toNode": "n0"
-    },
-    {
-      "id": "e-n1",
-      "fromNode": "root",
-      "toNode": "n1"
-    },
-    {
-      "id": "e-n2",
-      "fromNode": "root",
-      "toNode": "n2"
-    },
-    {
-      "id": "e-n3",
-      "fromNode": "root",
-      "toNode": "n3"
-    },
-    {
-      "id": "e-n4",
-      "fromNode": "root",
-      "toNode": "n4"
-    },
-    {
-      "id": "e-n5",
-      "fromNode": "root",
-      "toNode": "n5"
-    },
-    {
-      "id": "e-n6",
-      "fromNode": "root",
-      "toNode": "n6"
-    },
-    {
-      "id": "e-n7",
-      "fromNode": "root",
-      "toNode": "n7"
-    }
-  ]
+	"nodes":[
+		{"id":"root","type":"text","text":"R6 拉丁美洲与加勒比\n多语言、多中心、殖民/后殖民文学系统","x":0,"y":0,"width":320,"height":120},
+		{"id":"t0","type":"file","file":"11 内部传统/01 前哥伦布—原住民文学传统.md","x":-700,"y":220,"width":280,"height":100},
+		{"id":"t1","type":"file","file":"11 内部传统/02 殖民编年史—巴洛克与克里奥尔文学传统.md","x":-370,"y":220,"width":280,"height":100},
+		{"id":"t2","type":"file","file":"11 内部传统/03 墨西哥—中美洲文学传统.md","x":-40,"y":220,"width":280,"height":100},
+		{"id":"t3","type":"file","file":"11 内部传统/04 安第斯文学传统.md","x":290,"y":220,"width":280,"height":100},
+		{"id":"t4","type":"file","file":"11 内部传统/05 南锥体—拉普拉塔文学传统.md","x":620,"y":220,"width":280,"height":100},
+		{"id":"t5","type":"file","file":"11 内部传统/06 巴西葡语文学传统.md","x":-700,"y":440,"width":280,"height":100},
+		{"id":"t6","type":"file","file":"11 内部传统/07 西语加勒比文学传统.md","x":-370,"y":440,"width":280,"height":100},
+		{"id":"t7","type":"file","file":"11 内部传统/08 海地—法语与克里奥尔加勒比传统.md","x":-40,"y":440,"width":280,"height":100},
+		{"id":"t8","type":"file","file":"11 内部传统/09 英语加勒比文学传统.md","x":290,"y":440,"width":280,"height":100},
+		{"id":"t9","type":"file","file":"11 内部传统/10 Afro-Latin—Afro-Caribbean文学传统.md","x":620,"y":440,"width":280,"height":100},
+		{"id":"n0","type":"file","file":"12 跨传统网络/01 征服—殖民档案与反档案网络.md","x":-530,"y":700,"width":300,"height":100},
+		{"id":"n1","type":"file","file":"12 跨传统网络/02 奴隶制—种植园与黑色大西洋网络.md","x":-180,"y":700,"width":300,"height":100},
+		{"id":"n2","type":"file","file":"12 跨传统网络/03 独立—民族国家与文明/野蛮网络.md","x":170,"y":700,"width":300,"height":100},
+		{"id":"n3","type":"file","file":"12 跨传统网络/04 Modernismo—先锋与跨大西洋现代性网络.md","x":520,"y":700,"width":300,"height":100},
+		{"id":"n4","type":"file","file":"12 跨传统网络/05 革命—Indigenismo与人民文学网络.md","x":-530,"y":920,"width":300,"height":100},
+		{"id":"n5","type":"file","file":"12 跨传统网络/06 Boom—翻译与世界出版网络.md","x":-180,"y":920,"width":300,"height":100},
+		{"id":"n6","type":"file","file":"12 跨传统网络/07 独裁—Testimonio与记忆网络.md","x":170,"y":920,"width":300,"height":100},
+		{"id":"n7","type":"file","file":"12 跨传统网络/08 迁徙—边境—离散与全球拉美网络.md","x":520,"y":920,"width":300,"height":100}
+	],
+	"edges":[
+		{"id":"e-t0","fromNode":"root","toNode":"t0","fromSide":"left","toSide":"right"},
+		{"id":"e-t1","fromNode":"root","toNode":"t1","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t2","fromNode":"root","toNode":"t2","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t3","fromNode":"root","toNode":"t3","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t4","fromNode":"root","toNode":"t4","fromSide":"right","toSide":"left"},
+		{"id":"e-t5","fromNode":"root","toNode":"t5","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t6","fromNode":"root","toNode":"t6","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t7","fromNode":"root","toNode":"t7","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t8","fromNode":"root","toNode":"t8","fromSide":"bottom","toSide":"top"},
+		{"id":"e-t9","fromNode":"root","toNode":"t9","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n0","fromNode":"root","toNode":"n0","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n1","fromNode":"root","toNode":"n1","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n2","fromNode":"root","toNode":"n2","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n3","fromNode":"root","toNode":"n3","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n4","fromNode":"root","toNode":"n4","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n5","fromNode":"root","toNode":"n5","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n6","fromNode":"root","toNode":"n6","fromSide":"bottom","toSide":"top"},
+		{"id":"e-n7","fromNode":"root","toNode":"n7","fromSide":"bottom","toSide":"top"}
+	]
 }
