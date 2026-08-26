@@ -11,21 +11,21 @@ year: 1910
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 t4_stage: "1890—1914：世纪末危机与现代主义酝酿"
 t4_historical_role: "转折"
 t4_mechanism:
 - 都市、技术与感知革命
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.5 西部
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.5 西部"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -46,7 +46,9 @@ batch6_source_refs:
 t4_priority: △
 t4_history_position: "世纪末危机与现代主义酝酿，以“都市、技术与感知革命”为主要路径的转折节点（读前预判）"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # Cowboy Songs and Other Frontier Ballads
 

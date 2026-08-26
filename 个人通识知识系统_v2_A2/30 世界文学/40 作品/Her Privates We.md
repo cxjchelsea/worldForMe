@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 t4_stage: "1930—1945：政治极化、反殖民与战时转型"
 t4_historical_role: "转折"
 t4_mechanism:
@@ -19,13 +19,13 @@ t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R9 大洋洲与太平洋
+- "R9 大洋洲与太平洋"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
@@ -41,7 +41,9 @@ batch5_source_refs:
 t4_priority: ★
 t4_history_position: "政治极化、反殖民与战时转型，以“世界大战、革命与政治极化”为主要路径的转折节点（读前预判）"
 r9_priority: "△"
-r9_role: "区域扩展阅读（非结构锚点）"
+r9_tradition_stage: "T4 全球现代主义时代 · 战争经验、现代主义与区域认同"
+r9_role: "区域扩展阅读"
+r9_tradition: "大洋洲与太平洋综合—具体内部传统待读后校准"
 ---
 # Her Privates We
 

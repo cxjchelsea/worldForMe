@@ -11,20 +11,20 @@ year: 2019
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "2008—2020：全球危机、平台化与类型融合"
 t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.1 爱情与欲望
+- "QH2.1 爱情与欲望"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q2-LOVE
@@ -41,7 +41,9 @@ batch5_source_refs:
 t6_priority: ★
 t6_history_position: "全球危机、平台化与类型融合，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T6 当代全球文学 · 欧洲一体化、迁徙经验与当代重组"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Get a Life, Chloe Brown
 

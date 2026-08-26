@@ -11,21 +11,21 @@ year: 2019
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "2008—2020：全球危机、平台化与类型融合"
 t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.5 西部
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.5 西部"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -46,7 +46,9 @@ batch6_source_refs:
 t6_priority: ★
 t6_history_position: "全球危机、平台化与类型融合，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # Inland
 

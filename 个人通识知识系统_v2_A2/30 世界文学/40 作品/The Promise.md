@@ -9,13 +9,13 @@ author_original: Damon Galgut
 year:
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
 - "QH3 身份、身体与归属"
 axis_source: inferred
@@ -34,7 +34,8 @@ t6_mechanism:
 - 全球市场、翻译与奖项
 r7_priority: "◆"
 r7_tradition: "南部非洲文学传统"
-r7_role: "当代南非种族/阶级"
+r7_tradition_stage: "T6 当代全球文学 · 后殖民批判、城市经验与全球离散"
+r7_role: "传统转型与区域扩展"
 ---
 # The Promise
 

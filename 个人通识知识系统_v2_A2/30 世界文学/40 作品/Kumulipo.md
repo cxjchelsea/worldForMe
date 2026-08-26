@@ -10,15 +10,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T2 早期现代文学
+- "T2 早期现代文学"
 axis_r:
-- R9 大洋洲与太平洋
+- "R9 大洋洲与太平洋"
 axis_m:
 - "M1 早期现代思想与美学"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT9 神话、传说与民间叙事
+- "QT9 神话、传说与民间叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G1-MYTH
@@ -40,7 +40,9 @@ t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 俗语化、翻译与新读者共同体
 r9_priority: "△"
-r9_role: "区域扩展阅读（非结构锚点）"
+r9_tradition_stage: "T2 早期现代文学 · 航海接触、传教书写与殖民记录"
+r9_role: "区域扩展阅读"
+r9_tradition: "大洋洲与太平洋综合—具体内部传统待读后校准"
 ---
 # Kumulipo
 

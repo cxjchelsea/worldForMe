@@ -10,12 +10,16 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-- R6 拉丁美洲与加勒比
-axis_m: []
-axis_g: []
-axis_q: []
+- "R6 拉丁美洲与加勒比"
+axis_m:
+- "M5 战后与当代美学范式"
+axis_g:
+- "G1 诗歌"
+axis_q:
+- "QH5 权力、制度与秩序"
 axis_source: inferred
 topics:
 - WL-TOPIC-R6-LATAM
@@ -29,7 +33,8 @@ bibliography_status: metadata_pending
 batch4_source_refs:
 - 拉美书单.md:360
 r6_tradition: "Afro-Latin—Afro-Caribbean文学传统"
-r6_role: "古巴黑人诗学"
+r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
+r6_role: "核心经典与传统确立"
 r6_priority: "★"
 ---
 # Sóngoro cosongo

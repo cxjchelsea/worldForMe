@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "2008—2020：全球危机、平台化与类型融合"
 t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -41,7 +41,9 @@ batch3_source_refs:
 t6_priority: ★
 t6_history_position: "全球危机、平台化与类型融合，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T6 当代全球文学 · 欧洲一体化、迁徙经验与当代重组"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # The Old Ways
 

@@ -11,16 +11,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R6 拉丁美洲与加勒比
+- "R6 拉丁美洲与加勒比"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.6 Gaucho
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.6 Gaucho"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -47,7 +47,9 @@ t4_mechanism:
 - 帝国、殖民、反殖民与文化翻译
 - 小杂志、翻译、流亡与跨国网络
 r6_priority: "△"
-r6_role: "区域扩展阅读（非结构锚点）"
+r6_tradition_stage: "T4 全球现代主义时代 · Modernismo、先锋派与本土现代性"
+r6_role: "区域扩展阅读"
+r6_tradition: "南锥体—拉普拉塔文学传统"
 ---
 # Hombre de la esquina rosada
 

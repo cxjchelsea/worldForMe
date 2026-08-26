@@ -10,14 +10,16 @@ author_source: explicit_line
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-- R6 拉丁美洲与加勒比
-axis_m: []
+- "R6 拉丁美洲与加勒比"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT2 科幻
+- "QT2 科幻"
 axis_source: inferred
 topics:
 - WL-TOPIC-G45-SF
@@ -36,7 +38,9 @@ first_source_line: 698
 sf_source_lines:
 - '698'
 r6_priority: "△"
-r6_role: "区域扩展阅读（非结构锚点）"
+r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
+r6_role: "区域扩展阅读"
+r6_tradition: "拉丁美洲与加勒比综合—具体内部传统待读后校准"
 ---
 # Kalpa Imperial
 

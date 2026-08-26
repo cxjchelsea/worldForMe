@@ -9,13 +9,13 @@ author_original: T. S. Stribling
 year:
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
 - "QH1 自我、存在与生命"
 axis_source: inferred
@@ -32,7 +32,9 @@ t4_historical_role: "高峰"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # The Store
 

@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT7 历史叙事
+- "QT7 历史叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G44-HISTORICAL
@@ -41,7 +41,9 @@ t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T6 当代全球文学 · 欧洲一体化、迁徙经验与当代重组"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Sharpe's Eagle
 

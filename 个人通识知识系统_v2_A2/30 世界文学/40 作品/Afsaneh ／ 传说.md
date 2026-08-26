@@ -10,6 +10,7 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+r3_role: "区域扩展阅读"
 axis_t:
 - "T4 全球现代主义时代"
 axis_r:
@@ -37,6 +38,9 @@ batch4_source_refs:
 - 现代主义书单.md:923
 modernism_history_position: "殖民现代性与多语言文学转型 · 核心形成与典范确立"
 modernism_axes_source: "tradition_level_fallback"
+r3_priority: "△"
+r3_tradition: "南亚文学综合—具体内部传统待读后校准"
+r3_tradition_stage: "T4 全球现代主义时代 · 反殖民、现代主义与多语文学革新"
 ---
 # Afsaneh / 传说
 

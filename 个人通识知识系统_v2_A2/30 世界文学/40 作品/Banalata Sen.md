@@ -43,9 +43,9 @@ batch4_source_refs:
 t4_priority: ◆
 t4_history_position: "政治极化、反殖民与战时转型，以“帝国、殖民、反殖民与文化翻译”为主要路径的边缘突破节点（读前预判）"
 r3_tradition: "孟加拉与东部语言文学传统"
-r3_role:
-- "孟加拉现代诗"
-r3_priority: ◆
+r3_tradition_stage: "T4 全球现代主义时代 · 反殖民、现代主义与多语文学革新"
+r3_role: "语言、书写与媒介转型"
+r3_priority: "◆"
 modernism_history_position: "殖民现代性与多语言文学转型 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
 ---

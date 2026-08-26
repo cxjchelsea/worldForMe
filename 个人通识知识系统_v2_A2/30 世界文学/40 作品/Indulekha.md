@@ -8,17 +8,17 @@ author: O·钱杜·梅农
 author_original: O. Chandu Menon
 read_status: 未读
 axis_t:
-- T3 19世纪现代文学体系
+- "T3 19世纪现代文学体系"
 axis_r:
-- R3 南亚文学
+- "R3 南亚文学"
 axis_m:
-- M2 19世纪文学思潮
+- "M2 19世纪文学思潮"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.1 爱情与欲望
-- QH4 社会、阶级与劳动
-- QH9 殖民、迁徙与身份
+- "QH2.1 爱情与欲望"
+- "QH4 社会、阶级与劳动"
+- "QH3 身份、身体与归属"
 axis_source: inferred
 topics: []
 topic_links: []
@@ -33,7 +33,9 @@ t3_mechanism:
 verification_status: 手工核验
 bibliography_status: metadata_pending
 r3_priority: "△"
-r3_role: "区域扩展阅读（非结构锚点）"
+r3_tradition_stage: "T3 19世纪现代文学体系 · 殖民教育、语言公共领域与民族文学形成"
+r3_role: "区域扩展阅读"
+r3_tradition: "南亚文学综合—具体内部传统待读后校准"
 ---
 # Indulekha
 

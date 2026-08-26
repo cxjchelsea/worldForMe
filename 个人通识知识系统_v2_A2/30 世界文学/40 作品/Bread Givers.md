@@ -11,19 +11,19 @@ year: 1925
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 t4_stage: "1918—1930：高峰现代主义与全球扩展"
 t4_historical_role: "高峰"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.5 童年与成长
+- "QH2.5 童年与成长"
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
@@ -39,7 +39,9 @@ batch2_source_refs:
 t4_priority: ★
 t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻译、流亡与跨国网络”为主要路径的高峰节点（读前预判）"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # Bread Givers
 

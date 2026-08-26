@@ -10,17 +10,18 @@ author_source: batch5_source_inferred
 year: null
 literary_traditions: []
 read_status: 已读
+r5_role: "区域扩展阅读"
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
 - "R5 北美文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH1 自我、存在与生命
-- QH8 信仰、伦理与超越
+- "QH1 自我、存在与生命"
+- "QH8 信仰、伦理与超越"
 axis_source: read_calibrated
 awards:
 - WL-AWARD-BOOKER
@@ -40,6 +41,9 @@ t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 身份、性别与代表权
 - 类型全球化与文类融合
+r5_priority: "△"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
 ---
 # 少年Pi的奇幻漂流
 

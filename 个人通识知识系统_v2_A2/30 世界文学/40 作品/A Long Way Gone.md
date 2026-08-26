@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "反拨"
 t6_mechanism:
 - 记忆、创伤与历史重写
 - 全球市场、翻译与奖项
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
@@ -41,7 +41,8 @@ t6_priority: △
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
 r7_priority: "◆"
 r7_tradition: "东非—斯瓦希里文学传统"
-r7_role: "当代战争儿童视角"
+r7_tradition_stage: "T6 当代全球文学 · 后殖民批判、城市经验与全球离散"
+r7_role: "殖民回应与民族文学建构"
 ---
 # A Long Way Gone
 

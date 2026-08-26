@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT2 科幻
+- "QT2 科幻"
 axis_source: inferred
 topics:
 - WL-TOPIC-G45-SF
@@ -46,7 +46,9 @@ t6_mechanism:
 - 数字平台、气候与技术社会
 - 全球市场、翻译与奖项
 r7_priority: "△"
-r7_role: "区域扩展阅读（非结构锚点）"
+r7_tradition_stage: "T6 当代全球文学 · 后殖民批判、城市经验与全球离散"
+r7_role: "区域扩展阅读"
+r7_tradition: "非洲文学综合—具体内部传统待读后校准"
 ---
 # Moxyland
 

@@ -11,16 +11,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T3 19世纪现代文学体系
+- "T3 19世纪现代文学体系"
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.7 侠盗
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.7 侠盗"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -48,7 +48,9 @@ t3_mechanism:
 - 职业作者、版权与文学市场
 - 翻译、帝国与跨洋市场
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T3 19世纪现代文学体系 · 国家文学、奴隶制回应与大众出版"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # The Merry Adventures of Robin Hood
 

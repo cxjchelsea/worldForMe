@@ -10,16 +10,17 @@ author_source: batch2_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-  - "R2 东亚文学"
-  - "R5 北美文学"
-- R2 东亚文学
-axis_m: []
+- "R2 东亚文学"
+- "R5 北美文学"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.5 童年与成长
+- "QH2.5 童年与成长"
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
@@ -33,10 +34,13 @@ bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1630
 r5_tradition: "亚裔美国文学传统"
-r5_role: "日裔拘禁后身份"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
+r5_role: "翻译与跨传统连接"
 r5_priority: "★"
 r2_priority: "△"
-r2_role: "区域扩展阅读（非结构锚点）"
+r2_tradition_stage: "T6 当代全球文学 · 都市经验、媒介转型与跨国传播"
+r2_role: "翻译与跨传统连接"
+r2_tradition: "东亚文学综合—具体内部传统待读后校准"
 ---
 # No-No Boy
 

@@ -11,16 +11,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
-- R6 拉丁美洲与加勒比
+- "R6 拉丁美洲与加勒比"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.7 侠盗
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.7 侠盗"
 axis_source: inferred
 topics:
   - WL-TOPIC-R6-LATAM
@@ -50,7 +50,8 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
 r6_tradition: "巴西葡语文学传统"
-r6_role: "现代长篇"
+r6_tradition_stage: "T5 二战后多极文学 · 革命经验、文学爆炸与独裁回应"
+r6_role: "核心经典与传统确立"
 r6_priority: "★"
 ---
 # Grande Sertão: Veredas

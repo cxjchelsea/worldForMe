@@ -11,20 +11,20 @@ year: 2020
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "2020—至今：疫情、气候与技术社会"
 t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
 axis_r:
-- R2 东亚文学
+- "R2 东亚文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.1 爱情与欲望
+- "QH2.1 爱情与欲望"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q2-LOVE
@@ -40,7 +40,9 @@ batch5_source_refs:
 t6_priority: ◆
 t6_history_position: "疫情、气候与技术社会，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r2_priority: "△"
-r2_role: "区域扩展阅读（非结构锚点）"
+r2_tradition_stage: "T6 当代全球文学 · 都市经验、媒介转型与跨国传播"
+r2_role: "区域扩展阅读"
+r2_tradition: "东亚文学综合—具体内部传统待读后校准"
 ---
 # Always Only You
 

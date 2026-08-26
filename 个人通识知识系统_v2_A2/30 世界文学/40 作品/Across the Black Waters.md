@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R3 南亚文学
+- "R3 南亚文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
@@ -42,7 +42,9 @@ t4_mechanism:
 - 世界大战、革命与政治极化
 - 帝国、殖民、反殖民与文化翻译
 r3_priority: "△"
-r3_role: "区域扩展阅读（非结构锚点）"
+r3_tradition_stage: "T4 全球现代主义时代 · 反殖民、现代主义与多语文学革新"
+r3_role: "区域扩展阅读"
+r3_tradition: "南亚英语文学传统"
 ---
 # Across the Black Waters
 

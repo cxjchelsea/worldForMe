@@ -11,20 +11,20 @@ year: 1988
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1980—1991：冷战晚期与全球文学重组"
 t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.5 童年与成长
+- "QH2.5 童年与成长"
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
@@ -44,7 +44,8 @@ t6_priority: ★
 t6_history_position: "冷战晚期与全球文学重组，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r7_priority: "★"
 r7_tradition: "南部非洲文学传统"
-r7_role: "津巴布韦殖民成长"
+r7_tradition_stage: "T6 当代全球文学 · 后殖民批判、城市经验与全球离散"
+r7_role: "殖民回应与民族文学建构"
 ---
 # Nervous Conditions
 

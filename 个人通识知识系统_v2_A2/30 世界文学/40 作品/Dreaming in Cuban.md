@@ -11,23 +11,21 @@ year: 1992
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "扩散"
 t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 全球市场、翻译与奖项
 axis_r:
-  - "R5 北美文学"
-  - "R6 拉丁美洲与加勒比"
-- R5 北美文学
-- R6 拉丁美洲与加勒比
+- "R5 北美文学"
+- "R6 拉丁美洲与加勒比"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.3 家庭与家族
+- "QH2.3 家庭与家族"
 axis_source: inferred
 topics:
   - WL-TOPIC-R6-LATAM
@@ -51,10 +49,12 @@ batch2_source_refs:
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“迁徙、离散与跨国家庭”为主要路径的扩散节点（读前预判）"
 r5_tradition: "拉美裔—奇卡诺美国文学传统"
-r5_role: "古巴裔美国离散"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
+r5_role: "离散迁徙与跨区域连接"
 r5_priority: "◆"
 r6_tradition: "西语加勒比文学传统"
-r6_role: "加勒比女性离散"
+r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
+r6_role: "离散迁徙与跨区域连接"
 r6_priority: "◆"
 ---
 # Dreaming in Cuban

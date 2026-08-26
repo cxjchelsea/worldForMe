@@ -43,9 +43,11 @@ batch4_source_refs:
 t4_priority: ◆
 t4_history_position: "政治极化、反殖民与战时转型，以“帝国、殖民、反殖民与文化翻译”为主要路径的边缘突破节点（读前预判）"
 r7_priority: "△"
-r7_role: "区域扩展阅读（非结构锚点）"
+r7_tradition_stage: "T4 全球现代主义时代 · 反殖民意识、现代主义与民族表达"
+r7_role: "区域扩展阅读"
 modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
+r7_tradition: "非洲文学综合—具体内部传统待读后校准"
 ---
 # Gestaltes en diere
 

@@ -10,15 +10,17 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-- R6 拉丁美洲与加勒比
-axis_m: []
+- "R6 拉丁美洲与加勒比"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.6 Gaucho
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.6 Gaucho"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -37,7 +39,9 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:116
 r6_priority: "△"
-r6_role: "区域扩展阅读（非结构锚点）"
+r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
+r6_role: "区域扩展阅读"
+r6_tradition: "南锥体—拉普拉塔文学传统"
 ---
 # El matadero / 屠场
 

@@ -7,17 +7,25 @@ author: "Konai Helu Thaman"
 year: 1974
 aliases:
 axis_r:
-  - "R9 大洋洲与太平洋"
+- "R9 大洋洲与太平洋"
 topics:
   - "WL-TOPIC-R9-OCEANIA-PACIFIC"
 r9_priority: "◆"
 r9_tradition: "波利尼西亚文学传统"
-r9_role:
-  - "汤加/太平洋诗学"
+r9_tradition_stage: "T5 二战后多极文学 · 去殖民化、原住民复兴与太平洋意识"
+r9_role: "传统转型与区域扩展"
 verification_status: "手工核验"
 bibliography_status: "verified_r9_anchor_repair_batch2_v1"
 bibliography_sources:
   - "https://books.google.com/books/about/You_the_Choice_of_My_Parents.html?id=-l0rjwEACAAJ"
+axis_t:
+- "T5 二战后多极文学"
+axis_m:
+- "M5 战后与当代美学范式"
+axis_g:
+- "G1 诗歌"
+axis_q:
+- "QH5 权力、制度与秩序"
 ---
 # You, the Choice of My Parents
 

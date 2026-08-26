@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
@@ -41,7 +41,9 @@ postwar_axes:
 - 冷战、审查与意识形态体系
 - 去殖民、民族国家与后殖民转向
 r7_priority: "△"
-r7_role: "区域扩展阅读（非结构锚点）"
+r7_tradition_stage: "T5 二战后多极文学 · 独立、去殖民化与国家文学建构"
+r7_role: "殖民回应与民族文学建构"
+r7_tradition: "西非英语文学传统"
 ---
 # Girls at War
 

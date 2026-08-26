@@ -10,14 +10,16 @@ author_source: batch5_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T5 二战后多极文学"
 axis_r:
-  - R7 非洲文学
-axis_m: []
+- "R7 非洲文学"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
@@ -33,7 +35,8 @@ batch5_source_refs:
 - 战争书单.md:1556
 r7_priority: "★"
 r7_tradition: "中非—大湖区文学传统"
-r7_role: "卢旺达种族灭绝见证"
+r7_tradition_stage: "T5 二战后多极文学 · 独立、去殖民化与国家文学建构"
+r7_role: "殖民回应与民族文学建构"
 ---
 # Murambi, The Book of Bones
 

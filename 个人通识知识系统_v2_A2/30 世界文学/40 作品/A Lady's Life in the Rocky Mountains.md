@@ -11,7 +11,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T3 19世纪现代文学体系
+- "T3 19世纪现代文学体系"
 t3_stage: "1830—1870：市场扩张、现实主义与现代小说成熟"
 t3_historical_role: "跨区域转译"
 t3_mechanism:
@@ -19,13 +19,13 @@ t3_mechanism:
 - 职业作者、版权与文学市场
 - 翻译、帝国与跨洋市场
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M2 19世纪文学思潮
+- "M2 19世纪文学思潮"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -42,7 +42,9 @@ batch3_source_refs:
 t3_priority: ★
 t3_history_position: "市场扩张、现实主义与现代小说成熟，以“报刊、连载与大众读者”为主要路径的跨区域转译节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T3 19世纪现代文学体系 · 浪漫主义、现实主义与民族文学体系"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # A Lady's Life in the Rocky Mountains
 

@@ -11,20 +11,20 @@ year: 2004
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "反拨"
 t6_mechanism:
 - 记忆、创伤与历史重写
 - 全球市场、翻译与奖项
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT7 历史叙事
+- "QT7 历史叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G44-HISTORICAL
@@ -40,7 +40,9 @@ batch2_source_refs:
 t6_priority: ◆
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T6 当代全球文学 · 欧洲一体化、迁徙经验与当代重组"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Dark Fire
 

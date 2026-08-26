@@ -11,21 +11,21 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T2 早期现代文学
+- "T2 早期现代文学"
 t2_stage: "1600—1700：宫廷、城市、巴洛克与全球接触"
 t2_historical_role: "跨区域转译"
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 俗语化、翻译与新读者共同体
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M1 早期现代思想与美学
+- "M1 早期现代思想与美学"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.5 西部
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.5 西部"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -46,7 +46,9 @@ batch6_source_refs:
 t2_priority: △
 t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的跨区域转译节点（读前预判）"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T2 早期现代文学 · 殖民定居、宗教书写与印刷起步"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # The Adventures of Col. Daniel Boone
 

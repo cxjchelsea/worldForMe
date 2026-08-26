@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
-- R3 南亚文学
+- "R3 南亚文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT7 历史叙事
+- "QT7 历史叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G44-HISTORICAL
@@ -40,7 +40,9 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
 r3_priority: "△"
-r3_role: "区域扩展阅读（非结构锚点）"
+r3_tradition_stage: "T5 二战后多极文学 · 独立分治、国家文学与离散书写"
+r3_role: "区域扩展阅读"
+r3_tradition: "南亚文学综合—具体内部传统待读后校准"
 ---
 # Tamas
 

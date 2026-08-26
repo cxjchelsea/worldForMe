@@ -10,6 +10,7 @@ author_source: batch4_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+r4_role: "区域扩展阅读"
 axis_t:
 - "T4 全球现代主义时代"
 axis_r:
@@ -36,6 +37,9 @@ batch4_source_refs:
 - 现代主义书单.md:661
 modernism_history_position: "南欧现代主义与先锋互动 · 扩展、变体与后续发展"
 modernism_axes_source: "tradition_level_fallback"
+r4_priority: "△"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
+r4_tradition_stage: "T4 全球现代主义时代 · 战争危机、现代主义与先锋实验"
 ---
 # L'Allegria
 

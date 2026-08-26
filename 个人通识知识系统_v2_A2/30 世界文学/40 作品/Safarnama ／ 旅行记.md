@@ -12,7 +12,7 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T1 中古多中心文学世界
+- "T1 中古多中心文学世界"
 t1_history_position: "跨区域传播、印刷与中古晚期转型的波斯语文学世界中，以“旅行文学与见闻书写”为主要路径的过渡节点（读前预判）"
 t1_stage: "约1250—1500：跨区域传播、印刷与中古晚期转型"
 t1_historical_role: "过渡"
@@ -21,12 +21,12 @@ t1_role:
 - 跨区域伊斯兰世界的文本化观察
 - 口述经验向书面旅行叙事的转化
 axis_r:
-- R1 西亚—地中海古老传统
-axis_m: []
+- "R1 西亚—地中海古老传统"
+axis_m:
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -42,9 +42,10 @@ batch3_source_refs:
 - 旅行书单.md:287
 t1_priority: ★
 t1_network: 波斯语文学世界
-r1_tradition: 波斯—伊朗文学传统
+r1_tradition: "波斯—伊朗文学传统"
 r1_priority: "△"
-r1_role: "区域扩展阅读（非结构锚点）"
+r1_tradition_stage: "T1 中古多中心文学世界 · 宗教经典、帝国网络与翻译传承"
+r1_role: "区域扩展阅读"
 ---
 # Safarnama / 旅行记
 

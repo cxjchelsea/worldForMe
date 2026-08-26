@@ -11,7 +11,7 @@ year: 1888
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T3 19世纪现代文学体系
+- "T3 19世纪现代文学体系"
 t3_stage: "1870—1890：工业社会深化与世纪末转型"
 t3_historical_role: "跨区域转译"
 t3_mechanism:
@@ -19,14 +19,14 @@ t3_mechanism:
 - 职业作者、版权与文学市场
 - 翻译、帝国与跨洋市场
 axis_r:
-- R6 拉丁美洲与加勒比
+- "R6 拉丁美洲与加勒比"
 axis_m:
-- M2 19世纪文学思潮
+- "M2 19世纪文学思潮"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.7 侠盗
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.7 侠盗"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -49,7 +49,9 @@ batch6_source_refs:
 t3_priority: ★
 t3_history_position: "工业社会深化与世纪末转型，以“报刊、连载与大众读者”为主要路径的跨区域转译节点（读前预判）"
 r6_priority: "△"
-r6_role: "区域扩展阅读（非结构锚点）"
+r6_tradition_stage: "T3 19世纪现代文学体系 · 独立建国、浪漫主义与国家文学"
+r6_role: "区域扩展阅读"
+r6_tradition: "拉丁美洲与加勒比综合—具体内部传统待读后校准"
 ---
 # El Zarco
 

@@ -9,15 +9,17 @@ author_source: title_map
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-- R4 欧洲文学
-axis_m: []
+- "R4 欧洲文学"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.2 欧洲骑士
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.2 欧洲骑士"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -36,7 +38,9 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:210
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T6 当代全球文学 · 欧洲一体化、迁徙经验与当代重组"
+r4_role: "区域扩展阅读"
+r4_tradition: "伊比利亚文学传统"
 ---
 # Roman de Thèbes
 

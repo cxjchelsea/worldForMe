@@ -11,15 +11,15 @@ year: 1977
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT9 神话、传说与民间叙事
+- "QT9 神话、传说与民间叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G1-MYTH
@@ -41,7 +41,9 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
 r7_priority: "△"
-r7_role: "区域扩展阅读（非结构锚点）"
+r7_tradition_stage: "T5 二战后多极文学 · 独立、去殖民化与国家文学建构"
+r7_role: "语言、书写与媒介转型"
+r7_tradition: "口传—史诗与本土语言传统"
 ---
 # Ozidi Saga
 

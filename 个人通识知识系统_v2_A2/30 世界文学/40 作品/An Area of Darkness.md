@@ -10,16 +10,17 @@ author_source: batch3_source_inferred
 year: null
 literary_traditions: []
 read_status: 未读
+r6_role: "区域扩展阅读"
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
 - "R6 拉丁美洲与加勒比"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -40,6 +41,9 @@ postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
+r6_priority: "△"
+r6_tradition: "拉丁美洲与加勒比综合—具体内部传统待读后校准"
+r6_tradition_stage: "T5 二战后多极文学 · 革命经验、文学爆炸与独裁回应"
 ---
 # An Area of Darkness
 

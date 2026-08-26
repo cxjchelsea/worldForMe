@@ -9,6 +9,7 @@ author_original: Nella Larsen
 year: 1928
 literary_traditions: []
 read_status: 未读
+r5_role: "区域扩展阅读"
 axis_t:
 - "T4 全球现代主义时代"
 axis_r:
@@ -42,6 +43,9 @@ t4_mechanism:
 verification_status: 手工核验
 bibliography_status: curated
 modernism_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
+r5_priority: "△"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
+r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
 ---
 # Quicksand
 

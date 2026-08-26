@@ -10,15 +10,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T1 中古多中心文学世界
+- "T1 中古多中心文学世界"
 axis_r:
-- R4 欧洲文学
-axis_m: []
+- "R4 欧洲文学"
+axis_m:
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.2 欧洲骑士
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.2 欧洲骑士"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -46,8 +46,8 @@ t1_role:
 - 教育、宫廷与宗教机构
 r4_priority: "◆"
 r4_tradition: "中世纪拉丁基督教与俗语奠基传统"
-r4_role:
-- 亚瑟王宫廷传奇
+r4_tradition_stage: "T1 中古多中心文学世界 · 基督教、宫廷与俗语文学形成"
+r4_role: "传统转型与区域扩展"
 ---
 # Lancelot, the Knight of the Cart
 

@@ -11,20 +11,20 @@ year: 1992
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "反拨"
 t6_mechanism:
 - 记忆、创伤与历史重写
 - 全球市场、翻译与奖项
 axis_r:
-- R1 西亚—地中海古老传统
+- "R1 西亚—地中海古老传统"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH6 战争、暴力与创伤
+- "QH6 战争、暴力与创伤"
 axis_source: inferred
 topics:
   - WL-TOPIC-R10-TRANSREGIONAL
@@ -40,12 +40,14 @@ batch5_source_refs:
 - 战争书单.md:1624
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
-r1_tradition: 阿拉伯文学传统
+r1_tradition: "阿拉伯文学传统"
 r10_tradition: "阿拉伯—中东离散文学传统"
-r10_role: "战争流亡与女性书写"
+r10_tradition_stage: "T6 当代全球文学 · 全球迁徙、数字传播与跨语文学网络"
+r10_role: "离散迁徙与跨区域连接"
 r10_priority: "◆"
 r1_priority: "△"
-r1_role: "区域扩展阅读（非结构锚点）"
+r1_tradition_stage: "T6 当代全球文学 · 当代冲突、迁徙与全球传播"
+r1_role: "离散迁徙与跨区域连接"
 ---
 # Beirut Blues
 

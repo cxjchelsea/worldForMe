@@ -11,20 +11,20 @@ year: 1970
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 postwar_history_position: "文学爆炸与全球分叉，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
 postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.5 童年与成长
+- "QH2.5 童年与成长"
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
@@ -42,7 +42,8 @@ postwar_priority: ★
 postwar_stage: "1965—1975：文学爆炸与全球分叉"
 r7_priority: "★"
 r7_tradition: "非洲之角—埃塞俄比亚/厄立特里亚/索马里文学传统"
-r7_role: "索马里现代小说"
+r7_tradition_stage: "T5 二战后多极文学 · 独立、去殖民化与国家文学建构"
+r7_role: "文类形成与区域典范"
 ---
 # From a Crooked Rib
 

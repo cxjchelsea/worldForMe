@@ -8,9 +8,9 @@ author: "Martin Wickramasinghe"
 year: 1944
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R3 南亚文学
+- "R3 南亚文学"
 axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
@@ -20,10 +20,10 @@ axis_q:
 axis_source: r3_structural_gap_fill
 topics: []
 topic_links: []
-r3_priority: ★
+r3_priority: "★"
 r3_tradition: "僧伽罗—斯里兰卡文学传统"
-r3_role:
-- "现代僧伽罗小说"
+r3_tradition_stage: "T4 全球现代主义时代 · 反殖民、现代主义与多语文学革新"
+r3_role: "文类形成与区域典范"
 verification_status: 手工核验
 bibliography_status: metadata_pending
 t4_priority: "◆"

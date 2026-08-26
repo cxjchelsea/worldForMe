@@ -41,9 +41,11 @@ batch4_source_refs:
 t4_priority: ★
 t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻译、流亡与跨国网络”为主要路径的高峰节点（读前预判）"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
+r5_role: "区域扩展阅读"
 modernism_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
 modernism_axes_source: "t4_mechanism_bridge"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # Harmonium
 

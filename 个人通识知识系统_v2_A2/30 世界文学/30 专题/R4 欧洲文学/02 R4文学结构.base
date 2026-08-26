@@ -7,17 +7,13 @@ properties:
   file.name:
     displayName: 节点
   note.structure_type_zh:
-    displayName: 类型
+    displayName: 所属模块
   formula.dimension_zh:
     displayName: 维度
   note.sequence:
     displayName: 顺序
-  note.parent_label:
-    displayName: 父节点
   note.history_position:
-    displayName: 历史位置
-  note.mechanism:
-    displayName: 机制
+    displayName: 节点作用
   note.id:
     displayName: 编号
 views:
@@ -31,9 +27,7 @@ views:
       - structure_type_zh
       - formula.dimension_zh
       - sequence
-      - parent_label
       - history_position
-      - mechanism
       - id
   - type: table
     name: 核心结构
@@ -48,9 +42,7 @@ views:
       - structure_type_zh
       - formula.dimension_zh
       - sequence
-      - parent_label
       - history_position
-      - mechanism
       - id
   - type: table
     name: 内部传统
@@ -65,9 +57,7 @@ views:
       - structure_type_zh
       - formula.dimension_zh
       - sequence
-      - parent_label
       - history_position
-      - mechanism
       - id
   - type: table
     name: 跨传统网络
@@ -82,7 +72,5 @@ views:
       - structure_type_zh
       - formula.dimension_zh
       - sequence
-      - parent_label
       - history_position
-      - mechanism
       - id

@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "边缘突破"
 t6_mechanism:
 - 身份、性别与代表权
 - 全球市场、翻译与奖项
 axis_r:
-- R9 大洋洲与太平洋
+- "R9 大洋洲与太平洋"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.1 爱情与欲望
+- "QH2.1 爱情与欲望"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q2-LOVE
@@ -40,7 +40,9 @@ batch5_source_refs:
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r9_priority: "△"
-r9_role: "区域扩展阅读（非结构锚点）"
+r9_tradition_stage: "T6 当代全球文学 · 生态危机、移民社会与跨太平洋传播"
+r9_role: "区域扩展阅读"
+r9_tradition: "大洋洲与太平洋综合—具体内部传统待读后校准"
 ---
 # Slave to Sensation
 

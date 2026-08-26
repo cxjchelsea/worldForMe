@@ -11,20 +11,20 @@ year: 1901
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 t4_stage: "1890—1914：世纪末危机与现代主义酝酿"
 t4_historical_role: "转折"
 t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.4 欧洲剑客
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.4 欧洲剑客"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -45,7 +45,9 @@ batch6_source_refs:
 t4_priority: ◆
 t4_history_position: "世纪末危机与现代主义酝酿，以“小杂志、翻译、流亡与跨国网络”为主要路径的转折节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T4 全球现代主义时代 · 战争危机、现代主义与先锋实验"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Count Hannibal
 

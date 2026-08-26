@@ -10,16 +10,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT2 科幻
-- QT6 乌托邦、反乌托邦与社会想象
+- "QT2 科幻"
+- "QT6 乌托邦、反乌托邦与社会想象"
 axis_source: inferred
 topics:
 - WL-TOPIC-G45-SF
@@ -57,8 +57,8 @@ t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 r4_priority: "◆"
 r4_tradition: "中欧文学传统"
-r4_role:
-- 捷克科幻戏剧
+r4_tradition_stage: "T4 全球现代主义时代 · 战争危机、现代主义与先锋实验"
+r4_role: "文类形成与区域典范"
 ---
 # R.U.R.
 

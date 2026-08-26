@@ -11,15 +11,15 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
-- R5 北美文学
+- "R5 北美文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.1 爱情与欲望
+- "QH2.1 爱情与欲望"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q2-LOVE
@@ -40,7 +40,9 @@ t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # It Had to Be You
 

@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T4 全球现代主义时代
+- "T4 全球现代主义时代"
 t4_stage: "1918—1930：高峰现代主义与全球扩展"
 t4_historical_role: "高峰"
 t4_mechanism:
 - 都市、技术与感知革命
 - 小杂志、翻译、流亡与跨国网络
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M3 现代主义与先锋派
+- "M3 现代主义与先锋派"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -42,7 +42,9 @@ batch3_source_refs:
 t4_priority: ★
 t4_history_position: "高峰现代主义与全球扩展，以“都市、技术与感知革命”为主要路径的高峰节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T4 全球现代主义时代 · 战争危机、现代主义与先锋实验"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # The Road to Oxiana
 

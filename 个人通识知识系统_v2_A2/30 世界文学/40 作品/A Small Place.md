@@ -11,20 +11,20 @@ year: 1988
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1980—1991：冷战晚期与全球文学重组"
 t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 axis_r:
-- R6 拉丁美洲与加勒比
+- "R6 拉丁美洲与加勒比"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -42,7 +42,9 @@ batch3_source_refs:
 t6_priority: ★
 t6_history_position: "冷战晚期与全球文学重组，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r6_priority: "△"
-r6_role: "区域扩展阅读（非结构锚点）"
+r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
+r6_role: "区域扩展阅读"
+r6_tradition: "拉丁美洲与加勒比综合—具体内部传统待读后校准"
 ---
 # A Small Place
 

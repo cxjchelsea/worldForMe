@@ -10,15 +10,17 @@ author_source: heading
 year: null
 literary_traditions: []
 read_status: 未读
-axis_t: []
+axis_t:
+- "T6 当代全球文学"
 axis_r:
-- R5 北美文学
-axis_m: []
+- "R5 北美文学"
+axis_m:
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.5 西部
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.5 西部"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -37,7 +39,9 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:1305
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
+r5_role: "区域扩展阅读"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # Old Jules
 

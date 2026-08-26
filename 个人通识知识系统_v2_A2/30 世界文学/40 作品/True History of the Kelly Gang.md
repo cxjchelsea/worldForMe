@@ -11,16 +11,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 axis_r:
-- R9 大洋洲与太平洋
+- "R9 大洋洲与太平洋"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.7 侠盗
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.7 侠盗"
 axis_source: inferred
 awards:
 - WL-AWARD-BOOKER
@@ -52,7 +52,8 @@ t6_mechanism:
 - 全球市场、翻译与奖项
 r9_tradition: "澳大利亚殖民—国家文学传统"
 r9_priority: "◆"
-r9_role: "历史与国家神话反思"
+r9_tradition_stage: "T6 当代全球文学 · 生态危机、移民社会与跨太平洋传播"
+r9_role: "殖民回应与民族文学建构"
 ---
 # True History of the Kelly Gang
 

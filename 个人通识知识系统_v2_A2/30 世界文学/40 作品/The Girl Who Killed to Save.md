@@ -9,6 +9,7 @@ author_original: H. I. E. Dhlomo
 year: 1935
 literary_traditions: []
 read_status: 未读
+r7_role: "区域扩展阅读"
 axis_t:
 - "T4 全球现代主义时代"
 axis_r:
@@ -42,6 +43,9 @@ t4_mechanism:
 verification_status: 手工核验
 bibliography_status: curated
 modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 组织化与集体扩展"
+r7_priority: "△"
+r7_tradition: "非洲文学综合—具体内部传统待读后校准"
+r7_tradition_stage: "T4 全球现代主义时代 · 反殖民意识、现代主义与民族表达"
 ---
 # The Girl Who Killed to Save
 

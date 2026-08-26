@@ -9,14 +9,14 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
   note.r8_priority:
     displayName: 优先级
   note.r8_tradition:
     displayName: 内部传统
+  note.r8_tradition_stage:
+    displayName: 传统阶段
   note.r8_role:
-    displayName: 机制与意义
+    displayName: 传统角色
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -38,9 +38,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -58,9 +58,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -78,9 +78,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -98,9 +98,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -118,9 +118,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -140,9 +140,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -163,9 +163,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -183,9 +183,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -203,9 +203,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -223,9 +223,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -243,9 +243,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -257,15 +257,16 @@ views:
   - type: table
     name: 待传统归类
     filters:
-      and:
+      or:
         - r8_tradition == null
+        - r8_tradition.contains("待校准")
     order:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r
@@ -284,9 +285,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - r8_priority
       - r8_tradition
+      - r8_tradition_stage
       - r8_role
       - axis_t
       - axis_r

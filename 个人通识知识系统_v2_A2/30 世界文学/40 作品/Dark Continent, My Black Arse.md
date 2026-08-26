@@ -11,20 +11,20 @@ year: 2007
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T6 当代全球文学
+- "T6 当代全球文学"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"
 t6_historical_role: "形式突破"
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
 axis_r:
-- R7 非洲文学
+- "R7 非洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -41,7 +41,9 @@ batch3_source_refs:
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r7_priority: "△"
-r7_role: "区域扩展阅读（非结构锚点）"
+r7_tradition_stage: "T6 当代全球文学 · 后殖民批判、城市经验与全球离散"
+r7_role: "区域扩展阅读"
+r7_tradition: "非洲文学综合—具体内部传统待读后校准"
 ---
 # Dark Continent, My Black Arse
 

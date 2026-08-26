@@ -11,20 +11,20 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T2 早期现代文学
+- "T2 早期现代文学"
 t2_stage: "1600—1700：宫廷、城市、巴洛克与全球接触"
 t2_historical_role: "成熟"
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 帝国、航海、殖民与旅行书写
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M1 早期现代思想与美学
+- "M1 早期现代思想与美学"
 axis_g:
-- G6 纪实与文学非虚构
+- "G6 纪实与文学非虚构"
 axis_q:
-- QT14 旅行与游记
+- "QT14 旅行与游记"
 axis_source: inferred
 topics:
 - WL-TOPIC-G7-TRAVEL
@@ -40,7 +40,9 @@ batch3_source_refs:
 t2_priority: ★
 t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的成熟节点（读前预判）"
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T2 早期现代文学 · 文艺复兴、宗教改革与印刷公共领域"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Letters Written during a Short Residence in Sweden, Norway, and Denmark
 

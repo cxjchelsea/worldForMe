@@ -11,21 +11,21 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 postwar_history_position: "世界真正多中心化，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"
 postwar_historical_role: "边缘突破"
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
 axis_r:
-- R5 北美文学
-- R8 东南亚文学
+- "R5 北美文学"
+- "R8 东南亚文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QH2.5 童年与成长
+- "QH2.5 童年与成长"
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
@@ -41,9 +41,13 @@ batch2_source_refs:
 postwar_priority: ★
 postwar_stage: "1955—1965：世界真正多中心化"
 r5_priority: "△"
-r5_role: "区域扩展阅读（非结构锚点）"
+r5_tradition_stage: "T5 二战后多极文学 · 战后反文化、族裔文学与媒介繁荣"
+r5_role: "翻译与跨传统连接"
 r8_priority: "△"
-r8_role: "区域扩展阅读（非结构锚点）"
+r8_tradition_stage: "T5 二战后多极文学 · 独立战争、国家建构与政治创伤"
+r8_role: "翻译与跨传统连接"
+r5_tradition: "北美文学综合—具体内部传统待读后校准"
+r8_tradition: "东南亚文学综合—具体内部传统待读后校准"
 ---
 # America Is in the Heart
 

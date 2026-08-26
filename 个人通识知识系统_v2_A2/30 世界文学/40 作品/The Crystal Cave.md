@@ -11,16 +11,16 @@ year: null
 literary_traditions: []
 read_status: 未读
 axis_t:
-- T5 二战后多极文学
+- "T5 二战后多极文学"
 axis_r:
-- R4 欧洲文学
+- "R4 欧洲文学"
 axis_m:
-- M5 战后与当代美学范式
+- "M5 战后与当代美学范式"
 axis_g:
-- G3 小说
+- "G3 小说"
 axis_q:
-- QT8 英雄、边疆与法外者文化传统
-- QT8.2 欧洲骑士
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.2 欧洲骑士"
 axis_source: inferred
 topics:
 - WL-TOPIC-Q15
@@ -47,7 +47,9 @@ postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 冷战、审查与意识形态体系
 r4_priority: "△"
-r4_role: "区域扩展阅读（非结构锚点）"
+r4_tradition_stage: "T5 二战后多极文学 · 战后重建、记忆政治与后现代转型"
+r4_role: "区域扩展阅读"
+r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # The Crystal Cave
 
