@@ -47,6 +47,8 @@ batch6_source_refs:
 - 西部书单.md:1227
 - 西部书单.md:1953
 - 西部书单.md:2325
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Brave Cowboy
 

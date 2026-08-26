@@ -40,6 +40,8 @@ batch1_source_refs:
 - 恐怖书单.md:908
 postwar_priority: ★
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Burnt Offerings
 

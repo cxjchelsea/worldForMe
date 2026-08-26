@@ -40,6 +40,8 @@ postwar_stage: 1945—1980：时期归属已确认，阶段待核
 postwar_axes:
 - 从欧洲中心到多中心世界文学
 - 去殖民、民族国家与后殖民转向
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # In the Castle of My Skin
 

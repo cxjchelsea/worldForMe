@@ -37,6 +37,8 @@ batch5_source_refs:
 - 战争书单.md:1224
 postwar_priority: ★
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Auschwitz and After
 

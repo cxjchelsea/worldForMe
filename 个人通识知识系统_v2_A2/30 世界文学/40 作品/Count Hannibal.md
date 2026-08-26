@@ -42,6 +42,8 @@ batch6_source_refs:
 - 剑客书单.md:675
 t4_priority: ◆
 t4_history_position: 西欧与英美现代主义场域 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Count Hannibal
 

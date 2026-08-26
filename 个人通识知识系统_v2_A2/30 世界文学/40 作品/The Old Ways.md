@@ -38,6 +38,8 @@ batch3_source_refs:
 - 旅行书单.md:2112
 t6_priority: ★
 t6_history_position: 当代全球类型文学场域 · 纪实与文学非虚构
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Old Ways
 

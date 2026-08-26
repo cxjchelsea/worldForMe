@@ -36,6 +36,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:1840
 - 骑士书单.md:488
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Mort Artu
 

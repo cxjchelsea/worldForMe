@@ -43,6 +43,8 @@ batch6_source_refs:
 - 西部书单.md:1241
 postwar_priority: △
 postwar_stage: 1965—1975：文学爆炸与全球分叉
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Desert Solitaire
 

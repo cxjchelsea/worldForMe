@@ -39,6 +39,8 @@ batch1_source_refs:
 - 奇幻书单.md:1444
 t6_priority: ★
 t6_history_position: 当代全球类型文学场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Dungeon Crawler Carl
 

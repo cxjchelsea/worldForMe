@@ -44,8 +44,9 @@ t6_mechanism:
 - 类型全球化与文类融合
 - 数字平台、气候与技术社会
 - 全球市场、翻译与奖项
+r2_priority: "△"
+r2_role: "区域扩展阅读（非结构锚点）"
 ---
-
 # All You Need Is Kill
 
 ## 基本信息

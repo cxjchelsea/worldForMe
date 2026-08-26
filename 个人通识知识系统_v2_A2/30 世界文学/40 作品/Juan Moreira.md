@@ -46,6 +46,8 @@ batch6_source_refs:
 - Gaucho书单.md:452
 - 侠盗书单.md:1129
 - 侠盗书单.md:2040
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Juan Moreira
 

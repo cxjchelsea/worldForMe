@@ -39,6 +39,8 @@ batch1_source_refs:
 - 恐怖书单.md:1098
 t6_priority: ★
 t6_history_position: 当代全球类型文学场域 · 小说
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Cockfight
 

@@ -36,6 +36,8 @@ batch2_source_refs:
 - 成长书单.md:1614
 t4_priority: ★
 t4_history_position: 西欧与英美现代主义场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Bread Givers
 

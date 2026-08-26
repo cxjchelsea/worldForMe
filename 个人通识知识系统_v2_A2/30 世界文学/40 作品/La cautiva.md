@@ -39,6 +39,8 @@ batch6_source_refs:
 - Gaucho书单.md:104
 - Gaucho书单.md:1436
 - Gaucho书单.md:1702
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # La cautiva
 

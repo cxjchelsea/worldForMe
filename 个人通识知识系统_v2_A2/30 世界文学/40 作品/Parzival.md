@@ -38,6 +38,8 @@ batch6_source_refs:
 - 骑士书单.md:1845
 - 骑士书单.md:588
 - 骑士书单.md:610
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Parzival
 

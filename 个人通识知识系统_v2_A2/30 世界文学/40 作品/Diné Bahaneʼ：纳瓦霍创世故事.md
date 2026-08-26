@@ -38,6 +38,8 @@ t6_history_position: 当代全球类型文学场域 · 小说
 t6_mechanism:
 - 类型全球化与文类融合
 - 全球市场、翻译与奖项
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Diné Bahaneʼ：纳瓦霍创世故事
 

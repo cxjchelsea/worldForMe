@@ -44,6 +44,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 侠盗书单.md:942
 - 西部书单.md:1399
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Thousand Crimes of Ming Tsu
 

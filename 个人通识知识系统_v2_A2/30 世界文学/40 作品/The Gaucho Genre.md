@@ -36,6 +36,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:1772
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Gaucho Genre
 

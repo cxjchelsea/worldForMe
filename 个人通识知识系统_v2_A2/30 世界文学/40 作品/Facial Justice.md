@@ -37,6 +37,8 @@ batch2_source_refs:
 - 反乌托邦书单.md:397
 postwar_priority: ◆
 postwar_stage: 1955—1965：世界真正多中心化
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Facial Justice
 

@@ -37,6 +37,8 @@ batch5_source_refs:
 - 爱情书单.md:1248
 t6_priority: ◆
 t6_history_position: 东亚全球化与记忆文学 · 小说
+r2_priority: "△"
+r2_role: "区域扩展阅读（非结构锚点）"
 ---
 # Always Only You
 

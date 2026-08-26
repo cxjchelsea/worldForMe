@@ -37,6 +37,8 @@ batch5_source_refs:
 - 爱情书单.md:1080
 t6_priority: ◆
 t6_history_position: 欧洲与北美全球出版中心 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Book Lovers
 

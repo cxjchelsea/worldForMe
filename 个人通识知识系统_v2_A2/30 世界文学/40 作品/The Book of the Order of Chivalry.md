@@ -43,6 +43,8 @@ batch6_source_refs:
 - 骑士书单.md:1872
 t1_priority: △
 t1_network: 拉丁基督教与欧洲俗语文学圈
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Book of the Order of Chivalry
 

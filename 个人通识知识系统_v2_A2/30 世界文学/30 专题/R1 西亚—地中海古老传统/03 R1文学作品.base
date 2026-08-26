@@ -2,287 +2,296 @@ filters:
   and:
     - type == "work"
     - axis_r.contains("R1 西亚—地中海古老传统")
-formulas:
-  author_zh: if(author, author, "作者待补")
-  read_status_zh: if(read_status, read_status, "未标记")
-  topic_zh: if(topic_links, topic_links, if(topics, topics, "当前专题"))
-  priority_zh: if(r1_priority, r1_priority, "未分级")
-  tradition_zh: if(r1_tradition, r1_tradition, "待归类")
-  role_zh: if(r1_role, r1_role, "专题结构支撑")
-  axis_t_zh: if(axis_t, axis_t, "未映射")
-  axis_r_zh: if(axis_r, axis_r, "未映射")
-  axis_m_zh: if(axis_m, axis_m, "未映射")
-  axis_g_zh: if(axis_g, axis_g, "未映射")
-  axis_q_zh: if(axis_q, axis_q, "未映射")
-  id_zh: if(id, id, "待补编号")
-  verification_zh: if(verification_status, verification_status, "待校验")
 properties:
   file.name:
     displayName: 作品
-  formula.author_zh:
+  note.author:
     displayName: 作者
-  formula.read_status_zh:
+  note.read_status:
     displayName: 阅读状态
-  formula.topic_zh:
+  note.topic_links:
     displayName: 专题
-  formula.priority_zh:
+  note.r1_priority:
     displayName: 优先级
-  formula.tradition_zh:
+  note.r1_tradition:
     displayName: 内部传统
-  formula.role_zh:
+  note.r1_role:
     displayName: 机制与意义
-  formula.axis_t_zh:
+  note.axis_t:
     displayName: 时间
-  formula.axis_r_zh:
+  note.axis_r:
     displayName: 地域
-  formula.axis_m_zh:
+  note.axis_m:
     displayName: 思潮
-  formula.axis_g_zh:
+  note.axis_g:
     displayName: 类型
-  formula.axis_q_zh:
+  note.axis_q:
     displayName: 主题
-  formula.id_zh:
+  note.id:
     displayName: 编号
-  formula.verification_zh:
+  note.verification_status:
     displayName: 校验状态
 views:
   - type: table
     name: 全部 R1 作品
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 核心 ★
     filters:
       and:
-        - formula.priority_zh == "★"
+        - r1_priority == "★"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 重点 ◆
     filters:
       and:
-        - formula.priority_zh == "◆"
+        - r1_priority == "◆"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 扩展 △
     filters:
       and:
-        - formula.priority_zh == "△"
+        - r1_priority == "△"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 未读
     filters:
       and:
-        - formula.read_status_zh == "未读"
+        - read_status == "未读"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 已读
     filters:
       and:
         - or:
-            - formula.read_status_zh == "已读"
-            - formula.read_status_zh == "重读"
+            - read_status == "已读"
+            - read_status == "重读"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按内部传统
+    filters:
+      and:
+        - r1_tradition != null
     groupBy:
-      property: formula.tradition_zh
+      property: r1_tradition
       direction: ASC
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按时间
     groupBy:
-      property: formula.axis_t_zh
+      property: axis_t
       direction: ASC
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按思潮
     groupBy:
-      property: formula.axis_m_zh
+      property: axis_m
       direction: ASC
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按类型
     groupBy:
-      property: formula.axis_g_zh
+      property: axis_g
       direction: ASC
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按主题
     groupBy:
-      property: formula.axis_q_zh
+      property: axis_q
       direction: ASC
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
+  - type: table
+    name: 待传统归类
+    filters:
+      and:
+        - r1_tradition == null
+    order:
+      - file.name
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 待校验
     filters:
       and:
-        - formula.verification_zh != "自动通过"
-        - formula.verification_zh != "手工核验"
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
     order:
       - file.name
-      - formula.author_zh
-      - formula.read_status_zh
-      - formula.topic_zh
-      - formula.priority_zh
-      - formula.tradition_zh
-      - formula.role_zh
-      - formula.axis_t_zh
-      - formula.axis_r_zh
-      - formula.axis_m_zh
-      - formula.axis_g_zh
-      - formula.axis_q_zh
-      - formula.id_zh
-      - formula.verification_zh
+      - author
+      - read_status
+      - topic_links
+      - r1_priority
+      - r1_tradition
+      - r1_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status

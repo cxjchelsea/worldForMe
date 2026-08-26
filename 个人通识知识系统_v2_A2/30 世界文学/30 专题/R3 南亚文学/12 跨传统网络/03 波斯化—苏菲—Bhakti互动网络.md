@@ -4,6 +4,10 @@ type: literature_topic_section
 topic_id: WL-TOPIC-R3-SOUTH-ASIA
 dimension: literary_network
 sequence: 3
+structure_type_zh: "跨传统网络"
+parent_label: "南亚文学｜跨传统网络"
+history_position: "跨时期网络"
+mechanism: "波斯语宫廷、苏菲 khanqah、Hindavi/乌尔都和 Bhakti 俗语诗形成长期接触。不能把这种互动简化成单向“伊斯兰影响”或完全融合；应按具体文本、赞助、翻译和语言实践判断"
 ---
 # 波斯化—苏菲—Bhakti互动网络
 

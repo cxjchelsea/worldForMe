@@ -35,6 +35,8 @@ batch4_source_refs:
 - 现代主义书单.md:631
 t4_priority: ◆
 t4_history_position: 西欧与英美现代主义场域 · 散文与随笔
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Greguerías
 

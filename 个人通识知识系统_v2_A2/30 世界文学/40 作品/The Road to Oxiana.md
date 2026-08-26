@@ -39,6 +39,8 @@ batch3_source_refs:
 - 旅行书单.md:2139
 t4_priority: ★
 t4_history_position: 西欧与英美现代主义场域 · 纪实与文学非虚构
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Road to Oxiana
 

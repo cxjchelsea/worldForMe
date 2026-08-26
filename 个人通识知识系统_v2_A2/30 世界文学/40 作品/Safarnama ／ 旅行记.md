@@ -40,6 +40,8 @@ batch3_source_refs:
 t1_priority: ★
 t1_network: 波斯语文学世界
 r1_tradition: 波斯—伊朗文学传统
+r1_priority: "△"
+r1_role: "区域扩展阅读（非结构锚点）"
 ---
 # Safarnama / 旅行记
 

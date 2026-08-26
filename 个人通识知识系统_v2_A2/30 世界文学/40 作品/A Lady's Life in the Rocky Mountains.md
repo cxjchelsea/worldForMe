@@ -39,6 +39,8 @@ batch3_source_refs:
 - 旅行书单.md:829
 t3_priority: ★
 t3_history_position: 欧洲现代文学市场 · 纪实与文学非虚构
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # A Lady's Life in the Rocky Mountains
 

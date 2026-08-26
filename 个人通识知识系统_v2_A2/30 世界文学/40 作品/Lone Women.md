@@ -47,6 +47,8 @@ batch6_source_refs:
 - 西部书单.md:991
 t6_priority: ★
 t6_history_position: 当代全球类型文学场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Lone Women
 

@@ -37,6 +37,8 @@ batch5_source_refs:
 - 战争书单.md:1576
 t6_priority: ★
 t6_history_position: 欧洲与北美全球出版中心 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # How the Soldier Repairs the Gramophone
 

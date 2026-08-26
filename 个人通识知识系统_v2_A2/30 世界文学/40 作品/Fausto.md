@@ -38,6 +38,8 @@ batch6_source_refs:
 - Gaucho书单.md:1711
 - Gaucho书单.md:261
 - Gaucho书单.md:279
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Fausto
 

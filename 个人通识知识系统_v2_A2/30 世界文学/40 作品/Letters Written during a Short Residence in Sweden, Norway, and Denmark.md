@@ -37,6 +37,8 @@ batch3_source_refs:
 - 旅行书单.md:671
 t2_priority: ★
 t2_history_position: 欧洲印刷、宗教与俗语文学 · 纪实与文学非虚构
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Letters Written during a Short Residence in Sweden, Norway, and Denmark
 

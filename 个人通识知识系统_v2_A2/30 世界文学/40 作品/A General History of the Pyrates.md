@@ -45,6 +45,8 @@ batch6_source_refs:
 - 海盗书单.md:757
 t2_priority: ★
 t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # A General History of the Pyrates
 

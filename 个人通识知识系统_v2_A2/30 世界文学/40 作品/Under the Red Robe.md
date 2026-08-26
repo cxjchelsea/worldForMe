@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:1920
 - 剑客书单.md:671
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Under the Red Robe
 

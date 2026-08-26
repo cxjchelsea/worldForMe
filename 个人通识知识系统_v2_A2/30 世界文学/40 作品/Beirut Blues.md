@@ -42,6 +42,8 @@ r1_tradition: 阿拉伯文学传统
 r10_tradition: "阿拉伯—中东离散文学传统"
 r10_role: "战争流亡与女性书写"
 r10_priority: "◆"
+r1_priority: "△"
+r1_role: "区域扩展阅读（非结构锚点）"
 ---
 # Beirut Blues
 

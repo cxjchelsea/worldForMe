@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:2256
 - 西部书单.md:245
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Seth Jones
 

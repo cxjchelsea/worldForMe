@@ -38,6 +38,8 @@ batch6_source_refs:
 - 世界武人英雄谱系.md:1186
 - 西部书单.md:2293
 - 西部书单.md:743
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Little Big Man
 

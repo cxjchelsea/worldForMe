@@ -38,6 +38,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:1442
 - 西部书单.md:2122
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Six-Gun Tarot
 

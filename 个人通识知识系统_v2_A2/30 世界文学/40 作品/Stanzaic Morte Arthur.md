@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 骑士书单.md:1851
 - 骑士书单.md:678
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Stanzaic Morte Arthur
 

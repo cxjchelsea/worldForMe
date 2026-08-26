@@ -43,6 +43,8 @@ batch6_source_refs:
 - 西部书单.md:1495
 t4_priority: ◆
 t4_history_position: 英美现代类型文学与纸浆杂志场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Bugles in the Afternoon
 

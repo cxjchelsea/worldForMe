@@ -46,8 +46,9 @@ mystery_source_lines:
   - "374"
 t6_priority: △
 t6_history_position: 当代全球类型文学场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
-
 # A代表不在场证明
 
 ## 基本信息

@@ -37,6 +37,8 @@ batch5_source_refs:
 - 战争书单.md:517
 t4_priority: ★
 t4_history_position: 西欧与英美现代主义场域 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # 1914 and Other Poems
 

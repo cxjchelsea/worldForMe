@@ -40,6 +40,8 @@ batch2_source_refs:
 - 反乌托邦书单.md:668
 t6_priority: ◆
 t6_history_position: 当代全球类型文学场域 · 小说
+r9_priority: "△"
+r9_role: "区域扩展阅读（非结构锚点）"
 ---
 # Jennifer Government
 

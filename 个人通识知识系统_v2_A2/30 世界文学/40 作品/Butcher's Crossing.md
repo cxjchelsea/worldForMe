@@ -44,6 +44,8 @@ batch6_source_refs:
 - 西部书单.md:768
 postwar_priority: ★
 postwar_stage: 1955—1965：世界真正多中心化
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Butcher's Crossing
 

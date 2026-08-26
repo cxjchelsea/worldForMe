@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:1743
 - Gaucho书单.md:735
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # El romance de un gaucho
 

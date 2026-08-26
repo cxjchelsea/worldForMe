@@ -37,6 +37,8 @@ batch3_source_refs:
 - 神话书单.md:571
 t6_priority: ◆
 t6_history_position: 当代全球类型文学场域 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Russian Folk Belief
 

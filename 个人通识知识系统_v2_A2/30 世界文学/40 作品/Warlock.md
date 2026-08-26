@@ -39,6 +39,8 @@ batch6_source_refs:
 - 西部书单.md:1620
 - 西部书单.md:2287
 - 西部书单.md:595
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Warlock
 

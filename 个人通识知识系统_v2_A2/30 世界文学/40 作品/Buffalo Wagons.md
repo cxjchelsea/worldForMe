@@ -43,6 +43,8 @@ batch6_source_refs:
 - 西部书单.md:1500
 postwar_priority: ◆
 postwar_stage: 1945—1980：时期归属已确认，阶段待核
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Buffalo Wagons
 

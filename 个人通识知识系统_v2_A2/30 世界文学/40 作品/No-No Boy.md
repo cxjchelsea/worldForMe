@@ -35,6 +35,8 @@ batch2_source_refs:
 r5_tradition: "亚裔美国文学传统"
 r5_role: "日裔拘禁后身份"
 r5_priority: "★"
+r2_priority: "△"
+r2_role: "区域扩展阅读（非结构锚点）"
 ---
 # No-No Boy
 

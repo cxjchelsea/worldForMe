@@ -40,6 +40,8 @@ batch2_source_refs:
 - 反乌托邦书单.md:667
 t6_priority: ◆
 t6_history_position: 当代全球类型文学场域 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Feed
 

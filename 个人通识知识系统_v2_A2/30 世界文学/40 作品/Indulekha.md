@@ -30,6 +30,8 @@ t3_mechanism:
 - 印刷市场与新读者
 verification_status: 手工核验
 bibliography_status: metadata_pending
+r3_priority: "△"
+r3_role: "区域扩展阅读（非结构锚点）"
 ---
 # Indulekha
 

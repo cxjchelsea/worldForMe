@@ -38,6 +38,8 @@ batch5_source_refs:
 - 战争书单.md:710
 t4_priority: ★
 t4_history_position: 英联邦与大洋洲现代文学场域 · 小说
+r9_priority: "△"
+r9_role: "区域扩展阅读（非结构锚点）"
 ---
 # Her Privates We
 

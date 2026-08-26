@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - 剑客书单.md:1911
 - 剑客书单.md:549
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Le Capitan
 

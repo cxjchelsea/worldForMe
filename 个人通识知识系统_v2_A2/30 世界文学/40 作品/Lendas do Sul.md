@@ -38,6 +38,8 @@ batch6_source_refs:
 - Gaucho书单.md:1054
 - Gaucho书单.md:1062
 - Gaucho书单.md:1767
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Lendas do Sul
 

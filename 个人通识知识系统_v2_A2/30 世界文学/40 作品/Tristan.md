@@ -41,6 +41,8 @@ batch6_source_refs:
 - 骑士书单.md:400
 - 骑士书单.md:408
 - 骑士书单.md:616
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Tristan
 

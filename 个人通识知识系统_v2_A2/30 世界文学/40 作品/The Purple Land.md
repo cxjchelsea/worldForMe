@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:1727
 - Gaucho书单.md:556
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Purple Land
 

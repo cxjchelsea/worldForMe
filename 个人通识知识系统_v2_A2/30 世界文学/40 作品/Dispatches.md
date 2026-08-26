@@ -37,6 +37,8 @@ batch5_source_refs:
 - 战争书单.md:1334
 postwar_priority: △
 postwar_stage: 1975—1980：革命激情退潮与后现代成熟
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Dispatches
 

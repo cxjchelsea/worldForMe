@@ -38,6 +38,8 @@ batch2_source_refs:
 - 成长书单.md:2324
 t2_priority: ★
 t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Anton Reiser
 

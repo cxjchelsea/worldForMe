@@ -45,6 +45,8 @@ batch6_source_refs:
 - 侠盗书单.md:2032
 t3_priority: △
 t3_history_position: 帝国、殖民与多语言文学空间 · 小说
+r9_priority: "△"
+r9_role: "区域扩展阅读（非结构锚点）"
 ---
 # Jerilderie Letter
 

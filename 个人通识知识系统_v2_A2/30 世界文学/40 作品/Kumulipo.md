@@ -36,6 +36,8 @@ t2_history_position: 海洋亚洲与跨区域接触 · 小说
 t2_mechanism:
 - 印刷、书籍市场与读者扩大
 - 俗语化、翻译与新读者共同体
+r9_priority: "△"
+r9_role: "区域扩展阅读（非结构锚点）"
 ---
 # Kumulipo
 

@@ -37,6 +37,8 @@ batch2_source_refs:
 - 历史书单.md:895
 t6_priority: ★
 t6_history_position: 南亚与全球离散文学 · 小说
+r3_priority: "△"
+r3_role: "区域扩展阅读（非结构锚点）"
 ---
 # Cracking India
 

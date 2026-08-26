@@ -29,6 +29,8 @@ bibliography_status: metadata_pending
 batch4_source_refs:
 - 拉美书单.md:1468
 - 拉美书单.md:852
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Lumpérica
 

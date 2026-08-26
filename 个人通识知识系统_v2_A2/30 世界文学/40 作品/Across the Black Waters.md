@@ -39,6 +39,8 @@ t4_mechanism:
 - 心理、主体与叙事视角
 - 世界大战、革命与政治极化
 - 帝国、殖民、反殖民与文化翻译
+r3_priority: "△"
+r3_role: "区域扩展阅读（非结构锚点）"
 ---
 # Across the Black Waters
 

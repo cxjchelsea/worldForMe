@@ -45,6 +45,8 @@ batch6_source_refs:
 - Gaucho书单.md:1766
 t4_priority: ★
 t4_history_position: 拉丁美洲先锋派与现代城市文学 · 小说
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Contos Gauchescos
 

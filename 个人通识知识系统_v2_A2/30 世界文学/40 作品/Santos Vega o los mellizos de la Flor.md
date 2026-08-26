@@ -37,6 +37,8 @@ bibliography_status: metadata_pending
 batch6_source_refs:
 - Gaucho书单.md:1710
 - Gaucho书单.md:219
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Santos Vega o los mellizos de la Flor
 

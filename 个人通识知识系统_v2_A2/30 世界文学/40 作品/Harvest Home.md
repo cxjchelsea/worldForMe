@@ -41,6 +41,8 @@ batch1_source_refs:
 - 恐怖书单.md:688
 t2_priority: ★
 t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Harvest Home
 

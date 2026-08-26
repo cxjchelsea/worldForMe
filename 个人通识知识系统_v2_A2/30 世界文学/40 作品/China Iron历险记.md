@@ -59,6 +59,8 @@ batch6_source_refs:
 - Gaucho书单.md:994
 - 世界武人英雄谱系.md:769
 - 侠盗书单.md:1828
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # China Iron历险记
 

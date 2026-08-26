@@ -44,6 +44,8 @@ batch6_source_refs:
 - Gaucho书单.md:482
 t3_priority: ◆
 t3_history_position: 拉丁美洲民族文学与国家建构 · 小说
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Juan Cuello
 

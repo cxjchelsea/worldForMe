@@ -35,8 +35,9 @@ source_mentions: 1
 first_source_line: 698
 sf_source_lines:
 - '698'
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
-
 # Kalpa Imperial
 
 ## 基本信息

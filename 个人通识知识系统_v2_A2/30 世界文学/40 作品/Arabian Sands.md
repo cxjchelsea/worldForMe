@@ -38,6 +38,8 @@ batch3_source_refs:
 - 旅行书单.md:2088
 postwar_priority: ★
 postwar_stage: 1945—1980：时期归属已确认，阶段待核
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Arabian Sands
 

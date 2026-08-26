@@ -38,6 +38,8 @@ t6_mechanism:
 - 迁徙、离散与跨国家庭
 - 记忆、创伤与历史重写
 - 全球市场、翻译与奖项
+r7_priority: "△"
+r7_role: "区域扩展阅读（非结构锚点）"
 ---
 # Destination Biafra
 

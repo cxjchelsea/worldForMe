@@ -30,6 +30,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch2_source_refs:
 - 成长书单.md:1756
+r2_priority: "△"
+r2_role: "区域扩展阅读（非结构锚点）"
 ---
 # This One Summer
 

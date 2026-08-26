@@ -39,6 +39,8 @@ batch3_source_refs:
 - 旅行书单.md:2103
 t6_priority: ★
 t6_history_position: 当代全球类型文学场域 · 纪实与文学非虚构
+r7_priority: "△"
+r7_role: "区域扩展阅读（非结构锚点）"
 ---
 # Looking for Transwonderland: Travels in Nigeria
 

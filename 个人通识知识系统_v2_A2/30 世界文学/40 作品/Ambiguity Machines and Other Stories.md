@@ -35,8 +35,9 @@ source_mentions: 1
 first_source_line: 734
 sf_source_lines:
 - '734'
+r3_priority: "△"
+r3_role: "区域扩展阅读（非结构锚点）"
 ---
-
 # Ambiguity Machines and Other Stories
 
 ## 基本信息

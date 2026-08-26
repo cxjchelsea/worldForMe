@@ -47,6 +47,8 @@ batch6_source_refs:
 - Gaucho书单.md:964
 - 侠盗书单.md:1165
 - 侠盗书单.md:2043
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Las aventuras de la China Iron
 

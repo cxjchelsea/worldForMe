@@ -38,6 +38,8 @@ batch6_source_refs:
 - Gaucho书单.md:1760
 - Gaucho书单.md:62
 - Gaucho书单.md:944
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # El guacho Martín Fierro
 

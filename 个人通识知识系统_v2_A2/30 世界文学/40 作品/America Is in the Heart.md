@@ -38,6 +38,10 @@ batch2_source_refs:
 - 成长书单.md:1622
 postwar_priority: ★
 postwar_stage: 1945—1980：时期归属已确认，阶段待核
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
+r8_priority: "△"
+r8_role: "区域扩展阅读（非结构锚点）"
 ---
 # America Is in the Heart
 

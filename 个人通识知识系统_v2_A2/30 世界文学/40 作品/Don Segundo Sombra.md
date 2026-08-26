@@ -40,6 +40,8 @@ batch6_source_refs:
 - Gaucho书单.md:660
 - Gaucho书单.md:664
 - Gaucho书单.md:668
+r6_priority: "△"
+r6_role: "区域扩展阅读（非结构锚点）"
 ---
 # Don Segundo Sombra
 

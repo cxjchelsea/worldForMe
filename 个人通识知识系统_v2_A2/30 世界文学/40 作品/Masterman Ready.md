@@ -38,6 +38,8 @@ batch1_source_refs:
 - 冒险书单.md:433
 t3_priority: ◆
 t3_history_position: 欧洲现代文学市场 · 小说
+r4_priority: "△"
+r4_role: "区域扩展阅读（非结构锚点）"
 ---
 # Masterman Ready
 

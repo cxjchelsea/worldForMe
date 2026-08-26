@@ -43,6 +43,8 @@ batch6_source_refs:
 - 西部书单.md:134
 t2_priority: △
 t2_history_position: 欧洲印刷、宗教与俗语文学 · 小说
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # The Adventures of Col. Daniel Boone
 

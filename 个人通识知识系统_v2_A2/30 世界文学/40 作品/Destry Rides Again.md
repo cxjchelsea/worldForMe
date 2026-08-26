@@ -36,6 +36,8 @@ verification_status: 自动通过
 bibliography_status: metadata_pending
 batch6_source_refs:
 - 西部书单.md:510
+r5_priority: "△"
+r5_role: "区域扩展阅读（非结构锚点）"
 ---
 # Destry Rides Again
 

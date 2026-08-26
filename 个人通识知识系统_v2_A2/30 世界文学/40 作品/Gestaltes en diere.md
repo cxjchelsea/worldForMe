@@ -36,6 +36,8 @@ batch4_source_refs:
 - 现代主义书单.md:979
 t4_priority: ◆
 t4_history_position: 黑人现代主义、非洲与加勒比 · 诗歌
+r7_priority: "△"
+r7_role: "区域扩展阅读（非结构锚点）"
 ---
 # Gestaltes en diere
 
