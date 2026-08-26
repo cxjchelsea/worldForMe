@@ -25,6 +25,7 @@ axis_q:
 - QH6 战争、暴力与创伤
 axis_source: inferred
 topics:
+  - WL-TOPIC-R10-TRANSREGIONAL
 - WL-TOPIC-Q6-WAR
 topic_links:
 - '[[../30 专题/QH6 战争、暴力与创伤/00 战争文学|战争文学]]'
@@ -38,6 +39,9 @@ batch5_source_refs:
 t6_priority: ★
 t6_history_position: 西亚、中东战争迁徙与跨语际写作 · 小说
 r1_tradition: 阿拉伯文学传统
+r10_tradition: "阿拉伯—中东离散文学传统"
+r10_role: "战争流亡与女性书写"
+r10_priority: "◆"
 ---
 # Beirut Blues
 

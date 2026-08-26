@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "id": "c",
+      "type": "text",
+      "text": "R10 跨区域文学传统\n离散 · 移民 · 流亡 · 跨语言",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 120
+    },
+    {
+      "id": "t1",
+      "type": "file",
+      "file": "11 内部传统/01 非洲离散文学传统.md",
+      "x": 760,
+      "y": -370,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t2",
+      "type": "file",
+      "file": "11 内部传统/02 犹太离散—意第绪与跨语文学传统.md",
+      "x": 400,
+      "y": -240,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t3",
+      "type": "file",
+      "file": "11 内部传统/03 华人—华语离散文学传统.md",
+      "x": 760,
+      "y": -110,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t4",
+      "type": "file",
+      "file": "11 内部传统/04 南亚离散文学传统.md",
+      "x": 400,
+      "y": 20,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t5",
+      "type": "file",
+      "file": "11 内部传统/05 阿拉伯—中东离散文学传统.md",
+      "x": 760,
+      "y": 150,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t6",
+      "type": "file",
+      "file": "11 内部传统/06 流亡—难民—无国籍文学传统.md",
+      "x": 400,
+      "y": 280,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t7",
+      "type": "file",
+      "file": "11 内部传统/07 跨语言—自译与语言转换文学传统.md",
+      "x": 760,
+      "y": 410,
+      "width": 320,
+      "height": 80
+    },
+    {
+      "id": "t8",
+      "type": "file",
+      "file": "11 内部传统/08 全球移民—后殖民都市文学传统.md",
+      "x": 400,
+      "y": 540,
+      "width": 320,
+      "height": 80
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "c",
+      "toNode": "t1"
+    },
+    {
+      "id": "e2",
+      "fromNode": "c",
+      "toNode": "t2"
+    },
+    {
+      "id": "e3",
+      "fromNode": "c",
+      "toNode": "t3"
+    },
+    {
+      "id": "e4",
+      "fromNode": "c",
+      "toNode": "t4"
+    },
+    {
+      "id": "e5",
+      "fromNode": "c",
+      "toNode": "t5"
+    },
+    {
+      "id": "e6",
+      "fromNode": "c",
+      "toNode": "t6"
+    },
+    {
+      "id": "e7",
+      "fromNode": "c",
+      "toNode": "t7"
+    },
+    {
+      "id": "e8",
+      "fromNode": "c",
+      "toNode": "t8"
+    }
+  ]
+}

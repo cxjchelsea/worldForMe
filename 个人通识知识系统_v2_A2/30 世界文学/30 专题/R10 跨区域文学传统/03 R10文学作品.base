@@ -1,0 +1,28 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-R10-TRANSREGIONAL")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.year: {displayName: 年份}
+  note.r10_priority: {displayName: R10优先级}
+  note.r10_tradition: {displayName: 跨区域传统}
+  note.r10_role: {displayName: R10机制/意义}
+  note.axis_r: {displayName: 地域坐标}
+views:
+  - type: table
+    name: 全部 R10 作品
+    order: [file.name, author, year, r10_priority, r10_tradition, r10_role, axis_r]
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - r10_priority == "★"
+    order: [file.name, author, r10_tradition, r10_role]
+  - type: table
+    name: 按跨区域传统
+    groupBy:
+      property: r10_tradition
+      direction: ASC
+    order: [file.name, author, year, r10_priority, r10_role]
