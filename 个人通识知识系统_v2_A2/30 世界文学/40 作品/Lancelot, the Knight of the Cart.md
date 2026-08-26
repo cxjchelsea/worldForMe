@@ -41,6 +41,10 @@ t1_network: 拉丁基督教与欧洲俗语文学圈
 t1_role:
 - 手稿、书写与区域性印刷
 - 教育、宫廷与宗教机构
+r4_priority: "◆"
+r4_tradition: "中世纪拉丁基督教与俗语奠基传统"
+r4_role:
+- 亚瑟王宫廷传奇
 ---
 # Lancelot, the Knight of the Cart
 

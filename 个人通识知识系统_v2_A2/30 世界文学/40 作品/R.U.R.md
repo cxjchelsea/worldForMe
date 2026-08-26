@@ -53,6 +53,10 @@ t4_history_position: 西欧与英美现代主义场域 · 小说
 t4_mechanism:
 - 都市、技术与感知革命
 - 小杂志、翻译、流亡与跨国网络
+r4_priority: "◆"
+r4_tradition: "中欧文学传统"
+r4_role:
+- 捷克科幻戏剧
 ---
 # R.U.R.
 
