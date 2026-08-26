@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'scripts/complete_r6_topic_map_v1.py'
+      - '.github/workflows/r6-structural-completion-v1.yml'
 jobs:
   apply:
     runs-on: ubuntu-latest
