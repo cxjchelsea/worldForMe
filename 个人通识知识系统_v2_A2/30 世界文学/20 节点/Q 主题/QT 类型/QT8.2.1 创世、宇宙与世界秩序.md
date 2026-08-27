@@ -71,7 +71,6 @@ motif / archetype / plot_pattern / symbol
 ```text
 QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
 QT8.2.1_FORMAL_COMPONENT_TOPICS_CREATED_THIS_PASS = 0
-QT8.2.1_NEXT_STAGE = TIER1_ADMISSION_RESEARCH_M2_P1_S1
 ```
 
 第一批准入研究对象：
@@ -85,6 +84,45 @@ QT8.2.1_NEXT_STAGE = TIER1_ADMISSION_RESEARCH_M2_P1_S1
 
 宇宙卵
 → symbol candidate
+```
+
+## M2｜天地分离 Admission Research
+
+已完成：[[QT8.2.1 M2 天地分离 Admission Research]]
+
+结论：
+
+```text
+QT8.2.1_M2_ADMISSION_RESEARCH = PASS
+QT8.2.1_M2_COMPONENT_TYPE = motif
+QT8.2.1_M2_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
+```
+
+冻结后的最低辨识条件：
+
+```text
+primordial_non_separation
++
+cosmological_separation
++
+world_space_result
+```
+
+边界已确认：
+
+```text
+天地分离 motif
+≠ “混沌与秩序” theme
+≠ 世界父母分离 plot pattern
+≠ 天／地 symbol
+```
+
+当前下一阶段：
+
+```text
+QT8.2.1_NEXT_STAGE = M2_SKY_EARTH_SEPARATION_TOPIC_BUILD
+P1_ADMISSION_RESEARCH = NOT_STARTED_THIS_PASS
+S1_ADMISSION_RESEARCH = NOT_STARTED_THIS_PASS
 ```
 
 只有候选对象完成自身 V1 准入后，才建立正式重型专题包。
