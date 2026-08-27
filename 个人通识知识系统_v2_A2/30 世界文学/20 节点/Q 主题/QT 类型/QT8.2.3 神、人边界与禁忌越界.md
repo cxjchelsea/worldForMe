@@ -9,16 +9,48 @@ level: 4
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
-topic_map: null
-source_version: "2.12-qt8-restructure"
+topic_map: "../../../30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/00 巴别塔.md"
+source_version: "2.24-qt8.2-babel-symbol-pilot-d"
 ---
- 
+
 # QT8.2.3 神、人边界与禁忌越界
 
-> 路径：Q轴 → QT8 → QT8.2 世界文化母题与原型 → **QT8.2.3 神、人边界与禁忌越界**
+> 路径：Q轴 → QT8 → QT8.2 世界文化母题、原型与叙事结构 → **QT8.2.3 神、人边界与禁忌越界**
 
-本节点为母题型专题叶节点。正式专题地图应研究：母题定义与边界、子母题／原型词表、核心结构、跨文明实例、文本溯源、传播与独立同构、历史变体、后世作品、与其他母题的关系、支撑书目。
+本节点继续作为一级母题簇／问题域容器，不等于单一 motif，也不等于巴别塔专题本身。其下可建立 motif / archetype / plot_pattern / symbol 等正式 QT8.2 component。
 
-## 专题地图
+## 已建立组件
 
-待 QT8.1 积累足够跨文明材料后建立；骨架阶段不预建空专题包。
+### 巴别塔｜symbol Pilot D
+
+→ [[../../../30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/00 巴别塔|巴别塔]]
+
+当前状态：`PILOT_D_CONTENT_PASS_A`
+
+对象类型：
+
+```text
+symbol
+```
+
+Pass A 当前用于验证：
+
+- `source object / source episode` 与后世文化 symbol 的分层；
+- symbol 准入是否需要跨文本、跨时代、跨媒介证据；
+- `admission_evidence / stable_meanings / meaning_shifts`；
+- 《创世记》11 来源对象与后世“傲慢／语言混乱／总体化工程”等意义如何分层；
+- Bruegel 视觉复用与 Borges 文学语义转用；
+- `explicit_reference / symbol_reuse / ordinary visual similarity` 的边界；
+- Shared Data Layer 的 source/work schema 在 symbol 类型上的复用。
+
+当前数据：
+
+```text
+1 × qt82_source_reference
+2 × qt82_work_reference
+0 × qt82_component_relation
+```
+
+## 后续建设原则
+
+本节点不因为“高塔／越界／语言混乱”就批量建立 symbol。只有来源可追踪、后世复用稳定且意义连续可论证的对象，才进入文化符号层。
