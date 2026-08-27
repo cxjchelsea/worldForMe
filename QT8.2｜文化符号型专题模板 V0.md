@@ -2,7 +2,7 @@
 
 > 对象类型：`symbol`
 >
-> 状态：`V0_REVISED_AFTER_BABEL_PILOT_PASS_A`
+> 状态：`V0_REVISED_AFTER_BABEL_PILOT_PASS_B`
 >
 > 前置治理：[[QT8.2｜世界文化母题、原型与叙事结构模板总则 V0]] + [[QT8.2｜共享数据层规范 V0]]
 
@@ -114,9 +114,13 @@ visual stabilization
 
 semantic drift
 ≠ symbol continuity 必然断裂
+
+symbol continuity
+≠ literal object continuity
+≠ visual-form continuity
 ```
 
-巴别塔案例中，Bruegel 可作为视觉定型／再传播节点，但不能把其具体塔形倒写成《创世记》的来源物象；Borges 则证明 literal tower 消失后，Babel 仍可通过名称与意义场保持符号连续。
+巴别塔案例中，Bruegel 可作为视觉定型／再传播节点，但不能把其具体塔形倒写成《创世记》的来源物象；Borges 证明 literal tower 消失后，Babel 仍可通过名称与意义场保持符号连续；Iñárritu《Babel》(2006) 进一步证明在电影媒介中，即使建筑物象与建塔情节均消失，Babel 仍可通过明确命名与语言／沟通断裂意义族继续被识别。
 
 ---
 
@@ -140,6 +144,7 @@ meaning_shifts
 ```text
 stable_meanings
 = 跨多个接受节点仍可识别的意义族
+= 不要求每个后世实例同时承载全部 stable_meanings
 
 meaning_shifts
 = 某一接受节点对意义重心的新增、替换、抽象化或反转
@@ -172,7 +177,6 @@ symbol 的证据不限文学文本，可分层记录：
 ```text
 explicit_reference
 symbol_reuse
-iconographic_inheritance（候选／视共享 schema 状态）
 historical_transmission
 structural_similarity
 independent_or_unknown
@@ -191,7 +195,7 @@ symbol reuse
 ≠ historical transmission
 ```
 
-`iconographic_inheritance` 是否需要正式进入共享 work relation vocabulary，应由真实视觉继承链验证，不由单一 Pilot Pass A 直接决定。
+Pilot D Pass B 后，`iconographic_inheritance` **不进入当前共享 relation vocabulary**。原因不是该关系不可能存在，而是现阶段没有一条经独立证据核实、足以要求共享 schema 支持的具体视觉继承链。未来若出现作者／制作资料、图像学研究或可追踪传播证据，再单独提交 vocabulary review。
 
 ---
 
@@ -247,7 +251,7 @@ evidence_level: ...
 source_evidence: []
 ```
 
-Pilot D Pass A 暴露 symbol-specific 可选字段候选：
+Pilot D Pass B 后，symbol 类型正式允许以下可选 work fields：
 
 ```yaml
 symbolic_meaning: []
@@ -255,7 +259,20 @@ meaning_shift: []
 evidence_medium: textual | visual | material | ritual | media
 ```
 
-当前为候选，不在单一 Pass A 中强制进入 Shared Data Layer；Pass B 用更多真实实例判断是否升级。
+使用规则：
+
+```text
+symbolic_meaning
+= 当前实例实际承载的 stable meaning 子集
+
+meaning_shift
+= 当前实例新增／替换／抽象化／重新加权的意义
+
+evidence_medium
+= 媒介分类，不替代 relation_type
+```
+
+这三个字段已由 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）完成跨媒介压力测试，因此从 candidate 升级为 symbol-specific optional extension。
 
 若同一作品构成两种不同关系，仍遵守 relation atomicity，建立两条 work reference。
 
