@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: "../../../30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/00 巴别塔.md"
-source_version: "2.25-qt8.2-babel-symbol-pilot-d-pass-b"
+source_version: "2.26-qt8.2-babel-symbol-pilot-d-accepted"
 ---
 
 # QT8.2.3 神、人边界与禁忌越界
@@ -25,7 +25,9 @@ source_version: "2.25-qt8.2-babel-symbol-pilot-d-pass-b"
 
 → [[../../../30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/00 巴别塔|巴别塔]]
 
-当前状态：`PILOT_D_CONTENT_PASS_B_COMPLETE / ACCEPTANCE_NOT_YET`
+当前状态：`ACCEPTED_REFERENCE_SYMBOL_V0`
+
+Acceptance Review：[[../../../30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/QT8.2｜Pilot D 巴别塔 Acceptance Review]]
 
 对象类型：
 
@@ -33,7 +35,7 @@ source_version: "2.25-qt8.2-babel-symbol-pilot-d-pass-b"
 symbol
 ```
 
-Pass A + Pass B 当前已验证：
+Pilot D 已验证：
 
 - `source object / source episode` 与后世文化 symbol 的分层；
 - symbol 准入需要可核证的跨文本、跨时代、跨媒介证据；
@@ -55,19 +57,24 @@ Pass A + Pass B 当前已验证：
 0 × qt82_component_relation
 ```
 
-当前治理状态：
+Acceptance 结论：
 
 ```text
-QT8.2_SYMBOL_BOUNDARY = SUPPORTED
-QT8.2_SYMBOL_ADMISSION_MODEL = SUPPORTED
-QT8.2_SYMBOL_SOURCE_WORK_SCHEMA_REUSE = PASS
+QT8.2_PILOT_D = CLOSED_ACCEPTED
+QT8.2_PILOT_D_REFERENCE_STATUS = ACCEPTED_REFERENCE_SYMBOL_V0
+QT8.2_SYMBOL_TEMPLATE_V0 = VALIDATED_BY_ONE_REFERENCE_SYMBOL
 QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION
 QT8.2_ICONOGRAPHIC_INHERITANCE_RELATION = NOT_PROMOTED / REQUIRES_DOCUMENTED_VISUAL_CHAIN
-QT8.2_NEXT_STAGE = PILOT_D_ACCEPTANCE_REVIEW
 ```
 
 ## 后续建设原则
 
 本节点不因为“高塔／越界／语言混乱”就批量建立 symbol。只有来源可追踪、后世复用稳定且意义连续可论证的对象，才进入文化符号层。
 
-当前不再继续增加 Babel Pilot 内容实例；下一步应进行 `PILOT_D_ACCEPTANCE_REVIEW`，通过后再进入 QT8.2 四类 component 的跨类型总复核与 Freeze Review 前置检查。
+Pilot D 已关闭，不再继续增加 Babel Pilot 内容实例。QT8.2 下一阶段进入：
+
+```text
+FOUR_TYPE_CROSS_TEMPLATE_CONFLICT_AND_SHARED_DATA_REVIEW
+```
+
+通过四类型跨模板冲突检查与 Shared Data Layer 总复核后，才允许进入 `QT8.2_TEMPLATE_V1_FREEZE_REVIEW`。
