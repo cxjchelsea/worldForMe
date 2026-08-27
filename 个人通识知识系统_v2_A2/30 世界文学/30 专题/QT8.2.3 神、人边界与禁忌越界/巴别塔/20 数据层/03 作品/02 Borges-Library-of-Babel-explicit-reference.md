@@ -15,6 +15,12 @@ relation_type: explicit_reference
 evidence_level: documented
 source_evidence:
   - https://www.ntticc.or.jp/en/feature/1998/The_Library_of_Babel/preface.html
+symbolic_meaning:
+  - language_confusion_and_fragmentation
+  - failed_or_interrupted_universal_project
+meaning_shift:
+  - knowledge_totality_and_information_overload
+evidence_medium: textual
 canonical_work: null
 sequence: 303
 status: active
@@ -27,3 +33,5 @@ status: active
 它的重要性在于证明：巴别塔成为文化 symbol 后，即使 literal tower 消失，Babel 仍可以通过语言／符号混乱、总体知识工程与不可穷尽的信息秩序继续保持可识别意义连续。
 
 因此本记录使用 `explicit_reference`，而不是 `direct_adaptation`。
+
+Pass B 回填 symbol work fields 后，可把“仍保持的 Babel 意义族”和 Borges 新增的知识／信息重心分别落在 `symbolic_meaning` 与 `meaning_shift`；`evidence_medium: textual` 则只承担媒介分类。
