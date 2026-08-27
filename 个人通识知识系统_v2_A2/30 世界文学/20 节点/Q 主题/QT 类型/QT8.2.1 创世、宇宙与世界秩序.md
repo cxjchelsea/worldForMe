@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.14-qt82-v1-first-component"
+source_version: "2.15-qt82-v1-p1-admitted"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -66,18 +66,16 @@ motif / archetype / plot_pattern / symbol
 
 第一轮 inventory：[[QT8.2.1 Component Inventory V1]]
 
-## M2｜天地分离 Admission Research
+## M2｜天地分离
 
-已完成：[[QT8.2.1 M2 天地分离 Admission Research]]
+Admission Research：[[QT8.2.1 M2 天地分离 Admission Research]]
 
 ```text
 QT8.2.1_M2_ADMISSION_RESEARCH = PASS
 QT8.2.1_M2_COMPONENT_TYPE = motif
 ```
 
-## 已正式建立的 component
-
-### 天地分离
+### 已正式建立
 
 ```text
 component_type: motif
@@ -107,14 +105,46 @@ cosmological_separation
 world_space_result
 ```
 
-边界：
+## P1｜世界父母分离结构
+
+Admission Research：[[QT8.2.1 P1 世界父母分离结构 Admission Research]]
+
+已通过：
 
 ```text
-天地分离 motif
-≠ “混沌与秩序” theme
-≠ 世界父母分离 plot pattern
-≠ 天／地 symbol
+QT8.2.1_P1_ADMISSION_RESEARCH = PASS
+QT8.2.1_P1_COMPONENT_TYPE = plot_pattern
+QT8.2.1_P1_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
 ```
+
+候选 core slots：
+
+```text
+S1 WORLD_PARENTS_JOINED
+→ S2 OFFSPRING_CONSTRAINED
+→ S3 SEPARATION_ACTION
+→ S4 COSMIC_SPACE_OPENED
+```
+
+跨传统压力测试：
+
+```text
+Māori Rangi / Papa = FULL_MATCH
+Egyptian Nut / Geb / Shu = FULL_MATCH / STRONG_VARIANT
+Greek Gaia / Ouranos / Kronos = STRONG_VARIANT
+```
+
+与 M2 的边界：
+
+```text
+P1 full match
+→ 通常实例化 M2
+
+M2 instance
+→ 不一定满足 P1
+```
+
+P1 当前仅为 `ADMITTED_FOR_BUILD`，尚未创建正式 component relation；必须待 P1 专题通过 component acceptance 后再审查第一条自然跨类型关系。
 
 ## 下一阶段
 
@@ -122,12 +152,13 @@ world_space_result
 QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
 QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 1
 QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
+QT8.2.1_P1_ADMISSION_RESEARCH = PASS
 QT8.2.1_TEMPLATE_REOPEN_REQUIRED = NO
 
 QT8.2.1_NEXT_STAGE
-= P1_WORLD_PARENTS_SEPARATION_PLOT_PATTERN_ADMISSION_RESEARCH
+= P1_WORLD_PARENTS_SEPARATION_TOPIC_BUILD
 
 S1_ADMISSION_RESEARCH = NOT_STARTED
 ```
 
-下一步对“世界父母结合→后代受限→天地分离→空间展开”进行独立 plot_pattern 准入研究；通过前不创建与“天地分离”的正式 component relation。
+下一步建立 P1 正式 plot_pattern 专题包；通过前仍不创建与“天地分离”的正式 component relation。
