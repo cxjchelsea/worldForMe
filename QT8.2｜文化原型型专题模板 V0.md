@@ -2,7 +2,7 @@
 
 > 对象类型：`archetype`
 >
-> 状态：`V0_REVISED_AFTER_SOLOMON_NAMED_ARCHETYPE_PASS_B`
+> 状态：`V0_VALIDATED_BY_ABSTRACT_AND_NAMED_ARCHETYPE`
 >
 > 前置治理：[[QT8.2｜世界文化母题、原型与叙事结构模板总则 V0]] + [[QT8.2｜共享数据层规范 V0]]
 
@@ -362,3 +362,22 @@ source_evidence: []
 - [ ] 跨传统 functional similarity 与 historical transmission 已区分
 - [ ] relation record 遵守原子性
 - [ ] 后世实例能说明 identity / core / variable features 如何变化
+
+---
+
+# V0 验证状态
+
+```text
+Pilot B｜受苦义人
+→ abstract_archetype
+→ ACCEPTED_REFERENCE_ARCHETYPE_V0
+
+Pilot B.1｜所罗门王
+→ named_archetype
+→ ACCEPTED_REFERENCE_NAMED_ARCHETYPE_V0
+
+QT8.2_ARCHETYPE_TEMPLATE_V0
+= VALIDATED_BY_ABSTRACT_AND_NAMED_ARCHETYPE
+```
+
+该结论只验证 archetype 模板；整个 QT8.2 Template V0 仍需等待 plot_pattern 与 symbol Pilot 后才能进入 V1 Freeze Review。
