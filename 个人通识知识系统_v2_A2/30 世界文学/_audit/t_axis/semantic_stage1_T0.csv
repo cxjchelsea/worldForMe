@@ -1,10 +1,12 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id
+Roman de Silence.md,Roman de Silence,康沃尔的埃尔德里斯,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2331
 乌尔哀歌.md,乌尔哀歌,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-R1-LAMENT-UR
 云使.md,云使,迦梨陀娑,T0,,CANON-227,约4—5世纪,T0,PASS,HIGH,CANON-227 首次成书_出版时间=约4—5世纪,手工核验,WL-WORK-3176
 以诺一书.md,以诺一书,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1399
 伊利亚特.md,伊利亚特,荷马,T0,,CANON-002,约前8世纪,T0,PASS,HIGH,CANON-002 首次成书_出版时间=约前8世纪,自动通过,WL-WORK-0581
 伊南娜下降冥界.md,伊南娜下降冥界,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1401
 伊南娜与杜穆兹.md,伊南娜与杜穆兹,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1402
+伊戈尔远征记.md,伊戈尔远征记,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2012
 会饮篇.md,会饮篇,柏拉图,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2017
 但以理书.md,但以理书,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1404
 俄狄浦斯王.md,俄狄浦斯王,索福克勒斯,T0,,CANON-005,约前429,T0,PASS,HIGH,CANON-005 首次成书_出版时间=约前429,自动通过,WL-WORK-1408
@@ -36,6 +38,7 @@
 巴比伦神义论.md,巴比伦神义论,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-R1-BABYLONIAN-THEODICY
 希波吕托斯.md,希波吕托斯,欧里庇得斯,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1456
 庄子.md,庄子,庄周及后学,T0,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-T0-ZHUANGZI
+恋爱中的奥兰多.md,恋爱中的奥兰多,马泰奥·马里亚·博亚尔多,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2524
 恩基与宁玛赫.md,恩基与宁玛赫,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1459
 恩基与宁胡尔萨格.md,恩基与宁胡尔萨格,佚名,T0,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1460
 摩诃婆罗多.md,摩诃婆罗多,毗耶娑,T0,,CANON-011,约前4世纪—4世纪,T0,PASS,HIGH,CANON-011 首次成书_出版时间=约前4世纪—4世纪,自动通过,WL-WORK-1130

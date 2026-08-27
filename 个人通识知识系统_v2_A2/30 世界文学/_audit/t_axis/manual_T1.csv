@@ -1,16 +1,35 @@
 ﻿file,title,author,current_t,note_year,master_id,master_time,suggested_t,status,confidence,evidence,verification_status,id,manual_status,manual_suggested_t,manual_confidence,manual_note
+Bevis of Hampton.md,Bevis of Hampton,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2170,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Cligès.md,Cligès,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2185,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Curial e Güelfa.md,Curial e Güelfa,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2194,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Darangen.md,Darangen,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1352,REVIEW,,MEDIUM,口传史诗传统年代缺少足够精确的文本定型依据；“古老”不能直接等同T0
 Erec et Enide.md,Erec et Enide,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2219,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Erec.md,Erec,哈特曼·冯·奥埃,T1,1185,,,T1,PASS,HIGH,note.year=1185,自动通过,WL-WORK-2218,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Estoire del Saint Graal.md,Estoire del Saint Graal,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2220,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Guy of Warwick.md,Guy of Warwick,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2237,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Iwein.md,Iwein,哈特曼·冯·奥埃,T1,1200,,,T1,PASS,HIGH,note.year=1200,自动通过,WL-WORK-2250,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Joseph d'Arimathie.md,Joseph d'Arimathie,罗贝尔·德·博龙,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2253,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Lancelot propre.md,Lancelot propre,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2265,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Lancelot, the Knight of the Cart.md","Lancelot, the Knight of the Cart",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2266,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Lancelot.md,Lancelot,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2264,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Libro del caballero Zifar.md,Libro del caballero Zifar,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2272,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Merlin.md,Merlin,T.H.怀特,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2282,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Morgante.md,Morgante,路易吉·普尔奇,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2287,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Mort Artu.md,Mort Artu,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2288,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Palmerín de Inglaterra.md,Palmerín de Inglaterra,弗朗西斯科·德·莫拉埃斯,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2298,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Palmerín de Oliva.md,Palmerín de Oliva,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2299,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Parzival.md,Parzival,沃尔夫拉姆·冯·埃申巴赫,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2301,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 "Perceval, the Story of the Grail.md","Perceval, the Story of the Grail",克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2304,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Perceval.md,Perceval,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2303,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Perlesvaus ／ The High Book of the Grail.md,Perlesvaus / The High Book of the Grail,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2306,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Prose Tristan.md,Prose Tristan,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2310,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Queste del Saint Graal.md,Queste del Saint Graal,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2311,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Roman de Brut.md,Roman de Brut,瓦斯,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2330,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Safarnama ／ 旅行记.md,Safarnama / 旅行记,纳赛尔·霍斯陆,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1370,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Sir Launfal.md,Sir Launfal,托马斯·切斯特,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2341,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Sir Orfeo.md,Sir Orfeo,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2342,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+Stanzaic Morte Arthur.md,Stanzaic Morte Arthur,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2346,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+The Alliterative Morte Arthure.md,The Alliterative Morte Arthure,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2358,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 The Book of Deeds of Arms and of Chivalry.md,The Book of Deeds of Arms and of Chivalry,克里斯蒂娜·德·皮桑,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2364,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 The Book of the Order of Chivalry.md,The Book of the Order of Chivalry,拉蒙·柳利,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2366,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 Tirant lo Blanc.md,Tirant lo Blanc,若阿诺特·马托雷尔,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2422,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -37,7 +56,9 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 和泉式部日记.md,和泉式部日记,紫式部,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2037,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 哈菲兹诗集.md,哈菲兹诗集,哈菲兹,T1,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-R1-HAFEZ-DIVAN,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 哈里里玛卡梅集.md,哈里里玛卡梅集,哈里里,T1,,CANON-246,约1100—1122,T1,PASS,HIGH,CANON-246 首次成书_出版时间=约1100—1122,需复核,WL-WORK-3188,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+国王叙事诗.md,国王叙事诗,丁尼生,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2484,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 坎特伯雷故事集.md,坎特伯雷故事集,杰弗里·乔叟,T1,,CANON-024,约1387—1400,T1,PASS,HIGH,CANON-024 首次成书_出版时间=约1387—1400,需复核,WL-WORK-2812,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+坎特伯雷故事集·骑士的故事.md,坎特伯雷故事集·骑士的故事,乔叟,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2486,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 太平广记.md,太平广记,李昉等编,T1,,,,,REVIEW,,缺少可靠年代证据,人工核验,WL-WORK-T1-TAIPING-GUANGJI,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 夺牛长征记.md,夺牛长征记,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1437,MOVE,T1,HIGH,现存爱尔兰文本传统形成于中古时期；古老口传根源不等于T0成文
 女巫的预言.md,女巫的预言,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1441,MOVE,T1,HIGH,《诗体埃达》诗篇，主要按中古北欧文本传统处理
@@ -46,6 +67,7 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 尼雅尔萨迦.md,尼雅尔萨迦,佚名,T1,,CANON-022,约13世纪,T1,PASS,HIGH,CANON-022 首次成书_出版时间=约13世纪,自动通过,WL-WORK-1082,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 岭南摭怪.md,岭南摭怪,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1450,MOVE,T1,HIGH,越南中古传说集，主要编纂于14—15世纪
 布兰航海记.md,布兰航海记,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1455,MOVE,T1,HIGH,中古爱尔兰叙事，通常定于7—8世纪
+希尔德布兰特之歌.md,希尔德布兰特之歌,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2513,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 平家物语.md,平家物语,佚名,T1,,CANON-018,约13世纪,T1,PASS,HIGH,CANON-018 首次成书_出版时间=约13世纪,自动通过,WL-WORK-1091,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 库萨里.md,库萨里,犹大·哈列维,T1,,,,,REVIEW,,缺少可靠年代证据,人工核验,WL-WORK-T1-KUZARI,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 徒然草.md,徒然草,吉田兼好,T1,,CANON-236,约1330—1332,T1,PASS,HIGH,CANON-236 首次成书_出版时间=约1330—1332,需复核,WL-WORK-3181,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
@@ -66,12 +88,14 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 洛基的争吵.md,洛基的争吵,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1482,MOVE,T1,HIGH,《诗体埃达》传统，按中古北欧文本体系处理
 湿婆往世书.md,湿婆往世书,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1484,MOVE,T1,MEDIUM,现存文本层累较晚，主要属中古往世书传统
 源氏物语.md,源氏物语,紫式部,T1,,CANON-016,约1008,T1,PASS,HIGH,CANON-016 首次成书_出版时间=约1008,自动通过,WL-WORK-1196,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+熙德之歌.md,熙德之歌,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1204,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 爱尔兰诸族入侵记.md,爱尔兰诸族入侵记,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1485,MOVE,T1,HIGH,约11世纪起形成的中古爱尔兰编纂传统
 牧童歌.md,牧童歌,胜天,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2098,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 犹大·哈列维诗歌.md,犹大·哈列维诗歌,犹大·哈列维,T1,,,,,REVIEW,,缺少可靠年代证据,手工核验,WL-WORK-R1-JUDAH-HALEVI-POEMS,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 狄吉尼斯·阿克里塔斯.md,狄吉尼斯·阿克里塔斯,匿名,T1,,,,,REVIEW,,缺少可靠年代证据,需复核,WL-WORK-T1-DIGENES,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 玛斯纳维.md,玛斯纳维,鲁米,T1,,CANON-213,约1258—1273,T1,PASS,HIGH,CANON-213 首次成书_出版时间=约1258—1273,需复核,WL-WORK-3165,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 瓦夫苏鲁特尼尔之歌.md,瓦夫苏鲁特尼尔之歌,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1487,MOVE,T1,HIGH,《诗体埃达》中古北欧诗歌传统
+瓦尔塔里之歌.md,瓦尔塔里之歌,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2573,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 石钟山记.md,石钟山记,苏轼,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1489,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 神曲.md,神曲,但丁,T1,,CANON-023,约1308—1321,T1,PASS,HIGH,CANON-023 首次成书_出版时间=约1308—1321,需复核,WL-WORK-2811,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 索列姆之歌.md,索列姆之歌,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1491,MOVE,T1,HIGH,《诗体埃达》中古北欧诗歌传统
@@ -86,6 +110,8 @@ Yvain.md,Yvain,克雷蒂安·德·特鲁瓦,T1,,,,,REVIEW,,缺少可靠年代证
 贝奥武夫.md,贝奥武夫,佚名,T1,,CANON-019,约8—11世纪,T1,PASS,HIGH,CANON-019 首次成书_出版时间=约8—11世纪,自动通过,WL-WORK-0843,MOVE,T1,HIGH,古英语史诗成文/现存文本约8—11世纪
 赫罗尔夫·克拉基萨迦.md,赫罗尔夫·克拉基萨迦,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1510,MOVE,T1,HIGH,中古冰岛传奇萨迦，现存文本约14—15世纪
 风土记.md,风土记,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1518,MOVE,T1,HIGH,日本《风土记》编纂于8世纪
+骑士西法尔.md,骑士西法尔,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2647,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
+高卢的阿玛迪斯.md,高卢的阿玛迪斯,加尔西·罗德里格斯·德·蒙塔尔沃,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-2648,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 高文爵士与绿骑士.md,高文爵士与绿骑士,佚名,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-0878,MOVE,T1,HIGH,14世纪中古英语骑士诗
 鲁拜集.md,鲁拜集,欧玛尔·海亚姆,T1,,CANON-061,11—12世纪,T1,PASS,HIGH,CANON-061 首次成书_出版时间=11—12世纪,需复核,WL-WORK-2821,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
 鲁斯塔姆与苏赫拉布.md,鲁斯塔姆与苏赫拉布,菲尔多西,T1,,,,,REVIEW,,缺少可靠年代证据,自动通过,WL-WORK-1520,PASS,T1,MEDIUM,人工逐项核验：当前T轴归属与作品主要成书/文本形成时代相符
