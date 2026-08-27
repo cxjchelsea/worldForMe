@@ -2,7 +2,7 @@
 
 > 对象类型：`plot_pattern`
 >
-> 状态：`V0_REVISED_AFTER_PROPHECY_PILOT_PASS_B`
+> 状态：`V0_VALIDATED_BY_PROPHECY_REFERENCE_PLOT_PATTERN`
 >
 > 前置治理：[[QT8.2｜世界文化母题、原型与叙事结构模板总则 V0]] + [[QT8.2｜共享数据层规范 V0]]
 
@@ -20,7 +20,7 @@ component_type: plot_pattern
 name: ""
 primary_clusters: []
 secondary_clusters: []
-status: PILOT
+status: PILOT | ACCEPTED_REFERENCE_PLOT_PATTERN_V0
 source_status: {}
 core_slots: []
 optional_slots: []
@@ -127,7 +127,7 @@ terminal_variants
 causal_variants
 ```
 
-Pilot C 新增：相同的 core-slot 顺序可能有不同因果机制。例如：
+Pilot C 已验证：相同 core-slot 顺序可以具有不同因果机制。例如：
 
 ```text
 fulfilled_despite_avoidance
@@ -285,3 +285,16 @@ source_evidence: []
 - [ ] 后世实例可按 matched / missing / added slots 比较
 - [ ] work reference 遵守 relation/evidence 原子性
 - [ ] 至少一个 archetype / motif / symbol 关系已识别；target 未准入时允许保持 candidate
+
+---
+
+# V0 验证状态
+
+Pilot C｜预言→逃避→实现 已正式通过 Acceptance Review：
+
+```text
+QT8.2_PLOT_PATTERN_TEMPLATE_V0
+= VALIDATED_BY_ONE_REFERENCE_PLOT_PATTERN
+```
+
+该状态不等于 Template V1 Freeze；symbol Pilot 与四类型跨模板冲突检查仍未完成。
