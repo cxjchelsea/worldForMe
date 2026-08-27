@@ -10,9 +10,9 @@ coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: "../../../30 专题/QT8.2.5 命运、预言与自由意志/预言→逃避→实现/00 预言→逃避→实现.md"
-source_version: "2.21-qt8.2-plot-pattern-pilot-c"
+source_version: "2.22-qt8.2-plot-pattern-pilot-c-pass-b"
 ---
- 
+
 # QT8.2.5 命运、预言与自由意志
 
 > 路径：Q轴 → QT8 → QT8.2 世界文化母题、原型与叙事结构 → **QT8.2.5 命运、预言与自由意志**
@@ -25,7 +25,7 @@ source_version: "2.21-qt8.2-plot-pattern-pilot-c"
 
 → [[../../../30 专题/QT8.2.5 命运、预言与自由意志/预言→逃避→实现/00 预言→逃避→实现|预言 → 逃避 → 实现]]
 
-当前状态：`PILOT_C_CONTENT_PASS_A`
+当前状态：`PILOT_C_READY_FOR_ACCEPTANCE`
 
 对象类型：
 
@@ -33,16 +33,26 @@ source_version: "2.21-qt8.2-plot-pattern-pilot-c"
 plot_pattern
 ```
 
-当前用于验证：
+Pass A / B 已验证：
 
 - plot_pattern 与“预言／命运／自由意志” motif/theme 的边界；
 - `core_slots / optional_slots / repeatable_slots / terminal_variants`；
-- `fulfilled_despite_avoidance / fulfilled_through_avoidance` 等因果变体；
-- QT8.1.2 来源结构抽取；
-- Shared Data Layer 的 `qt82_source_reference` 在 plot_pattern 类型上的复用；
-- `structural_inheritance / structural_similarity / historical_transmission` 分离；
-- 后世 work reference 是否需要 slot-level 字段扩展。
+- `causal_variants`；
+- QT8.1.2 希腊来源组 + 印度往世书非希腊来源压力测试；
+- Shared Data Layer 的 source/work schema 在 plot_pattern 类型上的复用；
+- `matched_slots / missing_slots / added_slots` 作为 work-reference 可选扩展；
+- `structural_similarity` 与 `structural_inheritance / historical_transmission` 分离。
+
+当前数据：
+
+```text
+4 × qt82_source_reference
+2 × qt82_work_reference
+0 × qt82_component_relation
+```
 
 ## 后续建设原则
 
 本母题簇不因为“出现预言”就把故事批量纳入该 plot pattern。正式对象必须满足关系与顺序准入；只有主题相似而缺少规避行动的故事，不属于 full match。
+
+下一步：**Pilot C Acceptance Review**。
