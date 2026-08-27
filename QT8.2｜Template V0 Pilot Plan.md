@@ -1,6 +1,6 @@
 # QT8.2｜Template V0 Pilot Plan
 
-> 状态：`PILOT_A_ACCEPTED / PILOT_B_ACCEPTED / PILOT_B1_ACCEPTED / PILOT_C_READY_FOR_ACCEPTANCE`
+> 状态：`PILOT_A_ACCEPTED / PILOT_B_ACCEPTED / PILOT_B1_ACCEPTED / PILOT_C_ACCEPTED / READY_FOR_PILOT_D`
 
 ## Pilot A｜motif
 **洪水与灾后重建** → `ACCEPTED_REFERENCE_MOTIF_V0`
@@ -11,10 +11,9 @@
 ## Pilot B.1｜named archetype
 **所罗门王** → `ACCEPTED_REFERENCE_NAMED_ARCHETYPE_V0`
 
-## Pilot C｜plot_pattern
-**预言 → 逃避 → 实现**
+## Pilot C｜plot_pattern｜已通过
 
-状态：`CONTENT_PASS_A_COMPLETE / CONTENT_PASS_B_COMPLETE / READY_FOR_ACCEPTANCE`
+**预言 → 逃避 → 实现** → `ACCEPTED_REFERENCE_PLOT_PATTERN_V0`
 
 最小结构：
 
@@ -24,7 +23,7 @@ S1 authoritative_prediction
 → S3 predicted_outcome_fulfilled
 ```
 
-来源压力测试：
+已完成来源压力测试：
 
 ```text
 QT8.1.2 希腊—罗马
@@ -36,7 +35,7 @@ external: Indian Puranic Krishna tradition
 - Kamsa / Devaki / Krishna
 ```
 
-Pass B 已验证：
+已验证：
 
 ```text
 core_slots
@@ -74,10 +73,60 @@ structural_similarity
 0 × qt82_component_relation
 ```
 
-下一步：**Pilot C Acceptance Review**。
+Acceptance：
 
-## Pilot D｜symbol
-**巴别塔** → PENDING
+```text
+QT8.2_PILOT_C_CONTENT_ACCEPTANCE = PASS
+QT8.2_PILOT_C_PLOT_PATTERN_BOUNDARY = PASS
+QT8.2_PILOT_C_SLOT_MODEL = PASS
+QT8.2_PILOT_C_CAUSAL_VARIANT_MODEL = PASS
+QT8.2_PILOT_C_CROSS_TRADITION_SOURCE_PRESSURE = PASS
+QT8.2_PILOT_C_SOURCE_GOVERNANCE = PASS
+QT8.2_PILOT_C_RELATION_GOVERNANCE = PASS
+QT8.2_PILOT_C_WORK_REFERENCE_ACCEPTANCE = PASS
+QT8.2_PILOT_C_COMPONENT_RELATION_GATE = PASS_BY_DEFERRED_GATE
+```
+
+Acceptance Review：[[个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.2.5 命运、预言与自由意志/预言→逃避→实现/QT8.2｜Pilot C 预言→逃避→实现 Acceptance Review]]
+
+Plot-pattern template 状态：
+
+```text
+QT8.2_PLOT_PATTERN_TEMPLATE_V0
+= VALIDATED_BY_ONE_REFERENCE_PLOT_PATTERN
+```
+
+## Pilot D｜symbol｜下一阶段
+
+**巴别塔**
+
+目标不是整理《创世记》11 的故事百科，而是验证：
+
+```text
+source object / source episode
+→ 稳定意义关联
+→ 跨文本、跨时代、跨媒介反复调用
+→ symbol
+```
+
+重点检查：
+
+```text
+admission_evidence
+stable_meanings
+meaning_shifts
+symbol_reuse
+source object vs symbol
+symbol vs ordinary prop / image similarity
+```
+
+并继续复用：
+
+```text
+qt82_source_reference
+qt82_work_reference
+qt82_component_relation target gate
+```
 
 ## Freeze Gate
 
@@ -89,14 +138,17 @@ structural_similarity
 QT8.2_PILOT_A = CLOSED_ACCEPTED
 QT8.2_PILOT_B = CLOSED_ACCEPTED
 QT8.2_PILOT_B1 = CLOSED_ACCEPTED
-QT8.2_PILOT_C_CONTENT_PASS_A = COMPLETE
-QT8.2_PILOT_C_CONTENT_PASS_B = COMPLETE
-QT8.2_PLOT_PATTERN_BOUNDARY = SUPPORTED
-QT8.2_PLOT_PATTERN_SLOT_MODEL = SUPPORTED
-QT8.2_PLOT_PATTERN_CAUSAL_VARIANTS = SUPPORTED
-QT8.2_PLOT_PATTERN_SLOT_LEVEL_WORK_FIELDS = SUPPORTED
-QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE
-QT8.2_PILOT_C_ACCEPTANCE = READY_FOR_REVIEW
-QT8.2_NEXT_STAGE = PILOT_C_ACCEPTANCE_REVIEW
+QT8.2_PILOT_C = CLOSED_ACCEPTED
+
+QT8.2_MOTIF_TEMPLATE_V0 = VALIDATED_BY_ONE_REFERENCE_MOTIF
+QT8.2_ARCHETYPE_TEMPLATE_V0 = VALIDATED_BY_ABSTRACT_AND_NAMED_ARCHETYPE
+QT8.2_PLOT_PATTERN_TEMPLATE_V0 = VALIDATED_BY_ONE_REFERENCE_PLOT_PATTERN
+QT8.2_SYMBOL_TEMPLATE_V0 = NOT_YET_VALIDATED
+
+QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE_VALIDATION = PASS
+QT8.2_SHARED_WORK_SCHEMA_CROSS_TYPE_VALIDATION = PASS
+QT8.2_COMPONENT_RELATION = DEFERRED_BY_TARGET_GATE
+
+QT8.2_NEXT_STAGE = PILOT_D_BABEL_TOWER_SYMBOL
 QT8.2_TEMPLATE_STATUS = V0_DRAFT / NOT_FROZEN
 ```
