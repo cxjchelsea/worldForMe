@@ -1,6 +1,6 @@
 # QT8.2｜共享数据层规范 V0
 
-> 状态：`SHARED_DATA_LAYER_V0_VALIDATED_ACROSS_FOUR_REFERENCE_PILOTS / FINAL_CROSS_TYPE_REVIEW_PENDING`
+> 状态：`SHARED_DATA_LAYER_V0_CROSS_TYPE_REVIEWED / PASS_WITH_DEFERRED_REAL_COMPONENT_RELATION_EVIDENCE`
 >
 > 适用范围：QT8.2 的 motif / archetype / plot_pattern / symbol 四类组件。
 >
@@ -33,8 +33,6 @@ QT8.2 已核证来源 ≠ QT8.1 来源专题已完成
 
 # 二、共享实体 1｜qt82_source_reference
 
-职责：记录某个 QT8.2 组件从哪个 QT8.1 来源传统／故事／文本中抽取出来。
-
 ```yaml
 type: qt82_source_reference
 component_id: WL-TOPIC-...
@@ -49,18 +47,23 @@ sequence: 0
 status: active
 ```
 
+四类型 cross-type review 结论：
+
+```text
+QT8.2_SHARED_SOURCE_SCHEMA_CROSS_TYPE = PASS
+QT8.2_SOURCE_STATUS_MODEL = PASS
+QT8.2_QT81_BACK_REFERENCE_GOVERNANCE = PASS
+```
+
 ---
 
 # 三、共享实体 2｜qt82_component_relation
-
-职责：记录 QT8.2 组件之间的语义关系。
 
 ```yaml
 type: qt82_component_relation
 source_component: WL-TOPIC-...
 target_component: WL-TOPIC-...
 relation_type: carries_motif | contained_by_plot_pattern | organized_by_plot_pattern | represented_by_symbol | associated_with_symbol | overlaps_archetype | contrasts_with_archetype | variant_of_plot_pattern | inverts_plot_pattern | transforms_into_symbol | co_occurs_with_motif | structural_similarity | functional_similarity | historical_transmission
-
 evidence_level: documented | strongly_supported | probable | possible | similarity_only | unknown
 source_evidence: []
 sequence: 0
@@ -79,11 +82,24 @@ status: active
 
 只有 target 已经成为正式 QT8.2 component 时才创建正式 `qt82_component_relation`。
 
+当前真实记录仍为：
+
+```text
+0 × qt82_component_relation
+```
+
+这不触发强制造边。跨类型总复核将其记录为：
+
+```text
+QT8.2_COMPONENT_RELATION_SCHEMA = STRUCTURALLY_ACCEPTED
+QT8.2_REAL_CROSS_TYPE_COMPONENT_RELATION_EVIDENCE = DEFERRED_BY_MEANINGFUL_TARGET_GATE
+```
+
+该限制必须在 V1 Freeze Review 中被显式接受或要求补证。
+
 ---
 
 # 四、共享实体 3｜qt82_work_reference
-
-职责：记录后世作品或跨媒介实例如何调用、改编、继承、相似、反转某个 QT8.2 组件。
 
 ```yaml
 type: qt82_work_reference
@@ -94,7 +110,6 @@ work_role: later_reworking | adaptation | explicit_reuse | inversion | cross_med
 retained_features: []
 modified_features: []
 relation_type: direct_adaptation | explicit_reference | figure_rewriting | character_or_name_borrowing | structural_inheritance | structural_similarity | motif_inversion | symbol_reuse | plot_pattern_inversion
-
 evidence_level: documented | strongly_supported | probable | possible | similarity_only | unknown
 source_evidence: []
 canonical_work: null
@@ -115,7 +130,7 @@ direct_adaptation
 = 明确以某一来源故事／文本为主要整体改编对象
 ```
 
-## 4.2 structural_similarity｜Pilot C 新增
+## 4.2 structural_similarity
 
 ```text
 structural_similarity
@@ -123,17 +138,9 @@ structural_similarity
   但当前没有足够独立证据证明它历史上继承自某一具体来源链
 ```
 
-与：
-
-```text
-structural_inheritance
-```
-
-严格区分。后者要求额外的作者、文本、改编或传播证据；不能仅凭 slot 高匹配度升级。
+与 `structural_inheritance` 严格区分。
 
 ## 4.3 plot_pattern 可选字段扩展
-
-当 `component_type: plot_pattern` 时，允许增加：
 
 ```yaml
 matched_slots: []
@@ -141,11 +148,7 @@ missing_slots: []
 added_slots: []
 ```
 
-这些字段用于节点级结构比较，不强迫 motif / archetype / symbol 使用。
-
-## 4.4 symbol 可选字段扩展｜Pilot D 验收通过
-
-当 `component_type: symbol` 时，允许增加：
+## 4.4 symbol 可选字段扩展
 
 ```yaml
 symbolic_meaning: []
@@ -157,18 +160,24 @@ evidence_medium: textual | visual | material | ritual | media
 
 ```text
 symbolic_meaning
-= 该作品／媒介实例实际承载的既有稳定意义族；不要求每个实例覆盖组件全部 stable_meanings
+= 该实例实际承载的 stable meaning 子集
 
 meaning_shift
 = 该实例新增、替换、抽象化或重新加权的意义重心
 
 evidence_medium
-= 证据所属媒介分类；不替代 relation_type，也不自动证明传播／继承
+= 媒介分类；不替代 relation_type，也不自动证明传播／继承
 ```
 
-Pilot D 已在 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）三种媒介中验证这些字段能够表达不同层次的信息而不与现有 work relation 重复，并通过 Acceptance Review，因此为 symbol 类型正式可选扩展。
+`iconographic_inheritance` 暂不加入共享 work relation vocabulary；只有 documented visual chain 出现后才重新 review。
 
-`iconographic_inheritance` 不加入当前共享 work relation vocabulary。视觉相似本身不足以建立继承；只有出现可独立核证的具体图像传播／借用链时才允许重新提交 vocabulary review。
+四类型 cross-type review 结论：
+
+```text
+QT8.2_SHARED_WORK_SCHEMA_CROSS_TYPE = PASS
+QT8.2_WORK_TYPE_OPTIONAL_EXTENSION_MODEL = PASS
+QT8.2_RELATION_ATOMICITY = PASS
+```
 
 ---
 
@@ -195,6 +204,15 @@ unknown_source_status
 全部 QT8.2 数据记录 → 上述三类实体
 ```
 
+Cross-type review：
+
+```text
+QT8.2_SHARED_BASE_COMPATIBILITY = PASS
+QT8.2_SHARED_BASE_SCHEMA_CHANGE_REQUIRED = NO
+```
+
+类型专属 optional fields 不要求所有记录统一拥有；未来可增加辅助视图，但不是冻结阻塞项。
+
 ---
 
 # 七、四类对象的专属字段保持独立
@@ -205,73 +223,58 @@ motif
 
 archetype
 → archetype_kind / core_functions / variable_features
-→ named_archetype 额外使用 required_identity_anchors / supporting_identity_anchors
+→ named_archetype: required_identity_anchors / supporting_identity_anchors
 
 plot_pattern
 → core_slots / optional_slots / repeatable_slots / terminal_variants / causal_variants
-→ work reference 可选 matched_slots / missing_slots / added_slots
+→ work optional: matched_slots / missing_slots / added_slots
 
 symbol
 → admission_evidence / stable_meanings / meaning_shifts
-→ work reference 可选 symbolic_meaning / meaning_shift / evidence_medium
+→ work optional: symbolic_meaning / meaning_shift / evidence_medium
 ```
+
+同名字段（如 motif 与 plot_pattern 的 `optional_slots`）必须保持 `component_type` 语境，不自动合并为跨类型统一语义。
 
 ---
 
 # 八、Pilot 应用状态
 
-Pilot A｜洪水 motif：`CLOSED_ACCEPTED`，验证 source/work schema 与 relation atomicity。
-
-Pilot B｜受苦义人 abstract archetype：`CLOSED_ACCEPTED`，验证 source/work schema 跨类型复用。
-
-Pilot B.1｜所罗门王 named archetype：`CLOSED_ACCEPTED`，新增并验证 `required_identity_anchors / supporting_identity_anchors` 与 `figure_rewriting`。
-
-Pilot C｜预言→逃避→实现 plot_pattern：`CLOSED_ACCEPTED`，新增并验证：
-
 ```text
-causal_variants
-matched_slots / missing_slots / added_slots
-structural_similarity as work relation
+Pilot A｜洪水 motif = CLOSED_ACCEPTED
+Pilot B｜受苦义人 abstract archetype = CLOSED_ACCEPTED
+Pilot B.1｜所罗门王 named archetype = CLOSED_ACCEPTED
+Pilot C｜预言→逃避→实现 plot_pattern = CLOSED_ACCEPTED
+Pilot D｜巴别塔 symbol = CLOSED_ACCEPTED
 ```
 
-并再次固定：
+已完成：
 
 ```text
-structural_similarity
-≠ structural_inheritance
+QT8.2_FOUR_TYPE_CROSS_TEMPLATE_CONFLICT_REVIEW = PASS
+QT8.2_SHARED_DATA_FINAL_CROSS_TYPE_REVIEW = PASS_WITH_DEFERRED_REAL_COMPONENT_RELATION_EVIDENCE
 ```
-
-Pilot D｜巴别塔 symbol：`CLOSED_ACCEPTED`，新增并验证：
-
-```text
-symbolic_meaning / meaning_shift / evidence_medium
-stable meaning 不要求每一实例全量覆盖
-symbol continuity 不要求 literal object 或 visual form 连续
-iconographic_inheritance 不因视觉相似进入共享 vocabulary
-```
-
-`qt82_component_relation` 仍遵守 promotion gate。
 
 ---
 
 # 九、当前状态
 
 ```text
-QT8.2_SHARED_DATA_LAYER = ESTABLISHED_V0
-QT8.2_SOURCE_REFERENCE_SCHEMA = ACTIVE
-QT8.2_COMPONENT_RELATION_SCHEMA = ACTIVE_WITH_PROMOTION_GATE
-QT8.2_WORK_REFERENCE_SCHEMA = ACTIVE
+QT8.2_SHARED_DATA_LAYER = ESTABLISHED_V0 / CROSS_TYPE_REVIEWED
+QT8.2_SOURCE_REFERENCE_SCHEMA = ACTIVE / CROSS_TYPE_PASS
+QT8.2_COMPONENT_RELATION_SCHEMA = ACTIVE_WITH_PROMOTION_GATE / STRUCTURALLY_ACCEPTED
+QT8.2_REAL_CROSS_TYPE_COMPONENT_RELATION_EVIDENCE = DEFERRED_BY_MEANINGFUL_TARGET_GATE
+QT8.2_WORK_REFERENCE_SCHEMA = ACTIVE / CROSS_TYPE_PASS
 QT8.2_FIGURE_REWRITING_RELATION = ACTIVE
-QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE_AFTER_PILOT_C
+QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE
 QT8.2_PLOT_PATTERN_SLOT_FIELDS = ACTIVE_OPTIONAL_EXTENSION
-QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION_AFTER_PILOT_D_ACCEPTANCE
+QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION
 QT8.2_ICONOGRAPHIC_INHERITANCE_RELATION = NOT_PROMOTED / REQUIRES_DOCUMENTED_VISUAL_CHAIN
-QT8.2_RELATION_ATOMICITY = REQUIRED
-QT8.2_SHARED_BASE = REQUIRED
+QT8.2_RELATION_ATOMICITY = REQUIRED / PASS
+QT8.2_SHARED_BASE = REQUIRED / COMPATIBILITY_PASS
 
-QT8.2_ALL_FOUR_COMPONENT_TYPES_HAVE_ACCEPTED_REFERENCE_PILOT = YES
-QT8.2_SHARED_DATA_LAYER_FINAL_CROSS_TYPE_REVIEW = PENDING
-QT8.2_NEXT_STAGE = FOUR_TYPE_CROSS_TEMPLATE_CONFLICT_AND_SHARED_DATA_REVIEW
+QT8.2_TEMPLATE_V1_FREEZE_REVIEW = AUTHORIZED_TO_START
+QT8.2_TEMPLATE_V1_FREEZE = NOT_YET_AUTHORIZED
 ```
 
-四类 Pilot 全部通过只证明 V0 已具备跨类型可用性信号；在完成最终跨类型冲突检查前，不授权 `QT8.2_TEMPLATE_V1_FREEZE`。
+详细总复核：[[QT8.2｜Four-Type Cross-Template Conflict and Shared Data Review]]
