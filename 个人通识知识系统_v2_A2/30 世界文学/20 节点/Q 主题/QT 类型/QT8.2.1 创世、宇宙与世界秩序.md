@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.13-qt82-v1-frozen"
+source_version: "2.14-qt82-v1-first-component"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -66,39 +66,38 @@ motif / archetype / plot_pattern / symbol
 
 第一轮 inventory：[[QT8.2.1 Component Inventory V1]]
 
-当前状态：
-
-```text
-QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
-QT8.2.1_FORMAL_COMPONENT_TOPICS_CREATED_THIS_PASS = 0
-```
-
-第一批准入研究对象：
-
-```text
-天地分离
-→ motif candidate
-
-世界父母结合→后代受限→天地分离→空间展开
-→ plot_pattern candidate
-
-宇宙卵
-→ symbol candidate
-```
-
 ## M2｜天地分离 Admission Research
 
 已完成：[[QT8.2.1 M2 天地分离 Admission Research]]
 
-结论：
-
 ```text
 QT8.2.1_M2_ADMISSION_RESEARCH = PASS
 QT8.2.1_M2_COMPONENT_TYPE = motif
-QT8.2.1_M2_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
 ```
 
-冻结后的最低辨识条件：
+## 已正式建立的 component
+
+### 天地分离
+
+```text
+component_type: motif
+status: ACTIVE_V1_COMPONENT
+component_acceptance: PASS
+```
+
+专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/天地分离/00 天地分离|天地分离]]
+
+Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/天地分离/QT8.2.1｜天地分离 Component Acceptance Review]]
+
+首批数据：
+
+```text
+3 × qt82_source_reference
+0 × qt82_component_relation
+0 × qt82_work_reference
+```
+
+最低辨识条件：
 
 ```text
 primordial_non_separation
@@ -108,7 +107,7 @@ cosmological_separation
 world_space_result
 ```
 
-边界已确认：
+边界：
 
 ```text
 天地分离 motif
@@ -117,12 +116,18 @@ world_space_result
 ≠ 天／地 symbol
 ```
 
-当前下一阶段：
+## 下一阶段
 
 ```text
-QT8.2.1_NEXT_STAGE = M2_SKY_EARTH_SEPARATION_TOPIC_BUILD
-P1_ADMISSION_RESEARCH = NOT_STARTED_THIS_PASS
-S1_ADMISSION_RESEARCH = NOT_STARTED_THIS_PASS
+QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
+QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 1
+QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
+QT8.2.1_TEMPLATE_REOPEN_REQUIRED = NO
+
+QT8.2.1_NEXT_STAGE
+= P1_WORLD_PARENTS_SEPARATION_PLOT_PATTERN_ADMISSION_RESEARCH
+
+S1_ADMISSION_RESEARCH = NOT_STARTED
 ```
 
-只有候选对象完成自身 V1 准入后，才建立正式重型专题包。
+下一步对“世界父母结合→后代受限→天地分离→空间展开”进行独立 plot_pattern 准入研究；通过前不创建与“天地分离”的正式 component relation。
