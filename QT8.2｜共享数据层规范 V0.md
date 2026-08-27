@@ -1,6 +1,6 @@
 # QT8.2｜共享数据层规范 V0
 
-> 状态：`SHARED_DATA_LAYER_V0_REVISED_AFTER_SYMBOL_PASS_B`
+> 状态：`SHARED_DATA_LAYER_V0_VALIDATED_ACROSS_FOUR_REFERENCE_PILOTS / FINAL_CROSS_TYPE_REVIEW_PENDING`
 >
 > 适用范围：QT8.2 的 motif / archetype / plot_pattern / symbol 四类组件。
 >
@@ -143,7 +143,7 @@ added_slots: []
 
 这些字段用于节点级结构比较，不强迫 motif / archetype / symbol 使用。
 
-## 4.4 symbol 可选字段扩展｜Pilot D Pass B 新增
+## 4.4 symbol 可选字段扩展｜Pilot D 验收通过
 
 当 `component_type: symbol` 时，允许增加：
 
@@ -166,9 +166,9 @@ evidence_medium
 = 证据所属媒介分类；不替代 relation_type，也不自动证明传播／继承
 ```
 
-Pilot D Pass B 已在 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）三种媒介中验证这些字段能够表达不同层次的信息而不与现有 work relation 重复，因此升级为 symbol 类型可选扩展。
+Pilot D 已在 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）三种媒介中验证这些字段能够表达不同层次的信息而不与现有 work relation 重复，并通过 Acceptance Review，因此为 symbol 类型正式可选扩展。
 
-`iconographic_inheritance` 不在本轮加入共享 work relation vocabulary。视觉相似本身不足以建立继承；只有出现可独立核证的具体图像传播／借用链时才允许重新提交 vocabulary review。
+`iconographic_inheritance` 不加入当前共享 work relation vocabulary。视觉相似本身不足以建立继承；只有出现可独立核证的具体图像传播／借用链时才允许重新提交 vocabulary review。
 
 ---
 
@@ -220,13 +220,13 @@ symbol
 
 # 八、Pilot 应用状态
 
-Pilot A｜洪水 motif：验证 source/work schema 与 relation atomicity。
+Pilot A｜洪水 motif：`CLOSED_ACCEPTED`，验证 source/work schema 与 relation atomicity。
 
-Pilot B｜受苦义人 abstract archetype：验证 source/work schema 跨类型复用。
+Pilot B｜受苦义人 abstract archetype：`CLOSED_ACCEPTED`，验证 source/work schema 跨类型复用。
 
-Pilot B.1｜所罗门王 named archetype：新增并验证 `required_identity_anchors / supporting_identity_anchors` 与 `figure_rewriting`。
+Pilot B.1｜所罗门王 named archetype：`CLOSED_ACCEPTED`，新增并验证 `required_identity_anchors / supporting_identity_anchors` 与 `figure_rewriting`。
 
-Pilot C｜预言→逃避→实现 plot_pattern：新增并验证：
+Pilot C｜预言→逃避→实现 plot_pattern：`CLOSED_ACCEPTED`，新增并验证：
 
 ```text
 causal_variants
@@ -241,7 +241,7 @@ structural_similarity
 ≠ structural_inheritance
 ```
 
-Pilot D｜巴别塔 symbol：Pass B 新增 media 实例并验证：
+Pilot D｜巴别塔 symbol：`CLOSED_ACCEPTED`，新增并验证：
 
 ```text
 symbolic_meaning / meaning_shift / evidence_medium
@@ -262,10 +262,16 @@ QT8.2_SOURCE_REFERENCE_SCHEMA = ACTIVE
 QT8.2_COMPONENT_RELATION_SCHEMA = ACTIVE_WITH_PROMOTION_GATE
 QT8.2_WORK_REFERENCE_SCHEMA = ACTIVE
 QT8.2_FIGURE_REWRITING_RELATION = ACTIVE
-QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE_AFTER_PILOT_C_PASS_B
+QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE_AFTER_PILOT_C
 QT8.2_PLOT_PATTERN_SLOT_FIELDS = ACTIVE_OPTIONAL_EXTENSION
-QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION_AFTER_PILOT_D_PASS_B
+QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION_AFTER_PILOT_D_ACCEPTANCE
 QT8.2_ICONOGRAPHIC_INHERITANCE_RELATION = NOT_PROMOTED / REQUIRES_DOCUMENTED_VISUAL_CHAIN
 QT8.2_RELATION_ATOMICITY = REQUIRED
 QT8.2_SHARED_BASE = REQUIRED
+
+QT8.2_ALL_FOUR_COMPONENT_TYPES_HAVE_ACCEPTED_REFERENCE_PILOT = YES
+QT8.2_SHARED_DATA_LAYER_FINAL_CROSS_TYPE_REVIEW = PENDING
+QT8.2_NEXT_STAGE = FOUR_TYPE_CROSS_TEMPLATE_CONFLICT_AND_SHARED_DATA_REVIEW
 ```
+
+四类 Pilot 全部通过只证明 V0 已具备跨类型可用性信号；在完成最终跨类型冲突检查前，不授权 `QT8.2_TEMPLATE_V1_FREEZE`。
