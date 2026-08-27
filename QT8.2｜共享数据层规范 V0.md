@@ -1,6 +1,6 @@
 # QT8.2｜共享数据层规范 V0
 
-> 状态：`SHARED_DATA_LAYER_V0_REVISED_AFTER_PLOT_PATTERN_PASS_B`
+> 状态：`SHARED_DATA_LAYER_V0_REVISED_AFTER_SYMBOL_PASS_B`
 >
 > 适用范围：QT8.2 的 motif / archetype / plot_pattern / symbol 四类组件。
 >
@@ -143,6 +143,33 @@ added_slots: []
 
 这些字段用于节点级结构比较，不强迫 motif / archetype / symbol 使用。
 
+## 4.4 symbol 可选字段扩展｜Pilot D Pass B 新增
+
+当 `component_type: symbol` 时，允许增加：
+
+```yaml
+symbolic_meaning: []
+meaning_shift: []
+evidence_medium: textual | visual | material | ritual | media
+```
+
+字段职责：
+
+```text
+symbolic_meaning
+= 该作品／媒介实例实际承载的既有稳定意义族；不要求每个实例覆盖组件全部 stable_meanings
+
+meaning_shift
+= 该实例新增、替换、抽象化或重新加权的意义重心
+
+evidence_medium
+= 证据所属媒介分类；不替代 relation_type，也不自动证明传播／继承
+```
+
+Pilot D Pass B 已在 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）三种媒介中验证这些字段能够表达不同层次的信息而不与现有 work relation 重复，因此升级为 symbol 类型可选扩展。
+
+`iconographic_inheritance` 不在本轮加入共享 work relation vocabulary。视觉相似本身不足以建立继承；只有出现可独立核证的具体图像传播／借用链时才允许重新提交 vocabulary review。
+
 ---
 
 # 五、source_status 共享词汇
@@ -186,6 +213,7 @@ plot_pattern
 
 symbol
 → admission_evidence / stable_meanings / meaning_shifts
+→ work reference 可选 symbolic_meaning / meaning_shift / evidence_medium
 ```
 
 ---
@@ -213,6 +241,15 @@ structural_similarity
 ≠ structural_inheritance
 ```
 
+Pilot D｜巴别塔 symbol：Pass B 新增 media 实例并验证：
+
+```text
+symbolic_meaning / meaning_shift / evidence_medium
+stable meaning 不要求每一实例全量覆盖
+symbol continuity 不要求 literal object 或 visual form 连续
+iconographic_inheritance 不因视觉相似进入共享 vocabulary
+```
+
 `qt82_component_relation` 仍遵守 promotion gate。
 
 ---
@@ -227,6 +264,8 @@ QT8.2_WORK_REFERENCE_SCHEMA = ACTIVE
 QT8.2_FIGURE_REWRITING_RELATION = ACTIVE
 QT8.2_STRUCTURAL_SIMILARITY_WORK_RELATION = ACTIVE_AFTER_PILOT_C_PASS_B
 QT8.2_PLOT_PATTERN_SLOT_FIELDS = ACTIVE_OPTIONAL_EXTENSION
+QT8.2_SYMBOL_WORK_MEANING_FIELDS = ACTIVE_OPTIONAL_EXTENSION_AFTER_PILOT_D_PASS_B
+QT8.2_ICONOGRAPHIC_INHERITANCE_RELATION = NOT_PROMOTED / REQUIRES_DOCUMENTED_VISUAL_CHAIN
 QT8.2_RELATION_ATOMICITY = REQUIRED
 QT8.2_SHARED_BASE = REQUIRED
 ```
