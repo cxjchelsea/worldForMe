@@ -2,7 +2,9 @@
 
 > 对象类型：`symbol`
 >
-> 状态：`V0_REVISED_AFTER_BABEL_PILOT_PASS_B`
+> 状态：`VALIDATED_BY_ONE_REFERENCE_SYMBOL`
+>
+> 验证基准：[[个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.2.3 神、人边界与禁忌越界/巴别塔/QT8.2｜Pilot D 巴别塔 Acceptance Review]]
 >
 > 前置治理：[[QT8.2｜世界文化母题、原型与叙事结构模板总则 V0]] + [[QT8.2｜共享数据层规范 V0]]
 
@@ -195,7 +197,7 @@ symbol reuse
 ≠ historical transmission
 ```
 
-Pilot D Pass B 后，`iconographic_inheritance` **不进入当前共享 relation vocabulary**。原因不是该关系不可能存在，而是现阶段没有一条经独立证据核实、足以要求共享 schema 支持的具体视觉继承链。未来若出现作者／制作资料、图像学研究或可追踪传播证据，再单独提交 vocabulary review。
+Pilot D Acceptance 后，`iconographic_inheritance` **不进入当前共享 relation vocabulary**。原因不是该关系不可能存在，而是现阶段没有一条经独立证据核实、足以要求共享 schema 支持的具体视觉继承链。未来若出现作者／制作资料、图像学研究或可追踪传播证据，再单独提交 vocabulary review。
 
 ---
 
@@ -251,7 +253,7 @@ evidence_level: ...
 source_evidence: []
 ```
 
-Pilot D Pass B 后，symbol 类型正式允许以下可选 work fields：
+Pilot D Acceptance 后，symbol 类型正式允许以下可选 work fields：
 
 ```yaml
 symbolic_meaning: []
@@ -272,7 +274,7 @@ evidence_medium
 = 媒介分类，不替代 relation_type
 ```
 
-这三个字段已由 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）完成跨媒介压力测试，因此从 candidate 升级为 symbol-specific optional extension。
+这三个字段已由 Bruegel（visual）、Borges（textual）与 Iñárritu《Babel》(2006)（media）完成跨媒介压力测试并通过 Acceptance Review，因此为 symbol-specific optional extension。
 
 若同一作品构成两种不同关系，仍遵守 relation atomicity，建立两条 work reference。
 
@@ -308,3 +310,15 @@ evidence_medium
 - [ ] iconographic inheritance 未由视觉相似直接推出
 - [ ] relation record 遵守原子性
 - [ ] 后世实例具有明确 evidence_level
+
+---
+
+# Pilot validation status
+
+```text
+QT8.2_SYMBOL_TEMPLATE_V0 = VALIDATED_BY_ONE_REFERENCE_SYMBOL
+QT8.2_REFERENCE_SYMBOL = WL-TOPIC-QT823-BABEL
+QT8.2_PILOT_D = CLOSED_ACCEPTED
+```
+
+本状态不等于 V1 Freeze；仍需四类型跨模板冲突检查与 Shared Data Layer 总复核。
