@@ -6,7 +6,9 @@ filters:
         - title == "出埃及记"
         - title == "申命记"
         - title == "撒母耳记"
-        - title == "列王纪"
+        - and:
+            - title == "列王纪"
+            - author == "佚名"
         - title == "约伯记"
         - title == "诗篇"
         - title == "以赛亚书"
@@ -33,10 +35,37 @@ properties:
     displayName: 类型
   note.axis_q:
     displayName: 主题
+  note.verification_status:
+    displayName: 校验状态
 views:
   - type: table
-    name: 全部核心文本
-    order: [file.name, author, read_status, myth_priority, r1_tradition, t0_stage]
+    name: 已建立中央作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - myth_priority
+      - r1_tradition
+      - t0_stage
+      - verification_status
+  - type: table
+    name: 核心 ★
+    filters:
+      and:
+        - myth_priority == "★"
+    order: [file.name, author, read_status]
+  - type: table
+    name: 重点 ◆
+    filters:
+      and:
+        - myth_priority == "◆"
+    order: [file.name, author, read_status]
+  - type: table
+    name: 扩展 △
+    filters:
+      and:
+        - myth_priority == "△"
+    order: [file.name, author, read_status]
   - type: table
     name: 未读
     filters:
