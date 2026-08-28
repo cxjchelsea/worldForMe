@@ -1,13 +1,13 @@
 ---
 id: WL-R
 type: literature_axis
-name: "地区 / 文学传统"
+name: 地区 / 文学传统
 axis: R
 parent: WL
 role: primary
-priority_scheme: "S/A/B"
-source_version: "2.4-taxonomy-v2"
-node_model: "region_tradition_plus_transregional_networks"
+priority_scheme: S/A/B
+node_model: region_tradition_plus_transregional_networks
+source_version: 2.4-taxonomy-v2
 ---
 
 # R轴：地区 / 文学传统

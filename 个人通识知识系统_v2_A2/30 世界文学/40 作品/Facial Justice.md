@@ -35,8 +35,6 @@ dystopia_history_cluster: 现代经典形成：我们、美丽新世界、1984�
 dystopia_control_modes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 反乌托邦书单.md:397
 postwar_priority: ◆
 postwar_stage: "1955—1965：世界真正多中心化"
 r4_priority: "△"

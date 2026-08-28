@@ -1,16 +1,16 @@
 ---
-id: WL-QH2.5
+id: "WL-QH2.5"
 type: literature_node
-name: "童年与成长"
+name: 童年与成长
 code: QH2.5
 axis: Q
-parent: WL-QH2
+parent: "WL-QH2"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QH2.5 童年与成长/00 成长文学]]"
+- "[[../../../30 专题/QH2.5 童年与成长/00 成长文学]]"
 source_version: "2.10-qh-user"
 ---
 

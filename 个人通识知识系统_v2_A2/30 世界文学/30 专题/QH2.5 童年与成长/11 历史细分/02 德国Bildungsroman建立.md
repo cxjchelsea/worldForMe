@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G43-BILDUNGSROMAN-HISTORY"
 dimension: "history"
 sequence: 2
 history_cluster: "德国Bildungsroman建立"
-source_lines: "191-344"
 ---
 # 德国Bildungsroman建立
 

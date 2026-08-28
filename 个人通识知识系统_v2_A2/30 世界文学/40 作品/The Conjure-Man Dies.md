@@ -29,13 +29,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "美国与Harlem Renaissance"
-modernism_topic_role: "专题扩展与变体生成"
-modernism_axes:
-- 种族与黑人现代主义
-- 都市现代性
-- 犯罪叙事
+m31_priority: "◆"
+m31_movement_cluster: "美国与Harlem Renaissance"
+m31_topic_role: "专题扩展与变体生成"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -45,7 +41,7 @@ t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻�
 r5_priority: "△"
 r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"
 r5_role: "区域扩展阅读"
-modernism_history_position: "美国现代主义与黑人文化复兴 · 扩展、变体与后续发展"
+m31_history_position: "美国现代主义与黑人文化复兴 · 扩展、变体与后续发展"
 r5_tradition: "北美文学综合—具体内部传统待读后校准"
 ---
 # The Conjure-Man Dies

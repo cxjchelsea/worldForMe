@@ -1,18 +1,16 @@
 ---
-id: WL-QT9
+id: "WL-QT9"
 type: literature_node
-name: "神话、传说与民间叙事"
+name: 神话、传说与民间叙事
 code: QT9
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
-aliases:
-- "QT9 神话"
 topic_map:
-  - "[[../../../30 专题/QT9 神话、传说与民间叙事/00 世界神话文学]]"
+- "[[../../../30 专题/QT9 神话、传说与民间叙事/00 世界神话文学]]"
 source_version: "2.11-qt-expand"
 ---
 

@@ -30,8 +30,6 @@ historical_history_cluster: 帝国、殖民与全球历史小说
 historical_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 历史书单.md:896
 postwar_priority: △
 postwar_stage: "1955—1965：世界真正多中心化"
 postwar_history_position: "世界真正多中心化，以“从欧洲中心到多中心世界文学”为主要路径的边缘突破节点（读前预判）"

@@ -1,10 +1,10 @@
 ---
-id: WL-QH1.5
+id: "WL-QH1.5"
 type: literature_node
-name: "意义与荒诞"
+name: 意义与荒诞
 code: QH1.5
 axis: Q
-parent: WL-QH1
+parent: "WL-QH1"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

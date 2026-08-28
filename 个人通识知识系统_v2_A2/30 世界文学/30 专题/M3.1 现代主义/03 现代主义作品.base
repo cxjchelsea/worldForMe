@@ -3,9 +3,9 @@ filters:
     - type == "work"
     - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
     - or:
-        - modernism_priority == "★"
-        - modernism_priority == "◆"
-        - modernism_priority == "△"
+        - m31_priority == "★"
+        - m31_priority == "◆"
+        - m31_priority == "△"
 properties:
   file.name:
     displayName: 作品
@@ -15,13 +15,13 @@ properties:
     displayName: 阅读状态
   note.topics:
     displayName: 专题编号
-  note.modernism_priority:
+  note.m31_priority:
     displayName: 优先级
-  note.modernism_tradition_cluster:
+  note.m31_movement_cluster:
     displayName: 现代主义传统
-  note.modernism_history_position:
+  note.m31_history_position:
     displayName: 谱系位置
-  note.modernism_topic_role:
+  note.m31_topic_role:
     displayName: 专题角色
   note.axis_t:
     displayName: 时间
@@ -44,10 +44,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -58,15 +58,15 @@ views:
     name: 核心 ★
     filters:
       and:
-        - modernism_priority == "★"
+        - m31_priority == "★"
     order:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -77,15 +77,15 @@ views:
     name: 重点 ◆
     filters:
       and:
-        - modernism_priority == "◆"
+        - m31_priority == "◆"
     order:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -96,15 +96,15 @@ views:
     name: 扩展 △
     filters:
       and:
-        - modernism_priority == "△"
+        - m31_priority == "△"
     order:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -120,10 +120,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -141,10 +141,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -154,16 +154,16 @@ views:
   - type: table
     name: 按谱系位置
     groupBy:
-      property: modernism_history_position
+      property: m31_history_position
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -173,16 +173,16 @@ views:
   - type: table
     name: 按现代主义传统
     groupBy:
-      property: modernism_tradition_cluster
+      property: m31_movement_cluster
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -198,10 +198,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -217,10 +217,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -236,10 +236,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -255,10 +255,10 @@ views:
       - file.name
       - author
       - read_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m
@@ -275,10 +275,10 @@ views:
       - file.name
       - author
       - verification_status
-      - modernism_priority
-      - modernism_tradition_cluster
-      - modernism_history_position
-      - modernism_topic_role
+      - m31_priority
+      - m31_movement_cluster
+      - m31_history_position
+      - m31_topic_role
       - axis_t
       - axis_r
       - axis_m

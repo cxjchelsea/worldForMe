@@ -1,16 +1,16 @@
 ---
-id: WL-QH6
+id: "WL-QH6"
 type: literature_node
-name: "战争、暴力与创伤"
+name: 战争、暴力与创伤
 code: QH6
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QH6 战争、暴力与创伤/00 战争文学]]"
+- "[[../../../30 专题/QH6 战争、暴力与创伤/00 战争文学]]"
 source_version: "2.12-qh48-fold"
 ---
 

@@ -1,13 +1,13 @@
 ---
 id: WL-Q
 type: literature_axis
-name: "文学内容域"
+name: 文学内容域
 axis: Q
 parent: WL
 role: auxiliary
-priority_scheme: "Core/Expand/Interest"
+priority_scheme: Core/Expand/Interest
 node_model: two_facets
-source_version: "2.8-q-facets"
+source_version: 2.8-q-facets
 ---
 
 # Q轴：文学内容域

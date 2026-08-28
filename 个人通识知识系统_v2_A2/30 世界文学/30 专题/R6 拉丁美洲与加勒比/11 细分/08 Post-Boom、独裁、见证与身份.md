@@ -5,8 +5,7 @@ topic_id: "WL-TOPIC-R6-LATAM"
 parent: "WL-TOPIC-R6-LATAM-HISTORY"
 dimension: "history"
 sequence: 8
-latam_history_stage: "Post-Boom、独裁、见证与身份"
-source_lines: "765-961"
+structure_type_zh: "历史细分"
 ---
 # Post-Boom、独裁、见证与身份
 

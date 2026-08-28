@@ -30,12 +30,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "南亚、波斯与阿拉伯现代主义"
-modernism_topic_role: "传播扩散与跨地域连接"
-modernism_axes:
-- 帝国、殖民、反殖民与文化翻译
-- 小杂志、翻译、流亡与跨国网络
+m31_priority: "◆"
+m31_movement_cluster: "南亚、波斯与阿拉伯现代主义"
+m31_topic_role: "传播扩散与跨地域连接"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -46,8 +43,7 @@ r3_tradition: "孟加拉与东部语言文学传统"
 r3_tradition_stage: "T4 全球现代主义时代 · 反殖民、现代主义与多语文学革新"
 r3_role: "语言、书写与媒介转型"
 r3_priority: "◆"
-modernism_history_position: "殖民现代性与多语言文学转型 · 传播扩散与跨地域转译"
-modernism_axes_source: "t4_mechanism_bridge"
+m31_history_position: "殖民现代性与多语言文学转型 · 传播扩散与跨地域转译"
 ---
 # Banalata Sen
 

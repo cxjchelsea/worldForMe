@@ -6,7 +6,6 @@ parent: "WL-TOPIC-Q2-LOVE-HISTORY"
 dimension: "history"
 sequence: 8
 love_history_stage: "Genre Romance正式形成与类型分化"
-source_lines: "971-1183"
 ---
 # Genre Romance正式形成与类型分化
 

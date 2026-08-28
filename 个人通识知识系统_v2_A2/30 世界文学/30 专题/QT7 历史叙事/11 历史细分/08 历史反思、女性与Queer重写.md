@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G44-HISTORICAL-HISTORY"
 dimension: "history"
 sequence: 8
 history_cluster: "历史反思、女性与Queer重写"
-source_lines: "1343-1532"
 ---
 # 历史反思、女性与Queer重写
 

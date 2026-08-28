@@ -1,13 +1,13 @@
 ---
 id: WL-T
 type: literature_axis
-name: "时间 / 文学史阶段"
+name: 时间 / 文学史阶段
 axis: T
 parent: WL
 role: primary
-priority_scheme: "S/A/B"
-source_version: "2.4-taxonomy-v2"
-node_model: "periods_plus_historical_features"
+priority_scheme: S/A/B
+node_model: periods_plus_historical_features
+source_version: 2.4-taxonomy-v2
 ---
 
 # T轴：时间 / 文学史阶段

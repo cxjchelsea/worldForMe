@@ -36,8 +36,6 @@ dystopia_history_cluster: 社会工程、人口城市与性别反乌托邦
 dystopia_control_modes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 反乌托邦书单.md:565
 t6_priority: ◆
 t6_history_position: "全球危机、平台化与类型融合，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r3_priority: "△"

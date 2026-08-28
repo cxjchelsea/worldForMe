@@ -1,10 +1,10 @@
 ---
-id: WL-QH3.6
+id: "WL-QH3.6"
 type: literature_node
-name: "故乡与归属"
+name: 故乡与归属
 code: QH3.6
 axis: Q
-parent: WL-QH3
+parent: "WL-QH3"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

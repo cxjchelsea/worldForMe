@@ -1,16 +1,17 @@
 ---
-id: "WL-TOPIC-Q15-GAUCHO"
-type: "literature_topic_map"
-name: "Gaucho文学"
-primary_anchor: "WL-QT8.6"
-anchor_mode: "leaf"
-parent_topic: "WL-TOPIC-Q15"
-topic_role: "q15_subsystem"
-structure_status: "batch6_frozen"
+id: WL-TOPIC-Q15-GAUCHO
+type: literature_topic_map
+name: Gaucho文学
+primary_anchor: WL-QT8.6
+anchor_mode: leaf
+topic_role: q15_subsystem
+structure_status: batch6_frozen
 work_database: "[[03 Gaucho作品.base]]"
 structure_database: "[[02 Gaucho文学结构.base]]"
+parent_topic: WL-TOPIC-Q15
 source_archive: "[[_source/Gaucho书单_原始版.md]]"
 ---
+
 # Gaucho文学
 
 > Q15 → Gaucho文学

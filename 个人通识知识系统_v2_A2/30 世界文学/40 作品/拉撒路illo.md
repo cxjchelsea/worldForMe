@@ -26,8 +26,6 @@ growth_history_cluster: 前史：人生历险与教育思想
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:134
 ---
 # 拉撒路illo
 

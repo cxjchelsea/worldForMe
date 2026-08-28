@@ -1,11 +1,12 @@
 ---
-id: WL-QT
+id: "WL-QT"
 type: literature_node
-name: "类型与叙事传统"
+name: 类型与叙事传统
 code: QT
 axis: Q
-parent: WL-Q
+parent: "WL-Q"
 level: 1
+coverage_priority: null
 node_kind: facet_group
 anchorable: false
 topic_map: null

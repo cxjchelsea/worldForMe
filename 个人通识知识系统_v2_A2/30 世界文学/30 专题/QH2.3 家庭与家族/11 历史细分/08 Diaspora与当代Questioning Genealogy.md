@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G43-FAMILY-HISTORY"
 dimension: "history"
 sequence: 8
 history_cluster: "Diaspora与当代Questioning Genealogy"
-source_lines: "1705-1933"
 ---
 # Diaspora与当代Questioning Genealogy
 

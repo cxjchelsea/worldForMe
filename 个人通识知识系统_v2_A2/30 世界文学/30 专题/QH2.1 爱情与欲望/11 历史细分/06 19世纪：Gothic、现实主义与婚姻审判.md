@@ -6,7 +6,6 @@ parent: "WL-TOPIC-Q2-LOVE-HISTORY"
 dimension: "history"
 sequence: 6
 love_history_stage: "19世纪：Gothic、现实主义与婚姻审判"
-source_lines: "572-742"
 ---
 # 19世纪：Gothic、现实主义与婚姻审判
 

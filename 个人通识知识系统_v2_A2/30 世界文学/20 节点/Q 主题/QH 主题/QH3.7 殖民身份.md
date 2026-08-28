@@ -1,10 +1,10 @@
 ---
-id: WL-QH3.7
+id: "WL-QH3.7"
 type: literature_node
-name: "殖民身份"
+name: 殖民身份
 code: QH3.7
 axis: Q
-parent: WL-QH3
+parent: "WL-QH3"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

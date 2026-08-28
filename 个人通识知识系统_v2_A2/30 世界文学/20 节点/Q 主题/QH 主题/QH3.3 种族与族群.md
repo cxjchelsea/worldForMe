@@ -1,10 +1,10 @@
 ---
-id: WL-QH3.3
+id: "WL-QH3.3"
 type: literature_node
-name: "种族与族群"
+name: 种族与族群
 code: QH3.3
 axis: Q
-parent: WL-QH3
+parent: "WL-QH3"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

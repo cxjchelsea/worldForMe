@@ -35,9 +35,6 @@ growth_history_cluster: 种族、殖民与后殖民成长
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1271
-- 成长书单.md:2391
 postwar_priority: ★
 postwar_stage: "1965—1975：文学爆炸与全球分叉"
 r7_priority: "★"

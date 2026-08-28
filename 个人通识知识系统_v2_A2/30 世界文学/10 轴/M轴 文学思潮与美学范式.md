@@ -1,12 +1,13 @@
 ---
 id: WL-M
 type: literature_axis
-name: "思潮 / 运动 / 美学范式"
+name: 思潮 / 运动 / 美学范式
 axis: M
 parent: WL
 role: primary
-priority_scheme: "S/A/B"
-source_version: "2.7-integration-closure"
+priority_scheme: S/A/B
+node_model: movements_plus_taxonomy_groups
+source_version: 2.7-integration-closure
 ---
 
 # M轴：思潮 / 运动 / 美学范式

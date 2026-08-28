@@ -28,9 +28,6 @@ dystopia_control_modes:
 - 身体 / 生殖
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 反乌托邦书单.md:1088
-- 反乌托邦书单.md:564
 ---
 # Vox
 

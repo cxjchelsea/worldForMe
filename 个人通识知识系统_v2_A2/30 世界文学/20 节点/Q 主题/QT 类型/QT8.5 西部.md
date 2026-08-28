@@ -1,16 +1,16 @@
 ---
-id: WL-QT8.5
+id: "WL-QT8.5"
 type: literature_node
-name: "西部"
+name: 西部
 code: QT8.5
 axis: Q
-parent: WL-QT8
+parent: "WL-QT8"
 level: 3
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QT8.5 西部/00 西部文学]]"
+- "[[../../../30 专题/QT8.5 西部/00 西部文学]]"
 source_version: "2.8-q-facets"
 ---
 

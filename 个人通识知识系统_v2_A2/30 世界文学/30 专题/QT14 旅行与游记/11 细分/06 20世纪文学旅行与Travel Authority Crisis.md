@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G7-TRAVEL-HISTORY"
 dimension: "history"
 sequence: 6
 history_cluster: "20世纪文学旅行与Travel Authority Crisis"
-source_lines: "980-1223"
 ---
 # 20世纪文学旅行与Travel Authority Crisis
 

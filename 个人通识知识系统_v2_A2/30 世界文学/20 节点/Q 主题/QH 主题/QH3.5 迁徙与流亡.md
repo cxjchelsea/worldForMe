@@ -1,10 +1,10 @@
 ---
-id: WL-QH3.5
+id: "WL-QH3.5"
 type: literature_node
-name: "迁徙与流亡"
+name: 迁徙与流亡
 code: QH3.5
 axis: Q
-parent: WL-QH3
+parent: "WL-QH3"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

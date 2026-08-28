@@ -1,10 +1,10 @@
 ---
-id: WL-QH1.4
+id: "WL-QH1.4"
 type: literature_node
-name: "死亡"
+name: 死亡
 code: QH1.4
 axis: Q
-parent: WL-QH1
+parent: "WL-QH1"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

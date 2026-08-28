@@ -1,10 +1,10 @@
 ---
-id: WL-QH5
+id: "WL-QH5"
 type: literature_node
-name: "权力、制度与秩序"
+name: 权力、制度与秩序
 code: QH5
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf

@@ -40,12 +40,6 @@ family_axes:
 - 女性与家族
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 家族书单.md:1401
-- 家族书单.md:2024
-- 家族书单.md:2305
-- 家族书单.md:2352
-- 家族书单.md:2608
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“迁徙、离散与跨国家庭”为主要路径的扩散节点（读前预判）"
 r5_tradition: "拉美裔—奇卡诺美国文学传统"

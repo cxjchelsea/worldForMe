@@ -25,14 +25,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "美国与Harlem Renaissance"
-modernism_topic_role: "传播扩散与跨地域连接"
-modernism_axes:
-- 种族与黑人现代主义
-- 性别与女性现代主义
-- 都市现代性
-- 跨国身份
+m31_priority: "◆"
+m31_movement_cluster: "美国与Harlem Renaissance"
+m31_topic_role: "传播扩散与跨地域连接"
 t4_priority: ◆
 t4_history_position: "哈莱姆文艺复兴与黑人现代主义"
 t4_stage: "1918—1930：高峰现代主义与全球扩展"
@@ -42,7 +37,7 @@ t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
-modernism_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
+m31_history_position: "美国现代主义与黑人文化复兴 · 传播扩散与跨地域转译"
 r5_priority: "△"
 r5_tradition: "北美文学综合—具体内部传统待读后校准"
 r5_tradition_stage: "T4 全球现代主义时代 · 现代主义、哈莱姆复兴与类型扩张"

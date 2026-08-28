@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G43-BILDUNGSROMAN-HISTORY"
 dimension: "history"
 sequence: 8
 history_cluster: "Diaspora、Queer、YA与Graphic"
-source_lines: "1600-1761"
 ---
 # Diaspora、Queer、YA与Graphic
 

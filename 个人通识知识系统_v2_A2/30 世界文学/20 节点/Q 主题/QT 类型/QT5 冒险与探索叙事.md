@@ -1,18 +1,16 @@
 ---
-id: WL-QT5
+id: "WL-QT5"
 type: literature_node
-name: "冒险与探索叙事"
+name: 冒险与探索叙事
 code: QT5
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
-aliases:
-- "QT5 冒险"
 topic_map:
-  - "[[../../../30 专题/QT5 冒险与探索叙事/00 冒险文学]]"
+- "[[../../../30 专题/QT5 冒险与探索叙事/00 冒险文学]]"
 source_version: "2.11-qt-expand"
 ---
 

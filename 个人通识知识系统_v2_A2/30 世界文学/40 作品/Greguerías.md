@@ -29,11 +29,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "伊比利亚与意大利现代主义"
-modernism_topic_role: "传播扩散与跨地域连接"
-modernism_axes:
-- 小杂志、翻译、流亡与跨国网络
+m31_priority: "◆"
+m31_movement_cluster: "伊比利亚与意大利现代主义"
+m31_topic_role: "传播扩散与跨地域连接"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -43,8 +41,7 @@ t4_history_position: "战争断裂与先锋化，以“小杂志、翻译、流�
 r4_priority: "△"
 r4_tradition_stage: "T4 全球现代主义时代 · 战争危机、现代主义与先锋实验"
 r4_role: "区域扩展阅读"
-modernism_history_position: "南欧现代主义与先锋互动 · 传播扩散与跨地域转译"
-modernism_axes_source: "t4_mechanism_bridge"
+m31_history_position: "南欧现代主义与先锋互动 · 传播扩散与跨地域转译"
 r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 ---
 # Greguerías

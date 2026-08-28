@@ -35,8 +35,6 @@ growth_history_cluster: Diaspora、Queer、YA与Graphic
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1730
 t6_priority: ★
 t6_history_position: "全球化出版与离散写作扩张，以“身份、性别与代表权”为主要路径的边缘突破节点（读前预判）"
 r5_priority: "△"

@@ -1,10 +1,10 @@
 ---
-id: WL-QH3.2
+id: "WL-QH3.2"
 type: literature_node
-name: "性与欲望"
+name: 性与欲望
 code: QH3.2
 axis: Q
-parent: WL-QH3
+parent: "WL-QH3"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

@@ -34,8 +34,6 @@ growth_history_cluster: Diaspora、Queer、YA与Graphic
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1614
 t4_priority: ★
 t4_history_position: "高峰现代主义与全球扩展，以“小杂志、翻译、流亡与跨国网络”为主要路径的高峰节点（读前预判）"
 r5_priority: "△"

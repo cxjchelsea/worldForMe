@@ -1,10 +1,10 @@
 ---
-id: WL-QH1.3
+id: "WL-QH1.3"
 type: literature_node
-name: "孤独"
+name: 孤独
 code: QH1.3
 axis: Q
-parent: WL-QH1
+parent: "WL-QH1"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

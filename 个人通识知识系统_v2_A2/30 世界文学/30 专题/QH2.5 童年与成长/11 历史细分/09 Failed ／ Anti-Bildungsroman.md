@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G43-BILDUNGSROMAN-HISTORY"
 dimension: "history"
 sequence: 9
 history_cluster: "Failed / Anti-Bildungsroman"
-source_lines: "1762-1835"
 ---
 # Failed / Anti-Bildungsroman
 

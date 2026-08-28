@@ -35,9 +35,6 @@ growth_history_cluster: 德国Bildungsroman建立
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:205
-- 成长书单.md:2324
 t2_priority: ★
 t2_history_position: "宫廷、城市、巴洛克与全球接触，以“印刷、书籍市场与读者扩大”为主要路径的跨区域转译节点（读前预判）"
 r4_priority: "△"

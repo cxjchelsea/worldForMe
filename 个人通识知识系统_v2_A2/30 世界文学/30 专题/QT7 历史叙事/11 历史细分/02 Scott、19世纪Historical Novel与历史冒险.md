@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G44-HISTORICAL-HISTORY"
 dimension: "history"
 sequence: 2
 history_cluster: "Scott、19世纪Historical Novel与历史冒险"
-source_lines: "239-455"
 ---
 # Scott、19世纪Historical Novel与历史冒险
 

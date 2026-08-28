@@ -5,7 +5,6 @@ topic_id: "WL-TOPIC-M3-MODERNISM"
 parent: "WL-TOPIC-M3-MODERNISM-BRIDGE"
 dimension: "global_modernism"
 sequence: 2
-canonical_data: "[[../03 现代主义作品.base]]"
 history_position: "横向机制层"
 mechanism:
 - 小杂志、翻译、流亡与跨国网络
@@ -42,4 +41,4 @@ parent_name: "04 全球现代主义与跨专题桥接"
 
 - 将本页与 `11 细分/` 的传统入口交叉阅读。
 - 不默认形式从欧洲中心单向扩散。
-- 比较同一 `modernism_axes` 横轴在不同殖民/语言/国家结构中的功能差异。
+- 比较同一形式横轴在不同殖民/语言/国家结构中的功能差异。

@@ -27,10 +27,6 @@ family_history_cluster: 奴隶制、殖民、非洲与南亚谱系
 family_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 家族书单.md:1547
-- 家族书单.md:1569
-- 家族书单.md:2617
 ---
 # Kintu
 

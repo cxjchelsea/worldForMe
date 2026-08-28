@@ -5,7 +5,7 @@ topic_id: "WL-TOPIC-R6-LATAM"
 parent: "WL-TOPIC-R6-LATAM-BRIDGE"
 dimension: "decentering"
 sequence: 2
-canonical_data: "[[../03 拉美作品.base]]"
+structure_type_zh: "区域机制"
 ---
 # Boom之外：巴西、原住民、Afro-Latin与女性
 

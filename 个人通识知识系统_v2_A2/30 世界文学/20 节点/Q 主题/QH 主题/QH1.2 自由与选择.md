@@ -1,10 +1,10 @@
 ---
-id: WL-QH1.2
+id: "WL-QH1.2"
 type: literature_node
-name: "自由与选择"
+name: 自由与选择
 code: QH1.2
 axis: Q
-parent: WL-QH1
+parent: "WL-QH1"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

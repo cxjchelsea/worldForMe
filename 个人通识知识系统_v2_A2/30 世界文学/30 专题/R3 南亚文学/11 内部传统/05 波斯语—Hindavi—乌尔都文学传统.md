@@ -5,7 +5,6 @@ topic_id: WL-TOPIC-R3-SOUTH-ASIA
 dimension: internal_tradition
 sequence: 5
 structure_type_zh: "内部传统"
-parent_label: "南亚文学｜内部传统"
 history_position: "传统纵向"
 mechanism: "南亚波斯语宫廷、苏菲网络和城市 Hindavi/乌尔都共同塑造这一传统。ghazal、masnavi、marsiya、dastan、短篇和现代小说在德里、勒克瑙、拉合尔等文学场持续变化"
 ---

@@ -30,8 +30,6 @@ growth_history_cluster: Diaspora、Queer、YA与Graphic
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1756
 r2_priority: "△"
 r2_tradition_stage: "T6 当代全球文学 · 都市经验、媒介转型与跨国传播"
 r2_role: "区域扩展阅读"

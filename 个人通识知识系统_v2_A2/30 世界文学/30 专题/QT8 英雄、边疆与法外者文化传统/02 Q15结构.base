@@ -77,6 +77,21 @@ views:
       - compare_cluster
       - id
   - type: table
+    name: 比较维度
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.parent_zh
+      - system_name
+      - system_class
+      - compare_cluster
+      - id
+  - type: table
     name: 按系统类别
     filters:
       and:

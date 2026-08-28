@@ -1,6 +1,6 @@
 ---
 id: "WL-TOPIC-G46-DYSTOPIA-CRITICAL"
-type: "literature_topic_structure"
+type: literature_topic_mechanism
 topic_id: "WL-TOPIC-G46-DYSTOPIA"
 parent: "WL-TOPIC-G46-DYSTOPIA-BRIDGES"
 dimension: "critical_and_global"

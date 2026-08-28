@@ -1,10 +1,10 @@
 ---
-id: WL-QH2.2
+id: "WL-QH2.2"
 type: literature_node
-name: "婚姻与亲密关系"
+name: 婚姻与亲密关系
 code: QH2.2
 axis: Q
-parent: WL-QH2
+parent: "WL-QH2"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

@@ -40,9 +40,15 @@ literature_topic_section
 literature_topic_mechanism
 ```
 
-推荐用于 direct topic 中可跨多个 `11` 节点复用的 `12` 第二分析维度。
+推荐用于可跨多个 `11` 节点复用的 `12` 第二分析维度。
 
-注意：**类型不是目录编号的机械映射。** 已有成熟专题若使用 `section + parent + dimension` 表达 umbrella 比较维度，不为了统一 type 制造无收益迁移。
+```text
+literature_topic_network
+```
+
+只用于 R 轴 `12 跨传统网络`。不要把 network 改成 mechanism。
+
+注意：**类型不是目录编号的机械映射。** `13` 第三维继续用 `literature_topic_section`，用 `dimension` 或文件夹与 `11` 分开。
 
 ## 3. 结构 Base 推荐视图
 
@@ -53,6 +59,9 @@ literature_topic_mechanism
 
 只有专题存在成熟第二维时才增加：
 4. 第二分析维度 / 机制深化。
+
+若存在 `13`：
+5. 第三维（文学场域 / 内部扩展与转型）。不要把它留在「细分 / 专题分支」里。
 
 推荐属性：
 
@@ -95,6 +104,14 @@ filters:
 ```
 
 若 umbrella 已有不同稳定模型，则按 `parent / dimension` 过滤。
+
+若存在第三维，用 `dimension` 或文件夹过滤，例如 T5：
+
+```yaml
+filters:
+  and:
+    - 'dimension == "literary_field"'
+```
 
 ## 4. 作品 Base
 
@@ -140,11 +157,10 @@ axis_t
 axis_r
 axis_m
 axis_g
-axis_n
 axis_q
 ```
 
-用于读后校准，不要求未读作品提前批量填写六轴。
+用于读后校准，不要求未读作品提前批量填写五轴。
 
 ## 7. 专题私有字段
 

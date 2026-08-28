@@ -1,11 +1,12 @@
 ---
-id: WL-QH
+id: "WL-QH"
 type: literature_node
-name: "主题与人类问题"
+name: 主题与人类问题
 code: QH
 axis: Q
-parent: WL-Q
+parent: "WL-Q"
 level: 1
+coverage_priority: null
 node_kind: facet_group
 anchorable: false
 topic_map: null

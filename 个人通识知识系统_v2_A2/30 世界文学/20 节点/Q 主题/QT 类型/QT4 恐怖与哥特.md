@@ -1,18 +1,16 @@
 ---
-id: WL-QT4
+id: "WL-QT4"
 type: literature_node
-name: "恐怖与哥特"
+name: 恐怖与哥特
 code: QT4
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
-aliases:
-- "QT4 恐怖"
 topic_map:
-  - "[[../../../30 专题/QT4 恐怖与哥特/00 恐怖文学]]"
+- "[[../../../30 专题/QT4 恐怖与哥特/00 恐怖文学]]"
 source_version: "2.11-qt-expand"
 ---
 

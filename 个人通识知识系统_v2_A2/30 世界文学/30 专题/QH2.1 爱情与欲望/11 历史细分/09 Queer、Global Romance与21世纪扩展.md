@@ -6,7 +6,6 @@ parent: "WL-TOPIC-Q2-LOVE-HISTORY"
 dimension: "history"
 sequence: 9
 love_history_stage: "Queer、Global Romance与21世纪扩展"
-source_lines: "1184-1334"
 ---
 # Queer、Global Romance与21世纪扩展
 

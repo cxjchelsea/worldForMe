@@ -25,14 +25,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "★"
-modernism_tradition_cluster: "殖民与跨国现代主义"
-modernism_topic_role: "文学动员与共同体建构"
-modernism_axes:
-- 帝国与殖民现代性
-- 现代主义戏剧
-- 非洲现代主义
-- 民族主义与现代性
+m31_priority: "★"
+m31_movement_cluster: "殖民与跨国现代主义"
+m31_topic_role: "文学动员与共同体建构"
 t4_priority: ★
 t4_history_position: "南非黑人现代主义与全球现代主义扩展"
 t4_stage: "1930—1945：政治极化、反殖民与战时转型"
@@ -42,7 +37,7 @@ t4_mechanism:
 - 小杂志、翻译、流亡与跨国网络
 verification_status: 手工核验
 bibliography_status: curated
-modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 组织化与集体扩展"
+m31_history_position: "全球现代主义的跨国流动与殖民经验 · 组织化与集体扩展"
 r7_priority: "△"
 r7_tradition: "非洲文学综合—具体内部传统待读后校准"
 r7_tradition_stage: "T4 全球现代主义时代 · 反殖民意识、现代主义与民族表达"

@@ -1,10 +1,10 @@
 ---
-id: WL-QH3
+id: "WL-QH3"
 type: literature_node
-name: "身份、身体与归属"
+name: 身份、身体与归属
 code: QH3
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_group

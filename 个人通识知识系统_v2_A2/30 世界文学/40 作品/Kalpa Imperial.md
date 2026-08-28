@@ -33,10 +33,6 @@ sf_region: 拉丁美洲
 series: ''
 verification_status: 自动通过
 review_note: ''
-source_mentions: 1
-first_source_line: 698
-sf_source_lines:
-- '698'
 r6_priority: "△"
 r6_tradition_stage: "T6 当代全球文学 · 后独裁记忆、迁徙与跨国文学重组"
 r6_role: "区域扩展阅读"

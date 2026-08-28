@@ -6,9 +6,7 @@ parent: WL-TOPIC-G45-SF-HISTORY
 dimension: history
 sequence: 6
 history_cluster: Hard SF复兴
-source_lines: 396-441
 ---
-
 # Hard SF复兴
 
 Hard SF 复兴强调真实科学或谨慎外推的科学约束本身就是叙事骨架。从行星科学、生态与工程，进一步走向数学、计算、意识和信息论。

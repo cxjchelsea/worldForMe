@@ -1,13 +1,13 @@
 ---
 id: WL-G
 type: literature_axis
-name: "文学体裁与文本形式"
+name: 文学体裁与文本形式
 axis: G
 parent: WL
 role: primary
-priority_scheme: "S/A/B"
-source_version: "2.10-g-fold"
-node_model: "form_only"
+priority_scheme: S/A/B
+node_model: form_only
+source_version: 2.10-g-fold
 ---
 
 # G轴：文学体裁与文本形式

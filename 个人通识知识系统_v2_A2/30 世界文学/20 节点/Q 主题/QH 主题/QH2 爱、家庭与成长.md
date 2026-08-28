@@ -1,10 +1,10 @@
 ---
-id: WL-QH2
+id: "WL-QH2"
 type: literature_node
-name: "爱、家庭与成长"
+name: 爱、家庭与成长
 code: QH2
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_group

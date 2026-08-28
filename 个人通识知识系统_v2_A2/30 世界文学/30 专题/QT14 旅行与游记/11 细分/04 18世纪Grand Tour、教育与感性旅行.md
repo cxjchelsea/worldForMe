@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G7-TRAVEL-HISTORY"
 dimension: "history"
 sequence: 4
 history_cluster: "18世纪Grand Tour、教育与感性旅行"
-source_lines: "578-699"
 ---
 # 18世纪Grand Tour、教育与感性旅行
 

@@ -30,8 +30,6 @@ historical_history_cluster: 20世纪心理化、古代世界与中世纪
 historical_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 历史书单.md:617
 t6_priority: △
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的形式突破节点（读前预判）"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"

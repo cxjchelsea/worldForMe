@@ -37,11 +37,6 @@ mystery_mode: []
 series: ""
 verification_status: "自动通过"
 review_note: ""
-source_mentions: 2
-first_source_line: 900
-mystery_source_lines:
-  - "900"
-  - "1287"
 t6_priority: △
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的形式突破节点（读前预判）"
 t6_stage: "1991—2008：全球化出版与离散写作扩张"

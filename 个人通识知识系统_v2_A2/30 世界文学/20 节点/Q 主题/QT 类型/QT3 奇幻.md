@@ -1,16 +1,16 @@
 ---
-id: WL-QT3
+id: "WL-QT3"
 type: literature_node
-name: "奇幻"
+name: 奇幻
 code: QT3
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QT3 奇幻/00 奇幻文学]]"
+- "[[../../../30 专题/QT3 奇幻/00 奇幻文学]]"
 source_version: "2.11-qt-expand"
 ---
 

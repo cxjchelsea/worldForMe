@@ -1,16 +1,16 @@
 ---
-id: WL-QH2.3
+id: "WL-QH2.3"
 type: literature_node
-name: "家庭与家族"
+name: 家庭与家族
 code: QH2.3
 axis: Q
-parent: WL-QH2
+parent: "WL-QH2"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QH2.3 家庭与家族/00 家庭与家族]]"
+- "[[../../../30 专题/QH2.3 家庭与家族/00 家庭与家族]]"
 source_version: "2.10-qh-user"
 ---
 

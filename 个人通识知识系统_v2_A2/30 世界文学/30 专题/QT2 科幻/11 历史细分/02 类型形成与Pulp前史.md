@@ -6,9 +6,7 @@ parent: WL-TOPIC-G45-SF-HISTORY
 dimension: history
 sequence: 2
 history_cluster: 类型形成与Pulp前史
-source_lines: 126-165
 ---
-
 # 类型形成与Pulp前史
 
 1900—1930年代，科幻逐渐形成稳定类型身份。机器人、反乌托邦、工业社会批判和文明尺度同时出现；Pulp、行星传奇与太空歌剧前史把思想实验和大众冒险结合起来。

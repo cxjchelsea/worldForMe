@@ -1,10 +1,10 @@
 ---
-id: WL-QH1
+id: "WL-QH1"
 type: literature_node
-name: "自我、存在与生命"
+name: 自我、存在与生命
 code: QH1
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_group

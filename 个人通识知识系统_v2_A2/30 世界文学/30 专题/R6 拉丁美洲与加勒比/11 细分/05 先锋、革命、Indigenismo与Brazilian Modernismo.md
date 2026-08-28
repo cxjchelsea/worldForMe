@@ -5,8 +5,7 @@ topic_id: "WL-TOPIC-R6-LATAM"
 parent: "WL-TOPIC-R6-LATAM-HISTORY"
 dimension: "history"
 sequence: 5
-latam_history_stage: "先锋、革命、Indigenismo与Brazilian Modernismo"
-source_lines: "327-493"
+structure_type_zh: "历史细分"
 ---
 # 先锋、革命、Indigenismo与Brazilian Modernismo
 

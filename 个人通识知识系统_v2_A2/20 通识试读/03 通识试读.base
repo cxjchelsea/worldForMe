@@ -45,3 +45,14 @@ views:
       - domain_links
       - read_status
       - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - domain_links
+      - read_status
+      - id

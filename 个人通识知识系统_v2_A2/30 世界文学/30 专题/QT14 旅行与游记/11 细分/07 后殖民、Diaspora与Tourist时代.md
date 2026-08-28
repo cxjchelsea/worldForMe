@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G7-TRAVEL-HISTORY"
 dimension: "history"
 sequence: 7
 history_cluster: "后殖民、Diaspora与Tourist时代"
-source_lines: "1224-1458"
 ---
 # 后殖民、Diaspora与Tourist时代
 

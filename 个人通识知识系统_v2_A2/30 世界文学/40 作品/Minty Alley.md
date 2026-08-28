@@ -26,18 +26,14 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "殖民与跨国现代主义"
-modernism_topic_role: "专题扩展与变体生成"
-modernism_axes:
-- 帝国与殖民现代性
-- 都市现代性
-- 黑人现代性
+m31_priority: "◆"
+m31_movement_cluster: "殖民与跨国现代主义"
+m31_topic_role: "专题扩展与变体生成"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
 - 现代主义书单.md:964
-modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 扩展、变体与后续发展"
+m31_history_position: "全球现代主义的跨国流动与殖民经验 · 扩展、变体与后续发展"
 ---
 # Minty Alley
 

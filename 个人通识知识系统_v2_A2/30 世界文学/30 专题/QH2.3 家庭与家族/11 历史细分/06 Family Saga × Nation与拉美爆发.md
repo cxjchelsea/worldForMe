@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G43-FAMILY-HISTORY"
 dimension: "history"
 sequence: 6
 history_cluster: "Family Saga × Nation与拉美爆发"
-source_lines: "1254-1418"
 ---
 # Family Saga × Nation与拉美爆发
 

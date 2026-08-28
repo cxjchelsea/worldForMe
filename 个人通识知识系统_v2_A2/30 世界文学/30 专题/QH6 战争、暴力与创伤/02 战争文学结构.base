@@ -72,3 +72,17 @@ views:
       - war_history_stage
       - question_cluster
       - id
+  - type: table
+    name: 机制深化
+    filters:
+      and:
+        - 'type == "literature_topic_mechanism"'
+    order:
+      - file.name
+      - formula.type_zh
+      - formula.dimension_zh
+      - sequence
+      - formula.parent_zh
+      - war_history_stage
+      - question_cluster
+      - id

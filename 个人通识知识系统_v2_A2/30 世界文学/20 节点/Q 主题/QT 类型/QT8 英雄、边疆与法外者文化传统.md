@@ -1,18 +1,16 @@
 ---
-id: WL-QT8
+id: "WL-QT8"
 type: literature_node
-name: "英雄、边疆与法外者文化传统"
+name: 英雄、边疆与法外者文化传统
 code: QT8
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_group
 anchorable: false
-aliases:
-- "QT8 文化类型传统"
 topic_map:
-  - "[[../../../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学]]"
+- "[[../../../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学]]"
 source_version: "2.11-qt-expand"
 ---
 

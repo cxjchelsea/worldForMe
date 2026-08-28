@@ -1,16 +1,16 @@
 ---
-id: WL-QH7
+id: "WL-QH7"
 type: literature_node
-name: "历史、记忆与时间"
+name: 历史、记忆与时间
 code: QH7
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QH7 历史、记忆与时间/00 历史、记忆与时间]]"
+- "[[../../../30 专题/QH7 历史、记忆与时间/00 历史、记忆与时间]]"
 source_version: "2.12-qh48-fold"
 ---
 

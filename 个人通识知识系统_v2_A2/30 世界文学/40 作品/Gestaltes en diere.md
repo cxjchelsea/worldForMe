@@ -30,12 +30,9 @@ topics:
 - WL-TOPIC-M3-MODERNISM
 topic_links:
 - '[[../30 专题/M3.1 现代主义/00 现代主义文学|现代主义文学]]'
-modernism_priority: "◆"
-modernism_tradition_cluster: "殖民与跨国现代主义"
-modernism_topic_role: "传播扩散与跨地域连接"
-modernism_axes:
-- 帝国、殖民、反殖民与文化翻译
-- 小杂志、翻译、流亡与跨国网络
+m31_priority: "◆"
+m31_movement_cluster: "殖民与跨国现代主义"
+m31_topic_role: "传播扩散与跨地域连接"
 verification_status: 自动通过
 bibliography_status: metadata_pending
 batch4_source_refs:
@@ -45,8 +42,7 @@ t4_history_position: "政治极化、反殖民与战时转型，以“帝国、�
 r7_priority: "△"
 r7_tradition_stage: "T4 全球现代主义时代 · 反殖民意识、现代主义与民族表达"
 r7_role: "区域扩展阅读"
-modernism_history_position: "全球现代主义的跨国流动与殖民经验 · 传播扩散与跨地域转译"
-modernism_axes_source: "t4_mechanism_bridge"
+m31_history_position: "全球现代主义的跨国流动与殖民经验 · 传播扩散与跨地域转译"
 r7_tradition: "非洲文学综合—具体内部传统待读后校准"
 ---
 # Gestaltes en diere

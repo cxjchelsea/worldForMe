@@ -1,10 +1,10 @@
 ---
-id: WL-QH8
+id: "WL-QH8"
 type: literature_node
-name: "信仰、伦理与超越"
+name: 信仰、伦理与超越
 code: QH8
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf

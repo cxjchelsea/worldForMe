@@ -31,8 +31,6 @@ growth_history_cluster: Diaspora、Queer、YA与Graphic
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1630
 r5_tradition: "亚裔美国文学传统"
 r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
 r5_role: "翻译与跨传统连接"

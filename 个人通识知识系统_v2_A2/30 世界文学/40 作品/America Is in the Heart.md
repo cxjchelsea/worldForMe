@@ -36,8 +36,6 @@ growth_history_cluster: Diaspora、Queer、YA与Graphic
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1622
 postwar_priority: ★
 postwar_stage: "1955—1965：世界真正多中心化"
 r5_priority: "△"

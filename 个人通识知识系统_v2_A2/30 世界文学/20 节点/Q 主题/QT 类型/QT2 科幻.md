@@ -1,16 +1,16 @@
 ---
-id: WL-QT2
+id: "WL-QT2"
 type: literature_node
-name: "科幻"
+name: 科幻
 code: QT2
 axis: Q
-parent: WL-QT
+parent: "WL-QT"
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map:
-  - "[[../../../30 专题/QT2 科幻/00 科幻文学]]"
+- "[[../../../30 专题/QT2 科幻/00 科幻文学]]"
 source_version: "2.11-qt-expand"
 ---
 

@@ -5,8 +5,7 @@ topic_id: "WL-TOPIC-M3-MODERNISM"
 parent: "WL-TOPIC-M3-MODERNISM-TRADITIONS"
 dimension: "tradition"
 sequence: 8
-modernism_tradition_cluster: "拉丁美洲与Brazilian Modernismo"
-source_lines: "665-724"
+m31_movement_cluster: "拉丁美洲与Brazilian Modernismo"
 history_position: "内部分类与横向展开"
 parent_name: "02 全球现代主义传统"
 ---

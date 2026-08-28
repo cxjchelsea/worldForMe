@@ -35,8 +35,6 @@ historical_history_cluster: 帝国、殖民与全球历史小说
 historical_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 历史书单.md:895
 t6_priority: ★
 t6_history_position: "冷战晚期与全球文学重组，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
 r3_priority: "△"

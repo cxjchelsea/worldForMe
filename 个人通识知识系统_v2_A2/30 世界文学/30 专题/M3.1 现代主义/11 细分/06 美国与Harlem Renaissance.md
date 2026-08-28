@@ -5,8 +5,7 @@ topic_id: "WL-TOPIC-M3-MODERNISM"
 parent: "WL-TOPIC-M3-MODERNISM-TRADITIONS"
 dimension: "tradition"
 sequence: 6
-modernism_tradition_cluster: "美国与Harlem Renaissance"
-source_lines: "460-597"
+m31_movement_cluster: "美国与Harlem Renaissance"
 history_position: "内部分类与横向展开"
 parent_name: "02 全球现代主义传统"
 ---

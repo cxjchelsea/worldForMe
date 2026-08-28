@@ -5,7 +5,6 @@ topic_id: "WL-TOPIC-R6-LATAM"
 dimension: "internal_tradition"
 sequence: 10
 structure_type_zh: "内部传统"
-parent_label: "拉丁美洲与加勒比｜内部传统"
 history_position: "传统纵向"
 mechanism: "奴隶制后裔、黑人宗教/音乐/口述传统、种族政治、黑色大西洋与当代 Afro-Latin/Afro-Caribbean 文学"
 ---

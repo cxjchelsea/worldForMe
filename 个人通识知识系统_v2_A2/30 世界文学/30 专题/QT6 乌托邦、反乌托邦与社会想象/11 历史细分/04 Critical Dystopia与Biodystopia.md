@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G46-DYSTOPIA-HISTORY"
 dimension: "history"
 sequence: 4
 history_cluster: "Critical Dystopia与Biodystopia"
-source_lines: "573-650"
 ---
 # Critical Dystopia与Biodystopia
 

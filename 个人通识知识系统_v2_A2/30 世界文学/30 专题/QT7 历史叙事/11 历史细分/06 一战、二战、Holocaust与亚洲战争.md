@@ -6,7 +6,6 @@ parent: "WL-TOPIC-G44-HISTORICAL-HISTORY"
 dimension: "history"
 sequence: 6
 history_cluster: "一战、二战、Holocaust与亚洲战争"
-source_lines: "1001-1164"
 ---
 # 一战、二战、Holocaust与亚洲战争
 

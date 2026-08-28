@@ -35,8 +35,6 @@ historical_history_cluster: 早期现代、革命、19世纪与奴隶制
 historical_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 历史书单.md:668
 t6_priority: ◆
 t6_history_position: "全球化出版与离散写作扩张，以“记忆、创伤与历史重写”为主要路径的反拨节点（读前预判）"
 r4_priority: "△"

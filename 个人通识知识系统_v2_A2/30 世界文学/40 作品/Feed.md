@@ -37,9 +37,6 @@ dystopia_control_modes:
 - AI / 算法治理
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 反乌托邦书单.md:1160
-- 反乌托邦书单.md:667
 t6_priority: ◆
 t6_history_position: "全球危机、平台化与类型融合，以“类型全球化与文类融合”为主要路径的形式突破节点（读前预判）"
 r5_priority: "△"

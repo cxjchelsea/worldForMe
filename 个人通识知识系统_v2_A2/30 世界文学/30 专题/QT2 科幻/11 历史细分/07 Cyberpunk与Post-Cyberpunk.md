@@ -6,9 +6,7 @@ parent: WL-TOPIC-G45-SF-HISTORY
 dimension: history
 sequence: 7
 history_cluster: Cyberpunk与Post-Cyberpunk
-source_lines: 443-492
 ---
-
 # Cyberpunk与Post-Cyberpunk
 
 Cyberpunk 的核心是“高科技 + 低生活 + 信息权力 + 企业统治 + 身体商品化”。Post-Cyberpunk 则继续追问网络成为基础设施后，社会如何运行。

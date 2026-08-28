@@ -35,9 +35,6 @@ growth_history_cluster: 种族、殖民与后殖民成长
 growth_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 成长书单.md:1245
-- 成长书单.md:2390
 canon_id: CANON-261
 canon_level: Major
 t6_priority: ★

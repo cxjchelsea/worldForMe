@@ -2,7 +2,7 @@ filters:
   and:
     - topic_id == "WL-TOPIC-R6-LATAM"
 formulas:
-  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨传统网络").replace("mechanism", "形成机制").replace("comparison", "比较").replace("cross_region", "跨区域比较"), "")
+  dimension_zh: if(dimension, dimension.replace("definition", "定义与边界").replace("history", "历史层与连续性").replace("language_media", "语言、文字与媒介").replace("institution", "文学制度与传播").replace("reading_route", "阅读路线").replace("internal_tradition", "内部传统").replace("literary_network", "跨传统网络").replace("regional_system", "区域谱系").replace("latam_axes", "拉美横轴").replace("decentering", "去中心").replace("mechanism", "形成机制").replace("comparison", "比较").replace("cross_region", "跨区域比较"), "")
 properties:
   file.name:
     displayName: 节点
@@ -64,6 +64,51 @@ views:
     filters:
       and:
         - structure_type_zh == "跨传统网络"
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: 解释结构
+    filters:
+      and:
+        - structure_type_zh == "解释结构"
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: 历史细分
+    filters:
+      and:
+        - structure_type_zh == "历史细分"
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: 区域机制
+    filters:
+      and:
+        - structure_type_zh == "区域机制"
     groupBy:
       property: structure_type_zh
       direction: ASC

@@ -42,8 +42,6 @@ historical_history_cluster: 早期现代、革命、19世纪与奴隶制
 historical_axes: []
 verification_status: 自动通过
 bibliography_status: metadata_pending
-batch2_source_refs:
-- 历史书单.md:823
 martial_systems:
 - 西部／Western
 q15_core_compare: false

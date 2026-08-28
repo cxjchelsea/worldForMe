@@ -1,10 +1,10 @@
 ---
-id: WL-QH2.4
+id: "WL-QH2.4"
 type: literature_node
-name: "亲子与代际"
+name: 亲子与代际
 code: QH2.4
 axis: Q
-parent: WL-QH2
+parent: "WL-QH2"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf

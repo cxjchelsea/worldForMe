@@ -6,7 +6,6 @@ parent: "WL-TOPIC-Q6-WAR-HISTORY"
 dimension: "history"
 sequence: 5
 war_history_stage: "Holocaust、见证与核时代"
-source_lines: "1181-1287"
 ---
 # Holocaust、见证与核时代
 

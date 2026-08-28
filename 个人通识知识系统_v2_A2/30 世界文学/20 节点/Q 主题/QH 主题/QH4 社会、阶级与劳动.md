@@ -1,10 +1,10 @@
 ---
-id: WL-QH4
+id: "WL-QH4"
 type: literature_node
-name: "社会、阶级与劳动"
+name: 社会、阶级与劳动
 code: QH4
 axis: Q
-parent: WL-QH
+parent: "WL-QH"
 level: 2
 coverage_priority: Core
 node_kind: taxonomy_leaf
