@@ -8,9 +8,9 @@ reviewed_topics:
   - QC1.1.2
 ---
 
-# QC1.1｜传统型专题最终验收
+# QC1.1｜传统型专题最终验收 V2.1
 
-## 1. 结论
+## 1. 当前结论
 
 ```text
 QC1.1_TAXONOMY = PASS
@@ -22,16 +22,14 @@ QC1.1_CANONICAL_WORK_ALIGNMENT = PASS_FOR_REFERENCE_CORE_SETS
 QC1.1_SCOPED_METADATA = PASS
 QC1.1_LOCAL_RELATION_ALIGNMENT = PASS_FOR_REFERENCE_CORE_SETS
 QC1.1_RTM_PRODUCT_INTERFACE_ALIGNMENT = PASS
-QC_TRADITION_TOPIC_TEMPLATE_V2 = FROZEN
+QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN
 ```
 
-QC1.1.1 与 QC1.1.2 已足够作为两种形成机制明显不同的 Reference Topics，用来冻结 QC 传统型专题的产品层标准。
+QC1.1.1 与 QC1.1.2 继续作为 QC 传统型专题的两个 Reference Topics，但 V2.1 已根据本地使用检查修正两个问题：Structure Base 接口不统一、作品池误把 8 部核心参考集当成专题全量。
 
-## 2. 与 RTM 成熟专题的对照结果
+## 2. 产品外壳
 
-### 产品外壳
-
-两套 QC Reference Topics 均统一为：
+两套 Reference Topics 均统一为：
 
 ```text
 00 主页
@@ -40,42 +38,51 @@ QC1.1.1 与 QC1.1.2 已足够作为两种形成机制明显不同的 Reference T
 03 作品 Base
 ```
 
-与 R/T/M 的使用界面一致。
-
-### 结构 Base
-
-已不再依赖 sequence 数字段划分一级知识模块，而按照：
+内部模块统一为：
 
 ```text
-核心结构
-内部文本与传统
-母题与跨文化关系
-后世传播与阅读
+10 核心结构
+11 内部文本与传统
+12 母题与跨文化关系
+13 后世传播与阅读
+20 数据层
 ```
 
-组织知识节点。
+## 3. Structure Base V2.1
 
-Base 现在优先读取 `structure_type_zh`；既有研究正文尚未全部补此字段时，以物理模块目录作为兼容 fallback，并提供“待模块元数据回填”视图。
+当前两套结构 Base 已与成熟 R/T/M 接口对齐：
 
-该 fallback 不影响当前使用层验收，但以后新建 QC 专题不得把目录推导当成默认数据模型。
+- 以当前 `topic_id` 过滤：`WL-TOPIC-QC111 / WL-TOPIC-QC112`；
+- 直接按显式 `structure_type_zh` 分组；
+- `dimension` 负责专题内部语义维度并映射为中文显示；
+- `sequence / history_position / id` 保持与成熟专题一致的排序和说明职责。
 
-### 作品 Base
+QC1.1.1 与 QC1.1.2 的正式结构知识页均已回填当前 QC topic id 与 `structure_type_zh`。**目录 fallback 已从正式产品模型移除。**
 
-两套专题均直接查询中央 `40 作品` 的 `type: work` 实体，并使用各自 scoped metadata 作为专题归属与阅读组织依据。
+历史正文中若出现 `WL-TOPIC-QT811 / QT812` 或 QT8.2 等内容性、来源性引用，可以继续作为 provenance 或尚未迁移目标保留；这与 frontmatter 的当前产品标识是两回事。
 
-视图已对齐成熟 RTM 的主要使用场景：
+## 4. 作品池 V2.1
 
-- ★ / ◆ / △
-- 已读 / 未读
-- 内部传统
-- 传统阶段
-- 专题角色
-- T / M / G / Q 交叉视图
-- 待校验
+原 8 部作品保留为“核心参考骨架”，不再代表完整专题书目。
 
-## 3. Reference Topic 1：QC1.1.1
+当前参考实现：
 
-核心 canonical works：
+```text
+QC1.1.1 希伯来—圣经叙事传统 = 20 部
+QC1.1.2 希腊—罗马神话传统 = 20 部
+```
+
+每个专题均通过：
+
+```text
+★ 核心
+◆ 重点
+△ 扩展
+```
+
+组织完整阅读池。20 部是这两个 Reference Topics 的当前合理覆盖量，不是后续 QC 专题必须机械复制的数量。
+
+### QC1.1.1 核心骨架
 
 ```text
 创世记
@@ -88,13 +95,24 @@ Base 现在优先读取 `structure_type_zh`；既有研究正文尚未全部补�
 以赛亚书
 ```
 
-Biblical Books of Kings 与菲尔多西 Shahnameh《列王纪》已经实体消歧，不共享 canonical work。
+新增重点／扩展入口包括：
 
-本地核心文本关系记录已连接中央作品；死海古卷、七十士译本等文本见证继续留在研究／关系层，不强行伪装为普通文学作品。
+```text
+利未记
+民数记
+约书亚记
+士师记
+耶利米书
+以西结书
+箴言
+传道书
+路得记
+以斯帖记
+但以理书
+雅歌
+```
 
-## 4. Reference Topic 2：QC1.1.2
-
-核心 canonical works：
+### QC1.1.2 核心骨架
 
 ```text
 伊利亚特
@@ -104,14 +122,31 @@ Biblical Books of Kings 与菲尔多西 Shahnameh《列王纪》已经实体消�
 俄狄浦斯王
 俄瑞斯忒亚
 埃涅阿斯纪
-奥维德《变形记》
+变形记（奥维德）
 ```
 
-奥维德《变形记》与其他同名作品使用中央作品身份消歧。
+新增重点／扩展入口包括：
 
-## 5. Canvas 验收
+```text
+荷马颂歌
+安提戈涅
+美狄亚
+酒神的女信徒
+阿尔戈英雄纪
+书库（伪阿波罗多洛斯）
+被缚的普罗米修斯
+七将攻忒拜
+特洛伊妇女
+岁时记（奥维德）
+英雄书简
+传说集（许癸努斯）
+```
 
-两套 Canvas 使用相同的稳定产品路径：
+新建中央作品实体若书目元数据尚未完成统一核证，保留 `verification_status: 待核验`，不为了补数量伪造年代或原文题名。
+
+## 5. Canvas 与关系层
+
+两套 Canvas 保持稳定路径：
 
 ```text
 主页
@@ -121,9 +156,11 @@ Biblical Books of Kings 与菲尔多西 Shahnameh《列王纪》已经实体消�
 
 没有把结构相似、比较关系或候选传播画成确定历史传播边。
 
-## 6. scoped metadata 词汇验收
+`20 数据层/10 文本关系` 继续承担 local relation / source witness 职责；抄本、译本和文本见证不强行转为普通作品实体。
 
-V2 冻结四字段：
+## 6. scoped metadata
+
+V2.1 继续冻结四字段：
 
 ```text
 <scope>_priority
@@ -132,27 +169,9 @@ V2 冻结四字段：
 <scope>_role
 ```
 
-优先级词汇固定为：
+优先级固定为 `★ / ◆ / △`，其余字段允许专题内部词汇不同，但语义职责固定。
 
-```text
-★ 核心
-◆ 重点
-△ 扩展
-```
-
-其余三个字段保留专题内部词汇自由，但职责固定，不允许互相替代。
-
-## 7. 非阻塞兼容债务
-
-当前仍允许以下 legacy 信息存在：
-
-1. 既有研究正文中的 `WL-TOPIC-QT811 / QT812` 等 provenance；
-2. 尚未迁移的 QT8.2 作为真实关系目标继续保留旧编号；
-3. 两个 Reference Topics 的部分历史知识页尚未显式补 `structure_type_zh`，当前由目录 fallback 提供等价模块语义。
-
-这些项目不会阻塞 QC1.1 产品层使用，也不应通过全局字符串替换处理。
-
-## 8. 批量复用授权边界
+## 7. 批量复用授权边界
 
 ```text
 QC1.1.3_TO_QC1.1.11_SHELL_REUSE = AUTHORIZED
@@ -161,24 +180,14 @@ SCOPED_METADATA_BLIND_COPY = NOT_AUTHORIZED
 CANONICAL_WORK_TITLE_ONLY_MATCH = NOT_AUTHORIZED
 ```
 
-后续每个传统可以复用 V2 的产品壳、Base 结构与字段职责，但内部文本传统、核心作品、阶段、角色和跨文化关系必须按具体传统重新研究。
+后续每个传统可以复用 V2.1 产品壳、Base 接口与字段职责，但核心文本、内部传统、阶段、角色和作品数量必须按具体传统重新研究。
 
-## 9. Final Status
+## 8. Final Status
 
 ```text
-QC1.1_REFERENCE_LAYER = ACCEPTED
-QC_TRADITION_TOPIC_TEMPLATE_V2 = FROZEN
+QC1.1_REFERENCE_LAYER = ACCEPTED_V2_1
+QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN
 NEXT_RECOMMENDED_SCOPE = QC1.1.3 日耳曼—北欧神话传统
 QT8.2 / QT8.3 = STILL_OUT_OF_SCOPE
-MAIN = UNCHANGED_UNTIL_PR17_MERGE
+MAIN = UPDATED_AND_READY_FOR_LOCAL_REVIEW
 ```
-
-
-## V2.1 本地检查修正
-
-用户本地检查发现两项产品问题后已直接修正：
-
-1. QC1.1.1 / QC1.1.2 的 Structure Base 现与成熟 R/T/M 一致，使用当前 `topic_id` 与显式 `structure_type_zh`，不再依赖目录推断模块。
-2. 两个参考专题的作品池由 8 部“核心参考集”扩为 20 部“核心 + 重点 + 扩展”书目池；8 部不再被解释为完整专题覆盖。
-
-`QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN`
