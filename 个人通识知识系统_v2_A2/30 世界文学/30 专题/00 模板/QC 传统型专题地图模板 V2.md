@@ -9,9 +9,9 @@ validated_by:
   - QC1.1.2 希腊—罗马神话传统
 ---
 
-# QC 传统型专题地图模板 V2
+# QC 传统型专题地图模板 V2.1
 
-> 适用于 QC 中以“某套文化叙事传统如何形成、保存、定型、传播与被重写”为核心问题的专题。V2 统一 RTM 的产品外壳，但保留 QC 自己的内部知识结构和研究数据层。
+> 适用于 QC 中以“某套文化叙事传统如何形成、保存、定型、传播与被重写”为核心问题的专题。V2.1 统一 R/T/M 的产品接口，同时保留 QC 自己的内部知识结构和研究数据层。
 
 ## 1. 固定产品外壳
 
@@ -36,9 +36,7 @@ validated_by:
 
 ### 00 专题主页
 
-回答：专题研究什么、边界在哪里、如何进入结构与阅读。
-
-主页必须直接链接 Canvas、结构 Base、作品 Base，并说明四个知识模块与数据层的职责。
+回答：专题研究什么、边界在哪里、如何进入结构与阅读。主页必须直接链接 Canvas、结构 Base、作品 Base，并说明四个知识模块与数据层的职责。
 
 ### 01 专题地图 Canvas
 
@@ -54,7 +52,12 @@ Canvas 是导航和机制图，不把“结构相似”画成未经证实的历�
 
 ### 02 专题结构 Base
 
-第一视图必须让使用者看懂知识地图，而不是数据库记录。
+结构 Base 与成熟 R/T/M 专题保持同一接口：
+
+- 按当前 `topic_id` 过滤；
+- 直接读取显式 `structure_type_zh`；
+- 使用 `dimension` 作为专题内部语义维度，并可通过公式映射为中文显示；
+- 使用 `sequence / history_position / id` 作为排序与说明字段。
 
 稳定模块词汇：
 
@@ -63,16 +66,17 @@ Canvas 是导航和机制图，不把“结构相似”画成未经证实的历�
 - `母题与跨文化关系`
 - `后世传播与阅读`
 
-新建或正式重构的知识节点应显式维护：
+所有正式 QC 结构节点必须显式维护：
 
 ```yaml
+topic_id: <current QC topic id>
 structure_type_zh: 核心结构 | 内部文本与传统 | 母题与跨文化关系 | 后世传播与阅读
 dimension: <topic-local dimension>
 sequence: <local order>
 history_position: <optional semantic role>
 ```
 
-为兼容既有研究页，Base 可以使用目录位置作为 `structure_type_zh` 缺失时的 fallback；fallback 是迁移兼容机制，不是新专题默认规范。
+**目录位置不再作为正式模块语义来源。** 文件夹只承担物理组织职责；不得以 folder fallback 替代 `topic_id` 或 `structure_type_zh`。
 
 禁止重新使用 `sequence < 20 / 20–29 / 30–39` 作为一级知识模块判定。
 
@@ -89,27 +93,19 @@ qc111_tradition_stage: <传统阶段>
 qc111_role: <专题角色>
 ```
 
-作品 Base 至少提供：
+作品池必须区分“核心骨架”与“完整专题阅读池”：
 
-- 全部作品
-- 核心 ★
-- 重点 ◆
-- 扩展 △
-- 已读 / 未读
-- 按内部传统
-- 按传统阶段
-- 按专题角色
-- 按时间 T
-- 按思潮 M
-- 按类型 G
-- 按主题 Q
-- 待校验
+- `★`：理解该传统不可绕开的核心入口；
+- `◆`：补足内部传统、关键阶段与重要重写；
+- `△`：扩展文本、旁支、背景或接受史入口。
+
+不设机械统一数量，但不得把少量核心参考集直接当成完整专题覆盖。
+
+作品 Base 至少提供：全部作品、核心 ★、重点 ◆、扩展 △、已读 / 未读、按内部传统、按传统阶段、按专题角色、T/M/G/Q 交叉视图与待校验视图。
 
 ## 3. 中央作品与本地关系层
 
-一部作品只在 `40 作品` 保留一个 canonical work 实体。
-
-专题本地关系页应位于：
+一部作品只在 `40 作品` 保留一个 canonical work 实体。专题本地关系页位于：
 
 ```text
 20 数据层/10 文本关系/
@@ -125,8 +121,6 @@ source_status: canonical_aligned
 抄本、译本、文本见证、资料汇编等若不适合作为独立文学作品，不为了让作品 Base 完整而强行转换成 `work`。
 
 ## 4. scoped metadata 规则
-
-每个专题拥有独立前缀，不复用全局神话优先级替代专题判断。
 
 稳定四字段：
 
@@ -158,16 +152,7 @@ source_status: canonical_aligned
 
 ### 12 母题与跨文化关系
 
-负责与 QC 的 motif / archetype / plot_pattern / symbol 等对象连接，并严格区分：
-
-```text
-结构相似
-可能传播
-历史传播
-明确引用
-人物／名称借用
-直接改编
-```
+负责与 QC 的 motif / archetype / plot_pattern / symbol 等对象连接，并严格区分：结构相似、可能传播、历史传播、明确引用、人物／名称借用、直接改编。
 
 ### 13 后世传播与阅读
 
@@ -178,30 +163,25 @@ source_status: canonical_aligned
 一个 QC 传统型专题只有同时满足以下条件才可标记 Product PASS：
 
 1. 四文件产品壳完整且链接有效；
-2. 结构 Base 按语义模块而非 sequence 区间组织；
-3. 作品 Base 查询真实中央作品；
-4. 核心作品具有 scoped metadata；
-5. 可对齐的本地文本关系已连接 canonical work；
-6. 同名作品已完成实体消歧；
-7. Canvas 不包含未经证实的传播边；
-8. 原典／作品阅读与现代支撑研究明确分层；
-9. 历史研究数据可以保留 legacy provenance，但产品层使用当前 QC 编号；
-10. 缺失证据必须显式留空或标记待核证，不为了完整度制造事实。
+2. 结构 Base 按当前 `topic_id` 查询，并由显式 `structure_type_zh` 组织；
+3. 结构节点不依赖目录或 sequence 区间推断一级模块；
+4. 作品 Base 查询真实中央作品；
+5. 作品池具有 ★ / ◆ / △ 分层，且核心集不冒充完整覆盖；
+6. 核心及重点作品具有 scoped metadata；
+7. 可对齐的本地文本关系已连接 canonical work；
+8. 同名作品已完成实体消歧；
+9. Canvas 不包含未经证实的传播边；
+10. 原典／作品阅读与现代支撑研究明确分层；
+11. 历史研究数据可以保留 legacy provenance，但产品层使用当前 QC 编号；
+12. 缺失证据必须显式留空或标记待核证，不为了完整度制造事实。
 
 ## 7. 当前治理状态
 
 ```text
-QC_TRADITION_TOPIC_TEMPLATE_V2 = FROZEN
+QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN
 REFERENCE_TOPIC_1 = QC1.1.1
 REFERENCE_TOPIC_2 = QC1.1.2
+REFERENCE_TOPIC_WORK_POOL = 20 + 20（当前参考实现，不是全局硬性数量标准）
 BULK_REUSE_FOR_QC1.1.3_TO_QC1.1.11 = AUTHORIZED_AFTER_PER_TOPIC_CONTENT_REVIEW
 QT8.2_QT8.3_MIGRATION = OUT_OF_SCOPE
 ```
-
-
-## V2.1 一致性修订
-
-- `02 专题结构.base` 对齐成熟 R/T/M 接口：按 `topic_id` 过滤，直接使用显式 `structure_type_zh` 分组。
-- QC1.1.1 与 QC1.1.2 已回填当前 QC topic id 与显式模块元数据。
-- 正式专题不再把“所在文件夹”作为模块语义的长期来源。
-- 作品池应包含 ★ 核心、◆ 重点、△ 扩展三个层级；核心集用于骨架，不能等同于完整专题书目。
