@@ -1,0 +1,58 @@
+filters:
+  and:
+    - file.folder.contains("30 专题/QC1.1.2 希腊—罗马神话传统")
+    - type != "literature_topic_text_reference"
+formulas:
+  structure_module_zh: if(structure_type_zh, structure_type_zh, if(file.folder.contains("10 核心结构"), "核心结构", if(file.folder.contains("11 内部文本与传统"), "内部文本与传统", if(file.folder.contains("12 母题与跨文化关系"), "母题与跨文化关系", if(file.folder.contains("13 后世传播与阅读"), "后世传播与阅读", "专题入口")))))
+properties:
+  file.name:
+    displayName: 节点
+  formula.structure_module_zh:
+    displayName: 所属模块
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.history_position:
+    displayName: 节点作用
+  note.id:
+    displayName: 编号
+  note.structure_type_zh:
+    displayName: 显式模块元数据
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.structure_module_zh
+      direction: ASC
+    order: [file.name, formula.structure_module_zh, dimension, sequence, history_position, id]
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - formula.structure_module_zh == "核心结构"
+    order: [sequence, file.name, dimension, history_position]
+  - type: table
+    name: 内部文本与传统
+    filters:
+      and:
+        - formula.structure_module_zh == "内部文本与传统"
+    order: [sequence, file.name, dimension, history_position]
+  - type: table
+    name: 母题与跨文化关系
+    filters:
+      and:
+        - formula.structure_module_zh == "母题与跨文化关系"
+    order: [sequence, file.name, dimension, history_position]
+  - type: table
+    name: 后世传播与阅读
+    filters:
+      and:
+        - formula.structure_module_zh == "后世传播与阅读"
+    order: [sequence, file.name, dimension, history_position]
+  - type: table
+    name: 待模块元数据回填
+    filters:
+      and:
+        - structure_type_zh == null
+    order: [file.name, formula.structure_module_zh, dimension, sequence]
