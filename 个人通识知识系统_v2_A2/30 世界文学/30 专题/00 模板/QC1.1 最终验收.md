@@ -2,7 +2,7 @@
 id: WL-QC11-FINAL-ACCEPTANCE
 type: literature_topic_governance
 name: QC1.1 最终验收
-status: PASS_WITH_TRACKED_COMPATIBILITY_DEBT
+status: PASS_AFTER_V2_1_CONSISTENCY_FIX
 reviewed_topics:
   - QC1.1.1
   - QC1.1.2
@@ -172,3 +172,13 @@ NEXT_RECOMMENDED_SCOPE = QC1.1.3 日耳曼—北欧神话传统
 QT8.2 / QT8.3 = STILL_OUT_OF_SCOPE
 MAIN = UNCHANGED_UNTIL_PR17_MERGE
 ```
+
+
+## V2.1 本地检查修正
+
+用户本地检查发现两项产品问题后已直接修正：
+
+1. QC1.1.1 / QC1.1.2 的 Structure Base 现与成熟 R/T/M 一致，使用当前 `topic_id` 与显式 `structure_type_zh`，不再依赖目录推断模块。
+2. 两个参考专题的作品池由 8 部“核心参考集”扩为 20 部“核心 + 重点 + 扩展”书目池；8 部不再被解释为完整专题覆盖。
+
+`QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN`

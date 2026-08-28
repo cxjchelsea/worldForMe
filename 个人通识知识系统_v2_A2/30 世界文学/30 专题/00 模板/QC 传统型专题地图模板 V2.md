@@ -2,7 +2,7 @@
 id: WL-TEMPLATE-QC-TRADITION-V2
 type: literature_topic_template
 name: QC 传统型专题地图模板 V2
-status: FROZEN_V2
+status: FROZEN_V2_1
 scope: QC narrative/cultural tradition topics
 validated_by:
   - QC1.1.1 希伯来—圣经叙事传统
@@ -197,3 +197,11 @@ REFERENCE_TOPIC_2 = QC1.1.2
 BULK_REUSE_FOR_QC1.1.3_TO_QC1.1.11 = AUTHORIZED_AFTER_PER_TOPIC_CONTENT_REVIEW
 QT8.2_QT8.3_MIGRATION = OUT_OF_SCOPE
 ```
+
+
+## V2.1 一致性修订
+
+- `02 专题结构.base` 对齐成熟 R/T/M 接口：按 `topic_id` 过滤，直接使用显式 `structure_type_zh` 分组。
+- QC1.1.1 与 QC1.1.2 已回填当前 QC topic id 与显式模块元数据。
+- 正式专题不再把“所在文件夹”作为模块语义的长期来源。
+- 作品池应包含 ★ 核心、◆ 重点、△ 扩展三个层级；核心集用于骨架，不能等同于完整专题书目。
