@@ -6,35 +6,40 @@ code: QX-GOVERNANCE
 axis: Q
 facet: QX
 status: FROZEN_V1
-source_version: 1.0
+source_version: 1.1
 schema: QX_RELATION_SCHEMA_V1
-pilot_basis: 10 works / 87 relations
+pilot_basis: 10 works / 87 high-recall candidate relations
+precision_policy: ADMISSION_GATE_V1
 ---
 
 # QX 作品意象标注与关系治理规则
 
 > 本文件规定 QX 从作品层采集意象、建立 `作品 → QX 意象` 关系、维护关系属性，并由作品实例反向生长为跨作品专题的统一规则。
 >
-> 本规则基于两轮 Pilot、10 部作品、87 条关系完成审查后冻结为 `QX_RELATION_SCHEMA_V1`。
+> `QX_RELATION_SCHEMA_V1` 的字段结构已冻结；本次 V1.1 不修改字段 schema，只提高**正式入库准入精度**。
 >
-> 核心原则：**作品层保存事实与关系，QX 专题保存跨作品解释；先采集，后归纳；不为了分类完整而制造空节点。**
+> 两轮 Pilot 的 87 条关系应视为 **high-recall candidate set（高召回候选集）**，不是 87 条自动成立的正式关系。正式迁移前必须经过 Precision Review。
+>
+> 核心原则：**作品层保存事实与关系，QX 专题保存跨作品解释；先采集，后归纳；可解释不等于应入库；宁可少而明确，不为完整性制造噪声。**
 
 ---
 
 ## 00｜QX 的定位
 
-QX 不是与 QT / QH / QC 相同的“先验分类树”。
-
-基本工作流：
+QX 不是与 QT / QH / QC 相同的先验分类树。
 
 ```text
 作品阅读
 ↓
-识别值得跨作品比较的具体意象 / 场景 / 物件
+发现可能值得比较的具体意象 / 场景 / 物件
 ↓
-建立 作品 —[HAS_IMAGERY]→ QX 意象 关系
+候选采集（允许高召回）
 ↓
-记录该关系在当前作品中的属性
+Admission Gate 精度审查
+↓
+建立正式 作品 —[HAS_IMAGERY]→ QX 意象 关系
+↓
+记录关系属性
 ↓
 同类意象跨作品聚合
 ↓
@@ -48,121 +53,190 @@ QX 不是与 QT / QH / QC 相同的“先验分类树”。
 因此：
 
 - **作品层 = 数据源**；
-- **HAS_IMAGERY = 关系采集层**；
+- **候选采集 = 高召回层**；
+- **Admission Gate = 精度控制层**；
+- **HAS_IMAGERY = 正式关系层**；
 - **QX 叶节点 = 聚合分析层**；
-- **QX 专题四层结构 = 归纳层**；
 - **IMAGERY_CONSTELLATION 等 = 派生分析层**。
 
 > **QT / QH / QC 更多是“用已有结构理解作品”，QX 更多是“从作品里发现可重复比较的结构”。**
 
 ---
 
-## 01｜什么可以进入 QX
+# 01｜QX 的对象边界
 
-QX 记录作品中具有跨作品比较价值的**可感知对象、空间、场景、自然现象、身体要素、器物、媒介或社会仪式**。
+QX 记录作品中具有跨作品比较价值的**具体可感知对象、空间、场景、自然现象、身体要素、器物、媒介或社会仪式**。
 
-典型对象包括：雨、雪、月亮、海、河、树、森林、鸟、蛇、房屋、门、窗、镜子、街道、火车、身体、血、颜色、光影、火、书、信、手稿、墓地、幽灵、宴会、舞会、葬礼等。
+例如：雨、雪、月亮、海、河、树、森林、鸟、蛇、房屋、门、窗、镜子、街道、火车、血、颜色、光影、火、书、信、手稿、墓地、幽灵、宴会、舞会、葬礼等。
 
-### 01.1 纳入判断
+但必须区分三层：
 
-一个对象至少满足下列任一条件，才值得进入作品的 QX 记录：
+```text
+文本中出现的物象
+↓
+可以进行文学解释的意象
+↓
+值得进入 QX 的显著 / 核心意象
+```
 
-1. 在作品中反复出现；
-2. 出现在关键情节、关键人物或关键空间中；
-3. 明显承担叙事功能，而不是普通背景；
-4. 意义或作用随剧情发生变化；
-5. 与人物身份、关系或命运形成稳定绑定；
-6. 与主题、母题、历史环境或作品结构形成明显连接；
-7. 去掉该对象后，会明显削弱作品的文学辨识度；
-8. 虽只出现少数几次，但对结局、转折或整体解释具有高权重。
+**QX 只记录第三层。**
 
-### 01.2 不纳入
+因此：
 
-默认不记录：
+> **可进行文学解释 ≠ 应进入 QX。**
+
+文学作品中几乎任何物象都可能被解释，但 QX 是结构化跨作品数据层，不是“所有可分析物象”的全集。
+
+作品完全允许：
+
+```text
+QX = 0
+```
+
+这表示“没有达到 QX 正式准入门槛的显著意象”，不表示“作品没有任何文学意象”。
+
+---
+
+# 02｜Formal Admission Gate：正式准入门槛
+
+## 02.1 常规准入：四项至少满足两项
+
+一个候选对象只有在以下四个信号中**至少满足两项**，才进入正式 QX 关系：
+
+### A. recurrence｜重复性
+
+对象在作品中反复出现，且重复本身承担文学或结构作用，而非简单背景重复。
+
+有效例：
+
+- 某对象反复与同一人物、状态或阶段共同出现；
+- 重复形成前后回声；
+- 重复过程中意义或作用发生变化。
+
+仅仅“出现很多次”不自动满足本项。
+
+### B. structural｜结构性
+
+对象参与作品的重要结构：
+
+- 开头 / 结尾；
+- 关键转折；
+- 人物命运节点；
+- 世界状态变化；
+- 重要叙事阶段切换；
+- 关键伏笔、闭环或前后呼应。
+
+### C. binding｜稳定绑定性
+
+对象与以下至少一种对象形成稳定绑定：
+
+- 特定人物；
+- 人物关系；
+- 家族 / 群体；
+- 特定空间；
+- 特定历史阶段；
+- 某种持续身份或生活秩序。
+
+### D. distinctiveness｜作品辨识度
+
+该对象明显参与作品的文学辨识度：
+
+- 提及该对象容易联想到该作品；
+- 拿掉它会明显削弱作品的感知特征、结构特征或人物识别；
+- 它不是该类作品都可以随意替换的普通背景元素。
+
+## 02.2 例外准入：singular_pivotal
+
+出现次数少甚至只有一次的对象，可以不满足“两项规则”，但必须同时满足：
+
+```text
+singular_pivotal = true
+AND
+evidence = clear
+```
+
+即：它虽然不反复，但对关键转折、结局、人物命运或作品解释具有决定性作用。
+
+## 02.3 单项不足
+
+以下情况**单独存在时不够进入 QX**：
+
+- “它出现过”；
+- “它出现很多次”；
+- “它可以象征某种东西”；
+- “它营造了气氛”；
+- “它符合传统象征字典”；
+- “它和主题有一点关系”；
+- “我觉得这个意象很美 / 很有印象”。
+
+这些都只能进入候选层，除非同时满足 Admission Gate 的其他信号。
+
+---
+
+# 03｜明确排除与降级规则
+
+默认 DROP：
 
 - 普通背景性出现；
 - 单纯因为“文本中出现过”就打标签；
-- 无法说明其叙事作用的偶发物件；
-- 仅凭传统象征字典推断，但作品本身没有证据；
-- 为了让作品“至少有几个 QX”而强行补齐；
-- 仅因某对象属于一个 QX 一级类，就把整个一级类挂到作品上。
+- 只有泛化氛围功能、没有独立结构价值的对象；
+- 无法提供作品内 evidence 的对象；
+- 仅凭传统象征字典推断的意义；
+- 为了让作品至少有几个 QX 而补齐的对象；
+- 仅因属于某 QX 一级类就挂入作品的对象。
 
-**作品允许 `QX = 0`。**
-
----
-
-## 02｜数量与提取原则
-
-### 02.1 不设硬性数量上限
-
-QX 不规定每部作品必须标多少，也不设置固定上限。
-
-唯一门槛是：
-
-> **这个对象是否明确、可解释、有文本依据，并且值得未来跨作品比较。**
-
-0 个、2 个、7 个、15 个都可以。数量越多，只意味着需要越严格检查是否混入普通背景元素。
-
-### 02.2 阅读后提取五问
-
-1. 有没有反复出现的具体物象？
-2. 有没有在关键情节出现的天气、空间、身体、器物或场景？
-3. 有没有随剧情发生作用或意义变化的对象？
-4. 有没有与特定人物、家族、群体或地点强绑定的对象？
-5. 有没有一个对象拿掉之后，会明显削弱这部作品的文学辨识度？
-
-### 02.3 高数量作品复核
-
-当一部作品产生大量 QX 关系时，只复核：
-
-1. 是否把“出现过”误当成“有文学功能”；
-2. 是否把同一个对象的不同具体形态错误拆成多个节点；
-3. 是否把 QH 主题、QC 母题或 QT 类型误标成 QX 意象。
-
-通过复核后，数量本身不是问题。
-
----
-
-## 03｜核心关系模型
+优先 REFRAME 而不是直接 KEEP：
 
 ```text
-作品 —[HAS_IMAGERY]→ QX 具体意象
+过粗对象：
+服饰
+身体
+灯光
+植物
+食物
+建筑
 ```
 
-关系不是无属性标签，而应保存该意象**在这部具体作品中如何被使用**。
+如果真正有价值的是具体对象，应改写为更明确粒度，例如：
 
 ```text
-作品
- │
- │ HAS_IMAGERY
- ▼
-QX 具体意象
- │
- ├─ object               归一化对象
- ├─ manifestation        当前作品中的具体呈现形态
- ├─ salience             重要程度
- ├─ function             文学 / 叙事功能
- ├─ meaning              当前作品中的意义
- ├─ perceptual_channel   感知通道
- ├─ mode                 存在 / 运作方式
- ├─ phase                结构位置 / 出现阶段
- ├─ scope                作用对象 / 范围
- ├─ evidence             文本证据
- ├─ qx_id                正式节点编号（条件必填）
- ├─ primary_group        一级导航归属
- └─ note                 补充说明
+“服饰” → 某件反复出现且身份绑定的服饰 / 饰物
+“身体” → 眼睛 / 伤口 / 血 / 手 / 疤痕等明确对象
+“灯光” → 某种稳定灯火场景或特定光源
 ```
 
-- QX 节点回答：**“是什么意象？”**
-- HAS_IMAGERY 属性回答：**“这个意象在这部作品里具体怎么出现、怎么工作？”**
+如果无法具体化，则 DROP。
 
 ---
 
-## 04｜QX_RELATION_SCHEMA_V1
+# 04｜候选层与正式层
 
-### 04.1 三层字段结构
+## 04.1 候选采集允许高召回
 
-#### A｜核心关系层：正式记录必填
+阅读或 Pilot 阶段可以先记录较宽的候选对象，以免遗漏。
+
+候选记录可以包含：
+
+```yaml
+qx:
+  - qx_id: null
+    object: 候选对象
+    primary_group: QXx
+    admission_status: candidate
+    reason: 初步发现理由
+```
+
+候选状态**不代表正式 HAS_IMAGERY 已成立**。
+
+## 04.2 正式关系必须通过 Admission Gate
+
+正式关系要求：
+
+```text
+ADMISSION_GATE = PASS
+```
+
+并满足 V1 核心字段：
 
 ```text
 object
@@ -171,9 +245,56 @@ function
 evidence
 ```
 
-这是 **Minimum Viable QX Relation**。
+## 04.3 Precision Review 决策枚举
 
-#### B｜解释增强层：按实际需要填写
+现有 Pilot 或未来批量候选审查统一使用：
+
+```text
+KEEP
+DROP
+MERGE
+REFRAME
+```
+
+- `KEEP`：满足准入门槛，可转正式关系；
+- `DROP`：可解释，但不够显著 / 稳定，不进入 QX；
+- `MERGE`：与同一对象重复或只是 manifestation 差异，应合并；
+- `REFRAME`：对象粒度或概念不对，需要改成更准确对象后重审。
+
+---
+
+# 05｜数量原则
+
+QX 不设置硬性数量上限。
+
+但正式 QX 的数量由 Admission Gate 自然控制。
+
+因此：
+
+- 0 个可以；
+- 1–3 个很正常；
+- 5–10 个也可能合理；
+- 高密度经典作品可以更多；
+- 数量多本身不是错误，但每一条都必须独立通过 Admission Gate。
+
+不应因为“经典作品很复杂”就默认多标，也不应因为“这本书有很多可解释物象”就全部入库。
+
+---
+
+# 06｜QX_RELATION_SCHEMA_V1
+
+字段 schema 不因本次精度修订改变。
+
+## 06.1 A｜核心关系层：正式记录必填
+
+```text
+object
+salience
+function
+evidence
+```
+
+## 06.2 B｜解释增强层：按实际需要填写
 
 ```text
 manifestation
@@ -184,9 +305,7 @@ phase
 scope
 ```
 
-禁止为了填表而硬填。
-
-#### C｜系统管理层
+## 06.3 C｜系统管理层
 
 ```text
 qx_id
@@ -194,103 +313,56 @@ primary_group
 note
 ```
 
-### 04.2 字段总表
+### 字段总表
 
-| 字段 | 含义 | 类型 | V1 要求 | 控制方式 |
-|---|---|---|---|---|
-| `object` | 归一化的人可读对象名 | string | **必填** | 尽量复用既有名称 |
-| `salience` | 在作品中的重要程度 | enum | **必填** | 严格受控 |
-| `function` | 该对象承担什么文学 / 叙事功能 | list | **必填** | 半受控词表 |
-| `evidence` | 支撑判断的具体文本位置 / 场景 | list | **必填** | 文本事实 |
-| `manifestation` | 该对象在本作中的具体形态 | string/list | 建议填写 | 开放、描述性 |
-| `meaning` | 当前作品赋予或强化的意义 | list | 可选 | 开放但优先复用 |
-| `perceptual_channel` | 主要感知通道 | list | 可选 | 受控词表 |
-| `mode` | 该对象以什么方式存在 / 运作 | list | 可选 | 半受控词表 |
-| `phase` | 主要出现在哪个结构阶段 | list/string | 可选 | 开放 |
-| `scope` | 主要作用于谁 / 什么层面 | list | 可选 | 开放 |
-| `qx_id` | 对应正式 QX 叶节点 | string/null | **节点激活后必填** | 唯一编号 |
-| `primary_group` | 一级导航主归属 | string | 候选阶段建议填写 | QX1–QX20 |
-| `note` | 无法结构化但值得保留的说明 | string | 可选 | 开放 |
-
-### 04.3 统一记录结构
-
-候选对象和正式对象使用同一 schema，不长期维护两套数据模型。
-
-```yaml
-qx:
-  - qx_id: null
-    object: 栗树
-    primary_group: QX4
-    manifestation: 家宅庭院中与家族始祖长期绑定的栗树
-    salience: core
-    function:
-      - 人物塑造
-      - 空间塑造
-      - 记忆触发
-    meaning:
-      - 孤独
-      - 家族记忆
-    perceptual_channel:
-      - visual
-    mode:
-      - recurrent
-      - character_bound
-      - spatial_bound
-    phase:
-      - 中后期
-    scope:
-      - 家族始祖
-      - 家宅
-    evidence:
-      - 人物长期被系于栗树旁，树成为其晚年与家族起源记忆的固定空间锚点
-    note:
-```
-
-正式节点激活后只需回填：
-
-```yaml
-qx_id: QX4.x
-```
+| 字段 | 含义 | V1 要求 |
+|---|---|---|
+| `object` | 归一化对象名 | **必填** |
+| `salience` | 在作品中的重要程度 | **必填** |
+| `function` | 对象怎样参与作品运行 | **必填** |
+| `evidence` | 支撑关系的作品内事实 | **必填** |
+| `manifestation` | 本作中的具体呈现形态 | 建议填写 |
+| `meaning` | 当前作品中的意义 | 可选 |
+| `perceptual_channel` | 感知通道 | 可选 |
+| `mode` | 存在 / 运作方式 | 可选 |
+| `phase` | 主要结构阶段 | 可选 |
+| `scope` | 作用对象 / 尺度 | 可选 |
+| `qx_id` | 正式叶节点编号 | 节点激活后必填 |
+| `primary_group` | QX1–QX20 主归属 | 候选阶段建议填写 |
+| `note` | 补充说明 | 可选 |
 
 ---
 
-## 05｜object 与 manifestation
+# 07｜object 与 manifestation
 
-### 05.1 object
+`object` 回答：
 
-`object` 回答：**跨作品比较时，我们把它视为什么对象？**
+> 跨作品比较时，我们把它视为什么对象？
 
-例如：雨、太阳、镜子、海、火车、房屋、玫瑰。
+`manifestation` 回答：
 
-### 05.2 manifestation
+> 同一个对象在这部作品里具体长什么样？
 
-`manifestation` 回答：**同一个归一化对象，在这部作品中具体长什么样？**
+例如：
 
 ```yaml
 object: 雨
 manifestation: 持续数年的连绵长雨
 ```
 
-```yaml
-object: 太阳
-manifestation: 正午刺眼、灼热并伴随强烈反光的阳光
-```
-
-默认使用：
+默认不要因为：
 
 ```text
-object + manifestation
+春雨 / 秋雨 / 暴雨 / 细雨 / 长雨
 ```
 
-而不是因为“春雨 / 秋雨 / 暴雨 / 细雨 / 长雨”制造大量近义叶节点。
-
-只有当某一变体形成独立、稳定、值得长期追踪的文学传统时，才考虑拆节点。
+就建立多个 QX 节点，而应由 manifestation 表达具体形态。
 
 ---
 
-## 06｜salience：重要程度
+# 08｜salience：正式关系内部的重要程度
 
-只允许：
+受控值：
 
 ```text
 significant
@@ -298,25 +370,35 @@ core
 dominant
 ```
 
-- `significant`：承担明确文学功能，值得比较，但不是作品核心识别结构；
-- `core`：与人物、结构、主题、世界状态或结局高度绑定；
-- `dominant`：极少使用，对象几乎组织作品主要感知世界或意义网络。
+注意：**salience 只在对象通过 Admission Gate 之后使用。**
 
-规则：
+它不是准入评分。
 
-- 不设置 `low / incidental`；普通出现直接不进入 QX；
-- `dominant` 必须谨慎；
-- 同一作品可以有多个 `core`，但每个必须有独立证据。
+### significant
+
+已经通过正式准入门槛，具有稳定、明确、值得跨作品比较的独立作用，但不是作品核心识别结构。
+
+> V1.1 对 `significant` 的门槛高于 Pilot 阶段。
+
+### core
+
+与人物、结构、主题、世界状态或结局高度绑定，是理解作品的重要入口。
+
+### dominant
+
+极少使用；对象几乎组织作品主要感知世界或意义网络。
+
+不设置 `incidental / low`。达不到 significant 的对象直接不进入正式 QX。
 
 ---
 
-## 07｜function：文学 / 叙事功能
+# 09｜function：QX 的核心可计算属性
 
-`function` 回答：**这个对象在作品运行过程中具体做了什么？**
+`function` 回答：
 
-function 是 QX V1 最重要的可计算属性之一。
+> **这个对象在作品运行过程中具体做了什么？**
 
-### 07.1 半受控词表
+半受控词表：
 
 环境与世界：
 
@@ -360,50 +442,43 @@ function 是 QX V1 最重要的可计算属性之一。
 - `对照 / 反讽`
 - `仪式化`
 
-### 07.2 多值规则
+一个对象允许多个 function，但不要机械穷举。
 
-一个意象允许多个 function，但不要机械穷举。若数量过多，应检查是否把 `meaning`、`mode` 或普通后果混入 function。
+特别注意：
 
-### 07.3 function 与 meaning
+> **单独只有 `氛围塑造` 通常不足以通过 Admission Gate。**
+
+它需要同时具备重复、结构、绑定或辨识度等更强证据。
+
+---
+
+# 10｜meaning：OPTIONAL
+
+`meaning` 回答：
+
+> 当前作品语境中，这个对象承载、唤起或强化什么？
+
+meaning 不是必填。
+
+对象可以首先是物质条件、空间条件、技术条件或身体条件，而没有稳定象征意义。
+
+禁止固定象征字典：
 
 ```text
-雨
-function = 情绪外化
-meaning = 悲伤 / 压抑
+雨 ≠ 自动等于洗涤
+蛇 ≠ 自动等于邪恶
+白 ≠ 自动等于纯洁
 ```
 
-- function 描述**怎么工作**；
-- meaning 描述**表达什么**。
+没有明确作品内证据时，宁缺毋滥。
 
 ---
 
-## 08｜meaning：作品内意义
+# 11｜perceptual_channel
 
-V1 状态：**OPTIONAL**。
+V1 不新增 `QX21 感官`。
 
-部分意象首先是强物质条件、空间条件、技术条件或身体条件，不必承担稳定象征意义。
-
-合法示例：
-
-```yaml
-object: 冰层
-function:
-  - 阻碍
-  - 人物行动条件
-meaning: []
-```
-
-meaning 开放但优先复用已有词；禁止使用固定象征字典自动推断。
-
-没有明确意义时，**宁缺毋滥**。
-
----
-
-## 09｜perceptual_channel：感知通道
-
-V1 不新增 `QX21 感官` 一级分类，而把感官作为关系属性处理。
-
-### 09.1 受控值
+受控值：
 
 ```text
 visual
@@ -415,32 +490,11 @@ thermal
 bodily
 ```
 
-### 09.2 示例
-
-```yaml
-object: 太阳
-primary_group: QX2
-perceptual_channel:
-  - visual
-  - thermal
-  - bodily
-```
-
-```yaml
-object: 香气
-perceptual_channel:
-  - olfactory
-```
-
-规则：
-
-- 描述体验方式，不决定对象主归属；
-- 一个对象可有多个通道；
-- 只有感官维度有解释价值时再记录。
+它描述体验方式，不决定对象主归属。
 
 ---
 
-## 10｜mode：存在 / 运作方式
+# 12｜mode
 
 V1 词表：
 
@@ -457,398 +511,275 @@ ritualized
 singular_pivotal
 ```
 
-定义：
+其中 `singular_pivotal` 可以触发 Admission Gate 的例外路径，但必须有明确 evidence。
 
-- `recurrent`：反复出现；
-- `climactic`：集中于高潮或重大转折；
-- `character_bound`：与特定人物稳定绑定；
-- `relation_bound`：与特定人物关系绑定；
-- `spatial_bound`：与特定空间绑定；
-- `period_bound`：与作品某一阶段绑定；
-- `transformative`：作用或意义随剧情变化；
-- `contrastive`：通过前后、人物或空间对照运作；
-- `ritualized`：以仪式、重复动作或习惯化场景出现；
-- `singular_pivotal`：出现次数少，但承担决定性转折。
-
-允许多值。
-
-### 10.1 title_bound 不进入 V1
-
-题名关系描述的是作品命名层显著性，不属于意象在叙事内部如何运作。如重要，可通过 `salience + note + evidence` 记录。
+`title_bound` 不进入 V1。
 
 ---
 
-## 11｜phase 与 scope
+# 13｜phase 与 scope
 
-### phase
+`phase` 可使用：开篇、前期、战争阶段、繁盛期、身份转换后、结尾、回忆层、梦境层等自然语言。
 
-可使用自然语言，例如：开篇、战争阶段、家族繁盛期、身份转换后、结尾、回忆层、梦境层、某一叙事线。
+`scope` 回答对象主要作用于谁 / 什么尺度，可写：人物、关系、家族、房屋、城镇、群体、制度、社会、世界或具体名称。
 
-没有解释价值可以省略。
-
-### scope
-
-回答：**这个意象主要作用于谁、什么关系或什么尺度？**
-
-可使用：人物、人物关系、家族、房屋 / 场所、城镇、群体、阶层、制度、社会、文明 / 世界，或具体名称。
+两者均为可选。
 
 ---
 
-## 12｜evidence：证据
+# 14｜evidence：REQUIRED
 
-V1 状态：**REQUIRED**。
-
-`evidence` 是正式 QX 关系的必填字段，是防止过度阐释和保证未来可复核性的核心质量门。
+`evidence` 是正式 QX 关系的必填字段，也是 Admission Gate 的基础。
 
 证据可以是：
 
-- 具体章节 / 回目；
 - 关键场景；
 - 反复发生的事件；
 - 与人物绑定的动作；
-- 开头与结尾的结构呼应；
-- 可定位的文本描述。
+- 开头 / 结尾呼应；
+- 结构转折；
+- 可定位文本事实。
 
 不要求逐字摘录。
 
-```yaml
-evidence:
-  - 连续降雨覆盖马孔多后期生活并伴随城镇衰败
-  - 雨停之后空间和生活秩序已无法恢复到原状
+证据等级可内部区分：
+
+```text
+direct
+strong_inference
+speculative
 ```
 
-需要时可内部区分：
-
-- `direct`
-- `strong_inference`
-- `speculative`
-
-`speculative` 不进入正式结构化关系，最多留在 note。
+`speculative` 不进入正式结构化关系，最多进入 note。
 
 ---
 
-## 13｜qx_id 与专题激活
+# 15｜qx_id 与专题激活
 
-### 13.1 qx_id 条件必填
-
-- 尚未激活正式叶节点：`qx_id: null`；
-- 正式 QX 叶节点创建后：必须回填 `qx_id`；
+- 未激活正式叶节点：`qx_id: null`；
+- 正式叶节点创建后：必须回填 `qx_id`；
 - 禁止伪造编号。
 
-### 13.2 候选与正式关系使用同一 schema
+专题原则上要求：
 
-候选对象仍使用正式关系结构，只是：
+- 同一对象至少出现于 3 部**已经通过 Admission Gate 的正式作品关系**；
+- 且至少存在两种有意义的使用方式 / 功能 / 语义变体。
 
-```yaml
-qx_id: null
-primary_group: QX4
-```
-
-这样节点激活后只需回填编号。
-
-### 13.3 专题激活门槛
-
-原则上，同一对象需：
-
-- 至少出现于 **3 部可比较作品**；
-- 且至少存在两种有意义的使用方式、语义或功能变体；
-
-才激活正式 QX 叶节点专题。
-
-文学史价值极强或明确希望长期追踪的对象，可提前建立 `CANDIDATE` 专题，但不得假装已有跨作品结论。
+Pilot 候选数量不计入激活门槛，只有 Precision Review 后的 KEEP 才计入。
 
 ---
 
-## 14｜作品粒度：最小独立叙事单元原则
+# 16｜作品粒度
 
 默认：
 
-> **QX 标注到最小的独立叙事 Work。**
-
-若一个意象只属于小说集中的某一短篇，应建立：
-
-```text
-短篇 A —HAS_IMAGERY→ 意象
-```
-
-而不是：
-
-```text
-整本小说集 —HAS_IMAGERY→ 意象
-```
-
-否则会制造不同篇章之间的假共现。
-
-只有存在明确 collection-level evidence，例如对象贯穿多篇、作为全书框架意象、参与集子整体结构，才允许集子层关系。
-
 ```text
 WORK_GRANULARITY_DEFAULT = SMALLEST_INDEPENDENT_NARRATIVE_UNIT
-COLLECTION_LEVEL_RELATION = REQUIRES_COLLECTION_LEVEL_EVIDENCE
 ```
 
----
+小说集 / 短篇集应优先标到具体单篇 Work。
 
-## 15｜QX 专题四层结构
-
-正式叶节点按作品数据反向归纳：
-
-1. **对象本体**：我们究竟在观察什么；
-2. **文学功能**：它在不同作品里如何工作；
-3. **作品实例**：在哪些作品里实际做了什么；
-4. **跨作品模式**：积累足够实例后，能归纳出哪些重复使用模式。
-
-跨作品模式必须从作品实例长出来，不预设固定分类。
+只有存在明确 collection-level evidence，才允许集子层 HAS_IMAGERY。
 
 ---
 
-## 16｜与 QT / QH / QC 的边界
+# 17｜与 QT / QH / QC 的边界
 
 - **QT**：这是什么类型的故事？
 - **QH**：作品究竟在思考什么？
 - **QC**：哪些母题、原型和叙事模式跨文化反复出现？
-- **QX**：哪些具体可感知对象值得跨作品比较，它们如何运作？
-
-示例：
+- **QX**：哪些具体可感知对象达到显著性门槛，它们如何运作？
 
 ```text
-洪水（QX：可感知的水灾 / 场景）
-        ↓ 可连接
-洪水毁灭—重生母题（QC）
+洪水（QX：具体水灾 / 场景）
+↓
+洪水毁灭—重生（QC：母题）
 ```
 
-QX 的 `meaning` 可以连接 QH，但不能自动替代 QH。
+QX 的 meaning 可以连接 QH，但不能自动替代 QH。
 
 ---
 
-## 17｜对象粒度与归属治理
+# 18｜对象粒度与归属
 
-### 17.1 不要过粗
+### 不要过粗
 
-“水 / 动物 / 植物 / 建筑 / 颜色”更适合作为导航类，而不是具体叶节点。
+```text
+水 / 动物 / 植物 / 建筑 / 颜色
+```
 
-### 17.2 不要过细
+通常只适合导航类。
 
-同一对象的形态差异优先由 `manifestation` 表达。
+### 不要过细
 
-### 17.3 同义词
+同一对象不同形态优先由 manifestation 表达。
 
-统一主名称，例如：
+### 同义词
+
+统一主名称：
 
 ```text
 铁路列车 / 火车 → 火车
 ```
 
-原文具体说法进入 manifestation 或 evidence。
+### 主归属 + 交叉连接
 
-### 17.4 主归属 + 交叉连接
-
-每个对象只设一个 `primary_group`，但允许连接其他 QX 类。分类主归属用于导航，不代表语义互斥。
+每个对象设一个 `primary_group`，但允许连接其他 QX 类。
 
 ---
 
-## 18｜感官问题的最终治理
+# 19｜QX 专题四层结构
 
-V1 **不新增 QX21 感官与感觉**。
+正式叶节点按通过精度审查的作品数据反向归纳：
 
-统一使用 `perceptual_channel` 表达视觉、听觉、嗅觉、味觉、触觉、温度与身体体验。
+1. **对象本体**；
+2. **文学功能**；
+3. **正式作品实例**；
+4. **跨作品模式**。
 
-若未来大规模数据证明纯感官对象无法稳定归入 QX1–QX20，再重新评估导航分类，但 V1 不扩轴。
+跨作品模式必须从 KEEP 后的正式关系长出来，不从高召回 Pilot 候选直接归纳。
 
 ---
 
-## 19｜IMAGERY_CONSTELLATION：意象簇
-
-`IMAGERY_CONSTELLATION` 表示多个 QX 对象在同一作品中形成的稳定组合或共同感知世界。
-
-例如未来可能从数据中发现：
-
-```text
-夜 + 银河 + 星光 + 列车 + 河流
-→ 夜间宇宙旅程意象簇
-```
-
-V1 状态：
+# 20｜IMAGERY_CONSTELLATION
 
 ```text
 IMAGERY_CONSTELLATION.type = derived_structure
 IMAGERY_CONSTELLATION.manual_annotation = PROHIBITED
 ```
 
-即：不作为作品级必填字段，不要求人工直接命名，应从多条 `HAS_IMAGERY` 关系中计算、聚类或归纳产生。人工可以审阅、命名和解释派生结果。
+意象簇由多条正式 HAS_IMAGERY 关系计算 / 聚类 / 归纳产生，不作为人工底层标签。
 
 ---
 
-## 20｜作品距离中的 QX 使用原则
+# 21｜作品距离中的 QX
 
-QX 可以参与未来作品距离计算，但不得只按“共有对象”计算。
+QX 可以参与作品距离，但不得只按共有 object 计算。
 
-潜在特征可包括：
-
-```text
-对象相似度
-+ manifestation 相似度
-+ function 相似度
-+ meaning 相似度（有值时）
-+ perceptual_channel 相似度
-+ mode 相似度
-+ phase / scope 结构相似度
-```
-
-例如：
+可使用：
 
 ```text
-作品 A：雨 → 衰败 → 世界状态
-作品 B：雪 → 衰败 → 世界状态
+object similarity
++ manifestation similarity
++ function similarity
++ meaning similarity（有值时）
++ perceptual_channel similarity
++ mode similarity
++ phase / scope similarity
 ```
 
-即使对象不同，也可能具有很高的功能结构相似性。
+其中：
 
-> **function 是 QX 距离计算中的核心特征；meaning 是增强特征，不应因缺失而惩罚作品。**
+> **function 是核心特征；meaning 是增强特征；DROP 的候选关系不得进入距离计算。**
+
+提高 Admission Gate 精度也是为了避免“雨 / 房屋 / 门 / 路 / 夜”等高频普通对象变成低信息 hub，污染作品距离。
 
 ---
 
-## 21｜正式标注质量检查
+# 22｜正式标注质量检查
 
-### 对象检查
+## A. Admission Gate
 
-- [ ] 是否是具体可感知对象 / 空间 / 场景 / 媒介 / 身体要素？
-- [ ] 是否值得跨作品比较，而不是普通背景？
-- [ ] 是否与已有 object 重复或仅是 manifestation 差异？
+- [ ] 是否满足 recurrence / structural / binding / distinctiveness 中至少两项？
+- [ ] 若不满足两项，是否属于有明确证据的 `singular_pivotal`？
+- [ ] 是否只是“可解释”，但还不够显著？若是，DROP。
 
-### 关系检查
+## B. 对象
 
-- [ ] `salience` 是否符合三级定义？
-- [ ] `function` 是否描述“怎么工作”而不是“表达什么”？
-- [ ] `evidence` 是否足以让未来的自己复核？
-- [ ] `meaning` 若填写，是否有作品内证据？
-- [ ] 可选字段是否真的增加解释力，而不是为了填表？
+- [ ] 是否为具体可感知对象 / 空间 / 场景 / 媒介 / 身体要素？
+- [ ] 是否过粗，需要 REFRAME？
+- [ ] 是否与已有 object 重复，只是 manifestation 不同，需要 MERGE？
 
-### 边界检查
+## C. 关系
 
-- [ ] 是否误把 QH 主题当成 QX？
-- [ ] 是否误把 QC 母题 / 原型 / plot pattern 当成 QX？
-- [ ] 是否误把 QT 类型当成 QX？
-- [ ] 小说集是否错误在 Collection 层制造了单篇之间的假共现？
+- [ ] salience 是否在通过准入后才赋值？
+- [ ] function 是否描述“怎么工作”？
+- [ ] evidence 是否足够未来复核？
+- [ ] meaning 若填写，是否有作品内证据？
+- [ ] 可选字段是否真的增加解释力？
 
-### 节点治理检查
+## D. 边界
+
+- [ ] 是否误把 QH / QC / QT 当成 QX？
+- [ ] 小说集是否错误制造单篇间假共现？
+
+## E. 节点治理
 
 - [ ] 没有正式叶节点时是否保持 `qx_id: null`？
-- [ ] 是否填写了合理 `primary_group`？
-- [ ] 是否避免仅因一个作品出现就创建正式 QX 叶节点？
+- [ ] 是否填写合理 primary_group？
+- [ ] 专题激活统计是否只使用 Precision Review 后 KEEP 的关系？
 
 ---
 
-## 22｜V1 完整示例
-
-```yaml
-qx:
-  - qx_id: QX1.1
-    object: 雨
-    primary_group: QX1
-    manifestation: 持续数年的连绵长雨
-    salience: dominant
-    function:
-      - 世界状态
-      - 时间标记
-      - 空间塑造
-      - 结构标记
-    meaning:
-      - 衰败
-      - 停滞
-      - 历史断裂
-    perceptual_channel:
-      - visual
-      - auditory
-      - tactile
-    mode:
-      - recurrent
-      - period_bound
-      - transformative
-    phase:
-      - 后期
-    scope:
-      - 马孔多
-      - 布恩迪亚家族
-    evidence:
-      - 持续降雨覆盖马孔多后期生活并伴随城镇秩序崩解
-      - 雨停后原有生活世界没有恢复
-    note:
-```
-
-最低正式关系：
-
-```yaml
-qx:
-  - qx_id: null
-    object: 某意象
-    primary_group: QXx
-    salience: significant
-    function:
-      - 某一明确功能
-    evidence:
-      - 可复核的关键场景或结构事实
-```
-
----
-
-## 23｜Schema 冻结状态
+# 23｜Pilot Precision Review 规则
 
 两轮 Pilot：
 
 ```text
 TOTAL_PILOT_WORKS = 10
 TOTAL_PILOT_RELATIONS = 87
+PILOT_RELATION_STATUS = HIGH_RECALL_CANDIDATE_SET
 ```
 
-V1 Review 决议：
+因此这 87 条不得直接迁入正式作品库。
+
+下一步必须逐条执行：
 
 ```text
-object = KEEP / REQUIRED
-salience = KEEP / REQUIRED
-function = KEEP / REQUIRED
-evidence = KEEP / REQUIRED
-manifestation = ADD / OPTIONAL_RECOMMENDED
-meaning = KEEP / OPTIONAL
-perceptual_channel = ADD / OPTIONAL
-mode = KEEP / OPTIONAL
-phase = KEEP / OPTIONAL
-scope = KEEP / OPTIONAL
-qx_id = KEEP / CONDITIONAL_REQUIRED
-primary_group = KEEP / MANAGEMENT_FIELD
-note = KEEP / OPTIONAL
-title_bound = REJECTED_FROM_MODE
-quantity_cap = NONE
+KEEP / DROP / MERGE / REFRAME
 ```
 
-作品粒度：
+正式迁移只允许：
 
 ```text
-WORK_GRANULARITY_DEFAULT = SMALLEST_INDEPENDENT_NARRATIVE_UNIT
-COLLECTION_LEVEL_RELATION = REQUIRES_COLLECTION_LEVEL_EVIDENCE
+KEEP
++ REFRAME 后重新 PASS
++ MERGE 后保留的统一关系
 ```
 
-派生结构：
+目标不是维持某个数量，而是提高 precision。
 
-```text
-IMAGERY_CONSTELLATION = DERIVED_ONLY
-MANUAL_ANNOTATION = PROHIBITED
-```
+预期允许出现：
 
-最终状态：
+- 某作品保留 8–10 条；
+- 某作品只保留 2–3 条；
+- 某作品最终为 0 条。
+
+这都是正常结果。
+
+---
+
+# 24｜V1.1 状态
+
+字段 schema：
 
 ```text
 QX_RELATION_SCHEMA_V1 = FROZEN
-QX_TOPIC_GROWTH_MODEL = ACTIVE
-MASS_ANNOTATION = AUTHORIZED_UNDER_V1
+SCHEMA_FIELDS_CHANGED = NO
 ```
 
-V1 冻结意味着：
+准入治理：
 
-- 可以开始正式作品标注；
-- 可以把 Pilot 数据逐步迁入作品库；
-- 新作品不得随意增加底层必填字段；
-- 若未来出现真实缺口，应以 V1.x 变更记录修订，而不是在单个作品中私自扩展 schema；
-- QX1–QX20 导航分类仍可按实际材料轻量维护，不等于关系 schema 永久不可演化。
+```text
+ADMISSION_GATE_V1 = ACTIVE
+PRECISION_FIRST = TRUE
+QUANTITY_CAP = NONE
+QX_ZERO_ALLOWED = TRUE
+```
+
+Pilot：
+
+```text
+PILOT_001 = HIGH_RECALL_INPUT
+PILOT_002 = HIGH_RECALL_INPUT
+PRECISION_REVIEW = REQUIRED_BEFORE_MIGRATION
+```
+
+正式大规模标注：
+
+```text
+MASS_ANNOTATION = AUTHORIZED_ONLY_UNDER_ADMISSION_GATE_V1
+```
 
 ---
 
