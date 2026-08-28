@@ -9,6 +9,14 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
+  note.selfhood_role:
+    displayName: 专题角色
+  note.selfhood_priority:
+    displayName: 优先级
+  note.selfhood_dimensions:
+    displayName: 主体性问题维度
+  note.selfhood_note:
+    displayName: 专题价值
   note.topic_links:
     displayName: 专题
   note.topics:
@@ -23,25 +31,58 @@ properties:
     displayName: 类型
   note.axis_q:
     displayName: 主题
-  note.selfhood_dimensions:
-    displayName: 主体性问题维度
   note.id:
     displayName: 编号
 views:
   - type: table
     name: 全部作品
+    groupBy:
+      property: selfhood_role
+      direction: ASC
     order:
       - file.name
       - author
+      - selfhood_role
+      - selfhood_priority
       - read_status
-      - topic_links
       - selfhood_dimensions
+      - selfhood_note
       - axis_t
       - axis_r
       - axis_m
       - axis_g
       - axis_q
       - id
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - selfhood_role == "骨架"
+    order:
+      - file.name
+      - author
+      - selfhood_priority
+      - read_status
+      - selfhood_dimensions
+      - selfhood_note
+      - axis_t
+      - axis_r
+  - type: table
+    name: 比较与边界
+    filters:
+      or:
+        - selfhood_role == "比较"
+        - selfhood_role == "边界测试"
+    order:
+      - file.name
+      - author
+      - selfhood_role
+      - selfhood_priority
+      - read_status
+      - selfhood_dimensions
+      - selfhood_note
+      - axis_t
+      - axis_r
   - type: table
     name: 未读
     filters:
@@ -50,12 +91,11 @@ views:
     order:
       - file.name
       - author
+      - selfhood_role
+      - selfhood_priority
       - selfhood_dimensions
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
   - type: table
     name: 已读
     filters:
@@ -66,9 +106,8 @@ views:
     order:
       - file.name
       - author
+      - selfhood_role
+      - selfhood_priority
       - selfhood_dimensions
       - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
