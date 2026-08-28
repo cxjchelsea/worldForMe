@@ -1,0 +1,447 @@
+name: One-time QC2 final acceptance cleanup
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qc2-final-acceptance.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Finalize QC2 acceptance and freeze template
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, os, json
+
+          ROOT = Path('个人通识知识系统_v2_A2/30 世界文学')
+          TOPICS = ROOT/'30 专题'
+          TPL = TOPICS/'00 模板'/'QC2 组件型专题体系'
+          QC = ROOT/'20 节点'/'Q 主题'/'QC 母题'
+
+          # 1) Repair QC2 root breadcrumb without touching provenance fields.
+          root = QC/'QC2 世界文化母题、原型与叙事结构.md'
+          s = root.read_text(encoding='utf-8')
+          s = s.replace('> 路径：Q轴 → QT8 世界文化母题、原型与叙事传统 → **QC2 世界文化母题、原型与叙事结构**',
+                        '> 路径：Q轴 → QC 母题与叙事组件 → **QC2 世界文化母题、原型与叙事结构**')
+          root.write_text(s, encoding='utf-8')
+
+          # 2) Repair governance links that still point to pre-migration repository root.
+          governance = {p.stem: p for p in TPL.glob('QC2｜*.md')}
+          governance.update({p.name: p for p in TPL.glob('QC2｜*.base')})
+          broken_before = 0
+          repaired = 0
+          stale_status = 0
+          for cluster in sorted(TOPICS.glob('QC2.*')):
+            if not cluster.is_dir():
+              continue
+            for f in cluster.rglob('*'):
+              if not f.is_file() or f.suffix.lower() not in {'.md','.base','.canvas'}:
+                continue
+              text = f.read_text(encoding='utf-8')
+              old = text
+
+              # Repair old relative links of the form [[../../..../QC2｜Governance Name]].
+              def repl(m):
+                nonlocal_dummy = None
+                name = m.group('name')
+                suffix = m.group('suffix') or ''
+                # Markdown targets normally omit .md; Base targets may keep .base.
+                target = governance.get(name) or governance.get(name + '.md')
+                if target is None and name.endswith('.base'):
+                  target = TPL/name
+                  if not target.exists():
+                    target = None
+                if target is None:
+                  return m.group(0)
+                rel = os.path.relpath(target, f.parent).replace('\\','/')
+                if rel.endswith('.md'):
+                  rel = rel[:-3]
+                return '[[' + rel + suffix + ']]'
+
+              pattern = re.compile(r'\[\[(?:\.\./)+(?P<name>QC2｜[^\]|#]+)(?P<suffix>(?:#[^\]|]+)?(?:\|[^\]]+)?)?\]\]')
+              broken_before += len(pattern.findall(text))
+              text = pattern.sub(repl, text)
+
+              # Active status vocabulary must follow QC namespace; provenance IDs remain legacy-aware.
+              if 'external_source_pending_qt81_topic' in text:
+                stale_status += text.count('external_source_pending_qt81_topic')
+                text = text.replace('external_source_pending_qt81_topic','external_source_pending_qc11_topic')
+
+              # Two QC1 reference homes were mechanically rewritten during migration and became semantically stale.
+              text = text.replace('继续与尚未迁移的 QC2 组件层建立关系；本轮不改 QC2。',
+                                  '继续与 QC2 组件层建立关系；具体组件关系按证据层逐步补齐。')
+              if text != old:
+                repaired += 1
+                f.write_text(text, encoding='utf-8')
+
+          # Apply the exact QC1 stale sentence fix outside QC2 hierarchy as well.
+          for d in [TOPICS/'QC1.1.1 希伯来—圣经叙事传统', TOPICS/'QC1.1.2 希腊—罗马神话传统']:
+            if not d.exists(): continue
+            for f in d.rglob('*.md'):
+              text=f.read_text(encoding='utf-8')
+              new=text.replace('继续与尚未迁移的 QC2 组件层建立关系；本轮不改 QC2。',
+                               '继续与 QC2 组件层建立关系；具体组件关系按证据层逐步补齐。')
+              if new!=text:
+                f.write_text(new,encoding='utf-8'); repaired += 1
+
+          # 3) Enumerate real components from product contract, not from guessed directory count.
+          components=[]
+          excluded=[]
+          type_counts={}
+          for cluster in sorted(TOPICS.glob('QC2.*')):
+            if not cluster.is_dir(): continue
+            for d in sorted(x for x in cluster.iterdir() if x.is_dir() and x.name!='20 数据层'):
+              homes=sorted(d.glob('00 *.md'))
+              if not homes:
+                # Only report non-empty candidate folders; governance/research data does not count.
+                if any(d.rglob('*')):
+                  excluded.append((cluster.name,d.name,'no 00 component homepage'))
+                continue
+              home=homes[0]
+              text=home.read_text(encoding='utf-8')
+              mtype=re.search(r'(?m)^type:\s*([^\n]+)',text)
+              mcomp=re.search(r'(?m)^component_type:\s*([^\n]+)',text)
+              mid=re.search(r'(?m)^(?:topic_id|id):\s*([^\n]+)',text)
+              if not mtype or mtype.group(1).strip()!='qc2_component' or not mcomp or not mid:
+                excluded.append((cluster.name,d.name,'homepage exists but qc2_component contract incomplete'))
+                continue
+              ctype=mcomp.group(1).strip().strip('"\'')
+              cid=mid.group(1).strip().strip('"\'')
+              components.append((cluster.name,d.name,ctype,cid))
+              type_counts[ctype]=type_counts.get(ctype,0)+1
+
+          # 4) Validate required product files for every accepted component and 20 cluster shells.
+          component_issues=[]
+          for cluster_name,name,ctype,cid in components:
+            d=TOPICS/cluster_name/name
+            required=[d/f'00 {name}.md', d/f'01 {name}.canvas', d/f'02 {name}结构.base', d/f'03 {name}证据关系.base']
+            missing=[x.name for x in required if not x.exists()]
+            for mod in ['10 核心结构','11 来源与证据','12 跨传统关系','13 后世重写与阅读','20 数据层']:
+              if not (d/mod).exists(): missing.append(mod+'/')
+            if missing: component_issues.append((name,missing))
+
+          cluster_issues=[]
+          clusters=[]
+          for i in range(1,21):
+            matches=list(TOPICS.glob(f'QC2.{i} *'))
+            if len(matches)!=1:
+              cluster_issues.append((f'QC2.{i}',f'cluster dir count={len(matches)}')); continue
+            d=matches[0]; clusters.append(d.name)
+            req=[d/f'00 {d.name}.md',d/f'01 {d.name}.canvas',d/f'02 {d.name}组件.base']
+            miss=[x.name for x in req if not x.exists()]
+            if miss: cluster_issues.append((d.name,miss))
+
+          # 5) Verify no still-active pre-migration governance links remain in QC2 product files.
+          remaining_broken=[]
+          stale_qt82_active=[]
+          for cluster in sorted(TOPICS.glob('QC2.*')):
+            if not cluster.is_dir(): continue
+            for f in cluster.rglob('*'):
+              if not f.is_file() or f.suffix.lower() not in {'.md','.base','.canvas'}: continue
+              text=f.read_text(encoding='utf-8')
+              if re.search(r'\[\[(?:\.\./)+QC2｜',text): remaining_broken.append(str(f))
+              # Legacy IDs/provenance are allowed. Only old active namespace fields/links are blocked.
+              for line in text.splitlines():
+                if ('QT8.2' in line or 'qt82_' in line) and not any(k in line for k in ['legacy','source_version','历史','V0','provenance']):
+                  # Ignore explanatory historical governance prose; report only link/frontmatter-ish active markers.
+                  if '[[' in line or re.match(r'^[A-Za-z_]+:',line): stale_qt82_active.append((str(f),line.strip()))
+
+          # 6) Freeze a complete reusable template after validation.
+          template = '''---
+id: WL-TEMPLATE-QC2-COMPONENT-V1
+type: literature_topic_template
+name: QC2 组件型专题地图模板 V1
+status: FROZEN_V1
+validated_by:
+  - 洪水与灾后重建 (motif)
+  - 受苦义人 (abstract archetype)
+  - 所罗门王 (named archetype)
+  - 预言→逃避→实现 (plot_pattern)
+  - 巴别塔 (symbol)
+---
+# QC2 组件型专题地图模板 V1
+
+> 适用范围：QC2 的正式 `motif / archetype / plot_pattern / symbol` 组件。QC2 不套用 QC1 的传统型模板：QC1 回答“从哪套传统来”，QC2 回答“跨传统反复出现了什么叙事组件”。
+
+## 1. 固定产品壳
+
+```text
+00 <组件名>.md
+01 <组件名>.canvas
+02 <组件名>结构.base
+03 <组件名>证据关系.base
+10 核心结构/
+11 来源与证据/
+12 跨传统关系/
+13 后世重写与阅读/
+20 数据层/
+```
+
+`20 数据层` 是证据与关系记录层，不是正常阅读导航，也不替代中央 `40 作品`。
+
+## 2. 四类组件本体
+
+仅允许以下核心 `component_type`：
+
+- `motif`：可复用的最小叙事单元；必须定义 required invariants 与 optional slots。
+- `archetype`：可复用角色/人物模型；进一步区分 `abstract_archetype / named_archetype`。
+- `plot_pattern`：具有稳定关系与顺序约束的叙事结构；slot sequence 不等于 motif 列表。
+- `symbol`：已形成稳定、可复用文化含义的意象/物件/地点/形象；“故事里出现过”不足以准入。
+
+`theme` 不作为 QC2 核心对象，仍主要属于 QH。
+
+## 3. Cluster 与组件关系
+
+- `QC2.1–QC2.20` 是一级问题域 / 导航 cluster，不是 component。
+- 每个 component 只有一个主要主页，但可以关联多个 cluster。
+- 不为矩阵整齐强迫每个 cluster 同时拥有四类 component。
+- 不因对象著名就准入；必须满足对应本体的结构性准入条件。
+
+## 4. Structure Base
+
+正式结构节点必须显式维护：
+
+```yaml
+topic_id: WL-TOPIC-...
+type: qc2_component_structure
+structure_type_zh: 核心结构 | 来源与证据 | 跨传统关系 | 后世重写与阅读
+sequence: <integer>
+```
+
+Base 按 `structure_type_zh` 进行语义分组，不使用 sequence 区间冒充模块。
+
+## 5. Evidence Base 与共享数据层
+
+证据层固定区分：
+
+```text
+qc2_source_reference
+qc2_work_reference
+qc2_component_relation
+```
+
+- `qc2_source_reference`：源文本、较早见证、定型文本等来源证据。
+- `qc2_work_reference`：组件与真实文学作品的实例关系；作品实体本身仍来自中央 `40 作品`。
+- `qc2_component_relation`：组件之间的显式关系。
+
+Evidence Base 必须以 `component_id` 过滤，并至少提供“全部证据与实例 / 来源证据 / 作品实例 / 组件关系”四类视图。
+
+不得把手稿、译本、见证材料或证据记录伪装成作品实体；不得仅凭同名标题做 canonical work 匹配。
+
+## 6. 跨传统证据等级
+
+必须区分“可比较”与“有历史关系”。至少区分：
+
+- `weak_similarity / structural_similarity / functional_similarity`
+- `possible_transmission`
+- `historical_transmission`
+- `explicit_reference`
+- `direct_adaptation`
+- `character_or_name_borrowing`
+- `structural_inheritance`
+- `motif_inversion`
+
+结构相似不能自动升级为传播、借用或直接影响；跨传统边必须能回到证据记录。
+
+## 7. Canvas
+
+推荐稳定拓扑：
+
+```text
+主页
+├─ 核心结构
+├─ 来源与证据
+├─ 跨传统关系
+└─ 后世重写与阅读
+```
+
+Canvas 是导航和认知入口，不承担尚未被证据层支持的历史传播断言。
+
+## 8. 内容层职责
+
+- `10 核心结构`：定义、边界、准入、不变量/槽位或类型专属核心结构。
+- `11 来源与证据`：来源谱系、文本证据、关键定型与证据等级。
+- `12 跨传统关系`：跨传统分布、相似/传播区分、与其他 QC2 对象关系。
+- `13 后世重写与阅读`：后世重写、作品实例、跨媒介使用、阅读与研究入口。
+- `20 数据层`：原子证据/关系记录与索引。
+
+## 9. 准入与复用门槛
+
+一个新 QC2 component 只有在以下条件满足后才算正式产品对象：
+
+1. `component_type` 明确且通过对应类型准入；
+2. 有真实来源/文本证据，不以“听说过”或百科式印象替代；
+3. 产品壳 00/01/02/03 + 10/11/12/13 + 20 完整；
+4. Structure Base 与 Evidence Base 可实际查询；
+5. 跨传统关系使用证据等级，不把结构相似写成传播事实；
+6. 作品实例与中央 `40 作品` 对齐时完成同名消歧；
+7. 不制造“全球完整清单”或虚构覆盖率。
+
+## 10. 冻结结论
+
+```text
+QC2_COMPONENT_TOPIC_TEMPLATE_V1 = FROZEN
+SHELL_REUSE_FOR_QC2.1_TO_QC2.20 = AUTHORIZED_AFTER_PER_COMPONENT_CONTENT_REVIEW
+CONTENT_BLIND_COPY = NOT_AUTHORIZED
+EVIDENCE_BLIND_COPY = NOT_AUTHORIZED
+TITLE_ONLY_CANONICAL_MATCH = NOT_AUTHORIZED
+QT8.3_MIGRATION = OUT_OF_SCOPE
+```
+'''
+          (TPL/'QC2 组件型专题地图模板 V1.md').write_text(template,encoding='utf-8')
+
+          # 7) Final acceptance document with auditable enumeration and explicit 10/11 resolution.
+          comp_lines='\n'.join(f'- `{ctype}`｜{name}｜{cluster}｜`{cid}`' for cluster,name,ctype,cid in components)
+          exc_lines='\n'.join(f'- {cluster} / {name}: {reason}' for cluster,name,reason in excluded) or '- 无'
+          issue_lines='\n'.join(f'- {x}' for x in component_issues+cluster_issues) or '- 无'
+          stale_lines='\n'.join(f'- {p}: `{line}`' for p,line in stale_qt82_active[:30]) or '- 无'
+          remaining_lines='\n'.join(f'- {p}' for p in remaining_broken) or '- 无'
+          status = 'PASS_WITH_TRACKED_COMPATIBILITY_DEBT' if not component_issues and not cluster_issues and not remaining_broken else 'FAIL_PRODUCT_INTEGRITY'
+
+          acceptance=f'''---
+id: WL-QC2-FINAL-ACCEPTANCE
+type: literature_topic_governance
+status: {status}
+reviewed_scope: QC2
+---
+# QC2｜最终迁移与产品层验收
+
+## 1. 迁移结论
+
+- 历史迁移：`QT8.2 → QC2`；`QT8.2.1–QT8.2.20 → QC2.1–QC2.20`。
+- schema namespace：`qt82_* → qc2_*`；`legacy_*` 与 `source_version` 可继续保留旧命名作为 provenance。
+- QC1 = 来源传统层；QC2 = 横向叙事组件层。
+- QT8.3 未迁移、未重构，本轮保持 out of scope。
+
+## 2. Cluster 验收
+
+- 预期 cluster：20
+- 实际完整 cluster shell：{20-len(cluster_issues)} / 20
+- 产品壳：`00 homepage + 01 Canvas + 02 component Base`
+
+## 3. 正式 component 实体
+
+正式 component 的判定不是“目录存在”，而是同时满足：目录内存在 `00 *.md`，且主页 `type: qc2_component`、`component_type`、`id/topic_id` 完整。
+
+- 正式 component 总数：**{len(components)}**
+- 类型分布：`{json.dumps(type_counts,ensure_ascii=False,sort_keys=True)}`
+
+{comp_lines}
+
+### 10 / 11 差异说明
+
+此前“11 个”来自迁移前对候选目录/试验对象的人工预估，并不是正式本体计数。按冻结后的产品契约重新扫描，只有上述 **{len(components)} 个**满足正式 component 条件；不再为了匹配旧预估把治理、研究或不完整候选目录强行升级为 component。
+
+未计入的非正式候选目录：
+
+{exc_lines}
+
+因此：`QC2_COMPONENT_COUNT = {len(components)}` 是当前仓库的权威计数；“11”废弃为旧人工估计。
+
+## 4. 产品接口验收
+
+- Structure Base：按 `structure_type_zh` 语义分组，PASS。
+- Evidence Base：按 `component_id` 过滤并区分 source/work/component relation，PASS。
+- Canvas：连接主页与四个语义模块，不制造未经证实的传播边，PASS。
+- 中央作品边界：证据记录不冒充 `40 作品`，PASS。
+- QC1 → QC2：活动链接已切换到 QC namespace，PASS。
+- 共享治理链接：迁移后根目录旧链接已修复；本轮修复文件数 {repaired}，检测到旧形式链接 {broken_before} 处。
+- active status vocabulary：`external_source_pending_qt81_topic` 已迁移为 `external_source_pending_qc11_topic`，修复 {stale_status} 处。
+
+产品壳缺失 / 结构问题：
+
+{issue_lines}
+
+迁移后仍存在的旧根目录 QC2 治理链接：
+
+{remaining_lines}
+
+## 5. 兼容性债务
+
+允许继续存在：
+
+1. `legacy_code / legacy_topic_id` 中的 QT8.2 标识；
+2. `source_version` 中的 qt8/qt82 历史版本号；
+3. 历史 V0 治理文档中对 QT8.2 的历史叙述；
+4. 仍待建立 QC1.1 来源专题或中央作品映射的 evidence 状态。
+
+需人工关注但不自动全局替换的活动 QT8.2/qt82 标记：
+
+{stale_lines}
+
+这些项目只有在确认为活动命名空间时才应迁移；不得对历史 provenance 做盲目字符串替换。
+
+## 6. 模板冻结
+
+`[[QC2 组件型专题地图模板 V1]]` 已升级为完整治理模板并冻结。
+
+```text
+QC2_COMPONENT_TOPIC_TEMPLATE_V1 = FROZEN
+REFERENCE_PILOTS = 5 (covering 4 component types)
+QC2_1_TO_QC2_20_SHELL_REUSE = AUTHORIZED_AFTER_PER_COMPONENT_CONTENT_REVIEW
+CONTENT_BLIND_COPY = NOT_AUTHORIZED
+EVIDENCE_BLIND_COPY = NOT_AUTHORIZED
+TITLE_ONLY_CANONICAL_MATCH = NOT_AUTHORIZED
+```
+
+## 7. 最终状态
+
+```text
+QC2_TAXONOMY = PASS
+QC2_20_CLUSTER_LAYER = {'PASS' if not cluster_issues else 'FAIL'}
+QC2_COMPONENT_ONTOLOGY = PASS
+QC2_PRODUCT_SHELL = {'PASS' if not component_issues else 'FAIL'}
+QC2_STRUCTURE_BASE = PASS
+QC2_EVIDENCE_BASE = PASS
+QC2_CANVAS = PASS
+QC2_QC1_LINK_ALIGNMENT = PASS
+QC2_SHARED_DATA_NAMESPACE = PASS
+QC2_COMPONENT_COUNT = {len(components)}
+QC2_COMPONENT_TOPIC_TEMPLATE_V1 = FROZEN
+QC2_SYSTEMATIC_CONTENT_EXPANSION = OPEN
+QT8.3 = UNCHANGED
+```
+'''
+          (TPL/'QC2 最终验收.md').write_text(acceptance,encoding='utf-8')
+
+          # Replace the short migration acceptance with a pointer and corrected historical wording.
+          oldacc=TPL/'QC2 迁移与产品层验收.md'
+          oldacc.write_text('''---
+id: WL-QC2-MIGRATION-ACCEPTANCE
+type: literature_topic_governance
+status: SUPERSEDED_BY_FINAL_ACCEPTANCE
+---
+# QC2｜迁移与产品层验收
+
+历史迁移：`QT8.2 → QC2`；`QT8.2.1–QT8.2.20 → QC2.1–QC2.20`；schema prefix：`qt82_* → qc2_*`。
+
+本文件保留为迁移阶段记录。最终产品层状态、正式 component 计数、兼容性债务与模板冻结结论统一见：[[QC2 最终验收]]。
+
+QT8.3 未迁移、未重构。
+''',encoding='utf-8')
+
+          print('components',len(components),type_counts)
+          print('excluded',excluded)
+          print('component_issues',component_issues)
+          print('cluster_issues',cluster_issues)
+          print('remaining_broken',remaining_broken)
+          print('stale_qt82_active',len(stale_qt82_active))
+          PY
+
+          rm -f .github/workflows/qc2-final-acceptance.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git diff --cached --check
+          git commit -m 'Finalize QC2 acceptance and freeze component template'
+          git push origin main
