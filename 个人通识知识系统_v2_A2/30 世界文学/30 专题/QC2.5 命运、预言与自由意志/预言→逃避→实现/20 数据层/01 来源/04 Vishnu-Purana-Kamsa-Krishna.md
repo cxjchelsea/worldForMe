@@ -5,7 +5,7 @@ component_type: plot_pattern
 source_tradition: external:indian_puranic_krishna_tradition
 source_story: Kamsa / Devaki / Krishna
 source_text: Vishnu Purana Book V, Chapters I–III
-source_status: external_source_pending_qt81_topic
+source_status: external_source_pending_qc11_topic
 tradition_role: defining_reworking
 canonical_work: null
 sequence: 104

@@ -1,13 +1,12 @@
 ---
 id: WL-QC2-MIGRATION-ACCEPTANCE
 type: literature_topic_governance
-status: PASS_WITH_CONTENT_EXPANSION_OPEN
+status: SUPERSEDED_BY_FINAL_ACCEPTANCE
 ---
 # QC2｜迁移与产品层验收
 
-- QC2 -> QC2；QC2.1–20 -> QC2.1–20。
-- 20 个 cluster 均已有 taxonomy node + homepage + Canvas + component Base。
-- 已迁移 / 产品化 component：**10** 个；类型分布：`{'symbol': 3, 'plot_pattern': 2, 'motif': 3, 'archetype': 2}`。
-- schema prefix：`qc2_ -> qc2_`。
-- QC1 当前链接已改指 QC2；QT8.3 未迁移、未重构。
-- 四类型 ontology 与 Shared Data V1 继续冻结；系统化内容扩展保持 OPEN。
+历史迁移：`QT8.2 → QC2`；`QT8.2.1–QT8.2.20 → QC2.1–QC2.20`；schema prefix：`qt82_* → qc2_*`。
+
+本文件保留为迁移阶段记录。最终产品层状态、正式 component 计数、兼容性债务与模板冻结结论统一见：[[QC2 最终验收]]。
+
+QT8.3 未迁移、未重构。

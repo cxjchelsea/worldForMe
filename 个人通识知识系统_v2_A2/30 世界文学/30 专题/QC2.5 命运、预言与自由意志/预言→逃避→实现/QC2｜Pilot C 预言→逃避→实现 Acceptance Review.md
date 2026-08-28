@@ -118,7 +118,7 @@ cross-tradition structural comparability
 外部印度来源继续使用：
 
 ```text
-external_source_pending_qt81_topic
+external_source_pending_qc11_topic
 ```
 
 没有借 QC2 反向宣称印度 QC1.1 来源专题已完成。
