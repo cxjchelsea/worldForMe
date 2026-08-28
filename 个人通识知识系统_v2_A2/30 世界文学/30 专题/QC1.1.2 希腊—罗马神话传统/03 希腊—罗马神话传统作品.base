@@ -1,31 +1,7 @@
 filters:
   and:
     - type == "work"
-    - or:
-        - and:
-            - title == "伊利亚特"
-            - author == "荷马"
-        - and:
-            - title == "奥德赛"
-            - author == "荷马"
-        - and:
-            - title == "神谱"
-            - author == "赫西俄德"
-        - and:
-            - title == "工作与时日"
-            - author == "赫西俄德"
-        - and:
-            - title == "俄狄浦斯王"
-            - author == "索福克勒斯"
-        - and:
-            - title == "俄瑞斯忒亚"
-            - author == "埃斯库罗斯"
-        - and:
-            - title == "埃涅阿斯纪"
-            - author == "维吉尔"
-        - and:
-            - title == "变形记"
-            - author == "奥维德"
+    - qc112_priority != null
 properties:
   file.name:
     displayName: 作品
@@ -33,12 +9,14 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.myth_priority:
-    displayName: 全局神话优先级
-  note.r1_tradition:
-    displayName: 地域传统
-  note.t0_stage:
-    displayName: 历史阶段
+  note.qc112_priority:
+    displayName: 优先级
+  note.qc112_internal_tradition:
+    displayName: 内部传统
+  note.qc112_tradition_stage:
+    displayName: 传统阶段
+  note.qc112_role:
+    displayName: 专题角色
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -53,36 +31,54 @@ properties:
     displayName: 校验状态
 views:
   - type: table
-    name: 已建立中央作品
-    order: [file.name, author, read_status, myth_priority, r1_tradition, t0_stage, verification_status]
+    name: 全部 QC1.1.2 作品
+    order: [file.name, author, read_status, qc112_priority, qc112_internal_tradition, qc112_tradition_stage, qc112_role]
   - type: table
     name: 核心 ★
     filters:
       and:
-        - myth_priority == "★"
-    order: [file.name, author, read_status]
+        - qc112_priority == "★"
+    order: [file.name, author, read_status, qc112_internal_tradition, qc112_role]
   - type: table
     name: 重点 ◆
     filters:
       and:
-        - myth_priority == "◆"
-    order: [file.name, author, read_status]
+        - qc112_priority == "◆"
+    order: [file.name, author, read_status, qc112_internal_tradition, qc112_role]
   - type: table
     name: 扩展 △
     filters:
       and:
-        - myth_priority == "△"
-    order: [file.name, author, read_status]
+        - qc112_priority == "△"
+    order: [file.name, author, read_status, qc112_internal_tradition, qc112_role]
   - type: table
     name: 未读
     filters:
       and:
         - read_status == "未读"
-    order: [file.name, author, myth_priority]
+    order: [file.name, qc112_priority, qc112_internal_tradition]
   - type: table
     name: 已读
     filters:
       or:
         - read_status == "已读"
         - read_status == "重读"
-    order: [file.name, author, myth_priority]
+    order: [file.name, qc112_priority, qc112_internal_tradition]
+  - type: table
+    name: 按内部传统
+    groupBy:
+      property: qc112_internal_tradition
+      direction: ASC
+    order: [file.name, qc112_priority, qc112_tradition_stage, qc112_role]
+  - type: table
+    name: 按传统阶段
+    groupBy:
+      property: qc112_tradition_stage
+      direction: ASC
+    order: [file.name, qc112_priority, qc112_internal_tradition, qc112_role]
+  - type: table
+    name: 按专题角色
+    groupBy:
+      property: qc112_role
+      direction: ASC
+    order: [file.name, qc112_priority, qc112_internal_tradition]
