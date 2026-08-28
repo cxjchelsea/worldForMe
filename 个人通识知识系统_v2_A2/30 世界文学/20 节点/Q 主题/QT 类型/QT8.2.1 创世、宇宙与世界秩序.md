@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.19-qt82-v1-second-pass-triage"
+source_version: "2.20-qt82-v1-m3-admitted"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -86,7 +86,7 @@ evidence maturity
 ```text
 1. M3 原初存在的身体化为世界
    → motif admission research
-   → NEXT_BUILD_TARGET
+   → ADMISSION PASS
 
 2. S3 世界树／宇宙树
    → symbol admission research
@@ -113,6 +113,59 @@ S2 原初水域
 S4 宇宙山
 M4 言说／命名创世
 ```
+
+## M3｜原初存在的身体化为世界 Admission Research
+
+已完成：[[QT8.2.1 M3 原初存在的身体化为世界 Admission Research]]
+
+结论：
+
+```text
+QT8.2.1_M3_ADMISSION_RESEARCH = PASS
+QT8.2.1_M3_COMPONENT_TYPE = motif
+QT8.2.1_M3_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
+```
+
+冻结后的最低辨识条件：
+
+```text
+primordial_embodied_source
++
+irreversible_bodily_transformation
++
+anatomical_to_cosmic_mapping
+```
+
+跨传统 full-match 压力点：
+
+```text
+Tiamat / Enuma Elish
+Ymir / Old Norse cosmogony
+Puruṣa / Ṛgveda 10.90
+Pangu / later Chinese reception witness
+```
+
+边界已确认：
+
+```text
+body-to-world motif
+≠ cosmic combat
+≠ sacrifice
+≠ slain giant theme
+≠ M2 天地分离
+≠ P2 ordered plot pattern
+```
+
+盘古来源治理固定：
+
+```text
+《三五历纪》天地开辟见证
+≠ 后出身体化生世界见证
+```
+
+后出的尸体化生细节不得反投射为最早文本内容。
+
+M3 当前为 `ADMITTED_FOR_BUILD`，尚未计入 active component count。
 
 ## 关键治理变化
 
@@ -143,6 +196,8 @@ QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 3
 QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
 QT8.2.1_WORLD_PARENTS_SEPARATION = ACTIVE_V1_COMPONENT
 QT8.2.1_COSMIC_EGG = ACTIVE_V1_COMPONENT
+QT8.2.1_M3_BODY_TO_WORLD_ADMISSION = PASS
+QT8.2.1_M3_BODY_TO_WORLD_STATUS = ADMITTED_FOR_BUILD
 
 QT8.2_FIRST_REAL_CROSS_TYPE_COMPONENT_RELATION = CREATED
 QT8.2.1_M1_STATUS = UMBRELLA_NAVIGATION_CONCEPT_NOT_COMPONENT_BUILD
@@ -155,7 +210,7 @@ QT8.2_TEMPLATE_REOPEN_REQUIRED = NO
 
 ```text
 QT8.2.1_NEXT_STAGE
-= M3_BODY_TO_WORLD_MOTIF_ADMISSION_RESEARCH
+= M3_BODY_TO_WORLD_MOTIF_TOPIC_BUILD
 ```
 
-下一步对 M3「原初存在的身体化为世界」进行独立 motif Admission Research；通过前不预建 P2 relation，也不把 cosmic combat 写入 required invariants。
+下一步按 Motif Template V1 建立 M3「原初存在的身体化为世界」正式专题包；通过 Component Acceptance 前不登记为 active component，也不预建 P2 relation。
