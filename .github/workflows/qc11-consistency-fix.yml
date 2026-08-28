@@ -1,0 +1,183 @@
+name: One-time QC1.1 consistency retrofit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qc11-consistency-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  retrofit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Retrofit QC1.1 reference topics
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          ROOT = Path('个人通识知识系统_v2_A2/30 世界文学')
+          TOPICS = ROOT / '30 专题'
+          WORKS = ROOT / '40 作品'
+
+          topic_defs = {
+              'QC1.1.1 希伯来—圣经叙事传统': ('WL-TOPIC-QC111', 'WL-TOPIC-QT811', 'qc111'),
+              'QC1.1.2 希腊—罗马神话传统': ('WL-TOPIC-QC112', 'WL-TOPIC-QT812', 'qc112'),
+          }
+          module_map = {
+              '10 核心结构': '核心结构',
+              '11 内部文本与传统': '内部文本与传统',
+              '12 母题与跨文化关系': '母题与跨文化关系',
+              '13 后世传播与阅读': '后世传播与阅读',
+          }
+
+          def parse_frontmatter(text):
+              if not text.startswith('---\n'):
+                  return None, text
+              end = text.find('\n---\n', 4)
+              if end < 0:
+                  return None, text
+              return text[4:end], text[end+5:]
+
+          def set_scalar(fm, key, value):
+              pat = re.compile(rf'(?m)^{re.escape(key)}:\s*.*$')
+              line = f'{key}: {value}'
+              if pat.search(fm):
+                  return pat.sub(line, fm, count=1)
+              return fm.rstrip() + '\n' + line
+
+          # Backfill explicit semantic structure metadata and current QC topic IDs.
+          for dirname, (topic_id, legacy_id, scope) in topic_defs.items():
+              base = TOPICS / dirname
+              for folder, module in module_map.items():
+                  for p in sorted((base / folder).glob('*.md')):
+                      text = p.read_text(encoding='utf-8')
+                      fm, body = parse_frontmatter(text)
+                      if fm is None:
+                          continue
+                      fm = set_scalar(fm, 'topic_id', topic_id)
+                      fm = set_scalar(fm, 'structure_type_zh', module)
+                      p.write_text('---\n' + fm.rstrip() + '\n---\n' + body, encoding='utf-8')
+
+          dimension_formula = 'if(dimension, dimension.replace("boundary", "定义与边界").replace("definition", "定义与边界").replace("context", "历史文化环境").replace("history", "历史层与连续性").replace("worldview", "世界观与宇宙结构").replace("actors", "人物与超自然存在").replace("narrative_cycle", "核心叙事循环").replace("oral_ritual", "口传、仪式与表演").replace("textualization", "书写、编纂与经典化").replace("evolution", "内部演变").replace("text_lineage", "文本谱系").replace("source_witness", "源文本与早期见证").replace("canon", "定型文本与核心经典").replace("reading_route", "阅读路线").replace("motif_mapping", "母题映射").replace("transmission", "传播、借用与结构相似").replace("reception", "后世传播").replace("bridge", "专题桥接").replace("bibliography", "支撑研究书目"), "")'
+
+          def base_content(topic_id, modules):
+              lines = [
+                  'filters:', '  and:', f'    - topic_id == "{topic_id}"',
+                  'formulas:', f'  dimension_zh: {dimension_formula}',
+                  'properties:',
+                  '  file.name:', '    displayName: 节点',
+                  '  note.structure_type_zh:', '    displayName: 所属模块',
+                  '  formula.dimension_zh:', '    displayName: 维度',
+                  '  note.sequence:', '    displayName: 顺序',
+                  '  note.history_position:', '    displayName: 节点作用',
+                  '  note.id:', '    displayName: 编号',
+                  'views:',
+                  '  - type: table', '    name: 全部知识节点',
+                  '    groupBy:', '      property: structure_type_zh', '      direction: ASC',
+                  '    order:', '      - file.name', '      - structure_type_zh', '      - formula.dimension_zh', '      - sequence', '      - history_position', '      - id',
+              ]
+              for module in modules:
+                  lines += [
+                      '  - type: table', f'    name: {module}', '    filters:', '      and:', f'        - structure_type_zh == "{module}"',
+                      '    groupBy:', '      property: structure_type_zh', '      direction: ASC',
+                      '    order:', '      - file.name', '      - structure_type_zh', '      - formula.dimension_zh', '      - sequence', '      - history_position', '      - id',
+                  ]
+              return '\n'.join(lines) + '\n'
+
+          modules = ['核心结构', '内部文本与传统', '母题与跨文化关系', '后世传播与阅读']
+          (TOPICS/'QC1.1.1 希伯来—圣经叙事传统'/'02 希伯来—圣经叙事传统结构.base').write_text(base_content('WL-TOPIC-QC111', modules), encoding='utf-8')
+          (TOPICS/'QC1.1.2 希腊—罗马神话传统'/'02 希腊—罗马神话传统结构.base').write_text(base_content('WL-TOPIC-QC112', modules), encoding='utf-8')
+
+          biblical = [
+              ('利未记','WL-WORK-QC111-LEVITICUS','佚名','△','律法与祭仪传统','多层形成与编纂','律法与祭仪背景扩展'),
+              ('民数记','WL-WORK-QC111-NUMBERS','佚名','△','出埃及—旷野传统','多层形成与编纂','旷野叙事扩展'),
+              ('约书亚记','WL-WORK-QC111-JOSHUA','佚名','◆','土地—士师—王权传统','多层形成与编纂','土地叙事关键文本'),
+              ('士师记','WL-WORK-QC111-JUDGES','佚名','◆','土地—士师—王权传统','多层形成与编纂','王权前史关键文本'),
+              ('耶利米书','WL-WORK-QC111-JEREMIAH','佚名','◆','先知传统','王国末期—流亡时期','危机与流亡关键先知文本'),
+              ('以西结书','WL-WORK-QC111-EZEKIEL','佚名','◆','先知传统','流亡时期','流亡与复兴关键先知文本'),
+              ('箴言','WL-WORK-QC111-PROVERBS','佚名','◆','智慧文学传统','长时段形成与编纂','智慧传统关键文本'),
+              ('传道书','WL-WORK-QC111-ECCLESIASTES','佚名','◆','智慧文学传统','第二圣殿时期','智慧反思关键文本'),
+              ('路得记','WL-WORK-QC111-RUTH','佚名','△','短篇叙事与身份传统','成书年代有争议','身份与家族叙事扩展'),
+              ('以斯帖记','WL-WORK-QC111-ESTHER','佚名','△','散居与身份叙事','第二圣殿时期','散居身份叙事扩展'),
+              ('但以理书','WL-WORK-QC111-DANIEL','佚名','◆','流亡记忆与启示传统','第二圣殿后期','启示叙事关键文本'),
+              ('雅歌','WL-WORK-QC111-SONG','佚名','△','诗歌与智慧传统','成书层次有争议','诗歌传统扩展'),
+          ]
+          greek = [
+              ('荷马颂歌','WL-WORK-QC112-HOMERIC-HYMNS','佚名','◆','早期史诗与赞歌传统','古风时期至后续增补','神祇叙事与祭仪诗歌关键见证'),
+              ('安提戈涅','WL-WORK-QC112-ANTIGONE','索福克勒斯','◆','古典悲剧重写传统','古典时期','忒拜神话关键悲剧重写'),
+              ('美狄亚','WL-WORK-QC112-MEDEA','欧里庇得斯','◆','古典悲剧重写传统','古典时期','阿尔戈—美狄亚传统关键悲剧重写'),
+              ('酒神的女信徒','WL-WORK-QC112-BACCHAE','欧里庇得斯','◆','古典悲剧重写传统','古典时期','狄俄尼索斯传统关键悲剧重写'),
+              ('阿尔戈英雄纪','WL-WORK-QC112-ARGONAUTICA','阿波罗尼奥斯·罗狄俄斯','◆','希腊化史诗重写传统','希腊化时期','阿尔戈英雄循环关键定型文本'),
+              ('书库（伪阿波罗多洛斯）','WL-WORK-QC112-LIBRARY','伪阿波罗多洛斯','◆','神话汇编与谱系传统','罗马帝国早期前后','神话谱系与故事群系统化入口'),
+              ('被缚的普罗米修斯','WL-WORK-QC112-PROMETHEUS','传统归于埃斯库罗斯','△','古典悲剧重写传统','古典时期','普罗米修斯传统扩展'),
+              ('七将攻忒拜','WL-WORK-QC112-SEVEN-THEBES','埃斯库罗斯','△','古典悲剧重写传统','古典时期','忒拜循环扩展'),
+              ('特洛伊妇女','WL-WORK-QC112-TROJAN-WOMEN','欧里庇得斯','△','古典悲剧重写传统','古典时期','特洛伊战争接受与反战重写'),
+              ('岁时记（奥维德）','WL-WORK-QC112-FASTI','奥维德','◆','罗马神话与祭历重写','奥古斯都时期','罗马祭历与神话重写关键文本'),
+              ('英雄书简','WL-WORK-QC112-HEROIDES','奥维德','△','罗马神话文学重写','奥古斯都时期','英雄神话人物视角重写扩展'),
+              ('传说集（许癸努斯）','WL-WORK-QC112-FABULAE','许癸努斯','△','罗马神话汇编传统','罗马时期','后期神话汇编扩展入口'),
+          ]
+
+          def add_scoped_metadata(path, scope, priority, tradition, stage, role):
+              text = path.read_text(encoding='utf-8')
+              fm, body = parse_frontmatter(text)
+              if fm is None:
+                  return
+              fm = set_scalar(fm, f'{scope}_priority', f'"{priority}"')
+              fm = set_scalar(fm, f'{scope}_internal_tradition', f'"{tradition}"')
+              fm = set_scalar(fm, f'{scope}_tradition_stage', f'"{stage}"')
+              fm = set_scalar(fm, f'{scope}_role', f'"{role}"')
+              path.write_text('---\n' + fm.rstrip() + '\n---\n' + body, encoding='utf-8')
+
+          def create_work(path, wid, title, author, scope, priority, tradition, stage, role, civ):
+              text = f'''---\nid: {wid}\ntype: work\ntitle: {title}\ntitle_original: ''\naliases: []\nauthor: {author}\nyear: null\nliterary_traditions: []\nread_status: 未读\naxis_t:\n- "T0 文学源头与古代文学"\naxis_r:\n- "R1 西亚—地中海古老传统"\naxis_m:\naxis_g:\naxis_q:\nverification_status: 待核验\nbibliography_status: metadata_pending\nt0_civilization: {civ}\n{scope}_priority: "{priority}"\n{scope}_internal_tradition: "{tradition}"\n{scope}_tradition_stage: "{stage}"\n{scope}_role: "{role}"\n---\n# {title}\n\n## 基本信息\n\n- 作者 / 归属：{author}\n- 年代 / 首次成书时间：待统一书目校验\n- 阅读状态：未读\n\n## QC 专题位置\n\n- 专题优先级：{priority}\n- 内部传统：{tradition}\n- 专题角色：{role}\n\n## 数据说明\n\n> 本文件是中央作品库中的唯一作品实体；新补入的书目元数据保留“待核验”，后续可继续统一作者、年代、原文题名与跨轴标签。\n'''
+              path.write_text(text, encoding='utf-8')
+
+          for title,wid,author,priority,tradition,stage,role in biblical:
+              p = WORKS / f'{title}.md'
+              if p.exists(): add_scoped_metadata(p,'qc111',priority,tradition,stage,role)
+              else: create_work(p,wid,title,author,'qc111',priority,tradition,stage,role,'古希伯来传统')
+          for title,wid,author,priority,tradition,stage,role in greek:
+              p = WORKS / f'{title}.md'
+              if p.exists(): add_scoped_metadata(p,'qc112',priority,tradition,stage,role)
+              else: create_work(p,wid,title,author,'qc112',priority,tradition,stage,role,'古希腊—罗马')
+
+          # Update frozen template governance: V2.1 requires explicit structure metadata for formal QC topic nodes.
+          tpl = TOPICS/'00 模板'/'QC 传统型专题地图模板 V2.md'
+          if tpl.exists():
+              t = tpl.read_text(encoding='utf-8')
+              t = t.replace('status: FROZEN_V2', 'status: FROZEN_V2_1')
+              t = t.replace('目录 fallback  permitted only for legacy migration compatibility.', '目录 fallback 不再作为正式专题格式；正式 QC 结构节点必须显式维护 `topic_id` 与 `structure_type_zh`。')
+              t = t.replace('Directory fallback is permitted only for legacy migration compatibility.', 'Directory fallback is no longer part of the formal QC product format; formal QC structure nodes must maintain explicit `topic_id` and `structure_type_zh`.')
+              if '## V2.1 一致性修订' not in t:
+                  t += '\n\n## V2.1 一致性修订\n\n- `02 专题结构.base` 对齐成熟 R/T/M 接口：按 `topic_id` 过滤，直接使用显式 `structure_type_zh` 分组。\n- QC1.1.1 与 QC1.1.2 已回填当前 QC topic id 与显式模块元数据。\n- 正式专题不再把“所在文件夹”作为模块语义的长期来源。\n- 作品池应包含 ★ 核心、◆ 重点、△ 扩展三个层级；核心集用于骨架，不能等同于完整专题书目。\n'
+              tpl.write_text(t, encoding='utf-8')
+
+          acc = TOPICS/'00 模板'/'QC1.1 最终验收.md'
+          if acc.exists():
+              t = acc.read_text(encoding='utf-8')
+              t = t.replace('status: PASS_WITH_TRACKED_COMPATIBILITY_DEBT', 'status: PASS_AFTER_V2_1_CONSISTENCY_FIX')
+              if '## V2.1 本地检查修正' not in t:
+                  t += '\n\n## V2.1 本地检查修正\n\n用户本地检查发现两项产品问题后已直接修正：\n\n1. QC1.1.1 / QC1.1.2 的 Structure Base 现与成熟 R/T/M 一致，使用当前 `topic_id` 与显式 `structure_type_zh`，不再依赖目录推断模块。\n2. 两个参考专题的作品池由 8 部“核心参考集”扩为 20 部“核心 + 重点 + 扩展”书目池；8 部不再被解释为完整专题覆盖。\n\n`QC_TRADITION_TOPIC_TEMPLATE_V2_1 = FROZEN`\n'
+              acc.write_text(t, encoding='utf-8')
+          PY
+      - name: Remove one-time workflow and commit result
+        shell: bash
+        run: |
+          rm -f .github/workflows/qc11-consistency-fix.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Fix QC1.1 structure consistency and expand topic work pools"
+            git push origin HEAD:main
+          fi
