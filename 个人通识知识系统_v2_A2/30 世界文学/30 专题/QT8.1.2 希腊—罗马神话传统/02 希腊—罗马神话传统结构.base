@@ -1,0 +1,49 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QT812"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - sequence
+      - file.name
+      - type
+      - dimension
+  - type: table
+    name: 10 核心结构
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'sequence < 20'
+    order:
+      - sequence
+      - file.name
+  - type: table
+    name: 12 叙事组件与关系
+    filters:
+      and:
+        - 'type == "literature_topic_structure"'
+        - 'sequence >= 20'
+        - 'sequence < 30'
+    order:
+      - sequence
+      - file.name
+  - type: table
+    name: 13 后世传播与阅读
+    filters:
+      and:
+        - 'sequence >= 30'
+    order:
+      - sequence
+      - file.name
+
+# 说明：文本关系实体由 03 文本.base 单独承担；本 Base 主要观察专题解释结构。

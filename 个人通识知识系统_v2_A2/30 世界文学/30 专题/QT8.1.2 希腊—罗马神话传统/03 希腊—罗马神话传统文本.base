@@ -1,0 +1,46 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QT812"
+    - 'type == "literature_topic_text_reference"'
+properties:
+  file.name:
+    displayName: 文本关系记录
+  note.canonical_title:
+    displayName: 文本
+  note.tradition_role:
+    displayName: 传统角色
+  note.period:
+    displayName: 时段
+  note.canonical_work:
+    displayName: 主作品节点
+  note.source_status:
+    displayName: 记录状态
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 文本实体关系
+    groupBy:
+      property: tradition_role
+      direction: ASC
+    order:
+      - sequence
+      - canonical_title
+      - period
+      - canonical_work
+      - source_status
+  - type: table
+    name: 按时段
+    groupBy:
+      property: period
+      direction: ASC
+    order:
+      - sequence
+      - canonical_title
+      - tradition_role
+      - canonical_work
+
+# 设计说明：
+# 本 Base 聚合“专题—文本关系记录”，不聚合 11 文本谱系中的解释页。
+# canonical_work 指向 40 作品等唯一主作品节点；若主节点尚未建立，可暂为 null。
+# 关系记录只保存该文本在 QT8.1.2 中的角色，不复制作品百科内容。

@@ -1,16 +1,18 @@
 ---
-id: "WL-QT6"
+id: WL-QT6
 type: literature_node
-name: 乌托邦、反乌托邦与社会想象
+name: "乌托邦、反乌托邦与社会想象"
 code: QT6
 axis: Q
-parent: "WL-QT"
+parent: WL-QT
 level: 2
 coverage_priority: Interest
 node_kind: taxonomy_leaf
 anchorable: true
+aliases:
+- "QT6 反乌托邦"
 topic_map:
-- "[[../../../30 专题/QT6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学]]"
+  - "[[../../../30 专题/QT6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学]]"
 source_version: "2.11-qt-expand"
 ---
 
