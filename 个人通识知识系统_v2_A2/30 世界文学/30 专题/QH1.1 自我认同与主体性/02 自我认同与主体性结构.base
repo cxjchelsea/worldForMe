@@ -1,0 +1,49 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QH1-1-SELFHOOD"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.parent:
+    displayName: 父节点
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: type
+      direction: ASC
+    order:
+      - file.name
+      - type
+      - dimension
+      - sequence
+      - parent
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - type == "literature_topic_structure"
+    order:
+      - file.name
+      - dimension
+      - sequence
+      - id
+  - type: table
+    name: 核心问题
+    filters:
+      and:
+        - type == "literature_topic_section"
+        - dimension == "core_problem"
+    order:
+      - file.name
+      - sequence
+      - id
