@@ -1,4 +1,6 @@
 ---
+id: WL-TOPIC-QC21-EARTH-DIVER
+topic_id: WL-TOPIC-QC21-EARTH-DIVER
 type: qc2_component
 component_type: motif
 name: "Earth-diver / 潜水取土创世"
@@ -6,7 +8,7 @@ primary_clusters:
   - QC2.1
 secondary_clusters:
   - QC2.2
-status: active
+status: ACCEPTED_COMPONENT_V1
 source_status:
   haudenosaunee_iroquois: external_source_verified_text_only
   slavic_eastern_european: external_source_verified_text_only
@@ -69,18 +71,17 @@ Earth-diver
 
 洪水后“潜水取土重建陆地”可共享结构，但 primary cluster 通常应是 QC2.2，而不是拿来扩充 QC2.1 的核心创世来源。
 
-## 导航
+## 产品导航
 
-- [[01 定义、边界与准入]]
-- [[02 来源谱系]]
-- [[03 内部结构与核心变体]]
-- [[04 跨传统分布]]
-- [[05 文本证据与定型]]
-- [[06 传播、借用与结构相似]]
-- [[07 与其他 QC2 对象关系]]
-- [[08 后世重写与文化化]]
-- [[09 作品实例]]
-- [[10 阅读与研究]]
-- [[20 数据层/00 数据层索引]]
+- [[01 Earth-diver 潜水取土创世.canvas|专题地图]]
+- [[02 Earth-diver 潜水取土创世结构.base|结构 Base]]
+- [[03 Earth-diver 潜水取土创世证据关系.base|证据关系 Base]]
+- [[10 核心结构/01 定义、边界与准入|核心结构]]
+- [[11 来源与证据/02 来源谱系|来源与证据]]
+- [[12 跨传统关系/04 跨传统分布|跨传统关系]]
+- [[13 后世重写与阅读/08 后世重写与文化化|后世重写与阅读]]
+- [[20 数据层/00 数据层索引|数据层索引]]
+
+旧的平铺 `01–10` 研究页暂时作为迁移兼容层保留；正式产品入口以 `10/11/12/13` 语义模块为准。
 
 Admission：[[../../../20 节点/Q 主题/QT 类型/QC2.1 M5 Earth-diver Admission Research]]
