@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.20-qt82-v1-m3-admitted"
+source_version: "2.21-qt82-v1-m3-active"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -49,7 +49,35 @@ component_acceptance: PASS
 
 专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/宇宙卵/00 宇宙卵|宇宙卵]]
 
-Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/宇宙卵/QT8.2.1｜宇宙卵 Component Acceptance Review]]
+### 4. 原初存在的身体化为世界
+
+```text
+component_type: motif
+status: ACTIVE_V1_COMPONENT
+component_acceptance: PASS
+```
+
+专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/00 原初存在的身体化为世界|原初存在的身体化为世界]]
+
+Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/QT8.2.1｜原初存在的身体化为世界 Component Acceptance Review]]
+
+最低辨识：
+
+```text
+primordial_embodied_source
++
+irreversible_bodily_transformation
++
+anatomical_to_cosmic_mapping
+```
+
+首批数据：
+
+```text
+4 × qt82_source_reference
+0 × qt82_component_relation
+0 × qt82_work_reference
+```
 
 ## 已建立跨类型关系
 
@@ -59,7 +87,9 @@ Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩�
 → 天地分离 / motif
 ```
 
-宇宙卵目前不强行连接 M2 / P1；M6「从宇宙卵中创生」仍为独立 motif candidate。
+M3 当前不提前连接 P2；P2 仍为 plot_pattern candidate。
+
+宇宙卵目前也不强行连接 M2 / P1；M6「从宇宙卵中创生」仍为独立 motif candidate。
 
 ## Candidate Inventory
 
@@ -67,30 +97,23 @@ Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩�
 
 第二轮：[[QT8.2.1 Second-Pass Candidate Triage V1]]
 
-第二轮不按四种 component 配额建设，而按：
-
-```text
-evidence maturity
-× type-boundary clarity
-× incremental explanatory value
-× source-layer readiness
-× relation-network potential
-```
-
-重新排序。
-
 ## Second-Pass Priority
 
-### Tier A｜下一建设链
+### 已完成 Tier A 第一项
 
 ```text
-1. M3 原初存在的身体化为世界
-   → motif admission research
-   → ADMISSION PASS
+M3 原初存在的身体化为世界
+→ ADMISSION PASS
+→ TOPIC BUILD PASS
+→ ACTIVE_V1_COMPONENT
+```
 
-2. S3 世界树／宇宙树
-   → symbol admission research
-   → SECONDARY_NEXT_TARGET
+### 当前下一目标
+
+```text
+S3 世界树／宇宙树
+→ symbol admission research
+→ NEXT_BUILD_TARGET
 ```
 
 ### Tier B｜有效但暂缓
@@ -114,90 +137,27 @@ S4 宇宙山
 M4 言说／命名创世
 ```
 
-## M3｜原初存在的身体化为世界 Admission Research
-
-已完成：[[QT8.2.1 M3 原初存在的身体化为世界 Admission Research]]
-
-结论：
-
-```text
-QT8.2.1_M3_ADMISSION_RESEARCH = PASS
-QT8.2.1_M3_COMPONENT_TYPE = motif
-QT8.2.1_M3_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
-```
-
-冻结后的最低辨识条件：
-
-```text
-primordial_embodied_source
-+
-irreversible_bodily_transformation
-+
-anatomical_to_cosmic_mapping
-```
-
-跨传统 full-match 压力点：
-
-```text
-Tiamat / Enuma Elish
-Ymir / Old Norse cosmogony
-Puruṣa / Ṛgveda 10.90
-Pangu / later Chinese reception witness
-```
-
-边界已确认：
-
-```text
-body-to-world motif
-≠ cosmic combat
-≠ sacrifice
-≠ slain giant theme
-≠ M2 天地分离
-≠ P2 ordered plot pattern
-```
-
-盘古来源治理固定：
-
-```text
-《三五历纪》天地开辟见证
-≠ 后出身体化生世界见证
-```
-
-后出的尸体化生细节不得反投射为最早文本内容。
-
-M3 当前为 `ADMITTED_FOR_BUILD`，尚未计入 active component count。
-
 ## 关键治理变化
 
-M1 第一轮曾是 HIGH 候选；第二轮在三个 active component 建成后重新评估，发现：
+M1 不再创建重型 component，避免 problem-domain container 与 component 重复。
 
-```text
-M1 未分化→分化／定序→有序宇宙
-≈ QT8.2.1 问题域自身定义
-```
-
-因此不再创建重型 component，避免 problem-domain container 与 component 重复。
-
-A1 / A2 也不因为当前尚无 archetype active component 而强制建设：
+A1 / A2 不因为尚无 archetype active component 而强制建设：
 
 ```text
 QT8.2.1_ARCHETYPE_FORCED_BUILD = NO
 ```
-
-当前证据下，“宇宙定序者”过宽，“天地分离者”更像 M2 的 agent slot；待稳定 core functions 出现后再重开。
 
 ## 当前状态
 
 ```text
 QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
 QT8.2.1_SECOND_PASS_TRIAGE = COMPLETE
-QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 3
+QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 4
 
 QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
 QT8.2.1_WORLD_PARENTS_SEPARATION = ACTIVE_V1_COMPONENT
 QT8.2.1_COSMIC_EGG = ACTIVE_V1_COMPONENT
-QT8.2.1_M3_BODY_TO_WORLD_ADMISSION = PASS
-QT8.2.1_M3_BODY_TO_WORLD_STATUS = ADMITTED_FOR_BUILD
+QT8.2.1_M3_BODY_TO_WORLD = ACTIVE_V1_COMPONENT
 
 QT8.2_FIRST_REAL_CROSS_TYPE_COMPONENT_RELATION = CREATED
 QT8.2.1_M1_STATUS = UMBRELLA_NAVIGATION_CONCEPT_NOT_COMPONENT_BUILD
@@ -210,7 +170,7 @@ QT8.2_TEMPLATE_REOPEN_REQUIRED = NO
 
 ```text
 QT8.2.1_NEXT_STAGE
-= M3_BODY_TO_WORLD_MOTIF_TOPIC_BUILD
+= S3_WORLD_TREE_SYMBOL_ADMISSION_RESEARCH
 ```
 
-下一步按 Motif Template V1 建立 M3「原初存在的身体化为世界」正式专题包；通过 Component Acceptance 前不登记为 active component，也不预建 P2 relation。
+下一步对 S3「世界树／宇宙树」进行 Symbol Admission Research，重点区分 world tree / cosmic tree 与 sacred tree / tree of life / genealogical tree，并要求跨时代或跨媒介 symbol reuse 证据。
