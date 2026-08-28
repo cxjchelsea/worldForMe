@@ -2,7 +2,7 @@
 
 > Review type: `QC_TOPIC_PRODUCT_SHELL_V2_RETROFIT`
 >
-> Historical baseline: former `QT8.1.1` research topic
+> Historical baseline: former `QC1.1.1` research topic
 >
 > Current topic: `QC1.1.1`
 
@@ -20,7 +20,7 @@ QC1.1.1_CANONICAL_WORK_ALIGNMENT = PASS_FOR_CORE_SET
 QC1.1.1_LOCAL_RELATION_ALIGNMENT = PASS_FOR_CORE_SET
 ```
 
-本次验收不推翻旧 QT8.1.1 的研究结论，而是确认其已经从“研究数据库专题”升级为可浏览、选书和比较的 QC 产品专题。
+本次验收不推翻旧 QC1.1.1 的研究结论，而是确认其已经从“研究数据库专题”升级为可浏览、选书和比较的 QC 产品专题。
 
 ## 2. Product shell
 
@@ -68,7 +68,7 @@ QC1.1.1_LOCAL_RELATION_ALIGNMENT = PASS_FOR_CORE_SET
 - 增加更多次级经卷与第二圣殿时期文本；
 - 继续核证具体形成层次、版本差异与文本批判问题；
 - 扩展后世犹太、基督教、伊斯兰接受中的具体作品；
-- 等 QC1.2（原 QT8.2）迁移时再统一改写目标层编号。
+- 等 QC1.2（原 QC2）迁移时再统一改写目标层编号。
 
 ## 6. Final status
 

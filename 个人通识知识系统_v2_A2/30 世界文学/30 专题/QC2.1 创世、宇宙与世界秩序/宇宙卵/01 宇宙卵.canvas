@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/00 宇宙卵.md",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m0",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/10 核心结构/01 定义、边界与符号准入.md",
+      "x": 450,
+      "y": -300,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m1",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/11 来源与证据/02 来源物象与来源谱系.md",
+      "x": 450,
+      "y": -50,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m2",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/12 跨传统关系/04 核心意义与语义漂移.md",
+      "x": 450,
+      "y": 200,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m3",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/13 后世重写与阅读/08 后世重写与跨媒介复用.md",
+      "x": 450,
+      "y": 450,
+      "width": 360,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m0",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m1",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m2",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m3",
+      "toSide": "left"
+    }
+  ]
+}

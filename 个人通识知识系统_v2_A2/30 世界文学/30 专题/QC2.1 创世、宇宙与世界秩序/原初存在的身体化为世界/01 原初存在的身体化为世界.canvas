@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/00 原初存在的身体化为世界.md",
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m0",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/10 核心结构/01 定义、边界与准入.md",
+      "x": 450,
+      "y": -300,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m1",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/11 来源与证据/02 来源谱系.md",
+      "x": 450,
+      "y": -50,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m2",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/12 跨传统关系/04 跨传统分布.md",
+      "x": 450,
+      "y": 200,
+      "width": 360,
+      "height": 220
+    },
+    {
+      "id": "m3",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/13 后世重写与阅读/08 后世重写与文化化.md",
+      "x": 450,
+      "y": 450,
+      "width": 360,
+      "height": 220
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m0",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m1",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m2",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "m3",
+      "toSide": "left"
+    }
+  ]
+}

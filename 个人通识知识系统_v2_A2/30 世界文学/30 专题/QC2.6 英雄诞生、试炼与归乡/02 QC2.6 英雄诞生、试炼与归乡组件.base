@@ -1,0 +1,40 @@
+filters:
+  and:
+    - type == "qc2_component"
+    - primary_clusters.contains("WL-QC2.6")
+properties:
+  file.name:
+    displayName: 组件
+  note.component_type:
+    displayName: 类型
+  note.status:
+    displayName: 状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部组件
+    groupBy:
+      property: component_type
+      direction: ASC
+    order: [file.name, component_type, status, id]
+  - type: table
+    name: motif
+    filters:
+      and: [component_type == "motif"]
+    order: [file.name, status, id]
+  - type: table
+    name: archetype
+    filters:
+      and: [component_type == "archetype"]
+    order: [file.name, status, id]
+  - type: table
+    name: plot_pattern
+    filters:
+      and: [component_type == "plot_pattern"]
+    order: [file.name, status, id]
+  - type: table
+    name: symbol
+    filters:
+      and: [component_type == "symbol"]
+    order: [file.name, status, id]

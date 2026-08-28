@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "30 专题/QC2.5 命运、预言与自由意志/00 QC2.5 命运、预言与自由意志.md",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 220
+    },
+    {
+      "id": "c0",
+      "type": "file",
+      "file": "30 专题/QC2.5 命运、预言与自由意志/预言→逃避→实现/00 预言→逃避→实现.md",
+      "x": 460,
+      "y": -550,
+      "width": 350,
+      "height": 200
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c0",
+      "toSide": "left"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+filters:
+  and:
+    - component_id == "WL-TOPIC-QC28-SOLOMON"
+properties:
+  file.name:
+    displayName: 记录
+  note.type:
+    displayName: 数据类型
+  note.source_status:
+    displayName: 来源状态
+  note.relation_type:
+    displayName: 关系类型
+  note.evidence_level:
+    displayName: 证据等级
+  note.canonical_work:
+    displayName: 中央作品
+views:
+  - type: table
+    name: 全部证据与实例
+    groupBy:
+      property: type
+      direction: ASC
+    order: [file.name, type, source_status, relation_type, evidence_level, canonical_work]
+  - type: table
+    name: 来源证据
+    filters:
+      and: [type == "qc2_source_reference"]
+    order: [file.name, source_status, evidence_level]
+  - type: table
+    name: 作品实例
+    filters:
+      and: [type == "qc2_work_reference"]
+    order: [file.name, relation_type, evidence_level, canonical_work]
+  - type: table
+    name: 组件关系
+    filters:
+      and: [type == "qc2_component_relation"]
+    order: [file.name, relation_type, evidence_level]

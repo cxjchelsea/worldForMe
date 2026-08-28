@@ -1,0 +1,111 @@
+{
+  "nodes": [
+    {
+      "id": "home",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/00 QC2.1 创世、宇宙与世界秩序.md",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 220
+    },
+    {
+      "id": "c0",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/Earth-diver 潜水取土创世/00 Earth-diver 潜水取土创世.md",
+      "x": 460,
+      "y": -550,
+      "width": 350,
+      "height": 200
+    },
+    {
+      "id": "c1",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/世界树宇宙树/00 世界树宇宙树.md",
+      "x": 460,
+      "y": -320,
+      "width": 350,
+      "height": 200
+    },
+    {
+      "id": "c2",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/世界父母分离结构/00 世界父母分离结构.md",
+      "x": 460,
+      "y": -90,
+      "width": 350,
+      "height": 200
+    },
+    {
+      "id": "c3",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/00 原初存在的身体化为世界.md",
+      "x": 460,
+      "y": 140,
+      "width": 350,
+      "height": 200
+    },
+    {
+      "id": "c4",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/天地分离/00 天地分离.md",
+      "x": 460,
+      "y": 370,
+      "width": 350,
+      "height": 200
+    },
+    {
+      "id": "c5",
+      "type": "file",
+      "file": "30 专题/QC2.1 创世、宇宙与世界秩序/宇宙卵/00 宇宙卵.md",
+      "x": 460,
+      "y": 600,
+      "width": 350,
+      "height": 200
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c0",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c1",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c2",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c3",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c4",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "home",
+      "fromSide": "right",
+      "toNode": "c5",
+      "toSide": "left"
+    }
+  ]
+}

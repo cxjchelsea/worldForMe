@@ -1,0 +1,38 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QC21-SKY-EARTH-SEPARATION"
+    - structure_type_zh != null
+properties:
+  file.name:
+    displayName: 节点
+  note.structure_type_zh:
+    displayName: 所属模块
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order: [file.name, structure_type_zh, sequence]
+  - type: table
+    name: 核心结构
+    filters:
+      and: [structure_type_zh == "核心结构"]
+    order: [file.name, sequence]
+  - type: table
+    name: 来源与证据
+    filters:
+      and: [structure_type_zh == "来源与证据"]
+    order: [file.name, sequence]
+  - type: table
+    name: 跨传统关系
+    filters:
+      and: [structure_type_zh == "跨传统关系"]
+    order: [file.name, sequence]
+  - type: table
+    name: 后世重写与阅读
+    filters:
+      and: [structure_type_zh == "后世重写与阅读"]
+    order: [file.name, sequence]
