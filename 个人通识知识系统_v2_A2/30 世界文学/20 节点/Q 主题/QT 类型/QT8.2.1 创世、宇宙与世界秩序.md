@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.16-qt82-v1-p1-active-first-relation"
+source_version: "2.17-qt82-v1-s1-admitted"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -58,16 +58,6 @@ component_acceptance: PASS
 
 专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/天地分离/00 天地分离|天地分离]]
 
-最低辨识：
-
-```text
-primordial_non_separation
-+
-cosmological_separation
-+
-world_space_result
-```
-
 ### 2. 世界父母分离结构
 
 ```text
@@ -87,8 +77,6 @@ S1 WORLD_PARENTS_JOINED
 → S4 COSMIC_SPACE_OPENED
 ```
 
-Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界父母分离结构/QT8.2.1｜世界父母分离结构 Component Acceptance Review]]
-
 ## 第一条正式跨类型关系
 
 ```text
@@ -99,7 +87,40 @@ Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩�
 
 状态：`ACTIVE`。
 
-这是 QT8.2 V1 Freeze 后第一条真实 `qt82_component_relation`；使用冻结 vocabulary，无需 Governance Amendment。
+## S1｜宇宙卵
+
+Admission Research：[[QT8.2.1 S1 宇宙卵 Admission Research]]
+
+已通过：
+
+```text
+QT8.2.1_S1_ADMISSION_RESEARCH = PASS
+QT8.2.1_S1_COMPONENT_TYPE = symbol
+QT8.2.1_S1_SYMBOL_ADMISSION = PASS
+QT8.2.1_S1_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
+```
+
+当前 stable meanings：
+
+```text
+primordial_totality
+generative_potential
+gestation_and_birth_of_cosmos
+unity_to_differentiation
+```
+
+治理边界：
+
+```text
+宇宙卵 / symbol
+≠ “从宇宙卵中创生” / motif candidate
+
+Pangu “天地混沌如鸡子”
+= supporting analogy
+≠ standalone proof of a mature Chinese cosmic-egg symbol tradition
+```
+
+S1 当前为 `ADMITTED_FOR_BUILD`，尚未建立正式 component 专题。
 
 ## 当前状态
 
@@ -109,9 +130,9 @@ QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 2
 
 QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
 QT8.2.1_WORLD_PARENTS_SEPARATION = ACTIVE_V1_COMPONENT
+QT8.2.1_COSMIC_EGG_SYMBOL_ADMISSION = PASS
 
 QT8.2_FIRST_REAL_CROSS_TYPE_COMPONENT_RELATION = CREATED
-QT8.2_COMPONENT_RELATION_REAL_RECORD_COUNT_MINIMUM = 1
 QT8.2_TEMPLATE_REOPEN_REQUIRED = NO
 ```
 
@@ -119,7 +140,7 @@ QT8.2_TEMPLATE_REOPEN_REQUIRED = NO
 
 ```text
 QT8.2.1_NEXT_STAGE
-= S1_COSMIC_EGG_SYMBOL_ADMISSION_RESEARCH
+= S1_COSMIC_EGG_SYMBOL_TOPIC_BUILD
 ```
 
-下一步对 S1「宇宙卵」进行 symbol admission research，重点验证它是否真正超越创世情节中的普通物象，形成跨文本／时代／媒介的稳定文化意义。
+下一步按文化符号型专题模板 V1 建立「宇宙卵」正式专题包；通过 Component Acceptance 前不创建新的正式 component relation。
