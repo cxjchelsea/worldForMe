@@ -1,0 +1,188 @@
+name: One-time QC2 migration V3
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qc2-migration-refactor-v3.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Migrate and refactor QC2
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, shutil, json
+
+          ROOT=Path('个人通识知识系统_v2_A2/30 世界文学')
+          QT=ROOT/'20 节点'/'Q 主题'/'QT 类型'
+          QC=ROOT/'20 节点'/'Q 主题'/'QC 母题'
+          TOPICS=ROOT/'30 专题'
+          TPL=TOPICS/'00 模板'/'QC2 组件型专题体系'
+          TPL.mkdir(parents=True,exist_ok=True)
+          clusters={1:'创世、宇宙与世界秩序',2:'毁灭、灾变与世界重生',3:'神、人边界与禁忌越界',4:'造物、创造与失控',5:'命运、预言与自由意志',6:'英雄诞生、试炼与归乡',7:'下降、死亡与跨越彼岸',8:'王权、合法性与秩序更替',9:'家族、血缘与代际冲突',10:'爱、婚姻、欲望与禁忌',11:'战士、荣誉与英雄共同体',12:'流浪、放逐与寻找家园',13:'怪物、异类与文明边界',14:'变形、分身与身份不稳定',15:'牺牲、罪、救赎与替罪',16:'欺骗、智慧、交易与规则颠覆',17:'求索、宝物与神圣目标',18:'战争、围城、复仇与文明冲突',19:'权力、反抗与法外正义',20:'时间、记忆、循环与失落世界'}
+
+          def parse(text):
+            if not text.startswith('---\n'): return None,text
+            e=text.find('\n---\n',4)
+            return (text[4:e],text[e+5:]) if e>=0 else (None,text)
+          def setv(fm,k,v):
+            pat=re.compile(rf'(?m)^{re.escape(k)}:\s*.*$'); line=f'{k}: {v}'
+            return pat.sub(line,fm,count=1) if pat.search(fm) else fm.rstrip()+'\n'+line
+          def getv(fm,k):
+            m=re.search(rf'(?m)^{re.escape(k)}:\s*["\']?([^\n"\']+)',fm or '')
+            return m.group(1).strip() if m else None
+          def tr(s):
+            for a,b in [('WL-TOPIC-QT811','WL-TOPIC-QC111'),('WL-TOPIC-QT812','WL-TOPIC-QC112'),('WL-TOPIC-QT82','WL-TOPIC-QC2'),('WL-QT8.2','WL-QC2'),('qt82_','qc2_'),('QT8.2','QC2'),('QT8.1.1','QC1.1.1'),('QT8.1.2','QC1.1.2'),('QT8.1','QC1.1')]: s=s.replace(a,b)
+            return s
+          def node(src,dst,code,name,parent,level,legacy):
+            text=tr(src.read_text(encoding='utf-8')); fm,body=parse(text); fm=fm or ''
+            for k,v in [('id',f'WL-{code}'),('type','literature_node'),('name',f'"{name}"'),('code',code),('axis','Q'),('parent',parent),('level',str(level)),('node_kind','taxonomy_group' if code=='QC2' else 'taxonomy_cluster'),('status','ACTIVE' if code=='QC2' else 'CONTENT_OPEN'),('legacy_code',legacy)]: fm=setv(fm,k,v)
+            body=re.sub(r'(?m)^#\s+.*$',f'# {code} {name}',body,count=1)
+            dst.write_text('---\n'+fm.rstrip()+'\n---\n'+body,encoding='utf-8')
+
+          # Taxonomy migration
+          p=QT/'QT8.2 世界文化母题与原型.md'
+          if p.exists(): node(p,QC/'QC2 世界文化母题、原型与叙事结构.md','QC2','世界文化母题、原型与叙事结构','WL-QC',3,'QT8.2'); p.unlink()
+          for n,name in clusters.items():
+            p=QT/f'QT8.2.{n} {name}.md'
+            if p.exists(): node(p,QC/f'QC2.{n} {name}.md',f'QC2.{n}',name,'WL-QC2',4,f'QT8.2.{n}'); p.unlink()
+
+          # Cluster-level QT8.2.1 research notes -> QC2.1 research data layer
+          research=TOPICS/f'QC2.1 {clusters[1]}'/'20 数据层'/'90 研究治理'; research.mkdir(parents=True,exist_ok=True)
+          for p in list(QT.glob('QT8.2.1 *.md')):
+            dst=research/p.name.replace('QT8.2.1','QC2.1'); dst.write_text(tr(p.read_text(encoding='utf-8')),encoding='utf-8'); p.unlink()
+
+          # Move/merge existing topic cluster directories; create all 20 shells
+          for n,name in clusters.items():
+            old=TOPICS/f'QT8.2.{n} {name}'; new=TOPICS/f'QC2.{n} {name}'
+            if old.exists():
+              new.mkdir(parents=True,exist_ok=True)
+              shutil.copytree(old,new,dirs_exist_ok=True)
+              shutil.rmtree(old)
+            new.mkdir(parents=True,exist_ok=True)
+
+          # Governance/template migration from repo root
+          archive=TPL/'90 历史 V0'; archive.mkdir(parents=True,exist_ok=True)
+          for p in list(Path('.').glob('QT8.2｜*')):
+            d=archive if ('V0' in p.name or 'Pilot Plan' in p.name) else TPL
+            (d/p.name.replace('QT8.2｜','QC2｜')).write_text(tr(p.read_text(encoding='utf-8')),encoding='utf-8'); p.unlink()
+
+          # Namespace rewrite in QC2 hierarchy
+          for d in TOPICS.glob('QC2.*'):
+            if not d.is_dir(): continue
+            for f in d.rglob('*'):
+              if f.is_file() and f.suffix.lower() in {'.md','.base','.canvas'}:
+                f.write_text(tr(f.read_text(encoding='utf-8')),encoding='utf-8')
+            for f in sorted(list(d.rglob('*')),key=lambda x:len(x.parts),reverse=True):
+              if f.exists() and 'QT8.2' in f.name: f.rename(f.with_name(f.name.replace('QT8.2','QC2')))
+
+          # Productize validated/existing components
+          module={1:'核心结构',3:'核心结构',2:'来源与证据',5:'来源与证据',4:'跨传统关系',6:'跨传统关系',7:'跨传统关系',8:'后世重写与阅读',9:'后世重写与阅读',10:'后世重写与阅读'}
+          folder={'核心结构':'10 核心结构','来源与证据':'11 来源与证据','跨传统关系':'12 跨传统关系','后世重写与阅读':'13 后世重写与阅读'}
+          count=0; types={}
+          for n,cname in clusters.items():
+            cdir=TOPICS/f'QC2.{n} {cname}'
+            for comp in sorted(x for x in cdir.iterdir() if x.is_dir() and x.name!='20 数据层'):
+              hs=list(comp.glob('00 *.md'))
+              if not hs: continue
+              home=hs[0]; text=tr(home.read_text(encoding='utf-8')); fm,body=parse(text)
+              if fm is None: continue
+              cid=tr(getv(fm,'topic_id') or getv(fm,'id') or '')
+              if not cid: continue
+              fm=setv(fm,'type','qc2_component'); fm=setv(fm,'id',cid); fm=setv(fm,'topic_id',cid); fm=setv(fm,'legacy_topic_id',re.sub(r'^WL-TOPIC-QC2','WL-TOPIC-QT82',cid))
+              ctype=getv(fm,'component_type') or 'unknown'; types[ctype]=types.get(ctype,0)+1; count+=1
+              home.write_text('---\n'+fm.rstrip()+'\n---\n'+body,encoding='utf-8')
+              moves={}
+              for f in list(comp.glob('*.md')):
+                m=re.match(r'^(0?[1-9]|10)\s+(.+)\.md$',f.name)
+                if not m: continue
+                num=int(m.group(1)); mod=module.get(num)
+                if not mod: continue
+                dd=comp/folder[mod]; dd.mkdir(parents=True,exist_ok=True); dest=dd/tr(f.name)
+                txt=tr(f.read_text(encoding='utf-8')); pfm,pbody=parse(txt); pfm=pfm or ''
+                pfm=setv(pfm,'topic_id',cid); pfm=setv(pfm,'type','qc2_component_structure'); pfm=setv(pfm,'structure_type_zh',mod); pfm=setv(pfm,'sequence',str(num))
+                dest.write_text('---\n'+pfm.rstrip()+'\n---\n'+pbody,encoding='utf-8'); moves[f.stem]=f'{dd.name}/{dest.stem}'; f.unlink()
+              for f in comp.rglob('*.md'):
+                txt=f.read_text(encoding='utf-8')
+                for old,new in moves.items(): txt=txt.replace(f'[[{old}',f'[[{new}')
+                f.write_text(txt,encoding='utf-8')
+              name=comp.name
+              reps=[]
+              for fd in folder.values():
+                fs=sorted((comp/fd).glob('*.md')) if (comp/fd).exists() else []
+                if fs: reps.append(fs[0])
+              nodes=[{'id':'home','type':'file','file':str(home.relative_to(ROOT)).replace('\\','/'),'x':0,'y':0,'width':360,'height':220}]; edges=[]
+              for i,rf in enumerate(reps):
+                nid=f'm{i}'; nodes.append({'id':nid,'type':'file','file':str(rf.relative_to(ROOT)).replace('\\','/'),'x':450,'y':i*250-300,'width':360,'height':220}); edges.append({'id':f'e{i}','fromNode':'home','fromSide':'right','toNode':nid,'toSide':'left'})
+              (comp/f'01 {name}.canvas').write_text(json.dumps({'nodes':nodes,'edges':edges},ensure_ascii=False,indent=2),encoding='utf-8')
+              (comp/f'02 {name}结构.base').write_text(f'''filters:\n  and:\n    - topic_id == "{cid}"\n    - structure_type_zh != null\nproperties:\n  file.name:\n    displayName: 节点\n  note.structure_type_zh:\n    displayName: 所属模块\n  note.sequence:\n    displayName: 顺序\nviews:\n  - type: table\n    name: 全部知识节点\n    groupBy:\n      property: structure_type_zh\n      direction: ASC\n    order: [file.name, structure_type_zh, sequence]\n  - type: table\n    name: 核心结构\n    filters:\n      and: [structure_type_zh == "核心结构"]\n    order: [file.name, sequence]\n  - type: table\n    name: 来源与证据\n    filters:\n      and: [structure_type_zh == "来源与证据"]\n    order: [file.name, sequence]\n  - type: table\n    name: 跨传统关系\n    filters:\n      and: [structure_type_zh == "跨传统关系"]\n    order: [file.name, sequence]\n  - type: table\n    name: 后世重写与阅读\n    filters:\n      and: [structure_type_zh == "后世重写与阅读"]\n    order: [file.name, sequence]\n''',encoding='utf-8')
+              (comp/f'03 {name}证据关系.base').write_text(f'''filters:\n  and:\n    - component_id == "{cid}"\nproperties:\n  file.name:\n    displayName: 记录\n  note.type:\n    displayName: 数据类型\n  note.source_status:\n    displayName: 来源状态\n  note.relation_type:\n    displayName: 关系类型\n  note.evidence_level:\n    displayName: 证据等级\n  note.canonical_work:\n    displayName: 中央作品\nviews:\n  - type: table\n    name: 全部证据与实例\n    groupBy:\n      property: type\n      direction: ASC\n    order: [file.name, type, source_status, relation_type, evidence_level, canonical_work]\n  - type: table\n    name: 来源证据\n    filters:\n      and: [type == "qc2_source_reference"]\n    order: [file.name, source_status, evidence_level]\n  - type: table\n    name: 作品实例\n    filters:\n      and: [type == "qc2_work_reference"]\n    order: [file.name, relation_type, evidence_level, canonical_work]\n  - type: table\n    name: 组件关系\n    filters:\n      and: [type == "qc2_component_relation"]\n    order: [file.name, relation_type, evidence_level]\n''',encoding='utf-8')
+              ht=home.read_text(encoding='utf-8')
+              if '## QC2 产品入口' not in ht: ht+=f'\n\n## QC2 产品入口\n\n- [[01 {name}.canvas|组件地图]]\n- [[02 {name}结构.base|结构 Base]]\n- [[03 {name}证据关系.base|证据关系 Base]]\n\n> `{ctype}` 组件；来源、作品实例与组件关系保留在证据层，不冒充中央作品实体。\n'
+              home.write_text(ht,encoding='utf-8')
+
+          # 20 cluster product shells
+          for n,name in clusters.items():
+            d=TOPICS/f'QC2.{n} {name}'; comps=[x.name for x in d.iterdir() if x.is_dir() and x.name!='20 数据层' and list(x.glob('00 *.md'))]
+            links='\n'.join(f'- [[{c}/00 {c}|{c}]]' for c in sorted(comps)) if comps else '- 当前尚未建立正式 component；等待 component inventory / admission research。'
+            home=d/f'00 QC2.{n} {name}.md'; home.write_text(f'''---\nid: WL-TOPIC-QC2{n}-CLUSTER\ntype: qc2_cluster_home\ncluster_id: WL-QC2.{n}\ncode: QC2.{n}\nname: {name}\nstatus: {'ACTIVE_WITH_COMPONENTS' if comps else 'CONTENT_OPEN'}\nlegacy_code: QT8.2.{n}\n---\n\n# QC2.{n} {name}\n\n一级母题簇 / 问题域导航容器，不是 component 本身。\n\n## 产品入口\n- [[01 QC2.{n} {name}.canvas|组件地图]]\n- [[02 QC2.{n} {name}组件.base|组件 Base]]\n\n## 当前组件\n{links}\n\n## 规则\n- one primary home + multiple secondary clusters；\n- 不要求四类组件数量均衡；\n- 新对象必须完成准入、来源证据与类型专属结构检查。\n''',encoding='utf-8')
+            (d/f'02 QC2.{n} {name}组件.base').write_text(f'''filters:\n  and:\n    - type == "qc2_component"\n    - primary_clusters.contains("WL-QC2.{n}")\nproperties:\n  file.name:\n    displayName: 组件\n  note.component_type:\n    displayName: 类型\n  note.status:\n    displayName: 状态\n  note.id:\n    displayName: 编号\nviews:\n  - type: table\n    name: 全部组件\n    groupBy:\n      property: component_type\n      direction: ASC\n    order: [file.name, component_type, status, id]\n  - type: table\n    name: motif\n    filters:\n      and: [component_type == "motif"]\n    order: [file.name, status, id]\n  - type: table\n    name: archetype\n    filters:\n      and: [component_type == "archetype"]\n    order: [file.name, status, id]\n  - type: table\n    name: plot_pattern\n    filters:\n      and: [component_type == "plot_pattern"]\n    order: [file.name, status, id]\n  - type: table\n    name: symbol\n    filters:\n      and: [component_type == "symbol"]\n    order: [file.name, status, id]\n''',encoding='utf-8')
+            nodes=[{'id':'home','type':'file','file':str(home.relative_to(ROOT)).replace('\\','/'),'x':0,'y':0,'width':380,'height':220}]; edges=[]
+            for i,c in enumerate(sorted(comps)[:12]):
+              ch=next((d/c).glob('00 *.md')); nid=f'c{i}'; nodes.append({'id':nid,'type':'file','file':str(ch.relative_to(ROOT)).replace('\\','/'),'x':460+(i//6)*440,'y':(i%6)*230-550,'width':350,'height':200}); edges.append({'id':f'e{i}','fromNode':'home','fromSide':'right','toNode':nid,'toSide':'left'})
+            (d/f'01 QC2.{n} {name}.canvas').write_text(json.dumps({'nodes':nodes,'edges':edges},ensure_ascii=False,indent=2),encoding='utf-8')
+
+          # QC/QC1 split semantics
+          (QC/'QC 母题与叙事组件.md').write_text('''---\nid: WL-QC\ntype: literature_axis_subsystem\nname: QC 母题与叙事组件\ncode: QC\naxis: Q\nlevel: 2\nstatus: ACTIVE\n---\n# QC 母题与叙事组件\n\n- [[QC1 世界文化叙事传统]]：来源传统层——从哪里来、如何形成与传播。\n- [[QC2 世界文化母题、原型与叙事结构]]：横向组件层——反复出现哪些 motif / archetype / plot pattern / symbol。\n\nQC1 与 QC2 通过具体人物、故事、文本与作品实例连接；结构相似不等于历史传播。\n''',encoding='utf-8')
+          q1=QC/'QC1 世界文化母题、原型与叙事传统.md'; q1new=QC/'QC1 世界文化叙事传统.md'
+          if q1.exists():
+            fm,body=parse(q1.read_text(encoding='utf-8')); fm=setv(fm,'name','世界文化叙事传统'); fm=setv(fm,'status','ACTIVE'); fm=setv(fm,'scope_note','"QC 拆分后的来源传统层；legacy_code 仅作 provenance"')
+            body='\n# QC1 世界文化叙事传统\n\nQC1 保存文化叙事资源的来源、形成、保存、经典化与传播。当前核心分支：[[QC1.1 神话、传说与民间叙事]]。\n\n与 [[QC2 世界文化母题、原型与叙事结构]] 互补：QC1 回答“从哪里来”，QC2 回答“抽象出什么可复用组件”。\n'
+            q1new.write_text('---\n'+fm.rstrip()+'\n---\n'+body,encoding='utf-8'); q1.unlink()
+
+          # QC1 active cross-links
+          for d in [TOPICS/'QC1.1.1 希伯来—圣经叙事传统',TOPICS/'QC1.1.2 希腊—罗马神话传统']:
+            for f in d.rglob('*'):
+              if f.is_file() and f.suffix in {'.md','.base','.canvas'}: f.write_text(tr(f.read_text(encoding='utf-8')),encoding='utf-8')
+            for f in sorted(list(d.rglob('*')),key=lambda x:len(x.parts),reverse=True):
+              if f.exists() and 'QT8.2' in f.name: f.rename(f.with_name(f.name.replace('QT8.2','QC2')))
+
+          # QT8 stub: only QT8.3 remains
+          stub=QT/'QT8 世界文化母题、原型与叙事传统.md'
+          fm,_=parse(stub.read_text(encoding='utf-8')); fm=setv(fm,'migration_target','"WL-QC1 + WL-QC2"')
+          stub.write_text('---\n'+fm.rstrip()+'\n---\n\n# QT8｜迁移兼容入口\n\n```text\nQT8.1 -> QC1.1（已迁移）\nQT8.2 -> QC2（已迁移并重构）\nQT8.3 -> 暂留旧位置\n```\n\n- [[../QC 母题/QC1 世界文化叙事传统]]\n- [[../QC 母题/QC2 世界文化母题、原型与叙事结构]]\n- [[QT8.3 英雄、边疆与法外者文化传统]]\n\nQT8.3 迁移完成后再删除本兼容入口。\n',encoding='utf-8')
+
+          # Product template and acceptance
+          (TPL/'QC2 组件型专题地图模板 V1.md').write_text('''---\nid: WL-TEMPLATE-QC2-COMPONENT-V1\ntype: literature_topic_template\nstatus: FROZEN_AFTER_MIGRATION\n---\n# QC2 组件型专题地图模板 V1\n\n固定产品壳：`00 主页 + 01 Canvas + 02 Structure Base + 03 Evidence Base + 10/11/12/13 语义模块 + 20 数据层`。\n\n四类 component 继续使用已冻结 ontology：motif / archetype / plot_pattern / symbol。共享数据实体迁移为 `qc2_source_reference / qc2_component_relation / qc2_work_reference`。\n\nQC2 不强制作品 Base：证据记录不是作品实体，只有真实文学作品才进入 `40 作品`。\n''',encoding='utf-8')
+          (TPL/'QC2 迁移与产品层验收.md').write_text(f'''---\nid: WL-QC2-MIGRATION-ACCEPTANCE\ntype: literature_topic_governance\nstatus: PASS_WITH_CONTENT_EXPANSION_OPEN\n---\n# QC2｜迁移与产品层验收\n\n- QT8.2 -> QC2；QT8.2.1–20 -> QC2.1–20。\n- 20 个 cluster 均已有 taxonomy node + homepage + Canvas + component Base。\n- 已迁移 / 产品化 component：**{count}** 个；类型分布：`{types}`。\n- schema prefix：`qt82_ -> qc2_`。\n- QC1 当前链接已改指 QC2；QT8.3 未迁移、未重构。\n- 四类型 ontology 与 Shared Data V1 继续冻结；系统化内容扩展保持 OPEN。\n''',encoding='utf-8')
+          for f in TPL.rglob('*'):
+            if f.is_file() and f.suffix in {'.md','.base','.canvas'}: f.write_text(tr(f.read_text(encoding='utf-8')),encoding='utf-8')
+
+          assert not list(QT.glob('QT8.2*'))
+          assert not list(TOPICS.glob('QT8.2*'))
+          assert (QT/'QT8.3 英雄、边疆与法外者文化传统.md').exists()
+          assert (QC/'QC2 世界文化母题、原型与叙事结构.md').exists()
+          assert count>=5
+          print('QC2_OK',count,types)
+          PY
+      - name: Commit result and remove temporary workflows
+        shell: bash
+        run: |
+          rm -f .github/workflows/qc2-migration-refactor.yml
+          rm -f .github/workflows/qc2-migration-refactor-fix.yml
+          rm -f .github/workflows/qc2-migration-refactor-v3.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Migrate QT8.2 to QC2 and rebuild component product layer'
+          git push origin main
