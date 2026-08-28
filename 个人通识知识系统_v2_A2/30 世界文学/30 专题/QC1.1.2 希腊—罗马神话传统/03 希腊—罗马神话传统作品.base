@@ -2,14 +2,30 @@ filters:
   and:
     - type == "work"
     - or:
-        - title == "伊利亚特"
-        - title == "奥德赛"
-        - title == "神谱"
-        - title == "工作与时日"
-        - title == "俄狄浦斯王"
-        - title == "俄瑞斯忒亚"
-        - title == "埃涅阿斯纪"
-        - title == "变形记"
+        - and:
+            - title == "伊利亚特"
+            - author == "荷马"
+        - and:
+            - title == "奥德赛"
+            - author == "荷马"
+        - and:
+            - title == "神谱"
+            - author == "赫西俄德"
+        - and:
+            - title == "工作与时日"
+            - author == "赫西俄德"
+        - and:
+            - title == "俄狄浦斯王"
+            - author == "索福克勒斯"
+        - and:
+            - title == "俄瑞斯忒亚"
+            - author == "埃斯库罗斯"
+        - and:
+            - title == "埃涅阿斯纪"
+            - author == "维吉尔"
+        - and:
+            - title == "变形记"
+            - author == "奥维德"
 properties:
   file.name:
     displayName: 作品
@@ -33,10 +49,12 @@ properties:
     displayName: 类型
   note.axis_q:
     displayName: 主题
+  note.verification_status:
+    displayName: 校验状态
 views:
   - type: table
-    name: 全部核心文本
-    order: [file.name, author, read_status, myth_priority, r1_tradition, t0_stage]
+    name: 已建立中央作品
+    order: [file.name, author, read_status, myth_priority, r1_tradition, t0_stage, verification_status]
   - type: table
     name: 核心 ★
     filters:
