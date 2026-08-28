@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.23-qt82-v1-tier-a-complete"
+source_version: "2.24-qt82-v1-consistency-repair"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -28,7 +28,7 @@ component_type: motif
 status: ACTIVE_V1_COMPONENT
 ```
 
-专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/天地分离/00 天地分离|天地分离]]
+专题：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/天地分离/00 天地分离|天地分离]]
 
 ### 2. 世界父母分离结构
 
@@ -37,7 +37,7 @@ component_type: plot_pattern
 status: ACTIVE_V1_COMPONENT
 ```
 
-专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界父母分离结构/00 世界父母分离结构|世界父母分离结构]]
+专题：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界父母分离结构/00 世界父母分离结构|世界父母分离结构]]
 
 ### 3. 宇宙卵
 
@@ -46,7 +46,7 @@ component_type: symbol
 status: ACTIVE_V1_COMPONENT
 ```
 
-专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/宇宙卵/00 宇宙卵|宇宙卵]]
+专题：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/宇宙卵/00 宇宙卵|宇宙卵]]
 
 ### 4. 原初存在的身体化为世界
 
@@ -55,7 +55,7 @@ component_type: motif
 status: ACTIVE_V1_COMPONENT
 ```
 
-专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/00 原初存在的身体化为世界|原初存在的身体化为世界]]
+专题：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/原初存在的身体化为世界/00 原初存在的身体化为世界|原初存在的身体化为世界]]
 
 ### 5. 世界树／宇宙树
 
@@ -65,9 +65,9 @@ status: ACTIVE_V1_COMPONENT
 component_acceptance: PASS
 ```
 
-专题：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界树宇宙树/00 世界树宇宙树|世界树／宇宙树]]
+专题：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界树宇宙树/00 世界树宇宙树|世界树／宇宙树]]
 
-Acceptance Review：[[../../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界树宇宙树/QT8.2.1｜世界树宇宙树 Component Acceptance Review]]
+Acceptance Review：[[../../../30 专题/QT8.2.1 创世、宇宙与世界秩序/世界树宇宙树/QT8.2.1｜世界树宇宙树 Component Acceptance Review]]
 
 稳定意义：
 
@@ -146,6 +146,7 @@ M4 言说／命名创世
 QT8.2.1_COMPONENT_INVENTORY_FIRST_PASS = COMPLETE
 QT8.2.1_SECOND_PASS_TRIAGE = COMPLETE
 QT8.2.1_SECOND_PASS_TIER_A = COMPLETE
+QT8.2.1_PRE_COVERAGE_CONSISTENCY_REPAIR = COMPLETE
 QT8.2.1_ACTIVE_V1_COMPONENT_COUNT = 5
 
 QT8.2.1_SKY_EARTH_SEPARATION = ACTIVE_V1_COMPONENT
