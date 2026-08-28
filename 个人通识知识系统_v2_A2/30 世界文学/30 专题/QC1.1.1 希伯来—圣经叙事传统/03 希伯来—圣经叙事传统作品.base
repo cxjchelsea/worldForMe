@@ -1,0 +1,58 @@
+filters:
+  and:
+    - type == "work"
+    - or:
+        - title == "创世记"
+        - title == "出埃及记"
+        - title == "申命记"
+        - title == "撒母耳记"
+        - title == "列王纪"
+        - title == "约伯记"
+        - title == "诗篇"
+        - title == "以赛亚书"
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.myth_priority:
+    displayName: 全局神话优先级
+  note.r1_tradition:
+    displayName: 地域传统
+  note.t0_stage:
+    displayName: 历史阶段
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+views:
+  - type: table
+    name: 全部核心文本
+    order: [file.name, author, read_status, myth_priority, r1_tradition, t0_stage]
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order: [file.name, author, myth_priority]
+  - type: table
+    name: 已读
+    filters:
+      or:
+        - read_status == "已读"
+        - read_status == "重读"
+    order: [file.name, author, myth_priority]
+  - type: table
+    name: 按地域传统
+    groupBy:
+      property: r1_tradition
+      direction: ASC
+    order: [file.name, read_status, myth_priority]
