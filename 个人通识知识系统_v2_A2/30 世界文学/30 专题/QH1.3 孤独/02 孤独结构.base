@@ -1,0 +1,43 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QH1-3-LONELINESS"
+formulas:
+  type_zh: type.replace("literature_topic_structure", "核心结构").replace("literature_topic_section", "核心问题")
+properties:
+  file.name:
+    displayName: 知识节点
+  formula.type_zh:
+    displayName: 类型
+  note.sequence:
+    displayName: 顺序
+  note.dimension:
+    displayName: 维度
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - sequence
+      - dimension
+      - id
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - type == "literature_topic_structure"
+    order:
+      - sequence
+      - file.name
+  - type: table
+    name: 核心问题
+    filters:
+      and:
+        - type == "literature_topic_section"
+    order:
+      - sequence
+      - file.name
