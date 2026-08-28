@@ -10,7 +10,7 @@ coverage_priority: Interest
 node_kind: problem_domain
 anchorable: true
 topic_map: null
-source_version: "2.25-qt82-v1-m5-source-ready"
+source_version: "2.26-qt82-v1-m5-admitted"
 ---
  
 # QT8.2.1 创世、宇宙与世界秩序
@@ -204,18 +204,48 @@ QT8.2.1_M5_NORTH_AMERICAN_SOURCE_READINESS = PASS
 QT8.2.1_M5_EURASIAN_COMPARATIVE_READINESS = PASS
 QT8.2.1_M5_DOMAIN_BOUNDARY_RISK = MANAGEABLE_BUT_MUST_BE_TESTED
 QT8.2.1_M5_READY_FOR_ADMISSION_RESEARCH = YES
-QT8.2.1_M5_TOPIC_BUILD_AUTHORIZED = NO
+```
+
+## M5 Admission Research
+
+Research：[[QT8.2.1 M5 Earth-diver Admission Research]]
+
+结论：
+
+```text
+QT8.2.1_M5_ADMISSION_RESEARCH = PASS
+QT8.2.1_M5_COMPONENT_TYPE = motif
+QT8.2.1_M5_REQUIRED_INVARIANTS = STABLE
+QT8.2.1_M5_CROSS_TRADITION_PRESSURE = PASS
+QT8.2.1_M5_PRIMORDIAL_VS_POST_FLOOD_BOUNDARY = PASS
+QT8.2.1_M5_INCREMENTAL_EXPLANATORY_VALUE = HIGH
+QT8.2.1_M5_PROMOTE_TO_TOPIC_BUILD_QUEUE = YES
+QT8.2.1_M5_STATUS = ADMITTED_FOR_BUILD
+```
+
+最低不变量：
+
+```text
+R1 pre_land_water_dominant_world
+R2 underwater_descent_for_earth_material
+R3 retrieved_earth_material
+R4 retrieved_material_causes_land_formation
 ```
 
 关键 domain gate：
 
 ```text
-primordial-water land creation
-≠
+first stable land formation
+→ primary cluster: QT8.2.1
+
 post-flood world recreation by earth-diving
+→ primary cluster: QT8.2.2
+→ 不作为 QT8.2.1 核心 defining source
 ```
 
-后者可能主要属于 QT8.2.2「毁灭、灾变与世界重生」，不能为增加实例数无差别吸收到 QT8.2.1。
+跨传统压力测试已经由 Haudenosaunee / Iroquois 与 Slavic / Eastern European witnesses 完整满足 R1–R4。
+
+M5 目前尚未计入 active component count；只有 Topic Build + Component Acceptance 通过后才成为第六个 active component。
 
 ## 当前治理状态
 
@@ -234,8 +264,9 @@ QT8.2.1_M3_BODY_TO_WORLD = ACTIVE_V1_COMPONENT
 QT8.2.1_S3_WORLD_TREE = ACTIVE_V1_COMPONENT
 
 QT8.2.1_M5_SOURCE_READINESS_REVIEW = PASS
-QT8.2.1_M5_READY_FOR_ADMISSION_RESEARCH = YES
-QT8.2.1_M5_TOPIC_BUILD_AUTHORIZED = NO
+QT8.2.1_M5_ADMISSION_RESEARCH = PASS
+QT8.2.1_M5_STATUS = ADMITTED_FOR_BUILD
+QT8.2.1_M5_TOPIC_BUILD_AUTHORIZED = YES_BY_ADMISSION_PASS
 
 QT8.2_FIRST_REAL_CROSS_TYPE_COMPONENT_RELATION = CREATED
 QT8.2.1_M1_STATUS = UMBRELLA_NAVIGATION_CONCEPT_NOT_COMPONENT_BUILD
@@ -250,7 +281,7 @@ QT8.2_TEMPLATE_REOPEN_REQUIRED = NO
 
 ```text
 QT8.2.1_NEXT_STAGE
-= M5_EARTH_DIVER_MOTIF_ADMISSION_RESEARCH
+= M5_EARTH_DIVER_MOTIF_TOPIC_BUILD
 ```
 
-下一步只做 M5 独立 Motif Admission Research。必须先解决 primordial creation vs post-flood recreation 的问题域边界，并以具体 tradition witnesses 而非单一比较综述完成跨传统压力测试。通过 Admission Research 后，才决定是否建设第六个 active component；若 M5 最终建成，应优先考虑 QT8.2.1 阶段性 content freeze。
+下一步按 Motif Template V1 建设 M5「Earth-diver / 潜水取土创世」专题包。通过 Component Acceptance 后，M5 才计为第六个 active component；若通过，应优先进入 QT8.2.1 阶段性 content-freeze review，而不是继续机械扩张 Tier B。
