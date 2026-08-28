@@ -1,0 +1,113 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-QH1-1-SELFHOOD")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.selfhood_role:
+    displayName: 专题角色
+  note.selfhood_priority:
+    displayName: 优先级
+  note.selfhood_dimensions:
+    displayName: 主体性问题维度
+  note.selfhood_note:
+    displayName: 专题价值
+  note.topic_links:
+    displayName: 专题
+  note.topics:
+    displayName: 专题编号
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部作品
+    groupBy:
+      property: selfhood_role
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - selfhood_role
+      - selfhood_priority
+      - read_status
+      - selfhood_dimensions
+      - selfhood_note
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - selfhood_role == "骨架"
+    order:
+      - file.name
+      - author
+      - selfhood_priority
+      - read_status
+      - selfhood_dimensions
+      - selfhood_note
+      - axis_t
+      - axis_r
+  - type: table
+    name: 比较与边界
+    filters:
+      or:
+        - selfhood_role == "比较"
+        - selfhood_role == "边界测试"
+    order:
+      - file.name
+      - author
+      - selfhood_role
+      - selfhood_priority
+      - read_status
+      - selfhood_dimensions
+      - selfhood_note
+      - axis_t
+      - axis_r
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - selfhood_role
+      - selfhood_priority
+      - selfhood_dimensions
+      - axis_t
+      - axis_r
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - selfhood_role
+      - selfhood_priority
+      - selfhood_dimensions
+      - axis_t
+      - axis_r

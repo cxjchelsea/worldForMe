@@ -8,8 +8,8 @@ parent: "WL-QH1"
 level: 3
 coverage_priority: Core
 node_kind: taxonomy_leaf
-anchorable: false
-topic_map: null
+anchorable: true
+topic_map: "[[../../../30 专题/QH1.1 自我认同与主体性/00 自我认同与主体性]]"
 source_version: "2.10-qh-user"
 ---
 
@@ -25,4 +25,4 @@ source_version: "2.10-qh-user"
 
 ## 专题地图
 
-> 暂未接入。
+- [[../../../30 专题/QH1.1 自我认同与主体性/00 自我认同与主体性|自我认同与主体性]]
