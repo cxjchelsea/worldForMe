@@ -22,7 +22,7 @@ properties:
   note.qc112_text_role:
     displayName: 文本谱系角色
   note.qc112_role:
-    displayName: 专题认知角色
+    displayName: 专题角色
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -40,31 +40,106 @@ properties:
 views:
   - type: table
     name: 全部 QC1.1.2 作品
-    order: [file.name, author, read_status, qc112_priority, qc112_internal_tradition, qc112_tradition_stage, qc112_text_role, qc112_role, axis_t, axis_r, axis_m, axis_g, axis_q, id, verification_status]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 核心 ★
     filters:
       and:
         - qc112_priority == "★"
-    order: [file.name, author, read_status, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 重点 ◆
     filters:
       and:
         - qc112_priority == "◆"
-    order: [file.name, author, read_status, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 扩展 △
     filters:
       and:
         - qc112_priority == "△"
-    order: [file.name, author, read_status, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 未读
     filters:
       and:
         - read_status == "未读"
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 已读
     filters:
@@ -72,65 +147,255 @@ views:
         - or:
             - read_status == "已读"
             - read_status == "重读"
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按内部传统
+    filters:
+      and:
+        - qc112_internal_tradition != null
     groupBy:
       property: qc112_internal_tradition
       direction: ASC
-    order: [file.name, qc112_priority, qc112_tradition_stage, qc112_text_role, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按传统阶段
     groupBy:
       property: qc112_tradition_stage
       direction: ASC
-    order: [file.name, qc112_priority, qc112_internal_tradition, qc112_text_role, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按文本谱系角色
     groupBy:
       property: qc112_text_role
       direction: ASC
-    order: [file.name, qc112_priority, qc112_internal_tradition, qc112_tradition_stage, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
-    name: 按专题认知角色
+    name: 按专题角色
     groupBy:
       property: qc112_role
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按时间
     groupBy:
       property: axis_t
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按地域
     groupBy:
       property: axis_r
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按思潮
     groupBy:
       property: axis_m
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按类型
     groupBy:
       property: axis_g
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 按主题
     groupBy:
       property: axis_q
       direction: ASC
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, qc112_role]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
+  - type: table
+    name: 待传统归类
+    filters:
+      or:
+        - qc112_internal_tradition == null
+        - qc112_internal_tradition.contains("待校准")
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
   - type: table
     name: 待校验
     filters:
       and:
         - verification_status != "自动通过"
         - verification_status != "手工核验"
-    order: [file.name, qc112_priority, qc112_text_role, qc112_internal_tradition, verification_status]
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc112_priority
+      - qc112_internal_tradition
+      - qc112_tradition_stage
+      - qc112_text_role
+      - qc112_role
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
