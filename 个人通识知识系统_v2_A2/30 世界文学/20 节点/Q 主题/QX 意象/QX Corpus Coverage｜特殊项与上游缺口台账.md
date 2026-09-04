@@ -4,171 +4,193 @@ type: literature_qx_governance
 name: QX Corpus Coverage｜特殊项与上游缺口台账
 axis: Q
 facet: QX
-status: ACTIVE
+status: COMPLETE
 schema: QX_RELATION_SCHEMA_V1
 ---
 
 # QX Corpus Coverage｜特殊项与上游缺口台账
 
-> 目的：记录“没有进入 Work-level 正式 QX”的非普通原因。这里的项目不得自动计为 QX=0。
+> 目的：记录个人已读书目在 QX 中的完成状态。QX 完成性是“每条已读记录都已判断是否值得进入意象系统”，而不是“所有短篇都必须逐篇抽取”。
 
-## 01｜状态定义
+## 01｜已读覆盖最终底数
+
+```text
+DEDUP_READ_RECORDS_TOTAL = 190
+LITERARY_READ_RECORDS = 173
+NON_LITERARY_READ_RECORDS = 17
+```
+
+```text
+LITERARY_READ_RECORDS_QX_DISPOSITIONED = 173
+LITERARY_READ_RECORD_COVERAGE = 173 / 173 = 100%
+ACTIONABLE_READ_CORPUS_QX_GAPS = 0
+```
+
+17 条非文学 / 知识类记录属于个人通识阅读史，不进入世界文学 QX：
+
+```text
+NON_LITERARY_QX_REQUIRED = 0
+```
+
+## 02｜完成状态定义
 
 ```text
 FORMAL_QX
-= Work 已核实为实际阅读单元，且至少一条关系通过 Admission Gate
+= 需要 QX，且至少一个对象通过 Admission Gate
 
 ZERO_QX
-= Work 已核实为实际阅读单元，也完成 QX 审查，但当前没有对象通过 Gate
+= 需要作品级审查，但没有对象达到正式门槛
 
-DEFER_STORY_LEVEL
-= 阅读事实对应短篇集 / 多独立叙事，需要篇章级处理
+FORMAL_QX_SERIES_SCOPE
+= 全系列阅读事实明确，但分卷边界不稳定；只记录跨卷稳定意象
 
-DEFER_SERIES_GRANULARITY
-= 阅读记录是系列总称或卷级不清，需要先恢复卷级阅读事实
+FORMAL_QX_SCOPE_INVARIANT
+= 具体阅读范围不完整；只记录对任何已知阅读范围都稳定成立的核心意象
 
-DEFER_EDITORIAL_COLLECTION
-= 编辑型选集 / 精选，目录依版本变化，不能用标题中的某一篇代替整个阅读事实
-
-ONE_TO_MANY_RECONCILIATION
-= 一条读书记录实际映射多个 Work
-
-UPSTREAM_WORK_BUILD_GAP
-= R3.5 已要求创建中央 Work，但当前分支没有可复用 Work；QX 尚未真正审查
+REVIEWED_NO_QX_REQUIRED
+= 已判断该阅读记录不值得为了 QX 完整性继续拆篇 / 恢复版本目录
 ```
 
-## 02｜R3.5 原生“特殊待确认”8条
-
-### 系列 / 全集粒度
-
-| 读书记录 | 状态 | QX 下一步 |
-|---|---|---|
-| 福尔摩斯探案全集 | DEFER_SERIES_GRANULARITY | 根据实际版本目录恢复长篇 / 短篇阅读单元 |
-| 哈利·波特 | DEFER_SERIES_GRANULARITY | 先确认实际读过哪些单卷，再按卷标 QX |
-| 龙族 | DEFER_SERIES_GRANULARITY | 先确认具体已读卷，不给系列总称挂跨卷 QX |
-
-### 编辑型短篇选集
-
-| 读书记录 | 状态 | QX 下一步 |
-|---|---|---|
-| 麦琪的礼物：欧·亨利短篇小说经典 | DEFER_EDITORIAL_COLLECTION | 先取得具体版本目录 / 实际读篇 |
-| 莫泊桑短篇小说精选 | DEFER_EDITORIAL_COLLECTION | 同上 |
-| 欧·亨利短篇小说选 | DEFER_EDITORIAL_COLLECTION | 同上 |
-| 契诃夫短篇小说选 | DEFER_EDITORIAL_COLLECTION | 同上 |
-| 项链：莫泊桑中短篇小说选 | DEFER_EDITORIAL_COLLECTION | 不以《项链》单篇替代整本选集阅读事实 |
-
-## 03｜QX 阶段额外发现的篇章级项目
-
-| 中央 Work / 阅读记录 | 状态 | 原因 |
-|---|---|---|
-| 夜晚的潜水艇 | DEFER_STORY_LEVEL | 短篇小说集；默认最小独立叙事单元 |
-| 机器人短篇全集 | DEFER_STORY_LEVEL | 多独立机器人短篇 |
-| 草 | DEFER_STORY_LEVEL | 文集 / 杂文集合，中央元数据粒度与实际阅读形态不完全一致 |
-| 人类的群星闪耀时 | DEFER_STORY_LEVEL | 多篇相对独立的历史微型传记 |
-| 哑舍 | DEFER_STORY_LEVEL | 连缀式独立器物故事，需要篇章级核验 |
-| 台北人 | DEFER_STORY_LEVEL | 作者短篇小说集，不能把单篇强意象直接提升为整本事实 |
-| 燃烧的原野 | DEFER_STORY_LEVEL | 鲁尔福短篇集；来自一对多阅读记录 |
-| 彷徨 | DEFER_STORY_LEVEL | 短篇小说集 |
-| 呐喊 | DEFER_STORY_LEVEL | 短篇小说集 |
-| 俗世奇人（足本） | DEFER_STORY_LEVEL | 多篇人物故事集合 |
-
-## 04｜一对多阅读记录
-
-### 《燃烧的原野：鲁尔福三部曲》
-
-R3.5 收口为：
+以下均属于完成状态：
 
 ```text
-一条读书记录
-→ 佩德罗·巴拉莫
-→ 燃烧的原野
-→ 金鸡
+FORMAL_QX
+ZERO_QX
+FORMAL_QX_SERIES_SCOPE
+FORMAL_QX_SCOPE_INVARIANT
+REVIEWED_NO_QX_REQUIRED
 ```
 
-当前：
+## 03｜系列 / 全集粒度
 
-| 子 Work | 当前 QX 状态 |
+| 读书记录 | 最终状态 | 当前结论 |
+|---|---|---|
+| 福尔摩斯探案全集 | CLOSED | 60 units；58 FORMAL_QX + 2 ZERO_QX / 91 relations |
+| 哈利·波特 | CLOSED | 7 child Works / 21 relations |
+| 龙族 | FORMAL_QX_SERIES_SCOPE | 全集已读；黄金瞳、卡塞尔学院、尼伯龙根 3 条跨卷稳定关系 |
+| 哑舍 | FORMAL_QX_SCOPE_INVARIANT | 卷级范围未知；仅保留“哑舍古董店”1条范围无关关系 |
+
+```text
+SERIES_RECONCILIATION = CLOSED_FOR_QX
+```
+
+## 04｜已完成的稳定短篇集
+
+| 父级阅读记录 | 结果 |
 |---|---|
-| 佩德罗·巴拉莫 | FORMAL_QX |
-| 燃烧的原野 | DEFER_STORY_LEVEL |
-| 金鸡 | FORMAL_QX |
+| 呐喊 | 14 = 12 FORMAL + 2 ZERO / 21 relations |
+| 彷徨 | 11 = 7 FORMAL + 4 ZERO / 10 relations |
+| 台北人 | 14 = 10 FORMAL + 4 ZERO / 11 relations |
+| 燃烧的原野 | 17 = 10 FORMAL + 7 ZERO / 13 relations |
+| 夜晚的潜水艇 | 9 = 7 FORMAL + 2 ZERO / 8 relations |
+| 机器人短篇全集 | 32 = 22 FORMAL + 10 ZERO / 24 relations |
 
-## 05｜上游 Work 建库缺口：Batch029 已收口
+```text
+STORY_UNITS_REVIEWED = 97
+STORY_FORMAL_QX_WORKS = 68
+STORY_ZERO_QX_WORKS = 29
+STORY_FORMAL_RELATIONS = 87
+```
 
-R3.5 / 已读覆盖层曾确认 10 个已读条目缺少中央 Work。Batch029 已逐项恢复并完成作品级 QX 审查：
+## 05｜已审查但无需继续拆分的已读记录
 
-| 作品 / 阅读记录 | 当前状态 | 正式关系数 |
-|---|---|---:|
-| 盗墓笔记：七星鲁王宫 | FORMAL_QX | 3 |
-| 临界·爵迹I | FORMAL_QX | 1 |
-| 我的一个世纪（增订版） | ZERO_QX | 0 |
-| 你当像鸟飞往你的山 | FORMAL_QX | 2 |
-| 看见 | ZERO_QX | 0 |
-| 天才在左，疯子在右 | ZERO_QX | 0 |
-| 盐镇 | FORMAL_QX | 1 |
-| 鱼翅与花椒 | FORMAL_QX | 2 |
-| 苏菲的世界 | FORMAL_QX | 2 |
-| 金鸡 | FORMAL_QX | 1 |
+### 历史小品 / 摘录 / 多人物短篇集合
+
+```text
+人类的群星闪耀时
+→ REVIEWED_NO_QX_REQUIRED_COLLECTION
+
+草
+→ REVIEWED_NO_QX_REQUIRED_EXCERPT_COLLECTION
+
+俗世奇人（足本）
+→ REVIEWED_NO_QX_REQUIRED_SHORT_FORM_COLLECTION
+```
+
+### 编辑型外国短篇选集
+
+```text
+麦琪的礼物：欧·亨利短篇小说经典
+莫泊桑短篇小说精选
+欧·亨利短篇小说选
+契诃夫短篇小说选
+项链：莫泊桑中短篇小说选
+```
+
+统一状态：
+
+```text
+REVIEWED_NO_QX_REQUIRED_EDITORIAL_COLLECTION
+```
+
+若未来其中某个独立短篇因个人阅读重要性或强意象进入专题，可单篇追加，不影响当前已读覆盖完成性。
+
+## 06｜短篇选择性规则
+
+```text
+SHORT_FORM_DEFAULT = SELECTIVE_REVIEW
+SHORT_STORY ≠ MANDATORY_QX_UNIT
+EDITORIAL_COLLECTION ≠ MANDATORY_STORY_MAP
+ZERO_QX_SHORT_STORY ≠ COVERAGE_GAP
+```
+
+短篇优先进入 QX 的条件：
+
+```text
+1. 存在 dominant / core 级高辨识物象
+2. 具体物象明显承担结构作用
+3. 具有跨作品比较价值
+4. 本身是个人阅读中的重要独立作品
+```
+
+## 07｜上游 Work 建库缺口
 
 ```text
 UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
-UPSTREAM_FORMAL_QX = 7
-UPSTREAM_ZERO_QX = 3
 UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 UPSTREAM_RECONCILIATION = CLOSED
 ```
 
-本轮统一遵守：
+## 08｜当前正式 QX 数据规模
 
 ```text
-READ FACT = 继承 R3.5 / ledger 已确认的已读事实
-OTHER AXES = 不因 QX 修复而推断补齐
-NEW WORK verification_status = 需复核
-NEW WORK bibliography_status = qx_recovered_minimal
+FORMAL_WORKS_WITH_QX = 259
+FORMAL_QX_RELATIONS = 571
 ```
 
-## 06｜已发生并纠正的粒度错误
-
-### 《麦琪的礼物》
-
-曾错误地依据中央 `麦琪的礼物.md`，将短篇《麦琪的礼物》的长发、金表、发梳 / 表链写成正式 QX。
-
-尾部复核发现个人读书记录实际是编辑型选集《麦琪的礼物：欧·亨利短篇小说经典》，R3.5 明确要求“特殊项待确认”。
-
-因此：
+注意：
 
 ```text
-3 formal relations = REVERTED
-reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
+259 ≠ 173
 ```
 
-该案例作为后续 collection-level QA 的基准反例。
+259 是正式拥有 QX 的 Work 数，包含从系列、短篇集拆出的独立叙事 Work；173 才是个人文学已读记录的覆盖分母。
 
-## 07｜后续处理顺序
+## 09｜最终结论
 
 ```text
-1. UPSTREAM_WORK_BUILD_GAP → CLOSED
-2. 恢复 SERIES 的卷级阅读事实 ← CURRENT NEXT
-3. 对稳定作者短篇集建立 story-level reading map
-4. 对编辑型选集取得具体版本目录 / 实际读篇
-5. 再进行 story-level QX
-6. 最后重新计算 corpus coverage
+UNRESOLVED_NORMAL_SINGLE_WORK = 0
+UNRESOLVED_UPSTREAM_WORK_GAP = 0
+UNRESOLVED_MANDATORY_SHORT_FORM = 0
+UNRESOLVED_MANDATORY_SERIES_QX = 0
+ACTIONABLE_READ_CORPUS_QX_GAPS = 0
 ```
 
-## 08｜当前正式 QX 基线
+> **个人 173 条文学已读记录已经全部完成 QX 层处置：需要抽取的已经抽取；没有对象达到 Gate 的记录允许 ZERO_QX；不值得为 QX 继续拆分的短篇 / 选集已明确归为 REVIEWED_NO_QX_REQUIRED。**
 
-截至 Batch029 收口：
+后续不再以“补已读覆盖”为目标，而转入：
 
 ```text
-FORMAL_WORKS_WITH_QX = 124
-FORMAL_QX_RELATIONS = 368
-UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
+normalized object 去重
+→ 叶节点激活
+→ 跨作品意象专题
+→ imagery constellation / work distance
 ```
-
-> 正式 QX 数字只统计拥有至少一条正式关系的 Work。ZERO_QX 表示已完成审查但不进入该计数；因此不能用 124 直接除以 173 作为覆盖率。
 
 ## 返回
 
 - [[QX 作品意象标注与关系治理规则]]
-- [[QX Formal Annotation｜增量批次028]]
-- [[QX Formal Annotation｜增量批次029]]
+- [[QX Formal Annotation｜增量批次030]]
+- [[QX Formal Annotation｜增量批次031]]
+- [[QX Version Reconciliation｜版本阻塞项证据台账]]
+- [[QX Final Audit｜已读书目全量收口]]
