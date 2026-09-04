@@ -101,12 +101,12 @@ R3.5 收口为：
 |---|---|
 | 盗墓笔记：七星鲁王宫 | UPSTREAM_WORK_BUILD_GAP |
 | 临界·爵迹I | UPSTREAM_WORK_BUILD_GAP |
-| 我的一个世纪（增订版） | UPSTREAM_WORK_BUILD_GAP |
+| 我的一个世纪（增订版） | ZERO_QX |
 | 你当像鸟飞往你的山 | FORMAL_QX |
-| 看见 | UPSTREAM_WORK_BUILD_GAP |
-| 天才在左，疯子在右 | UPSTREAM_WORK_BUILD_GAP |
+| 看见 | ZERO_QX |
+| 天才在左，疯子在右 | ZERO_QX |
 | 盐镇 | UPSTREAM_WORK_BUILD_GAP |
-| 鱼翅与花椒 | UPSTREAM_WORK_BUILD_GAP |
+| 鱼翅与花椒 | FORMAL_QX |
 | 苏菲的世界 | FORMAL_QX |
 | 金鸡 | UPSTREAM_WORK_BUILD_GAP |
 
@@ -121,8 +121,12 @@ DO_NOT_CREATE_DUPLICATE_WORK_IN_QX_PHASE
 Batch029 已恢复项目：
 
 ```text
-你当像鸟飞往你的山 → 2 formal QX
-苏菲的世界 → 2 formal QX
+你当像鸟飞往你的山 → FORMAL_QX / 2 relations
+苏菲的世界 → FORMAL_QX / 2 relations
+鱼翅与花椒 → FORMAL_QX / 2 relations
+看见 → ZERO_QX
+天才在左，疯子在右 → ZERO_QX
+我的一个世纪（增订版） → ZERO_QX
 ```
 
 ## 06｜已发生并纠正的粒度错误
@@ -155,14 +159,15 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 
 ## 08｜当前正式 QX 基线
 
-截至 Batch029 第一组：
+截至 Batch029 第二组：
 
 ```text
-FORMAL_WORKS_WITH_QX = 119
-FORMAL_QX_RELATIONS = 360
+FORMAL_WORKS_WITH_QX = 120
+FORMAL_QX_RELATIONS = 362
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 4
 ```
 
-> 这两个数字只表示“拥有至少一条正式 QX 的 Work”，不是 173 条文学阅读记录的完成率。
+> 这两个正式 QX 数字只表示“拥有至少一条正式 QX 的 Work”，不是 173 条文学阅读记录的完成率。ZERO_QX 已完成审查，但不计入 FORMAL_WORKS_WITH_QX。
 
 ## 返回
 
