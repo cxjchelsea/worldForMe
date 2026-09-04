@@ -1,0 +1,32 @@
+{
+  "nodes":[
+    {"id":"home","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/00 沃尔松—尼伯龙根叙事传统.md","x":0,"y":0,"width":380,"height":220},
+    {"id":"source","type":"text","text":"来源环境\n\nQC1.1.3 日耳曼—北欧神话传统\n\n本节点只提供较大的来源环境；QC1.2.2 追踪其中一个具有独立跨文本生命的英雄叙事群。","x":0,"y":-360,"width":380,"height":220},
+    {"id":"core","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/10 定义、边界与共享叙事核/01 共享叙事核与专题边界.md","x":470,"y":0,"width":420,"height":250},
+    {"id":"witness","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/11 早期材料与文本见证/01 埃达、萨迦与德语文本见证.md","x":960,"y":-300,"width":440,"height":260},
+    {"id":"branch","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/12 北欧—德语文本分支/01 两大文本分支与谱系关系.md","x":960,"y":80,"width":440,"height":260},
+    {"id":"norse","type":"text","text":"北欧文本环境\n\n《诗体埃达》相关英雄诗\n《沃尔松格萨迦》\n《散文埃达》相关材料\n必要时：《蒂德雷克萨迦》\n\n这些是文本见证，不构造一条未经证实的单线传本链。","x":1490,"y":-400,"width":440,"height":300},
+    {"id":"german","type":"text","text":"德语文本环境\n\n《尼伯龙根之歌》\n\n与北欧材料共享人物和事件资源，但人物关系、动机、价值结构和叙事组织均可显著不同。","x":1490,"y":20,"width":440,"height":260},
+    {"id":"variants","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/13 人物对应与关键变体/01 人物对应、事件对应与关键变体.md","x":2020,"y":-240,"width":440,"height":280},
+    {"id":"reception","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/14 后世重构与现代再生产/01 瓦格纳与现代再生产.md","x":2020,"y":120,"width":440,"height":260},
+    {"id":"qc2","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/15 QC2 组件、证据与阅读/01 QC2 组件、证据纪律与阅读路线.md","x":2550,"y":-240,"width":440,"height":280},
+    {"id":"works","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/03 沃尔松—尼伯龙根叙事传统作品.base","x":2550,"y":120,"width":440,"height":260},
+    {"id":"evidence","type":"text","text":"证据纪律\n\n共享人物／事件 ≠ 现存文本直接改写\n成书／写本日期 ≠ 故事起源日期\n人物对应 ≠ 角色功能完全相同\n现代综合重构 ≠ 中世纪传统原貌\n\nCanvas 只表达专题认知结构，不以连线伪造传播关系。","x":960,"y":500,"width":1500,"height":260}
+  ],
+  "edges":[
+    {"id":"e1","fromNode":"source","fromSide":"bottom","toNode":"home","toSide":"top","label":"来源环境"},
+    {"id":"e2","fromNode":"home","fromSide":"right","toNode":"core","toSide":"left"},
+    {"id":"e3","fromNode":"core","fromSide":"right","toNode":"witness","toSide":"left"},
+    {"id":"e4","fromNode":"core","fromSide":"right","toNode":"branch","toSide":"left"},
+    {"id":"e5","fromNode":"witness","fromSide":"right","toNode":"norse","toSide":"left","label":"北欧见证"},
+    {"id":"e6","fromNode":"witness","fromSide":"right","toNode":"german","toSide":"left","label":"德语见证"},
+    {"id":"e7","fromNode":"branch","fromSide":"right","toNode":"norse","toSide":"left","label":"分支比较"},
+    {"id":"e8","fromNode":"branch","fromSide":"right","toNode":"german","toSide":"left","label":"分支比较"},
+    {"id":"e9","fromNode":"norse","fromSide":"right","toNode":"variants","toSide":"left","label":"人物／事件比较"},
+    {"id":"e10","fromNode":"german","fromSide":"right","toNode":"variants","toSide":"left","label":"人物／事件比较"},
+    {"id":"e11","fromNode":"variants","fromSide":"right","toNode":"qc2","toSide":"left","label":"抽象组件"},
+    {"id":"e12","fromNode":"variants","fromSide":"bottom","toNode":"reception","toSide":"top","label":"后世重构"},
+    {"id":"e13","fromNode":"reception","fromSide":"right","toNode":"works","toSide":"left"},
+    {"id":"e14","fromNode":"branch","fromSide":"bottom","toNode":"evidence","toSide":"top","label":"关系须核验"}
+  ]
+}
