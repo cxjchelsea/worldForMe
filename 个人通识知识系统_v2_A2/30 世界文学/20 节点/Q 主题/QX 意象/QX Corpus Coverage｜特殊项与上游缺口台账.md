@@ -91,42 +91,40 @@ R3.5 收口为：
 |---|---|
 | 佩德罗·巴拉莫 | FORMAL_QX |
 | 燃烧的原野 | DEFER_STORY_LEVEL |
-| 金鸡 | UPSTREAM_WORK_BUILD_GAP |
+| 金鸡 | FORMAL_QX |
 
-## 05｜已确认的上游 Work 建库缺口
+## 05｜上游 Work 建库缺口：Batch029 已收口
 
-以下项目在 R3.5 / 已读覆盖层中属于文学已读；Batch029 起逐项恢复中央 Work 并进入正式 QX：
+R3.5 / 已读覆盖层曾确认 10 个已读条目缺少中央 Work。Batch029 已逐项恢复并完成作品级 QX 审查：
 
-| 作品 / 阅读记录 | 状态 |
-|---|---|
-| 盗墓笔记：七星鲁王宫 | UPSTREAM_WORK_BUILD_GAP |
-| 临界·爵迹I | UPSTREAM_WORK_BUILD_GAP |
-| 我的一个世纪（增订版） | ZERO_QX |
-| 你当像鸟飞往你的山 | FORMAL_QX |
-| 看见 | ZERO_QX |
-| 天才在左，疯子在右 | ZERO_QX |
-| 盐镇 | UPSTREAM_WORK_BUILD_GAP |
-| 鱼翅与花椒 | FORMAL_QX |
-| 苏菲的世界 | FORMAL_QX |
-| 金鸡 | UPSTREAM_WORK_BUILD_GAP |
-
-对尚未恢复项目继续执行：
+| 作品 / 阅读记录 | 当前状态 | 正式关系数 |
+|---|---|---:|
+| 盗墓笔记：七星鲁王宫 | FORMAL_QX | 3 |
+| 临界·爵迹I | FORMAL_QX | 1 |
+| 我的一个世纪（增订版） | ZERO_QX | 0 |
+| 你当像鸟飞往你的山 | FORMAL_QX | 2 |
+| 看见 | ZERO_QX | 0 |
+| 天才在左，疯子在右 | ZERO_QX | 0 |
+| 盐镇 | FORMAL_QX | 1 |
+| 鱼翅与花椒 | FORMAL_QX | 2 |
+| 苏菲的世界 | FORMAL_QX | 2 |
+| 金鸡 | FORMAL_QX | 1 |
 
 ```text
-QX_DECISION = NOT_YET_EVALUATED
-DO_NOT_COUNT_AS_ZERO_QX
-DO_NOT_CREATE_DUPLICATE_WORK_IN_QX_PHASE
+UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
+UPSTREAM_FORMAL_QX = 7
+UPSTREAM_ZERO_QX = 3
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
+UPSTREAM_RECONCILIATION = CLOSED
 ```
 
-Batch029 已恢复项目：
+本轮统一遵守：
 
 ```text
-你当像鸟飞往你的山 → FORMAL_QX / 2 relations
-苏菲的世界 → FORMAL_QX / 2 relations
-鱼翅与花椒 → FORMAL_QX / 2 relations
-看见 → ZERO_QX
-天才在左，疯子在右 → ZERO_QX
-我的一个世纪（增订版） → ZERO_QX
+READ FACT = 继承 R3.5 / ledger 已确认的已读事实
+OTHER AXES = 不因 QX 修复而推断补齐
+NEW WORK verification_status = 需复核
+NEW WORK bibliography_status = qx_recovered_minimal
 ```
 
 ## 06｜已发生并纠正的粒度错误
@@ -149,8 +147,8 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 ## 07｜后续处理顺序
 
 ```text
-1. 先补 UPSTREAM_WORK_BUILD_GAP
-2. 恢复 SERIES 的卷级阅读事实
+1. UPSTREAM_WORK_BUILD_GAP → CLOSED
+2. 恢复 SERIES 的卷级阅读事实 ← CURRENT NEXT
 3. 对稳定作者短篇集建立 story-level reading map
 4. 对编辑型选集取得具体版本目录 / 实际读篇
 5. 再进行 story-level QX
@@ -159,15 +157,15 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 
 ## 08｜当前正式 QX 基线
 
-截至 Batch029 第二组：
+截至 Batch029 收口：
 
 ```text
-FORMAL_WORKS_WITH_QX = 120
-FORMAL_QX_RELATIONS = 362
-UPSTREAM_WORK_BUILD_GAP_REMAINING = 4
+FORMAL_WORKS_WITH_QX = 124
+FORMAL_QX_RELATIONS = 368
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 ```
 
-> 这两个正式 QX 数字只表示“拥有至少一条正式 QX 的 Work”，不是 173 条文学阅读记录的完成率。ZERO_QX 已完成审查，但不计入 FORMAL_WORKS_WITH_QX。
+> 正式 QX 数字只统计拥有至少一条正式关系的 Work。ZERO_QX 表示已完成审查但不进入该计数；因此不能用 124 直接除以 173 作为覆盖率。
 
 ## 返回
 
