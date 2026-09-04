@@ -34,7 +34,7 @@ ONE_TO_MANY_RECONCILIATION
 = 一条读书记录实际映射多个 Work
 
 UPSTREAM_WORK_BUILD_GAP
-= R3.5 已要求创建中央 Work，但当前分支没有可复用 Work；QX 尚未真正审查
+= 已读覆盖层要求创建中央 Work，但当前分支没有可复用 Work；QX 尚未真正审查
 ```
 
 ## 02｜R3.5 原生“特殊待确认”8条
@@ -43,11 +43,11 @@ UPSTREAM_WORK_BUILD_GAP
 
 | 读书记录 | 状态 | 当前结论 / QX 下一步 |
 |---|---|---|
-| 福尔摩斯探案全集 | ONE_TO_MANY_RECONCILIATION | 全集阅读事实已确认；4 长篇已完成状态校正与 QX，剩余 56 短篇逐篇恢复 |
-| 哈利·波特 | ONE_TO_MANY_RECONCILIATION | Batch030 已核实七册中央 Work 均为已读，并完成 7 Work / 21 formal QX；系列粒度实质闭环 |
+| 福尔摩斯探案全集 | ONE_TO_MANY_RECONCILIATION | 全集阅读事实已确认；当前完成 4 长篇 +《福尔摩斯历险记》12短篇，共 16/60；剩余 44 短篇 |
+| 哈利·波特 | ONE_TO_MANY_RECONCILIATION | 七册中央 Work 均为已读，7 Work / 21 formal QX；系列粒度闭环 |
 | 龙族 | DEFER_SERIES_GRANULARITY | 全集阅读事实已确认，但原始出版 / 修订 / 连载 / 重写边界不稳定；先恢复采用的版本 / 卷级结构，不给系列父节点挂跨卷 QX |
 
-> Batch030 的关键修正：三条系列记录的“是否完整读过”已经不是未知项。剩余问题仅是中央 Work 映射与版本 / 独立叙事粒度。
+> Batch030 已确认三条系列记录的“是否完整读过”都不是未知项。剩余问题仅是中央 Work 映射与版本 / 独立叙事粒度。
 
 ### 编辑型短篇选集
 
@@ -88,61 +88,55 @@ UPSTREAM_WORK_BUILD_GAP
 ### 《哈利·波特》
 
 ```text
-哈利·波特与魔法石 → FORMAL_QX / 3
-哈利·波特与密室 → FORMAL_QX / 3
-哈利·波特与阿兹卡班的囚徒 → FORMAL_QX / 3
-哈利·波特与火焰杯 → FORMAL_QX / 3
-哈利·波特与凤凰社 → FORMAL_QX / 3
-哈利·波特与混血王子 → FORMAL_QX / 3
-哈利·波特与死亡圣器 → FORMAL_QX / 3
-```
-
-```text
-HARRY_POTTER_CHILD_WORKS = 7
-HARRY_POTTER_FORMAL_RELATIONS = 21
+7 child Works
+7 FORMAL_QX
+21 formal relations
 HARRY_POTTER_GRANULARITY = CLOSED
 ```
 
 ### 《福尔摩斯探案全集》
 
-全集阅读事实已确认；标准作品粒度为：
+全集阅读事实已确认；标准粒度：
 
 ```text
 4 novels + 56 short stories = 60 independent narrative units
 ```
 
-Batch030 已先完成四部长篇：
+当前已完成：
 
 ```text
-血字的研究 → FORMAL_QX / 3
-四签名 → FORMAL_QX / 3
-巴斯克维尔的猎犬 → FORMAL_QX / 3
-恐怖谷 → FORMAL_QX / 3
+4 novels → FORMAL_QX / 12 relations
+The Adventures of Sherlock Holmes 12 stories → FORMAL_QX / 19 relations
 ```
 
-四个中央 Work 原先均错误写为 `read_status = 未读`，现已依据完整全集阅读事实校正为 `已读`。剩余 56 短篇仍须逐篇完成中央 Work 对齐与 Admission Gate，不将系列标志物批量继承给所有篇章。
+《福尔摩斯历险记》12篇已全部恢复为中央 Work：
+
+```text
+波希米亚丑闻
+红发会
+身份案
+博斯科姆比溪谷秘案
+五个橘核
+歪唇男人
+蓝宝石案
+斑点带子案
+工程师大拇指案
+单身贵族案
+绿玉皇冠案
+铜山毛榉案
+```
 
 ```text
 SHERLOCK_CANON_UNITS = 60
-SHERLOCK_NOVELS_COMPLETE = 4
-SHERLOCK_SHORT_STORIES_REMAINING = 56
-SHERLOCK_LONG_NOVEL_FORMAL_RELATIONS = 12
+SHERLOCK_UNITS_COMPLETE = 16
+SHERLOCK_SHORT_STORIES_COMPLETE = 12
+SHERLOCK_SHORT_STORIES_REMAINING = 44
+SHERLOCK_FORMAL_RELATIONS_CURRENT = 31
 ```
 
-## 05｜上游 Work 建库缺口：Batch029 已收口
+后续按短篇集逐组推进，不将“贝克街 / 烟斗 / 放大镜”等系列标志物自动复制到各篇。
 
-| 作品 / 阅读记录 | 当前状态 | 正式关系数 |
-|---|---|---:|
-| 盗墓笔记：七星鲁王宫 | FORMAL_QX | 3 |
-| 临界·爵迹I | FORMAL_QX | 1 |
-| 我的一个世纪（增订版） | ZERO_QX | 0 |
-| 你当像鸟飞往你的山 | FORMAL_QX | 2 |
-| 看见 | ZERO_QX | 0 |
-| 天才在左，疯子在右 | ZERO_QX | 0 |
-| 盐镇 | FORMAL_QX | 1 |
-| 鱼翅与花椒 | FORMAL_QX | 2 |
-| 苏菲的世界 | FORMAL_QX | 2 |
-| 金鸡 | FORMAL_QX | 1 |
+## 05｜上游 Work 建库缺口：Batch029 已收口
 
 ```text
 UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
@@ -156,16 +150,12 @@ UPSTREAM_RECONCILIATION = CLOSED
 
 ### 《麦琪的礼物》
 
-曾错误地依据中央 `麦琪的礼物.md`，将短篇《麦琪的礼物》的长发、金表、发梳 / 表链写成正式 QX。
-
-尾部复核发现个人读书记录实际是编辑型选集《麦琪的礼物：欧·亨利短篇小说经典》，因此：
-
 ```text
 3 formal relations = REVERTED
 reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 ```
 
-该案例作为后续 collection-level QA 的基准反例。
+该案例继续作为 collection-level QA 的基准反例。
 
 ## 07｜后续处理顺序
 
@@ -173,21 +163,27 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 1. UPSTREAM_WORK_BUILD_GAP → CLOSED
 2. SERIES / VOLUME GRANULARITY
    - 哈利·波特 → CLOSED
-   - 福尔摩斯探案全集 → CURRENT / 4 OF 60 COMPLETE
+   - 福尔摩斯探案全集 → CURRENT / 16 OF 60 COMPLETE
+     - 四部长篇 → CLOSED
+     - 福尔摩斯历险记 → CLOSED
+     - 福尔摩斯回忆录 → NEXT
+     - 福尔摩斯归来记 → PENDING
+     - 最后致意 → PENDING
+     - 福尔摩斯案件簿 → PENDING
    - 龙族 → DEFER_VERSION_BOUNDARY
-3. 对稳定作者短篇集建立 story-level reading map
-4. 对编辑型选集取得具体版本目录 / 实际读篇
-5. 再进行 story-level QX
-6. 最后重新计算 corpus coverage
+3. 稳定作者短篇集 story-level reading map
+4. 编辑型选集版本目录 / 实际读篇
+5. story-level QX
+6. 重新计算 corpus coverage
 ```
 
 ## 08｜当前正式 QX 基线
 
-截至 Batch030《哈利·波特》七册 + 福尔摩斯四部长篇：
+截至 Batch030《哈利·波特》七册 + 福尔摩斯四部长篇 +《福尔摩斯历险记》12短篇：
 
 ```text
-FORMAL_WORKS_WITH_QX = 135
-FORMAL_QX_RELATIONS = 401
+FORMAL_WORKS_WITH_QX = 147
+FORMAL_QX_RELATIONS = 420
 UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 ```
 
