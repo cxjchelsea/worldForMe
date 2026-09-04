@@ -1,0 +1,84 @@
+filters:
+  and:
+    - qc122_priority != null
+properties:
+  file.name:
+    displayName: 作品／文本见证
+  note.author:
+    displayName: 作者／编纂者
+  note.read_status:
+    displayName: 阅读状态
+  note.qc122_priority:
+    displayName: 专题优先级
+  note.qc122_branch:
+    displayName: 分支
+  note.qc122_tradition_stage:
+    displayName: 传统阶段
+  note.qc122_text_role:
+    displayName: 文本角色
+  note.qc122_role:
+    displayName: 专题作用
+  note.R:
+    displayName: R轴
+  note.T:
+    displayName: T轴
+  note.M:
+    displayName: M轴
+  note.G:
+    displayName: G轴
+  note.Q:
+    displayName: Q轴
+  note.verification_status:
+    displayName: 核验状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部专题作品
+    order:
+      - file.name
+      - author
+      - qc122_priority
+      - qc122_branch
+      - qc122_tradition_stage
+      - qc122_text_role
+      - qc122_role
+      - read_status
+      - verification_status
+      - id
+  - type: table
+    name: 核心见证
+    filters:
+      and:
+        - qc122_priority == "★"
+  - type: table
+    name: 重点扩展
+    filters:
+      and:
+        - qc122_priority == "◆"
+  - type: table
+    name: 延伸材料
+    filters:
+      and:
+        - qc122_priority == "△"
+  - type: table
+    name: 北欧分支
+    filters:
+      and:
+        - qc122_branch == "北欧分支"
+  - type: table
+    name: 德语分支
+    filters:
+      and:
+        - qc122_branch == "德语分支"
+  - type: table
+    name: 后世重构
+    filters:
+      and:
+        - qc122_branch == "后世重构"
+  - type: table
+    name: 待核验
+    filters:
+      or:
+        - verification_status == "PENDING"
+        - verification_status == "待核验"
