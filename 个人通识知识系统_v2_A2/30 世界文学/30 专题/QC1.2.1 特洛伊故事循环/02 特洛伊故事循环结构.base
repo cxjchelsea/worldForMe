@@ -2,56 +2,97 @@ filters:
   and:
     - topic_id == "WL-TOPIC-QC121"
     - structure_type_zh != null
+formulas:
+  dimension_zh: if(dimension, dimension.replace("early_witness_index", "早期见证索引").replace("evidence_and_reading", "证据纪律与阅读路线").replace("character_variation", "人物对应与叙事变体").replace("narrative_core", "循环范围与叙事核").replace("branch_structure", "战争、城陷与归乡分支").replace("lineage_index", "文本谱系索引").replace("variation_index", "人物与变体索引").replace("reception_index", "后世生命索引").replace("roman_rewriting", "罗马重写与后世再生产").replace("epic_cycle", "荷马史诗与失传史诗循环").replace("tool_index", "组件、证据与阅读索引").replace("qc2_mapping", "QC2 叙事组件映射").replace("orientation", "专题定位"), "")
 properties:
   file.name:
-    displayName: 页面
+    displayName: 节点
   note.structure_type_zh:
     displayName: 所属模块
-  note.dimension:
+  formula.dimension_zh:
     displayName: 维度
   note.sequence:
     displayName: 顺序
   note.history_position:
-    displayName: 历史位置
+    displayName: 节点作用
   note.id:
     displayName: 编号
 views:
   - type: table
-    name: 全部结构
-    order: [file.name, structure_type_zh, dimension, sequence, history_position, id]
+    name: 全部知识节点
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 定义、边界与叙事核
     filters:
       and:
         - structure_type_zh == "定义、边界与叙事核"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 早期见证与史诗循环
     filters:
       and:
         - structure_type_zh == "早期见证与史诗循环"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 文本谱系与版本分支
     filters:
       and:
         - structure_type_zh == "文本谱系与版本分支"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 人物结构与关键变体
     filters:
       and:
         - structure_type_zh == "人物结构与关键变体"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 跨语言重写与后世生命
     filters:
       and:
         - structure_type_zh == "跨语言重写与后世生命"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: QC2 组件、证据与阅读
     filters:
       and:
         - structure_type_zh == "QC2 组件、证据与阅读"
-    order: [file.name, dimension, sequence, history_position]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
