@@ -1,0 +1,62 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QC122"
+    - structure_type_zh != null
+formulas:
+  dimension_zh: if(dimension, dimension.replace("shared_core", "共享叙事核与专题边界").replace("witnesses", "早期材料与文本见证").replace("branching", "北欧—德语文本分支").replace("correspondence", "人物对应与关键变体").replace("reception", "后世重构与现代再生产").replace("qc2_and_evidence", "QC2 组件、证据纪律与阅读"), "")
+properties:
+  file.name:
+    displayName: 节点
+  note.structure_type_zh:
+    displayName: 所属模块
+  formula.dimension_zh:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.history_position:
+    displayName: 节点作用
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: 定义、边界与共享叙事核
+    filters:
+      and:
+        - structure_type_zh == "定义、边界与共享叙事核"
+  - type: table
+    name: 早期材料与文本见证
+    filters:
+      and:
+        - structure_type_zh == "早期材料与文本见证"
+  - type: table
+    name: 北欧—德语文本分支
+    filters:
+      and:
+        - structure_type_zh == "北欧—德语文本分支"
+  - type: table
+    name: 人物对应与关键变体
+    filters:
+      and:
+        - structure_type_zh == "人物对应与关键变体"
+  - type: table
+    name: 后世重构与现代再生产
+    filters:
+      and:
+        - structure_type_zh == "后世重构与现代再生产"
+  - type: table
+    name: QC2 组件、证据与阅读
+    filters:
+      and:
+        - structure_type_zh == "QC2 组件、证据与阅读"
