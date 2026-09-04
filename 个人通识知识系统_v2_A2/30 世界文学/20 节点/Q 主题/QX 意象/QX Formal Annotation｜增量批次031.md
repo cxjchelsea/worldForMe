@@ -48,55 +48,75 @@ ZERO_QX = [幸福的家庭, 高老夫子, 弟兄, 离婚]
 
 ## 04｜《台北人》：14篇完成
 
-父记录 `台北人.md` 已确认 `read_status = 已读`，按稳定作者短篇集拆为 14 个独立叙事单元。
-
-| 独立短篇 | 状态 | 正式对象 | 关系数 |
-|---|---|---|---:|
-| 永远的尹雪艳 | FORMAL_QX | 素白旗袍 | 1 |
-| 一把青 | FORMAL_QX | 军机 | 1 |
-| 岁除 | FORMAL_QX | 年夜饭 | 1 |
-| 金大班的最后一夜 | FORMAL_QX | 舞厅 | 1 |
-| 那片血一般红的杜鹃花 | FORMAL_QX | 红杜鹃花 | 1 |
-| 思旧赋 | ZERO_QX | — | 0 |
-| 梁父吟 | ZERO_QX | — | 0 |
-| 孤恋花 | FORMAL_QX | 《孤恋花》歌声 | 1 |
-| 花桥荣记 | FORMAL_QX | 桂林米粉 | 1 |
-| 秋思 | FORMAL_QX | 一捧雪菊花 | 1 |
-| 满天里亮晶晶的星星 | ZERO_QX | — | 0 |
-| 游园惊梦 | FORMAL_QX | 昆曲《游园惊梦》清唱；宴席 | 2 |
-| 冬夜 | ZERO_QX | — | 0 |
-| 国葬 | FORMAL_QX | 国葬仪式 | 1 |
-
 ```text
 TAIPEI_PEOPLE_STORIES_REVIEWED = 14
 TAIPEI_PEOPLE_FORMAL_QX_WORKS = 10
 TAIPEI_PEOPLE_ZERO_QX_WORKS = 4
 TAIPEI_PEOPLE_FORMAL_RELATIONS = 11
 TAIPEI_PEOPLE_STORY_LEVEL = CLOSED
+ZERO_QX = [思旧赋, 梁父吟, 满天里亮晶晶的星星, 冬夜]
 ```
 
-ZERO_QX：
+核心正式对象包括：
 
 ```text
-思旧赋
-梁父吟
-满天里亮晶晶的星星
-冬夜
+永远的尹雪艳 → 素白旗袍
+一把青 → 军机
+岁除 → 年夜饭
+金大班的最后一夜 → 舞厅
+那片血一般红的杜鹃花 → 红杜鹃花
+孤恋花 → 《孤恋花》歌声
+花桥荣记 → 桂林米粉
+秋思 → 一捧雪菊花
+游园惊梦 → 昆曲清唱；宴席
+国葬 → 国葬仪式
 ```
 
-## 05｜Batch031 当前统计
+## 05｜《燃烧的原野》：17篇完成
+
+父记录 `燃烧的原野.md` 已确认 `read_status = 已读`。按作者稳定短篇集拆为 17 个独立叙事单元；父记录继续只作为 collection-level 阅读事实。
+
+| 独立短篇 | 状态 | 正式对象 | 关系数 |
+|---|---|---|---:|
+| 马卡里奥 | FORMAL_QX | 青蛙 | 1 |
+| 他们给了我们土地 | FORMAL_QX | 干旱平原 | 1 |
+| 科马德雷斯坡 | FORMAL_QX | 科马德雷斯坡 | 1 |
+| 我们真的很穷 | FORMAL_QX | 洪水中的河；塞尔佩蒂娜母牛 | 2 |
+| 那个人 | ZERO_QX | — | 0 |
+| 清晨 | ZERO_QX | — | 0 |
+| 塔尔帕 | FORMAL_QX | 去塔尔帕的朝圣路；塔尔帕圣母像 | 2 |
+| 燃烧的原野（短篇） | FORMAL_QX | 燃烧的原野 | 1 |
+| 叫他们别杀我！ | ZERO_QX | — | 0 |
+| 卢维纳 | FORMAL_QX | 卢维纳的风；卢维纳荒山与小镇 | 2 |
+| 他被单独留下的那个夜晚 | ZERO_QX | — | 0 |
+| 记住 | ZERO_QX | — | 0 |
+| 你听不到狗叫吗？ | FORMAL_QX | 父亲背负儿子的身体 | 1 |
+| 北方通道 | FORMAL_QX | 北上边境之路 | 1 |
+| 阿纳克莱托·莫罗内斯 | ZERO_QX | — | 0 |
+| 玛蒂尔德·阿尔坎赫尔的遗产 | ZERO_QX | — | 0 |
+| 山崩那天 | FORMAL_QX | 灾后公共宴会与演说场景 | 1 |
 
 ```text
-STORY_UNITS_REVIEWED = 39
-STORY_FORMAL_QX_WORKS = 29
-STORY_ZERO_QX_WORKS = 10
-STORY_FORMAL_RELATIONS = 42
-
-FORMAL_WORKS_WITH_QX_CURRENT = 218
-FORMAL_QX_RELATIONS_CURRENT = 522
+BURNING_PLAIN_STORIES_REVIEWED = 17
+BURNING_PLAIN_FORMAL_QX_WORKS = 10
+BURNING_PLAIN_ZERO_QX_WORKS = 7
+BURNING_PLAIN_FORMAL_RELATIONS = 13
+BURNING_PLAIN_STORY_LEVEL = CLOSED
 ```
 
-## 06｜精度规则继续生效
+## 06｜Batch031 当前统计
+
+```text
+STORY_UNITS_REVIEWED = 56
+STORY_FORMAL_QX_WORKS = 39
+STORY_ZERO_QX_WORKS = 17
+STORY_FORMAL_RELATIONS = 55
+
+FORMAL_WORKS_WITH_QX_CURRENT = 228
+FORMAL_QX_RELATIONS_CURRENT = 535
+```
+
+## 07｜精度规则继续生效
 
 ```text
 COLLECTION_READ ≠ COLLECTION_LEVEL_QX
@@ -106,11 +126,10 @@ ATMOSPHERE_ONLY ≠ ADMISSION
 TITLE_WORD ≠ AUTOMATIC_OBJECT
 ```
 
-## 07｜下一组
+## 08｜下一组
 
 ```text
-燃烧的原野 → stable author story collection → NEXT
-夜晚的潜水艇 → PENDING
+夜晚的潜水艇 → NEXT
 机器人短篇全集 → PENDING / 需稳定篇目边界
 草 → PENDING / 文集粒度待恢复
 人类的群星闪耀时 → PENDING
