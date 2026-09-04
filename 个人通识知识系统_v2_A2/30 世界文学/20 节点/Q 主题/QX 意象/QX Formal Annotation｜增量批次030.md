@@ -25,7 +25,10 @@ HARRY_POTTER_FORMAL_RELATIONS = 21
 SHERLOCK_HOLMES_SERIES = ONE_TO_MANY_RECONCILIATION
 SHERLOCK_READ_SCOPE = COMPLETE_CANON_CONFIRMED
 SHERLOCK_CANON_UNITS = 60
-SHERLOCK_QX = NOT_STARTED_AT_STORY_LEVEL
+SHERLOCK_LONG_NOVELS_RECONCILED = 4
+SHERLOCK_LONG_NOVEL_FORMAL_RELATIONS = 12
+SHERLOCK_SHORT_STORIES_REMAINING = 56
+SHERLOCK_QX = PARTIAL_4_NOVELS_COMPLETE
 
 DRAGON_RAJAS_SERIES = DEFER_SERIES_GRANULARITY
 DRAGON_RAJAS_READ_SCOPE = COMPLETE_SERIES_CONFIRMED
@@ -35,6 +38,8 @@ FORMAL_WORKS_WITH_QX_BEFORE = 124
 FORMAL_QX_RELATIONS_BEFORE = 368
 FORMAL_WORKS_WITH_QX_AFTER_GROUP_HP = 131
 FORMAL_QX_RELATIONS_AFTER_GROUP_HP = 389
+FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_NOVELS = 135
+FORMAL_QX_RELATIONS_AFTER_SHERLOCK_NOVELS = 401
 ```
 
 ## 02｜《哈利·波特》：粒度闭环
@@ -113,9 +118,9 @@ FORMAL_QX_RELATIONS_AFTER_GROUP_HP = 389
 
 本批没有建立“魔杖、猫头鹰、扫帚、魔药、画像”等一般性对象大全。对象必须在对应单册中承担稳定结构作用；跨七册高频出现本身不等于每册自动 PASS。
 
-## 03｜《福尔摩斯探案全集》：阅读事实已清楚，中央状态仍需修复
+## 03｜《福尔摩斯探案全集》：完整阅读事实转为 60-unit reconciliation
 
-用户既有阅读事实明确为完整读过《福尔摩斯探案全集》。标准福尔摩斯 canon 为：
+个人既有阅读事实明确为完整读过《福尔摩斯探案全集》。标准 canon 为：
 
 ```text
 4 novels + 56 short stories = 60 independent narrative units
@@ -127,23 +132,77 @@ FORMAL_QX_RELATIONS_AFTER_GROUP_HP = 389
 ONE_TO_MANY_RECONCILIATION
 ```
 
-当前中央库仍存在旧的专题推断状态污染。例如：
+### 03.1｜中央阅读状态冲突
+
+四部长篇原中央 Work 均被专题书单状态写成 `read_status = 未读`：
 
 ```text
-血字的研究.md
-read_status = 未读
+血字的研究
+四签名
+巴斯克维尔的猎犬
+恐怖谷
 ```
 
-这不能作为个人阅读事实继续保留；后续必须先将 canon 60 个子 Work 与全集阅读事实逐一对齐，再逐篇做 QX。短篇不能按“全集”级共享意象。
-
-处理顺序：
+Batch030 已依据完整全集阅读事实统一校正为：
 
 ```text
-1. 建立 60-unit canonical reading map
+read_status = 已读
+series = 福尔摩斯探案全集
+verification_status = 个人阅读事实校正
+```
+
+这证明专题书单中的“未读 / 阅读优先级”不能覆盖个人阅读记录。
+
+### 03.2｜四部长篇 QX
+
+#### 《血字的研究》
+
+```text
+墙上的血字 → QX16 / core
+婚戒 → QX15 / core
+毒药丸 → QX15 / core
+```
+
+#### 《四签名》
+
+```text
+阿格拉宝藏 → QX15 / dominant
+四人签名 / 盟约纸条 → QX16 / core
+泰晤士河 → QX3 / core
+```
+
+#### 《巴斯克维尔的猎犬》
+
+```text
+达特穆尔荒原 → QX6 / dominant
+巴斯克维尔猎犬 → QX5 / dominant
+巴斯克维尔庄园 → QX7 / core
+```
+
+#### 《恐怖谷》
+
+```text
+密码信 → QX16 / core
+伯尔斯通庄园与护城河 → QX7 / dominant
+恐怖谷 / 维尔米萨矿区 → QX8 / dominant
+```
+
+### 03.3｜剩余福尔摩斯任务
+
+```text
+CANON_TOTAL = 60
+NOVELS_COMPLETE = 4
+SHORT_STORIES_REMAINING = 56
+```
+
+短篇不能继承长篇意象，也不能把“贝克街、烟斗、放大镜”等系列标志物自动批量挂到所有篇章。后续必须：
+
+```text
+1. 建立 56-story canonical reading map
 2. 复用已存在中央 Work
 3. 将与全集阅读事实冲突的 read_status 校正为 已读
 4. 缺失 Work 才补建
-5. 4部长篇 + 56短篇逐单元 Gate
+5. 每篇独立通过 Gate；允许 ZERO_QX
 ```
 
 ## 04｜《龙族》：全集已读，但版本边界仍不稳定
@@ -178,7 +237,7 @@ SERIES_ONE_TO_MANY_IN_PROGRESS = 1
 SERIES_VERSION_BOUNDARY_DEFERRED = 1
 
 HARRY_POTTER = CLOSED
-SHERLOCK_HOLMES = IN_PROGRESS
+SHERLOCK_HOLMES = 4_OF_60_UNITS_QX_COMPLETE
 DRAGON_RAJAS = DEFER_VERSION_BOUNDARY
 ```
 
@@ -186,7 +245,7 @@ DRAGON_RAJAS = DEFER_VERSION_BOUNDARY
 
 ```text
 Batch030-B
-→ 福尔摩斯 60-unit reading map + central Work reconciliation
+→ 福尔摩斯 56 short-story reading map + central Work reconciliation + story-level QX
 
 Batch030-C
 → 龙族版本 / 卷级边界恢复
