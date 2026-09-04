@@ -11,7 +11,7 @@ node_kind: taxonomy_leaf
 anchorable: true
 resource_type: narrative_cycle
 status: ACTIVE
-build_stage: coverage_review_pass
+build_stage: stage_freeze_candidate
 ---
 # QC1.2.2 沃尔松—尼伯龙根叙事传统
 
@@ -55,10 +55,27 @@ QC1.2 的第二个正式验证样板，研究围绕沃尔松家族、西格鲁�
            《蒂德雷克萨迦》
 
 后世再生产
-→ 浪漫主义 / 民族主义 / 歌剧 / 现代文学
+→ 《尼伯龙根的指环》及后续现代重构
 ```
 
 这张图只表示研究角色，不预设北欧与德语文本之间存在单向直接继承。
+
+## 当前覆盖规模
+
+### 中央作品锚点：6 个
+
+1. 《诗体埃达》——北欧英雄诗核心见证集合；
+2. 《沃尔松格萨迦》——北欧连续叙事核心；
+3. 《尼伯龙根之歌》——中古德语分支核心定型；
+4. 《散文埃达》——北欧编纂与辅助见证；
+5. 《蒂德雷克萨迦》——跨文本桥接／比较见证；
+6. 《尼伯龙根的指环》——19世纪重大再生产锚点。
+
+### 细粒度 story_witness：首批 13 个
+
+《诗体埃达》不只作为一个总括性作品锚点使用。专题已下钻到 Reginsmál、Fáfnismál、Sigrdrífumál、Brot af Sigurðarkviðu、Sigurðarkviða in skamma、Helreið Brynhildar、Guðrúnarkviða I–III、Atlakviða、Atlamál、Guðrúnarhvöt、Hamðismál 等首批英雄诗 witness。
+
+→ [[../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/11 早期材料与文本见证/02 诗体埃达英雄诗 witness 清单|《诗体埃达》英雄诗 witness 清单]]
 
 ## QC2 主要接口
 
@@ -83,7 +100,8 @@ QC1.2.1 特洛伊故事循环主要验证“多文本共同覆盖一个大型故
 3. 共享材料与直接传播必须区分；
 4. chronology 不能作为所有 QC1.2 的唯一骨架；
 5. 同一叙事核可在不同语言文本环境中发生结构性重组；
-6. 非中央作品型 witness 不必为了专题产品被强制伪装成 work。
+6. 非中央作品型 witness 不必为了专题产品被强制伪装成 work；
+7. 一个中央作品锚点内部可以继续下钻到细粒度 `story_witness`。
 
 ## 专题产品
 
@@ -95,8 +113,8 @@ QC1.2.1 特洛伊故事循环主要验证“多文本共同覆盖一个大型故
 
 ## 当前状态
 
-`COVERAGE_REVIEW_PASS`
+`STAGE_FREEZE_CANDIDATE`
 
-第一轮 coverage review 已完成，原补丁项《蒂德雷克萨迦》已提升为关键比较见证。边界、主要文本见证、分支模型、人物对应、QC2 接口和产品结构均已达到当前阅读系统需要。
+第一轮 coverage review 已完整通过。当前已经形成“6 个中央作品锚点 + 13 个首批英雄诗 story_witness + 分支／人物／事件／QC2 接口”的覆盖规模，足以服务当前阅读需求。
 
-下一阶段：与 QC1.2.1 共同进行 `stage_freeze`；本轮不再继续横向扩充更多中古文本。
+下一阶段：与 QC1.2.1 共同执行 `stage_freeze`，并据此冻结 `narrative_cycle` 的 QC1.2 V1 产品骨架。后续新增材料必须通过 reopen gate，而不再为了数量机械扩充。
