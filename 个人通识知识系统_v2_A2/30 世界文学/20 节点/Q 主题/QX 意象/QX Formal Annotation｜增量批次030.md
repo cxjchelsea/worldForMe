@@ -33,9 +33,13 @@ SHERLOCK_MEMOIRS_STORIES_RECONCILED = 11
 SHERLOCK_MEMOIRS_FORMAL_QX_WORKS = 10
 SHERLOCK_MEMOIRS_ZERO_QX_WORKS = 1
 SHERLOCK_MEMOIRS_FORMAL_RELATIONS = 13
-SHERLOCK_UNITS_COMPLETE = 27
-SHERLOCK_SHORT_STORIES_REMAINING = 33
-SHERLOCK_QX = PARTIAL_27_OF_60_COMPLETE
+SHERLOCK_RETURN_STORIES_RECONCILED = 13
+SHERLOCK_RETURN_FORMAL_QX_WORKS = 12
+SHERLOCK_RETURN_ZERO_QX_WORKS = 1
+SHERLOCK_RETURN_FORMAL_RELATIONS = 20
+SHERLOCK_UNITS_COMPLETE = 40
+SHERLOCK_SHORT_STORIES_REMAINING = 20
+SHERLOCK_QX = PARTIAL_40_OF_60_COMPLETE
 
 DRAGON_RAJAS_SERIES = DEFER_SERIES_GRANULARITY
 DRAGON_RAJAS_READ_SCOPE = COMPLETE_SERIES_CONFIRMED
@@ -51,6 +55,8 @@ FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_ADVENTURES = 147
 FORMAL_QX_RELATIONS_AFTER_SHERLOCK_ADVENTURES = 420
 FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_MEMOIRS = 157
 FORMAL_QX_RELATIONS_AFTER_SHERLOCK_MEMOIRS = 433
+FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_RETURN = 169
+FORMAL_QX_RELATIONS_AFTER_SHERLOCK_RETURN = 453
 ```
 
 ## 02｜《哈利·波特》：粒度闭环
@@ -72,53 +78,50 @@ HARRY_POTTER_GRANULARITY = CLOSED
 ### 03.1｜四部长篇：完成
 
 ```text
-血字的研究 → 3
-四签名 → 3
-巴斯克维尔的猎犬 → 3
-恐怖谷 → 3
-```
-
-```text
-SHERLOCK_NOVELS_COMPLETE = 4
-SHERLOCK_LONG_NOVEL_FORMAL_RELATIONS = 12
+4 FORMAL_QX / 12 relations
 ```
 
 ### 03.2｜《福尔摩斯历险记》12篇：完成
 
 ```text
-12 stories
-12 FORMAL_QX
-19 formal relations
+12 FORMAL_QX / 19 relations
 ```
 
 ### 03.3｜《福尔摩斯回忆录》11篇：完成
 
-按保持 56-story canon 不重复的集合分法，本批将《纸盒子》归入《最后致意》，因此《回忆录》按 11 个独立故事处理。
+```text
+10 FORMAL_QX + 1 ZERO_QX / 13 relations
+ZERO_QX = 住院的病人
+```
+
+### 03.4｜《福尔摩斯归来记》13篇：完成
 
 | 独立短篇 | 状态 | 正式 QX | 关系数 |
 |---|---|---|---:|
-| 银色马 | FORMAL_QX | 银色马 | 1 |
-| 黄面人 | FORMAL_QX | 黄色面具 | 1 |
-| 证券经纪人的书记员 | FORMAL_QX | 聘用书与签字文件 | 1 |
-| 格洛里亚·斯科特号 | FORMAL_QX | 格洛里亚·斯科特号；密码信 | 2 |
-| 马斯格雷夫礼典 | FORMAL_QX | 礼典文书；王冠遗物 | 2 |
-| 赖盖特之谜 | FORMAL_QX | 撕裂的纸条 | 1 |
-| 驼背人 | FORMAL_QX | 亨利·伍德扭曲的身体 | 1 |
-| 住院的病人 | ZERO_QX | — | 0 |
-| 希腊译员 | FORMAL_QX | 蒙眼与封闭马车 | 1 |
-| 海军协定 | FORMAL_QX | 海军协定文件 | 1 |
-| 最后一案 | FORMAL_QX | 莱辛巴赫瀑布；福尔摩斯留给华生的便条 | 2 |
+| 空屋 | FORMAL_QX | 福尔摩斯蜡像；气枪 | 2 |
+| 诺伍德的建筑师 | FORMAL_QX | 血指印 | 1 |
+| 跳舞的人 | FORMAL_QX | 跳舞小人密码 | 1 |
+| 孤身骑车人 | FORMAL_QX | 自行车 | 1 |
+| 修道院公学 | FORMAL_QX | 自行车车辙；牛蹄形马蹄铁 | 2 |
+| 黑彼得 | FORMAL_QX | 捕鲸叉；船舱式小屋 | 2 |
+| 米尔沃顿 | FORMAL_QX | 勒索信件；保险柜 | 2 |
+| 六座拿破仑半身像 | FORMAL_QX | 拿破仑半身像；博尔吉亚黑珍珠 | 2 |
+| 三个大学生 | FORMAL_QX | 希腊文试卷校样；铅笔削屑 | 2 |
+| 金边夹鼻眼镜 | FORMAL_QX | 金边夹鼻眼镜 | 1 |
+| 失踪的中卫 | ZERO_QX | — | 0 |
+| 格兰其庄园 | FORMAL_QX | 铃绳；三只酒杯 | 2 |
+| 第二块血迹 | FORMAL_QX | 失踪的外交文件；第二块血迹 | 2 |
 
 ```text
-SHERLOCK_MEMOIRS_STORIES = 11
-SHERLOCK_MEMOIRS_FORMAL_QX_WORKS = 10
-SHERLOCK_MEMOIRS_ZERO_QX_WORKS = 1
-SHERLOCK_MEMOIRS_FORMAL_RELATIONS = 13
+SHERLOCK_RETURN_STORIES = 13
+SHERLOCK_RETURN_FORMAL_QX_WORKS = 12
+SHERLOCK_RETURN_ZERO_QX_WORKS = 1
+SHERLOCK_RETURN_FORMAL_RELATIONS = 20
 ```
 
-《住院的病人》是本阶段第一个明确 ZERO_QX 的福尔摩斯短篇：案件中存在具体物件，但没有对象同时达到足够的结构绑定与作品辨识度，因此不为补齐而强行入库。
+《失踪的中卫》保留 ZERO_QX：电报、马车、旅馆与乡间路径虽然构成追踪链，但没有单一具体对象同时达到复现、结构绑定和作品辨识度门槛。
 
-### 03.4｜精度说明
+### 03.5｜精度规则
 
 ```text
 SHORT_STORY ≠ MUST_HAVE_QX
@@ -126,19 +129,19 @@ SHORT_STORY ≠ MUST_HAVE_MULTIPLE_QX
 SERIES_ICON ≠ AUTOMATIC_STORY_QX
 ```
 
-### 03.5｜剩余福尔摩斯任务
+### 03.6｜剩余福尔摩斯任务
 
 ```text
 CANON_TOTAL = 60
-UNITS_COMPLETE = 27
-SHORT_STORIES_COMPLETE = 23
-SHORT_STORIES_REMAINING = 33
+UNITS_COMPLETE = 40
+SHORT_STORIES_COMPLETE = 36
+SHORT_STORIES_REMAINING = 20
 ```
 
 下一组：
 
 ```text
-福尔摩斯归来记 13篇
+最后致意 8篇
 → central Work recovery
 → read_status = 已读
 → Admission Gate
@@ -157,17 +160,16 @@ VOLUME_MAP = DEFER_VERSION_BOUNDARY
 
 ```text
 HARRY_POTTER = CLOSED
-SHERLOCK_HOLMES = 27_OF_60_UNITS_QX_REVIEWED
+SHERLOCK_HOLMES = 40_OF_60_UNITS_QX_REVIEWED
 DRAGON_RAJAS = DEFER_VERSION_BOUNDARY
 
-FORMAL_WORKS_WITH_QX = 157
-FORMAL_QX_RELATIONS = 433
+FORMAL_WORKS_WITH_QX = 169
+FORMAL_QX_RELATIONS = 453
 ```
 
 ## 06｜下一步
 
 ```text
-Batch030-B3 → 《福尔摩斯归来记》13篇
 Batch030-B4 → 《最后致意》8篇
 Batch030-B5 → 《福尔摩斯案件簿》12篇
 Batch030-C → 龙族版本 / 卷级边界恢复
