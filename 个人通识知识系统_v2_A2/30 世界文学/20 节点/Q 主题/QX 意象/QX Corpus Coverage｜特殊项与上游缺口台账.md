@@ -4,50 +4,87 @@ type: literature_qx_governance
 name: QX Corpus Coverage｜特殊项与上游缺口台账
 axis: Q
 facet: QX
-status: ACTIVE
+status: FINAL_AUDIT_READY
 schema: QX_RELATION_SCHEMA_V1
 ---
 
 # QX Corpus Coverage｜特殊项与上游缺口台账
 
-> 目的：记录没有直接进入 Work-level 正式 QX 的特殊粒度、版本与上游原因，并维护当前审查断点。
+> 目的：记录个人已读书目在 QX 中的完成状态。QX 完成性是“每条已读记录都已判断是否值得进入意象系统”，而不是“所有短篇都必须逐篇抽取”。
 
-## 01｜系列 / 全集粒度
+## 01｜完成状态定义
 
-| 读书记录 | 状态 | 当前结论 |
+```text
+FORMAL_QX
+= 需要 QX，且至少一个对象通过 Admission Gate
+
+ZERO_QX
+= 需要作品级审查，但没有对象达到正式门槛
+
+FORMAL_QX_SERIES_SCOPE
+= 全系列阅读事实明确，但分卷边界不稳定；只记录跨卷稳定意象
+
+FORMAL_QX_SCOPE_INVARIANT
+= 具体阅读范围不完整；只记录对任何已知阅读范围都稳定成立的核心意象
+
+REVIEWED_NO_QX_REQUIRED
+= 已判断该阅读记录不值得为了 QX 完整性继续拆篇 / 恢复版本目录
+```
+
+以下不再视为覆盖缺口：
+
+```text
+ZERO_QX
+REVIEWED_NO_QX_REQUIRED
+```
+
+## 02｜系列 / 全集粒度
+
+| 读书记录 | 最终状态 | 当前结论 |
 |---|---|---|
 | 福尔摩斯探案全集 | CLOSED | 60 units；58 FORMAL_QX + 2 ZERO_QX / 91 relations |
 | 哈利·波特 | CLOSED | 7 child Works / 21 relations |
-| 龙族 | DEFER_VERSION_BOUNDARY | 系列已读事实保留；版本 / 卷级边界不足；NON-BLOCKING |
-| 哑舍 | DEFER_SERIES_GRANULARITY | 中央记录只有系列父名，没有具体卷；禁止给系列父节点挂跨卷 QX |
-
-## 02｜稳定作者短篇集 / 文集
-
-| 父级阅读记录 | 当前状态 | story-level 结果 |
-|---|---|---|
-| 呐喊 | CLOSED | 14 = 12 FORMAL + 2 ZERO / 21 relations |
-| 彷徨 | CLOSED | 11 = 7 FORMAL + 4 ZERO / 10 relations |
-| 台北人 | CLOSED | 14 = 10 FORMAL + 4 ZERO / 11 relations |
-| 燃烧的原野 | CLOSED | 17 = 10 FORMAL + 7 ZERO / 13 relations |
-| 夜晚的潜水艇 | CLOSED | 9 = 7 FORMAL + 2 ZERO / 8 relations |
-| 机器人短篇全集 | CLOSED | 32 = 22 FORMAL + 10 ZERO / 24 relations |
-
-## 03｜版本 / 结构延期项
-
-| 阅读记录 | 状态 | 原因 |
-|---|---|---|
-| 人类的群星闪耀时 | DEFER_COLLECTION_VERSION | 历史上存在5 / 12 / 14篇等不同版本；个人记录无出版社 / ISBN / 目录 |
-| 草 | DEFER_EXCERPT_COLLECTION | 实为从《一座城池》《光荣日》《他的国》《杂的文》摘取片段的精选集，不是独立短篇集 |
-| 俗世奇人 / 俗世奇人（足本） | DEFER_COLLECTION_VERSION | 中央父名与已读覆盖层版本名不一致；旧版、足本、新增本篇目边界不同 |
-| 龙族 | DEFER_VERSION_BOUNDARY | 网文、单行本、修订与重写边界不稳定 |
-| 哑舍 | DEFER_SERIES_GRANULARITY | 具体卷级阅读事实缺失 |
+| 龙族 | FORMAL_QX_SERIES_SCOPE | 全集已读；仅保留黄金瞳、卡塞尔学院、尼伯龙根 3 条跨卷稳定关系 |
+| 哑舍 | FORMAL_QX_SCOPE_INVARIANT | 卷级范围未知；仅保留范围无关的“哑舍古董店”1条关系 |
 
 ```text
-DEFERRED_ITEMS_ARE_REVIEWED_FOR_GRANULARITY = TRUE
-DEFERRED_ITEMS_DO_NOT_BLOCK_STABLE_CORPUS = TRUE
+SERIES_RECONCILIATION = CLOSED_FOR_QX
 ```
 
-## 04｜编辑型选集：仍需版本目录
+## 03｜已完成的稳定短篇集
+
+| 父级阅读记录 | 结果 |
+|---|---|
+| 呐喊 | 14 = 12 FORMAL + 2 ZERO / 21 relations |
+| 彷徨 | 11 = 7 FORMAL + 4 ZERO / 10 relations |
+| 台北人 | 14 = 10 FORMAL + 4 ZERO / 11 relations |
+| 燃烧的原野 | 17 = 10 FORMAL + 7 ZERO / 13 relations |
+| 夜晚的潜水艇 | 9 = 7 FORMAL + 2 ZERO / 8 relations |
+| 机器人短篇全集 | 32 = 22 FORMAL + 10 ZERO / 24 relations |
+
+```text
+STORY_UNITS_REVIEWED = 97
+STORY_FORMAL_QX_WORKS = 68
+STORY_ZERO_QX_WORKS = 29
+STORY_FORMAL_RELATIONS = 87
+```
+
+## 04｜已审查但无需继续拆分的已读记录
+
+### 历史小品 / 摘录 / 多人物短篇集合
+
+```text
+人类的群星闪耀时
+→ REVIEWED_NO_QX_REQUIRED_COLLECTION
+
+草
+→ REVIEWED_NO_QX_REQUIRED_EXCERPT_COLLECTION
+
+俗世奇人（足本）
+→ REVIEWED_NO_QX_REQUIRED_SHORT_FORM_COLLECTION
+```
+
+### 编辑型外国短篇选集
 
 ```text
 麦琪的礼物：欧·亨利短篇小说经典
@@ -57,9 +94,15 @@ DEFERRED_ITEMS_DO_NOT_BLOCK_STABLE_CORPUS = TRUE
 项链：莫泊桑中短篇小说选
 ```
 
-统一状态：`DEFER_EDITORIAL_COLLECTION`。
+统一状态：
 
-## 05｜上游 Work 建库缺口
+```text
+REVIEWED_NO_QX_REQUIRED_EDITORIAL_COLLECTION
+```
+
+理由：这些书的价值不在于为 QX 恢复每个版本的完整目录；若未来某篇独立短篇因个人阅读重要性或强意象进入专题，可单篇追加，不影响当前已读覆盖完成性。
+
+## 05｜上游建库缺口
 
 ```text
 UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
@@ -67,36 +110,31 @@ UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 UPSTREAM_RECONCILIATION = CLOSED
 ```
 
-## 06｜当前处理顺序
+## 06｜短篇选择性规则
 
 ```text
-1. SERIES / VOLUME GRANULARITY
-   - 哈利·波特 → CLOSED
-   - 福尔摩斯探案全集 → CLOSED
-   - 龙族 → DEFER_VERSION_BOUNDARY / NON-BLOCKING
-   - 哑舍 → DEFER_SERIES_GRANULARITY / NON-BLOCKING
-2. STORY-LEVEL READING MAP
-   - 呐喊 → CLOSED
-   - 彷徨 → CLOSED
-   - 台北人 → CLOSED
-   - 燃烧的原野 → CLOSED
-   - 夜晚的潜水艇 → CLOSED
-   - 机器人短篇全集 → CLOSED
-3. VERSION / TOC RECONCILIATION
-   - 人类的群星闪耀时
-   - 草
-   - 俗世奇人（足本）
-4. EDITORIAL COLLECTION RECONCILIATION
-5. FINAL CORPUS COVERAGE RECOUNT
+SHORT_FORM_DEFAULT = SELECTIVE_REVIEW
+SHORT_STORY ≠ MANDATORY_QX_UNIT
+EDITORIAL_COLLECTION ≠ MANDATORY_STORY_MAP
+ZERO_QX_SHORT_STORY ≠ COVERAGE_GAP
+```
+
+短篇只有在以下情况下优先独立进入 QX：
+
+```text
+1. 存在 dominant / core 级高辨识物象
+2. 具体物象明显承担结构作用
+3. 具有跨作品比较价值
+4. 本身是个人阅读中的重要独立作品
 ```
 
 ## 07｜当前正式 QX 基线
 
-截至 Batch031《机器人短篇全集》收口：
+截至 Batch031 关闭：
 
 ```text
-FORMAL_WORKS_WITH_QX = 257
-FORMAL_QX_RELATIONS = 567
+FORMAL_WORKS_WITH_QX = 259
+FORMAL_QX_RELATIONS = 571
 STORY_LEVEL_UNITS_REVIEWED_BATCH031 = 97
 STORY_LEVEL_FORMAL_QX_WORKS_BATCH031 = 68
 STORY_LEVEL_ZERO_QX_BATCH031 = 29
@@ -104,10 +142,26 @@ STORY_LEVEL_NEW_RELATIONS_BATCH031 = 87
 UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 ```
 
-> ZERO_QX 已完成审查但不进入 FORMAL_WORKS_WITH_QX；父级 collection / series 也不作为独立 QX Work 计数；DEFERRED 表示粒度审查已完成但版本事实不足。
+## 08｜当前缺口判断
+
+```text
+UNRESOLVED_NORMAL_SINGLE_WORK = 0
+UNRESOLVED_UPSTREAM_WORK_GAP = 0
+UNRESOLVED_MANDATORY_SHORT_FORM = 0
+UNRESOLVED_MANDATORY_SERIES_QX = 0
+```
+
+因此：
+
+```text
+READ_CORPUS_QX_REVIEW = READY_FOR_FINAL_RECOUNT
+```
+
+下一步只做最终全量审计：确认个人已读记录中不存在遗漏的普通单本 Work，并检查所有特殊项都已落入上述完成状态之一。
 
 ## 返回
 
 - [[QX 作品意象标注与关系治理规则]]
 - [[QX Formal Annotation｜增量批次030]]
 - [[QX Formal Annotation｜增量批次031]]
+- [[QX Version Reconciliation｜版本阻塞项证据台账]]
