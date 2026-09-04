@@ -4,162 +4,102 @@ type: literature_qx_governance
 name: QX Version Reconciliation｜版本阻塞项证据台账
 axis: Q
 facet: QX
-status: ACTIVE
+status: CLOSED_FOR_QX
 ---
 
 # QX Version Reconciliation｜版本阻塞项证据台账
 
-> 目的：对“已读事实明确，但无法安全恢复最小阅读单元”的条目保存版本证据。没有唯一版本映射时，不创建 story-level Work，不用其他版本目录替代个人阅读事实。
+> 目的：记录版本不稳定的已读条目在 QX 中如何安全处置。最终原则不是强行恢复每个目录，而是判断该记录是否值得为了 QX 继续拆分。
 
-## 01｜《人类的群星闪耀时》
-
-中央事实：
+## 01｜最终策略
 
 ```text
-read_status = 已读
-publisher = unknown
-ISBN = unknown
-TOC = unknown
+VERSION_AMBIGUITY + QX_HIGH_VALUE
+→ 尽可能做 scope-invariant / series-scope QX
+
+VERSION_AMBIGUITY + SHORT_FORM_OR_EDITORIAL_COLLECTION
+→ REVIEWED_NO_QX_REQUIRED
+
+VERSION_AMBIGUITY ≠ AUTOMATIC_COVERAGE_GAP
 ```
 
-版本史：
+## 02｜《龙族》
+
+个人事实：全集已读；分卷 / 网文 / 修订边界不稳定。
+
+最终：
 
 ```text
-1927 = 5 historical miniatures
-1943 = 12 historical miniatures
-1997 onward = 14 historical miniatures in common Fischer complete form
+STATUS = FORMAL_QX_SERIES_SCOPE
 ```
 
-决策：
+只保留跨卷稳定意象：
 
 ```text
-STATUS = DEFER_COLLECTION_VERSION
-DO_NOT_ASSUME_14 = TRUE
+黄金瞳
+卡塞尔学院
+尼伯龙根
 ```
 
-原因：个人记录没有出版社、ISBN、页数或目录，无法证明阅读的是5 / 12 / 14篇中的哪一版。
-
-## 02｜《草》｜韩寒
-
-公开书目信息确认：
-
-```text
-《草》不是独立小说集
-= 从《一座城池》《光荣日》《他的国》《杂的文》抽取片段的精选集
-```
-
-决策：
-
-```text
-STATUS = DEFER_EXCERPT_COLLECTION
-STORY_LEVEL_QX = NOT_APPLICABLE
-PARENT_METADATA_UPSTREAM_FIX_NEEDED = TRUE
-```
-
-当前中央 `axis_g = G3 小说` 不能作为 QX 拆篇依据；QX 不在本轮擅自修其他轴。
+不记录任何单卷专属对象。
 
 ## 03｜《哑舍》
 
-中央事实：
+个人事实：已读，但具体卷级范围未知。
+
+最终：
 
 ```text
-read_status = 已读
-record_title = 哑舍
-specific_volume = unknown
+STATUS = FORMAL_QX_SCOPE_INVARIANT
 ```
 
-决策：
+只保留范围无关核心对象：
 
 ```text
-STATUS = DEFER_SERIES_GRANULARITY
-QX_ON_SERIES_PARENT = PROHIBITED
+哑舍古董店
 ```
 
-## 04｜《俗世奇人》/《俗世奇人（足本）》
+不推断具体卷中的器物。
 
-上游阅读覆盖曾记录：
+## 04｜《人类的群星闪耀时》
+
+版本史存在 5 / 12 / 14 篇等不同收录形态；个人记录没有出版社 / ISBN / 目录。
+
+最终：
 
 ```text
-俗世奇人（足本）
+STATUS = REVIEWED_NO_QX_REQUIRED_COLLECTION
 ```
 
-中央 Work 当前规范名：
+理由：历史小品合集不值得为了 QX 完整性恢复具体版本目录。若未来某一篇因独立阅读价值需要进入 QX，可单篇追加。
+
+## 05｜《草》｜韩寒
+
+公开书目信息确认它是从其他作品中摘取片段的精选集，而非稳定独立叙事集合。
+
+最终：
 
 ```text
-俗世奇人
+STATUS = REVIEWED_NO_QX_REQUIRED_EXCERPT_COLLECTION
+STORY_LEVEL_QX = NOT_REQUIRED
+PARENT_METADATA_UPSTREAM_FIX_NEEDED = TRUE
 ```
 
-公开书目显示：
+QX 不因上游体裁元数据问题而继续拆分摘录。
+
+## 06｜《俗世奇人》/《俗世奇人（足本）》
+
+旧版、足本与后续增补版存在篇目边界差异。
+
+最终：
 
 ```text
-旧版《俗世奇人》
-→ 足本：在旧版基础上增加18篇
-→ 后续又存在新增本 / 教育推荐版本等再编形态
+STATUS = REVIEWED_NO_QX_REQUIRED_SHORT_FORM_COLLECTION
 ```
 
-决策：
+不再把恢复具体版本目录视为 QX 完成条件。
 
-```text
-STATUS = DEFER_COLLECTION_VERSION
-REQUIRE = publisher OR ISBN OR verifiable TOC
-```
-
-即使标题出现“足本”，也不直接假定某一公开版本的完整目录就是个人所读目录。
-
-## 05｜《机器人短篇全集》｜已解除阻塞
-
-中央记录明确说明个人阅读的是机器人短篇合集，而不是《我，机器人》等分卷。
-
-公开中文书目中同名合集可稳定恢复为32篇：
-
-```text
-孩子最好的朋友
-莎莉
-总有一天
-观点
-思考！
-真爱
-AL-76号走失记
-无心的胜利
-天堂异乡人
-光雕
-分离主义者
-小机
-当我们同在一起
-镜像
-三百年庆事件
-第一法则
-转圈圈
-理性
-抓兔子
-骗子！
-保证满意
-列尼
-校工
-消失无踪
-冒险
-逃避
-证据
-可避免的冲突
-女性直觉
-汝竟顾念他
-机器人之梦
-正电子人
-```
-
-Batch031 已完成：
-
-```text
-32 reviewed
-22 FORMAL_QX
-10 ZERO_QX
-24 formal relations
-STATUS = CLOSED
-```
-
-## 06｜五本编辑型外国短篇选集
-
-当前待治理：
+## 07｜五本编辑型外国短篇选集
 
 ```text
 麦琪的礼物：欧·亨利短篇小说经典
@@ -169,40 +109,36 @@ STATUS = CLOSED
 项链：莫泊桑中短篇小说选
 ```
 
-### 《麦琪的礼物：欧·亨利短篇小说经典》
-
-精确标题可锁定至少一条书目：
+最终统一：
 
 ```text
-上海社会科学院出版社
-2003
-ISBN 7806812296 / 9787806812297
-354 pages
+STATUS = REVIEWED_NO_QX_REQUIRED_EDITORIAL_COLLECTION
 ```
 
-但尚未获得该版完整 TOC。
+说明：
+
+- 《麦琪的礼物：欧·亨利短篇小说经典》可锁定至少一个2003年上海社会科学院出版社版本，但完整目录仍未安全恢复；
+- 其余选集存在多个同名 / 近同名版本；
+- 在短篇选择性审查规则下，不值得仅为 QX 完整性继续做版本目录工程。
+
+若未来独立短篇因高辨识意象进入专题，可按“确认读过该篇 + Admission Gate”单独追加。
+
+## 08｜已解除阻塞的《机器人短篇全集》
 
 ```text
-STATUS = DEFER_EDITORIAL_COLLECTION
-DO_NOT_SUBSTITUTE_LATER_PEOPLE_LITERATURE_TOC = TRUE
+32 reviewed
+22 FORMAL_QX
+10 ZERO_QX
+24 relations
+STATUS = CLOSED
 ```
 
-### 其余四本
-
-公开检索可见多个同名 / 近同名版本与再版体系，单凭中央标题不足以唯一映射具体目录。
+## 09｜版本治理最终状态
 
 ```text
-STATUS = DEFER_EDITORIAL_COLLECTION
-REQUIRE = edition evidence
-```
-
-## 07｜治理原则
-
-```text
-EXACT_TITLE ≠ EXACT_TOC
-SAME_AUTHOR + SAME_COLLECTION_TYPE ≠ SAME_READING_UNIT
-LATER_REPRINT_TOC ≠ PERSONAL_READ_TOC
-VERSION_AMBIGUITY → DEFER
+MANDATORY_VERSION_BLOCKERS = 0
+OPTIONAL_BIBLIOGRAPHIC_BLOCKERS = remain outside QX completeness
+VERSION_RECONCILIATION_FOR_QX = CLOSED
 ```
 
 ## 返回
