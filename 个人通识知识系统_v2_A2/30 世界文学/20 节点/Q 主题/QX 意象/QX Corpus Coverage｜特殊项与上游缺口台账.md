@@ -95,27 +95,34 @@ R3.5 收口为：
 
 ## 05｜已确认的上游 Work 建库缺口
 
-以下项目在 R3.5 / 已读覆盖层中属于文学已读，但当前 `feat/qx-literary-imagery` 尚无法取得应有中央 Work：
+以下项目在 R3.5 / 已读覆盖层中属于文学已读；Batch029 起逐项恢复中央 Work 并进入正式 QX：
 
 | 作品 / 阅读记录 | 状态 |
 |---|---|
 | 盗墓笔记：七星鲁王宫 | UPSTREAM_WORK_BUILD_GAP |
 | 临界·爵迹I | UPSTREAM_WORK_BUILD_GAP |
 | 我的一个世纪（增订版） | UPSTREAM_WORK_BUILD_GAP |
-| 你当像鸟飞往你的山 | UPSTREAM_WORK_BUILD_GAP |
+| 你当像鸟飞往你的山 | FORMAL_QX |
 | 看见 | UPSTREAM_WORK_BUILD_GAP |
 | 天才在左，疯子在右 | UPSTREAM_WORK_BUILD_GAP |
 | 盐镇 | UPSTREAM_WORK_BUILD_GAP |
 | 鱼翅与花椒 | UPSTREAM_WORK_BUILD_GAP |
-| 苏菲的世界 | UPSTREAM_WORK_BUILD_GAP |
+| 苏菲的世界 | FORMAL_QX |
 | 金鸡 | UPSTREAM_WORK_BUILD_GAP |
 
-统一规则：
+对尚未恢复项目继续执行：
 
 ```text
 QX_DECISION = NOT_YET_EVALUATED
 DO_NOT_COUNT_AS_ZERO_QX
 DO_NOT_CREATE_DUPLICATE_WORK_IN_QX_PHASE
+```
+
+Batch029 已恢复项目：
+
+```text
+你当像鸟飞往你的山 → 2 formal QX
+苏菲的世界 → 2 formal QX
 ```
 
 ## 06｜已发生并纠正的粒度错误
@@ -148,11 +155,11 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 
 ## 08｜当前正式 QX 基线
 
-截至 Batch027：
+截至 Batch029 第一组：
 
 ```text
-FORMAL_WORKS_WITH_QX = 117
-FORMAL_QX_RELATIONS = 356
+FORMAL_WORKS_WITH_QX = 119
+FORMAL_QX_RELATIONS = 360
 ```
 
 > 这两个数字只表示“拥有至少一条正式 QX 的 Work”，不是 173 条文学阅读记录的完成率。
@@ -160,4 +167,5 @@ FORMAL_QX_RELATIONS = 356
 ## 返回
 
 - [[QX 作品意象标注与关系治理规则]]
-- [[QX Formal Annotation｜增量批次027]]
+- [[QX Formal Annotation｜增量批次028]]
+- [[QX Formal Annotation｜增量批次029]]
