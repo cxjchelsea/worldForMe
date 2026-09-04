@@ -4,7 +4,7 @@ type: literature_qx_governance
 name: QX Corpus Coverage｜特殊项与上游缺口台账
 axis: Q
 facet: QX
-status: FINAL_AUDIT_READY
+status: COMPLETE
 schema: QX_RELATION_SCHEMA_V1
 ---
 
@@ -12,7 +12,27 @@ schema: QX_RELATION_SCHEMA_V1
 
 > 目的：记录个人已读书目在 QX 中的完成状态。QX 完成性是“每条已读记录都已判断是否值得进入意象系统”，而不是“所有短篇都必须逐篇抽取”。
 
-## 01｜完成状态定义
+## 01｜已读覆盖最终底数
+
+```text
+DEDUP_READ_RECORDS_TOTAL = 190
+LITERARY_READ_RECORDS = 173
+NON_LITERARY_READ_RECORDS = 17
+```
+
+```text
+LITERARY_READ_RECORDS_QX_DISPOSITIONED = 173
+LITERARY_READ_RECORD_COVERAGE = 173 / 173 = 100%
+ACTIONABLE_READ_CORPUS_QX_GAPS = 0
+```
+
+17 条非文学 / 知识类记录属于个人通识阅读史，不进入世界文学 QX：
+
+```text
+NON_LITERARY_QX_REQUIRED = 0
+```
+
+## 02｜完成状态定义
 
 ```text
 FORMAL_QX
@@ -31,27 +51,30 @@ REVIEWED_NO_QX_REQUIRED
 = 已判断该阅读记录不值得为了 QX 完整性继续拆篇 / 恢复版本目录
 ```
 
-以下不再视为覆盖缺口：
+以下均属于完成状态：
 
 ```text
+FORMAL_QX
 ZERO_QX
+FORMAL_QX_SERIES_SCOPE
+FORMAL_QX_SCOPE_INVARIANT
 REVIEWED_NO_QX_REQUIRED
 ```
 
-## 02｜系列 / 全集粒度
+## 03｜系列 / 全集粒度
 
 | 读书记录 | 最终状态 | 当前结论 |
 |---|---|---|
 | 福尔摩斯探案全集 | CLOSED | 60 units；58 FORMAL_QX + 2 ZERO_QX / 91 relations |
 | 哈利·波特 | CLOSED | 7 child Works / 21 relations |
-| 龙族 | FORMAL_QX_SERIES_SCOPE | 全集已读；仅保留黄金瞳、卡塞尔学院、尼伯龙根 3 条跨卷稳定关系 |
-| 哑舍 | FORMAL_QX_SCOPE_INVARIANT | 卷级范围未知；仅保留范围无关的“哑舍古董店”1条关系 |
+| 龙族 | FORMAL_QX_SERIES_SCOPE | 全集已读；黄金瞳、卡塞尔学院、尼伯龙根 3 条跨卷稳定关系 |
+| 哑舍 | FORMAL_QX_SCOPE_INVARIANT | 卷级范围未知；仅保留“哑舍古董店”1条范围无关关系 |
 
 ```text
 SERIES_RECONCILIATION = CLOSED_FOR_QX
 ```
 
-## 03｜已完成的稳定短篇集
+## 04｜已完成的稳定短篇集
 
 | 父级阅读记录 | 结果 |
 |---|---|
@@ -69,7 +92,7 @@ STORY_ZERO_QX_WORKS = 29
 STORY_FORMAL_RELATIONS = 87
 ```
 
-## 04｜已审查但无需继续拆分的已读记录
+## 05｜已审查但无需继续拆分的已读记录
 
 ### 历史小品 / 摘录 / 多人物短篇集合
 
@@ -100,15 +123,7 @@ STORY_FORMAL_RELATIONS = 87
 REVIEWED_NO_QX_REQUIRED_EDITORIAL_COLLECTION
 ```
 
-理由：这些书的价值不在于为 QX 恢复每个版本的完整目录；若未来某篇独立短篇因个人阅读重要性或强意象进入专题，可单篇追加，不影响当前已读覆盖完成性。
-
-## 05｜上游建库缺口
-
-```text
-UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
-UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
-UPSTREAM_RECONCILIATION = CLOSED
-```
+若未来其中某个独立短篇因个人阅读重要性或强意象进入专题，可单篇追加，不影响当前已读覆盖完成性。
 
 ## 06｜短篇选择性规则
 
@@ -119,7 +134,7 @@ EDITORIAL_COLLECTION ≠ MANDATORY_STORY_MAP
 ZERO_QX_SHORT_STORY ≠ COVERAGE_GAP
 ```
 
-短篇只有在以下情况下优先独立进入 QX：
+短篇优先进入 QX 的条件：
 
 ```text
 1. 存在 dominant / core 级高辨识物象
@@ -128,36 +143,49 @@ ZERO_QX_SHORT_STORY ≠ COVERAGE_GAP
 4. 本身是个人阅读中的重要独立作品
 ```
 
-## 07｜当前正式 QX 基线
+## 07｜上游 Work 建库缺口
 
-截至 Batch031 关闭：
+```text
+UPSTREAM_WORK_BUILD_GAP_TOTAL = 10
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
+UPSTREAM_RECONCILIATION = CLOSED
+```
+
+## 08｜当前正式 QX 数据规模
 
 ```text
 FORMAL_WORKS_WITH_QX = 259
 FORMAL_QX_RELATIONS = 571
-STORY_LEVEL_UNITS_REVIEWED_BATCH031 = 97
-STORY_LEVEL_FORMAL_QX_WORKS_BATCH031 = 68
-STORY_LEVEL_ZERO_QX_BATCH031 = 29
-STORY_LEVEL_NEW_RELATIONS_BATCH031 = 87
-UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 ```
 
-## 08｜当前缺口判断
+注意：
+
+```text
+259 ≠ 173
+```
+
+259 是正式拥有 QX 的 Work 数，包含从系列、短篇集拆出的独立叙事 Work；173 才是个人文学已读记录的覆盖分母。
+
+## 09｜最终结论
 
 ```text
 UNRESOLVED_NORMAL_SINGLE_WORK = 0
 UNRESOLVED_UPSTREAM_WORK_GAP = 0
 UNRESOLVED_MANDATORY_SHORT_FORM = 0
 UNRESOLVED_MANDATORY_SERIES_QX = 0
+ACTIONABLE_READ_CORPUS_QX_GAPS = 0
 ```
 
-因此：
+> **个人 173 条文学已读记录已经全部完成 QX 层处置：需要抽取的已经抽取；没有对象达到 Gate 的记录允许 ZERO_QX；不值得为 QX 继续拆分的短篇 / 选集已明确归为 REVIEWED_NO_QX_REQUIRED。**
+
+后续不再以“补已读覆盖”为目标，而转入：
 
 ```text
-READ_CORPUS_QX_REVIEW = READY_FOR_FINAL_RECOUNT
+normalized object 去重
+→ 叶节点激活
+→ 跨作品意象专题
+→ imagery constellation / work distance
 ```
-
-下一步只做最终全量审计：确认个人已读记录中不存在遗漏的普通单本 Work，并检查所有特殊项都已落入上述完成状态之一。
 
 ## 返回
 
@@ -165,3 +193,4 @@ READ_CORPUS_QX_REVIEW = READY_FOR_FINAL_RECOUNT
 - [[QX Formal Annotation｜增量批次030]]
 - [[QX Formal Annotation｜增量批次031]]
 - [[QX Version Reconciliation｜版本阻塞项证据台账]]
+- [[QX Final Audit｜已读书目全量收口]]
