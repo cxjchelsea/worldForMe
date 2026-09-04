@@ -29,9 +29,13 @@ SHERLOCK_LONG_NOVELS_RECONCILED = 4
 SHERLOCK_LONG_NOVEL_FORMAL_RELATIONS = 12
 SHERLOCK_ADVENTURES_STORIES_RECONCILED = 12
 SHERLOCK_ADVENTURES_FORMAL_RELATIONS = 19
-SHERLOCK_UNITS_COMPLETE = 16
-SHERLOCK_SHORT_STORIES_REMAINING = 44
-SHERLOCK_QX = PARTIAL_16_OF_60_COMPLETE
+SHERLOCK_MEMOIRS_STORIES_RECONCILED = 11
+SHERLOCK_MEMOIRS_FORMAL_QX_WORKS = 10
+SHERLOCK_MEMOIRS_ZERO_QX_WORKS = 1
+SHERLOCK_MEMOIRS_FORMAL_RELATIONS = 13
+SHERLOCK_UNITS_COMPLETE = 27
+SHERLOCK_SHORT_STORIES_REMAINING = 33
+SHERLOCK_QX = PARTIAL_27_OF_60_COMPLETE
 
 DRAGON_RAJAS_SERIES = DEFER_SERIES_GRANULARITY
 DRAGON_RAJAS_READ_SCOPE = COMPLETE_SERIES_CONFIRMED
@@ -45,21 +49,13 @@ FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_NOVELS = 135
 FORMAL_QX_RELATIONS_AFTER_SHERLOCK_NOVELS = 401
 FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_ADVENTURES = 147
 FORMAL_QX_RELATIONS_AFTER_SHERLOCK_ADVENTURES = 420
+FORMAL_WORKS_WITH_QX_AFTER_SHERLOCK_MEMOIRS = 157
+FORMAL_QX_RELATIONS_AFTER_SHERLOCK_MEMOIRS = 433
 ```
 
 ## 02｜《哈利·波特》：粒度闭环
 
-七册中央 Work 均已存在且为 `read_status = 已读`，Batch030 复用既有实体完成 7 Work / 21 formal QX：
-
-```text
-哈利·波特与魔法石 → 3
-哈利·波特与密室 → 3
-哈利·波特与阿兹卡班的囚徒 → 3
-哈利·波特与火焰杯 → 3
-哈利·波特与凤凰社 → 3
-哈利·波特与混血王子 → 3
-哈利·波特与死亡圣器 → 3
-```
+七册中央 Work 均已存在且为 `read_status = 已读`，Batch030 复用既有实体完成 7 Work / 21 formal QX。
 
 ```text
 HARRY_POTTER_GRANULARITY = CLOSED
@@ -75,8 +71,6 @@ HARRY_POTTER_GRANULARITY = CLOSED
 
 ### 03.1｜四部长篇：完成
 
-原中央 Work 均错误写为 `read_status = 未读`，现已依据全集阅读事实统一校正为 `已读` 并完成 QX：
-
 ```text
 血字的研究 → 3
 四签名 → 3
@@ -91,62 +85,67 @@ SHERLOCK_LONG_NOVEL_FORMAL_RELATIONS = 12
 
 ### 03.2｜《福尔摩斯历险记》12篇：完成
 
-中央库此前没有这 12 个独立短篇 Work。Batch030 依据完整全集阅读事实建立最小中央实体，并逐篇通过 Admission Gate：
-
-| 独立短篇 | 正式 QX | 关系数 |
-|---|---|---:|
-| 波希米亚丑闻 | 艾琳·艾德勒与国王的合影 | 1 |
-| 红发会 | 红头发；地下隧道 | 2 |
-| 身份案 | 打字信 | 1 |
-| 博斯科姆比溪谷秘案 | 博斯科姆比溪谷水塘 | 1 |
-| 五个橘核 | 五个橘核；K.K.K.匿名信 | 2 |
-| 歪唇男人 | 歪嘴与乞丐面容；鸦片烟馆 | 2 |
-| 蓝宝石案 | 蓝宝石；鹅 | 2 |
-| 斑点带子案 | 沼地蝰蛇；通风孔与假铃绳 | 2 |
-| 工程师大拇指案 | 被斩断的拇指；水压机 | 2 |
-| 单身贵族案 | 婚礼 | 1 |
-| 绿玉皇冠案 | 绿玉皇冠 | 1 |
-| 铜山毛榉案 | 铜山毛榉宅邸；蓝色连衣裙 | 2 |
-
 ```text
-SHERLOCK_ADVENTURES_STORIES = 12
-SHERLOCK_ADVENTURES_FORMAL_QX_WORKS = 12
-SHERLOCK_ADVENTURES_FORMAL_RELATIONS = 19
+12 stories
+12 FORMAL_QX
+19 formal relations
 ```
 
-### 03.3｜精度说明
+### 03.3｜《福尔摩斯回忆录》11篇：完成
 
-本组没有把“贝克街、烟斗、放大镜、华生手记”等系列标志物自动继承给所有短篇。QX 只记录在该独立叙事内部满足 `recurrent / structural / binding / distinctiveness` 至少两项，或符合 `singular_pivotal` 例外的对象。
+按保持 56-story canon 不重复的集合分法，本批将《纸盒子》归入《最后致意》，因此《回忆录》按 11 个独立故事处理。
 
-因此：
+| 独立短篇 | 状态 | 正式 QX | 关系数 |
+|---|---|---|---:|
+| 银色马 | FORMAL_QX | 银色马 | 1 |
+| 黄面人 | FORMAL_QX | 黄色面具 | 1 |
+| 证券经纪人的书记员 | FORMAL_QX | 聘用书与签字文件 | 1 |
+| 格洛里亚·斯科特号 | FORMAL_QX | 格洛里亚·斯科特号；密码信 | 2 |
+| 马斯格雷夫礼典 | FORMAL_QX | 礼典文书；王冠遗物 | 2 |
+| 赖盖特之谜 | FORMAL_QX | 撕裂的纸条 | 1 |
+| 驼背人 | FORMAL_QX | 亨利·伍德扭曲的身体 | 1 |
+| 住院的病人 | ZERO_QX | — | 0 |
+| 希腊译员 | FORMAL_QX | 蒙眼与封闭马车 | 1 |
+| 海军协定 | FORMAL_QX | 海军协定文件 | 1 |
+| 最后一案 | FORMAL_QX | 莱辛巴赫瀑布；福尔摩斯留给华生的便条 | 2 |
 
 ```text
+SHERLOCK_MEMOIRS_STORIES = 11
+SHERLOCK_MEMOIRS_FORMAL_QX_WORKS = 10
+SHERLOCK_MEMOIRS_ZERO_QX_WORKS = 1
+SHERLOCK_MEMOIRS_FORMAL_RELATIONS = 13
+```
+
+《住院的病人》是本阶段第一个明确 ZERO_QX 的福尔摩斯短篇：案件中存在具体物件，但没有对象同时达到足够的结构绑定与作品辨识度，因此不为补齐而强行入库。
+
+### 03.4｜精度说明
+
+```text
+SHORT_STORY ≠ MUST_HAVE_QX
 SHORT_STORY ≠ MUST_HAVE_MULTIPLE_QX
 SERIES_ICON ≠ AUTOMATIC_STORY_QX
 ```
 
-### 03.4｜剩余福尔摩斯任务
+### 03.5｜剩余福尔摩斯任务
 
 ```text
 CANON_TOTAL = 60
-UNITS_COMPLETE = 16
-SHORT_STORIES_COMPLETE = 12
-SHORT_STORIES_REMAINING = 44
+UNITS_COMPLETE = 27
+SHORT_STORIES_COMPLETE = 23
+SHORT_STORIES_REMAINING = 33
 ```
 
-下一组按短篇集继续：
+下一组：
 
 ```text
-福尔摩斯回忆录
-→ story-level Work recovery
+福尔摩斯归来记 13篇
+→ central Work recovery
 → read_status = 已读
 → Admission Gate
 → FORMAL_QX / ZERO_QX
 ```
 
 ## 04｜《龙族》：全集已读，但版本边界仍不稳定
-
-个人阅读事实明确为《龙族》全集已读；中央库当前仍只有系列父记录 `龙族.md`。原始出版、修订版、第三部上中下分册、第五部连载及后续重写存在不同粒度边界，因此继续保持：
 
 ```text
 READ_SCOPE = COMPLETE_SERIES_CONFIRMED
@@ -157,30 +156,21 @@ VOLUME_MAP = DEFER_VERSION_BOUNDARY
 ## 05｜Batch030 当前状态
 
 ```text
-SERIES_RECORDS_TOTAL = 3
-SERIES_FULL_READ_FACT_CONFIRMED = 3
-
 HARRY_POTTER = CLOSED
-SHERLOCK_HOLMES = 16_OF_60_UNITS_QX_COMPLETE
+SHERLOCK_HOLMES = 27_OF_60_UNITS_QX_REVIEWED
 DRAGON_RAJAS = DEFER_VERSION_BOUNDARY
 
-FORMAL_WORKS_WITH_QX = 147
-FORMAL_QX_RELATIONS = 420
+FORMAL_WORKS_WITH_QX = 157
+FORMAL_QX_RELATIONS = 433
 ```
 
 ## 06｜下一步
 
 ```text
-Batch030-B2
-→ 《福尔摩斯回忆录》story-level reading map + central Work recovery + QX
-
-之后继续：
-→ 《福尔摩斯归来记》
-→ 《最后致意》
-→ 《福尔摩斯案件簿》
-
-Batch030-C
-→ 龙族版本 / 卷级边界恢复
+Batch030-B3 → 《福尔摩斯归来记》13篇
+Batch030-B4 → 《最后致意》8篇
+Batch030-B5 → 《福尔摩斯案件簿》12篇
+Batch030-C → 龙族版本 / 卷级边界恢复
 ```
 
 ## 返回
