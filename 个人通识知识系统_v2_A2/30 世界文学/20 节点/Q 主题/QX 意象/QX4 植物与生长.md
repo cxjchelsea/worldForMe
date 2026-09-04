@@ -5,6 +5,10 @@ name: QX4 植物与生长
 code: QX4
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 4
 level: 3
 status: ACTIVE
 ---

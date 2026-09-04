@@ -5,6 +5,10 @@ name: QX5 动物
 code: QX5
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 5
 level: 3
 status: ACTIVE
 ---

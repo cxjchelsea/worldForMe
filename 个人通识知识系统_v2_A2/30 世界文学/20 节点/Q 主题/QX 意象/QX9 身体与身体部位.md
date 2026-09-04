@@ -5,6 +5,10 @@ name: QX9 身体与身体部位
 code: QX9
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 9
 level: 3
 status: ACTIVE
 ---

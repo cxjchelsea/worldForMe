@@ -4,6 +4,10 @@ type: literature_axis_subsystem
 name: QX 文学意象与场景
 code: QX
 axis: Q
+topic_id: WL-TOPIC-QX
+structure_type_zh: 轴说明
+dimension: orientation
+sequence: 1
 level: 2
 status: ACTIVE
 source_version: 1.0
@@ -90,10 +94,13 @@ QX 的一级类只是导航容器，不要求互斥。具体意象可根据主�
 
 QX 更适合作为阅读后逐渐生长的探索层，而不是阅读前必须填满的分类表。先从作品中发现重复，再形成专题；不要反过来为了凑齐目录给所有候选意象建文件。
 
+阅读入口：[[../../../30 专题/QX 文学意象与场景/00 文学意象与场景]]。
+
 首个示范节点：[[QX1 自然与天气]] → [[QX1.1 文学中的雨]]。
 
 专题写作统一参考：[[QX 专题模板]]。
 
 ## 返回
 
+- [[../../../30 专题/QX 文学意象与场景/00 文学意象与场景|QX 专题阅读入口]]
 - [[../../../10 轴/Q轴 文学主题与人类问题|Q轴 文学内容域]]

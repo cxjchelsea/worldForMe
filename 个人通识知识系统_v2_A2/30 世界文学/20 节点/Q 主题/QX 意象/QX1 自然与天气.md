@@ -5,6 +5,10 @@ name: QX1 自然与天气
 code: QX1
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 1
 level: 3
 status: ACTIVE
 ---
@@ -20,6 +24,8 @@ status: ACTIVE
 ## 已激活专题
 
 - [[QX1.1 文学中的雨]]
+
+本类全部正式关系见 [[../../../30 专题/QX 文学意象与场景/04 意象关系索引#QX1 自然与天气]]。
 
 ## 候选词
 

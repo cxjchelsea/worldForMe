@@ -1,0 +1,71 @@
+filters:
+  and:
+    - type == "work"
+    - file.folder == "个人通识知识系统_v2_A2/30 世界文学/40 作品"
+    - qx != null
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+  note.verification_status:
+    displayName: 校验状态
+views:
+  - type: table
+    name: 全部已标 QX 作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_t
+      - axis_r
+      - axis_g
+      - axis_q
+      - id
+      - verification_status
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - axis_t
+      - id
+  - type: table
+    name: 待校验
+    filters:
+      and:
+        - verification_status != "自动通过"
+        - verification_status != "手工核验"
+    order:
+      - file.name
+      - author
+      - read_status
+      - verification_status
+      - id

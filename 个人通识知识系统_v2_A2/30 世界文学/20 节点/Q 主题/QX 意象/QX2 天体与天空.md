@@ -5,6 +5,10 @@ name: QX2 天体与天空
 code: QX2
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 2
 level: 3
 status: ACTIVE
 ---

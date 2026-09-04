@@ -1,0 +1,25 @@
+{
+	"nodes":[
+		{"id":"home","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/00 文学意象与场景.md","x":0,"y":0,"width":360,"height":220},
+		{"id":"axis","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QX 意象/QX 文学意象与场景.md","x":450,"y":0,"width":400,"height":240},
+		{"id":"rain","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QX 意象/QX1.1 文学中的雨.md","x":930,"y":-260,"width":400,"height":220},
+		{"id":"sea","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QX 意象/QX3.1 文学中的海.md","x":930,"y":0,"width":400,"height":220},
+		{"id":"letter","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题/QX 意象/QX16.1 文学中的书信.md","x":930,"y":260,"width":400,"height":220},
+		{"id":"struct","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/02 文学意象与场景结构.base","x":1430,"y":-140,"width":400,"height":220},
+		{"id":"works","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/03 文学意象与场景作品.base","x":1430,"y":140,"width":400,"height":220},
+		{"id":"index","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/04 意象关系索引.md","x":450,"y":-300,"width":400,"height":220},
+		{"id":"bywork","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/05 作品意象一览.md","x":0,"y":-300,"width":400,"height":220},
+		{"id":"gov","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/90 研究治理/00 研究治理索引.md","x":450,"y":360,"width":400,"height":220}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"home","fromSide":"right","toNode":"axis","toSide":"left"},
+		{"id":"e2","fromNode":"axis","fromSide":"right","toNode":"rain","toSide":"left"},
+		{"id":"e3","fromNode":"axis","fromSide":"right","toNode":"sea","toSide":"left"},
+		{"id":"e4","fromNode":"axis","fromSide":"right","toNode":"letter","toSide":"left"},
+		{"id":"e5","fromNode":"rain","fromSide":"right","toNode":"struct","toSide":"left"},
+		{"id":"e6","fromNode":"letter","fromSide":"right","toNode":"works","toSide":"left"},
+		{"id":"e7","fromNode":"home","fromSide":"bottom","toNode":"gov","toSide":"top"},
+		{"id":"e8","fromNode":"home","fromSide":"top","toNode":"index","toSide":"bottom"},
+		{"id":"e9","fromNode":"home","fromSide":"top","toNode":"bywork","toSide":"bottom"}
+	]
+}

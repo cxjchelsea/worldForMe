@@ -5,6 +5,10 @@ name: QX6 自然空间
 code: QX6
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 6
 level: 3
 status: ACTIVE
 ---

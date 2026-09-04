@@ -5,6 +5,10 @@ name: QX3 水域与液体
 code: QX3
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 3
 level: 3
 status: ACTIVE
 ---
@@ -35,7 +39,9 @@ status: ACTIVE
 
 ## 已激活专题
 
-- [[QX3.1 文学中的海]] — 已由《基督山伯爵》《局外人》《海底两万里》3 部正式作品关系达到激活门槛。
+- [[QX3.1 文学中的海]]
+
+本类全部正式关系见 [[../../../30 专题/QX 文学意象与场景/04 意象关系索引#QX3 水域与液体]]。 — 已由《基督山伯爵》《局外人》《海底两万里》3 部正式作品关系达到激活门槛。
 
 ## 返回
 

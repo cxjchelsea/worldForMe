@@ -5,6 +5,10 @@ name: QX3.1 文学中的海
 code: QX3.1
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 已激活专题
+dimension: activated_topic
+sequence: 2
 parent: QX3
 level: 4
 status: ACTIVE

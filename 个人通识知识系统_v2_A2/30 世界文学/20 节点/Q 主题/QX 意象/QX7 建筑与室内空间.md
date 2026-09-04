@@ -5,6 +5,10 @@ name: QX7 建筑与室内空间
 code: QX7
 axis: Q
 facet: QX
+topic_id: WL-TOPIC-QX
+structure_type_zh: 一级类
+dimension: primary_group
+sequence: 7
 level: 3
 status: ACTIVE
 ---

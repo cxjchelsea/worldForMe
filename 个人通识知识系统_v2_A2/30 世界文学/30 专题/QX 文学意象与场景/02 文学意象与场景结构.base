@@ -1,0 +1,64 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QX"
+    - structure_type_zh != null
+formulas:
+  dimension_zh: if(dimension, dimension.replace("activated_topic", "已激活专题").replace("primary_group", "一级类").replace("orientation", "轴说明"), "")
+properties:
+  file.name:
+    displayName: 节点
+  note.structure_type_zh:
+    displayName: 所属模块
+  formula.dimension_zh:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.code:
+    displayName: 编号
+  note.id:
+    displayName: ID
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - code
+      - id
+  - type: table
+    name: 轴说明
+    filters:
+      and:
+        - structure_type_zh == "轴说明"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - id
+  - type: table
+    name: 一级类
+    filters:
+      and:
+        - structure_type_zh == "一级类"
+    order:
+      - sequence
+      - file.name
+      - formula.dimension_zh
+      - code
+      - id
+  - type: table
+    name: 已激活专题
+    filters:
+      and:
+        - structure_type_zh == "已激活专题"
+    order:
+      - sequence
+      - file.name
+      - formula.dimension_zh
+      - code
+      - id
