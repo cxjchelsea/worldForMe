@@ -3,7 +3,7 @@ filters:
     - topic_id == "WL-TOPIC-QC113"
     - structure_type_zh != null
 formulas:
-  dimension_zh: if(dimension, dimension.replace("definition", "专题定位").replace("boundary", "定义与边界").replace("historical_context", "历史文化环境").replace("cosmology", "世界观与宇宙结构").replace("actor_system", "神祇、巨人、英雄与超自然存在").replace("narrative_cycles", "核心叙事循环").replace("oral_poetic_performance", "口传、诗歌与表演").replace("textualization", "书写、基督教化记录与编纂").replace("internal_evolution", "内部演变").replace("text_lineage", "文本谱系").replace("early_witness", "早期见证").replace("edda_compilation", "埃达诗歌与斯诺里编纂").replace("saga_heroic_witness", "萨迦与英雄传统见证").replace("reading_entry", "谱系阅读入口").replace("qc2_mapping", "QC2 叙事组件映射").replace("cosmogony_worldtree", "创世、世界树与宇宙秩序").replace("ragnarok", "诸神黄昏、毁灭与重生").replace("hero_dragon_hoard", "英雄、屠龙与诅咒宝藏").replace("transmission_evidence", "跨传统关系与证据边界").replace("reception", "后世接受").replace("christian_reframing", "基督教化记录与再解释").replace("modern_reconstruction", "浪漫主义、民族主义与现代重构").replace("reading_route", "阅读路线").replace("research_bibliography", "支撑研究书目"), "")
+  dimension_zh: if(dimension, dimension.replace("definition", "专题定位").replace("boundary", "定义与边界").replace("historical_context", "历史文化环境").replace("cosmology", "世界观与宇宙结构").replace("actor_system", "神祇、巨人、英雄与超自然存在").replace("narrative_cycles", "核心叙事循环").replace("oral_poetic_performance", "口传、诗歌与表演").replace("textualization", "书写、基督教化记录与编纂").replace("internal_evolution", "内部演变").replace("text_lineage", "文本谱系").replace("early_witness", "早期见证").replace("skaldic_witness", "斯卡尔德诗歌与宫廷诗歌见证").replace("edda_compilation", "埃达诗歌与斯诺里编纂").replace("saga_heroic_witness", "萨迦与英雄传统见证").replace("reading_entry", "谱系阅读入口").replace("qc2_mapping", "QC2 叙事组件映射").replace("cosmogony_worldtree", "创世、世界树与宇宙秩序").replace("ragnarok", "诸神黄昏、毁灭与重生").replace("hero_dragon_hoard", "英雄、屠龙与诅咒宝藏").replace("transmission_evidence", "跨传统关系与证据边界").replace("reception", "后世接受").replace("christian_reframing", "基督教化记录与再解释").replace("modern_reconstruction", "浪漫主义、民族主义与现代重构").replace("reading_route", "阅读路线").replace("research_bibliography", "支撑研究书目"), "")
 properties:
   file.name:
     displayName: 节点
@@ -23,28 +23,54 @@ views:
     groupBy:
       property: structure_type_zh
       direction: ASC
-    order: [file.name, structure_type_zh, formula.dimension_zh, sequence, history_position, id]
+    order:
+      - file.name
+      - structure_type_zh
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 传统本体与形成结构
     filters:
       and:
         - structure_type_zh == "传统本体与形成结构"
-    order: [file.name, formula.dimension_zh, sequence, history_position, id]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 文本见证与内部演变
     filters:
       and:
         - structure_type_zh == "文本见证与内部演变"
-    order: [file.name, formula.dimension_zh, sequence, history_position, id]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 叙事组件与跨文化关系
     filters:
       and:
         - structure_type_zh == "叙事组件与跨文化关系"
-    order: [file.name, formula.dimension_zh, sequence, history_position, id]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
     name: 后世接受与阅读
     filters:
       and:
         - structure_type_zh == "后世接受与阅读"
-    order: [file.name, formula.dimension_zh, sequence, history_position, id]
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
