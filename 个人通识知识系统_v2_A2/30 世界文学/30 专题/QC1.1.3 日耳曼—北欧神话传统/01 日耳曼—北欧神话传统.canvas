@@ -1,0 +1,27 @@
+{
+  "nodes":[
+    {"id":"home","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/00 日耳曼—北欧神话传统.md","x":0,"y":0,"width":360,"height":220},
+    {"id":"orientation","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/10 传统本体与形成结构/00 专题定位与认知路径.md","x":450,"y":0,"width":380,"height":220},
+    {"id":"formation","type":"text","text":"传统本体与形成结构\n\n早期日耳曼语族文化环境\n→ 口传与诗歌传统\n→ 基督教化后的书写、保存与编纂","x":920,"y":-260,"width":400,"height":250},
+    {"id":"cycles","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/10 传统本体与形成结构/04 核心叙事群与内部演变.md","x":920,"y":80,"width":400,"height":240},
+    {"id":"texts","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/11 文本见证与内部演变/00 文本谱系索引.md","x":1420,"y":-260,"width":400,"height":240},
+    {"id":"edda","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/11 文本见证与内部演变/02 埃达诗歌与斯诺里编纂.md","x":1420,"y":80,"width":400,"height":240},
+    {"id":"qc2","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/12 叙事组件与跨文化关系/00 叙事组件映射索引.md","x":1920,"y":-260,"width":420,"height":240},
+    {"id":"after","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/13 后世接受与阅读/00 后世接受与阅读索引.md","x":1920,"y":80,"width":420,"height":240},
+    {"id":"works","type":"file","file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/QC1.1.3 日耳曼—北欧神话传统/03 日耳曼—北欧神话传统作品.base","x":2420,"y":80,"width":420,"height":240},
+    {"id":"boundary","type":"text","text":"边界\n\nQC1.1.3：来源传统与形成/保存机制\nQC1.2：沃尔松—尼伯龙根等具体跨文本循环\nQC2：世界树、诸神黄昏、屠龙、诅咒宝藏等可复用组件\nQC3：维京人/狂战士等历史化角色世界\n40作品：具体文本实体\n符文、咒语、手稿：可作为 textual witness，不强制变成普通作品","x":920,"y":440,"width":1420,"height":300}
+  ],
+  "edges":[
+    {"id":"e1","fromNode":"home","fromSide":"right","toNode":"orientation","toSide":"left"},
+    {"id":"e2","fromNode":"orientation","fromSide":"right","toNode":"formation","toSide":"left"},
+    {"id":"e3","fromNode":"orientation","fromSide":"right","toNode":"cycles","toSide":"left"},
+    {"id":"e4","fromNode":"formation","fromSide":"right","toNode":"texts","toSide":"left"},
+    {"id":"e5","fromNode":"cycles","fromSide":"right","toNode":"texts","toSide":"left"},
+    {"id":"e6","fromNode":"texts","fromSide":"bottom","toNode":"edda","toSide":"top"},
+    {"id":"e7","fromNode":"cycles","fromSide":"right","toNode":"qc2","toSide":"left"},
+    {"id":"e8","fromNode":"texts","fromSide":"right","toNode":"after","toSide":"left"},
+    {"id":"e9","fromNode":"qc2","fromSide":"bottom","toNode":"after","toSide":"top"},
+    {"id":"e10","fromNode":"after","fromSide":"right","toNode":"works","toSide":"left"},
+    {"id":"e11","fromNode":"cycles","fromSide":"bottom","toNode":"boundary","toSide":"top"}
+  ]
+}
