@@ -25,7 +25,7 @@ DEFER_STORY_LEVEL
 = 阅读事实对应短篇集 / 多独立叙事，需要篇章级处理
 
 DEFER_SERIES_GRANULARITY
-= 阅读记录是系列总称或卷级不清，需要先恢复卷级阅读事实
+= 阅读记录是系列总称或卷级边界尚无法稳定映射，需要先恢复实际阅读单元
 
 DEFER_EDITORIAL_COLLECTION
 = 编辑型选集 / 精选，目录依版本变化，不能用标题中的某一篇代替整个阅读事实
@@ -41,11 +41,13 @@ UPSTREAM_WORK_BUILD_GAP
 
 ### 系列 / 全集粒度
 
-| 读书记录 | 状态 | QX 下一步 |
+| 读书记录 | 状态 | 当前结论 / QX 下一步 |
 |---|---|---|
-| 福尔摩斯探案全集 | DEFER_SERIES_GRANULARITY | 根据实际版本目录恢复长篇 / 短篇阅读单元 |
-| 哈利·波特 | DEFER_SERIES_GRANULARITY | 先确认实际读过哪些单卷，再按卷标 QX |
-| 龙族 | DEFER_SERIES_GRANULARITY | 先确认具体已读卷，不给系列总称挂跨卷 QX |
+| 福尔摩斯探案全集 | ONE_TO_MANY_RECONCILIATION | 已确认全集阅读事实；按 4 长篇 + 56 短篇恢复 60 个独立叙事单元，并纠正中央 Work 中冲突的 `read_status` |
+| 哈利·波特 | ONE_TO_MANY_RECONCILIATION | Batch030 已核实七册中央 Work 均为已读，并完成 7 Work / 21 formal QX；系列粒度实质闭环 |
+| 龙族 | DEFER_SERIES_GRANULARITY | 已确认全集阅读事实，但原始出版 / 修订 / 连载 / 重写边界不稳定；先恢复采用的版本 / 卷级结构，不给系列父节点挂跨卷 QX |
+
+> Batch030 的关键修正：三条系列记录的“是否完整读过”已经不是未知项。剩余问题仅是中央 Work 映射与版本 / 独立叙事粒度。
 
 ### 编辑型短篇选集
 
@@ -93,6 +95,36 @@ R3.5 收口为：
 | 燃烧的原野 | DEFER_STORY_LEVEL |
 | 金鸡 | FORMAL_QX |
 
+### 《哈利·波特》
+
+Batch030 已核实一条系列记录可稳定映射为七部中央 Work：
+
+```text
+哈利·波特与魔法石 → FORMAL_QX / 3
+哈利·波特与密室 → FORMAL_QX / 3
+哈利·波特与阿兹卡班的囚徒 → FORMAL_QX / 3
+哈利·波特与火焰杯 → FORMAL_QX / 3
+哈利·波特与凤凰社 → FORMAL_QX / 3
+哈利·波特与混血王子 → FORMAL_QX / 3
+哈利·波特与死亡圣器 → FORMAL_QX / 3
+```
+
+```text
+HARRY_POTTER_CHILD_WORKS = 7
+HARRY_POTTER_FORMAL_RELATIONS = 21
+HARRY_POTTER_GRANULARITY = CLOSED
+```
+
+### 《福尔摩斯探案全集》
+
+全集阅读事实已确认；按作品粒度应映射为：
+
+```text
+4 novels + 56 short stories = 60 independent narrative units
+```
+
+中央库目前仍有由专题书单继承而来的阅读状态冲突，例如《血字的研究》仍写为 `未读`。Batch030-B 将先统一修复 60-unit reading map，再做逐篇 QX。
+
 ## 05｜上游 Work 建库缺口：Batch029 已收口
 
 R3.5 / 已读覆盖层曾确认 10 个已读条目缺少中央 Work。Batch029 已逐项恢复并完成作品级 QX 审查：
@@ -121,7 +153,7 @@ UPSTREAM_RECONCILIATION = CLOSED
 本轮统一遵守：
 
 ```text
-READ FACT = 继承 R3.5 / ledger 已确认的已读事实
+READ FACT = 继承已确认的个人阅读事实
 OTHER AXES = 不因 QX 修复而推断补齐
 NEW WORK verification_status = 需复核
 NEW WORK bibliography_status = qx_recovered_minimal
@@ -148,7 +180,10 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 
 ```text
 1. UPSTREAM_WORK_BUILD_GAP → CLOSED
-2. 恢复 SERIES 的卷级阅读事实 ← CURRENT NEXT
+2. SERIES / VOLUME GRANULARITY
+   - 哈利·波特 → CLOSED
+   - 福尔摩斯探案全集 → CURRENT / ONE_TO_MANY_RECONCILIATION
+   - 龙族 → DEFER_VERSION_BOUNDARY
 3. 对稳定作者短篇集建立 story-level reading map
 4. 对编辑型选集取得具体版本目录 / 实际读篇
 5. 再进行 story-level QX
@@ -157,18 +192,19 @@ reason = COLLECTION_TITLE ≠ VERIFIED_STORY_READ_FACT
 
 ## 08｜当前正式 QX 基线
 
-截至 Batch029 收口：
+截至 Batch030《哈利·波特》七册收口：
 
 ```text
-FORMAL_WORKS_WITH_QX = 124
-FORMAL_QX_RELATIONS = 368
+FORMAL_WORKS_WITH_QX = 131
+FORMAL_QX_RELATIONS = 389
 UPSTREAM_WORK_BUILD_GAP_REMAINING = 0
 ```
 
-> 正式 QX 数字只统计拥有至少一条正式关系的 Work。ZERO_QX 表示已完成审查但不进入该计数；因此不能用 124 直接除以 173 作为覆盖率。
+> 正式 QX 数字只统计拥有至少一条正式关系的 Work。ZERO_QX 表示已完成审查但不进入该计数；系列父记录也不作为独立 QX Work 计数。
 
 ## 返回
 
 - [[QX 作品意象标注与关系治理规则]]
 - [[QX Formal Annotation｜增量批次028]]
 - [[QX Formal Annotation｜增量批次029]]
+- [[QX Formal Annotation｜增量批次030]]
