@@ -72,6 +72,11 @@ views:
       and:
         - qc122_branch == "德语分支"
   - type: table
+    name: 跨文本比较见证
+    filters:
+      and:
+        - qc122_branch == "跨文本比较见证"
+  - type: table
     name: 后世重构
     filters:
       and:
