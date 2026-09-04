@@ -14,91 +14,91 @@ admission_gate: ADMISSION_GATE_V1
 
 > 本批开始执行 Batch028 指定的 `UPSTREAM RECONCILIATION`：先恢复 R3.5 已确认已读、但中央 `40 作品` 缺失的独立 Work，再按现行 Admission Gate 做 QX。不上推其他轴的推断元数据。
 
-## 01｜本组正式计数
+## 01｜当前累计
 
 ```text
-BATCH_029_GROUP1_RECOVERED_WORKS = 2
-BATCH_029_GROUP1_FORMAL_RELATIONS = 4
+BATCH_029_RECOVERED_WORKS = 6
+BATCH_029_FORMAL_QX_WORKS = 3
+BATCH_029_ZERO_QX_WORKS = 3
+BATCH_029_FORMAL_RELATIONS = 6
 FORMAL_QX_RELATIONS_BEFORE = 356
-FORMAL_QX_RELATIONS_AFTER = 360
+FORMAL_QX_RELATIONS_AFTER = 362
 FORMAL_WORKS_WITH_QX_BEFORE = 117
-FORMAL_WORKS_WITH_QX_AFTER = 119
+FORMAL_WORKS_WITH_QX_AFTER = 120
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 4
 ```
 
-## 02｜恢复：《你当像鸟飞往你的山》
+## 02｜第一组：FORMAL_QX
 
-中央 Work：
+### 《你当像鸟飞往你的山》
+
+中央 Work：`40 作品/你当像鸟飞往你的山.md`
+
+通过 Gate：
 
 ```text
-40 作品/你当像鸟飞往你的山.md
-read_status = 已读
-bibliography_status = qx_recovered_minimal
-verification_status = 需复核
+巴克峰 / 山 → QX6 / dominant
+废料场 → QX8 / core
 ```
 
-正式 QX：
+巴克峰是童年家庭世界的固定空间中心，并持续连接故乡、家庭身份与归返；废料场长期组织童年劳动、父权关系和身体风险。
 
-### 巴克峰 / 山
+### 《苏菲的世界》
+
+中央 Work：`40 作品/苏菲的世界.md`
+
+通过 Gate：
 
 ```text
-primary_group = QX6
-salience = dominant
-Gate = PASS
-basis = recurrence + structural/spatial + identity/family binding + distinctiveness
+书信 / 明信片 → QX16.1 / dominant
+书 / 书稿 → QX16 / dominant
 ```
 
-巴克峰不是一般自然背景，而是童年家庭世界的固定空间中心；离家求学后，对山的回望继续连接故乡、家庭身份与“是否归返”。
+前者启动并持续组织哲学课程与跨叙事层级谜团；后者最终成为人物意识到自身虚构存在状态的结构性对象。
 
-### 废料场
+## 03｜第二组：《鱼翅与花椒》FORMAL_QX
+
+中央 Work：`40 作品/鱼翅与花椒.md`
+
+通过 Gate：
 
 ```text
-primary_group = QX8
-salience = core
-Gate = PASS
-basis = recurrence + family/labor binding + bodily-risk structure
+花椒 → QX13 / core
+鱼翅 → QX13 / significant
 ```
 
-废料场长期组织童年劳动、父权关系与身体风险，因此不是一次性场景。
+两者并非仅因出现在书名而入库。作者对书名选择有明确解释：花椒代表其进入四川饮食文化时高度独特的感官经验；鱼翅则连接珍贵食材、文化陌生性以及生态 / 消费伦理争议。两者均与整部饮食旅行回忆录的跨文化经验稳定绑定并具有强辨识度。
 
-## 03｜恢复：《苏菲的世界》
+## 04｜第二组：ZERO_QX
 
-中央 Work：
+### 《看见》
 
 ```text
-40 作品/苏菲的世界.md
-read_status = 已读
-bibliography_status = qx_recovered_minimal
-verification_status = 需复核
+QX_REVIEW = COMPLETE
+RESULT = ZERO_QX
 ```
 
-正式 QX：
+新闻现场、采访设备、镜头等均可被解释，但目前没有单一具体对象获得足够的作品内部复现、结构绑定或辨识度证据。尤其不把书名“看见”直接推导为视觉意象。
 
-### 书信 / 明信片
+### 《天才在左，疯子在右》
 
 ```text
-qx_id = QX16.1
-primary_group = QX16
-salience = dominant
-Gate = PASS
-basis = recurrence + plot/structure + cross-world binding
+QX_REVIEW = COMPLETE
+RESULT = ZERO_QX
 ```
 
-匿名哲学问题信件启动小说，给希尔德的明信片持续制造叙事层级之间的渗透，是结构装置而非普通媒介。
+全书由多组访谈 / 个案构成，具体物象主要依附于局部个案；没有证据支持某个具体对象在全书层面稳定承担结构作用。标题“左 / 右”是概念性对举，不按空间意象入库。
 
-### 书 / 书稿
+### 《我的一个世纪（增订版）》
 
 ```text
-primary_group = QX16
-salience = dominant
-Gate = PASS
-basis = structural + singular_pivotal + world-state transformation
+QX_REVIEW = COMPLETE
+RESULT = ZERO_QX
 ```
 
-苏菲与艾伯特发现自己存在于希尔德父亲写给女儿的书中；书稿直接改变人物对自身存在层级的理解。
+青楼、家庭、川菜馆 / 锦江饭店等地点对人物生平重要，但“重要人生地点”不自动等于文学意象。当前没有足够作品内部证据证明某一对象在整部回忆录中达到 Gate。
 
-## 04｜上游恢复策略
-
-本批明确采用：
+## 05｜上游恢复策略
 
 ```text
 READ FACT
@@ -115,46 +115,41 @@ QX
 → 必须独立通过 ADMISSION_GATE_V1
 ```
 
-因此新建 Work 的 `verification_status = 需复核` 不影响 QX 关系本身的 Gate 判断；它表示中央作品库其他维度仍待后续上游治理。
+新建 Work 统一使用：
 
-## 05｜剩余 UPSTREAM_WORK_BUILD_GAP
+```text
+verification_status = 需复核
+bibliography_status = qx_recovered_minimal
+```
+
+这表示中央作品库其他维度仍待后续上游治理，不降低 QX Gate 的独立判断标准。
+
+## 06｜剩余 UPSTREAM_WORK_BUILD_GAP
 
 ```text
 盗墓笔记：七星鲁王宫
 临界·爵迹I
-我的一个世纪（增订版）
-看见
-天才在左，疯子在右
 盐镇
-鱼翅与花椒
 金鸡
 ```
 
-当前剩余：
+当前：
 
 ```text
-UPSTREAM_WORK_BUILD_GAP_REMAINING = 8
-```
-
-这些项目仍保持：
-
-```text
+UPSTREAM_WORK_BUILD_GAP_REMAINING = 4
 QX_DECISION = NOT_YET_EVALUATED
-DO_NOT_COUNT_AS_ZERO_QX
 ```
 
-## 06｜下一步
+## 07｜下一步
 
-继续 Batch029 第二组，优先处理：
+继续 Batch029 第三组，完成上述 4 个 upstream gap。完成后，不立即扩张 ontology，而转入：
 
 ```text
-鱼翅与花椒
-看见
-我的一个世纪（增订版）
-天才在左，疯子在右
+SERIES / VOLUME GRANULARITY
+→ STORY-LEVEL READING MAP
+→ EDITORIAL COLLECTION VERSION MAP
+→ FULL 173-RECORD COVERAGE RECOUNT
 ```
-
-其中若某作品没有对象通过 Gate，应正式落为 `ZERO_QX`，而不是为了完成率强行制造关系。
 
 ## 返回
 
