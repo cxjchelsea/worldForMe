@@ -2,8 +2,8 @@
 id: WL-QC12-COMPARISON-V1
 type: literature_governance_review
 scope: QC1.2
-status: REVIEW
-version: "1.0"
+status: FROZEN_REFERENCE
+version: "1.1"
 ---
 # QC1.2 样板横向比较 V1
 
@@ -12,11 +12,9 @@ version: "1.0"
 - [[QC1.2.1 特洛伊故事循环]]
 - [[QC1.2.2 沃尔松—尼伯龙根叙事传统]]
 
-目标不是判断两个专题谁“更完整”，而是利用两个材料结构不同的样板识别 QC1.2 的稳定产品骨架。
+两个对象均已完成 `stage_freeze`。本文件保留为 `narrative_cycle` V1 模板的验证依据。
 
----
-
-# 1. 两个样板真正不同在哪里
+## 1. 两个样板真正不同在哪里
 
 | 维度 | QC1.2.1 特洛伊 | QC1.2.2 沃尔松—尼伯龙根 |
 |---|---|---|
@@ -30,217 +28,108 @@ version: "1.0"
 | 最重要证据风险 | 把叙事顺序误当作品谱系 | 把共享材料误当直接传播 |
 | QC2 输出方式 | 从战争区段、归乡、复仇等情节抽象 | 从人物—事件变体与家族毁灭抽象 |
 
-结论：两个样板虽然都属于 `narrative_cycle`，但内部结构已经足够不同，可以初步验证通用层。
+结论：两个样板虽然同属 `narrative_cycle`，但内部机制差异足够大，可以冻结这一 resource_type 的 V1 产品骨架。
 
----
-
-# 2. 已被两个样板共同验证的稳定问题层
-
-以下六层在两个专题中都成立，因此可视为 **QC1.2 V1 的稳定认知层**：
+## 2. 共同验证的六个稳定认知职责
 
 ```text
 A. 定义、边界与核心叙事材料
 B. 早期材料与文本见证
 C. 文本谱系／版本／分支
 D. 人物与叙事结构变体
-E. 后世生命与跨文类／媒介重构
+E. 后世生命与跨语言／文类／媒介重构
 F. QC2 组件、证据与阅读接口
 ```
 
-这六项可以冻结为“必须回答的问题域”。
+规则：**冻结语义职责，不冻结二级页面标题。**
 
-但暂时不要强制所有 QC1.2 使用完全相同的目录名称。
-
-例如：
-
-- 特洛伊的 C 更适合叫“战争、城陷与归乡分支”；
-- 沃尔松—尼伯龙根的 C 更适合叫“北欧—德语文本分支”。
-
-因此：
-
-> **冻结语义职责，不冻结具体二级页面标题。**
-
----
-
-# 3. 可以冻结的物理产品壳
-
-两个样板都证明以下产品壳稳定：
+## 3. 共同验证的物理产品壳
 
 ```text
 00 主页.md
 01 Canvas.canvas
 02 结构／谱系.base
 03 作品／文本见证.base
-10–15 认知正文层
+10–15 六个认知职责层
 ```
 
-其中：
+对应正式模板：[[QC1.2 narrative_cycle 专题模板 V1]]。
 
-- `00`：专题导航、边界、状态；
-- `01`：只表达有证据支持或明确标注性质的关系；
-- `02`：投影专题内部结构，不依赖目录名作为知识模型；
-- `03`：只投影中央作品库中的 work；非作品型 witness 可留在专题正文／专门 witness 实体；
-- `10–15`：六个认知职责区，可允许标题因对象变化。
+## 4. 被正式冻结的模型原则
 
-因此 QC1.2 的“六层 + 四文件外壳”现在已经具备 V1 冻结条件。
+### chronology
 
----
+可作为重要视图和结构维度，但不能成为所有 QC1.2 的唯一骨架。
 
-# 4. 不能冻结成统一答案的部分
+### branch
 
-## 4.1 chronology 不能成为所有 QC1.2 的骨架
+必须作为通用能力保留，但不要求所有对象形成清晰树状分支。
 
-特洛伊非常适合：
+### 人物对应
 
-```text
-战争前因 → 战争 → 城陷 → 归乡 → 幸存者
-```
+不得强制转换成 canonical identity。应允许 variant / functional correspondence / figure tradition 等关系。
 
-但沃尔松—尼伯龙根说明，很多传统更重要的是：
+### event_variant
 
-```text
-共享材料
-→ 多个文本分支
-→ 人物／事件重组
-```
+当前仍不是标准独立层。只有更多样板持续产生同类检索需求时再升级。
 
-因此 chronology 是字段与视图，不是 QC1.2 通用唯一骨架。
+### work / witness
 
-## 4.2 branch 必须保留，但不要求每个专题都有
+`tradition ≠ story_witness ≠ work`。
 
-沃尔松—尼伯龙根证明 `branches` 是必要通用能力；特洛伊也有归乡、战败者、幸存者等分支。
+QC1.2.2 进一步验证：一个中央 work 可以下钻到多个细粒度 witness；作品数量不是专题成熟度指标。
 
-但 future figure_tradition 可能主要按时期、语言、文类演变，不一定存在清晰 branch tree。
+## 5. 证据纪律
 
-所以：支持 branch，不强制 branch。
-
-## 4.3 人物对应不能统一成 canonical identity
-
-沃尔松—尼伯龙根已经否定：
-
-```text
-A语言人物名 = B语言人物名
-```
-
-通用模型应允许：
-
-```text
-figure_tradition / functional_correspondence / variant_relation
-```
-
-而不是强行合并实体。
-
-## 4.4 event_variant 暂不独立成标准层
-
-两个样板都需要事件比较，但目前可以由“核心叙事核 + 分支 + 人物／结构变体 + QC2”承载。
-
-只有第三、第四个样板持续出现同样需求时，再考虑建立正式 `event_variant` 实体。
-
----
-
-# 5. 两个样板共同验证出的证据原则
-
-可以正式冻结以下 QC1.2 证据纪律：
+冻结以下规则：
 
 1. 叙事顺序 ≠ 文本年代；
 2. 文本年代先后 ≠ 直接来源；
 3. 情节相似 ≠ direct transmission；
 4. 人物对应 ≠ 实体完全同一；
 5. 后世完整叙事 ≠ 早期传统原貌；
-6. 失传材料的现代摘要 ≠ 完整现存作品；
+6. 失传材料现代摘要 ≠ 完整现存作品；
 7. Canvas 不得通过箭头暗示未经证实的传播；
-8. `work`、`story_witness`、`tradition` 必须继续分层。
+8. `work`、`story_witness`、`tradition` 必须分层。
 
----
-
-# 6. QC1.2 V1 候选模板
-
-推荐将通用模板定义为职责，而不是固定内容：
+## 6. 冻结结论
 
 ```text
-00 主页
-   ├─ 一句话定位
-   ├─ 边界
-   ├─ 核心材料
-   ├─ 关键见证
-   ├─ 阅读入口
-   └─ 建设状态
-
-01 Canvas
-   └─ 关系导航；禁止无证据推断边
-
-02 结构／谱系 Base
-   └─ semantic structure fields
-
-03 作品／见证 Base
-   └─ 中央 work 投影；非 work witness 不强制进入中央作品库
-
-10 定义、边界与核心叙事材料
-11 早期材料与文本见证
-12 文本谱系、版本与分支
-13 人物与叙事结构变体
-14 后世生命、跨语言／文类／媒介重构
-15 QC2 组件、证据纪律与阅读
+QC1.2.1 = STAGE_FROZEN
+QC1.2.2 = STAGE_FROZEN
+QC1.2 narrative_cycle 专题模板 V1 = FROZEN_V1
 ```
 
-允许局部重命名：
+Stage Freeze 记录：[[QC1.2 narrative_cycle Stage Freeze Review V1]]。
+
+## 7. 适用边界
+
+此次冻结只验证 `narrative_cycle`。
+
+尚未验证：
+
+- `figure_tradition`
+- `story_tradition`
+- `collection_tradition`
+
+因此不能把当前模板称为 QC1.2 全类型最终模板。
+
+## 8. 下一阶段
+
+第三样板应故意选择不同 resource_type。
+
+当前优先：
 
 ```text
-10–15 的编号和职责稳定
-具体文件夹标题可按专题对象调整
+亚瑟王叙事传统
+resource_type: figure_tradition
 ```
 
----
+重点测试：
 
-# 7. 当前是否可以冻结 QC1.2 V1
+- 人物中心型传统是否仍适用 10–15 六个职责；
+- 人物网络是否需要独立能力；
+- 圣杯、梅林、兰斯洛特、高文、特里斯坦等子传统如何分层；
+- 多语言、多作者、多文类扩张是否迫使修改 `12–13` 的职责边界。
 
-## 结论：可以冻结“产品骨架 V1”，但不能冻结“所有资源类型的最终模板”
-
-原因：
-
-当前两个样板虽然内部机制差异明显，但都仍属于 `narrative_cycle`。
-
-因此现在可以冻结：
-
-- 四文件产品壳；
-- 六个认知职责；
-- 证据纪律；
-- 中央作品唯一事实源；
-- semantic Base 原则；
-- branch / chronology 均为可选建模维度；
-- stage freeze / reopen gate。
-
-但还不能声称已经验证：
-
-- `figure_tradition`；
-- `story_tradition`；
-- `collection_tradition`。
-
-尤其 figure_tradition 可能会迫使“人物网络、作品调用、角色功能变化”成为比故事 chronology 更强的骨架；collection_tradition 可能会迫使“编纂、翻译、版本聚合、嵌套结构”成为核心。
-
-因此 QC1.2 V1 应定义为：
-
-> **narrative-cycle validated product skeleton**，同时作为其他 resource_type 的候选起点，而不是最终统一模板。
-
----
-
-# 8. 下一阶段建议
-
-现在不应该立即大量建设 QC1.2.3、1.2.4……
-
-推荐顺序：
-
-```text
-1. 完成 QC1.2.2 的《蒂德雷克萨迦》补丁
-2. 将 QC1.2.1 与 QC1.2.2 进入 stage freeze
-3. 更新《QC1 建设规范 V1》，记录 QC1.2 narrative_cycle 产品骨架 V1
-4. 第三个验证样板故意选择不同 resource_type
-```
-
-第三样板优先级：
-
-```text
-figure_tradition > collection_tradition > story_tradition > 再做一个 narrative_cycle
-```
-
-只有第三种资源类型完成后，才重新判断是否能把当前六层从“narrative cycle 模板”提升为真正的“QC1.2 通用模板”。
+只有异质 resource_type 完成验证后，才重新判断是否升级为真正的 QC1.2 通用模板。
