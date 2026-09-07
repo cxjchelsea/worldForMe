@@ -11,7 +11,7 @@ node_kind: taxonomy_leaf
 anchorable: true
 resource_type: figure_tradition
 status: ACTIVE
-build_stage: topic_build
+build_stage: coverage_review_pass_with_patch
 ---
 # QC1.2.3 亚瑟王叙事传统
 
@@ -62,24 +62,61 @@ QC1.2.1、QC1.2.2 可以较强地通过故事区段、版本与分支组织；QC
 - 仅共享“圣杯／魔剑／王权”等 QC2 组件的作品；
 - 尚未证明具有独立历时生命的边缘人物。
 
-## 当前重点文本锚点
+## 当前作品锚点
 
-- 《不列颠诸王史》——连贯亚瑟传记与编年史定型；
-- Chrétien de Troyes 的亚瑟宫廷 romances——骑士人物与宫廷叙事扩张；
-- Lancelot-Grail / Vulgate Cycle——人物网络与散文循环世界化；
-- Post-Vulgate / Prose Tristan——重组和子传统吸附；
-- 《亚瑟王之死》——英语晚期大型集成；
-- 近现代重大重写——后续按实际阅读加入。
+当前中央作品锚点已有：
 
-## 本专题要验证的 figure_tradition 能力
+1. 《不列颠诸王史》——连贯亚瑟传记与编年史定型；
+2. Wace《布鲁特传奇》——法语俗语化与圆桌概念的重要早期见证；
+3. Chrétien de Troyes《兰斯洛特：大车骑士》——兰斯洛特子传统关键早期定型；
+4. Chrétien de Troyes《佩尔西瓦尔或圣杯故事》——佩尔西瓦尔／圣杯子传统关键起点；
+5. 《亚瑟王之死》——英语晚期大型集成。
+
+大型文本循环继续按 witness 处理：
+
+- Lancelot-Grail / Vulgate Cycle；
+- Post-Vulgate；
+- Prose Tristan。
+
+## figure_tradition 第一轮验证结果
+
+当前已初步验证以下能力：
 
 1. `central_figure`；
 2. `figure_network`；
 3. `subtradition`；
 4. `court_or_world_framework`；
 5. 人物与子传统的升格／拆分门槛；
-6. 多语言文本阶段与人物功能变化；
-7. 中心人物“在场但非主角”的传统归属。
+6. `work / cycle_witness / story_witness / figure_tradition` 粒度分层。
+
+人物网络当前可稳定表达：
+
+```text
+Arthur
+├─ Merlin
+├─ Guinevere
+├─ Lancelot
+├─ Gawain
+├─ Perceval / Galahad / Grail quest
+├─ Tristan / Iseult
+├─ Mordred
+└─ Round Table / Camelot world framework
+```
+
+子传统状态候选：
+
+```text
+embedded
+semi_independent
+independent_candidate
+```
+
+当前判断：
+
+- Merlin：embedded / semi_independent 观察；
+- Lancelot：semi_independent；
+- Grail tradition：independent_candidate；
+- Tristan–Iseult：independent_candidate。
 
 ## 专题产品
 
@@ -87,8 +124,15 @@ QC1.2.1、QC1.2.2 可以较强地通过故事区段、版本与分支组织；QC
 
 准入记录：[[QC1.2.3 亚瑟王叙事传统 Source Readiness Review]]
 
+覆盖审查：[[../../30 专题/QC1.2.3 亚瑟王叙事传统/QC1.2.3 Coverage Review V1|QC1.2.3 Coverage Review V1]]
+
 ## 当前状态
 
-`TOPIC_BUILD`
+`COVERAGE_REVIEW_PASS_WITH_PATCH`
 
-下一阶段：建立第一个 `figure_tradition` 专题包，重点观察“中心人物—人物网络—子传统—文本阶段”是否需要区别于已冻结 `narrative_cycle` V1 的物理职责。
+当前不再为了数量扩大作品池。下一轮只处理两个结构性补丁：
+
+1. 明确 Lancelot-Grail / Vulgate Cycle 的内部 `cycle_witness` 结构；
+2. 补一个能显示近现代 Arthur 人物功能重新定义的重大重写锚点。
+
+完成后再判断是否可以冻结 `figure_tradition V1`。
