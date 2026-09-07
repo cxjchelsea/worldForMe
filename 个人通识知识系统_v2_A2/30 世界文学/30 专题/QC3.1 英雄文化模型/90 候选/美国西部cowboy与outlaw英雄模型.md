@@ -14,6 +14,10 @@ qc2_readiness: MEDIUM
 work_readiness: MEDIUM
 reuse_value: HIGH
 overlap_risk: "frontier myth、western类型、cowboy与outlaw边界复杂"
+legacy_code: QT8.3.4
+migrated_from: "QT8.3.4 美国西部文学"
+migration_mode: SPLIT_QC3_QT
+qt_interface: "Western／美国西部文学类型史"
 ---
 
 # 美国西部 cowboy / outlaw 英雄模型｜NEEDS_EVIDENCE
@@ -21,6 +25,16 @@ overlap_risk: "frontier myth、western类型、cowboy与outlaw边界复杂"
 ## 候选定位
 
 研究边疆空间、个人主义、暴力合法性、私刑/执法、文明与荒野边界如何共同塑造 cowboy / outlaw 英雄模型，以及这一模型如何在西部文学、电影与大众文化中被持续重写。
+
+## 从旧 QT8.3 迁移而来
+
+旧入口：`QT8.3.4 美国西部文学`。
+
+迁移后：
+
+- **QC3**：cowboy / outlaw / frontier hero 的文化模型；
+- **QT**：Western / 西部文学作为类型史；
+- 历史领域：真实边疆扩张、牧牛业、土地与暴力秩序。
 
 ## Admission Gate
 
