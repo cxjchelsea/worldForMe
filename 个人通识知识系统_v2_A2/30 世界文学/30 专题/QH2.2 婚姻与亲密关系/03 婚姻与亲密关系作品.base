@@ -1,0 +1,27 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-QH2-2-MARRIAGE-INTIMACY")
+properties:
+  file.name:
+    displayName: "作品"
+  note.author:
+    displayName: "作者"
+  note.read_status:
+    displayName: "阅读状态"
+  note.axis_t:
+    displayName: "时间"
+  note.axis_r:
+    displayName: "地域"
+  note.axis_g:
+    displayName: "类型"
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_t
+      - axis_r
+      - axis_g
