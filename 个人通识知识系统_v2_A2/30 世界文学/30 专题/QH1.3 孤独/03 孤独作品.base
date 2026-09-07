@@ -1,0 +1,89 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-QH1-3-LONELINESS")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.loneliness_role:
+    displayName: 专题角色
+  note.loneliness_priority:
+    displayName: 优先级
+  note.loneliness_dimensions:
+    displayName: 孤独问题维度
+  note.loneliness_note:
+    displayName: 专题说明
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 类型
+  note.axis_q:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - loneliness_role
+      - loneliness_priority
+      - loneliness_dimensions
+      - read_status
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - loneliness_role == "骨架"
+    order:
+      - file.name
+      - author
+      - loneliness_dimensions
+      - read_status
+  - type: table
+    name: 比较与边界
+    filters:
+      and:
+        - or:
+            - loneliness_role == "比较"
+            - loneliness_role == "边界测试"
+    order:
+      - file.name
+      - author
+      - loneliness_role
+      - loneliness_dimensions
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+    order:
+      - file.name
+      - author
+      - loneliness_role
+      - loneliness_dimensions
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - loneliness_role
+      - loneliness_dimensions
