@@ -1,26 +1,29 @@
 ---
 id: WL-QX
-type: literature_axis_subsystem
-name: QX 文学意象与场景
+type: literature_network_subsystem
+name: QX 文学意象网络
 code: QX
-axis: Q
-topic_id: WL-TOPIC-QX
-structure_type_zh: 轴说明
-dimension: orientation
+system_role: work_knowledge_network
+network_kind: imagery
+work_field: qx
+legacy_axis: Q
+legacy_parent: WL-Q
 status: ACTIVE
-source_version: 2.0
+source_version: "3.0-coordinate-network"
 ---
 
 # QX 文学意象与场景
 
-> 核心问题：**作品中哪些可感知的意象、物象、空间与场景真正承担了文学功能？同一对象在不同作品中又如何改变其作用与意义？**
+> 新路径：世界文学 → 作品知识网络 → **QX 意象网络**。核心问题：**作品中哪些可感知的意象、物象、空间与场景真正承担了文学功能？同一对象在不同作品中又如何改变其作用与意义？**
 
-QX 是 Q 轴中的“文学意象与场景” facet。它与 QT、QH、QC 并列，但回答的问题不同：
+QX 不再被定义为 Q 轴 facet，而是作品知识网络中的稀疏抽取层。它只抽取作品内部具有高显著度、可比较价值的具象对象；有则标，无则不标。
 
-- **QT**：作品采用什么类型／叙事传统；
-- **QH**：作品讨论什么人类问题；
-- **QC**：作品复用了什么跨文化母题、原型与叙事组件；
-- **QX**：作品调用了哪些具体可感知对象，以及这些对象如何在文本中工作。
+- **QH**：作品在思考什么主题 / 问题，是作品坐标；
+- **QT**：作品采用什么类型 / 叙事机制，是作品坐标；
+- **QX**：作品内部有什么高显著意象，是稀疏作品内抽取；
+- **QC**：作品与哪些长期文化叙事结构发生关系，是稀疏文化关系网络。
+
+真正的 QX 整合发生在意象类别与专题层，而不是在单作品页面中复制跨作品结论。
 
 ## 1｜唯一事实源
 
@@ -211,5 +214,6 @@ ZERO_QX ≠ COVERAGE_GAP
 
 ## 返回
 
+- [[../../../04 系统架构/02 作品知识网络|作品知识网络]]
 - [[../../../30 专题/QX 文学意象与场景/00 文学意象与场景|QX 专题阅读入口]]
-- [[../../../10 轴/Q轴 文学主题与人类问题|Q轴 文学内容域]]
+- [[../../../10 轴/Q轴 文学主题与人类问题|旧 Q 内容域兼容入口]]
