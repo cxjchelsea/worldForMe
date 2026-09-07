@@ -1,0 +1,57 @@
+filters:
+  and:
+    - qc124_priority != null
+properties:
+  file.name:
+    displayName: 中央作品／版本实体
+  note.author:
+    displayName: 作者／译者／编者
+  note.read_status:
+    displayName: 阅读状态
+  note.qc124_priority:
+    displayName: 专题优先级
+  note.qc124_stage:
+    displayName: 传播阶段
+  note.qc124_text_role:
+    displayName: 文本／版本角色
+  note.qc124_role:
+    displayName: 专题作用
+  note.qc124_source_layer:
+    displayName: 来源层
+  note.qc124_collection_scope:
+    displayName: 集合范围说明
+  note.verification_status:
+    displayName: 核验状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部中央作品／版本
+    order:
+      - file.name
+      - author
+      - qc124_priority
+      - qc124_stage
+      - qc124_text_role
+      - qc124_role
+      - qc124_source_layer
+      - qc124_collection_scope
+      - read_status
+      - verification_status
+      - id
+  - type: table
+    name: 核心锚点
+    filters:
+      and:
+        - qc124_priority == "★"
+  - type: table
+    name: 重点扩展
+    filters:
+      and:
+        - qc124_priority == "◆"
+  - type: table
+    name: 待核验
+    filters:
+      or:
+        - verification_status == "PENDING"
+        - verification_status == "待核验"
