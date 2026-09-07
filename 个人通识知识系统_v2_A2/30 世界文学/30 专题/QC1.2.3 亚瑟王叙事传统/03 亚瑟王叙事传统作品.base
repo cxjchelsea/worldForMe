@@ -1,0 +1,62 @@
+filters:
+  and:
+    - qc123_priority != null
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.qc123_priority:
+    displayName: 专题优先级
+  note.qc123_stage:
+    displayName: 文本阶段
+  note.qc123_text_role:
+    displayName: 文本角色
+  note.qc123_role:
+    displayName: 专题作用
+  note.qc123_figure_focus:
+    displayName: 人物焦点
+  note.qc123_subtraditions:
+    displayName: 子传统
+  note.verification_status:
+    displayName: 核验状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部专题作品
+    order:
+      - file.name
+      - author
+      - qc123_priority
+      - qc123_stage
+      - qc123_text_role
+      - qc123_role
+      - qc123_figure_focus
+      - qc123_subtraditions
+      - read_status
+      - verification_status
+      - id
+  - type: table
+    name: 核心锚点
+    filters:
+      and:
+        - qc123_priority == "★"
+  - type: table
+    name: 重点扩展
+    filters:
+      and:
+        - qc123_priority == "◆"
+  - type: table
+    name: 按文本阶段
+    groupBy:
+      property: qc123_stage
+      direction: ASC
+  - type: table
+    name: 待核验
+    filters:
+      or:
+        - verification_status == "PENDING"
+        - verification_status == "待核验"

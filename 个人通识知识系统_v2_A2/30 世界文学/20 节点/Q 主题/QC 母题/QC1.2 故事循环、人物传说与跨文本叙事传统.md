@@ -93,23 +93,42 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 不得为了寻找共同母题而抹去具体文本谱系；也不得因为两个传统拥有相似组件，就推断二者存在历史传播。
 
-## 4. QC1.2 专题最低解释结构
+## 4. 当前已冻结的 narrative_cycle V1
 
-成熟专题原则上应覆盖以下问题，但这些问题**不要求一一对应为物理目录**：
+由 [[QC1.2.1 特洛伊故事循环]] 与 [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] 两个结构差异明显的样板共同验证，`narrative_cycle` 已完成 V1 stage freeze。
 
-1. 定义与边界；
-2. 早期材料与最初见证；
-3. 核心叙事核；
-4. 文本谱系；
-5. 地域、语言与版本分支；
-6. 人物与叙事结构的历史变化；
-7. 文类与媒介迁移；
-8. 传播、借用与证据；
-9. QC2 组件地图；
-10. 后世生命与现代再发明；
-11. 阅读路线、作品与关系数据。
+冻结模板：[[QC1.2 narrative_cycle 专题模板 V1]]  
+冻结记录：[[QC1.2 narrative_cycle Stage Freeze Review V1]]  
+样板比较：[[QC1.2 样板横向比较 V1]]
 
-第一验证样板 [[QC1.2.1 特洛伊故事循环]] 正在测试如何把这些研究问题压缩为稳定、可复用的产品层级；在多个性质不同的 QC1.2 样板完成前，不冻结通用物理目录模板。
+当前冻结的稳定认知职责为：
+
+```text
+10 定义、边界与核心叙事材料
+11 早期材料与文本见证
+12 文本谱系、版本与分支
+13 人物与叙事结构变体
+14 后世生命与跨语言／文类／媒介重构
+15 QC2 组件、证据与阅读
+```
+
+以及四文件产品壳：
+
+```text
+00 主页.md
+01 Canvas.canvas
+02 结构／谱系.base
+03 作品／文本见证.base
+```
+
+冻结的是 `narrative_cycle`，**不是 QC1.2 所有 resource_type 的最终统一模板**。
+
+当前模板验证状态：
+
+- `narrative_cycle` — `FROZEN_V1`
+- `figure_tradition` — `BUILDING / QC1.2.3 亚瑟王叙事传统`
+- `story_tradition` — 未验证
+- `collection_tradition` — 未验证
 
 ## 5. 正式专题准入门槛
 
@@ -136,24 +155,38 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 ## 7. 当前正式专题
 
-- [[QC1.2.1 特洛伊故事循环]] — `narrative_cycle`；第一验证样板；当前阶段 `topic_build / coverage_review`。
-- [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] — `narrative_cycle`；第二验证样板；已完成 `boundary_check / source_readiness / admission`，当前阶段 `topic_build_ready`。准入记录见 [[QC1.2.2 沃尔松—尼伯龙根叙事传统 Source Readiness Review]]。
+- [[QC1.2.1 特洛伊故事循环]] — `narrative_cycle`；第一冻结参考样板；`STAGE_FROZEN`。
+- [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] — `narrative_cycle`；第二冻结参考样板；`STAGE_FROZEN`。
+- [[QC1.2.3 亚瑟王叙事传统]] — `figure_tradition`；第一异质验证样板；已完成 `boundary_check / source_readiness / admission`，当前阶段 `TOPIC_BUILD`。
 
-除上述对象外，`QC1.2.3+` 当前不预先锁定编号。正式编号只在候选完成准入后按实际建设顺序分配。
+前两个样板共同定义 `QC1.2 narrative_cycle 专题模板 V1`。
+
+QC1.2.3 不用于继续证明 narrative_cycle，而用于验证人物中心型传统是否需要新的稳定能力：
+
+```text
+central_figure
+→ court/world framework
+→ figure_network
+→ subtradition
+→ textualization / compilation / rewriting
+```
+
+特别关注：中心人物可以在作品中“结构性在场而非行动主角”，以及强子传统何时应从人物网络升格独立 QC1.2。
 
 ## 8. 完整候选池
 
-QC1.2 不再在本页维护短名单。完整规划长名单、优先级、资源类型、重叠风险与 HOLD / QC2_FIRST / WORK_FIRST 判断统一维护于：
+QC1.2 的完整规划长名单、优先级、资源类型、重叠风险与 HOLD / QC2_FIRST / WORK_FIRST 判断统一维护于：
 
 → [[QC1.2 候选叙事传统池 V1]]
 
-候选节点不等于正式 taxonomy。建设时仍应优先从真实阅读问题、模板验证需求和 source readiness 反向选择对象，而不是按候选清单批量建包。
+候选节点不等于正式 taxonomy。建设时仍从真实阅读问题、模板验证需求和 source readiness 反向选择对象，而不是按候选清单批量建包。
 
 ## 9. 建设状态原则
 
 ```text
 candidate
-→ source_ready
+→ boundary_check
+→ source_readiness
 → admitted
 → topic_build
 → coverage_review
@@ -165,5 +198,6 @@ candidate
 > 上级：[[QC1 世界文化叙事传统|QC1 世界叙事资源与来源传统]]  
 > 同级：[[QC1.1 神话、传说与民间叙事|QC1.1 神话、宗教与民间叙事来源传统]]  
 > 候选池：[[QC1.2 候选叙事传统池 V1]]  
+> narrative_cycle 模板：[[QC1.2 narrative_cycle 专题模板 V1]]  
 > 专属治理：[[QC1 建设规范 V1]]  
 > 全局治理：[[QC 总体架构与建设规范 V2]]
