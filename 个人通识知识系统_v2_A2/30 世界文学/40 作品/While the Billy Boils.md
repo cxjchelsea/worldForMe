@@ -25,6 +25,9 @@ axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
 - "G3 小说"
+axis_qh:
+- "QH5 权力、制度与秩序"
+axis_qt: []
 axis_q:
 - "QH5 权力、制度与秩序"
 ---

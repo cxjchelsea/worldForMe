@@ -18,6 +18,9 @@ axis_m:
 - "M3.1 现代主义 / Modernism"
 axis_g:
 - "G2 戏剧"
+axis_qh:
+- "QH5 权力、制度与秩序"
+axis_qt: []
 axis_q:
 - "QH5 权力、制度与秩序"
 axis_source: curated_m31_v2

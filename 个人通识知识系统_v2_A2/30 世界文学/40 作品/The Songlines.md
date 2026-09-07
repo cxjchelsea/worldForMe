@@ -18,6 +18,9 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G6 纪实与文学非虚构"
+axis_qh: []
+axis_qt:
+- "QT14 旅行与游记"
 axis_q:
 - "QT14 旅行与游记"
 axis_source: inferred

@@ -15,6 +15,9 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
+axis_qh: []
+axis_qt:
+- "QT3 奇幻"
 axis_q:
 - QT3 奇幻
 axis_source: inferred

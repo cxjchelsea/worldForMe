@@ -23,6 +23,9 @@ axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
 - "G6 纪实与文学非虚构"
+axis_qh: []
+axis_qt:
+- "QT14 旅行与游记"
 axis_q:
 - "QT14 旅行与游记"
 axis_source: inferred

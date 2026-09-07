@@ -23,6 +23,9 @@ axis_m:
 - "M1 早期现代思想与美学"
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT4 恐怖与哥特"
 axis_q:
 - "QT4 恐怖与哥特"
 axis_source: inferred

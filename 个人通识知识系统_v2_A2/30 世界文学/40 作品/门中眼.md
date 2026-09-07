@@ -18,6 +18,9 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT7 历史叙事"
 axis_q:
 - "QT7 历史叙事"
 axis_source: inferred

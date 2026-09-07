@@ -23,6 +23,10 @@ axis_r:
 axis_m:
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT8 英雄、边疆与法外者文化传统"
+- "QT8.2 欧洲骑士"
 axis_q:
 - "QT8 英雄、边疆与法外者文化传统"
 - "QT8.2 欧洲骑士"
