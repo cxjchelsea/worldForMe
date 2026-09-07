@@ -3,21 +3,28 @@ id: "WL-QH"
 type: literature_node
 name: 主题与人类问题
 code: QH
-axis: Q
-parent: "WL-Q"
+axis: QH
+system_role: work_coordinate
+coordinate_field: axis_qh
+legacy_parent: "WL-Q"
+parent: "WL-COORDINATES"
 level: 1
 coverage_priority: null
-node_kind: facet_group
+node_kind: coordinate_group
 anchorable: false
 topic_map: null
-source_version: "2.12-qh48-fold"
+source_version: "3.0-coordinate-network"
 ---
 
 # QH 主题与人类问题
 
-> 路径：世界文学 → Q轴 → **QH 主题与人类问题**
+> 新路径：世界文学 → 作品坐标系统 → **QH 主题与人类问题**。物理目录 `20 节点/Q 主题/` 仅为兼容旧 WikiLink 保留。
 
-Q 的两个 facet 之一。一部作品可以同时有多个 QT 与多个 QH。QH9、QH10 已整域删除。QH4–QH8 全局停在域一级，旧子号改为问题标签。
+QH 是作品坐标，不再被定义为 Q 轴 facet。它回答：**作品主要在思考什么主题 / 人类问题？**
+
+一部作品可以同时拥有多个 QH；canonical 作品字段为 `axis_qh`。迁移期旧 `axis_q` 中的 QH 值仍可作为 fallback 读取。
+
+QH9、QH10 已整域删除。QH4–QH8 全局停在域一级，旧子号改为问题标签。
 
 ```text
 QH  主题与人类问题
@@ -43,8 +50,8 @@ QH  主题与人类问题
 │   └─ QH3.7 殖民身份
 ├─ QH4 社会、阶级与劳动
 ├─ QH5 权力、制度与秩序
-├─ QH6 战争、暴力与创伤  ← 已有专题
-├─ QH7 历史、记忆与时间  ← 已有专题
+├─ QH6 战争、暴力与创伤
+├─ QH7 历史、记忆与时间
 └─ QH8 信仰、伦理与超越
 ```
 
@@ -59,6 +66,14 @@ QH  主题与人类问题
 - [[QH7 历史、记忆与时间]]
 - [[QH8 信仰、伦理与超越]]
 
-## 专题地图
+## 与其他系统的边界
 
-本级不挂专题。
+- “作品讨论什么” → QH；
+- “作品采用什么类型机制” → QT；
+- “文本中出现什么高显著意象” → QX；
+- “作品与什么长期文化叙事结构发生关系” → QC。
+
+## 返回
+
+- [[../../../04 系统架构/01 作品坐标系统|作品坐标系统]]
+- [[../../../00 世界文学使用规则|世界文学使用规则]]
