@@ -3,7 +3,7 @@ id: WL-QC3-CANDIDATE-POOL-V1
 type: literature_governance
 scope: QC3
 status: ACTIVE_V1
-version: "1.1"
+version: "1.2"
 ---
 
 # QC3 候选文化模型池 V1
@@ -46,20 +46,12 @@ SEED
 
 ## 2. 当前英雄文化模型候选
 
-当前 QC3.1 候选池由两部分组成：
-
-```text
-旧 QT8.3 的 8 个历史资产迁移
-+
-古希腊英雄模型 1 个新增压力测试
-=
-9 个候选
-```
+当前 QC3.1 管理 9 个英雄文化模型对象：8 个来自旧 QT8.3，1 个为新增压力测试。欧洲骑士已通过准入并进入正式模型，候选卡保留为历史记录与导航。
 
 | 候选 | 来源 | 历史社会基底 | 稳定角色/伦理/空间 | 跨时期生命 | QC1/QC2可接性 | 复用价值 | 当前状态 |
 |---|---|---|---|---|---|---|---|
 | 古希腊英雄模型 | 新增压力测试 | 高 | 高 | 高 | 高 | 高 | READY_FOR_ADMISSION |
-| 欧洲骑士英雄模型 | QT8.3.2 | 高 | 高 | 高 | 高 | 高 | PILOT |
+| 欧洲骑士英雄模型 | QT8.3.2 | 高 | 高 | 高 | 高 | 高 | **ACCEPTED** |
 | 侠／江湖英雄模型 | QT8.3.1 | 高 | 高 | 高 | 中—高 | 高 | READY_FOR_ADMISSION |
 | 日本武士／剑豪英雄模型 | QT8.3.3 | 高 | 高 | 高 | 中 | 高 | NEEDS_EVIDENCE |
 | 美国西部 cowboy / outlaw 模型 | QT8.3.4 | 高 | 高 | 高 | 中 | 高 | NEEDS_EVIDENCE |
@@ -90,17 +82,20 @@ SEED
 
 ## 4. 首轮 Pilot 策略
 
-不同时建设全部候选。第一轮只做：
-
 ```text
-P1 欧洲骑士英雄模型
-P2 古希腊英雄模型 或 侠／江湖英雄模型
+P1 欧洲骑士英雄模型 = ACCEPTED_PILOT_V1
+P2 古希腊英雄模型 或 侠／江湖英雄模型 = NEXT
 ```
 
-选择理由：
+P1 已验证：
 
-- P1 可直接连接现有 QC1.2.3 亚瑟王叙事传统、旧 QT8.3.2/QT8.2 资产与大量 QC2 组件；
-- P2 应与 P1 在社会结构、伦理和叙事生产机制上有明显差异，用于压力测试 QC3 模型是否具有跨文化解释力。
+- QC1.1 / QC1.2 可作为来源与具体传统输入；
+- QC2 可作为组件星座输入而不复制定义；
+- 历史社会条件可以作为解释条件而不变成制度百科；
+- 中央 40 作品可通过模型字段投影进独立 Works Base；
+- QC3 与 QT / QC1 / 历史层可以明确分工。
+
+P2 应与 P1 在社会结构、伦理与叙事生产机制上有明显差异，用于压力测试模板可迁移性。
 
 ## 5. Admission Gate
 
@@ -128,7 +123,8 @@ QC3_TAXONOMY = NOT_FROZEN
 HERO_MODEL_CLUSTER = PILOT
 QT83_MIGRATION = PASS
 QT83_LEGACY_CHILDREN = 8
-QC31_CANDIDATES = 9
-EUROPEAN_KNIGHT_MODEL = FIRST_PILOT
-SECOND_PILOT = TO_BE_SELECTED_AFTER_P1_REVIEW
+QC31_MANAGED_MODELS = 9
+EUROPEAN_KNIGHT_MODEL = ACCEPTED_PILOT_V1
+FORMAL_MODEL_COUNT = 1
+SECOND_PILOT = GREEK_OR_XIA
 ```
