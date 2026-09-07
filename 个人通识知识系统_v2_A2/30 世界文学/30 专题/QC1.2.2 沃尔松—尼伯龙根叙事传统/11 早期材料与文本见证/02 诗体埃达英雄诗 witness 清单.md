@@ -4,7 +4,7 @@ topic_id: WL-TOPIC-QC122
 type: story_witness_index
 structure_type_zh: 早期材料与文本见证
 dimension: witnesses
-sequence: 11.2
+sequence: 2
 status: ACTIVE
 ---
 # 《诗体埃达》英雄诗 witness 清单

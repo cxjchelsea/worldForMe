@@ -1,51 +1,98 @@
 filters:
   and:
     - topic_id == "WL-TOPIC-QC124"
+    - structure_type_zh != null
+formulas:
+  dimension_zh: if(dimension, dimension.replace("boundary_frame", "集合边界与山鲁佐德框架").replace("manuscript_witness", "早期传统与核心手稿见证").replace("witness_registry", "关键手稿、版本与翻译见证清单").replace("membership_variation", "故事成员如何随版本变化").replace("translation_editorial", "加朗、迪亚布与集合边界重写").replace("print_global", "十九世纪印本与全球版本生命").replace("qc2_evidence", "QC2 映射、证据纪律与阅读路线"), "")
 properties:
   file.name:
-    displayName: 结构页
+    displayName: 节点
   note.structure_type_zh:
-    displayName: 认知层
-  note.dimension:
-    displayName: 语义维度
+    displayName: 所属模块
+  formula.dimension_zh:
+    displayName: 维度
   note.sequence:
     displayName: 顺序
+  note.history_position:
+    displayName: 节点作用
+  note.id:
+    displayName: 编号
 views:
   - type: table
-    name: 全部结构层
+    name: 全部知识节点
+    groupBy:
+      property: structure_type_zh
+      direction: ASC
     order:
       - file.name
       - structure_type_zh
-      - dimension
+      - formula.dimension_zh
       - sequence
+      - history_position
+      - id
   - type: table
-    name: 集合边界与框架
+    name: 集合边界、框架叙事与识别机制
     filters:
       and:
-        - dimension == "boundary_frame"
+        - structure_type_zh == "集合边界、框架叙事与识别机制"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
-    name: 手稿与见证
-    filters:
-      or:
-        - dimension == "manuscript_witness"
-        - dimension == "witness_registry"
-  - type: table
-    name: 成员变化
-    filters:
-      and:
-        - dimension == "membership_variation"
-  - type: table
-    name: 翻译与编辑
+    name: 早期形成、手稿见证与版本家族
     filters:
       and:
-        - dimension == "translation_editorial"
+        - structure_type_zh == "早期形成、手稿见证与版本家族"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
-    name: 印本与全球传播
+    name: 手稿家族、故事成员与增删变动
     filters:
       and:
-        - dimension == "print_global"
+        - structure_type_zh == "手稿家族、故事成员与增删变动"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
   - type: table
-    name: QC2 与证据
+    name: 翻译层、编辑重组与加朗转折
     filters:
       and:
-        - dimension == "qc2_evidence"
+        - structure_type_zh == "翻译层、编辑重组与加朗转折"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: 印本、全球传播与现代再编
+    filters:
+      and:
+        - structure_type_zh == "印本、全球传播与现代再编"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id
+  - type: table
+    name: QC2 组件、证据与阅读
+    filters:
+      and:
+        - structure_type_zh == "QC2 组件、证据与阅读"
+    order:
+      - file.name
+      - formula.dimension_zh
+      - sequence
+      - history_position
+      - id

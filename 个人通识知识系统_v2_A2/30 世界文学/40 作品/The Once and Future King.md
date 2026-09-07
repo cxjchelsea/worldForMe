@@ -26,11 +26,11 @@ topic_links:
 qc123_priority: ★
 qc123_stage: 20世纪现代再发明
 qc123_text_role: 现代亚瑟人物功能重构
-qc123_role: 将亚瑟重新组织为关于教育、权力、战争、理想主义与政治失败的现代人物模型，验证 figure_tradition 的长期人物功能变化
+qc123_role: 将亚瑟重新组织为关于教育、权力、战争、理想主义与政治失败的现代人物模型，验证人物传统的长期功能变化
 qc123_figure_focus:
-- Arthur
-- Merlin
-- Lancelot
+- 亚瑟
+- 梅林
+- 兰斯洛特
 qc123_subtraditions:
 - 亚瑟王权与王廷
 - 兰斯洛特

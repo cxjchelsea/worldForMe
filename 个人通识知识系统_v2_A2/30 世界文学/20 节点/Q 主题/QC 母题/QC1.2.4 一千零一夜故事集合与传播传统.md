@@ -116,7 +116,6 @@ uncertain
 - Stage Freeze：PASS
 
 专题主页：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]  
-准入记录：[[QC1.2.4 一千零一夜故事集合与传播传统 Source Readiness Review]]  
 覆盖审查：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Coverage Review V1|QC1.2.4 Coverage Review V1]]  
 Membership 实测：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Membership Matrix V1|QC1.2.4 Membership Matrix V1]]  
 Provenance 实测：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Provenance Test V1|QC1.2.4 Provenance Test V1]]  

@@ -3,8 +3,9 @@ id: WL-TOPIC-QC123-11-02
 topic_id: WL-TOPIC-QC123
 structure_type_zh: 早期亚瑟与编年史定型
 dimension: textual_witness_registry
-sequence: 11.2
+sequence: 2
 resource_type: witness_registry
+history_position: 登记关键文本与循环见证
 ---
 # 关键文本与循环 witness 清单
 
@@ -12,16 +13,22 @@ resource_type: witness_registry
 
 | witness | 大致阶段 | 语言／环境 | 角色 | 当前数据处理 |
 |---|---|---|---|---|
-| 早期威尔士亚瑟材料 | 早期层 | 威尔士／不列颠 | 亚瑟前编年史人物与英雄记忆 | witness 群，不伪装单一作品 |
+| 早期威尔士亚瑟材料 | 早期层 | 威尔士／不列颠 | 亚瑟前编年史人物与英雄记忆 | 中央 work：《马比诺吉昂》（集合见证，非整本亚瑟） |
 | Geoffrey of Monmouth, *Historia Regum Britanniae* | 12世纪 | 拉丁 | 连贯亚瑟王者传记关键定型 | 中央 work：《不列颠诸王史》 |
 | Wace, *Roman de Brut* | 12世纪 | 古法语／盎格鲁—诺曼 | 编年史传统向俗语传播；圆桌传统的重要阶段 | 中央 work：《布鲁特传奇》 |
-| Chrétien de Troyes 亚瑟 romances | 12世纪后期 | 古法语 | 骑士人物、宫廷爱情、圣杯材料扩张 | 作品群；逐部按需要进中央 work |
+| Chrétien de Troyes 亚瑟 romances | 12世纪后期 | 古法语 | 骑士人物、宫廷爱情、圣杯材料扩张 | 已挂四部；《伊万》为《Yvain》复名，不重复计数 |
+| *Erec et Enide* | 12世纪后期 | 古法语 | 克雷蒂安较早亚瑟 romance；婚姻与骑士身份 | 中央 work：《Erec et Enide》 |
 | *Lancelot, le Chevalier de la Charrette* | 12世纪后期 | 古法语 | 兰斯洛特—桂妮维亚传统重要定型 | 中央 work：《兰斯洛特：大车骑士》 |
+| *Yvain, le Chevalier au Lion* | 12世纪后期 | 古法语 | 骑士冒险与王廷评价空间 | 中央 work：《Yvain, the Knight of the Lion》 |
 | *Perceval, le Conte du Graal* | 12世纪后期 | 古法语 | 圣杯故事传统关键起点之一 | 中央 work：《佩尔西瓦尔或圣杯故事》 |
-| Robert de Boron 的 Grail / Merlin 材料 | 约12—13世纪之交 | 古法语 | 圣杯历史化、梅林与亚瑟时间连接 | witness / work group |
+| Robert de Boron 的 Grail / Merlin 材料 | 约12—13世纪之交 | 古法语 | 圣杯历史化、梅林与亚瑟时间连接 | witness / work group；库内暂无独立 work |
 | Lancelot-Grail / Vulgate Cycle | 13世纪前期 | 古法语散文 | 亚瑟世界大型循环化；兰斯洛特、梅林、圣杯、王国终结整合 | `cycle_witness` |
 | Post-Vulgate Cycle | 13世纪 | 古法语散文 | 对 Vulgate、Tristan 等材料的再组织；更强调亚瑟／圣杯整体结构 | `cycle_witness` |
 | *Prose Tristan* | 13世纪 | 古法语散文 | 将强独立特里斯坦传统大量吸收到亚瑟王廷 | `subtradition_integration_witness` |
+| Tristan–Iseult 独立故事传统 | 中古多文本 | 法语／德语等 | 被亚瑟世界吸收前的强独立故事 | 中央占位：《特里斯坦与伊瑟》；非 Béroul / Thomas 定本 |
+| *Sir Gawain and the Green Knight* | 14世纪 | 中古英语 | 高文人物伦理与王廷荣誉 | 中央 work：《高文爵士与绿骑士》 |
+| *The Alliterative Morte Arthure* | 14世纪 | 中古英语 | 英语前马洛礼：战争／王国终结 | 中央 work |
+| *Stanzaic Morte Arthur* | 14世纪 | 中古英语 | 英语前马洛礼：兰斯洛特—桂妮维亚／王国终结 | 中央 work |
 | Thomas Malory, *Le Morte Darthur* | 15世纪 | 中古英语 | 多源大型晚期集成 | 中央 work：《亚瑟王之死》 |
 | T. H. White, *The Once and Future King* | 20世纪 | 英语 | 将 Arthur 重构为现代政治、教育与战争问题的人物模型 | 中央 work：现代再发明锚点 |
 

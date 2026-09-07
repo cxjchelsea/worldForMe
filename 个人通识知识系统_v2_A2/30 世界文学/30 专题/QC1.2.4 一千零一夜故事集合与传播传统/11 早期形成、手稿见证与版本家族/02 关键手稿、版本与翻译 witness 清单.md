@@ -1,9 +1,11 @@
 ---
+id: WL-TOPIC-QC124-11-02
 topic_id: WL-TOPIC-QC124
 structure_type_zh: 早期形成、手稿见证与版本家族
 dimension: witness_registry
-sequence: 11.2
+sequence: 2
 resource_type: witness_registry
+history_position: 登记关键手稿、版本与翻译见证
 ---
 # 关键手稿、版本与翻译 witness 清单
 

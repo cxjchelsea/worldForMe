@@ -195,3 +195,21 @@ QC1.2 figure_tradition = FROZEN_V1
 ```
 
 后续新增亚瑟人物、作品和支线按真实阅读触发，不再为了“亚瑟王大全”机械扩充。
+
+---
+
+# 8. 冻结后结构性补齐（本轮）
+
+状态仍为 `STAGE_FROZEN`。本轮 reopen 只补审查指出的结构性缺口，不扩 13 层人物表，不新造 ★ 核。
+
+已挂 ◆：
+
+- 《马比诺吉昂》：威尔士早期层集合见证；
+- 《Erec et Enide》《Yvain, the Knight of the Lion》：克雷蒂安扩展（《伊万》复名不重复计）；
+- 《高文爵士与绿骑士》：Gawain；
+- 《特里斯坦与伊瑟》：Tristan 占位，非单一中古定本；
+- *The Alliterative Morte Arthure*、*Stanzaic Morte Arthur*：英语前马洛礼。
+
+已有 ★ 核补齐 `WL-TOPIC-QC123` / topic_links。QC2 页改为挂到既有节点。结构 Base 增加中文维度显示；模块内 `sequence` 从 1 起。
+
+仍按见证管理、不进中央作品：Robert de Boron、Vulgate 五部、Post-Vulgate、Prose Tristan。
