@@ -4,7 +4,7 @@ type: literature_governance_review
 scope: QC1.2
 resource_type: collection_tradition
 status: PASS_FROZEN_V1
-version: "1.0"
+version: "1.1"
 ---
 # QC1.2 collection_tradition Stage Freeze Review V1
 
@@ -19,6 +19,7 @@ version: "1.0"
 - coverage review；
 - membership matrix 实测；
 - 现实阅读版本 provenance 实测；
+- 中央作品锚点验证；
 
 现有证据已足以冻结 `collection_tradition` 的 **V1 产品模板与核心语义能力**。
 
@@ -146,11 +147,13 @@ story.belongs_to_collection = true / false
 Coverage Review
 ```
 
-注意：
+模板规则：
 
-- `03` 可以为空；
+- `03` 只投影真正存在于中央 `40 作品` 的实体；
 - manuscript / recension / collection witness 不得为了填满 Works Base 被伪装成中央 `work`；
-- 只有真正属于中央 `40 作品` 的实体才进入 Works Base。
+- 如果专题确有合法中央作品锚点，应接入，而不是因为文本版本复杂就把作品层永久留空。
+
+QC1.2.4 当前已验证这一点：中央 `40 作品` 中的 [[../../../40 作品/一千零一夜|《一千零一夜》]]（`WL-WORK-0558`）作为 ★ 集合性作品锚点进入 Works Base；Galland、Haddawy、Bulaq、Calcutta 等仍分别保持 translation / edition witness 身份。
 
 ---
 
@@ -165,8 +168,6 @@ supported capability = YES
 mandatory field = NO
 ```
 
-例如某些纯编纂型故事集可能通过编辑原则、主题或文类而非框架故事维持集合身份。
-
 ---
 
 # 8. 证据纪律 V1
@@ -178,7 +179,7 @@ mandatory field = NO
 5. 口述来源、单独文本、手稿来源、译者改写必须区分 `source_mode`；
 6. `absent_attested` 是正数据；
 7. 未核验不能推断为 absent；
-8. manuscript / recension / edition / translation / work 分型保持独立；
+8. work / manuscript / recension / edition / translation 分型保持独立；
 9. Canvas 不画“后期成员 → 早期手稿”的反向历史箭头；
 10. 单个故事形成自己的跨文本历时生命后，可另评估 `story_tradition`。
 
@@ -194,6 +195,7 @@ mandatory field = NO
 | story membership | PASS |
 | membership status | PASS |
 | translation/editorial layer | PASS |
+| central work anchor | PASS |
 | work/witness 粒度 | PASS |
 | membership matrix | PASS |
 | real-edition provenance | PASS |
@@ -220,4 +222,4 @@ collection_tradition → FROZEN_V1
 
 ## 最终判定
 
-> `QC1.2 collection_tradition 专题模板 V1` 可以生成并投入正式使用。
+> `QC1.2 collection_tradition 专题模板 V1` 已可正式使用；QC1.2.4 同时验证了“有中央作品锚点时应接入 Works Base，但 witness 不随之被作品化”的作品／见证分层规则。
