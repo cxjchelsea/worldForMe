@@ -1,0 +1,53 @@
+filters:
+  and:
+    - type == "qc3_cluster_candidate"
+properties:
+  file.name:
+    displayName: 一级簇候选
+  note.status:
+    displayName: 状态
+  note.gate_score:
+    displayName: Gate
+  note.priority:
+    displayName: 优先级
+  note.reuse_value:
+    displayName: 复用价值
+  note.evidence_readiness:
+    displayName: 证据准备度
+  note.boundary_risk:
+    displayName: 边界风险
+  note.example_models:
+    displayName: 示例模型
+views:
+  - type: table
+    name: 全部候选
+    order:
+      - file.name
+      - status
+      - gate_score
+      - priority
+      - reuse_value
+      - evidence_readiness
+      - boundary_risk
+      - example_models
+  - type: table
+    name: 已验证与可准入
+    filters:
+      or:
+        - status == "ACCEPTED_CLUSTER"
+        - status == "READY_FOR_ADMISSION"
+    order:
+      - file.name
+      - status
+      - gate_score
+      - priority
+      - boundary_risk
+  - type: table
+    name: 边界待审
+    filters:
+      and:
+        - status == "NEEDS_BOUNDARY"
+    order:
+      - file.name
+      - gate_score
+      - boundary_risk
