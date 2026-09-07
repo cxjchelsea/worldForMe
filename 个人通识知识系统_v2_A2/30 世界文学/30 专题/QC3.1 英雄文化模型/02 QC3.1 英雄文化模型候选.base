@@ -29,6 +29,8 @@ properties:
     displayName: 复用价值
   note.overlap_risk:
     displayName: 重叠风险
+  note.formal_topic:
+    displayName: 正式专题
 views:
   - type: table
     name: 全部候选
@@ -46,6 +48,16 @@ views:
       - work_readiness
       - reuse_value
       - overlap_risk
+  - type: table
+    name: 已接受
+    filters:
+      and:
+        - status == "ACCEPTED"
+    order:
+      - file.name
+      - admission_score
+      - legacy_code
+      - formal_topic
   - type: table
     name: 旧QT8.3迁移
     filters:
