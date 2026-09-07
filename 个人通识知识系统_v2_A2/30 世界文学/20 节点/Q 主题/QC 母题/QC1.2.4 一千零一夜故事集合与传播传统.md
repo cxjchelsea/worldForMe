@@ -11,7 +11,7 @@ node_kind: taxonomy_leaf
 anchorable: true
 resource_type: collection_tradition
 status: ACTIVE
-build_stage: topic_build
+build_stage: coverage_review_pass_with_patch
 ---
 # QC1.2.4 一千零一夜故事集合与传播传统
 
@@ -45,18 +45,37 @@ QC1.2 的第一个 `collection_tradition` 验证样板。
 - `figure_tradition` 主要追踪中心人物如何吸附人物网络与子传统；
 - `collection_tradition` 则必须回答：**集合边界本身如何变化。**
 
-因此本专题重点验证：
+## 第一轮已验证能力
 
-1. `collection_boundary`；
-2. `frame_narrative`；
-3. `collection_witness`；
-4. `manuscript_family` / `recension`；
-5. `story_membership`；
-6. `membership_status`；
-7. `addition_removal`；
-8. `translation_layer`；
-9. `editorial_recomposition`；
-10. `source_mode`。
+```text
+collection_boundary
+frame_narrative
+collection_witness
+manuscript_family
+recension
+story_membership
+membership_status
+addition_removal
+translation_layer
+editorial_recomposition
+source_mode
+```
+
+其中 `story_membership` 当前采用关系模型：
+
+```text
+story × collection_witness → membership_status
+```
+
+第一轮状态候选：
+
+```text
+core_attested
+branch_attested
+translation_added
+later_print_added
+uncertain
+```
 
 ## 当前边界
 
@@ -93,8 +112,15 @@ QC1.2 的第一个 `collection_tradition` 验证样板。
 
 准入记录：[[QC1.2.4 一千零一夜故事集合与传播传统 Source Readiness Review]]
 
+覆盖审查：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Coverage Review V1|QC1.2.4 Coverage Review V1]]
+
 ## 当前状态
 
-`TOPIC_BUILD`
+`COVERAGE_REVIEW_PASS_WITH_PATCH`
 
-当前任务是验证 `collection_tradition` 的知识组织能力，而不是建立故事全集。
+第一轮结构验证已经通过。当前不扩充故事数量，冻结前只保留两个实测补丁：
+
+1. 建立 3 个代表性 witness × 5–10 个故事的 membership 对照矩阵；
+2. 选择一个真实可阅读版本，完整追踪其 provenance / translation layer / editorial selection。
+
+完成后再判断是否冻结 `collection_tradition V1`。
