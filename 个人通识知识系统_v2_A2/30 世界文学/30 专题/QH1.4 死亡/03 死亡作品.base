@@ -14,32 +14,37 @@ properties:
   note.death_priority:
     displayName: 优先级
   note.death_dimensions:
-    displayName: 死亡问题
+    displayName: 死亡问题维度
   note.death_note:
-    displayName: 专题说明
+    displayName: 专题价值
+  note.topic_links:
+    displayName: 专题
+  note.topics:
+    displayName: 专题编号
   note.axis_t:
-    displayName: T
+    displayName: 时间
   note.axis_r:
-    displayName: R
+    displayName: 地域
   note.axis_m:
-    displayName: M
+    displayName: 思潮
   note.axis_g:
-    displayName: G
+    displayName: 类型
   note.axis_q:
-    displayName: Q
+    displayName: 主题
   note.id:
-    displayName: Work ID
+    displayName: 编号
 views:
   - type: table
     name: 全部作品
     groupBy:
-      property: note.death_role
+      property: death_role
       direction: ASC
     order:
       - file.name
       - author
-      - read_status
+      - death_role
       - death_priority
+      - read_status
       - death_dimensions
       - death_note
       - axis_t
@@ -54,9 +59,14 @@ views:
       and:
         - death_role == "骨架"
     order:
-      - death_priority
       - file.name
+      - author
+      - death_priority
+      - read_status
       - death_dimensions
+      - death_note
+      - axis_t
+      - axis_r
   - type: table
     name: 比较与边界
     filters:
@@ -64,22 +74,40 @@ views:
         - death_role == "比较"
         - death_role == "边界测试"
     order:
+      - file.name
+      - author
       - death_role
       - death_priority
-      - file.name
+      - read_status
+      - death_dimensions
+      - death_note
+      - axis_t
+      - axis_r
   - type: table
     name: 未读
     filters:
       and:
         - read_status == "未读"
     order:
-      - death_priority
       - file.name
+      - author
+      - death_role
+      - death_priority
+      - death_dimensions
+      - axis_t
+      - axis_r
   - type: table
     name: 已读
     filters:
       and:
-        - read_status == "已读"
+        - or:
+            - read_status == "已读"
+            - read_status == "重读"
     order:
-      - death_priority
       - file.name
+      - author
+      - death_role
+      - death_priority
+      - death_dimensions
+      - axis_t
+      - axis_r

@@ -9,8 +9,6 @@ properties:
     displayName: 作者
   note.read_status:
     displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
   note.freedom_role:
     displayName: 专题角色
   note.freedom_priority:
@@ -18,7 +16,11 @@ properties:
   note.freedom_dimensions:
     displayName: 自由与选择问题维度
   note.freedom_note:
-    displayName: 专题说明
+    displayName: 专题价值
+  note.topic_links:
+    displayName: 专题
+  note.topics:
+    displayName: 专题编号
   note.axis_t:
     displayName: 时间
   note.axis_r:
@@ -34,17 +36,23 @@ properties:
 views:
   - type: table
     name: 全部作品
+    groupBy:
+      property: freedom_role
+      direction: ASC
     order:
       - file.name
       - author
       - freedom_role
       - freedom_priority
-      - freedom_dimensions
       - read_status
+      - freedom_dimensions
+      - freedom_note
       - axis_t
       - axis_r
       - axis_m
       - axis_g
+      - axis_q
+      - id
   - type: table
     name: 骨架作品
     filters:
@@ -53,20 +61,28 @@ views:
     order:
       - file.name
       - author
-      - freedom_dimensions
+      - freedom_priority
       - read_status
+      - freedom_dimensions
+      - freedom_note
+      - axis_t
+      - axis_r
   - type: table
     name: 比较与边界
     filters:
-      and:
-        - or:
-            - freedom_role == "比较"
-            - freedom_role == "边界测试"
+      or:
+        - freedom_role == "比较"
+        - freedom_role == "边界测试"
     order:
       - file.name
       - author
       - freedom_role
+      - freedom_priority
+      - read_status
       - freedom_dimensions
+      - freedom_note
+      - axis_t
+      - axis_r
   - type: table
     name: 未读
     filters:
@@ -76,7 +92,10 @@ views:
       - file.name
       - author
       - freedom_role
+      - freedom_priority
       - freedom_dimensions
+      - axis_t
+      - axis_r
   - type: table
     name: 已读
     filters:
@@ -88,4 +107,7 @@ views:
       - file.name
       - author
       - freedom_role
+      - freedom_priority
       - freedom_dimensions
+      - axis_t
+      - axis_r
