@@ -11,11 +11,11 @@ node_kind: taxonomy_leaf
 anchorable: true
 resource_type: collection_tradition
 status: ACTIVE
-build_stage: coverage_review_pass_with_patch
+build_stage: stage_frozen
 ---
 # QC1.2.4 一千零一夜故事集合与传播传统
 
-QC1.2 的第一个 `collection_tradition` 验证样板。
+QC1.2 的第一个 `collection_tradition` 冻结参考样板。
 
 本专题研究的不是“《一千零一夜》有哪些故事”，而是：
 
@@ -24,32 +24,25 @@ QC1.2 的第一个 `collection_tradition` 验证样板。
 ## 核心模型
 
 ```text
-多层早期叙事资源
+collection identity
       ↓
-框架叙事 frame_narrative
+可选 frame_narrative
       ↓
-阿拉伯语手稿／版本家族 manuscript_family / recension
+collection witness / manuscript family / recension
       ↓
-故事成员 story_membership 持续增删与重排
+story × witness → membership_status
       ↓
-翻译层 translation_layer
+translation_layer / source_mode
       ↓
-编辑重组 editorial_recomposition
+editorial_recomposition
       ↓
-印本与全球传播
+印本与全球版本生命
 ```
 
-## 与既有 QC1.2 类型的差异
-
-- `narrative_cycle` 主要追踪共享故事材料如何形成文本谱系、版本与分支；
-- `figure_tradition` 主要追踪中心人物如何吸附人物网络与子传统；
-- `collection_tradition` 则必须回答：**集合边界本身如何变化。**
-
-## 第一轮已验证能力
+## 已冻结 V1 核心能力
 
 ```text
 collection_boundary
-frame_narrative
 collection_witness
 manuscript_family
 recension
@@ -61,33 +54,39 @@ editorial_recomposition
 source_mode
 ```
 
-其中 `story_membership` 当前采用关系模型：
+正式支持但不强制：
 
 ```text
-story × collection_witness → membership_status
+frame_narrative
+edition_witness
+translation_witness
+source_layer
 ```
 
-第一轮状态候选：
+## membership_status V1
 
 ```text
 core_attested
 branch_attested
 translation_added
 later_print_added
+absent_attested
 uncertain
 ```
 
-## 当前边界
+注意：状态永远描述 `story × collection_witness`，不是故事本体的永久属性。
+
+## 边界
 
 ### 纳入
 
 - 山鲁佐德／国王的框架叙事及其集合识别功能；
 - 早期形成与阿拉伯语手稿传统；
 - 不同手稿／版本家族中的故事成员变化；
-- 后期埃及版本与阿拉伯语印本；
-- 加朗法译及其对全球《一千零一夜》形态的重构；
+- 后期埃及 recension 与阿拉伯语印本；
+- 加朗法译及其对全球集合边界的重构；
 - 迪亚布等口述／书面来源进入翻译传统的过程；
-- 近现代重要译本、选本与编辑重组所造成的集合边界变化。
+- 重要现代译本、选本与编辑重组。
 
 ### 不自动纳入
 
@@ -96,31 +95,36 @@ uncertain
 - 《阿拉丁》《阿里巴巴》等单个故事的全部后世改编；
 - 所有现代《一千零一夜》改写作品。
 
-单个故事若拥有独立、可追踪的跨文本生命，可另行评估为 `story_tradition`，而不是无限扩张本专题。
+单个故事若形成自己的历时文本生命，另行评估 `story_tradition`。
 
-## 当前证据纪律
+## 证据纪律
 
-- “1001”不是稳定故事数量的同义词；
-- 某故事出现在著名译本中，不等于它属于所有早期阿拉伯语手稿；
-- 后出印本的完整目录不能反推为早期集合原貌；
-- 翻译、口述采集、编辑补写和原手稿见证必须区分；
-- 不把“原始／伪作”作为唯一二分，而记录故事进入集合的具体见证层。
+- “1001”不是稳定故事数量；
+- 著名译本收录 ≠ 所有早期阿拉伯语 witness 收录；
+- 后期完整印本不能反推早期集合原貌；
+- 翻译、口述采集、单独文本整合、编辑补写和原手稿见证必须区分；
+- `absent_attested` 是正数据，`uncertain` 不能伪装成 absent；
+- 不使用“原始／伪作”二分取代 provenance。
 
-## 专题产品
+## 已完成验证
 
-→ [[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]
+- Source Readiness：PASS
+- Topic Build：PASS
+- Coverage Review：PASS
+- Membership Matrix：PASS
+- Real-edition Provenance Test：PASS
+- Stage Freeze：PASS
 
-准入记录：[[QC1.2.4 一千零一夜故事集合与传播传统 Source Readiness Review]]
-
-覆盖审查：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Coverage Review V1|QC1.2.4 Coverage Review V1]]
+专题主页：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]  
+准入记录：[[QC1.2.4 一千零一夜故事集合与传播传统 Source Readiness Review]]  
+覆盖审查：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Coverage Review V1|QC1.2.4 Coverage Review V1]]  
+Membership 实测：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Membership Matrix V1|QC1.2.4 Membership Matrix V1]]  
+Provenance 实测：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/QC1.2.4 Provenance Test V1|QC1.2.4 Provenance Test V1]]  
+冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]  
+冻结记录：[[QC1.2 collection_tradition Stage Freeze Review V1]]
 
 ## 当前状态
 
-`COVERAGE_REVIEW_PASS_WITH_PATCH`
+`STAGE_FROZEN`
 
-第一轮结构验证已经通过。当前不扩充故事数量，冻结前只保留两个实测补丁：
-
-1. 建立 3 个代表性 witness × 5–10 个故事的 membership 对照矩阵；
-2. 选择一个真实可阅读版本，完整追踪其 provenance / translation layer / editorial selection。
-
-完成后再判断是否冻结 `collection_tradition V1`。
+除非真实阅读暴露新版本无法解释、关键证据修正或第二 collection_tradition 样板迫使模板升级，否则停止横向扩充本专题。
