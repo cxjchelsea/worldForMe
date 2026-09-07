@@ -123,11 +123,12 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 冻结的是 `narrative_cycle`，**不是 QC1.2 所有 resource_type 的最终统一模板**。
 
-尚未完成模板验证：
+当前模板验证状态：
 
-- `figure_tradition`
-- `story_tradition`
-- `collection_tradition`
+- `narrative_cycle` — `FROZEN_V1`
+- `figure_tradition` — `BUILDING / QC1.2.3 亚瑟王叙事传统`
+- `story_tradition` — 未验证
+- `collection_tradition` — 未验证
 
 ## 5. 正式专题准入门槛
 
@@ -156,19 +157,21 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 - [[QC1.2.1 特洛伊故事循环]] — `narrative_cycle`；第一冻结参考样板；`STAGE_FROZEN`。
 - [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] — `narrative_cycle`；第二冻结参考样板；`STAGE_FROZEN`。
+- [[QC1.2.3 亚瑟王叙事传统]] — `figure_tradition`；第一异质验证样板；已完成 `boundary_check / source_readiness / admission`，当前阶段 `TOPIC_BUILD`。
 
-两个样板共同定义 `QC1.2 narrative_cycle 专题模板 V1`。
+前两个样板共同定义 `QC1.2 narrative_cycle 专题模板 V1`。
 
-`QC1.2.3+` 不批量预建。下一个正式验证对象应优先选择不同 resource_type，而不是继续验证第三个 narrative_cycle。
-
-当前优先方向：
+QC1.2.3 不用于继续证明 narrative_cycle，而用于验证人物中心型传统是否需要新的稳定能力：
 
 ```text
-figure_tradition
-→ 亚瑟王叙事传统
+central_figure
+→ court/world framework
+→ figure_network
+→ subtradition
+→ textualization / compilation / rewriting
 ```
 
-目的不是因为亚瑟王“更重要”，而是测试人物中心型传统是否需要人物网络、子人物传统或新的作品调用结构。
+特别关注：中心人物可以在作品中“结构性在场而非行动主角”，以及强子传统何时应从人物网络升格独立 QC1.2。
 
 ## 8. 完整候选池
 
