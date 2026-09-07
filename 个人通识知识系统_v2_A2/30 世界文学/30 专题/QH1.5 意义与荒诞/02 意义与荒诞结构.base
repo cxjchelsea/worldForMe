@@ -1,0 +1,25 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QH1-5-MEANING-ABSURD"
+properties:
+  file.name:
+    displayName: 节点
+  dimension:
+    displayName: 结构维度
+  sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - dimension
+      - sequence
+  - type: table
+    name: 核心问题
+    filters:
+      and:
+        - dimension == "core_problem"
+    order:
+      - sequence
+      - file.name

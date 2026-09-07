@@ -1,0 +1,50 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-QH1-5-MEANING-ABSURD")
+properties:
+  title:
+    displayName: 作品
+  author:
+    displayName: 作者
+  read_status:
+    displayName: 阅读状态
+  meaning_role:
+    displayName: 专题角色
+  meaning_priority:
+    displayName: 优先级
+  meaning_dimensions:
+    displayName: 意义维度
+  meaning_note:
+    displayName: 专题说明
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - title
+      - author
+      - meaning_role
+      - meaning_priority
+      - meaning_dimensions
+      - read_status
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - meaning_role == "骨架"
+  - type: table
+    name: 比较与边界
+    filters:
+      or:
+        - meaning_role == "比较"
+        - meaning_role == "边界测试"
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status == "未读"
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - read_status == "已读"
