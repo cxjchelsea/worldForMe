@@ -27,14 +27,14 @@ QC1.2 的建立，是为了填补 [[QC1.1 神话、传说与民间叙事|QC1.1 �
 
 QC1.2 可以容纳四类主要对象：
 
-| resource_type | 说明 | 例子仅作候选说明 |
+| resource_type | 说明 | 当前模板状态 |
 |---|---|---|
-| narrative_cycle | 围绕共同事件、人物群或世界形成的故事循环 | 特洛伊循环、底比斯循环 |
-| figure_tradition | 围绕命名人物长期积累的叙事传统 | 亚瑟王、罗宾汉、亚历山大、浮士德、唐璜 |
-| story_tradition | 一个具体故事在多个文本与文化中的历时生命 | 某一持续被改写的故事传统 |
-| collection_tradition | 故事集、框架叙事或叙事集合的形成、编纂与传播传统 | 《一千零一夜》相关故事集合传统、《五卷书》传播传统 |
+| narrative_cycle | 围绕共同事件、人物群或世界形成的故事循环 | `FROZEN_V1` |
+| figure_tradition | 围绕命名人物长期积累的叙事传统 | `FROZEN_V1` |
+| story_tradition | 一个具体故事在多个文本与文化中的历时生命 | 未验证 |
+| collection_tradition | 故事集、框架叙事或叙事集合的形成、编纂与传播传统 | 未验证 |
 
-以上例子不等于自动准入正式编号；正式专题仍需经过准入判断。
+正式专题仍需独立经过准入判断；模板存在不等于候选自动准入。
 
 ## 2. QC1.2 与 QC1.1 的区别
 
@@ -54,9 +54,9 @@ QC1.2 可以容纳四类主要对象：
 
 ```text
 早期材料
-→ 最早文本见证
+→ 文本见证
 → 关键定型
-→ 分支与变体
+→ 分支／人物网络／子传统
 → 跨语言／地域传播
 → 重要重写
 → 现代再生产
@@ -68,40 +68,37 @@ QC1.2 可以容纳四类主要对象：
 
 ## 3. 与 QC2 的边界
 
-QC1.2 仍然研究**有名称、有历史、有文本见证的具体叙事传统**。
-
-QC2 研究从许多故事中抽象出的可复用组件。
+QC1.2 研究**有名称、有历史、有文本见证的具体叙事传统**；QC2 研究从许多故事中抽象出的可复用组件。
 
 例如：
 
 ```text
-“亚瑟王传统” → QC1.2
+“亚瑟王传统” → QC1.2 figure_tradition
+“圣杯故事传统” → 可独立评估 QC1.2 story_tradition
 “圣杯”作为长期文化符号 → QC2 symbol
 “求索神圣目标” → QC2 motif / plot_pattern
-“正统王权的证明与恢复” → QC2 相关组件
 ```
 
 又如：
 
 ```text
-“特洛伊故事循环” → QC1.2
+“特洛伊故事循环” → QC1.2 narrative_cycle
 “围城” → QC2
 “复仇链” → QC2
-“英雄荣誉冲突” → QC2
 “归乡” → QC2
 ```
 
 不得为了寻找共同母题而抹去具体文本谱系；也不得因为两个传统拥有相似组件，就推断二者存在历史传播。
 
-## 4. 当前已冻结的 narrative_cycle V1
+## 4. 已冻结的 narrative_cycle V1
 
-由 [[QC1.2.1 特洛伊故事循环]] 与 [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] 两个结构差异明显的样板共同验证，`narrative_cycle` 已完成 V1 stage freeze。
+由 [[QC1.2.1 特洛伊故事循环]] 与 [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] 两个结构差异明显的样板共同验证。
 
 冻结模板：[[QC1.2 narrative_cycle 专题模板 V1]]  
 冻结记录：[[QC1.2 narrative_cycle Stage Freeze Review V1]]  
 样板比较：[[QC1.2 样板横向比较 V1]]
 
-当前冻结的稳定认知职责为：
+稳定骨架：
 
 ```text
 10 定义、边界与核心叙事材料
@@ -112,25 +109,41 @@ QC2 研究从许多故事中抽象出的可复用组件。
 15 QC2 组件、证据与阅读
 ```
 
-以及四文件产品壳：
+## 5. 已冻结的 figure_tradition V1
+
+由 [[QC1.2.3 亚瑟王叙事传统]] 作为第一个异质样板验证。
+
+冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]  
+冻结记录：[[QC1.2 figure_tradition Stage Freeze Review V1]]
+
+稳定核心能力：
 
 ```text
-00 主页.md
-01 Canvas.canvas
-02 结构／谱系.base
-03 作品／文本见证.base
+central_figure
+court_or_world_framework
+figure_network
+subtradition
+subtradition_status
+text_stage
+cycle_witness
+component_witness
+modern_figure_reinvention
 ```
 
-冻结的是 `narrative_cycle`，**不是 QC1.2 所有 resource_type 的最终统一模板**。
+稳定认知职责：
 
-当前模板验证状态：
+```text
+10 中心人物、边界与世界框架
+11 早期人物与关键文本见证
+12 多语言扩张、文本阶段与循环化
+13 人物网络、子传统与升格边界
+14 集成文本、后世再发明与现代生命
+15 QC2 组件、证据与阅读
+```
 
-- `narrative_cycle` — `FROZEN_V1`
-- `figure_tradition` — `BUILDING / QC1.2.3 亚瑟王叙事传统`
-- `story_tradition` — 未验证
-- `collection_tradition` — 未验证
+这证明 QC1.2 可以共享六层产品壳，但不同 resource_type 的中层知识组织机制并不相同。
 
-## 5. 正式专题准入门槛
+## 6. 正式专题准入门槛
 
 一个对象升格为正式 QC1.2 专题，原则上至少满足以下条件中的四项：
 
@@ -143,7 +156,7 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 仅仅“故事很有名”不足以准入。
 
-## 6. 不应升格为 QC1.2 的情况
+## 7. 不应升格为 QC1.2 的情况
 
 - 只有单一作品承载、没有独立传统生命的故事；
 - 单个 motif 或 symbol；
@@ -153,35 +166,53 @@ QC2 研究从许多故事中抽象出的可复用组件。
 
 这些对象可以继续存在于 QC1.1、QC2 component、40 作品或普通笔记中。
 
-## 7. 当前正式专题
+## 8. 当前正式专题
 
 - [[QC1.2.1 特洛伊故事循环]] — `narrative_cycle`；第一冻结参考样板；`STAGE_FROZEN`。
 - [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] — `narrative_cycle`；第二冻结参考样板；`STAGE_FROZEN`。
-- [[QC1.2.3 亚瑟王叙事传统]] — `figure_tradition`；第一异质验证样板；已完成 `boundary_check / source_readiness / admission`，当前阶段 `TOPIC_BUILD`。
+- [[QC1.2.3 亚瑟王叙事传统]] — `figure_tradition`；第一冻结参考样板；`STAGE_FROZEN`。
 
-前两个样板共同定义 `QC1.2 narrative_cycle 专题模板 V1`。
-
-QC1.2.3 不用于继续证明 narrative_cycle，而用于验证人物中心型传统是否需要新的稳定能力：
+当前：
 
 ```text
-central_figure
-→ court/world framework
-→ figure_network
-→ subtradition
-→ textualization / compilation / rewriting
+narrative_cycle → FROZEN_V1
+figure_tradition → FROZEN_V1
+story_tradition → NOT_FROZEN
+collection_tradition → NOT_FROZEN
 ```
 
-特别关注：中心人物可以在作品中“结构性在场而非行动主角”，以及强子传统何时应从人物网络升格独立 QC1.2。
+## 9. 下一异质样板
 
-## 8. 完整候选池
+下一步不继续验证第三个 narrative_cycle 或第二个 figure_tradition，而优先选择尚未验证的资源类型。
 
-QC1.2 的完整规划长名单、优先级、资源类型、重叠风险与 HOLD / QC2_FIRST / WORK_FIRST 判断统一维护于：
+当前建议：
+
+```text
+collection_tradition
+→ 《一千零一夜》故事集合与传播传统
+```
+
+原因：它最可能迫使系统引入与现有模板不同的核心能力：
+
+```text
+manuscript_family
+collection_boundary
+frame_narrative
+story_membership
+translation_layer
+addition_removal
+editorial_recomposition
+```
+
+这比继续做相似专题更有模板验证价值。
+
+## 10. 完整候选池
 
 → [[QC1.2 候选叙事传统池 V1]]
 
 候选节点不等于正式 taxonomy。建设时仍从真实阅读问题、模板验证需求和 source readiness 反向选择对象，而不是按候选清单批量建包。
 
-## 9. 建设状态原则
+## 11. 建设状态原则
 
 ```text
 candidate
@@ -199,5 +230,6 @@ candidate
 > 同级：[[QC1.1 神话、传说与民间叙事|QC1.1 神话、宗教与民间叙事来源传统]]  
 > 候选池：[[QC1.2 候选叙事传统池 V1]]  
 > narrative_cycle 模板：[[QC1.2 narrative_cycle 专题模板 V1]]  
+> figure_tradition 模板：[[QC1.2 figure_tradition 专题模板 V1]]  
 > 专属治理：[[QC1 建设规范 V1]]  
 > 全局治理：[[QC 总体架构与建设规范 V2]]
