@@ -7,19 +7,26 @@ axis: Q
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest
-node_kind: taxonomy_leaf
-anchorable: true
+node_kind: legacy_migration_gateway
+anchorable: false
+status: MIGRATED_LEGACY
+migrated_to: WL-QC31-CAND-XIA-JIANGHU
+qt_role: "武侠类型史继续留在 QT"
 topic_map:
   - "[[../../../30 专题/QT8.1 武侠/00 武侠文学]]"
-source_version: "2.12-qt8-restructure"
+source_version: "2.12-qt8-restructure-migrated-qc31"
 ---
- 
-# QT8.3.1 中国武侠
 
-> 路径：Q轴 → QT8 → QT8.3 英雄、边疆与法外者文化传统 → **QT8.3.1 中国武侠**
+# QT8.3.1 中国武侠｜已迁移
 
-本节点为文化传统型专题叶节点。专题研究应同时处理历史条件、社会机制、伦理体系、角色结构、核心母题、文学形成与演变、代表作品、现代转化、与兄弟传统比较及支撑书目。
+文化模型主入口已迁移到 [[侠与江湖英雄模型|侠／江湖英雄模型]]。
 
-## 现有专题地图
+当前职责拆分：
 
-- [[../../../30 专题/QT8.1 武侠/00 武侠文学|武侠文学]]
+```text
+QC3 → 侠客—义—江湖—国家法的文化模型
+QT  → 武侠文学类型史
+历史 → 真实侠史／社会史
+```
+
+旧专题资产 [[../../../30 专题/QT8.1 武侠/00 武侠文学|武侠文学]] 保留，后续由 QC3 正式 Topic Build 按职责复用。

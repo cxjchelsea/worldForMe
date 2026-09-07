@@ -3,7 +3,7 @@ id: WL-QC3-CANDIDATE-POOL-V1
 type: literature_governance
 scope: QC3
 status: ACTIVE_V1
-version: "1.0"
+version: "1.1"
 ---
 
 # QC3 候选文化模型池 V1
@@ -20,13 +20,16 @@ candidate_family
 historical_basis
 role_ethic_structure
 cross_period_life
-qc1_links
-qc2_links
+qc1_links / qc1_readiness
+qc2_links / qc2_readiness
 work_readiness
 reuse_value
 overlap_risk
 admission_score
 status
+legacy_code（如来自旧体系）
+migrated_from（如来自旧体系）
+migration_mode（如需拆分职责）
 ```
 
 建议状态：
@@ -41,22 +44,51 @@ SEED
 → REJECTED
 ```
 
-## 2. 当前首批候选
+## 2. 当前英雄文化模型候选
 
-| 候选 | 候选族 | 历史社会基底 | 稳定角色/伦理/空间 | 跨时期生命 | 现有 QC1/QC2 可接性 | 复用价值 | 风险 | 当前状态 |
-|---|---|---|---|---|---|---|---|---|
-| 古希腊英雄模型 | 英雄文化模型 | 高 | 高 | 高 | 高 | 高 | 容易与 QC2“英雄 archetype”重叠 | READY_FOR_ADMISSION |
-| 欧洲骑士英雄模型 | 英雄文化模型 | 高 | 高 | 高 | 高 | 高 | 容易滑向制度史或“骑士文学”类型史 | PILOT |
-| 侠／江湖英雄模型 | 英雄文化模型 | 高 | 高 | 高 | 中—高 | 高 | 容易与武侠 QT、真实侠史混淆 | READY_FOR_ADMISSION |
-| 日本武士／剑豪英雄模型 | 英雄文化模型 | 高 | 高 | 高 | 中 | 高 | “武士道”后世建构需严格区分 | NEEDS_EVIDENCE |
-| 美国西部 cowboy / outlaw 模型 | 英雄文化模型 | 高 | 高 | 高 | 中 | 高 | cowboy / outlaw / frontier myth 边界复杂 | NEEDS_EVIDENCE |
-| Robin Hood / social bandit 模型 | 英雄文化模型 | 中—高 | 高 | 高 | 高 | 高 | 命名人物传统与社会匪徒模型边界需拆 | NEEDS_EVIDENCE |
-| 海盗／海洋法外者模型 | 法外与边疆模型 | 高 | 中—高 | 高 | 中 | 中—高 | 容易变成题材清单 | SEED |
-| Gaucho 文化英雄模型 | 边疆文化模型 | 高 | 高 | 高 | 中 | 中—高 | 区域性强，需验证跨作品复用价值 | SEED |
-| 革命英雄模型 | 政治英雄模型 | 高 | 高 | 高 | 中 | 高 | 跨文化范围过宽，需先限定历史语境 | DEFERRED |
-| 超级英雄模型 | 现代媒介英雄模型 | 中 | 高 | 高 | 中—高 | 高 | 更接近现代媒介/类型系统，需验证是否属于 QC3 而非 QT | DEFERRED |
+当前 QC3.1 候选池由两部分组成：
 
-## 3. 首轮 Pilot 策略
+```text
+旧 QT8.3 的 8 个历史资产迁移
++
+古希腊英雄模型 1 个新增压力测试
+=
+9 个候选
+```
+
+| 候选 | 来源 | 历史社会基底 | 稳定角色/伦理/空间 | 跨时期生命 | QC1/QC2可接性 | 复用价值 | 当前状态 |
+|---|---|---|---|---|---|---|---|
+| 古希腊英雄模型 | 新增压力测试 | 高 | 高 | 高 | 高 | 高 | READY_FOR_ADMISSION |
+| 欧洲骑士英雄模型 | QT8.3.2 | 高 | 高 | 高 | 高 | 高 | PILOT |
+| 侠／江湖英雄模型 | QT8.3.1 | 高 | 高 | 高 | 中—高 | 高 | READY_FOR_ADMISSION |
+| 日本武士／剑豪英雄模型 | QT8.3.3 | 高 | 高 | 高 | 中 | 高 | NEEDS_EVIDENCE |
+| 美国西部 cowboy / outlaw 模型 | QT8.3.4 | 高 | 高 | 高 | 中 | 高 | NEEDS_EVIDENCE |
+| 欧洲剑客／Swashbuckler 英雄模型 | QT8.3.5 | 中—高 | 高 | 高 | 中 | 中—高 | NEEDS_EVIDENCE |
+| Robin Hood / social bandit 模型 | QT8.3.6 | 中—高 | 高 | 高 | 高 | 高 | NEEDS_EVIDENCE |
+| 海盗／海洋法外者模型 | QT8.3.7 | 高 | 中—高 | 高 | 中 | 中—高 | NEEDS_EVIDENCE |
+| Gaucho 英雄文化模型 | QT8.3.8 | 高 | 中—高 | 高 | 中 | 中—高 | NEEDS_EVIDENCE |
+
+另有：
+
+- 革命英雄模型：DEFERRED；
+- 超级英雄模型：DEFERRED。
+
+## 3. QT8.3 迁移原则
+
+旧 QT8.3 的内容不是废弃，而是语义拆分：
+
+```text
+文化角色／伦理／社会秩序模型 → QC3
+文学类型／文类生产机制       → QT
+命名人物与具体叙事生命       → QC1
+真实制度与社会运行           → 历史领域
+```
+
+→ [[QT8.3 → QC3.1 Migration Review V1]]
+
+旧 QT8.3.x 已改为 `MIGRATED_LEGACY` 兼容入口，后续不再作为文化模型的新内容建设位置。
+
+## 4. 首轮 Pilot 策略
 
 不同时建设全部候选。第一轮只做：
 
@@ -67,12 +99,10 @@ P2 古希腊英雄模型 或 侠／江湖英雄模型
 
 选择理由：
 
-- P1 便于直接连接现有 QC1.2.3 亚瑟王叙事传统与大量 QC2 组件；
+- P1 可直接连接现有 QC1.2.3 亚瑟王叙事传统、旧 QT8.3.2/QT8.2 资产与大量 QC2 组件；
 - P2 应与 P1 在社会结构、伦理和叙事生产机制上有明显差异，用于压力测试 QC3 模型是否具有跨文化解释力。
 
-## 4. Admission Gate
-
-每个候选按 6 项检查：
+## 5. Admission Gate
 
 ```text
 A1 可识别历史社会基底
@@ -91,37 +121,14 @@ A6 能解释现实与文化神话之间的距离
 6/6 = 强 Pilot 候选
 ```
 
-## 5. 与 QC1 / QC2 / QT / QH / 历史层的边界
-
-```text
-来源与文本生命史
-→ QC1
-
-可复用叙事组件
-→ QC2
-
-历史化的角色—伦理—秩序文化模型
-→ QC3
-
-文学类型
-→ QT
-
-抽象主题问题
-→ QH
-
-真实制度如何运作
-→ 历史 / 制度史
-```
-
-候选只有在 QC3 层存在明显独立解释增量时才准入。
-
 ## 6. 当前决策
 
 ```text
 QC3_TAXONOMY = NOT_FROZEN
 HERO_MODEL_CLUSTER = PILOT
+QT83_MIGRATION = PASS
+QT83_LEGACY_CHILDREN = 8
+QC31_CANDIDATES = 9
 EUROPEAN_KNIGHT_MODEL = FIRST_PILOT
 SECOND_PILOT = TO_BE_SELECTED_AFTER_P1_REVIEW
 ```
-
-本池只做候选治理，不代表其中所有对象都会成为正式 QC3 节点。

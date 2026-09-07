@@ -9,6 +9,10 @@ properties:
     displayName: 状态
   note.admission_score:
     displayName: 准入分
+  note.legacy_code:
+    displayName: 旧编号
+  note.migration_mode:
+    displayName: 迁移方式
   note.historical_basis:
     displayName: 历史基底
   note.role_ethic_structure:
@@ -32,6 +36,8 @@ views:
       - file.name
       - status
       - admission_score
+      - legacy_code
+      - migration_mode
       - historical_basis
       - role_ethic_structure
       - cross_period_life
@@ -40,6 +46,17 @@ views:
       - work_readiness
       - reuse_value
       - overlap_risk
+  - type: table
+    name: 旧QT8.3迁移
+    filters:
+      and:
+        - legacy_code != null
+    order:
+      - file.name
+      - legacy_code
+      - migration_mode
+      - status
+      - admission_score
   - type: table
     name: Pilot与可准入
     filters:
@@ -61,4 +78,5 @@ views:
     order:
       - file.name
       - admission_score
+      - legacy_code
       - overlap_risk
