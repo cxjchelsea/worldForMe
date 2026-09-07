@@ -11,56 +11,18 @@ node_kind: taxonomy_leaf
 anchorable: true
 resource_type: narrative_cycle
 status: ACTIVE
-build_stage: stage_freeze_candidate
+build_stage: stage_frozen
+template_version: QC1.2-NARRATIVE-CYCLE-V1
 ---
 # QC1.2.2 沃尔松—尼伯龙根叙事传统
 
-QC1.2 的第二个正式验证样板，研究围绕沃尔松家族、西格鲁德／齐格弗里德、布伦希尔德／布伦希尔特、古德伦／克里姆希尔德、勃艮第人物群、宝藏、背叛、谋杀、复仇与毁灭等共享材料形成的跨文本叙事传统。
+QC1.2 的第二个正式冻结样板，研究围绕沃尔松家族、西格鲁德／齐格弗里德、布伦希尔德／布伦希尔特、古德伦／克里姆希尔德、勃艮第人物群、宝藏、背叛、谋杀、复仇与毁灭等共享材料形成的跨文本叙事传统。
 
 本专题的重点不是把北欧和德语材料拼成一个“标准版本”，而是研究：
 
 > **共享的英雄叙事材料如何在不同语言、地域和文本环境中形成可识别但彼此差异显著的分支？**
 
-## 当前边界
-
-### 纳入
-
-- 《诗体埃达》中与沃尔松／尼伯龙根人物与故事链直接相关的英雄诗；
-- 《沃尔松格萨迦》；
-- 《尼伯龙根之歌》；
-- 《散文埃达》中可作为传统见证的相关材料；
-- 《蒂德雷克萨迦》作为关键桥接／比较见证；
-- 对该传统进行重大结构性重写的后世作品，例如瓦格纳《尼伯龙根的指环》。
-
-### 不自动纳入
-
-- 泛日耳曼英雄传说中的所有人物和故事；
-- 只出现龙、宝藏、复仇等抽象母题的作品；
-- 仅因人物功能相似而被推断为同一传统的材料。
-
-## 核心分支模型
-
-```text
-较早的日耳曼英雄叙事材料与历史记忆背景
-        ↓
-        ├─ 北欧分支
-        │  《诗体埃达》相关英雄诗
-        │  《沃尔松格萨迦》
-        │  《散文埃达》相关见证
-        │
-        ├─ 德语分支
-        │  《尼伯龙根之歌》
-        │
-        └─ 跨文本比较见证
-           《蒂德雷克萨迦》
-
-后世再生产
-→ 《尼伯龙根的指环》及后续现代重构
-```
-
-这张图只表示研究角色，不预设北欧与德语文本之间存在单向直接继承。
-
-## 当前覆盖规模
+## 当前覆盖
 
 ### 中央作品锚点：6 个
 
@@ -71,50 +33,34 @@ QC1.2 的第二个正式验证样板，研究围绕沃尔松家族、西格鲁�
 5. 《蒂德雷克萨迦》——跨文本桥接／比较见证；
 6. 《尼伯龙根的指环》——19世纪重大再生产锚点。
 
-### 细粒度 story_witness：首批 13 个
+### story_witness：首批 13 个
 
-《诗体埃达》不只作为一个总括性作品锚点使用。专题已下钻到 Reginsmál、Fáfnismál、Sigrdrífumál、Brot af Sigurðarkviðu、Sigurðarkviða in skamma、Helreið Brynhildar、Guðrúnarkviða I–III、Atlakviða、Atlamál、Guðrúnarhvöt、Hamðismál 等首批英雄诗 witness。
+《诗体埃达》继续下钻到 Reginsmál、Fáfnismál、Sigrdrífumál、Brot af Sigurðarkviðu、Sigurðarkviða in skamma、Helreið Brynhildar、Guðrúnarkviða I–III、Atlakviða、Atlamál、Guðrúnarhvöt、Hamðismál 等具体英雄诗见证。
 
-→ [[../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/11 早期材料与文本见证/02 诗体埃达英雄诗 witness 清单|《诗体埃达》英雄诗 witness 清单]]
-
-## QC2 主要接口
-
-当前重点连接：
-
-- 屠龙英雄；
-- 宝藏与诅咒；
-- 英雄荣誉与共同体；
-- 婚姻、欲望与背叛；
-- 家族与血缘冲突；
-- 复仇链；
-- 命运与预言；
-- 英雄死亡；
-- 王权、忠诚与秩序崩解。
+这一步验证了：`tradition ≠ story_witness ≠ work`，中央作品数量本身不代表专题成熟度。
 
 ## 模板验证结果
 
-QC1.2.1 特洛伊故事循环主要验证“多文本共同覆盖一个大型故事循环”；QC1.2.2 进一步验证：
+本专题进一步验证：
 
-1. `branch` 必须成为 QC1.2 可用的通用建模能力；
-2. 人物对应不能等同于 canonical identity；
-3. 共享材料与直接传播必须区分；
-4. chronology 不能作为所有 QC1.2 的唯一骨架；
-5. 同一叙事核可在不同语言文本环境中发生结构性重组；
-6. 非中央作品型 witness 不必为了专题产品被强制伪装成 work；
-7. 一个中央作品锚点内部可以继续下钻到细粒度 `story_witness`。
+- `branch` 必须成为 QC1.2 可用的通用能力；
+- chronology 不能成为所有 QC1.2 的唯一骨架；
+- 人物对应不能等同于 canonical identity；
+- 共享材料与直接传播必须区分；
+- 非中央作品型 witness 不应为了产品统一被强制伪装成 work；
+- 一个中央 work 可以继续下钻到细粒度 witness。
 
-## 专题产品
+## 冻结记录
 
-→ [[../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/00 沃尔松—尼伯龙根叙事传统|QC1.2.2 沃尔松—尼伯龙根叙事传统专题主页]]
-
-覆盖审查：[[../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/QC1.2.2 Coverage Review V1|QC1.2.2 Coverage Review V1]]
-
-横向比较：[[QC1.2 样板横向比较 V1]]
+- Coverage Review：[[../../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/QC1.2.2 Coverage Review V1|QC1.2.2 Coverage Review V1]]
+- narrative_cycle 模板：[[QC1.2 narrative_cycle 专题模板 V1]]
+- Stage Freeze：[[QC1.2 narrative_cycle Stage Freeze Review V1]]
+- 横向比较：[[QC1.2 样板横向比较 V1]]
 
 ## 当前状态
 
-`STAGE_FREEZE_CANDIDATE`
+`STAGE_FROZEN`
 
-第一轮 coverage review 已完整通过。当前已经形成“6 个中央作品锚点 + 13 个首批英雄诗 story_witness + 分支／人物／事件／QC2 接口”的覆盖规模，足以服务当前阅读需求。
+后续新增现代重写或新的桥接材料必须通过 reopen gate，而不再为了数量机械扩充。
 
-下一阶段：与 QC1.2.1 共同执行 `stage_freeze`，并据此冻结 `narrative_cycle` 的 QC1.2 V1 产品骨架。后续新增材料必须通过 reopen gate，而不再为了数量机械扩充。
+→ [[../../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/00 沃尔松—尼伯龙根叙事传统|QC1.2.2 专题主页]]
