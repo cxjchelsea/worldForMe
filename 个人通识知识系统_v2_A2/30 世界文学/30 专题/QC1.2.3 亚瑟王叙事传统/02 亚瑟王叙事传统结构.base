@@ -1,0 +1,53 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QC123"
+properties:
+  file.name:
+    displayName: 页面
+  note.structure_type_zh:
+    displayName: 结构类型
+  note.dimension:
+    displayName: 维度
+  note.sequence:
+    displayName: 顺序
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部结构
+    order:
+      - sequence
+      - file.name
+      - structure_type_zh
+      - dimension
+      - id
+  - type: table
+    name: 中心人物与边界
+    filters:
+      and:
+        - dimension == "central_figure_boundary"
+  - type: table
+    name: 早期与编年史
+    filters:
+      and:
+        - dimension == "early_arthur_chronicle"
+  - type: table
+    name: 文本扩张与循环化
+    filters:
+      and:
+        - dimension == "textual_expansion_cycle"
+  - type: table
+    name: 人物网络与子传统
+    filters:
+      and:
+        - dimension == "figure_network_subtraditions"
+  - type: table
+    name: 集成与后世再发明
+    filters:
+      and:
+        - dimension == "compilation_reinvention"
+  - type: table
+    name: QC2 与阅读
+    filters:
+      and:
+        - dimension == "qc2_evidence_reading"
