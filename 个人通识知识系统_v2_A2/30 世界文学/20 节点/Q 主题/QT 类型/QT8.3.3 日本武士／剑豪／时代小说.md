@@ -7,18 +7,22 @@ axis: Q
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest
-node_kind: taxonomy_leaf
-anchorable: true
-topic_map: null
-source_version: "2.12-qt8-restructure"
+node_kind: legacy_migration_gateway
+anchorable: false
+status: MIGRATED_LEGACY
+migrated_to: WL-QC31-CAND-SAMURAI
+qt_role: "时代小说／武士题材类型史继续留在 QT"
+source_version: "2.12-qt8-restructure-migrated-qc31"
 ---
- 
-# QT8.3.3 日本武士／剑豪／时代小说
 
-> 路径：Q轴 → QT8 → QT8.3 英雄、边疆与法外者文化传统 → **QT8.3.3 日本武士／剑豪／时代小说**
+# QT8.3.3 日本武士／剑豪／时代小说｜已迁移
 
-本节点为文化传统型专题叶节点。专题研究应同时处理历史条件、社会机制、伦理体系、角色结构、核心母题、文学形成与演变、代表作品、现代转化、与兄弟传统比较及支撑书目。
+文化模型主入口已迁移到 [[日本武士与剑豪英雄模型|日本武士／剑豪英雄模型]]。
 
-## 专题地图
+```text
+QC3 → 武士／剑豪文化角色、忠诚、名誉、死亡伦理
+QT  → 时代小说／武士题材类型史
+历史 → 武士阶层、幕府制度、军役与身份结构
+```
 
-沿用原专题资产；完整路径迁移与链接校验放在后续兼容性阶段处理。
+后续不在本旧节点继续新增文化模型内容。
