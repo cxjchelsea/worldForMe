@@ -17,6 +17,7 @@ Run:
 from __future__ import annotations
 
 import argparse
+import ast
 import json
 import re
 from dataclasses import dataclass, field
@@ -28,7 +29,7 @@ WORKS = WORLD / "40 作品"
 DEFAULT_REPORT = WORLD / "04 系统架构" / "03 Q字段迁移审计.md"
 
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):(?:\s*(.*))?$")
-LIST_RE = re.compile(r"^-\s+(.*)$")
+LIST_RE = re.compile(r"^\s*-\s+(.*)$")
 
 
 @dataclass
@@ -85,15 +86,30 @@ def unquote(value: str) -> str:
     return value
 
 
+def parse_inline_list(inline: str, key: str) -> tuple[list[str] | None, str | None]:
+    if inline in ("[]", "null", "~"):
+        return [], None
+    if not (inline.startswith("[") and inline.endswith("]")):
+        return None, f"{key} 使用不支持的行内格式：{inline}"
+    try:
+        try:
+            value = json.loads(inline)
+        except json.JSONDecodeError:
+            value = ast.literal_eval(inline)
+    except Exception as exc:
+        return None, f"{key} 行内列表无法解析：{inline} ({exc})"
+    if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
+        return None, f"{key} 行内值不是字符串列表：{inline}"
+    return list(value), None
+
+
 def parse_list(lines: list[str], key: str) -> tuple[list[str] | None, str | None]:
     span = key_span(lines, key)
     if span is None:
         return None, None
     start, end, inline = span
-    if inline in ("[]", "null", "~"):
-        return [], None
     if inline:
-        return None, f"{key} 使用不支持的行内格式：{inline}"
+        return parse_inline_list(inline, key)
     values: list[str] = []
     for line in lines[start + 1 : end]:
         if not line.strip():
