@@ -41,17 +41,6 @@ views:
       - sequence
       - id
   - type: table
-    name: 一级类
-    filters:
-      and:
-        - structure_type_zh == "一级类"
-    order:
-      - sequence
-      - file.name
-      - formula.dimension_zh
-      - code
-      - id
-  - type: table
     name: 已激活专题
     filters:
       and:

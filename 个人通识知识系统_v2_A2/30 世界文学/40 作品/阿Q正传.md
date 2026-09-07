@@ -28,13 +28,19 @@ qx:
   mode: [singular_pivotal, climactic]
   evidence:
   - 临刑前画圈将文书制度、识字能力和死亡判决集中在一次书写动作中；阿Q在乎圆是否画得圆，却无法理解或改变文件决定的命运。
+qx_count: 2
+qx_dominant: []
+qx_core:
+  - 认罪状上的圆圈
+  - 辫子
+qx_significant: []
 ---
 # 阿Q正传
 
 <!-- QX:GENERATED:START -->
 ## 文学意象
 
-> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护 YAML；这里用于日常阅读。
+> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护源码中的 YAML，不要在 Obsidian 属性面板中编辑 `qx`。这里用于日常阅读。
 
 ### 认罪状上的圆圈
 

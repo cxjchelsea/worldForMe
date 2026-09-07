@@ -4,10 +4,11 @@
 Source of truth: 40 作品/*.md frontmatter `qx`.
 Generated outputs:
 1. Each work page gets a readable `## 文学意象` block.
-2. 04 意象关系索引 becomes an imagery -> works navigation page.
-3. 05 作品意象一览 becomes a works -> imagery navigation page.
+2. Each work page gets derived `qx_count` / `qx_dominant` / `qx_core` / `qx_significant`
+   for the 05 Base.
+3. 04 意象关系索引 becomes an imagery -> works navigation page.
 
-Do not manually maintain generated blocks; edit only the work-level `qx` YAML.
+Do not manually maintain generated blocks or derived fields; edit only the `qx` YAML.
 """
 
 import re
@@ -22,7 +23,12 @@ ROOT = WORLD / "40 作品"
 QX_DIR = WORLD / "30 专题" / "QX 文学意象与场景"
 TOPIC_DIR = QX_DIR / "10 已激活专题"
 OUT = QX_DIR / "04 意象关系索引.md"
-OUT_WORKS = QX_DIR / "05 作品意象一览.md"
+DERIVED_KEYS = {"qx_count", "qx_dominant", "qx_core", "qx_significant"}
+
+
+class _IndentDumper(yaml.SafeDumper):
+    def increase_indent(self, flow=False, indentless=False):
+        return super().increase_indent(flow, False)
 
 START = "<!-- QX:GENERATED:START -->"
 END = "<!-- QX:GENERATED:END -->"
@@ -52,6 +58,11 @@ GROUPS = [
 GROUP_LABEL = dict(GROUPS)
 SAL_RANK = {"dominant": 0, "core": 1, "significant": 2, "minor": 3}
 SAL_ZH = {"dominant": "主导", "core": "核心", "significant": "显著", "minor": "次要"}
+TOPIC_CANONICAL_OBJECT = {
+    "QX1.1": "雨",
+    "QX3.1": "海",
+    "QX16.1": "书信",
+}
 
 
 def split_frontmatter(text: str):
@@ -79,11 +90,13 @@ def extract_qx_yaml(fm: str) -> list:
     block = rest[: nxt.start()] if nxt else rest
     try:
         data = yaml.safe_load("qx:\n" + block)
-    except Exception:
-        return []
+    except Exception as exc:
+        raise ValueError(f"qx YAML 无法解析：{exc}") from exc
     items = (data or {}).get("qx") or []
-    if not isinstance(items, list):
+    if items is None:
         return []
+    if not isinstance(items, list):
+        raise ValueError("qx 必须是对象列表")
     return [
         item
         for item in items
@@ -149,12 +162,17 @@ def topic_link_from_qx(qid):
 def collect():
     rels = []
     works = {}
+    parse_errors = []
     for p in sorted(ROOT.glob("*.md")):
         text = p.read_text(encoding="utf-8")
         fm, _ = split_frontmatter(text)
         if not fm:
             continue
-        items = extract_qx_yaml(fm)
+        try:
+            items = extract_qx_yaml(fm)
+        except ValueError as exc:
+            parse_errors.append(f"{p.name}: {exc}")
+            continue
         if not items:
             continue
         title = scalar(fm, "title") or p.stem
@@ -177,7 +195,22 @@ def collect():
             rels.append(rel)
             normalized.append(rel)
         works[p.stem] = {"path": p, "title": title, "author": author, "rels": normalized}
-    return works, rels
+    return works, rels, parse_errors
+
+
+def validate(rels, parse_errors):
+    errors = list(parse_errors)
+    warnings = []
+    for r in rels:
+        qid = str(r["qx_id"] or "")
+        expected = TOPIC_CANONICAL_OBJECT.get(qid)
+        if expected and r["object"] != expected:
+            errors.append(
+                f"{r['file']}: {qid} 的 object 应为 {expected!r}，实际为 {r['object']!r}"
+            )
+        if " / " in r["object"]:
+            warnings.append(f"{r['file']}: object 仍使用复名 {r['object']!r}")
+    return errors, warnings
 
 
 def render_work_block(rels):
@@ -185,7 +218,7 @@ def render_work_block(rels):
         START,
         "## 文学意象",
         "",
-        "> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护 YAML；这里用于日常阅读。",
+        "> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护源码中的 YAML，不要在 Obsidian 属性面板中编辑 `qx`。这里用于日常阅读。",
         "",
     ]
     for r in sorted(rels, key=lambda x: (SAL_RANK.get(x["salience"], 9), x["object"])):
@@ -212,17 +245,68 @@ def render_work_block(rels):
     return "\n".join(lines)
 
 
+def split_qx_prefix(fm: str):
+    m = re.search(r"^qx:\s*$", fm, re.M)
+    if not m:
+        return fm.rstrip() + "\n", ""
+    rest = fm[m.end() :]
+    nxt = re.search(r"^[A-Za-z_][A-Za-z0-9_]*:", rest, re.M)
+    if not nxt:
+        return fm.rstrip() + "\n", ""
+    prefix = fm[: m.end() + nxt.start()].rstrip() + "\n"
+    kept = []
+    skipping = True
+    for line in rest[nxt.start() :].splitlines(keepends=True):
+        key = re.match(r"^([A-Za-z_][A-Za-z0-9_]*):", line)
+        if skipping and (line.startswith("- ") or line.startswith("  - ") or (key and key.group(1) in DERIVED_KEYS)):
+            continue
+        skipping = False
+        kept.append(line)
+    return prefix, "".join(kept)
+
+
+def render_derived_fields(rels):
+    buckets = defaultdict(list)
+    for r in sorted(rels, key=lambda x: (SAL_RANK.get(x["salience"], 9), x["object"])):
+        if r["object"] and r["salience"] in ("dominant", "core", "significant"):
+            buckets[r["salience"]].append(r["object"])
+    payload = {
+        "qx_count": len(rels),
+        "qx_dominant": buckets["dominant"],
+        "qx_core": buckets["core"],
+        "qx_significant": buckets["significant"],
+    }
+    return yaml.dump(
+        payload,
+        Dumper=_IndentDumper,
+        allow_unicode=True,
+        sort_keys=False,
+        default_flow_style=False,
+    )
+
+
+def rebuild_work_text(text: str, rels) -> str:
+    fm, body = split_frontmatter(text)
+    if not fm:
+        return text
+    prefix, after = split_qx_prefix(fm)
+    fm = prefix + render_derived_fields(rels) + after
+    body_text = body
+    block = render_work_block(rels).rstrip()
+    block_re = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
+    if block_re.search(body_text):
+        body_text = block_re.sub(block, body_text)
+    else:
+        body_text = body_text.rstrip() + "\n\n" + block + "\n"
+    return "---\n" + fm.rstrip() + "\n---\n" + body_text.lstrip("\n")
+
+
 def update_work_pages(works):
     changed = 0
-    block_re = re.compile(re.escape(START) + r".*?" + re.escape(END), re.S)
     for work in works.values():
         p = work["path"]
         text = p.read_text(encoding="utf-8")
-        block = render_work_block(work["rels"]).rstrip()
-        if block_re.search(text):
-            new_text = block_re.sub(block, text)
-        else:
-            new_text = text.rstrip() + "\n\n" + block + "\n"
+        new_text = rebuild_work_text(text, work["rels"])
         if new_text != text:
             p.write_text(new_text, encoding="utf-8")
             changed += 1
@@ -265,7 +349,7 @@ def write_imagery_index(works, rels):
         "---",
         "# 意象 → 作品",
         "",
-        "> 从 `40 作品` 的正式 `qx` YAML 自动生成。这里用于**从意象进入作品**；具体证据请进入作品页，跨作品解释请进入已激活专题。",
+        "> 从 `40 作品` 的正式 `qx` YAML 自动生成。这里用于**从意象进入作品**；具体证据请进入作品页，跨作品解释请进入已激活专题。已激活专题与常见同义复名按标准 `object` 聚合。",
         "",
         f"当前覆盖 **{len(works)} 部作品 / {len(rels)} 条正式关系**。",
         "",
@@ -316,49 +400,18 @@ def write_imagery_index(works, rels):
     OUT.write_text("\n".join(lines), encoding="utf-8")
 
 
-def write_work_index(works, rels):
-    lines = [
-        "---",
-        "id: WL-TOPIC-QX-WORK-INDEX",
-        "topic_id: WL-TOPIC-QX",
-        "type: derived_index",
-        "name: QX 作品意象导航",
-        "axis: Q",
-        "facet: QX",
-        "source_of_truth: work_qx_relations",
-        "manual_edit: false",
-        "status: ACTIVE",
-        "---",
-        "# 作品 → 意象",
-        "",
-        "> 从 `40 作品` 的正式 `qx` YAML 自动生成。这里用于**从作品进入意象**；点击作品名可查看完整的“文学意象”正文区和文本依据。",
-        "",
-        f"当前覆盖 **{len(works)} 部作品 / {len(rels)} 条正式关系**。",
-        "",
-        "| 作品 | 作者 | 意象数 | 主导 | 核心 | 显著 |",
-        "|---|---|---:|---|---|---|",
-    ]
-    for work in sorted(works.values(), key=lambda x: x["title"]):
-        buckets = defaultdict(list)
-        for r in work["rels"]:
-            buckets[r["salience"]].append(r["object"])
-        lines.append(
-            "| {work} | {author} | {count} | {dominant} | {core} | {significant} |".format(
-                work=work_link(work["title"]),
-                author=md_cell(work["author"]),
-                count=len(work["rels"]),
-                dominant=md_cell("；".join(buckets["dominant"])) or "—",
-                core=md_cell("；".join(buckets["core"])) or "—",
-                significant=md_cell("；".join(buckets["significant"])) or "—",
-            )
-        )
-    lines += ["", "## 返回", "", "- [[00 文学意象与场景]]", "- [[04 意象关系索引]]", ""]
-    OUT_WORKS.write_text("\n".join(lines), encoding="utf-8")
-
 
 if __name__ == "__main__":
-    works, rels = collect()
+    works, rels, parse_errors = collect()
+    errors, warnings = validate(rels, parse_errors)
+    if warnings:
+        print(f"WARN {len(warnings)} 条 object 仍使用作品专名复名，已按原文保留")
+    if errors:
+        for item in errors:
+            print("ERROR", item)
+        raise SystemExit(f"QX 校验失败：{len(errors)} 项")
     changed = update_work_pages(works)
     write_imagery_index(works, rels)
-    write_work_index(works, rels)
-    print(f"works={len(works)} rels={len(rels)} rendered_work_pages={changed}")
+    print(
+        f"works={len(works)} rels={len(rels)} rendered_work_pages={changed} warnings={len(warnings)}"
+    )

@@ -44,7 +44,6 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add '个人通识知识系统_v2_A2/30 世界文学/40 作品' \
-                  '个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/04 意象关系索引.md' \
-                  '个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/05 作品意象一览.md'
+                  '个人通识知识系统_v2_A2/30 世界文学/30 专题/QX 文学意象与场景/04 意象关系索引.md'
           git commit -m 'chore(qx): refresh rendered views'
           git push

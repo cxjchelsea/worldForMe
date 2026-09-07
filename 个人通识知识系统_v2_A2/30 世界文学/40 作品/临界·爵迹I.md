@@ -32,12 +32,16 @@ qx:
   mode: [recurrent, character_bound, relation_bound, ritualized]
   evidence:
   - 爵印反复与魂术师的身份、力量体系和王爵—使徒传承关系绑定；赐印与爵印位置不仅标记人物等级，也决定魂器、魂兽与魂力系统如何依附于身体运作。
+qx_count: 1
+qx_dominant: []
+qx_core:
+  - 爵印
+qx_significant: []
 ---
-
 <!-- QX:GENERATED:START -->
 ## 文学意象
 
-> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护 YAML；这里用于日常阅读。
+> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护源码中的 YAML，不要在 Obsidian 属性面板中编辑 `qx`。这里用于日常阅读。
 
 ### 爵印
 

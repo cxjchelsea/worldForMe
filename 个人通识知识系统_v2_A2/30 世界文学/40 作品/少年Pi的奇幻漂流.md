@@ -81,6 +81,14 @@ qx:
   mode: [singular_pivotal, transformative]
   evidence:
   - 岛屿最初呈现为救援性的乐园，随后暴露出夜间腐蚀和吞噬生命的性质，迫使Pi再次离开暂时安全区。
+qx_count: 4
+qx_dominant:
+  - 救生艇
+  - 海
+  - 理查德·帕克
+qx_core:
+  - 食人岛
+qx_significant: []
 ---
 # 少年Pi的奇幻漂流
 
@@ -105,7 +113,7 @@ qx:
 <!-- QX:GENERATED:START -->
 ## 文学意象
 
-> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护 YAML；这里用于日常阅读。
+> 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护源码中的 YAML，不要在 Obsidian 属性面板中编辑 `qx`。这里用于日常阅读。
 
 ### 救生艇
 
