@@ -2,12 +2,15 @@ filters:
   and:
     - type == "qc2_component"
     - primary_clusters.contains("WL-QC2.1")
+formulas:
+  component_type_zh: if(component_type_zh, component_type_zh, if(component_type == "motif", "母题", if(component_type == "plot_pattern", "叙事结构", if(component_type == "symbol", "意象／符号", if(component_type == "archetype", "文化原型", component_type)))))
+  status_zh: if(status_zh, status_zh, if(status == "ACTIVE_V1_COMPONENT", "已启用", status))
 properties:
   file.name:
     displayName: 组件
-  note.component_type:
+  formula.component_type_zh:
     displayName: 类型
-  note.status:
+  formula.status_zh:
     displayName: 状态
   note.id:
     displayName: 编号
@@ -15,26 +18,46 @@ views:
   - type: table
     name: 全部组件
     groupBy:
-      property: component_type
+      property: component_type_zh
       direction: ASC
-    order: [file.name, component_type, status, id]
+    order:
+      - file.name
+      - formula.component_type_zh
+      - formula.status_zh
+      - id
   - type: table
-    name: motif
+    name: 母题
     filters:
-      and: [component_type == "motif"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "motif"
+    order:
+      - file.name
+      - formula.status_zh
+      - id
   - type: table
-    name: archetype
+    name: 文化原型
     filters:
-      and: [component_type == "archetype"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "archetype"
+    order:
+      - file.name
+      - formula.status_zh
+      - id
   - type: table
-    name: plot_pattern
+    name: 叙事结构
     filters:
-      and: [component_type == "plot_pattern"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "plot_pattern"
+    order:
+      - file.name
+      - formula.status_zh
+      - id
   - type: table
-    name: symbol
+    name: 意象／符号
     filters:
-      and: [component_type == "symbol"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "symbol"
+    order:
+      - file.name
+      - formula.status_zh
+      - id

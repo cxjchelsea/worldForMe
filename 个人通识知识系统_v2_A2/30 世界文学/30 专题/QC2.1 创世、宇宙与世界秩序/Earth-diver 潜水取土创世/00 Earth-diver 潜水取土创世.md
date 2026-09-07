@@ -3,15 +3,17 @@ id: WL-TOPIC-QC21-EARTH-DIVER
 topic_id: WL-TOPIC-QC21-EARTH-DIVER
 type: qc2_component
 component_type: motif
-name: "Earth-diver / 潜水取土创世"
+component_type_zh: 母题
+name: 潜水取土创世
 primary_clusters:
-  - QC2.1
+  - WL-QC2.1
 secondary_clusters:
-  - QC2.2
-status: ACCEPTED_COMPONENT_V1
+  - WL-QC2.2
+status: ACTIVE_V1_COMPONENT
+status_zh: 已启用
 source_status:
-  haudenosaunee_iroquois: external_source_verified_text_only
-  slavic_eastern_european: external_source_verified_text_only
+  QC1.1.11: reference_topic
+  QC1.1.5: reference_topic
 required_invariants:
   - pre_land_water_dominant_world
   - underwater_descent_for_earth_material
@@ -30,58 +32,40 @@ optional_slots:
   - post_flood_setting
 ---
 
-# Earth-diver / 潜水取土创世
+# 潜水取土创世｜母题
 
-Earth-diver 是一种以“从水下取得地质材料并由此形成陆地”为核心因果机制的创世母题。
+> **一句话理解：**世界还是一片水，有人（或动物）潜入水下取回泥土，这些材料变成或扩展成陆地。
 
-## 最低辨识
+## 怎样辨认
 
-```text
-尚无稳定陆地的水占优势世界
-→ 行动者向水下潜降寻找土地材料
-→ 取得 earth / mud / sand / soil
-→ 这些材料直接成为、被使用为或扩展为陆地
-```
-
-核心不是“有水”“有动物”或“有乌龟”，而是：
+需要这条因果链成立：
 
 ```text
-underwater retrieval
-+
-earth material
-+
-causal land formation
+还没有稳定陆地的水世界
+→ 行动者潜入水下寻找土地材料
+→ 取回泥土／沙土
+→ 这些材料直接成为、被用来做成、或自己扩展成陆地
 ```
 
-## 核心来源
+核心不是“有水”“有动物”或“有乌龟”，而是 **潜水取土 → 陆地形成**。
 
-- Haudenosaunee / Iroquois：水下动物取回泥土，泥土置于 Great Turtle 上并形成大地；
-- Slavic / Eastern European Earth-diver：原初海中由 devil / bird 等下潜取土，取得的 earth 参与世界／陆地形成。
+## 不要和它混淆
 
-## 关键边界
+- 不是“故事发生在原初水域”这种背景；
+- 不是 [[../天地分离/00 天地分离|天地分离]]，也不是 [[../原初存在的身体化为世界/00 原初存在的身体化为世界|身体化为世界]]；
+- 不是任何从某处冒出来的创世；
+- 洪水之后再潜水取土、重建陆地，可以共用这套结构，但更常落到 QC2.2，不拿来扩充本簇的核心创世来源。
 
-```text
-Earth-diver
-≠ 原初水域 setting
-≠ 天地分离
-≠ 身体化为世界
-≠ generic emergence
-≠ flood-rebirth by default
-```
+## 当前来源
 
-洪水后“潜水取土重建陆地”可共享结构，但 primary cluster 通常应是 QC2.2，而不是拿来扩充 QC2.1 的核心创世来源。
+- [[QC1.1.11 美洲原住民主要叙事传统]]：Haudenosaunee / Iroquois，水下动物取回泥土，放在大龟背上形成大地
+- [[QC1.1.5 斯拉夫神话与民间传统]]：原初海中由魔鬼或鸟等下潜取土，取得的泥土参与陆地形成
 
-## 产品导航
+## 继续阅读
 
-- [[01 Earth-diver 潜水取土创世.canvas|专题地图]]
-- [[02 Earth-diver 潜水取土创世结构.base|结构 Base]]
-- [[03 Earth-diver 潜水取土创世证据关系.base|证据关系 Base]]
-- [[10 核心结构/01 定义、边界与准入|核心结构]]
+- [[01 Earth-diver 潜水取土创世.canvas|组件地图]]
+- [[02 Earth-diver 潜水取土创世结构.base|结构]]
+- [[10 核心结构/01 定义、边界与准入|定义与边界]]
 - [[11 来源与证据/02 来源谱系|来源与证据]]
 - [[12 跨传统关系/04 跨传统分布|跨传统关系]]
 - [[13 后世重写与阅读/08 后世重写与文化化|后世重写与阅读]]
-- [[20 数据层/00 数据层索引|数据层索引]]
-
-旧的平铺 `01–10` 研究页暂时作为迁移兼容层保留；正式产品入口以 `10/11/12/13` 语义模块为准。
-
-Admission：[[../../../20 节点/Q 主题/QT 类型/QC2.1 M5 Earth-diver Admission Research]]
