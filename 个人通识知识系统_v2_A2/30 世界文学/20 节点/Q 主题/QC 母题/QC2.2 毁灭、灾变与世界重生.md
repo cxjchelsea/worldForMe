@@ -4,6 +4,7 @@ type: literature_node
 name: "毁灭、灾变与世界重生"
 code: QC2.2
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest
@@ -17,7 +18,7 @@ legacy_code: QT8.2.2
  
 # QC2.2 毁灭、灾变与世界重生
 
-> 路径：Q轴 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.2 毁灭、灾变与世界重生**
+> 路径：作品知识网络 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.2 毁灭、灾变与世界重生**
 
 本节点是 QC2 的一级母题簇／问题域容器，不再把整个簇本身当成唯一重型专题。具体 motif / archetype / plot_pattern / symbol 可以多标签挂接到本簇。
 

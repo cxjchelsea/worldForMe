@@ -4,6 +4,7 @@ type: literature_node
 name: 爱情与欲望
 code: QH2.1
 axis: Q
+system_role: work_coordinate
 parent: "WL-QH2"
 level: 3
 coverage_priority: Core
@@ -16,7 +17,7 @@ source_version: "2.10-qh-user"
 
 # QH2.1 爱情与欲望
 
-> 路径：Q轴 → QH2 亲密关系、家庭与成长 → **QH2.1 爱情与欲望**
+> 路径：作品坐标系统 → QH2 亲密关系、家庭与成长 → **QH2.1 爱情与欲望**
 
 ## 主题边界
 

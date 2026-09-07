@@ -1,6 +1,7 @@
 ---
 id: WL-QC12-FIGURE-TRADITION-TEMPLATE-V1
 type: literature_governance_template
+system_role: work_knowledge_network
 scope: QC1.2
 resource_type: figure_tradition
 status: FROZEN_V1

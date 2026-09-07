@@ -4,6 +4,7 @@ type: literature_node
 name: "怪物、异类与文明边界"
 code: QC2.13
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest
@@ -17,7 +18,7 @@ legacy_code: QT8.2.13
  
 # QC2.13 怪物、异类与文明边界
 
-> 路径：Q轴 → QT8 → QC2 世界文化母题与原型 → **QC2.13 怪物、异类与文明边界**
+> 路径：作品知识网络 → QT8 → QC2 世界文化母题与原型 → **QC2.13 怪物、异类与文明边界**
 
 本节点为母题型专题叶节点。正式专题地图应研究：母题定义与边界、子母题／原型词表、核心结构、跨文明实例、文本溯源、传播与独立同构、历史变体、后世作品、与其他母题的关系、支撑书目。
 

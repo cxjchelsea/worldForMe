@@ -1,6 +1,7 @@
 ---
 id: WL-QC12-NARRATIVE-CYCLE-TEMPLATE-V1
 type: literature_governance_template
+system_role: work_knowledge_network
 scope: QC1.2
 resource_type: narrative_cycle
 status: FROZEN_V1

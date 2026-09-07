@@ -4,6 +4,7 @@ type: literature_node
 name: "世界文化母题、原型与叙事结构"
 code: QC2
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC
 level: 3
 coverage_priority: Interest
@@ -17,7 +18,7 @@ legacy_code: QT8.2
  
 # QC2 世界文化母题、原型与叙事结构
 
-> 路径：Q轴 → QC 母题与叙事组件 → **QC2 世界文化母题、原型与叙事结构**
+> 路径：作品知识网络 → QC 母题与叙事组件 → **QC2 世界文化母题、原型与叙事结构**
 
 QC2 是横向抽象层：从不同来源传统、具体叙事传统与作品中识别可重复调用的叙事组件，并比较它们的来源、结构、变体与后世使用。
 

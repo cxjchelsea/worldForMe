@@ -4,6 +4,7 @@ type: literature_node
 name: "欧洲骑士／骑士传奇"
 code: QT8.3.2
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

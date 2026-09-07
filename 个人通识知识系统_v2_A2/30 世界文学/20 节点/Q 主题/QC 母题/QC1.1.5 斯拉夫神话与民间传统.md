@@ -4,6 +4,7 @@ type: literature_node
 name: 斯拉夫神话与民间传统
 code: QC1.1.5
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.1
 level: 5
 coverage_priority: Interest

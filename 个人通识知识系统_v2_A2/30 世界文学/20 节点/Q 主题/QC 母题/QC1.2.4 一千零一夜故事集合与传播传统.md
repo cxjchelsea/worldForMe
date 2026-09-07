@@ -4,6 +4,7 @@ type: literature_node
 name: 一千零一夜故事集合与传播传统
 code: QC1.2.4
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.2
 level: 5
 coverage_priority: Core

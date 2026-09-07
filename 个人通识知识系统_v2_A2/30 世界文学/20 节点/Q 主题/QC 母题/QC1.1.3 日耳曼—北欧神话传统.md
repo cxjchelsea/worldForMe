@@ -4,6 +4,7 @@ type: literature_node
 name: 日耳曼—北欧神话传统
 code: QC1.1.3
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.1
 level: 5
 coverage_priority: Interest

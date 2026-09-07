@@ -3,6 +3,7 @@ id: WL-QC1.2-CANDIDATE-POOL-V1
 type: literature_governance
 name: QC1.2 候选叙事传统池 V1
 axis: Q
+system_role: work_knowledge_network
 scope: QC1.2
 status: ACTIVE
 version: "1.0"

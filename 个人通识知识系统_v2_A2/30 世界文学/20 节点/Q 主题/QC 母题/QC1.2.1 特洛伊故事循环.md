@@ -4,6 +4,7 @@ type: literature_node
 name: 特洛伊故事循环
 code: QC1.2.1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.2
 level: 5
 coverage_priority: Core

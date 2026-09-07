@@ -4,6 +4,7 @@ type: literature_node
 name: 中国神话—传说—民间传统
 code: QC1.1.7
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.1
 level: 5
 coverage_priority: Core

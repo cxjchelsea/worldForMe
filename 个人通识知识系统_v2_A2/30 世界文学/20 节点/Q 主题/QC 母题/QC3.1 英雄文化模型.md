@@ -4,6 +4,7 @@ type: literature_node
 name: 英雄文化模型
 code: QC3.1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC3
 level: 4
 node_kind: taxonomy_cluster

@@ -4,6 +4,7 @@ type: literature_node
 name: 故事循环、人物传说与跨文本叙事传统
 code: QC1.2
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1
 level: 4
 node_kind: taxonomy_branch

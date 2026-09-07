@@ -4,6 +4,7 @@ type: literature_node
 name: "创世、宇宙与世界秩序"
 code: QC2.1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest

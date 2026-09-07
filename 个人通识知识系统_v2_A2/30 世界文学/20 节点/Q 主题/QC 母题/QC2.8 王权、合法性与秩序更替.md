@@ -4,6 +4,7 @@ type: literature_node
 name: "王权、合法性与秩序更替"
 code: QC2.8
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest
@@ -17,7 +18,7 @@ legacy_code: QT8.2.8
  
 # QC2.8 王权、合法性与秩序更替
 
-> 路径：Q轴 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.8 王权、合法性与秩序更替**
+> 路径：作品知识网络 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.8 王权、合法性与秩序更替**
 
 本节点继续作为一级母题簇／问题域容器，不直接承担所有重型研究。其下可以逐步建立 motif / archetype / plot_pattern / symbol 等具体 QC2 component；对象可同时关联其他母题簇，不采用唯一归属树。
 

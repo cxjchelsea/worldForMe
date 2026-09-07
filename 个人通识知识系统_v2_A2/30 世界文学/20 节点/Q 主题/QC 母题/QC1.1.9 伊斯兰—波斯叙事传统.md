@@ -4,6 +4,7 @@ type: literature_node
 name: 伊斯兰—波斯叙事传统
 code: QC1.1.9
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.1
 level: 5
 coverage_priority: Core

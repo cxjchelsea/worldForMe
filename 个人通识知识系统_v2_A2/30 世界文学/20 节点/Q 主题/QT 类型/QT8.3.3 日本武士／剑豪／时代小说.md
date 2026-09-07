@@ -4,6 +4,7 @@ type: literature_node
 name: "日本武士／剑豪／时代小说"
 code: QT8.3.3
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

@@ -4,6 +4,7 @@ type: literature_node
 name: "中国武侠"
 code: QT8.3.1
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest
