@@ -14,6 +14,10 @@ qc2_readiness: HIGH
 work_readiness: MEDIUM
 reuse_value: HIGH
 overlap_risk: "命名人物传统与更广泛的社会匪徒/法外英雄模型可能被错误合并"
+legacy_code: QT8.3.6
+migrated_from: "QT8.3.6 侠盗／Robin Hood／Outlaw"
+migration_mode: SPLIT_QC3_QC1
+qc1_interface: "Robin Hood figure_tradition"
 ---
 
 # Robin Hood / social bandit 模型｜NEEDS_EVIDENCE
@@ -21,6 +25,16 @@ overlap_risk: "命名人物传统与更广泛的社会匪徒/法外英雄模型�
 ## 候选定位
 
 研究 Robin Hood 这一命名人物传统如何与“法外英雄、劫富济贫、私人正义、共同体保护者”等更广泛文化模型发生关系，并判断二者是否应属于同一 QC3 模型还是一主一辅。
+
+## 从旧 QT8.3 迁移而来
+
+旧入口：`QT8.3.6 侠盗／Robin Hood／Outlaw`。
+
+迁移后必须拆开：
+
+- **QC1.2**：Robin Hood 作为命名人物传统的形成、文本生命与版本传播；
+- **QC3**：法外英雄／social bandit 作为历史化文化角色模型；
+- `social bandit` 若作为分析框架使用，必须标注理论来源，不能直接当作跨文化事实。
 
 ## Admission Gate
 
