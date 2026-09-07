@@ -1,0 +1,47 @@
+filters:
+  and:
+    - type == "work"
+    - qc31_knight_priority != null
+properties:
+  file.name:
+    displayName: 作品
+  note.qc31_knight_priority:
+    displayName: 优先级
+  note.qc31_knight_stage:
+    displayName: 模型阶段
+  note.qc31_knight_role:
+    displayName: 文化模型作用
+  note.qc31_knight_dimensions:
+    displayName: 观察维度
+  note.read_status:
+    displayName: 阅读状态
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - qc31_knight_priority
+      - qc31_knight_stage
+      - qc31_knight_role
+      - qc31_knight_dimensions
+      - read_status
+  - type: table
+    name: 核心阅读
+    filters:
+      and:
+        - qc31_knight_priority == "★"
+    order:
+      - file.name
+      - qc31_knight_stage
+      - qc31_knight_role
+      - read_status
+  - type: table
+    name: 补充阅读
+    filters:
+      and:
+        - qc31_knight_priority == "◆"
+    order:
+      - file.name
+      - qc31_knight_stage
+      - qc31_knight_role
+      - read_status
