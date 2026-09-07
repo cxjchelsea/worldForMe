@@ -1,0 +1,64 @@
+filters:
+  and:
+    - type == "qc3_candidate"
+    - cluster_id == "WL-QC3.1"
+properties:
+  file.name:
+    displayName: 候选模型
+  note.status:
+    displayName: 状态
+  note.admission_score:
+    displayName: 准入分
+  note.historical_basis:
+    displayName: 历史基底
+  note.role_ethic_structure:
+    displayName: 角色/伦理结构
+  note.cross_period_life:
+    displayName: 跨时期生命
+  note.qc1_readiness:
+    displayName: QC1 可接性
+  note.qc2_readiness:
+    displayName: QC2 可接性
+  note.work_readiness:
+    displayName: 作品准备度
+  note.reuse_value:
+    displayName: 复用价值
+  note.overlap_risk:
+    displayName: 重叠风险
+views:
+  - type: table
+    name: 全部候选
+    order:
+      - file.name
+      - status
+      - admission_score
+      - historical_basis
+      - role_ethic_structure
+      - cross_period_life
+      - qc1_readiness
+      - qc2_readiness
+      - work_readiness
+      - reuse_value
+      - overlap_risk
+  - type: table
+    name: Pilot与可准入
+    filters:
+      or:
+        - status == "PILOT"
+        - status == "READY_FOR_ADMISSION"
+    order:
+      - file.name
+      - status
+      - admission_score
+      - qc1_readiness
+      - qc2_readiness
+      - work_readiness
+  - type: table
+    name: 待补证据
+    filters:
+      and:
+        - status == "NEEDS_EVIDENCE"
+    order:
+      - file.name
+      - admission_score
+      - overlap_risk
