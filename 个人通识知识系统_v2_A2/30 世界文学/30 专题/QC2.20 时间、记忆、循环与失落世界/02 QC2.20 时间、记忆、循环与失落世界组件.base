@@ -17,24 +17,44 @@ views:
     groupBy:
       property: component_type
       direction: ASC
-    order: [file.name, component_type, status, id]
+    order:
+      - file.name
+      - component_type
+      - status
+      - id
   - type: table
     name: motif
     filters:
-      and: [component_type == "motif"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "motif"
+    order:
+      - file.name
+      - status
+      - id
   - type: table
     name: archetype
     filters:
-      and: [component_type == "archetype"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "archetype"
+    order:
+      - file.name
+      - status
+      - id
   - type: table
     name: plot_pattern
     filters:
-      and: [component_type == "plot_pattern"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "plot_pattern"
+    order:
+      - file.name
+      - status
+      - id
   - type: table
     name: symbol
     filters:
-      and: [component_type == "symbol"]
-    order: [file.name, status, id]
+      and:
+        - component_type == "symbol"
+    order:
+      - file.name
+      - status
+      - id
