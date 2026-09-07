@@ -32,7 +32,7 @@ QC1.2 可以容纳四类主要对象：
 | narrative_cycle | 围绕共同事件、人物群或世界形成的故事循环 | `FROZEN_V1` |
 | figure_tradition | 围绕命名人物长期积累的叙事传统 | `FROZEN_V1` |
 | story_tradition | 一个具体故事在多个文本与文化中的历时生命 | 未验证 |
-| collection_tradition | 故事集、框架叙事或叙事集合的形成、编纂与传播传统 | 未验证 |
+| collection_tradition | 故事集、框架叙事或叙事集合的形成、编纂与传播传统 | `BUILDING / QC1.2.4` |
 
 正式专题仍需独立经过准入判断；模板存在不等于候选自动准入。
 
@@ -56,9 +56,9 @@ QC1.2 可以容纳四类主要对象：
 早期材料
 → 文本见证
 → 关键定型
-→ 分支／人物网络／子传统
+→ 分支／人物网络／集合成员变化
 → 跨语言／地域传播
-→ 重要重写
+→ 重要重写／编辑重组
 → 现代再生产
 ```
 
@@ -82,10 +82,10 @@ QC1.2 研究**有名称、有历史、有文本见证的具体叙事传统**；Q
 又如：
 
 ```text
-“特洛伊故事循环” → QC1.2 narrative_cycle
-“围城” → QC2
-“复仇链” → QC2
-“归乡” → QC2
+“《一千零一夜》集合传统” → QC1.2 collection_tradition
+“框架叙事” → QC2 structure
+“故事中的故事” → QC2 narrative_structure
+单个《阿拉丁》若形成独立历时生命 → 可评估 story_tradition
 ```
 
 不得为了寻找共同母题而抹去具体文本谱系；也不得因为两个传统拥有相似组件，就推断二者存在历史传播。
@@ -141,13 +141,39 @@ modern_figure_reinvention
 15 QC2 组件、证据与阅读
 ```
 
-这证明 QC1.2 可以共享六层产品壳，但不同 resource_type 的中层知识组织机制并不相同。
+## 6. 正在验证的 collection_tradition
 
-## 6. 正式专题准入门槛
+[[QC1.2.4 一千零一夜故事集合与传播传统]] 是第一个 `collection_tradition` 正式样板，已经完成 `boundary_check / source_readiness / admission / topic_build / first coverage_review`，当前状态：`COVERAGE_REVIEW_PASS_WITH_PATCH`。
+
+第一轮已验证候选能力：
+
+```text
+collection_boundary
+frame_narrative
+collection_witness
+manuscript_family
+recension
+story_membership
+membership_status
+addition_removal
+translation_layer
+editorial_recomposition
+source_mode
+```
+
+其核心关系不是固定目录，而是：
+
+```text
+story × collection_witness → membership_status
+```
+
+冻结前仍需用真实数据完成 membership 对照矩阵与一个实际阅读版本的 provenance 实测，因此暂不把 `collection_tradition` 标为 `FROZEN_V1`。
+
+## 7. 正式专题准入门槛
 
 一个对象升格为正式 QC1.2 专题，原则上至少满足以下条件中的四项：
 
-1. **可识别性**：存在相对稳定的故事核、人物核或循环边界；
+1. **可识别性**：存在相对稳定的故事核、人物核或循环／集合边界；
 2. **历时性**：跨越多个时期，不能由单一作品完全解释；
 3. **多文本性**：拥有多个重要文本见证、版本或重写；
 4. **谱系价值**：其演变过程本身具有解释价值；
@@ -156,55 +182,39 @@ modern_figure_reinvention
 
 仅仅“故事很有名”不足以准入。
 
-## 7. 不应升格为 QC1.2 的情况
-
-- 只有单一作品承载、没有独立传统生命的故事；
-- 单个 motif 或 symbol；
-- 只有零散相似案例，没有可追踪谱系；
-- 为了目录完整而人为制造的故事类别；
-- 资料极少且无法建立基本时间线的对象。
-
-这些对象可以继续存在于 QC1.1、QC2 component、40 作品或普通笔记中。
-
 ## 8. 当前正式专题
 
 - [[QC1.2.1 特洛伊故事循环]] — `narrative_cycle`；第一冻结参考样板；`STAGE_FROZEN`。
 - [[QC1.2.2 沃尔松—尼伯龙根叙事传统]] — `narrative_cycle`；第二冻结参考样板；`STAGE_FROZEN`。
 - [[QC1.2.3 亚瑟王叙事传统]] — `figure_tradition`；第一冻结参考样板；`STAGE_FROZEN`。
+- [[QC1.2.4 一千零一夜故事集合与传播传统]] — `collection_tradition`；第一集合型验证样板；`COVERAGE_REVIEW_PASS_WITH_PATCH`。
 
 当前：
 
 ```text
 narrative_cycle → FROZEN_V1
 figure_tradition → FROZEN_V1
+collection_tradition → BUILDING / COVERAGE_REVIEW_PASS_WITH_PATCH
 story_tradition → NOT_FROZEN
-collection_tradition → NOT_FROZEN
 ```
 
-## 9. 下一异质样板
+## 9. 当前异质验证重点
 
-下一步不继续验证第三个 narrative_cycle 或第二个 figure_tradition，而优先选择尚未验证的资源类型。
-
-当前建议：
+QC1.2.4 不建设“1001个故事大全”，而测试：
 
 ```text
-collection_tradition
-→ 《一千零一夜》故事集合与传播传统
+collection identity
+→ collection witness / manuscript family / recension
+→ story membership
+→ translation layer
+→ editorial recomposition
+→ print / global reception
 ```
 
-原因：它最可能迫使系统引入与现有模板不同的核心能力：
+冻结前的两个实测任务：
 
-```text
-manuscript_family
-collection_boundary
-frame_narrative
-story_membership
-translation_layer
-addition_removal
-editorial_recomposition
-```
-
-这比继续做相似专题更有模板验证价值。
+1. 用 3 个代表性 witness × 5–10 个故事建立 membership 矩阵；
+2. 选择一个真实可阅读版本，追踪底本、中介译本、成员选择和编辑路径。
 
 ## 10. 完整候选池
 
