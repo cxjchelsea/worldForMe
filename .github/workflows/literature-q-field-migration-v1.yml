@@ -20,6 +20,9 @@ jobs:
           ref: migration/literature-coordinate-network-20260907
           fetch-depth: 0
 
+      - name: Remove previous generated audit to avoid self-reference
+        run: rm -f -- '个人通识知识系统_v2_A2/30 世界文学/04 系统架构/03 Q字段迁移审计.md'
+
       - name: Apply deterministic QH/QT migration and generate audit
         run: python scripts/migrate_literature_q_fields.py --apply
 
