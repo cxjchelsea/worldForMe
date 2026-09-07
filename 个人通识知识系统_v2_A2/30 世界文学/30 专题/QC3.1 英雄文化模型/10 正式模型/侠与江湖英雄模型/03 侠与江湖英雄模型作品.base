@@ -1,0 +1,53 @@
+filters:
+  and:
+    - type == "work"
+    - qc31_xia_priority != null
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.qc31_xia_priority:
+    displayName: 优先级
+  note.qc31_xia_stage:
+    displayName: 模型阶段
+  note.qc31_xia_text_role:
+    displayName: 文本角色
+  note.qc31_xia_axes:
+    displayName: 观察轴
+  note.qc31_xia_role:
+    displayName: 为什么读
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - qc31_xia_priority
+      - qc31_xia_stage
+      - qc31_xia_text_role
+      - qc31_xia_axes
+  - type: table
+    name: 核心阅读
+    filters:
+      and:
+        - qc31_xia_priority == "★"
+    order:
+      - file.name
+      - read_status
+      - qc31_xia_stage
+      - qc31_xia_text_role
+      - qc31_xia_role
+  - type: table
+    name: 已读锚点
+    filters:
+      and:
+        - read_status == "已读"
+    order:
+      - file.name
+      - qc31_xia_priority
+      - qc31_xia_axes
+      - qc31_xia_role
