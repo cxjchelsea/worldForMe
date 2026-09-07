@@ -118,8 +118,7 @@ independent_candidate
 
 → [[../../30 专题/QC1.2.3 亚瑟王叙事传统/00 亚瑟王叙事传统|QC1.2.3 亚瑟王叙事传统专题主页]]
 
-冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]  
-冻结记录：[[QC1.2 figure_tradition Stage Freeze Review V1]]
+冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]
 
 ## 当前状态
 

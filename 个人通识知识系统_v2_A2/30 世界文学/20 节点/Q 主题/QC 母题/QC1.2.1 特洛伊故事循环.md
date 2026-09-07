@@ -38,7 +38,6 @@ QC1.2 的第一个正式冻结样板，研究围绕特洛伊战争及其前因�
 
 - Coverage Review：[[../../../30 专题/QC1.2.1 特洛伊故事循环/QC1.2.1 Coverage Review V1|QC1.2.1 Coverage Review V1]]
 - narrative_cycle 模板：[[QC1.2 narrative_cycle 专题模板 V1]]
-- Stage Freeze：[[QC1.2 narrative_cycle Stage Freeze Review V1]]
 
 ## 当前状态
 

@@ -60,8 +60,7 @@ QC1.2 是 QC1 的**具体叙事传统层（cross-text narrative traditions）**�
 - [[QC1.2.1 特洛伊故事循环]]
 - [[QC1.2.2 沃尔松—尼伯龙根叙事传统]]
 
-冻结模板：[[QC1.2 narrative_cycle 专题模板 V1]]  
-冻结记录：[[QC1.2 narrative_cycle Stage Freeze Review V1]]
+冻结模板：[[QC1.2 narrative_cycle 专题模板 V1]]
 
 稳定职责：
 
@@ -78,8 +77,7 @@ QC1.2 是 QC1 的**具体叙事传统层（cross-text narrative traditions）**�
 
 参考样板：[[QC1.2.3 亚瑟王叙事传统]]
 
-冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]  
-冻结记录：[[QC1.2 figure_tradition Stage Freeze Review V1]]
+冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]
 
 稳定核心能力：
 
@@ -110,8 +108,7 @@ modern_figure_reinvention
 
 参考样板：[[QC1.2.4 一千零一夜故事集合与传播传统]]
 
-冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]  
-冻结记录：[[QC1.2 collection_tradition Stage Freeze Review V1]]
+冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]
 
 稳定核心能力：
 

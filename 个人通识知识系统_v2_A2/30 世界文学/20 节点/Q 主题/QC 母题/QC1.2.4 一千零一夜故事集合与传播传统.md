@@ -116,8 +116,7 @@ uncertain
 - Stage Freeze：PASS
 
 专题主页：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]  
-冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]  
-冻结记录：[[QC1.2 collection_tradition Stage Freeze Review V1]]
+冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]
 
 ## 当前状态
 

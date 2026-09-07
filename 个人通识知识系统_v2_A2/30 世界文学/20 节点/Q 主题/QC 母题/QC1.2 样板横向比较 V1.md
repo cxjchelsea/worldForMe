@@ -100,8 +100,6 @@ QC1.2.2 = STAGE_FROZEN
 QC1.2 narrative_cycle 专题模板 V1 = FROZEN_V1
 ```
 
-Stage Freeze 记录：[[QC1.2 narrative_cycle Stage Freeze Review V1]]。
-
 ## 7. 适用边界
 
 此次冻结只验证 `narrative_cycle`。

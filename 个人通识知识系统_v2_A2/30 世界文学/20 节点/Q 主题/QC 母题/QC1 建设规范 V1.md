@@ -249,10 +249,6 @@ QC1.2.2 沃尔松—尼伯龙根    → STAGE_FROZEN
 
 → [[QC1.2 narrative_cycle 专题模板 V1]]
 
-冻结记录：
-
-→ [[QC1.2 narrative_cycle Stage Freeze Review V1]]
-
 横向验证依据：
 
 → [[QC1.2 样板横向比较 V1]]

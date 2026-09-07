@@ -54,7 +54,6 @@ QC1.2 的第二个正式冻结样板，研究围绕沃尔松家族、西格鲁�
 
 - Coverage Review：[[../../../30 专题/QC1.2.2 沃尔松—尼伯龙根叙事传统/QC1.2.2 Coverage Review V1|QC1.2.2 Coverage Review V1]]
 - narrative_cycle 模板：[[QC1.2 narrative_cycle 专题模板 V1]]
-- Stage Freeze：[[QC1.2 narrative_cycle Stage Freeze Review V1]]
 - 横向比较：[[QC1.2 样板横向比较 V1]]
 
 ## 当前状态
