@@ -1,0 +1,51 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-QC124"
+properties:
+  file.name:
+    displayName: 结构页
+  note.structure_type_zh:
+    displayName: 认知层
+  note.dimension:
+    displayName: 语义维度
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部结构层
+    order:
+      - file.name
+      - structure_type_zh
+      - dimension
+      - sequence
+  - type: table
+    name: 集合边界与框架
+    filters:
+      and:
+        - dimension == "boundary_frame"
+  - type: table
+    name: 手稿与见证
+    filters:
+      or:
+        - dimension == "manuscript_witness"
+        - dimension == "witness_registry"
+  - type: table
+    name: 成员变化
+    filters:
+      and:
+        - dimension == "membership_variation"
+  - type: table
+    name: 翻译与编辑
+    filters:
+      and:
+        - dimension == "translation_editorial"
+  - type: table
+    name: 印本与全球传播
+    filters:
+      and:
+        - dimension == "print_global"
+  - type: table
+    name: QC2 与证据
+    filters:
+      and:
+        - dimension == "qc2_evidence"
