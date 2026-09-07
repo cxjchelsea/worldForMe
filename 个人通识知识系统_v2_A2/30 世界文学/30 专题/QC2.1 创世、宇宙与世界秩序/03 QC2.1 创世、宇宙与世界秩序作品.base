@@ -1,0 +1,54 @@
+filters:
+  and:
+    - type == "work"
+    - or:
+        - qc2_clusters.contains("WL-QC2.1")
+        - topics.contains("WL-TOPIC-QC21-SKY-EARTH-SEPARATION")
+        - topics.contains("WL-TOPIC-QC21-WORLD-PARENTS-SEPARATION")
+        - topics.contains("WL-TOPIC-QC21-COSMIC-EGG")
+        - topics.contains("WL-TOPIC-QC21-BODY-TO-WORLD")
+        - topics.contains("WL-TOPIC-QC21-WORLD-TREE")
+        - topics.contains("WL-TOPIC-QC21-EARTH-DIVER")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者／归属
+  note.read_status:
+    displayName: 阅读状态
+  note.axis_t:
+    displayName: 时间轴
+  note.axis_r:
+    displayName: 地域／传统
+  note.topics:
+    displayName: 关联专题
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部作品
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_t
+      - axis_r
+      - id
+  - type: table
+    name: 已读
+    filters:
+      and:
+        - read_status == "已读"
+    order:
+      - file.name
+      - author
+      - id
+  - type: table
+    name: 未读
+    filters:
+      and:
+        - read_status != "已读"
+    order:
+      - file.name
+      - author
+      - id
