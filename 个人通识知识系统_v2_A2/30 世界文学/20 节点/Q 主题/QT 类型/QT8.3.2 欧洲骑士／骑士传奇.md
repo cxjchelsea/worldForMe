@@ -14,8 +14,6 @@ status: MIGRATED_LEGACY
 migrated_to: WL-QC31-CAND-KNIGHT
 qt_role: "骑士传奇／骑士文学类型史继续留在 QT"
 qc1_role: "亚瑟王等具体叙事传统由 QC1.2 承担"
-topic_map:
-  - "[[../../../30 专题/QT8.2 欧洲骑士/00 欧洲骑士文学]]"
 source_version: "2.12-qt8-restructure-migrated-qc31"
 ---
 
@@ -30,4 +28,4 @@ QC1 → 亚瑟王等具体叙事传统
 历史 → 真实骑士制度与阶层史
 ```
 
-旧专题资产 [[../../../30 专题/QT8.2 欧洲骑士/00 欧洲骑士文学|欧洲骑士文学]] 保留，后续按职责拆分复用。
+旧 QT8.2 专题入口当前不存在，因此不保留悬空 WikiLink；后续如重新建立正式骑士文学类型史专题，再由 QT 节点挂接。
