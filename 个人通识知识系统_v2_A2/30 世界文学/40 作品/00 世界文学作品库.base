@@ -24,9 +24,9 @@ properties:
     displayName: TH 主题
   note.axis_ty:
     displayName: TY 类型 / 叙事机制
-  note.axis_q:
-    displayName: Q legacy（迁移期）
-  note.qx:
+  note.legacy_axis_q:
+    displayName: Q legacy（历史兼容）
+  note.imagery:
     displayName: IM 意象
   note.cultural_narrative_relations:
     displayName: CN 关系
@@ -52,9 +52,9 @@ views:
       - axis_g
       - axis_th
       - axis_ty
-      - qx
+      - imagery
       - cultural_narrative_relations
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
     name: 未读
@@ -71,7 +71,7 @@ views:
       - axis_g
       - axis_th
       - axis_ty
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
     name: 在读
@@ -88,7 +88,7 @@ views:
       - axis_g
       - axis_th
       - axis_ty
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
     name: 已读
@@ -108,9 +108,9 @@ views:
       - axis_g
       - axis_th
       - axis_ty
-      - qx
+      - imagery
       - cultural_narrative_relations
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
     name: 按时间
@@ -175,7 +175,7 @@ views:
       - read_status
       - axis_th
       - axis_ty
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
     name: 按 TY 类型
@@ -188,18 +188,18 @@ views:
       - read_status
       - axis_ty
       - axis_th
-      - axis_q
+      - legacy_axis_q
       - id
   - type: table
-    name: Q legacy（迁移期）
+    name: Q legacy（历史兼容）
     groupBy:
-      property: axis_q
+      property: legacy_axis_q
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - axis_q
+      - legacy_axis_q
       - axis_th
       - axis_ty
       - id
@@ -209,7 +209,7 @@ views:
       - file.name
       - author
       - read_status
-      - qx
+      - imagery
       - cultural_narrative_relations
       - topic_links
       - id
@@ -244,5 +244,5 @@ views:
       - axis_g
       - axis_th
       - axis_ty
-      - axis_q
+      - legacy_axis_q
       - id
