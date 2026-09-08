@@ -1,12 +1,12 @@
 ---
 id: WL-CN1.2.4
-legacy_id: WL-QC1.2.4
+legacy_id: WL-CN1.2.4
 type: literature_node
 name: 一千零一夜故事集合与传播传统
 code: CN1.2.4
 legacy_code: QC1.2.4
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.2
 level: 5

@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.7"
-legacy_id: WL-QH3.7
+legacy_id: WL-TH3.7
 type: literature_node
 name: 殖民身份
 code: TH3.7

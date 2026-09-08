@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.2
-legacy_id: WL-QC2.2
+legacy_id: WL-CN2.2
 type: literature_node
 name: "毁灭、灾变与世界重生"
 code: CN2.2
 legacy_codes:
-- QC2.2
-- QT8.2.2
+- CN2.2
+- TY8.2.2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

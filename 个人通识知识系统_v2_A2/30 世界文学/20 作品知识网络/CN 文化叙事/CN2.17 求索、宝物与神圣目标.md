@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.17
-legacy_id: WL-QC2.17
+legacy_id: WL-CN2.17
 type: literature_node
 name: "求索、宝物与神圣目标"
 code: CN2.17
 legacy_codes:
-- QC2.17
-- QT8.2.17
+- CN2.17
+- TY8.2.17
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1.5"
-legacy_id: WL-QH1.5
+legacy_id: WL-TH1.5
 type: literature_node
 name: 意义与荒诞
 code: TH1.5

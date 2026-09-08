@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.4
-legacy_id: WL-QC2.4
+legacy_id: WL-CN2.4
 type: literature_node
 name: "造物、创造与失控"
 code: CN2.4
 legacy_codes:
-- QC2.4
-- QT8.2.4
+- CN2.4
+- TY8.2.4
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

@@ -1,14 +1,14 @@
 ---
 id: WL-CN2
-legacy_id: WL-QC2
+legacy_id: WL-CN2
 type: literature_node
 name: "世界文化母题、原型与叙事结构"
 code: CN2
 legacy_codes:
-- QC2
-- QT8.2
+- CN2
+- TY8.2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN
 level: 3

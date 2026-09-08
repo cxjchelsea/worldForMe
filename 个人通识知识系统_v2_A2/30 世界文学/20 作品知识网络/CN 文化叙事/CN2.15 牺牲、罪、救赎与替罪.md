@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.15
-legacy_id: WL-QC2.15
+legacy_id: WL-CN2.15
 type: literature_node
 name: "牺牲、罪、救赎与替罪"
 code: CN2.15
 legacy_codes:
-- QC2.15
-- QT8.2.15
+- CN2.15
+- TY8.2.15
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

@@ -1,6 +1,6 @@
 ---
 id: "WL-TH5"
-legacy_id: WL-QH5
+legacy_id: WL-TH5
 type: literature_node
 name: 权力、制度与秩序
 code: TH5

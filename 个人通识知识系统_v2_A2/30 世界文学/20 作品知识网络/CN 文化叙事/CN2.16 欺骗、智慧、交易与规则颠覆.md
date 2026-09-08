@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.16
-legacy_id: WL-QC2.16
+legacy_id: WL-CN2.16
 type: literature_node
 name: "欺骗、智慧、交易与规则颠覆"
 code: CN2.16
 legacy_codes:
-- QC2.16
-- QT8.2.16
+- CN2.16
+- TY8.2.16
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

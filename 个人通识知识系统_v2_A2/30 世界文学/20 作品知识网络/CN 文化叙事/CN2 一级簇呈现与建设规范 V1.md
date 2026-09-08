@@ -1,6 +1,6 @@
 ---
 id: WL-CN2-CLUSTER-PRESENTATION-SPEC-V1
-legacy_id: WL-QC2-CLUSTER-PRESENTATION-SPEC-V1
+legacy_id: WL-CN2-CLUSTER-PRESENTATION-SPEC-V1
 type: literature_governance
 system_role: work_knowledge_network
 scope: CN2

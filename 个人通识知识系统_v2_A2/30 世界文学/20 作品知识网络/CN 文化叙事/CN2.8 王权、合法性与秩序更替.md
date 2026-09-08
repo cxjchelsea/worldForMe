@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.8
-legacy_id: WL-QC2.8
+legacy_id: WL-CN2.8
 type: literature_node
 name: "王权、合法性与秩序更替"
 code: CN2.8
 legacy_codes:
-- QC2.8
-- QT8.2.8
+- CN2.8
+- TY8.2.8
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

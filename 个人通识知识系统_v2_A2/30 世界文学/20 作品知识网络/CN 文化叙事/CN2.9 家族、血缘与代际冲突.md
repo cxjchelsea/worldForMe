@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.9
-legacy_id: WL-QC2.9
+legacy_id: WL-CN2.9
 type: literature_node
 name: "家族、血缘与代际冲突"
 code: CN2.9
 legacy_codes:
-- QC2.9
-- QT8.2.9
+- CN2.9
+- TY8.2.9
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

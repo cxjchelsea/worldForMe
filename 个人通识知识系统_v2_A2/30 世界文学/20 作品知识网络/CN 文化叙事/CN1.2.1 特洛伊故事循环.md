@@ -1,12 +1,12 @@
 ---
 id: WL-CN1.2.1
-legacy_id: WL-QC1.2.1
+legacy_id: WL-CN1.2.1
 type: literature_node
 name: 特洛伊故事循环
 code: CN1.2.1
 legacy_code: QC1.2.1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.2
 level: 5

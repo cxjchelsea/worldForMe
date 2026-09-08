@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.18
-legacy_id: WL-QC2.18
+legacy_id: WL-CN2.18
 type: literature_node
 name: "战争、围城、复仇与文明冲突"
 code: CN2.18
 legacy_codes:
-- QC2.18
-- QT8.2.18
+- CN2.18
+- TY8.2.18
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

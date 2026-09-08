@@ -1,6 +1,6 @@
 ---
 id: WL-CN3-CLUSTER-CANDIDATE-POOL-V1
-legacy_id: WL-QC3-CLUSTER-CANDIDATE-POOL-V1
+legacy_id: WL-CN3-CLUSTER-CANDIDATE-POOL-V1
 type: literature_governance
 system_role: work_knowledge_network
 scope: CN3_TAXONOMY

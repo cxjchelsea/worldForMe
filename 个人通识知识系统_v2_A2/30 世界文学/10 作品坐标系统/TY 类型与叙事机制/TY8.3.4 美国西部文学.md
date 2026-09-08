@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.4
-legacy_id: WL-QT8.3.4
+legacy_id: WL-TY8.3.4
 type: literature_node
 name: "美国西部文学"
 code: TY8.3.4

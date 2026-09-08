@@ -1,6 +1,6 @@
 ---
 id: WL-TY3
-legacy_id: WL-QT3
+legacy_id: WL-TY3
 type: literature_node
 name: "奇幻"
 code: TY3

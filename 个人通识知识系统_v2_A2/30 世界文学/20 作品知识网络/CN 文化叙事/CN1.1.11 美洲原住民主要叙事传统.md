@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.11
-legacy_id: WL-QC1.1.11
+legacy_id: WL-CN1.1.11
 type: literature_node
 name: 美洲原住民主要叙事传统
 code: CN1.1.11
 legacy_codes:
-- QC1.1.11
-- QT8.1.11
+- CN1.1.11
+- TY8.1.11
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

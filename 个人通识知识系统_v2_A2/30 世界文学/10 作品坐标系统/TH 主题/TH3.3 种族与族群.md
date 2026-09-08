@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.3"
-legacy_id: WL-QH3.3
+legacy_id: WL-TH3.3
 type: literature_node
 name: 种族与族群
 code: TH3.3

@@ -1,6 +1,6 @@
 ---
 id: "WL-TH8"
-legacy_id: WL-QH8
+legacy_id: WL-TH8
 type: literature_node
 name: 信仰、伦理与超越
 code: TH8

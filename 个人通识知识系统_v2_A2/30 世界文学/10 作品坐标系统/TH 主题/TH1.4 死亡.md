@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1.4"
-legacy_id: WL-QH1.4
+legacy_id: WL-TH1.4
 type: literature_node
 name: 死亡
 code: TH1.4

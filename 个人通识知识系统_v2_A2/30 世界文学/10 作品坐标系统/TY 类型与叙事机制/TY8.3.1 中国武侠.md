@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.1
-legacy_id: WL-QT8.3.1
+legacy_id: WL-TY8.3.1
 type: literature_node
 name: "中国武侠"
 code: TY8.3.1

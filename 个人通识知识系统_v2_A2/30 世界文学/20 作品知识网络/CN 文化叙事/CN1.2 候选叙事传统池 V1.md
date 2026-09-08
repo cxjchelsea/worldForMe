@@ -1,10 +1,10 @@
 ---
 id: WL-CN1.2-CANDIDATE-POOL-V1
-legacy_id: WL-QC1.2-CANDIDATE-POOL-V1
+legacy_id: WL-CN1.2-CANDIDATE-POOL-V1
 type: literature_governance
 name: CN1.2 候选叙事传统池 V1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 scope: CN1.2
 status: ACTIVE

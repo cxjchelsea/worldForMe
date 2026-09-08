@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1.2"
-legacy_id: WL-QH1.2
+legacy_id: WL-TH1.2
 type: literature_node
 name: 自由与选择
 code: TH1.2

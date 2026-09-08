@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2.3"
-legacy_id: WL-QH2.3
+legacy_id: WL-TH2.3
 type: literature_node
 name: 家庭与家族
 code: TH2.3

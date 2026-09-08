@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.6
-legacy_id: WL-QC2.6
+legacy_id: WL-CN2.6
 type: literature_node
 name: "英雄诞生、试炼与归乡"
 code: CN2.6
 legacy_codes:
-- QC2.6
-- QT8.2.6
+- CN2.6
+- TY8.2.6
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

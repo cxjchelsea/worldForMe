@@ -1,6 +1,6 @@
 ---
 id: "WL-TH6"
-legacy_id: WL-QH6
+legacy_id: WL-TH6
 type: literature_node
 name: 战争、暴力与创伤
 code: TH6

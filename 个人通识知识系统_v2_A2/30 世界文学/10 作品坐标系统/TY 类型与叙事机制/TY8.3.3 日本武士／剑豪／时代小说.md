@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.3
-legacy_id: WL-QT8.3.3
+legacy_id: WL-TY8.3.3
 type: literature_node
 name: "日本武士／剑豪／时代小说"
 code: TY8.3.3

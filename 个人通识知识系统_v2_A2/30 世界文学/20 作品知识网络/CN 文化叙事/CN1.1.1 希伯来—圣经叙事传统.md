@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.1
-legacy_id: WL-QC1.1.1
+legacy_id: WL-CN1.1.1
 type: literature_node
 name: 希伯来—圣经叙事传统
 code: CN1.1.1
 legacy_codes:
-- QC1.1.1
-- QT8.1.1
+- CN1.1.1
+- TY8.1.1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

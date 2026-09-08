@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.11
-legacy_id: WL-QC2.11
+legacy_id: WL-CN2.11
 type: literature_node
 name: "战士、荣誉与英雄共同体"
 code: CN2.11
 legacy_codes:
-- QC2.11
-- QT8.2.11
+- CN2.11
+- TY8.2.11
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

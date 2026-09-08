@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.19
-legacy_id: WL-QC2.19
+legacy_id: WL-CN2.19
 type: literature_node
 name: "权力、反抗与法外正义"
 code: CN2.19
 legacy_codes:
-- QC2.19
-- QT8.2.19
+- CN2.19
+- TY8.2.19
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

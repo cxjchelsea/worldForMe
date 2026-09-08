@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.6
-legacy_id: WL-QT8.3.6
+legacy_id: WL-TY8.3.6
 type: literature_node
 name: "侠盗／Robin Hood／Outlaw"
 code: TY8.3.6

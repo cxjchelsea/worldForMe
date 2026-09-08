@@ -1,12 +1,12 @@
 ---
 id: WL-CN1.2
-legacy_id: WL-QC1.2
+legacy_id: WL-CN1.2
 type: literature_node
 name: 故事循环、人物传说与跨文本叙事传统
 code: CN1.2
 legacy_code: QC1.2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1
 level: 4

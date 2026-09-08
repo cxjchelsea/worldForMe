@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.1
-legacy_id: WL-QC2.1
+legacy_id: WL-CN2.1
 type: literature_node
 name: "创世、宇宙与世界秩序"
 code: CN2.1
 legacy_codes:
-- QC2.1
-- QT8.2.1
+- CN2.1
+- TY8.2.1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

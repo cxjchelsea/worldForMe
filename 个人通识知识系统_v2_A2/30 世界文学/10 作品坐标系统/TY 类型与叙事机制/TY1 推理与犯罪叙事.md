@@ -1,6 +1,6 @@
 ---
 id: WL-TY1
-legacy_id: WL-QT1
+legacy_id: WL-TY1
 type: literature_node
 name: "推理与犯罪叙事"
 code: TY1

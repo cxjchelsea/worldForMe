@@ -1,6 +1,6 @@
 ---
 id: "WL-TH7"
-legacy_id: WL-QH7
+legacy_id: WL-TH7
 type: literature_node
 name: 历史、记忆与时间
 code: TH7

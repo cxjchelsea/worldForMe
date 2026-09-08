@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.9
-legacy_id: WL-QC1.1.9
+legacy_id: WL-CN1.1.9
 type: literature_node
 name: 伊斯兰—波斯叙事传统
 code: CN1.1.9
 legacy_codes:
-- QC1.1.9
-- QT8.1.9
+- CN1.1.9
+- TY8.1.9
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

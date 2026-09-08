@@ -1,12 +1,12 @@
 ---
 id: WL-CN1.2.3
-legacy_id: WL-QC1.2.3
+legacy_id: WL-CN1.2.3
 type: literature_node
 name: 亚瑟王叙事传统
 code: CN1.2.3
 legacy_code: QC1.2.3
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.2
 level: 5

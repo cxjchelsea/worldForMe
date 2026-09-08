@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.13
-legacy_id: WL-QC2.13
+legacy_id: WL-CN2.13
 type: literature_node
 name: "怪物、异类与文明边界"
 code: CN2.13
 legacy_codes:
-- QC2.13
-- QT8.2.13
+- CN2.13
+- TY8.2.13
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

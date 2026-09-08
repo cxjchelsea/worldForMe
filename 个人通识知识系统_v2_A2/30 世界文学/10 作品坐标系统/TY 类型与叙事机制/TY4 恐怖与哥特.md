@@ -1,6 +1,6 @@
 ---
 id: WL-TY4
-legacy_id: WL-QT4
+legacy_id: WL-TY4
 type: literature_node
 name: "恐怖与哥特"
 code: TY4

@@ -1,6 +1,6 @@
 ---
 id: "WL-TH4"
-legacy_id: WL-QH4
+legacy_id: WL-TH4
 type: literature_node
 name: 社会、阶级与劳动
 code: TH4

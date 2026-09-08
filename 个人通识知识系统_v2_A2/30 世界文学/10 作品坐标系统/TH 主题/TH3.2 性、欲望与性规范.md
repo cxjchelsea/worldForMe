@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.2"
-legacy_id: WL-QH3.2
+legacy_id: WL-TH3.2
 type: literature_node
 name: 性、欲望与性规范
 code: TH3.2

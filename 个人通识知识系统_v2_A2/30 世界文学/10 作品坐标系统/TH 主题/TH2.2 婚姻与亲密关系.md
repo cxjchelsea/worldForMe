@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2.2"
-legacy_id: WL-QH2.2
+legacy_id: WL-TH2.2
 type: literature_node
 name: 婚姻与亲密关系
 code: TH2.2

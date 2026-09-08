@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.1"
-legacy_id: WL-QH3.1
+legacy_id: WL-TH3.1
 type: literature_node
 name: 性别与身体
 code: TH3.1

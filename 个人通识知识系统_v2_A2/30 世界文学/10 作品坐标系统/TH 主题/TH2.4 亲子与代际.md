@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2.4"
-legacy_id: WL-QH2.4
+legacy_id: WL-TH2.4
 type: literature_node
 name: 亲子与代际
 code: TH2.4

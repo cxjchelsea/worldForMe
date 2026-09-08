@@ -1,10 +1,10 @@
 ---
 id: WL-CN1-GOV-V1
-legacy_id: WL-QC1-GOV-V1
+legacy_id: WL-CN1-GOV-V1
 type: literature_governance
 name: CN1 建设规范 V1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 scope: CN1
 status: ACTIVE

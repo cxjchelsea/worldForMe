@@ -1,6 +1,6 @@
 ---
 id: WL-TY5
-legacy_id: WL-QT5
+legacy_id: WL-TY5
 type: literature_node
 name: "冒险与探索叙事"
 code: TY5

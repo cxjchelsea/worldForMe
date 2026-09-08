@@ -1,14 +1,15 @@
 ---
 id: WL-CN
-legacy_id: WL-QC
+legacy_id: WL-CN
 type: literature_network_subsystem
 name: CN 文化叙事网络
 code: CN
+namespace: CN
 legacy_code: QC
 system_role: work_knowledge_network
 network_kind: cultural_narrative
 work_field: cultural_narrative_relations
-legacy_axis: Q
+legacy_axis: "Q"
 legacy_parent: WL-Q
 level: 1
 status: ACTIVE
@@ -16,7 +17,7 @@ source_version: "3.0-coordinate-network"
 ---
 # CN 文化叙事网络
 
-> 新路径：世界文学 → 作品知识网络 → **CN 文化叙事网络**。物理目录 `20 节点/Q 主题/CN 母题/` 仅为兼容旧 WikiLink 保留。
+> 新路径：世界文学 → 作品知识网络 → **CN 文化叙事网络**。物理目录 `20 作品知识网络/CN 文化叙事/` 仅为兼容旧 WikiLink 保留。
 
 CN 不是普通作品坐标，也不追求每部作品都有标签。它研究作品与长期文化叙事网络之间有证据的关系：故事从哪里来、叙事组件如何迁移和变形、这些资源如何进入具体历史社会并形成稳定文化模型。
 
@@ -68,6 +69,6 @@ modern reconstruction ≠ extant original
 
 > 全局治理：[[CN 总体架构与建设规范 V2]]  
 > CN1 专属治理：[[CN1 建设规范 V1]]  
-> 顶层系统：[[../../../04 系统架构/02 作品知识网络|作品知识网络]]
+> 顶层系统：[[../../04 系统架构/02 作品知识网络|作品知识网络]]
 
 核心原则：**树负责找路，网络负责表达知识；结构相似不等于历史传播；专题按真实阅读与研究需求深建，不按编号机械铺满。**

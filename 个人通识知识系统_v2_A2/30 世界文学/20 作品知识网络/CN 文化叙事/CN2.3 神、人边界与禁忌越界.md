@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.3
-legacy_id: WL-QC2.3
+legacy_id: WL-CN2.3
 type: literature_node
 name: "神、人边界与禁忌越界"
 code: CN2.3
 legacy_codes:
-- QC2.3
-- QT8.2.3
+- CN2.3
+- TY8.2.3
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

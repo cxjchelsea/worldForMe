@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3"
-legacy_id: WL-QH3
+legacy_id: WL-TH3
 type: literature_node
 name: 社会身份、身体与归属
 code: TH3

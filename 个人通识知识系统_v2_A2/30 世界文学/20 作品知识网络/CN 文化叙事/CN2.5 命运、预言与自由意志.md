@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.5
-legacy_id: WL-QC2.5
+legacy_id: WL-CN2.5
 type: literature_node
 name: "命运、预言与自由意志"
 code: CN2.5
 legacy_codes:
-- QC2.5
-- QT8.2.5
+- CN2.5
+- TY8.2.5
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

@@ -1,12 +1,12 @@
 ---
 id: WL-CN1.2.2
-legacy_id: WL-QC1.2.2
+legacy_id: WL-CN1.2.2
 type: literature_node
 name: 沃尔松—尼伯龙根叙事传统
 code: CN1.2.2
 legacy_code: QC1.2.2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.2
 level: 5

@@ -1,14 +1,15 @@
 ---
 id: WL-IM
-legacy_id: WL-QX
+legacy_id: WL-IM
 type: literature_network_subsystem
 name: IM 文学意象网络
 code: IM
+namespace: IM
 legacy_code: QX
 system_role: work_knowledge_network
 network_kind: imagery
-work_field: qx
-legacy_axis: Q
+work_field: imagery
+legacy_axis: "Q"
 legacy_parent: WL-Q
 status: ACTIVE
 source_version: "3.0-coordinate-network"
@@ -35,7 +36,7 @@ IM 不再被定义为 Q 轴 facet，而是作品知识网络中的稀疏抽取�
 40 作品/<作品>.md
 ```
 
-作品页中的 `qx:` YAML 是唯一事实源。其他 IM 文档只做结构说明、索引与跨作品比较，不重复维护另一套作品级事实。
+作品页中的 `imagery:` YAML 是唯一事实源。其他 IM 文档只做结构说明、索引与跨作品比较，不重复维护另一套作品级事实。
 
 正式关系的核心字段：
 
@@ -203,7 +204,7 @@ ZERO_IM ≠ COVERAGE_GAP
 
 ## 9｜如何维护
 
-- 作品级事实只改 `40 作品/<作品>.md` 源码中的 `qx:` YAML，不要改生成区，也不要在 Obsidian 属性面板里编辑橙色的 `qx` JSON。
+- 作品级事实只改 `40 作品/<作品>.md` 源码中的 `imagery:` YAML，不要改生成区，也不要在 Obsidian 属性面板里编辑橙色的 `qx` JSON。
 - 属性面板无法展开对象列表；那里的问号和整段 JSON 是显示限制，不是数据损坏。
 - 跨作品解释只写在已激活专题；04、作品页「文学意象」区和 `imagery_count` 等派生字段由脚本生成。`05` 是读取这些派生字段的 Base，不要手改。
 
@@ -216,6 +217,6 @@ ZERO_IM ≠ COVERAGE_GAP
 
 ## 返回
 
-- [[../../../04 系统架构/02 作品知识网络|作品知识网络]]
+- [[../../04 系统架构/02 作品知识网络|作品知识网络]]
 - [[../../30 专题/IM 文学意象与场景/00 文学意象与场景|IM 专题阅读入口]]
-- [[../../../10 轴/Q轴 文学主题与人类问题|旧 Q 内容域兼容入口]]
+- [[../../04 系统架构/05 Q历史兼容说明|旧 Q 内容域兼容入口]]

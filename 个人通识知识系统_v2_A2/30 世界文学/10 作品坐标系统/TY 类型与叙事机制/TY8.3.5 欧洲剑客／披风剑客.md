@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.5
-legacy_id: WL-QT8.3.5
+legacy_id: WL-TY8.3.5
 type: literature_node
 name: "欧洲剑客／披风剑客"
 code: TY8.3.5

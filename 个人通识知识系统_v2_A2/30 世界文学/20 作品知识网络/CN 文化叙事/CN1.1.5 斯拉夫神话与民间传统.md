@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.5
-legacy_id: WL-QC1.1.5
+legacy_id: WL-CN1.1.5
 type: literature_node
 name: 斯拉夫神话与民间传统
 code: CN1.1.5
 legacy_codes:
-- QC1.1.5
-- QT8.1.5
+- CN1.1.5
+- TY8.1.5
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

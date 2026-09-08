@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1
-legacy_id: WL-QC1.1
+legacy_id: WL-CN1.1
 type: literature_node
 name: 神话、宗教与民间叙事来源传统
 code: CN1.1
 legacy_codes:
-- QC1.1
-- QT8.1
+- CN1.1
+- TY8.1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1
 level: 4

@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.2
-legacy_id: WL-QT8.3.2
+legacy_id: WL-TY8.3.2
 type: literature_node
 name: "欧洲骑士／骑士传奇"
 code: TY8.3.2

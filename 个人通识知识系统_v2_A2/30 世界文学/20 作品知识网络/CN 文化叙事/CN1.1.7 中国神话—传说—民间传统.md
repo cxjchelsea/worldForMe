@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.7
-legacy_id: WL-QC1.1.7
+legacy_id: WL-CN1.1.7
 type: literature_node
 name: 中国神话—传说—民间传统
 code: CN1.1.7
 legacy_codes:
-- QC1.1.7
-- QT8.1.7
+- CN1.1.7
+- TY8.1.7
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

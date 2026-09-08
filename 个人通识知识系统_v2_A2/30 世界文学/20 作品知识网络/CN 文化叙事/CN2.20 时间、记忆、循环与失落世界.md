@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.20
-legacy_id: WL-QC2.20
+legacy_id: WL-CN2.20
 type: literature_node
 name: "时间、记忆、循环与失落世界"
 code: CN2.20
 legacy_codes:
-- QC2.20
-- QT8.2.20
+- CN2.20
+- TY8.2.20
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

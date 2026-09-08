@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1.3"
-legacy_id: WL-QH1.3
+legacy_id: WL-TH1.3
 type: literature_node
 name: 孤独
 code: TH1.3

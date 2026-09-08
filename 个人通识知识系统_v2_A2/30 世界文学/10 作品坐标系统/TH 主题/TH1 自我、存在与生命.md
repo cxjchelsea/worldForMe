@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1"
-legacy_id: WL-QH1
+legacy_id: WL-TH1
 type: literature_node
 name: 自我、存在与生命
 code: TH1

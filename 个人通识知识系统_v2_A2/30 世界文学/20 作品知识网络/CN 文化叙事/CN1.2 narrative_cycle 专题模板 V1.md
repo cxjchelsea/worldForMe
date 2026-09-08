@@ -1,6 +1,6 @@
 ---
 id: WL-CN12-NARRATIVE-CYCLE-TEMPLATE-V1
-legacy_id: WL-QC12-NARRATIVE-CYCLE-TEMPLATE-V1
+legacy_id: WL-CN12-NARRATIVE-CYCLE-TEMPLATE-V1
 type: literature_governance_template
 system_role: work_knowledge_network
 scope: CN1.2

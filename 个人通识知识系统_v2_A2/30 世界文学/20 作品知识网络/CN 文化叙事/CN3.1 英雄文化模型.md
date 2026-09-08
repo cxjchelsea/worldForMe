@@ -1,12 +1,12 @@
 ---
 id: WL-CN3.1
-legacy_id: WL-QC3.1
+legacy_id: WL-CN3.1
 type: literature_node
 name: 英雄文化模型
 code: CN3.1
 legacy_code: QC3.1
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN3
 level: 4

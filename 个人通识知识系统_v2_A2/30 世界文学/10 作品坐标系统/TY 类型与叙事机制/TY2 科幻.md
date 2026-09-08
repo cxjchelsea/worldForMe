@@ -1,6 +1,6 @@
 ---
 id: WL-TY2
-legacy_id: WL-QT2
+legacy_id: WL-TY2
 type: literature_node
 name: "科幻"
 code: TY2

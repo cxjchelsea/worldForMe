@@ -1,14 +1,14 @@
 ---
 id: WL-CN1
-legacy_id: WL-QC1
+legacy_id: WL-CN1
 type: literature_node
 name: 世界叙事资源与来源传统
 code: CN1
 legacy_codes:
-- QC1
-- QT8
+- CN1
+- TY8
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN
 level: 3

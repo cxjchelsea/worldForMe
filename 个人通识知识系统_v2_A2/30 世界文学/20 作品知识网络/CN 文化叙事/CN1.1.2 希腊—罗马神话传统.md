@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.2
-legacy_id: WL-QC1.1.2
+legacy_id: WL-CN1.1.2
 type: literature_node
 name: 希腊—罗马神话传统
 code: CN1.1.2
 legacy_codes:
-- QC1.1.2
-- QT8.1.2
+- CN1.1.2
+- TY8.1.2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

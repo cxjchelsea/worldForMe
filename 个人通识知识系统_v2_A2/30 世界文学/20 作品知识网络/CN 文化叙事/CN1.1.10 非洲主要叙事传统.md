@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.10
-legacy_id: WL-QC1.1.10
+legacy_id: WL-CN1.1.10
 type: literature_node
 name: 非洲主要叙事传统
 code: CN1.1.10
 legacy_codes:
-- QC1.1.10
-- QT8.1.10
+- CN1.1.10
+- TY8.1.10
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

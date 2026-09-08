@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2.1"
-legacy_id: WL-QH2.1
+legacy_id: WL-TH2.1
 type: literature_node
 name: 爱情与欲望
 code: TH2.1

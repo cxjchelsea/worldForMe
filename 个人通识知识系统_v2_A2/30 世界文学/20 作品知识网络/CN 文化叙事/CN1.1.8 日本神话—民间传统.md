@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.8
-legacy_id: WL-QC1.1.8
+legacy_id: WL-CN1.1.8
 type: literature_node
 name: 日本神话—民间传统
 code: CN1.1.8
 legacy_codes:
-- QC1.1.8
-- QT8.1.8
+- CN1.1.8
+- TY8.1.8
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

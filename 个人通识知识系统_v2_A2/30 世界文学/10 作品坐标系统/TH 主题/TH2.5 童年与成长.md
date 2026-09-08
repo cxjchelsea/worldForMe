@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2.5"
-legacy_id: WL-QH2.5
+legacy_id: WL-TH2.5
 type: literature_node
 name: 童年与成长
 code: TH2.5

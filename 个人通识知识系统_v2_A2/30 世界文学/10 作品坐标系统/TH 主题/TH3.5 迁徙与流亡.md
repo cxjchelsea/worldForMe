@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.5"
-legacy_id: WL-QH3.5
+legacy_id: WL-TH3.5
 type: literature_node
 name: 迁徙与流亡
 code: TH3.5

@@ -1,6 +1,6 @@
 ---
 id: WL-TY7
-legacy_id: WL-QT7
+legacy_id: WL-TY7
 type: literature_node
 name: "历史叙事"
 code: TY7

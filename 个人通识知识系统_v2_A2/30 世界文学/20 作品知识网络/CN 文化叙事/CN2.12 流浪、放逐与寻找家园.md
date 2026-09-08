@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.12
-legacy_id: WL-QC2.12
+legacy_id: WL-CN2.12
 type: literature_node
 name: "流浪、放逐与寻找家园"
 code: CN2.12
 legacy_codes:
-- QC2.12
-- QT8.2.12
+- CN2.12
+- TY8.2.12
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

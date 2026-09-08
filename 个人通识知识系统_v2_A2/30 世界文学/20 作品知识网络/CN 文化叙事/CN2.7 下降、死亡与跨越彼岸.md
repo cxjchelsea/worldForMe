@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.7
-legacy_id: WL-QC2.7
+legacy_id: WL-CN2.7
 type: literature_node
 name: "下降、死亡与跨越彼岸"
 code: CN2.7
 legacy_codes:
-- QC2.7
-- QT8.2.7
+- CN2.7
+- TY8.2.7
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

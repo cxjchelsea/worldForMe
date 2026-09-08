@@ -1,6 +1,6 @@
 ---
 id: WL-TY6
-legacy_id: WL-QT6
+legacy_id: WL-TY6
 type: literature_node
 name: "乌托邦、反乌托邦与社会想象"
 code: TY6

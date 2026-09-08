@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.10
-legacy_id: WL-QC2.10
+legacy_id: WL-CN2.10
 type: literature_node
 name: "爱、婚姻、欲望与禁忌"
 code: CN2.10
 legacy_codes:
-- QC2.10
-- QT8.2.10
+- CN2.10
+- TY8.2.10
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

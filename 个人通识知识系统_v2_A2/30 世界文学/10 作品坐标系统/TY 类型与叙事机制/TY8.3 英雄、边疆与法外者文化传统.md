@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3
-legacy_id: WL-QT8.3
+legacy_id: WL-TY8.3
 type: literature_node
 name: "英雄、边疆与法外者文化传统"
 code: TY8.3

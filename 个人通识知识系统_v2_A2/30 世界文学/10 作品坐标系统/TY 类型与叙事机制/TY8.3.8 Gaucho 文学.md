@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.8
-legacy_id: WL-QT8.3.8
+legacy_id: WL-TY8.3.8
 type: literature_node
 name: "Gaucho 文学"
 code: TY8.3.8

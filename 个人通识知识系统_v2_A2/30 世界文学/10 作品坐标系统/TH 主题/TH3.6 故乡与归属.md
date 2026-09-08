@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.6"
-legacy_id: WL-QH3.6
+legacy_id: WL-TH3.6
 type: literature_node
 name: 故乡与归属
 code: TH3.6

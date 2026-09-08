@@ -1,14 +1,14 @@
 ---
 id: WL-CN2.14
-legacy_id: WL-QC2.14
+legacy_id: WL-CN2.14
 type: literature_node
 name: "变形、分身与身份不稳定"
 code: CN2.14
 legacy_codes:
-- QC2.14
-- QT8.2.14
+- CN2.14
+- TY8.2.14
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN2
 level: 4

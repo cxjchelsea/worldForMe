@@ -1,12 +1,12 @@
 ---
 id: WL-CN3
-legacy_id: WL-QC3
+legacy_id: WL-CN3
 type: literature_node
 name: 历史化文化叙事传统
 code: CN3
 legacy_code: QC3
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN
 level: 3

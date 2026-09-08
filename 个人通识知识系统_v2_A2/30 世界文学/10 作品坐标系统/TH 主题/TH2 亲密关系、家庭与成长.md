@@ -1,6 +1,6 @@
 ---
 id: "WL-TH2"
-legacy_id: WL-QH2
+legacy_id: WL-TH2
 type: literature_node
 name: 亲密关系、家庭与成长
 code: TH2

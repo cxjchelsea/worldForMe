@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.3
-legacy_id: WL-QC1.1.3
+legacy_id: WL-CN1.1.3
 type: literature_node
 name: 日耳曼—北欧神话传统
 code: CN1.1.3
 legacy_codes:
-- QC1.1.3
-- QT8.1.3
+- CN1.1.3
+- TY8.1.3
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

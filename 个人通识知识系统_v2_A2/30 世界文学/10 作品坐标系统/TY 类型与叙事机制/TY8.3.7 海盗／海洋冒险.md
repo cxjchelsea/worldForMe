@@ -1,6 +1,6 @@
 ---
 id: WL-TY8.3.7
-legacy_id: WL-QT8.3.7
+legacy_id: WL-TY8.3.7
 type: literature_node
 name: "海盗／海洋冒险"
 code: TY8.3.7

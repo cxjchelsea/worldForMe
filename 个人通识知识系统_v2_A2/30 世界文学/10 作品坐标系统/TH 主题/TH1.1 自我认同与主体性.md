@@ -1,6 +1,6 @@
 ---
 id: "WL-TH1.1"
-legacy_id: WL-QH1.1
+legacy_id: WL-TH1.1
 type: literature_node
 name: 自我认同与主体性
 code: TH1.1

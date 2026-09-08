@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.4
-legacy_id: WL-QC1.1.4
+legacy_id: WL-CN1.1.4
 type: literature_node
 name: 凯尔特—不列颠传说传统
 code: CN1.1.4
 legacy_codes:
-- QC1.1.4
-- QT8.1.4
+- CN1.1.4
+- TY8.1.4
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

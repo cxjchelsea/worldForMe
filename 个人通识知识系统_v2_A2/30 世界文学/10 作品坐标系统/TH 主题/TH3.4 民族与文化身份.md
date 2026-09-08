@@ -1,6 +1,6 @@
 ---
 id: "WL-TH3.4"
-legacy_id: WL-QH3.4
+legacy_id: WL-TH3.4
 type: literature_node
 name: 民族与文化身份
 code: TH3.4

@@ -1,14 +1,14 @@
 ---
 id: WL-CN1.1.6
-legacy_id: WL-QC1.1.6
+legacy_id: WL-CN1.1.6
 type: literature_node
 name: 印度神话—史诗传统
 code: CN1.1.6
 legacy_codes:
-- QC1.1.6
-- QT8.1.6
+- CN1.1.6
+- TY8.1.6
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 parent: WL-CN1.1
 level: 5

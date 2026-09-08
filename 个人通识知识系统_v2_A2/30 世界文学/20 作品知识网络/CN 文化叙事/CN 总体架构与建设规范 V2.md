@@ -1,10 +1,10 @@
 ---
 id: WL-CN-GOV-V2
-legacy_id: WL-QC-GOV-V2
+legacy_id: WL-CN-GOV-V2
 type: literature_governance
 name: CN 总体架构与建设规范 V2
 namespace: CN
-legacy_axis: Q
+legacy_axis: "Q"
 system_role: work_knowledge_network
 scope: CN
 status: ACTIVE
