@@ -23,6 +23,15 @@ jobs:
       - name: Apply Q node role and topic Canvas migration
         run: python scripts/migrate_literature_q_node_roles.py --apply
 
+      - name: Fail on Q node metadata conflicts
+        shell: bash
+        run: |
+          report='个人通识知识系统_v2_A2/30 世界文学/04 系统架构/04 Q节点角色迁移审计.md'
+          if ! grep -Fq -- '- metadata 冲突：**0**' "$report"; then
+            echo 'Q node-role migration found metadata conflicts. Review the audit before applying further changes.'
+            exit 1
+          fi
+
       - name: Validate patch formatting
         run: git diff --check
 
