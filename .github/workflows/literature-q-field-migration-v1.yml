@@ -26,6 +26,15 @@ jobs:
       - name: Apply deterministic QH/QT migration and generate audit
         run: python scripts/migrate_literature_q_fields.py --apply
 
+      - name: Fail on non-mechanical legacy Q anomalies
+        shell: bash
+        run: |
+          report='个人通识知识系统_v2_A2/30 世界文学/04 系统架构/03 Q字段迁移审计.md'
+          if ! grep -Fq -- '- 非机械异常：**0** 部' "$report"; then
+            echo 'Q field migration found non-mechanical anomalies. Review the generated audit; automatic migration must not infer them.'
+            exit 1
+          fi
+
       - name: Validate patch formatting
         run: git diff --check
 
