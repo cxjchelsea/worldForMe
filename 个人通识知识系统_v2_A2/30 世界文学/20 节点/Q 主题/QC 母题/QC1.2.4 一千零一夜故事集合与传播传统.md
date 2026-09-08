@@ -16,95 +16,95 @@ build_stage: stage_frozen
 ---
 # QC1.2.4 一千零一夜故事集合与传播传统
 
-QC1.2 的第一个 `collection_tradition` 冻结参考样板。
+QC1.2 的第一个 `collection_tradition` 冻结样板。
 
-本专题研究的不是“《一千零一夜》有哪些故事”，而是：
+本专题研究的不是“一千零一夜故事全集”，而是：
 
-> **一个没有固定终极目录的故事集合，如何在手稿、编纂、印本、翻译与文化再生产中不断改变自己的边界，同时仍然被识别为“同一个集合传统”？**
+> **一个开放、流动、跨语言、跨地域、持续增补的故事集合，如何通过框架叙事、抄本传统、翻译、印刷与现代接受形成可追踪的传播传统？**
 
 ## 核心模型
 
 ```text
-collection identity
+frame narrative
       ↓
-可选 frame_narrative
+story collection
       ↓
-collection witness / manuscript family / recension
+manuscript witnesses
       ↓
-story × witness → membership_status
+regional / linguistic recensions
       ↓
-translation_layer / source_mode
+translation and print circulation
       ↓
-editorial_recomposition
-      ↓
-印本与全球版本生命
+modern canonization and reinvention
 ```
 
-## 已冻结 V1 核心能力
-
-```text
-collection_boundary
-collection_witness
-manuscript_family
-recension
-story_membership
-membership_status
-addition_removal
-translation_layer
-editorial_recomposition
-source_mode
-```
-
-正式支持但不强制：
+## 已冻结的 collection_tradition 能力
 
 ```text
 frame_narrative
-edition_witness
+collection_boundary
+story_membership
+manuscript_witness
+recension
 translation_witness
-source_layer
+print_witness
+provenance_status
+modern_collection_reinvention
 ```
 
-## membership_status V1
+## 与 narrative_cycle / figure_tradition 的差异
+
+QC1.2.1、QC1.2.2 主要通过故事循环与版本分支组织；QC1.2.3 通过中心人物与人物网络组织；QC1.2.4 证明：
+
+- 集合边界可以开放且历史上持续变化；
+- 单篇故事进入集合的时间与路径可能不同；
+- 版本关系不能简单压缩为单一“原本”；
+- 翻译与出版可能反向塑造后世认知中的“经典全集”；
+- provenance 必须与 story membership 分开管理。
+
+## 当前中央证据层
 
 ```text
-core_attested
-branch_attested
-translation_added
-later_print_added
-absent_attested
-uncertain
+框架故事传统
+→ 阿拉伯语抄本见证
+→ 埃及／叙利亚等版本系统
+→ Galland 法译
+→ 欧洲语言转译与印刷
+→ 19—20 世纪全集化与经典化
 ```
 
-注意：状态永远描述 `story × collection_witness`，不是故事本体的永久属性。
+## 当前核心关注
 
-## 边界
+1. 山鲁佐德框架叙事作为集合结构；
+2. 不同阿拉伯语抄本与版本系统；
+3. Galland 翻译及其新增故事的来源问题；
+4. 阿拉丁、阿里巴巴等故事的传播身份；
+5. 欧洲东方主义语境中的接受与再造；
+6. 现代“标准全集”观念如何形成。
 
-### 纳入
+## Membership 与 Provenance 分离
 
-- 山鲁佐德／国王的框架叙事及其集合识别功能；
-- 早期形成与阿拉伯语手稿传统；
-- 不同手稿／版本家族中的故事成员变化；
-- 后期埃及 recension 与阿拉伯语印本；
-- 加朗法译及其对全球集合边界的重构；
-- 迪亚布等口述／书面来源进入翻译传统的过程；
-- 重要现代译本、选本与编辑重组。
+```text
+story_membership:
+  core_witnessed
+  later_attested
+  translation_added
+  modern_canonical
 
-### 不自动纳入
+provenance_status:
+  manuscript_attested
+  oral_source_reported
+  translator_mediated
+  uncertain
+```
 
-- 所有阿拉伯、波斯或中东民间故事；
-- 仅因“东方故事”风格相似而被并入的文本；
-- 《阿拉丁》《阿里巴巴》等单个故事的全部后世改编；
-- 所有现代《一千零一夜》改写作品。
+同一故事可以在现代版本中高度 canonical，但其早期阿拉伯语抄本 provenance 仍不同。
 
-单个故事若形成自己的历时文本生命，另行评估 `story_tradition`。
+## 方法约束
 
-## 证据纪律
-
-- “1001”不是稳定故事数量；
-- 著名译本收录 ≠ 所有早期阿拉伯语 witness 收录；
-- 后期完整印本不能反推早期集合原貌；
-- 翻译、口述采集、单独文本整合、编辑补写和原手稿见证必须区分；
-- `absent_attested` 是正数据，`uncertain` 不能伪装成 absent；
+- 不把现代全集目录倒投射为中世纪固定文本；
+- 不因故事广为人知就假定其属于最早层；
+- 不用单一民族／语言所有权解释跨区域传播；
 - 不使用“原始／伪作”二分取代 provenance。
 
 ## 已完成验证
@@ -116,7 +116,7 @@ uncertain
 - Real-edition Provenance Test：PASS
 - Stage Freeze：PASS
 
-专题主页：[[../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]  
+专题主页：[[../../../30 专题/QC1.2.4 一千零一夜故事集合与传播传统/00 一千零一夜故事集合与传播传统|QC1.2.4 专题主页]]
 冻结模板：[[QC1.2 collection_tradition 专题模板 V1]]
 
 ## 当前状态
