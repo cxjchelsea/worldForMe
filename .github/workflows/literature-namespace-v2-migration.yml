@@ -1,0 +1,53 @@
+name: literature-namespace-v2-migration
+
+on:
+  push:
+    branches:
+      - migration/literature-physical-namespace-20260908
+    paths:
+      - 'scripts/migrate_literature_namespace_v2.py'
+      - '.github/workflows/literature-namespace-v2-migration.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/literature-physical-namespace-20260908
+          fetch-depth: 0
+
+      - name: Apply physical and namespace migration
+        run: python scripts/migrate_literature_namespace_v2.py --apply
+
+      - name: Validate patch formatting
+        run: git diff --check
+
+      - name: Validate Canvas JSON
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          root = Path('个人通识知识系统_v2_A2/30 世界文学')
+          for name in ('01 世界文学总地图.canvas', '02 专题入口.canvas'):
+              json.loads((root / name).read_text(encoding='utf-8'))
+          print('canvas_json=PASS')
+          PY
+
+      - name: Commit migration result
+        shell: bash
+        run: |
+          if git diff --quiet && git diff --cached --quiet; then
+            echo 'No namespace migration changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'migrate(literature): materialize coordinate and network namespaces'
+          git push origin HEAD:migration/literature-physical-namespace-20260908
