@@ -51,6 +51,14 @@ jobs:
               if namespace == 'CN':
                   text = text.replace('物理目录 `20 节点/Q 主题/CN 母题/` 仅为兼容旧 WikiLink 保留。', '当前 canonical 物理目录为 `20 作品知识网络/CN 文化叙事/`；旧 Q 路径仅保存在迁移 provenance 中。')
               path.write_text(text, encoding='utf-8')
+
+          # One pre-existing Markdown hard-break space became a diff-format error
+          # when its WikiLink target was mechanically rewritten. Normalize only
+          # this migrated line rather than stripping intentional spaces globally.
+          topic = Path('个人通识知识系统_v2_A2/30 世界文学/30 专题/CN1.1.2 希腊—罗马神话传统/00 希腊—罗马神话传统.md')
+          text = topic.read_text(encoding='utf-8')
+          text = text.replace('|CN1.1.2 节点]]  \n', '|CN1.1.2 节点]]\n')
+          topic.write_text(text, encoding='utf-8')
           PY
 
       - name: Validate namespace v2 architecture
