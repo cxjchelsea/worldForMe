@@ -1,15 +1,20 @@
 # -*- coding: utf-8 -*-
-"""Read-only validation for the world-literature Obsidian architecture.
+"""Read-only validation for the migrated world-literature Obsidian architecture.
 
-Checks only structural references that can be resolved deterministically:
-- every `.canvas` is valid JSON;
-- every Canvas `file` node points to an existing repository file;
-- every Canvas edge points to existing node ids;
-- explicit path WikiLinks (`[[../...]]`, `[[30 专题/...]]`, etc.) point to an existing file;
-- the work Base exposes canonical `qx` directly and does not require a duplicate `qx_count` fact.
+This is intentionally an architecture gate, not a whole-vault broken-link auditor.
+It validates the files whose semantics or navigation are governed by the
+coordinate/network migration, so unrelated historical link debt in thousands of
+work/topic notes cannot make this migration permanently red.
+
+Checks:
+- the two migrated top-level Canvas files are valid JSON;
+- every file node in those Canvas files points to an existing repository file;
+- every edge in those Canvas files points to existing node ids;
+- explicit path WikiLinks in architecture/governance and Q-node files resolve;
+- the work Base exposes canonical `qx` directly and does not require duplicate `qx_count`.
 
 Bare-name WikiLinks such as `[[某节点]]` are intentionally ignored because Obsidian resolves
-those through vault-wide name lookup and aliases; validating them as filesystem paths would
+those through vault-wide name lookup and aliases; treating them as filesystem paths would
 create false positives.
 """
 
@@ -22,6 +27,22 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 WORLD = REPO / "个人通识知识系统_v2_A2" / "30 世界文学"
 WORK_BASE = WORLD / "40 作品" / "00 世界文学作品库.base"
+
+MIGRATION_CANVASES = (
+    WORLD / "01 世界文学总地图.canvas",
+    WORLD / "02 专题入口.canvas",
+)
+
+# Files/trees whose navigation semantics are part of this migration contract.
+WIKILINK_SCOPE_FILES = (
+    WORLD / "00 世界文学使用规则.md",
+    WORLD / "10 轴" / "Q轴 文学主题与人类问题.md",
+    WORLD / "40 作品" / "01 作品字段规范.md",
+)
+WIKILINK_SCOPE_DIRS = (
+    WORLD / "04 系统架构",
+    WORLD / "20 节点" / "Q 主题",
+)
 
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
 WORLD_ROOT_PREFIXES = {
@@ -64,16 +85,26 @@ def candidate_paths(base: Path, raw_target: str) -> list[Path]:
     return candidates
 
 
+def iter_wikilink_scope() -> list[Path]:
+    paths: set[Path] = set()
+    for path in WIKILINK_SCOPE_FILES:
+        if path.exists():
+            paths.add(path)
+    for directory in WIKILINK_SCOPE_DIRS:
+        if directory.exists():
+            paths.update(directory.rglob("*.md"))
+    return sorted(paths)
+
+
 def validate_wikilinks() -> list[str]:
     errors: list[str] = []
-    for path in sorted(WORLD.rglob("*.md")):
+    for path in iter_wikilink_scope():
         text = path.read_text(encoding="utf-8")
         for match in WIKILINK_RE.finditer(text):
             raw = match.group(1)
             candidates = candidate_paths(path, raw)
             if not candidates:
                 continue
-            # Keep references inside the repository; an escaped path is always invalid here.
             if not all(REPO == c or REPO in c.parents for c in candidates):
                 errors.append(f"WikiLink escapes repository: {path.relative_to(REPO)} -> [[{raw}]]")
                 continue
@@ -84,7 +115,10 @@ def validate_wikilinks() -> list[str]:
 
 def validate_canvases() -> list[str]:
     errors: list[str] = []
-    for path in sorted(WORLD.rglob("*.canvas")):
+    for path in MIGRATION_CANVASES:
+        if not path.exists():
+            errors.append(f"Missing migration Canvas: {path.relative_to(REPO)}")
+            continue
         try:
             data = json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
@@ -133,11 +167,11 @@ def validate_work_base() -> list[str]:
 def main() -> int:
     errors = validate_canvases() + validate_wikilinks() + validate_work_base()
     if errors:
-        print(f"literature_obisidian_validation=FAIL errors={len(errors)}")
+        print(f"literature_obsidian_validation=FAIL errors={len(errors)}")
         for error in errors:
             print(f"ERROR: {error}")
         return 1
-    print("literature_obisidian_validation=PASS errors=0")
+    print("literature_obsidian_validation=PASS errors=0")
     return 0
 
 
