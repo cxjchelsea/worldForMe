@@ -8,6 +8,7 @@ This script is intentionally structural only:
 - QH/QT gain canonical `system_role: work_coordinate`;
 - QX/QC gain canonical `system_role: work_knowledge_network`;
 - old Q-path wording is changed only for explicit navigation breadcrumb lines;
+- migrated Q-node explicit topic links are normalized to their real relative paths;
 - 02 专题入口.canvas is regrouped and stale file nodes whose topic packages do not exist are pruned.
 """
 
@@ -32,9 +33,6 @@ ROLE_BY_DIR = {
 }
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):(?:\s*(.*))?$")
 
-# These ids are legacy topic-entry nodes. Their target topic packages are absent in the
-# current repository. Removing them from the Canvas does NOT delete or rename QT taxonomy
-# nodes under 20 节点; it only removes false navigation promises.
 LEGACY_STALE_TOPIC_NODE_IDS = {
     "qt-myth",
     "qt8",
@@ -83,6 +81,29 @@ def set_scalar(lines: list[str], key: str, value: str, after_keys=("type", "axis
     return lines[:insert_at] + [newline] + lines[insert_at:], True, None
 
 
+def repair_q_navigation_links(body: str) -> str:
+    # All files governed here live one level below `20 节点/Q 主题/`; a link that
+    # starts `../../30 专题/` therefore lands under `20 节点/30 专题` and is wrong.
+    body = body.replace("[[../../30 专题/", "[[../../../30 专题/")
+
+    # These old QT8.1 / QT8.2 topic packages do not exist in the current repository.
+    # Remove only the explicit navigation lines; taxonomy nodes and compatibility codes remain.
+    body = re.sub(
+        r"(?m)^.*\[\[\.\./\.\./\.\./30 专题/QT8\.(?:1 武侠|2 欧洲骑士)/[^\]]+\]\].*\n?",
+        "",
+        body,
+    )
+
+    # QC2.1 currently has no `90 治理/00 QC2.1 治理索引` file. Keep the real topic
+    # homepage link, but remove this stale governance navigation promise.
+    body = re.sub(
+        r"(?m)^.*\[\[\.\./\.\./\.\./30 专题/QC2\.1 创世、宇宙与世界秩序/90 治理/00 QC2\.1 治理索引[^\]]*\]\].*\n?",
+        "",
+        body,
+    )
+    return body
+
+
 def migrate_nodes(apply: bool):
     stats = {k: {"files": 0, "changed": 0, "conflicts": []} for k in ROLE_BY_DIR}
     for dirname, (facet, role, breadcrumb_root) in ROLE_BY_DIR.items():
@@ -102,12 +123,12 @@ def migrate_nodes(apply: bool):
                 stats[dirname]["conflicts"].append(f"{path.relative_to(QROOT).as_posix()}: {conflict}")
                 lines2 = lines
 
-            # Only rewrite explicit breadcrumb prose; do not globally rewrite historical discussion.
             body2 = re.sub(
                 r"(?m)^(>\s*路径：)Q轴(\s*→)",
                 rf"\1{breadcrumb_root}\2",
                 body,
             )
+            body2 = repair_q_navigation_links(body2)
             new_text = "---\n" + "\n".join(lines2) + "\n---\n" + body2
             changed = new_text != text
             if apply and changed:
@@ -158,8 +179,6 @@ def migrate_canvas(apply: bool):
     edges = data.setdefault("edges", [])
     changed = False
 
-    # The old Canvas advertised QT9/QT8 topic packages which are not present in the
-    # repository. Keep taxonomy nodes and compatibility codes, but remove broken topic links.
     changed |= prune_stale_topic_nodes(nodes, edges)
 
     for node in nodes:
@@ -230,12 +249,13 @@ def render_report(stats, canvas_changed):
         lines.append("无。")
     lines += [
         "",
-        "## Canvas 目标结构",
+        "## Canvas / 导航目标结构",
         "",
         "- 原 `Q · 内容域` 组改为 `作品坐标专题 · QH / QT`；",
         "- 原 `axis-q` 节点保留 id 以兼容边关系，但入口改指向 `04 系统架构/01 作品坐标系统.md`；",
         "- 新增 `作品知识网络 · QX / QC` 组，分别进入 QX 与 QC 现有节点；",
-        "- QT8 taxonomy 与兼容代码继续保留；Canvas 中指向不存在的 QT9/QT8 专题包的旧 file node 与相关边已移除。",
+        "- QT8 taxonomy 与兼容代码继续保留；Canvas 中指向不存在的 QT9/QT8 专题包的旧 file node 与相关边已移除；",
+        "- Q 节点内可机械确认的专题相对路径已校正；指向不存在专题/治理文件的旧导航行已移除。",
         "",
     ]
     return "\n".join(lines)
