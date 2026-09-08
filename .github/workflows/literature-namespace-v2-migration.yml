@@ -31,6 +31,27 @@ jobs:
           python scripts/repair_literature_namespace_v2.py
           find '个人通识知识系统_v2_A2/30 世界文学/20 作品知识网络' -type f -name '*.md' -print0 \
             | xargs -0 sed -i 's/^legacy_axis: Q$/legacy_axis: "Q"/'
+          python - <<'PY'
+          from pathlib import Path
+
+          root = Path('个人通识知识系统_v2_A2/30 世界文学/20 作品知识网络')
+          specs = [
+              (root / 'IM 意象/IM 文学意象与场景.md', 'IM'),
+              (root / 'CN 文化叙事/CN 母题与叙事组件.md', 'CN'),
+          ]
+          for path, namespace in specs:
+              text = path.read_text(encoding='utf-8')
+              if f'namespace: {namespace}' not in text.split('---', 2)[1]:
+                  text = text.replace(f'code: {namespace}\n', f'code: {namespace}\nnamespace: {namespace}\n', 1)
+              text = text.replace('legacy_axis: Q', 'legacy_axis: "Q"')
+              if namespace == 'IM':
+                  text = text.replace('work_field: qx', 'work_field: imagery')
+                  text = text.replace('作品页中的 `qx:` YAML', '作品页中的 `imagery:` YAML')
+                  text = text.replace('`qx:`', '`imagery:`')
+              if namespace == 'CN':
+                  text = text.replace('物理目录 `20 节点/Q 主题/CN 母题/` 仅为兼容旧 WikiLink 保留。', '当前 canonical 物理目录为 `20 作品知识网络/CN 文化叙事/`；旧 Q 路径仅保存在迁移 provenance 中。')
+              path.write_text(text, encoding='utf-8')
+          PY
 
       - name: Validate namespace v2 architecture
         run: python scripts/validate_literature_obsidian_links.py
