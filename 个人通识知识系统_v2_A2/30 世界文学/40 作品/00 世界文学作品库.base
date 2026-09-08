@@ -26,8 +26,8 @@ properties:
     displayName: QT 类型 / 叙事机制
   note.axis_q:
     displayName: Q legacy（迁移期）
-  note.qx_count:
-    displayName: QX 意象数
+  note.qx:
+    displayName: QX 意象
   note.qc_relations:
     displayName: QC 关系
   note.id:
@@ -52,7 +52,7 @@ views:
       - axis_g
       - axis_qh
       - axis_qt
-      - qx_count
+      - qx
       - qc_relations
       - axis_q
       - id
@@ -108,7 +108,7 @@ views:
       - axis_g
       - axis_qh
       - axis_qt
-      - qx_count
+      - qx
       - qc_relations
       - axis_q
       - id
@@ -209,7 +209,7 @@ views:
       - file.name
       - author
       - read_status
-      - qx_count
+      - qx
       - qc_relations
       - topic_links
       - id
