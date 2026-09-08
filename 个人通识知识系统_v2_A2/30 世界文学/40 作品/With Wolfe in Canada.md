@@ -15,16 +15,16 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
-axis_qh: []
-axis_qt:
-- "QT5 冒险与探索叙事"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY5 冒险与探索叙事"
+legacy_axis_q:
 - QT5 冒险与探索叙事
 axis_source: inferred
 topics:
 - WL-TOPIC-G45-ADVENTURE
 topic_links:
-- '[[../30 专题/QT5 冒险与探索叙事/00 冒险文学|冒险文学]]'
+- '[[../30 专题/TY5 冒险与探索叙事/00 冒险文学|冒险文学]]'
 adventure_priority: ◆
 adventure_history_cluster: 帝国冒险与Lost World黄金时代
 adventure_axes: []
@@ -43,7 +43,7 @@ batch1_source_refs:
 
 ## 专题位置
 
-- [[../30 专题/QT5 冒险与探索叙事/00 冒险文学|冒险文学]]
+- [[../30 专题/TY5 冒险与探索叙事/00 冒险文学|冒险文学]]
   - 专题优先级：◆
   - 历史位置：帝国冒险与Lost World黄金时代
 

@@ -19,11 +19,11 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh:
-- "QH1 自我、存在与生命"
-- "QH8 信仰、伦理与超越"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH1 自我、存在与生命"
+- "TH8 信仰、伦理与超越"
+axis_ty: []
+legacy_axis_q:
 - "QH1 自我、存在与生命"
 - "QH8 信仰、伦理与超越"
 axis_source: read_calibrated
@@ -48,51 +48,51 @@ t6_mechanism:
 r5_priority: "△"
 r5_tradition: "北美文学综合—具体内部传统待读后校准"
 r5_tradition_stage: "T6 当代全球文学 · 多元身份、数字媒介与全球传播"
-qx:
-- qx_id: QX3.1
+imagery:
+- im_id: IM3.1
   object: 海
-  primary_group: QX3
+  primary_group: IM3
   salience: dominant
   manifestation: 海难之后长期漂流、既提供生存资源又持续制造危险的太平洋
   function: [空间塑造, 世界状态, 人物行动条件, 主题承载]
   mode: [recurrent, spatial_bound, transformative]
   evidence:
   - Pi在海上长期漂流，海洋同时决定食物、水、方向、天气和死亡风险，构成整段生存叙事的世界本体。
-- qx_id: null
+- im_id: null
   object: 救生艇
-  primary_group: QX17
+  primary_group: IM17
   salience: dominant
   manifestation: Pi与理查德·帕克共同占据的狭小漂流空间
   function: [空间塑造, 隔离, 人物行动条件, 关系映射]
   mode: [recurrent, spatial_bound, relation_bound]
   evidence:
   - 救生艇既把Pi与海上死亡隔开，也迫使他与老虎共享有限空间；空间布局直接塑造生存策略与双方关系。
-- qx_id: null
+- im_id: null
   object: 理查德·帕克
-  primary_group: QX5
+  primary_group: IM5
   salience: dominant
   manifestation: 与Pi共同漂流的孟加拉虎
   function: [人物行动条件, 关系映射, 情节推动, 主题承载]
   mode: [recurrent, relation_bound, transformative]
   evidence:
   - 老虎持续构成Pi必须管理的现实危险，同时迫使他保持警觉、建立秩序并维持生存意志；其离去也成为漂流结束的重要情感断点。
-- qx_id: null
+- im_id: null
   object: 食人岛
-  primary_group: QX6
+  primary_group: IM6
   salience: core
   manifestation: 白天提供食物与淡水、夜间显现捕食性的漂浮岛屿
   function: [空间塑造, 情节转折, 对照 / 反讽, 边界 / 阈限]
   mode: [singular_pivotal, transformative]
   evidence:
   - 岛屿最初呈现为救援性的乐园，随后暴露出夜间腐蚀和吞噬生命的性质，迫使Pi再次离开暂时安全区。
-qx_count: 4
-qx_dominant:
+imagery_count: 4
+im_dominant:
   - 救生艇
   - 海
   - 理查德·帕克
-qx_core:
+im_core:
   - 食人岛
-qx_significant: []
+im_significant: []
 ---
 # 少年Pi的奇幻漂流
 
@@ -108,20 +108,20 @@ qx_significant: []
 - R 地域：R10 跨区域文学传统
 - M 思潮：暂不标
 - G 体裁：G3 小说
-- Q 内容：QH1 自我、存在与生命；QH8 信仰、伦理与超越
+- Q 内容：TH1 自我、存在与生命；TH8 信仰、伦理与超越
 
 ## 数据说明
 
 > 本文件是中央作品库的唯一 Work 实体。专题只追加各自属性，不复制作品。
 
-<!-- QX:GENERATED:START -->
+<!-- IM:GENERATED:START -->
 ## 文学意象
 
 > 本节由页首 `qx` YAML 自动生成。作品级意象事实只维护源码中的 YAML，不要在 Obsidian 属性面板中编辑 `qx`。这里用于日常阅读。
 
 ### 救生艇
 
-- **分类**：QX17 道路、交通与旅行场景
+- **分类**：IM17 道路、交通与旅行场景
 - **强度**：主导（`dominant`）
 - **具体表现**：Pi与理查德·帕克共同占据的狭小漂流空间
 - **叙事功能**：空间塑造；隔离；人物行动条件；关系映射
@@ -130,17 +130,17 @@ qx_significant: []
 
 ### 海
 
-- **分类**：QX3 水域与液体
+- **分类**：IM3 水域与液体
 - **强度**：主导（`dominant`）
 - **具体表现**：海难之后长期漂流、既提供生存资源又持续制造危险的太平洋
 - **叙事功能**：空间塑造；世界状态；人物行动条件；主题承载
-- **跨作品专题**：[[../30 专题/QX 文学意象与场景/10 已激活专题/QX3.1 文学中的海/00 文学中的海|文学中的海]]
+- **跨作品专题**：[[../30 专题/IM 文学意象与场景/10 已激活专题/IM3.1 文学中的海/00 文学中的海|文学中的海]]
 - **文本依据**：
   - Pi在海上长期漂流，海洋同时决定食物、水、方向、天气和死亡风险，构成整段生存叙事的世界本体。
 
 ### 理查德·帕克
 
-- **分类**：QX5 动物
+- **分类**：IM5 动物
 - **强度**：主导（`dominant`）
 - **具体表现**：与Pi共同漂流的孟加拉虎
 - **叙事功能**：人物行动条件；关系映射；情节推动；主题承载
@@ -149,11 +149,11 @@ qx_significant: []
 
 ### 食人岛
 
-- **分类**：QX6 自然空间
+- **分类**：IM6 自然空间
 - **强度**：核心（`core`）
 - **具体表现**：白天提供食物与淡水、夜间显现捕食性的漂浮岛屿
 - **叙事功能**：空间塑造；情节转折；对照 / 反讽；边界 / 阈限
 - **文本依据**：
   - 岛屿最初呈现为救援性的乐园，随后暴露出夜间腐蚀和吞噬生命的性质，迫使Pi再次离开暂时安全区。
 
-<!-- QX:GENERATED:END -->
+<!-- IM:GENERATED:END -->

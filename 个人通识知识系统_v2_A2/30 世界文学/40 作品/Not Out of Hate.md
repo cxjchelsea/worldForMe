@@ -25,10 +25,10 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh:
-- "QH4 社会、阶级与劳动"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH4 社会、阶级与劳动"
+axis_ty: []
+legacy_axis_q:
 - "QH4 社会、阶级与劳动"
 ---
 # Not Out of Hate

@@ -25,10 +25,10 @@ axis_m:
 - "M1 早期现代思想与美学"
 axis_g:
 - "G1 诗歌"
-axis_qh:
-- "QH5 权力、制度与秩序"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH5 权力、制度与秩序"
+axis_ty: []
+legacy_axis_q:
 - "QH5 权力、制度与秩序"
 ---
 # Kogan Pyo

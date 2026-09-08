@@ -1,0 +1,29 @@
+---
+id: WL-CN1.1.2
+legacy_id: WL-QC1.1.2
+type: literature_node
+name: 希腊—罗马神话传统
+code: CN1.1.2
+legacy_codes:
+- QC1.1.2
+- QT8.1.2
+namespace: CN
+legacy_axis: Q
+system_role: work_knowledge_network
+parent: WL-CN1.1
+level: 5
+coverage_priority: Core
+node_kind: taxonomy_leaf
+anchorable: true
+topic_map: "[[../../30 专题/CN1.1.2 希腊—罗马神话传统/00 希腊—罗马神话传统]]"
+---
+
+# CN1.1.2 希腊—罗马神话传统
+
+> 样板状态：**CN1.1 V1 冻结参考样板**。与 [[CN1.1.1 希伯来—圣经叙事传统]] 共同用于验证并生成 [[CN1.1 来源传统专题模板 V1]]。
+
+CN1.1 来源传统专题。按四层认知链组织：传统本体与形成结构 → 文本见证与内部演变 → 叙事组件与跨文化关系 → 后世接受与阅读。
+
+研究希腊—罗马神话叙事如何在具体文化环境中形成，经由口传、仪式、表演与书写被保存和重组，并通过史诗、戏剧、编纂和罗马重写成为后世持续调用的叙事资源。
+
+→ [[../../30 专题/CN1.1.2 希腊—罗马神话传统/00 希腊—罗马神话传统]]

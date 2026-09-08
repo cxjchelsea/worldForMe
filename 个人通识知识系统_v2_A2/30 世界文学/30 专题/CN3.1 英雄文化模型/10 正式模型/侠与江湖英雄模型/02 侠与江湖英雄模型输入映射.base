@@ -1,0 +1,45 @@
+filters:
+  and:
+    - qc31_model_id == "WL-CN31-MODEL-XIA-JIANGHU"
+properties:
+  file.name:
+    displayName: 输入对象
+  note.input_layer:
+    displayName: 输入层
+  note.input_role:
+    displayName: 作用
+  note.confidence:
+    displayName: 置信度
+  note.boundary_note:
+    displayName: 边界说明
+views:
+  - type: table
+    name: 全部输入
+    order:
+      - file.name
+      - input_layer
+      - input_role
+      - confidence
+      - boundary_note
+  - type: table
+    name: CN1与CN2
+    filters:
+      or:
+        - input_layer == "CN1"
+        - input_layer == "CN2"
+    order:
+      - file.name
+      - input_layer
+      - input_role
+      - confidence
+  - type: table
+    name: 历史与TY接口
+    filters:
+      or:
+        - input_layer == "HISTORY"
+        - input_layer == "TY"
+    order:
+      - file.name
+      - input_layer
+      - input_role
+      - boundary_note

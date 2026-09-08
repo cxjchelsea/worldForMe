@@ -25,10 +25,10 @@ axis_m:
 - "M2 19世纪文学思潮"
 axis_g:
 - "G3 小说"
-axis_qh:
-- "QH5 权力、制度与秩序"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH5 权力、制度与秩序"
+axis_ty: []
+legacy_axis_q:
 - "QH5 权力、制度与秩序"
 ---
 # Légendes et chansons de gestes canaques

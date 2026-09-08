@@ -17,16 +17,16 @@ axis_m:
 - "M1 早期现代思想与美学"
 axis_g:
 - "G3 小说"
-axis_qh: []
-axis_qt:
-- "QT9 神话、传说与民间叙事"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY9 神话、传说与民间叙事"
+legacy_axis_q:
 - "QT9 神话、传说与民间叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G1-MYTH
 topic_links:
-- '[[../30 专题/QT9 神话、传说与民间叙事/00 世界神话文学|世界神话文学]]'
+- '[[../30 专题/TY9 神话、传说与民间叙事/00 世界神话文学|世界神话文学]]'
 myth_priority: ★
 myth_tradition_cluster: 美洲与大洋洲
 myth_motifs: []
@@ -57,7 +57,7 @@ r9_tradition: "大洋洲与太平洋综合—具体内部传统待读后校准"
 
 ## 专题位置
 
-- [[../30 专题/QT9 神话、传说与民间叙事/00 世界神话文学|世界神话文学]]
+- [[../30 专题/TY9 神话、传说与民间叙事/00 世界神话文学|世界神话文学]]
   - 专题优先级：★
   - 神话传统：美洲与大洋洲
 

@@ -15,16 +15,16 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
-axis_qh: []
-axis_qt:
-- "QT7 历史叙事"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY7 历史叙事"
+legacy_axis_q:
 - QT7 历史叙事
 axis_source: inferred
 topics:
 - WL-TOPIC-G44-HISTORICAL
 topic_links:
-- '[[../30 专题/QT7 历史叙事/00 历史文学|历史文学]]'
+- '[[../30 专题/TY7 历史叙事/00 历史文学|历史文学]]'
 historical_priority: ◆
 historical_history_cluster: 20世纪心理化、古代世界与中世纪
 historical_axes: []
@@ -41,7 +41,7 @@ bibliography_status: metadata_pending
 
 ## 专题位置
 
-- [[../30 专题/QT7 历史叙事/00 历史文学|历史文学]]
+- [[../30 专题/TY7 历史叙事/00 历史文学|历史文学]]
   - 专题优先级：◆
   - 历史位置：20世纪心理化、古代世界与中世纪
 

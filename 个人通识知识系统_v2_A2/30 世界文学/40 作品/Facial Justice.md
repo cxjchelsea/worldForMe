@@ -23,16 +23,16 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh: []
-axis_qt:
-- "QT6 乌托邦、反乌托邦与社会想象"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY6 乌托邦、反乌托邦与社会想象"
+legacy_axis_q:
 - "QT6 乌托邦、反乌托邦与社会想象"
 axis_source: inferred
 topics:
 - WL-TOPIC-G46-DYSTOPIA
 topic_links:
-- '[[../30 专题/QT6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学|反乌托邦文学]]'
+- '[[../30 专题/TY6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学|反乌托邦文学]]'
 dystopia_priority: ◆
 dystopia_history_cluster: 现代经典形成：我们、美丽新世界、1984与冷战
 dystopia_control_modes: []
@@ -55,7 +55,7 @@ r4_tradition: "欧洲文学综合—具体内部传统待读后校准"
 
 ## 专题位置
 
-- [[../30 专题/QT6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学|反乌托邦文学]]
+- [[../30 专题/TY6 乌托邦、反乌托邦与社会想象/00 反乌托邦文学|反乌托邦文学]]
   - 专题优先级：◆
   - 历史位置：现代经典形成：我们、美丽新世界、1984与冷战
 

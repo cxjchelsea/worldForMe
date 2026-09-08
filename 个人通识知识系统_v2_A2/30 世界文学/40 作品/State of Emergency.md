@@ -25,11 +25,11 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh:
-- "QH5 权力、制度与秩序"
-- "QH1 自我、存在与生命"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH5 权力、制度与秩序"
+- "TH1 自我、存在与生命"
+axis_ty: []
+legacy_axis_q:
 - "QH5 权力、制度与秩序"
 - "QH1 自我、存在与生命"
 ---

@@ -23,16 +23,16 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh: []
-axis_qt:
-- "QT4 恐怖与哥特"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY4 恐怖与哥特"
+legacy_axis_q:
 - "QT4 恐怖与哥特"
 axis_source: inferred
 topics:
 - WL-TOPIC-G45-HORROR
 topic_links:
-- '[[../30 专题/QT4 恐怖与哥特/00 恐怖文学|恐怖文学]]'
+- '[[../30 专题/TY4 恐怖与哥特/00 恐怖文学|恐怖文学]]'
 horror_priority: ★
 horror_history_cluster: 文学恐怖、Cosmic与21世纪新分化
 horror_subgenres:
@@ -60,7 +60,7 @@ r5_tradition: "北美文学综合—具体内部传统待读后校准"
 
 ## 专题位置
 
-- [[../30 专题/QT4 恐怖与哥特/00 恐怖文学|恐怖文学]]
+- [[../30 专题/TY4 恐怖与哥特/00 恐怖文学|恐怖文学]]
   - 专题优先级：★
   - 历史位置：文学恐怖、Cosmic与21世纪新分化
   - 结构标签：Haunted House / 鬼屋

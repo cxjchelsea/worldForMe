@@ -17,10 +17,10 @@
 		{"id":"writing","type":"text","x":780,"y":650,"width":250,"height":70,"text":"书写 / 抄写"},
 		{"id":"canon","type":"text","x":1100,"y":650,"width":300,"height":70,"text":"表演 / 教育 / 编纂 / 经典化"},
 		{"id":"forms","type":"text","x":760,"y":810,"width":500,"height":70,"text":"文本与形式（后世分类须谨慎）"},
-		{"id":"poetry","type":"file","x":60,"y":950,"width":260,"height":70,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/G 类型/G1 诗歌.md"},
+		{"id":"poetry","type":"file","x":60,"y":950,"width":260,"height":70,"file":"个人通识知识系统_v2_A2/30 世界文学/10 作品坐标系统/G 体裁/G1 诗歌.md"},
 		{"id":"epic","type":"text","x":400,"y":950,"width":260,"height":70,"text":"史诗、神话与叙事\\n不套用武人类型树"},
-		{"id":"drama","type":"file","x":740,"y":950,"width":260,"height":70,"file":"个人通识知识系统_v2_A2/30 世界文学/20 节点/G 类型/G2 戏剧.md"},
-		{"id":"functional","type":"text","x":1080,"y":950,"width":360,"height":70,"text":"宗教、史传、哲学等功能文本\\nG4 / QT7 / QT9：条件关系"},
+		{"id":"drama","type":"file","x":740,"y":950,"width":260,"height":70,"file":"个人通识知识系统_v2_A2/30 世界文学/10 作品坐标系统/G 体裁/G2 戏剧.md"},
+		{"id":"functional","type":"text","x":1080,"y":950,"width":360,"height":70,"text":"宗教、史传、哲学等功能文本\\nG4 / TY7 / TY9：条件关系"},
 		{"id":"texts","type":"text","x":760,"y":1110,"width":500,"height":80,"text":"核心文本与作品群\\n按历史文本功能分类"},
 		{"id":"legacy","type":"text","x":760,"y":1260,"width":500,"height":70,"text":"经典化与时代遗产"},
 		{"id":"next","type":"file","x":760,"y":1410,"width":500,"height":70,"file":"个人通识知识系统_v2_A2/30 世界文学/30 专题/T1 中古多中心文学世界/00 中古多中心文学世界.md"}

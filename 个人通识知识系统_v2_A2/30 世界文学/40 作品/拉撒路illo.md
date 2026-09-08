@@ -14,16 +14,16 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
-axis_qh:
-- "QH2.5 童年与成长"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH2.5 童年与成长"
+axis_ty: []
+legacy_axis_q:
 - QH2.5 童年与成长
 axis_source: inferred
 topics:
 - WL-TOPIC-G43-BILDUNGSROMAN
 topic_links:
-- '[[../30 专题/QH2.5 童年与成长/00 成长文学|成长文学]]'
+- '[[../30 专题/TH2.5 童年与成长/00 成长文学|成长文学]]'
 growth_priority: △
 growth_history_cluster: 前史：人生历险与教育思想
 growth_axes: []
@@ -40,7 +40,7 @@ bibliography_status: metadata_pending
 
 ## 专题位置
 
-- [[../30 专题/QH2.5 童年与成长/00 成长文学|成长文学]]
+- [[../30 专题/TH2.5 童年与成长/00 成长文学|成长文学]]
   - 专题优先级：△
   - 历史位置：前史：人生历险与教育思想
 

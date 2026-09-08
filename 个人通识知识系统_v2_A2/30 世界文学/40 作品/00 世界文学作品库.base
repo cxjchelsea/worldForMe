@@ -20,16 +20,16 @@ properties:
     displayName: M 思潮 / 美学
   note.axis_g:
     displayName: G 体裁
-  note.axis_qh:
-    displayName: QH 主题
-  note.axis_qt:
-    displayName: QT 类型 / 叙事机制
+  note.axis_th:
+    displayName: TH 主题
+  note.axis_ty:
+    displayName: TY 类型 / 叙事机制
   note.axis_q:
     displayName: Q legacy（迁移期）
   note.qx:
-    displayName: QX 意象
-  note.qc_relations:
-    displayName: QC 关系
+    displayName: IM 意象
+  note.cultural_narrative_relations:
+    displayName: CN 关系
   note.id:
     displayName: 编号
   note.title:
@@ -50,10 +50,10 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - qx
-      - qc_relations
+      - cultural_narrative_relations
       - axis_q
       - id
   - type: table
@@ -69,8 +69,8 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - axis_q
       - id
   - type: table
@@ -86,8 +86,8 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - axis_q
       - id
   - type: table
@@ -106,10 +106,10 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - qx
-      - qc_relations
+      - cultural_narrative_relations
       - axis_q
       - id
   - type: table
@@ -122,8 +122,8 @@ views:
       - author
       - read_status
       - axis_t
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
     name: 按地域
@@ -135,8 +135,8 @@ views:
       - author
       - read_status
       - axis_r
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
     name: 按思潮
@@ -148,8 +148,8 @@ views:
       - author
       - read_status
       - axis_m
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
     name: 按体裁
@@ -161,33 +161,33 @@ views:
       - author
       - read_status
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
-    name: 按 QH 主题
+    name: 按 TH 主题
     groupBy:
-      property: axis_qh
+      property: axis_th
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - axis_q
       - id
   - type: table
-    name: 按 QT 类型
+    name: 按 TY 类型
     groupBy:
-      property: axis_qt
+      property: axis_ty
       direction: ASC
     order:
       - file.name
       - author
       - read_status
-      - axis_qt
-      - axis_qh
+      - axis_ty
+      - axis_th
       - axis_q
       - id
   - type: table
@@ -200,17 +200,17 @@ views:
       - author
       - read_status
       - axis_q
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
-    name: QX / QC 网络关系
+    name: IM / CN 网络关系
     order:
       - file.name
       - author
       - read_status
       - qx
-      - qc_relations
+      - cultural_narrative_relations
       - topic_links
       - id
   - type: table
@@ -226,8 +226,8 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - id
   - type: table
     name: 需复核
@@ -242,7 +242,7 @@ views:
       - axis_r
       - axis_m
       - axis_g
-      - axis_qh
-      - axis_qt
+      - axis_th
+      - axis_ty
       - axis_q
       - id

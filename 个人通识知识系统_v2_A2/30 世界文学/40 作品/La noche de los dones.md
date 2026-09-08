@@ -18,11 +18,11 @@ axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
 - "G3 小说"
-axis_qh: []
-axis_qt:
-- "QT8 英雄、边疆与法外者文化传统"
-- "QT8.6 Gaucho"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY8 英雄、边疆与法外者文化传统"
+- "TY8.6 Gaucho"
+legacy_axis_q:
 - "QT8 英雄、边疆与法外者文化传统"
 - "QT8.6 Gaucho"
 axis_source: inferred
@@ -30,8 +30,8 @@ topics:
 - WL-TOPIC-Q15
 - WL-TOPIC-Q15-GAUCHO
 topic_links:
-- '[[../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学|世界武人、边疆与法外英雄文学]]'
-- '[[../30 专题/QT8.6 Gaucho/00 Gaucho文学|Gaucho文学]]'
+- '[[../30 专题/TY8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学|世界武人、边疆与法外英雄文学]]'
+- '[[../30 专题/TY8.6 Gaucho/00 Gaucho文学|Gaucho文学]]'
 martial_systems:
 - Gaucho
 q15_core_compare: false
@@ -63,7 +63,7 @@ r6_tradition: "南锥体—拉普拉塔文学传统"
 
 ## Q15位置
 
-- [[../30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学|Q15 世界武人英雄体系]]
+- [[../30 专题/TY8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学|Q15 世界武人英雄体系]]
 - 武人系统：Gaucho
 
 ## 数据说明

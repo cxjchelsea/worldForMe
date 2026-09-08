@@ -18,16 +18,16 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
-axis_qh: []
-axis_qt:
-- "QT7 历史叙事"
-axis_q:
+axis_th: []
+axis_ty:
+- "TY7 历史叙事"
+legacy_axis_q:
 - "QT7 历史叙事"
 axis_source: inferred
 topics:
 - WL-TOPIC-G44-HISTORICAL
 topic_links:
-- '[[../30 专题/QT7 历史叙事/00 历史文学|历史文学]]'
+- '[[../30 专题/TY7 历史叙事/00 历史文学|历史文学]]'
 historical_priority: ◆
 historical_history_cluster: 帝国、殖民与全球历史小说
 historical_axes: []
@@ -55,7 +55,7 @@ r3_tradition: "南亚文学综合—具体内部传统待读后校准"
 
 ## 专题位置
 
-- [[../30 专题/QT7 历史叙事/00 历史文学|历史文学]]
+- [[../30 专题/TY7 历史叙事/00 历史文学|历史文学]]
   - 专题优先级：◆
   - 历史位置：帝国、殖民与全球历史小说
 

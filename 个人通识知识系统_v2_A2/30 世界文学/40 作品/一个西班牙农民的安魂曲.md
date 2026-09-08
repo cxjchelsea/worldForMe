@@ -15,16 +15,16 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
-axis_qh:
-- "QH6 战争、暴力与创伤"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH6 战争、暴力与创伤"
+axis_ty: []
+legacy_axis_q:
 - QH6 战争、暴力与创伤
 axis_source: inferred
 topics:
 - WL-TOPIC-Q6-WAR
 topic_links:
-- '[[../30 专题/QH6 战争、暴力与创伤/00 战争文学|战争文学]]'
+- '[[../30 专题/TH6 战争、暴力与创伤/00 战争文学|战争文学]]'
 war_priority: ★
 war_history_stage: 第一次世界大战与意识形态战争
 war_axes: []
@@ -43,7 +43,7 @@ batch5_source_refs:
 
 ## 专题位置
 
-- [[../30 专题/QH6 战争、暴力与创伤/00 战争文学|战争文学]]
+- [[../30 专题/TH6 战争、暴力与创伤/00 战争文学|战争文学]]
   - 优先级：★
   - 历史阶段：第一次世界大战与意识形态战争
 

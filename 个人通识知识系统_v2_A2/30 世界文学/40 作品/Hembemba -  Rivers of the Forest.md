@@ -24,11 +24,11 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G1 诗歌"
-axis_qh:
-- "QH3 身份、身体与归属"
-- "QH2.5 童年与成长"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH3 身份、身体与归属"
+- "TH2.5 童年与成长"
+axis_ty: []
+legacy_axis_q:
 - "QH3 身份、身体与归属"
 - "QH2.5 童年与成长"
 ---

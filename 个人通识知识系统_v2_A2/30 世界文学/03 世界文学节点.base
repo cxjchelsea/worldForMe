@@ -5,8 +5,8 @@ filters:
         - type == "literature_network_subsystem"
     - id.startsWith("WL-")
 formulas:
-  system_layer: 'if(code.startsWith("QX"), "B 作品知识网络", if(code.startsWith("QC"), "B 作品知识网络", "A 作品坐标系统"))'
-  dimension_zh: 'if(code.startsWith("QH"), "QH 主题", if(code.startsWith("QT"), "QT 类型", if(code.startsWith("QX"), "QX 意象网络", if(code.startsWith("QC"), "QC 文化叙事网络", if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 体裁"), "")))))'
+  system_layer: 'if(code.startsWith("IM"), "B 作品知识网络", if(code.startsWith("CN"), "B 作品知识网络", "A 作品坐标系统"))'
+  dimension_zh: 'if(code.startsWith("TH"), "TH 主题", if(code.startsWith("TY"), "TY 类型", if(code.startsWith("IM"), "IM 意象网络", if(code.startsWith("CN"), "CN 文化叙事网络", if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 体裁"), "")))))'
 properties:
   file.name:
     displayName: 节点

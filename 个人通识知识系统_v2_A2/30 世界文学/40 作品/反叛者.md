@@ -15,10 +15,10 @@ axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
 - "G3 小说"
-axis_qh:
-- "QH1 自我、存在与生命"
-axis_qt: []
-axis_q:
+axis_th:
+- "TH1 自我、存在与生命"
+axis_ty: []
+legacy_axis_q:
 - "QH1 自我、存在与生命"
 axis_source: r3_structural_gap_fill
 topics: []
