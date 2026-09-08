@@ -18,6 +18,9 @@ axis_m:
 - "M3 现代主义与先锋派"
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT4 恐怖与哥特"
 axis_q:
 - "QT4 恐怖与哥特"
 axis_source: inferred

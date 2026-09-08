@@ -4,6 +4,7 @@ type: literature_node
 name: "历史叙事"
 code: QT7
 axis: Q
+system_role: work_coordinate
 parent: WL-QT
 level: 2
 coverage_priority: Core
@@ -16,7 +17,7 @@ source_version: "2.11-qt-expand"
 
 # QT7 历史叙事
 
-> 路径：Q轴 → QT 类型与叙事传统 → **QT7 历史叙事**
+> 路径：作品坐标系统 → QT 类型与叙事传统 → **QT7 历史叙事**
 
 历史小说等具有稳定叙事契约：过去被当作可进入的世界来写，而不是只把历史当背景标签。
 

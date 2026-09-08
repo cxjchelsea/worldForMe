@@ -4,6 +4,7 @@ type: literature_node
 name: 世界叙事资源与来源传统
 code: QC1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC
 level: 3
 node_kind: taxonomy_branch

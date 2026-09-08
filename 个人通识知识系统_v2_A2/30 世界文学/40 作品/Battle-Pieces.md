@@ -18,6 +18,9 @@ axis_m:
 - "M2 19世纪文学思潮"
 axis_g:
 - "G3 小说"
+axis_qh:
+- "QH6 战争、暴力与创伤"
+axis_qt: []
 axis_q:
 - "QH6 战争、暴力与创伤"
 axis_source: inferred

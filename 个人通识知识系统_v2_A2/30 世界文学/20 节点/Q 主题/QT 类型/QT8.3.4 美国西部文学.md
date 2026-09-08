@@ -4,6 +4,7 @@ type: literature_node
 name: "美国西部文学"
 code: QT8.3.4
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

@@ -1,6 +1,7 @@
 ---
 id: WL-QC2-CLUSTER-PRESENTATION-SPEC-V1
 type: literature_governance
+system_role: work_knowledge_network
 scope: QC2
 status: ACTIVE_V1
 version: "1.1"

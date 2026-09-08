@@ -3,6 +3,7 @@ id: WL-QC1-GOV-V1
 type: literature_governance
 name: QC1 建设规范 V1
 axis: Q
+system_role: work_knowledge_network
 scope: QC1
 status: ACTIVE
 version: "1.2"

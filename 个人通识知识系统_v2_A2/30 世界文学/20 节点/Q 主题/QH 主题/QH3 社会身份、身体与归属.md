@@ -4,6 +4,7 @@ type: literature_node
 name: 社会身份、身体与归属
 code: QH3
 axis: Q
+system_role: work_coordinate
 parent: "WL-QH"
 level: 2
 coverage_priority: Core
@@ -15,7 +16,7 @@ source_version: "2.10-qh-user"
 
 # QH3 社会身份、身体与归属
 
-> 路径：Q轴 → QH 主题与人类问题 → **QH3 社会身份、身体与归属**
+> 路径：作品坐标系统 → QH 主题与人类问题 → **QH3 社会身份、身体与归属**
 
 问题域。全局子叶如下，不再预建更细号。本域关注主体如何被身体、社会分类、文化共同体、历史关系与迁徙经验定位，以及“我属于哪里／别人把我视为什么”。泛化的自我认识与主体性问题优先进入 QH1.1。
 

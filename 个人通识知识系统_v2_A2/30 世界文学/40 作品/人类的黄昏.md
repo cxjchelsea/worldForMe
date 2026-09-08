@@ -15,6 +15,9 @@ axis_m:
 - "M3.2 先锋派"
 axis_g:
 - "G1 诗歌"
+axis_qh:
+- "QH6 战争、暴力与创伤"
+axis_qt: []
 axis_q:
 - "QH6 战争、暴力与创伤"
 axis_source: manual_m32_structural_gap_fill_v1

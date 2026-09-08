@@ -1,6 +1,7 @@
 ---
 id: WL-QC3-CULTURAL-MODEL-TEMPLATE-V1
 type: literature_governance
+system_role: work_knowledge_network
 scope: QC3
 status: VALIDATED_V1
 validated_by:

@@ -4,6 +4,7 @@ type: literature_node
 name: "英雄、边疆与法外者文化传统"
 code: QT8.3
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8
 level: 3
 coverage_priority: Interest

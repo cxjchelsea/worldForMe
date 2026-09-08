@@ -4,6 +4,7 @@ type: literature_node
 name: 神话、宗教与民间叙事来源传统
 code: QC1.1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1
 level: 4
 node_kind: taxonomy_branch

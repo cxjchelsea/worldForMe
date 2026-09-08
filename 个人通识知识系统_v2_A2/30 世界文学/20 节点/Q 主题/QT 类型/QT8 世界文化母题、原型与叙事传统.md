@@ -4,6 +4,7 @@ type: literature_node
 name: "世界文化母题、原型与叙事传统"
 code: QT8
 axis: Q
+system_role: work_coordinate
 parent: WL-QT
 level: 2
 coverage_priority: Interest

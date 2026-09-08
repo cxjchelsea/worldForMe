@@ -4,6 +4,7 @@ type: literature_node
 name: "恐怖与哥特"
 code: QT4
 axis: Q
+system_role: work_coordinate
 parent: WL-QT
 level: 2
 coverage_priority: Interest
@@ -18,7 +19,7 @@ source_version: "2.11-qt-expand"
 
 # QT4 恐怖与哥特
 
-> 路径：Q轴 → QT 类型与叙事传统 → **QT4 恐怖与哥特**
+> 路径：作品坐标系统 → QT 类型与叙事传统 → **QT4 恐怖与哥特**
 
 哥特是恐怖文学的重要源流，不只是气氛主题。以恐惧、超自然威胁或哥特空间为契约时写本叶。
 

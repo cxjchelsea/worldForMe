@@ -4,6 +4,7 @@ type: literature_node
 name: "神、人边界与禁忌越界"
 code: QC2.3
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest
@@ -17,7 +18,7 @@ legacy_code: QT8.2.3
 
 # QC2.3 神、人边界与禁忌越界
 
-> 路径：Q轴 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.3 神、人边界与禁忌越界**
+> 路径：作品知识网络 → QT8 → QC2 世界文化母题、原型与叙事结构 → **QC2.3 神、人边界与禁忌越界**
 
 本节点继续作为一级母题簇／问题域容器，不等于单一 motif，也不等于巴别塔专题本身。其下可建立 motif / archetype / plot_pattern / symbol 等正式 QC2 component。
 

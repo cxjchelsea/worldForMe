@@ -4,6 +4,7 @@ type: literature_node
 name: "中国武侠"
 code: QT8.3.1
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest
@@ -12,8 +13,6 @@ anchorable: false
 status: MIGRATED_LEGACY
 migrated_to: WL-QC31-CAND-XIA-JIANGHU
 qt_role: "武侠类型史继续留在 QT"
-topic_map:
-  - "[[../../../30 专题/QT8.1 武侠/00 武侠文学]]"
 source_version: "2.12-qt8-restructure-migrated-qc31"
 ---
 
@@ -29,4 +28,4 @@ QT  → 武侠文学类型史
 历史 → 真实侠史／社会史
 ```
 
-旧专题资产 [[../../../30 专题/QT8.1 武侠/00 武侠文学|武侠文学]] 保留，后续由 QC3 正式 Topic Build 按职责复用。
+旧 QT8.1 专题入口当前不存在，因此不保留悬空 WikiLink；后续如重新建立正式武侠类型史专题，再由 QT 节点挂接。

@@ -3,6 +3,7 @@ id: WL-QC1.1-TEMPLATE-V1
 type: literature_governance
 name: QC1.1 来源传统专题模板 V1
 axis: Q
+system_role: work_knowledge_network
 scope: QC1.1
 status: ACTIVE
 version: "1.0"

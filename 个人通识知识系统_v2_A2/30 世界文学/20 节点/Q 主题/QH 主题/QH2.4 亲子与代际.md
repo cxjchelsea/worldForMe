@@ -4,6 +4,7 @@ type: literature_node
 name: 亲子与代际
 code: QH2.4
 axis: Q
+system_role: work_coordinate
 parent: "WL-QH2"
 level: 3
 coverage_priority: Core
@@ -15,7 +16,7 @@ source_version: "2.10-qh-user"
 
 # QH2.4 亲子与代际
 
-> 路径：Q轴 → QH2 亲密关系、家庭与成长 → **QH2.4 亲子与代际**
+> 路径：作品坐标系统 → QH2 亲密关系、家庭与成长 → **QH2.4 亲子与代际**
 
 ## 专题地图
 

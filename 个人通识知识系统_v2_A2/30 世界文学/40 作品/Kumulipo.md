@@ -17,6 +17,9 @@ axis_m:
 - "M1 早期现代思想与美学"
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT9 神话、传说与民间叙事"
 axis_q:
 - "QT9 神话、传说与民间叙事"
 axis_source: inferred

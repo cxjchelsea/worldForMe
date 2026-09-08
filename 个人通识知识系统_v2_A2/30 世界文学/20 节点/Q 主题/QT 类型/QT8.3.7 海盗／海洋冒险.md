@@ -4,6 +4,7 @@ type: literature_node
 name: "海盗／海洋冒险"
 code: QT8.3.7
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

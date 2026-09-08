@@ -1,0 +1,54 @@
+name: literature-q-node-role-migration-v1
+
+on:
+  push:
+    branches:
+      - migration/literature-coordinate-network-20260907
+    paths:
+      - 'scripts/migrate_literature_q_node_roles.py'
+      - '.github/workflows/literature-q-node-role-migration-v1.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: migration/literature-coordinate-network-20260907
+          fetch-depth: 0
+
+      - name: Apply Q node role and topic Canvas migration
+        run: python scripts/migrate_literature_q_node_roles.py --apply
+
+      - name: Fail on Q node metadata conflicts
+        shell: bash
+        run: |
+          report='个人通识知识系统_v2_A2/30 世界文学/04 系统架构/04 Q节点角色迁移审计.md'
+          if ! grep -Fq -- '- metadata 冲突：**0**' "$report"; then
+            echo 'Q node-role migration found metadata conflicts. Review the audit before applying further changes.'
+            exit 1
+          fi
+
+      - name: Validate patch formatting
+        run: git diff --check
+
+      - name: Validate Canvas JSON
+        run: python -m json.tool '个人通识知识系统_v2_A2/30 世界文学/02 专题入口.canvas' >/dev/null
+
+      - name: Commit node roles, Canvas and audit report
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- '个人通识知识系统_v2_A2/30 世界文学/20 节点/Q 主题' \
+                    '个人通识知识系统_v2_A2/30 世界文学/02 专题入口.canvas' \
+                    '个人通识知识系统_v2_A2/30 世界文学/04 系统架构/04 Q节点角色迁移审计.md'
+          if git diff --cached --quiet; then
+            echo "No node-role migration changes to commit."
+          else
+            git commit -m "migrate(literature): assign Q node system roles and regroup topic Canvas"
+            git push origin HEAD:migration/literature-coordinate-network-20260907
+          fi

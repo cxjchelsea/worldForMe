@@ -1,6 +1,7 @@
 ---
 id: WL-QC12-COMPARISON-V1
 type: literature_governance_review
+system_role: work_knowledge_network
 scope: QC1.2
 status: FROZEN_REFERENCE
 version: "1.1"

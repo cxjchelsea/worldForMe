@@ -4,6 +4,7 @@ type: literature_node
 name: "侠盗／Robin Hood／Outlaw"
 code: QT8.3.6
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

@@ -4,6 +4,7 @@ type: literature_node
 name: 沃尔松—尼伯龙根叙事传统
 code: QC1.2.2
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.2
 level: 5
 coverage_priority: Core

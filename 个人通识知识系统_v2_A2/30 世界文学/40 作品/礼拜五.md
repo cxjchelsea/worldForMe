@@ -15,6 +15,9 @@ axis_r: []
 axis_m: []
 axis_g:
 - G3 小说
+axis_qh: []
+axis_qt:
+- "QT5 冒险与探索叙事"
 axis_q:
 - QT5 冒险与探索叙事
 axis_source: inferred

@@ -1,6 +1,7 @@
 ---
 id: WL-QC3-CLUSTER-CANDIDATE-POOL-V1
 type: literature_governance
+system_role: work_knowledge_network
 scope: QC3_TAXONOMY
 status: ACTIVE_V1
 version: "1.0"

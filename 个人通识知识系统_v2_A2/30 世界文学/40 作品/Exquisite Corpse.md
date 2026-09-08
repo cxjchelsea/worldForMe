@@ -23,6 +23,9 @@ axis_m:
 - "M5 战后与当代美学范式"
 axis_g:
 - "G3 小说"
+axis_qh: []
+axis_qt:
+- "QT4 恐怖与哥特"
 axis_q:
 - "QT4 恐怖与哥特"
 axis_source: inferred

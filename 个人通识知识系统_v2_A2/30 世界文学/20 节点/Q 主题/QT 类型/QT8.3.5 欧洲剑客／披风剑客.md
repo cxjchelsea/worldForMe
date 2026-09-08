@@ -4,6 +4,7 @@ type: literature_node
 name: "欧洲剑客／披风剑客"
 code: QT8.3.5
 axis: Q
+system_role: work_coordinate
 parent: WL-QT8.3
 level: 4
 coverage_priority: Interest

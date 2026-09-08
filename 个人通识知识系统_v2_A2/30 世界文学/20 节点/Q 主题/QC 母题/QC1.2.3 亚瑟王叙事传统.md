@@ -4,6 +4,7 @@ type: literature_node
 name: 亚瑟王叙事传统
 code: QC1.2.3
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC1.2
 level: 5
 coverage_priority: Core
@@ -116,7 +117,7 @@ independent_candidate
 
 ## 专题产品
 
-→ [[../../30 专题/QC1.2.3 亚瑟王叙事传统/00 亚瑟王叙事传统|QC1.2.3 亚瑟王叙事传统专题主页]]
+→ [[../../../30 专题/QC1.2.3 亚瑟王叙事传统/00 亚瑟王叙事传统|QC1.2.3 亚瑟王叙事传统专题主页]]
 
 冻结模板：[[QC1.2 figure_tradition 专题模板 V1]]
 

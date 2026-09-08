@@ -22,6 +22,9 @@ axis_m:
 - "M3.1 现代主义 / Modernism"
 axis_g:
 - "G4 散文与随笔"
+axis_qh:
+- "QH1 自我、存在与生命"
+axis_qt: []
 axis_q:
 - "QH1 自我、存在与生命"
 axis_source: inferred

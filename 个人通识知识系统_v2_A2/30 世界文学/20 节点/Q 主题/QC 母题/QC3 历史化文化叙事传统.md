@@ -4,6 +4,7 @@ type: literature_node
 name: 历史化文化叙事传统
 code: QC3
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC
 level: 3
 node_kind: taxonomy_branch
@@ -13,7 +14,7 @@ source_version: "3.1-qc3-taxonomy-candidate-pool-v1"
 
 # QC3 历史化文化叙事传统
 
-> 路径：Q轴 → QC 母题与叙事组件 → **QC3 历史化文化叙事传统**
+> 路径：作品知识网络 → QC 母题与叙事组件 → **QC3 历史化文化叙事传统**
 
 ## 一句话理解
 

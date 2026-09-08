@@ -1,41 +1,72 @@
 filters:
   and:
-    - type == "literature_node"
+    - or:
+        - type == "literature_node"
+        - type == "literature_network_subsystem"
     - id.startsWith("WL-")
 formulas:
-  axis_zh: if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 类型").replace("Q", "Q 主题"), "")
+  system_layer: 'if(code.startsWith("QX"), "B 作品知识网络", if(code.startsWith("QC"), "B 作品知识网络", "A 作品坐标系统"))'
+  dimension_zh: 'if(code.startsWith("QH"), "QH 主题", if(code.startsWith("QT"), "QT 类型", if(code.startsWith("QX"), "QX 意象网络", if(code.startsWith("QC"), "QC 文化叙事网络", if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 体裁"), "")))))'
 properties:
   file.name:
     displayName: 节点
-  formula.axis_zh:
-    displayName: 轴
+  formula.system_layer:
+    displayName: 系统层
+  formula.dimension_zh:
+    displayName: 维度 / 网络
   note.axis:
-    displayName: 轴
+    displayName: 旧轴字段
   note.topic_map:
     displayName: 专题地图
 views:
   - type: table
     name: 全部节点
     groupBy:
-      property: formula.axis_zh
+      property: formula.system_layer
       direction: ASC
     order:
       - file.name
-      - formula.axis_zh
+      - formula.system_layer
+      - formula.dimension_zh
       - topic_map
     columnSize:
       file.name: 285
   - type: table
-    name: 五轴一级节点
+    name: A 作品坐标节点
     filters:
       and:
-        - level == 1
+        - formula.system_layer == "A 作品坐标系统"
     groupBy:
-      property: formula.axis_zh
+      property: formula.dimension_zh
       direction: ASC
     order:
       - file.name
-      - formula.axis_zh
+      - formula.dimension_zh
+      - topic_map
+  - type: table
+    name: B 作品知识网络节点
+    filters:
+      and:
+        - formula.system_layer == "B 作品知识网络"
+    groupBy:
+      property: formula.dimension_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.dimension_zh
+      - topic_map
+  - type: table
+    name: 坐标一级节点
+    filters:
+      and:
+        - formula.system_layer == "A 作品坐标系统"
+        - level == 1
+    groupBy:
+      property: formula.dimension_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.dimension_zh
       - topic_map
   - type: table
     name: 尚未接入专题
@@ -43,9 +74,9 @@ views:
       and:
         - topic_map == null
     groupBy:
-      property: formula.axis_zh
+      property: formula.system_layer
       direction: ASC
     order:
       - file.name
-      - formula.axis_zh
+      - formula.dimension_zh
       - topic_map

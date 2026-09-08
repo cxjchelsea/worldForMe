@@ -4,6 +4,7 @@ type: literature_node
 name: "创世、宇宙与世界秩序"
 code: QC2.1
 axis: Q
+system_role: work_knowledge_network
 parent: WL-QC2
 level: 4
 coverage_priority: Interest
@@ -77,9 +78,7 @@ legacy_code: QT8.2.1
 
 ## 治理后台
 
-→ [[../../../30 专题/QC2.1 创世、宇宙与世界秩序/90 治理/00 QC2.1 治理索引|QC2.1 治理索引]]
-
-通用规范：[[QC2 一级簇呈现与建设规范 V1]]
+当前未建立独立的 QC2.1 治理索引文件，因此不保留悬空入口。治理规则统一参照 [[QC2 一级簇呈现与建设规范 V1]]。
 
 ## 当前状态
 

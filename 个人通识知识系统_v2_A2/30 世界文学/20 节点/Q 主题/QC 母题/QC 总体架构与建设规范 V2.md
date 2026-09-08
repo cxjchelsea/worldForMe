@@ -3,6 +3,7 @@ id: WL-QC-GOV-V2
 type: literature_governance
 name: QC 总体架构与建设规范 V2
 axis: Q
+system_role: work_knowledge_network
 scope: QC
 status: ACTIVE
 version: "2.0"

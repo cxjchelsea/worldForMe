@@ -13,15 +13,23 @@ properties:
   note.topics:
     displayName: 专题编号
   note.axis_t:
-    displayName: 时间
+    displayName: T 时间
   note.axis_r:
-    displayName: 地域
+    displayName: R 地域
   note.axis_m:
-    displayName: 思潮
+    displayName: M 思潮 / 美学
   note.axis_g:
-    displayName: 类型
+    displayName: G 体裁
+  note.axis_qh:
+    displayName: QH 主题
+  note.axis_qt:
+    displayName: QT 类型 / 叙事机制
   note.axis_q:
-    displayName: 主题
+    displayName: Q legacy（迁移期）
+  note.qx:
+    displayName: QX 意象
+  note.qc_relations:
+    displayName: QC 关系
   note.id:
     displayName: 编号
   note.title:
@@ -42,6 +50,10 @@ views:
       - axis_r
       - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
+      - qx
+      - qc_relations
       - axis_q
       - id
   - type: table
@@ -53,11 +65,12 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - axis_t
       - axis_r
       - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
       - axis_q
       - id
   - type: table
@@ -69,11 +82,12 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - axis_t
       - axis_r
       - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
       - axis_q
       - id
   - type: table
@@ -92,6 +106,10 @@ views:
       - axis_r
       - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
+      - qx
+      - qc_relations
       - axis_q
       - id
   - type: table
@@ -103,12 +121,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
+      - axis_qh
+      - axis_qt
       - id
   - type: table
     name: 按地域
@@ -119,12 +134,9 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - axis_t
       - axis_r
-      - axis_m
-      - axis_g
-      - axis_q
+      - axis_qh
+      - axis_qt
       - id
   - type: table
     name: 按思潮
@@ -135,15 +147,12 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - axis_t
-      - axis_r
       - axis_m
-      - axis_g
-      - axis_q
+      - axis_qh
+      - axis_qt
       - id
   - type: table
-    name: 按类型
+    name: 按体裁
     groupBy:
       property: axis_g
       direction: ASC
@@ -151,15 +160,38 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - axis_t
-      - axis_r
-      - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
+      - id
+  - type: table
+    name: 按 QH 主题
+    groupBy:
+      property: axis_qh
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_qh
+      - axis_qt
       - axis_q
       - id
   - type: table
-    name: 按主题
+    name: 按 QT 类型
+    groupBy:
+      property: axis_qt
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - axis_qt
+      - axis_qh
+      - axis_q
+      - id
+  - type: table
+    name: Q legacy（迁移期）
     groupBy:
       property: axis_q
       direction: ASC
@@ -167,12 +199,19 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
-      - axis_t
-      - axis_r
-      - axis_m
-      - axis_g
       - axis_q
+      - axis_qh
+      - axis_qt
+      - id
+  - type: table
+    name: QX / QC 网络关系
+    order:
+      - file.name
+      - author
+      - read_status
+      - qx
+      - qc_relations
+      - topic_links
       - id
   - type: table
     name: 按作者
@@ -183,12 +222,12 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - axis_t
       - axis_r
       - axis_m
       - axis_g
-      - axis_q
+      - axis_qh
+      - axis_qt
       - id
   - type: table
     name: 需复核
@@ -199,10 +238,11 @@ views:
       - file.name
       - author
       - read_status
-      - topic_links
       - axis_t
       - axis_r
       - axis_m
       - axis_g
+      - axis_qh
+      - axis_qt
       - axis_q
       - id
