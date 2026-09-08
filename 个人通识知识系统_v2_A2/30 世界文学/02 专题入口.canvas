@@ -231,16 +231,6 @@
 			"color": "6"
 		},
 		{
-			"id": "qt-myth",
-			"type": "file",
-			"x": 2400,
-			"y": 1065,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT9 神话、传说与民间叙事/00 世界神话文学.md",
-			"color": "6"
-		},
-		{
 			"id": "qh-love",
 			"type": "file",
 			"x": 1020,
@@ -288,96 +278,6 @@
 			"width": 440,
 			"height": 100,
 			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QH7 历史、记忆与时间/00 历史、记忆与时间.md",
-			"color": "6"
-		},
-		{
-			"id": "qt8",
-			"type": "file",
-			"x": 1480,
-			"y": 1315,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8 英雄、边疆与法外者文化传统/00 世界武人、边疆与法外英雄文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-wuxia",
-			"type": "file",
-			"x": 1020,
-			"y": 1455,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.1 武侠/00 武侠文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-knight",
-			"type": "file",
-			"x": 1480,
-			"y": 1455,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.2 欧洲骑士/00 欧洲骑士文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-samurai",
-			"type": "file",
-			"x": 1940,
-			"y": 1455,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.3 日本武士与剑豪/00 日本武士与剑豪文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-swash",
-			"type": "file",
-			"x": 2400,
-			"y": 1455,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.4 欧洲剑客/00 欧洲剑客文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-western",
-			"type": "file",
-			"x": 1020,
-			"y": 1580,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.5 西部/00 西部文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-gaucho",
-			"type": "file",
-			"x": 1480,
-			"y": 1580,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.6 Gaucho/00 Gaucho文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-outlaw",
-			"type": "file",
-			"x": 1940,
-			"y": 1580,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.7 侠盗/00 侠盗文学.md",
-			"color": "6"
-		},
-		{
-			"id": "q15-pirate",
-			"type": "file",
-			"x": 2400,
-			"y": 1580,
-			"width": 440,
-			"height": 100,
-			"file": "个人通识知识系统_v2_A2/30 世界文学/30 专题/QT8.8 海盗/00 海盗文学.md",
 			"color": "6"
 		},
 		{
@@ -542,13 +442,6 @@
 			"toSide": "top"
 		},
 		{
-			"id": "e-axis-q-qt-myth",
-			"fromNode": "axis-q",
-			"fromSide": "bottom",
-			"toNode": "qt-myth",
-			"toSide": "top"
-		},
-		{
 			"id": "e-axis-q-qh-love",
 			"fromNode": "axis-q",
 			"fromSide": "bottom",
@@ -581,69 +474,6 @@
 			"fromNode": "axis-q",
 			"fromSide": "bottom",
 			"toNode": "qh-memory",
-			"toSide": "top"
-		},
-		{
-			"id": "e-axis-q-qt8",
-			"fromNode": "axis-q",
-			"fromSide": "bottom",
-			"toNode": "qt8",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-wuxia",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-wuxia",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-knight",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-knight",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-samurai",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-samurai",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-swash",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-swash",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-western",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-western",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-gaucho",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-gaucho",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-outlaw",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-outlaw",
-			"toSide": "top"
-		},
-		{
-			"id": "e-qt8-q15-pirate",
-			"fromNode": "qt8",
-			"fromSide": "bottom",
-			"toNode": "q15-pirate",
 			"toSide": "top"
 		},
 		{
