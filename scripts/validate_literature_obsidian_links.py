@@ -15,7 +15,7 @@ Checks:
 
 Bare-name WikiLinks such as `[[某节点]]` are intentionally ignored because Obsidian resolves
 those through vault-wide name lookup and aliases; treating them as filesystem paths would
-create false positives.
+create false positives. WikiLink-shaped text inside Markdown code spans/fences is also ignored.
 """
 
 from __future__ import annotations
@@ -33,7 +33,6 @@ MIGRATION_CANVASES = (
     WORLD / "02 专题入口.canvas",
 )
 
-# Files/trees whose navigation semantics are part of this migration contract.
 WIKILINK_SCOPE_FILES = (
     WORLD / "00 世界文学使用规则.md",
     WORLD / "10 轴" / "Q轴 文学主题与人类问题.md",
@@ -45,6 +44,9 @@ WIKILINK_SCOPE_DIRS = (
 )
 
 WIKILINK_RE = re.compile(r"\[\[([^\]]+)\]\]")
+FENCED_CODE_RE = re.compile(r"```.*?```|~~~.*?~~~", re.S)
+INLINE_CODE_RE = re.compile(r"`[^`\n]*`")
+KNOWN_FILE_SUFFIXES = {".md", ".canvas", ".base"}
 WORLD_ROOT_PREFIXES = {
     "00 世界文学使用规则.md",
     "01 世界文学总地图.canvas",
@@ -73,14 +75,15 @@ def candidate_paths(base: Path, raw_target: str) -> list[Path]:
     elif target_path.parts and target_path.parts[0] in WORLD_ROOT_PREFIXES:
         root = WORLD
     else:
-        # Only explicit path links are validated. Bare-name links are Obsidian-resolved.
         if "/" not in target and "\\" not in target:
             return []
         root = base.parent
 
     path = (root / target_path).resolve()
     candidates = [path]
-    if path.suffix == "":
+    # Obsidian links commonly omit the extension. A title may itself contain dots
+    # (e.g. "QC1.2.1 Coverage Review V1"), so Path.suffix == "" is not a valid test.
+    if path.suffix.lower() not in KNOWN_FILE_SUFFIXES:
         candidates.extend([Path(str(path) + ext) for ext in (".md", ".canvas", ".base")])
     return candidates
 
@@ -96,10 +99,15 @@ def iter_wikilink_scope() -> list[Path]:
     return sorted(paths)
 
 
+def strip_markdown_code(text: str) -> str:
+    text = FENCED_CODE_RE.sub("", text)
+    return INLINE_CODE_RE.sub("", text)
+
+
 def validate_wikilinks() -> list[str]:
     errors: list[str] = []
     for path in iter_wikilink_scope():
-        text = path.read_text(encoding="utf-8")
+        text = strip_markdown_code(path.read_text(encoding="utf-8"))
         for match in WIKILINK_RE.finditer(text):
             raw = match.group(1)
             candidates = candidate_paths(path, raw)
