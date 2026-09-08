@@ -6,6 +6,7 @@ on:
       - migration/literature-physical-namespace-20260908
     paths:
       - 'scripts/migrate_literature_namespace_v2.py'
+      - 'scripts/repair_literature_namespace_v2.py'
       - '.github/workflows/literature-namespace-v2-migration.yml'
   workflow_dispatch:
 
@@ -23,6 +24,16 @@ jobs:
 
       - name: Apply physical and namespace migration
         run: python scripts/migrate_literature_namespace_v2.py --apply
+
+      - name: Repair moved navigation and namespace metadata
+        shell: bash
+        run: |
+          python scripts/repair_literature_namespace_v2.py
+          find '个人通识知识系统_v2_A2/30 世界文学/20 作品知识网络' -type f -name '*.md' -print0 \
+            | xargs -0 sed -i 's/^legacy_axis: Q$/legacy_axis: "Q"/'
+
+      - name: Validate namespace v2 architecture
+        run: python scripts/validate_literature_obsidian_links.py
 
       - name: Validate patch formatting
         run: git diff --check
@@ -49,5 +60,5 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -A
-          git commit -m 'migrate(literature): materialize coordinate and network namespaces'
+          git commit -m 'fix(literature): close namespace v2 navigation gaps'
           git push origin HEAD:migration/literature-physical-namespace-20260908
