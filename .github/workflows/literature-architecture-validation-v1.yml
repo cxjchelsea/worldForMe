@@ -1,11 +1,10 @@
-name: literature-architecture-validation-v1
+name: literature-architecture-validation-v2
 
 on:
   pull_request:
     paths:
       - '个人通识知识系统_v2_A2/30 世界文学/**'
-      - 'scripts/migrate_literature_q_fields.py'
-      - 'scripts/migrate_literature_q_node_roles.py'
+      - 'scripts/migrate_literature_namespace_v2.py'
       - 'scripts/validate_literature_obsidian_links.py'
       - '.github/workflows/literature-architecture-validation-v1.yml'
   push:
@@ -13,8 +12,7 @@ on:
       - main
     paths:
       - '个人通识知识系统_v2_A2/30 世界文学/**'
-      - 'scripts/migrate_literature_q_fields.py'
-      - 'scripts/migrate_literature_q_node_roles.py'
+      - 'scripts/migrate_literature_namespace_v2.py'
       - 'scripts/validate_literature_obsidian_links.py'
       - '.github/workflows/literature-architecture-validation-v1.yml'
 
@@ -29,33 +27,11 @@ jobs:
         with:
           ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.sha }}
 
-      - name: Validate Q field migration state
-        shell: bash
-        run: |
-          report="$RUNNER_TEMP/q-field-audit.md"
-          python scripts/migrate_literature_q_fields.py --check --report "$report"
-          if ! grep -Fq -- '- 非机械异常：**0** 部' "$report"; then
-            echo 'Found non-mechanical legacy axis_q anomalies.'
-            cat "$report"
-            exit 1
-          fi
-
-      - name: Validate Q node roles and target Canvas state
-        shell: bash
-        run: |
-          output="$(python scripts/migrate_literature_q_node_roles.py)"
-          echo "$output"
-          if [[ "$output" != *"conflicts=0"* ]]; then
-            echo 'Found Q node metadata conflicts.'
-            exit 1
-          fi
-          if [[ "$output" != *"canvas_changed=False"* ]]; then
-            echo 'Topic Canvas is no longer in the canonical coordinate/network target state.'
-            exit 1
-          fi
-
-      - name: Validate Obsidian Canvas and explicit WikiLinks
+      - name: Validate TH TY IM CN architecture
         run: python scripts/validate_literature_obsidian_links.py
+
+      - name: Validate patch formatting
+        run: git diff --check
 
       - name: Ensure validation is read-only
         run: git diff --exit-code
