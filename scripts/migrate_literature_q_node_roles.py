@@ -8,7 +8,7 @@ This script is intentionally structural only:
 - QH/QT gain canonical `system_role: work_coordinate`;
 - QX/QC gain canonical `system_role: work_knowledge_network`;
 - old Q-path wording is changed only for explicit navigation breadcrumb lines;
-- 02 专题入口.canvas is regrouped without changing existing topic file paths.
+- 02 专题入口.canvas is regrouped and stale file nodes whose topic packages do not exist are pruned.
 """
 
 from __future__ import annotations
@@ -31,6 +31,22 @@ ROLE_BY_DIR = {
     "QC 母题": ("QC", "work_knowledge_network", "作品知识网络"),
 }
 TOP_KEY_RE = re.compile(r"^([A-Za-z_][A-Za-z0-9_]*):(?:\s*(.*))?$")
+
+# These ids are legacy topic-entry nodes. Their target topic packages are absent in the
+# current repository. Removing them from the Canvas does NOT delete or rename QT taxonomy
+# nodes under 20 节点; it only removes false navigation promises.
+LEGACY_STALE_TOPIC_NODE_IDS = {
+    "qt-myth",
+    "qt8",
+    "q15-wuxia",
+    "q15-knight",
+    "q15-samurai",
+    "q15-swash",
+    "q15-western",
+    "q15-gaucho",
+    "q15-outlaw",
+    "q15-pirate",
+}
 
 
 def split_frontmatter(text: str):
@@ -123,11 +139,28 @@ def ensure_canvas_edge(edges, edge):
     return True
 
 
+def prune_stale_topic_nodes(nodes, edges):
+    stale_present = {node.get("id") for node in nodes if node.get("id") in LEGACY_STALE_TOPIC_NODE_IDS}
+    if not stale_present:
+        return False
+    nodes[:] = [node for node in nodes if node.get("id") not in stale_present]
+    edges[:] = [
+        edge
+        for edge in edges
+        if edge.get("fromNode") not in stale_present and edge.get("toNode") not in stale_present
+    ]
+    return True
+
+
 def migrate_canvas(apply: bool):
     data = json.loads(CANVAS.read_text(encoding="utf-8"))
     nodes = data.setdefault("nodes", [])
     edges = data.setdefault("edges", [])
     changed = False
+
+    # The old Canvas advertised QT9/QT8 topic packages which are not present in the
+    # repository. Keep taxonomy nodes and compatibility codes, but remove broken topic links.
+    changed |= prune_stale_topic_nodes(nodes, edges)
 
     for node in nodes:
         if node.get("id") == "g-q":
@@ -202,7 +235,7 @@ def render_report(stats, canvas_changed):
         "- 原 `Q · 内容域` 组改为 `作品坐标专题 · QH / QT`；",
         "- 原 `axis-q` 节点保留 id 以兼容边关系，但入口改指向 `04 系统架构/01 作品坐标系统.md`；",
         "- 新增 `作品知识网络 · QX / QC` 组，分别进入 QX 与 QC 现有节点；",
-        "- QT8 及其旧专题文件不删除、不搬迁，本轮继续作为冻结兼容内容保留。",
+        "- QT8 taxonomy 与兼容代码继续保留；Canvas 中指向不存在的 QT9/QT8 专题包的旧 file node 与相关边已移除。",
         "",
     ]
     return "\n".join(lines)
