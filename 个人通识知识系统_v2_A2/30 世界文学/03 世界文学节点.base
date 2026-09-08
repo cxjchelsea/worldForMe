@@ -6,7 +6,7 @@ filters:
     - id.startsWith("WL-")
 formulas:
   system_layer: 'if(code.startsWith("IM"), "B 作品知识网络", if(code.startsWith("CN"), "B 作品知识网络", "A 作品坐标系统"))'
-  dimension_zh: 'if(code.startsWith("TH"), "TH 主题", if(code.startsWith("TY"), "TY 类型", if(code.startsWith("IM"), "IM 意象网络", if(code.startsWith("CN"), "CN 文化叙事网络", if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮").replace("G", "G 体裁"), "")))))'
+  dimension_zh: 'if(code.startsWith("TH"), "TH 主题", if(code.startsWith("TY"), "TY 类型 / 叙事机制", if(code.startsWith("IM"), "IM 意象网络", if(code.startsWith("CN"), "CN 文化叙事网络", if(axis, axis.replace("T", "T 时间").replace("R", "R 地域").replace("M", "M 思潮 / 美学").replace("G", "G 体裁"), "")))))'
 properties:
   file.name:
     displayName: 节点
@@ -15,7 +15,15 @@ properties:
   formula.dimension_zh:
     displayName: 维度 / 网络
   note.axis:
-    displayName: 旧轴字段
+    displayName: 坐标轴
+  note.namespace:
+    displayName: 知识网络命名空间
+  note.legacy_code:
+    displayName: 旧代码
+  note.legacy_codes:
+    displayName: 历代旧代码
+  note.legacy_id:
+    displayName: 旧节点 ID
   note.topic_map:
     displayName: 专题地图
 views:
@@ -28,7 +36,11 @@ views:
       - file.name
       - formula.system_layer
       - formula.dimension_zh
+      - axis
+      - namespace
       - topic_map
+      - legacy_code
+      - legacy_codes
     columnSize:
       file.name: 285
   - type: table
@@ -42,6 +54,7 @@ views:
     order:
       - file.name
       - formula.dimension_zh
+      - axis
       - topic_map
   - type: table
     name: B 作品知识网络节点
@@ -54,6 +67,7 @@ views:
     order:
       - file.name
       - formula.dimension_zh
+      - namespace
       - topic_map
   - type: table
     name: 坐标一级节点
@@ -67,6 +81,7 @@ views:
     order:
       - file.name
       - formula.dimension_zh
+      - axis
       - topic_map
   - type: table
     name: 尚未接入专题
