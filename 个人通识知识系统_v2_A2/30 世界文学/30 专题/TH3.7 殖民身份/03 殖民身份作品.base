@@ -1,0 +1,59 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-TH3-7-COLONIAL-IDENTITY")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.colonial_identity_role:
+    displayName: 专题角色
+  note.colonial_identity_priority:
+    displayName: 优先级
+  note.colonial_identity_problems:
+    displayName: 核心问题
+  note.colonial_identity_note:
+    displayName: 专题价值
+  note.axis_th:
+    displayName: 主题
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部作品
+    groupBy:
+      property: colonial_identity_role
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - colonial_identity_role
+      - colonial_identity_priority
+      - colonial_identity_problems
+      - colonial_identity_note
+      - axis_th
+      - id
+  - type: table
+    name: 骨架作品 ★
+    filters:
+      and:
+        - colonial_identity_role == "骨架"
+    order:
+      - file.name
+      - author
+      - colonial_identity_problems
+      - colonial_identity_note
+  - type: table
+    name: 比较作品 ◆
+    filters:
+      and:
+        - colonial_identity_role == "比较"
+    order:
+      - file.name
+      - author
+      - colonial_identity_problems
+      - colonial_identity_note

@@ -1,0 +1,29 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-TH3-7-COLONIAL-IDENTITY"
+properties:
+  file.name:
+    displayName: 节点
+  note.problem_code:
+    displayName: 问题编号
+  note.sequence:
+    displayName: 顺序
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    order:
+      - file.name
+      - problem_code
+      - sequence
+      - id
+  - type: table
+    name: 六个核心问题
+    filters:
+      and:
+        - type == "literature_topic_problem"
+    order:
+      - problem_code
+      - file.name
+      - id
