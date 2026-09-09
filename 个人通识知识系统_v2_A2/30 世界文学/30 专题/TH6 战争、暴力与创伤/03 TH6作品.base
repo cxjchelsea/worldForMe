@@ -1,42 +1,43 @@
 filters:
   and:
-    - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/40 作品/")
+    - type == "work"
     - topics.contains("WL-TOPIC-Q6-WAR")
 properties:
-  file.link:
-    displayName: 作品
-  note.violence_trauma_role:
-    displayName: TH6角色
-  note.violence_trauma_priority:
-    displayName: TH6优先级
-  note.violence_trauma_problems:
-    displayName: TH6问题
-  note.violence_trauma_note:
-    displayName: TH6说明
-  note.war_history_stage:
-    displayName: 战争史位置（旧）
-  note.war_axes:
-    displayName: 战争机制（旧）
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.read_status: {displayName: 阅读状态}
+  note.violence_trauma_priority: {displayName: TH6优先级}
+  note.violence_trauma_role: {displayName: TH6角色}
+  note.violence_trauma_problems: {displayName: TH6核心问题}
+  note.violence_trauma_note: {displayName: TH6价值}
+  note.war_priority: {displayName: 战争子域优先级}
+  note.axis_t: {displayName: 时间}
+  note.axis_r: {displayName: 地域}
+  note.axis_m: {displayName: 思潮}
+  note.axis_g: {displayName: 体裁}
+  note.axis_th: {displayName: 主题}
+  note.id: {displayName: 编号}
 views:
   - type: table
-    name: TH6骨架作品
-    filters:
-      and:
-        - violence_trauma_priority == "★"
-    order:
-      - file.link
-      - violence_trauma_role
-      - violence_trauma_problems
-      - violence_trauma_note
-      - war_history_stage
-      - war_axes
+    name: 核心 ★
+    filters: {and: [violence_trauma_priority == "★"]}
+    order: [file.name, author, read_status, violence_trauma_role, violence_trauma_problems, violence_trauma_note, axis_t, axis_r, axis_m, axis_g, axis_th]
   - type: table
-    name: TH6全部作品
-    order:
-      - file.link
-      - violence_trauma_priority
-      - violence_trauma_role
-      - violence_trauma_problems
-      - violence_trauma_note
-      - war_history_stage
-      - war_axes
+    name: 重点 ◆
+    filters: {and: [violence_trauma_priority == "◆"]}
+    order: [file.name, author, read_status, violence_trauma_role, violence_trauma_problems, violence_trauma_note]
+  - type: table
+    name: 扩展 △
+    filters: {and: [violence_trauma_priority == "△"]}
+    order: [file.name, author, read_status, violence_trauma_role, violence_trauma_problems, violence_trauma_note]
+  - type: table
+    name: 已读
+    filters: {or: [read_status == "已读", read_status == "重读"]}
+    order: [file.name, author, violence_trauma_priority, violence_trauma_role, violence_trauma_problems, war_priority, axis_t, axis_r, axis_m, axis_g]
+  - type: table
+    name: 未读
+    filters: {and: [read_status == "未读"]}
+    order: [file.name, author, violence_trauma_priority, violence_trauma_role, violence_trauma_problems, war_priority, axis_t, axis_r, axis_m, axis_g]
+  - type: table
+    name: 全部作品
+    order: [file.name, author, violence_trauma_priority, violence_trauma_role, read_status, violence_trauma_problems, violence_trauma_note, war_priority, axis_t, axis_r, axis_m, axis_g, axis_th, id]

@@ -3,64 +3,40 @@ filters:
     - type == "work"
     - topics.contains("WL-TOPIC-TH4-SOCIAL-CLASS-LABOR")
 properties:
-  file.name:
-    displayName: 作品
-  note.author:
-    displayName: 作者
-  note.read_status:
-    displayName: 阅读状态
-  note.topic_links:
-    displayName: 专题
-  note.social_class_labor_role:
-    displayName: 专题角色
-  note.social_class_labor_priority:
-    displayName: 优先级
-  note.social_class_labor_problems:
-    displayName: 核心问题
-  note.social_class_labor_note:
-    displayName: 专题价值
-  note.axis_t:
-    displayName: 时间
-  note.axis_r:
-    displayName: 地域
-  note.axis_m:
-    displayName: 思潮
-  note.axis_g:
-    displayName: 体裁
-  note.axis_th:
-    displayName: 主题
-  note.id:
-    displayName: 编号
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.read_status: {displayName: 阅读状态}
+  note.social_class_labor_priority: {displayName: 优先级}
+  note.social_class_labor_role: {displayName: 专题角色}
+  note.social_class_labor_problems: {displayName: 核心问题}
+  note.social_class_labor_note: {displayName: 专题价值}
+  note.axis_t: {displayName: 时间}
+  note.axis_r: {displayName: 地域}
+  note.axis_m: {displayName: 思潮}
+  note.axis_g: {displayName: 体裁}
+  note.axis_th: {displayName: 主题}
+  note.id: {displayName: 编号}
 views:
   - type: table
-    name: 全部作品
-    groupBy:
-      property: social_class_labor_role
-      direction: ASC
-    order: [file.name, author, read_status, topic_links, social_class_labor_role, social_class_labor_priority, social_class_labor_problems, social_class_labor_note, axis_t, axis_r, axis_m, axis_g, axis_th, id]
+    name: 核心 ★
+    filters: {and: [social_class_labor_priority == "★"]}
+    order: [file.name, author, read_status, social_class_labor_role, social_class_labor_problems, social_class_labor_note, axis_t, axis_r, axis_m, axis_g, axis_th]
   - type: table
-    name: 骨架作品 ★
-    filters:
-      and:
-        - social_class_labor_role == "骨架"
-    order: [file.name, author, read_status, social_class_labor_priority, social_class_labor_problems, social_class_labor_note, id]
+    name: 重点 ◆
+    filters: {and: [social_class_labor_priority == "◆"]}
+    order: [file.name, author, read_status, social_class_labor_role, social_class_labor_problems, social_class_labor_note]
   - type: table
-    name: 比较作品 ◆
-    filters:
-      and:
-        - social_class_labor_role == "比较"
-    order: [file.name, author, read_status, social_class_labor_priority, social_class_labor_problems, social_class_labor_note, id]
+    name: 扩展 △
+    filters: {and: [social_class_labor_priority == "△"]}
+    order: [file.name, author, read_status, social_class_labor_role, social_class_labor_problems, social_class_labor_note]
   - type: table
     name: 已读
-    filters:
-      and:
-        - or:
-            - read_status == "已读"
-            - read_status == "重读"
-    order: [file.name, author, social_class_labor_role, social_class_labor_priority, social_class_labor_problems, id]
+    filters: {or: [read_status == "已读", read_status == "重读"]}
+    order: [file.name, author, social_class_labor_priority, social_class_labor_role, social_class_labor_problems, axis_t, axis_r, axis_m, axis_g]
   - type: table
     name: 未读
-    filters:
-      and:
-        - read_status == "未读"
-    order: [file.name, author, social_class_labor_role, social_class_labor_priority, social_class_labor_problems, id]
+    filters: {and: [read_status == "未读"]}
+    order: [file.name, author, social_class_labor_priority, social_class_labor_role, social_class_labor_problems, axis_t, axis_r, axis_m, axis_g]
+  - type: table
+    name: 全部作品
+    order: [file.name, author, social_class_labor_priority, social_class_labor_role, read_status, social_class_labor_problems, social_class_labor_note, axis_t, axis_r, axis_m, axis_g, axis_th, id]

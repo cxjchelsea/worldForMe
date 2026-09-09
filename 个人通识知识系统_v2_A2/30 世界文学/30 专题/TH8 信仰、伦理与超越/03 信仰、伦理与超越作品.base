@@ -1,23 +1,42 @@
 filters:
   and:
-    - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/40 作品/")
+    - type == "work"
     - topics.contains("WL-TOPIC-TH8-FAITH-ETHICS-TRANSCENDENCE")
+properties:
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.read_status: {displayName: 阅读状态}
+  note.faith_ethics_priority: {displayName: 优先级}
+  note.faith_ethics_role: {displayName: 专题角色}
+  note.faith_ethics_problems: {displayName: 核心问题}
+  note.faith_ethics_note: {displayName: 专题价值}
+  note.axis_t: {displayName: 时间}
+  note.axis_r: {displayName: 地域}
+  note.axis_m: {displayName: 思潮}
+  note.axis_g: {displayName: 体裁}
+  note.axis_th: {displayName: 主题}
+  note.id: {displayName: 编号}
 views:
   - type: table
-    name: 核心作品
-    filters:
-      and:
-        - faith_ethics_priority == "★"
-    order:
-      - file.link
-      - faith_ethics_role
-      - faith_ethics_problems
-      - faith_ethics_note
+    name: 核心 ★
+    filters: {and: [faith_ethics_priority == "★"]}
+    order: [file.name, author, read_status, faith_ethics_role, faith_ethics_problems, faith_ethics_note, axis_t, axis_r, axis_m, axis_g, axis_th]
+  - type: table
+    name: 重点 ◆
+    filters: {and: [faith_ethics_priority == "◆"]}
+    order: [file.name, author, read_status, faith_ethics_role, faith_ethics_problems, faith_ethics_note]
+  - type: table
+    name: 扩展 △
+    filters: {and: [faith_ethics_priority == "△"]}
+    order: [file.name, author, read_status, faith_ethics_role, faith_ethics_problems, faith_ethics_note]
+  - type: table
+    name: 已读
+    filters: {or: [read_status == "已读", read_status == "重读"]}
+    order: [file.name, author, faith_ethics_priority, faith_ethics_role, faith_ethics_problems, axis_t, axis_r, axis_m, axis_g]
+  - type: table
+    name: 未读
+    filters: {and: [read_status == "未读"]}
+    order: [file.name, author, faith_ethics_priority, faith_ethics_role, faith_ethics_problems, axis_t, axis_r, axis_m, axis_g]
   - type: table
     name: 全部作品
-    order:
-      - file.link
-      - faith_ethics_priority
-      - faith_ethics_role
-      - faith_ethics_problems
-      - faith_ethics_note
+    order: [file.name, author, faith_ethics_priority, faith_ethics_role, read_status, faith_ethics_problems, faith_ethics_note, axis_t, axis_r, axis_m, axis_g, axis_th, id]
