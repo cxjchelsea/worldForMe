@@ -1,0 +1,18 @@
+filters:
+  and:
+    - type == "literature_topic_problem"
+    - topic_id == "WL-TOPIC-TH3-4-NATIONAL-CULTURAL-IDENTITY"
+properties:
+  file.name:
+    displayName: 核心问题
+  note.problem_code:
+    displayName: 编号
+  note.status:
+    displayName: 状态
+views:
+  - type: table
+    name: 核心问题
+    order:
+      - problem_code
+      - file.name
+      - status
