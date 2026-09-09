@@ -1,0 +1,56 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-TH3-5-MIGRATION-EXILE")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.migration_exile_role:
+    displayName: 专题角色
+  note.migration_exile_priority:
+    displayName: 优先级
+  note.migration_exile_problems:
+    displayName: 核心问题
+  note.migration_exile_note:
+    displayName: 专题价值
+  note.axis_th:
+    displayName: 主题
+views:
+  - type: table
+    name: 全部作品
+    groupBy:
+      property: migration_exile_role
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - read_status
+      - migration_exile_role
+      - migration_exile_priority
+      - migration_exile_problems
+      - migration_exile_note
+      - axis_th
+  - type: table
+    name: 骨架作品 ★
+    filters:
+      and:
+        - migration_exile_role == "骨架"
+    order:
+      - file.name
+      - author
+      - migration_exile_problems
+      - migration_exile_note
+  - type: table
+    name: 比较作品 ◆
+    filters:
+      and:
+        - migration_exile_role == "比较"
+    order:
+      - file.name
+      - author
+      - migration_exile_problems
+      - migration_exile_note
