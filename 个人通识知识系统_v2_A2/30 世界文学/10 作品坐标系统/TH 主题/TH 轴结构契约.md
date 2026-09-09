@@ -47,6 +47,8 @@ anchorable: true | false
 topic_map: null | "[[...]]"
 ```
 
+其中 `importance` 是与 T / R / M 对齐后的 canonical 字段。现有历史节点中的 `coverage_priority` 暂作为兼容 fallback；以后节点被实际编辑时再自然迁移，不为格式统一做无意义的大规模重写。
+
 规则：
 
 - group 不直接挂专题，`anchorable: false`；
@@ -65,11 +67,9 @@ topic_role: direct
 structure_status: frozen | developing
 work_database: "[[03 ...作品.base]]"
 structure_database: "[[02 ...结构.base]]"
-priority_scheme:
-  core: "★"
-  important: "◆"
-  extension: "△"
 ```
+
+优先级语义统一继承轴根节点的 `priority_scheme`：`★ 核心 / ◆ 重点 / △ 扩展`。专题主页可以显式重复该字段，但不要求机械复制。
 
 主页正文至少承担：
 
@@ -83,7 +83,7 @@ priority_scheme:
 
 ## 4. 专题知识节点契约
 
-进入 `02 ...结构.base` 的知识节点统一采用：
+进入 `02 ...结构.base` 的知识节点 canonical 采用：
 
 ```yaml
 id: ...
@@ -105,11 +105,13 @@ history_position: ... # 可选
 - `review`：压力测试、终审、冻结说明；
 - 专题可以增加自己的专属 dimension，但不得替代上述公共语义。
 
+现有 TH3 后段至 TH8 中尚未补齐 frontmatter 的结构文件，由结构 Base 使用“`topic_id` + 目录路径”双读取模式兼容；以后编辑该节点时再补 canonical frontmatter。
+
 ## 5. 结构 Base 契约
 
 结构 Base 必须：
 
-- 以稳定 `topic_id` 聚合知识节点，而不是只依赖文件路径；
+- canonical 以稳定 `topic_id` 聚合知识节点；迁移期允许目录路径 fallback；
 - 至少展示 `file.name / type / dimension / sequence / parent / id`；
 - 至少提供“全部知识节点”“核心结构”“核心问题”三个视图；
 - 专题自有旧结构可保留为额外视图，不破坏公共视图。
@@ -122,6 +124,7 @@ history_position: ... # 可选
 - 使用专题自己的 priority 字段，但统一语义：`★ 核心 / ◆ 重点 / △ 扩展`；
 - 至少提供：核心、重点、扩展、已读、未读、全部作品；
 - 能展示 T / R / M / G / TH 交叉坐标；
+- canonical 主题字段为 `axis_th`，旧 `axis_q` 不再作为新 Base 的正式列；
 - 专题已有旧字段可以兼容保留，不为格式统一做破坏性改名。
 
 ## 7. 作品字段契约
@@ -135,7 +138,7 @@ TH 不强制所有专题使用同一个字段前缀，但字段语义统一为�
 <topic>_note
 ```
 
-旧稳定字段（如 `war_*`、`memory_*`）继续保留；新的治理字段与旧字段并存时，由专题主页说明职责。
+旧稳定字段（如 `war_*`、`memory_*`、`love_history_stage`）继续保留；新的治理字段与旧字段并存时，由专题主页说明职责。
 
 ## 8. Canvas 契约
 
@@ -162,6 +165,8 @@ Canvas 只可视化仓库中已经存在且有文件支撑的结构关系，不�
 ```
 
 不要求所有专题拥有相同的 `10/11/12/13` 内容；**结构一致性来自 frontmatter 与 Base contract，而不是来自机械复制文件夹名称。**
+
+旧专题因兼容性保留“成长文学”“战争文学”等历史文件名时，公共入口职责仍按本 contract 判断，不以文件名决定专题性质。
 
 ## 10. 冻结原则
 
