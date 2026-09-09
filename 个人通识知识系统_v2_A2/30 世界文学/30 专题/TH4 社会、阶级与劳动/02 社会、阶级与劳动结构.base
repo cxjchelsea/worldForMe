@@ -1,0 +1,38 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-TH4-SOCIAL-CLASS-LABOR"
+formulas:
+  type_zh: type.replace("literature_topic_structure", "核心结构").replace("literature_topic_problem", "核心问题")
+  dimension_zh: if(dimension, dimension.replace("definition_boundary", "定义与边界").replace("core_problem_map", "核心问题地图").replace("social_structure_mechanisms", "社会结构机制").replace("cross_comparison", "跨轴比较").replace("reading_route", "阅读路线").replace("work_stress_test", "作品压力测试").replace("core_problem", "核心问题"), "")
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  formula.dimension_zh:
+    displayName: 维度
+  note.problem_code:
+    displayName: 问题编号
+  note.sequence:
+    displayName: 顺序
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order: [file.name, formula.type_zh, formula.dimension_zh, problem_code, sequence, id]
+  - type: table
+    name: 核心结构
+    filters:
+      and:
+        - type == "literature_topic_structure"
+    order: [file.name, formula.dimension_zh, sequence, id]
+  - type: table
+    name: 六个核心问题
+    filters:
+      and:
+        - type == "literature_topic_problem"
+    order: [problem_code, file.name, id]
