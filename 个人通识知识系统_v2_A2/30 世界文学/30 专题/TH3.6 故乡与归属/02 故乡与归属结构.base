@@ -1,0 +1,33 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-TH3-6-HOME-BELONGING"
+formulas:
+  type_zh: type.replace("literature_topic_structure", "核心结构").replace("literature_topic_problem", "核心问题")
+properties:
+  file.name:
+    displayName: 节点
+  formula.type_zh:
+    displayName: 类型
+  note.problem_code:
+    displayName: 问题编号
+  note.sequence:
+    displayName: 顺序
+views:
+  - type: table
+    name: 全部知识节点
+    groupBy:
+      property: formula.type_zh
+      direction: ASC
+    order:
+      - file.name
+      - formula.type_zh
+      - problem_code
+      - sequence
+  - type: table
+    name: 六个核心问题
+    filters:
+      and:
+        - type == "literature_topic_problem"
+    order:
+      - problem_code
+      - file.name
