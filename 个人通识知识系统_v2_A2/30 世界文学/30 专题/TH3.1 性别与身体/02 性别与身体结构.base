@@ -1,0 +1,36 @@
+filters:
+  and:
+    - topic_id == "WL-TOPIC-TH3-1-GENDER-BODY"
+properties:
+  file.name:
+    displayName: 节点
+  note.type:
+    displayName: 类型
+  note.problem_code:
+    displayName: 问题编号
+  note.sequence:
+    displayName: 顺序
+  note.status:
+    displayName: 状态
+  note.id:
+    displayName: 编号
+views:
+  - type: table
+    name: 核心问题
+    filters:
+      and:
+        - type == "literature_topic_problem"
+    order:
+      - sequence
+      - file.name
+      - problem_code
+      - status
+      - id
+  - type: table
+    name: 全部结构节点
+    order:
+      - file.name
+      - type
+      - sequence
+      - status
+      - id
