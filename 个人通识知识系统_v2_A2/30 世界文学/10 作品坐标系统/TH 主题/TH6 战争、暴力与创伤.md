@@ -13,7 +13,7 @@ coverage_priority: Core
 node_kind: taxonomy_leaf
 anchorable: true
 topic_map: "[[../../30 专题/TH6 战争、暴力与创伤/00 战争文学|战争、暴力与创伤]]"
-source_version: "TH6-migration-v1"
+source_version: "TH6-frozen-v1"
 ---
 
 # TH6 战争、暴力与创伤
@@ -34,7 +34,7 @@ source_version: "TH6-migration-v1"
 
 ## 叶节点判断
 
-V1 将检验战争、非战争暴力与创伤是否能由同一“暴力发生—伤害—余波”问题链统摄。旧“战争文学”历史结构保留为专题内部战争子域资源，不升级为 `TH6.x` 坐标。
+V1 压力测试与挑错式终审显示，战争、非战争暴力与创伤可以由同一“卷入—伤害—余波”问题链稳定统摄。旧“战争文学”历史结构保留为专题内部战争子域资源，不升级为 `TH6.x` 坐标。
 
 ## 专题地图
 
