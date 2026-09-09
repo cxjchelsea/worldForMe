@@ -1,0 +1,82 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-TH3-3-RACE-ETHNICITY")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.race_ethnicity_role:
+    displayName: 专题角色
+  note.race_ethnicity_priority:
+    displayName: 优先级
+  note.race_ethnicity_problems:
+    displayName: 核心问题
+  note.race_ethnicity_note:
+    displayName: 专题价值
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 体裁
+  note.axis_th:
+    displayName: 主题
+views:
+  - type: table
+    name: 全部作品
+    groupBy:
+      property: race_ethnicity_role
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - race_ethnicity_role
+      - race_ethnicity_priority
+      - read_status
+      - race_ethnicity_problems
+      - race_ethnicity_note
+      - axis_t
+      - axis_r
+      - axis_m
+      - axis_g
+      - axis_th
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - race_ethnicity_role == "骨架"
+    order:
+      - file.name
+      - author
+      - race_ethnicity_priority
+      - race_ethnicity_problems
+      - race_ethnicity_note
+  - type: table
+    name: 比较与边界
+    filters:
+      or:
+        - race_ethnicity_role == "比较"
+        - race_ethnicity_role == "边界测试"
+    order:
+      - file.name
+      - author
+      - race_ethnicity_role
+      - race_ethnicity_problems
+      - race_ethnicity_note
+  - type: table
+    name: 已读
+    filters:
+      or:
+        - read_status == "已读"
+        - read_status == "重读"
+    order:
+      - file.name
+      - author
+      - race_ethnicity_role
+      - race_ethnicity_problems
