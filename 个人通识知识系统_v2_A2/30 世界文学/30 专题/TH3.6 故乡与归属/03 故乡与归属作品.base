@@ -3,57 +3,40 @@ filters:
     - type == "work"
     - topics.contains("WL-TOPIC-TH3-6-HOME-BELONGING")
 properties:
-  file.name:
-    displayName: 作品
-  note.author:
-    displayName: 作者
-  note.read_status:
-    displayName: 阅读状态
-  note.home_belonging_role:
-    displayName: 专题角色
-  note.home_belonging_priority:
-    displayName: 优先级
-  note.home_belonging_problems:
-    displayName: 核心问题
-  note.home_belonging_note:
-    displayName: 专题价值
-  note.axis_th:
-    displayName: 主题
-  note.id:
-    displayName: 编号
+  file.name: {displayName: 作品}
+  note.author: {displayName: 作者}
+  note.read_status: {displayName: 阅读状态}
+  note.home_belonging_priority: {displayName: 优先级}
+  note.home_belonging_role: {displayName: 专题角色}
+  note.home_belonging_problems: {displayName: 核心问题}
+  note.home_belonging_note: {displayName: 专题价值}
+  note.axis_t: {displayName: 时间}
+  note.axis_r: {displayName: 地域}
+  note.axis_m: {displayName: 思潮}
+  note.axis_g: {displayName: 体裁}
+  note.axis_th: {displayName: 主题}
+  note.id: {displayName: 编号}
 views:
   - type: table
+    name: 核心 ★
+    filters: {and: [home_belonging_priority == "★"]}
+    order: [file.name, author, read_status, home_belonging_role, home_belonging_problems, home_belonging_note, axis_t, axis_r, axis_m, axis_g, axis_th]
+  - type: table
+    name: 重点 ◆
+    filters: {and: [home_belonging_priority == "◆"]}
+    order: [file.name, author, read_status, home_belonging_role, home_belonging_problems, home_belonging_note]
+  - type: table
+    name: 扩展 △
+    filters: {and: [home_belonging_priority == "△"]}
+    order: [file.name, author, read_status, home_belonging_role, home_belonging_problems, home_belonging_note]
+  - type: table
+    name: 已读
+    filters: {or: [read_status == "已读", read_status == "重读"]}
+    order: [file.name, author, home_belonging_priority, home_belonging_role, home_belonging_problems, axis_t, axis_r, axis_m, axis_g]
+  - type: table
+    name: 未读
+    filters: {and: [read_status == "未读"]}
+    order: [file.name, author, home_belonging_priority, home_belonging_role, home_belonging_problems, axis_t, axis_r, axis_m, axis_g]
+  - type: table
     name: 全部作品
-    groupBy:
-      property: home_belonging_role
-      direction: ASC
-    order:
-      - file.name
-      - author
-      - read_status
-      - home_belonging_role
-      - home_belonging_priority
-      - home_belonging_problems
-      - home_belonging_note
-      - axis_th
-      - id
-  - type: table
-    name: 骨架作品 ★
-    filters:
-      and:
-        - home_belonging_role == "骨架"
-    order:
-      - file.name
-      - author
-      - home_belonging_problems
-      - home_belonging_note
-  - type: table
-    name: 比较作品 ◆
-    filters:
-      and:
-        - home_belonging_role == "比较"
-    order:
-      - file.name
-      - author
-      - home_belonging_problems
-      - home_belonging_note
+    order: [file.name, author, home_belonging_priority, home_belonging_role, read_status, home_belonging_problems, home_belonging_note, axis_t, axis_r, axis_m, axis_g, axis_th, id]
