@@ -1,0 +1,64 @@
+filters:
+  and:
+    - type == "work"
+    - topics.contains("WL-TOPIC-TH3-4-NATIONAL-CULTURAL-IDENTITY")
+properties:
+  file.name:
+    displayName: 作品
+  note.author:
+    displayName: 作者
+  note.read_status:
+    displayName: 阅读状态
+  note.national_cultural_role:
+    displayName: 专题角色
+  note.national_cultural_priority:
+    displayName: 优先级
+  note.national_cultural_problems:
+    displayName: 核心问题
+  note.national_cultural_note:
+    displayName: 专题价值
+  note.axis_t:
+    displayName: 时间
+  note.axis_r:
+    displayName: 地域
+  note.axis_m:
+    displayName: 思潮
+  note.axis_g:
+    displayName: 体裁
+  note.axis_th:
+    displayName: 主题
+views:
+  - type: table
+    name: 全部作品
+    groupBy:
+      property: national_cultural_role
+      direction: ASC
+    order:
+      - file.name
+      - author
+      - national_cultural_role
+      - national_cultural_priority
+      - read_status
+      - national_cultural_problems
+      - national_cultural_note
+  - type: table
+    name: 骨架作品
+    filters:
+      and:
+        - national_cultural_role == "骨架"
+    order:
+      - file.name
+      - author
+      - national_cultural_problems
+      - national_cultural_note
+  - type: table
+    name: 比较与边界
+    filters:
+      or:
+        - national_cultural_role == "比较"
+        - national_cultural_role == "边界测试"
+    order:
+      - file.name
+      - author
+      - national_cultural_role
+      - national_cultural_problems
