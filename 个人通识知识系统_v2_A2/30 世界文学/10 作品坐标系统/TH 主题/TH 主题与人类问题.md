@@ -1,34 +1,42 @@
 ---
 id: "WL-TH"
 legacy_id: WL-TH
-type: literature_node
+type: literature_axis
 name: 主题与人类问题
 code: TH
 legacy_code: QH
 axis: TH
+role: primary
 system_role: work_coordinate
 coordinate_field: axis_th
 legacy_parent: "WL-Q"
 parent: "WL-COORDINATES"
 level: 1
-coverage_priority: null
+priority_scheme:
+  core: "★"
+  important: "◆"
+  extension: "△"
+node_model: "group → leaf → topic map"
 node_kind: coordinate_group
 anchorable: false
 topic_map: null
 axis_status: frozen
 axis_review: "[[TH 轴级总终审]]"
-source_version: "TH-axis-frozen-v1"
+axis_contract: "[[TH 轴结构契约]]"
+source_version: "TH-contract-v2"
 ---
 
 # TH 主题与人类问题
 
-> 新路径：世界文学 → 作品坐标系统 → **TH 主题与人类问题**。物理目录 `20 节点/Q 主题/` 仅为兼容旧 WikiLink 保留。
+> 路径：世界文学 → 作品坐标系统 → **TH 主题与人类问题**。
 
-TH 是作品坐标，不再被定义为 Q 轴 facet。它回答：**作品主要在思考什么主题 / 人类问题？**
+TH 与 T / R / M 同属作品坐标轴。它回答：**作品主要在思考什么主题 / 人类问题？**
 
 一部作品可以同时拥有多个 TH；canonical 作品字段为 `axis_th`。迁移期旧 `axis_q` 中的 TH 值仍可作为 fallback 读取。
 
 TH V1 已完成轴级总终审并冻结。TH9、TH10 当前不恢复；TH4–TH8 全局停在域一级，复杂度由各自专题内部问题承接。
+
+## 坐标树
 
 ```text
 TH  主题与人类问题
@@ -70,8 +78,33 @@ TH  主题与人类问题
 - [[TH7 历史、记忆与时间]]
 - [[TH8 信仰、伦理与超越]]
 
+## 优先级语义
+
+TH 专题与 T / R / M 统一使用：
+
+- `★`：核心骨架作品；
+- `◆`：重要比较作品；
+- `△`：扩展与边界作品。
+
+具体字段前缀可以因专题而异，但语义不得改变。
+
+## 节点模型
+
+```text
+TH 轴
+→ taxonomy_group
+→ taxonomy_leaf
+→ literature_topic_map
+→ topic structure / work projection
+```
+
+- group 不直接挂专题；
+- leaf 是作品可标注坐标，并由专题地图展开；
+- 专题内部核心问题不是新的 `axis_th` 坐标。
+
 ## 轴级治理
 
+- [[TH 轴结构契约|TH 轴结构契约]]
 - [[TH 轴级总终审|TH 轴级总终审]]
 - [[TH 轴级边界速查|TH 轴级边界速查]]
 - [[TH 轴级冻结状态|TH 轴级冻结状态]]
@@ -88,10 +121,11 @@ TH  主题与人类问题
 
 ## 与其他系统的边界
 
-- “作品讨论什么” → TH；
-- “作品采用什么类型机制” → TY；
-- “文本中出现什么高显著意象” → IM；
-- “作品与什么长期文化叙事结构发生关系” → CN。
+- **TH**：作品主要在思考什么；
+- **TY**：作品采用什么类型、叙事与文化机制；
+- **IM**：文本中出现什么高显著意象；
+- **CN**：作品与什么长期文化叙事结构发生关系；
+- **T / R / M / G**：作品处于什么时间、地域、思潮与体裁坐标。
 
 ## 冻结后的使用原则
 
