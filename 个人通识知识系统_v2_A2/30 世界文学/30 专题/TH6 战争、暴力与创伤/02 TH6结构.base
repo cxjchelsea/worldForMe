@@ -1,0 +1,17 @@
+filters:
+  and:
+    - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/TH6 战争、暴力与创伤/13 TH6核心问题/")
+views:
+  - type: table
+    name: TH6核心问题
+    order:
+      - file.name
+      - problem_code
+      - status
+    sort:
+      - property: problem_code
+        direction: ASC
+    columnSize:
+      file.name: 420
+      problem_code: 80
+      status: 100
