@@ -1,0 +1,23 @@
+filters:
+  and:
+    - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/40 作品/")
+    - topics.contains("WL-TOPIC-Q6-WAR")
+    - war_priority != null
+views:
+  - type: table
+    name: 战争文学子域
+    order:
+      - file.link
+      - war_priority
+      - war_history_stage
+      - war_axes
+      - read_status
+  - type: table
+    name: 战争文学骨架
+    filters:
+      and:
+        - war_priority == "★"
+    order:
+      - file.link
+      - war_history_stage
+      - war_axes
