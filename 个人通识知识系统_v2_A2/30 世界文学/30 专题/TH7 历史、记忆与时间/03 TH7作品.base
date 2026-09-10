@@ -42,3 +42,46 @@ views:
   - type: table
     name: 全部作品
     order: [file.name, author, history_memory_time_priority, history_memory_time_role, read_status, history_memory_time_problems, history_memory_time_note, memory_priority, memory_dimensions, axis_t, axis_r, axis_m, axis_g, axis_th, id]
+  - type: table
+    name: 旧记忆层
+    filters: {and: [memory_priority != null]}
+    order: [file.name, author, memory_priority, memory_dimensions, read_status, history_memory_time_priority, history_memory_time_problems]
+  - type: table
+    name: 按记忆维度
+    filters: {and: [memory_priority != null]}
+    groupBy:
+      property: memory_dimensions
+      direction: ASC
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜个人记忆
+    filters: {and: [memory_dimensions.contains("个人记忆")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜家族记忆
+    filters: {and: [memory_dimensions.contains("家族记忆")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜集体记忆
+    filters: {and: [memory_dimensions.contains("集体记忆")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜历史创伤
+    filters: {and: [memory_dimensions.contains("历史创伤")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜遗忘
+    filters: {and: [memory_dimensions.contains("遗忘")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜历史重写
+    filters: {and: [memory_dimensions.contains("历史重写")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜代际记忆
+    filters: {and: [memory_dimensions.contains("代际记忆")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
+  - type: table
+    name: 记忆维度｜时间
+    filters: {and: [memory_dimensions.contains("时间")]}
+    order: [file.name, author, memory_priority, read_status, history_memory_time_priority]
