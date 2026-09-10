@@ -4,8 +4,8 @@ filters:
     - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/TH7 历史、记忆与时间/10 结构/")
     - file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/TH7 历史、记忆与时间/13 TH7核心问题/")
 formulas:
-  type_zh: if(type == "literature_topic_structure", "核心结构", if(type == "literature_topic_problem" || type == "literature_topic_section", "核心问题", "兼容节点"))
-  dimension_zh: if(dimension, dimension.replace("core_problem", "核心问题").replace("definition", "定义与边界").replace("mechanism", "作用机制").replace("comparison", "跨轴比较").replace("reading_route", "阅读路线").replace("review", "终审与校准"), "")
+  type_zh: if(type == "literature_topic_structure", "核心结构", if(type == "literature_topic_problem" || type == "literature_topic_section", "核心问题/细分", if(type == "literature_topic_mechanism", "机制深化", "兼容节点")))
+  dimension_zh: if(dimension, dimension.replace("core_problem", "核心问题").replace("definition", "定义与边界").replace("mechanism", "作用机制").replace("comparison", "跨轴比较").replace("reading_route", "阅读路线").replace("review", "终审与校准").replace("memory_dimensions", "记忆维度").replace("memory_scale", "记忆尺度").replace("history", "历史").replace("bridge", "桥接"), "")
 properties:
   file.name: {displayName: 节点}
   formula.type_zh: {displayName: 类型}
@@ -13,17 +13,26 @@ properties:
   note.sequence: {displayName: 顺序}
   note.parent: {displayName: 父节点}
   note.problem_code: {displayName: 问题编号}
+  note.memory_dimension: {displayName: 记忆机制}
   note.status: {displayName: 状态}
   note.id: {displayName: 编号}
 views:
   - type: table
     name: 全部知识节点
-    order: [file.name, formula.type_zh, formula.dimension_zh, problem_code, sequence, parent, status, id]
+    order: [file.name, formula.type_zh, formula.dimension_zh, problem_code, sequence, parent, memory_dimension, status, id]
   - type: table
-    name: 核心结构
+    name: A级核心结构
     filters: {and: [file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/TH7 历史、记忆与时间/10 结构/")]}
     order: [file.name, formula.dimension_zh, sequence, id]
   - type: table
-    name: 核心问题
+    name: TH7核心问题
     filters: {and: [file.path.startsWith("个人通识知识系统_v2_A2/30 世界文学/30 专题/TH7 历史、记忆与时间/13 TH7核心问题/")]}
     order: [problem_code, file.name, status, id]
+  - type: table
+    name: 旧记忆细分
+    filters: {and: [type == "literature_topic_section"]}
+    order: [file.name, formula.dimension_zh, memory_dimension, sequence, id]
+  - type: table
+    name: 旧记忆机制深化
+    filters: {and: [type == "literature_topic_mechanism"]}
+    order: [file.name, formula.dimension_zh, memory_dimension, sequence, id]

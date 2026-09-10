@@ -11,6 +11,8 @@ properties:
   note.violence_trauma_problems: {displayName: TH6核心问题}
   note.violence_trauma_note: {displayName: TH6价值}
   note.war_priority: {displayName: 战争子域优先级}
+  note.war_history_stage: {displayName: 战争历史位置}
+  note.war_axes: {displayName: 战争机制}
   note.axis_t: {displayName: 时间}
   note.axis_r: {displayName: 地域}
   note.axis_m: {displayName: 思潮}
@@ -40,4 +42,75 @@ views:
     order: [file.name, author, violence_trauma_priority, violence_trauma_role, violence_trauma_problems, war_priority, axis_t, axis_r, axis_m, axis_g]
   - type: table
     name: 全部作品
-    order: [file.name, author, violence_trauma_priority, violence_trauma_role, read_status, violence_trauma_problems, violence_trauma_note, war_priority, axis_t, axis_r, axis_m, axis_g, axis_th, id]
+    order: [file.name, author, violence_trauma_priority, violence_trauma_role, read_status, violence_trauma_problems, violence_trauma_note, war_priority, war_history_stage, war_axes, axis_t, axis_r, axis_m, axis_g, axis_th, id]
+  - type: table
+    name: 战争子域
+    filters: {and: [war_priority != null]}
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status, violence_trauma_priority, violence_trauma_problems]
+  - type: table
+    name: 战争子域核心 ★
+    filters: {and: [war_priority == "★"]}
+    order: [file.name, author, war_history_stage, war_axes, read_status, violence_trauma_priority]
+  - type: table
+    name: 按战争历史
+    filters: {and: [war_priority != null]}
+    groupBy:
+      property: war_history_stage
+      direction: ASC
+    order: [file.name, author, war_priority, war_axes, read_status]
+  - type: table
+    name: 战争问题｜战斗与士兵
+    filters:
+      and:
+        - or:
+            - war_axes.contains("英雄主义")
+            - war_axes.contains("普通士兵")
+            - war_axes.contains("反战")
+            - war_axes.contains("荒诞")
+            - war_axes.contains("军事制度")
+            - war_axes.contains("战俘")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 战争问题｜平民与占领
+    filters:
+      and:
+        - or:
+            - war_axes.contains("平民")
+            - war_axes.contains("占领")
+            - war_axes.contains("女性")
+            - war_axes.contains("儿童")
+            - war_axes.contains("战争与爱情")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 战争问题｜灭绝与核暴力
+    filters:
+      and:
+        - or:
+            - war_axes.contains("Holocaust/Genocide")
+            - war_axes.contains("轰炸与核战争")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 战争问题｜内战与殖民战争
+    filters:
+      and:
+        - or:
+            - war_axes.contains("内战")
+            - war_axes.contains("殖民战争")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 战争问题｜创伤与记忆
+    filters:
+      and:
+        - or:
+            - war_axes.contains("创伤/Afterwar")
+            - war_axes.contains("战争记忆")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
+  - type: table
+    name: 战争问题｜真相与责任
+    filters:
+      and:
+        - or:
+            - war_axes.contains("战争真相与叙事")
+            - war_axes.contains("加害者/Complicity")
+            - war_axes.contains("战争×类型融合")
+    order: [file.name, author, war_priority, war_history_stage, war_axes, read_status]
