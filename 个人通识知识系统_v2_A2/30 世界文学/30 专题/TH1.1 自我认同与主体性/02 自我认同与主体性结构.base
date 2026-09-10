@@ -3,54 +3,28 @@ filters:
     - topic_id == "WL-TOPIC-TH1-1-SELFHOOD"
 formulas:
   type_zh: type.replace("literature_topic_structure", "核心结构").replace("literature_topic_section", "核心问题")
-  dimension_zh: if(dimension, dimension.replace("core_problem", "核心问题").replace("definition", "定义与边界").replace("experience_mechanism", "机制").replace("comparison", "跨轴比较").replace("reading_route", "阅读路线"), "")
+  dimension_zh: if(dimension, dimension.replace("core_problem", "核心问题").replace("definition", "定义与边界").replace("experience_mechanism", "机制").replace("comparison", "跨轴比较").replace("reading_route", "阅读路线").replace("review", "终审与校准"), "")
+  role_zh: if(dimension == "definition", "定义专题边界", if(dimension == "core_problem", "承载核心问题", if(dimension == "experience_mechanism" || dimension == "mechanism", "解释作用机制", if(dimension == "comparison", "组织比较", if(dimension == "reading_route", "组织阅读路线", if(dimension == "review", "终审与校准", "专题结构"))))))
 properties:
-  file.name:
-    displayName: 节点
-  formula.type_zh:
-    displayName: 类型
-  formula.dimension_zh:
-    displayName: 维度
-  note.type:
-    displayName: 类型代码
-  note.dimension:
-    displayName: 维度代码
-  note.sequence:
-    displayName: 顺序
-  note.parent:
-    displayName: 父节点
-  note.id:
-    displayName: 编号
+  file.name: {displayName: 节点}
+  formula.type_zh: {displayName: 类型}
+  formula.dimension_zh: {displayName: 维度}
+  note.sequence: {displayName: 顺序}
+  note.parent: {displayName: 父节点}
+  formula.role_zh: {displayName: 节点作用}
+  note.id: {displayName: 编号}
+  note.type: {displayName: 类型代码}
+  note.dimension: {displayName: 维度代码}
 views:
   - type: table
     name: 全部知识节点
-    groupBy:
-      property: formula.type_zh
-      direction: ASC
-    order:
-      - file.name
-      - formula.type_zh
-      - formula.dimension_zh
-      - sequence
-      - parent
-      - id
+    groupBy: {property: formula.type_zh, direction: ASC}
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, formula.role_zh, id]
   - type: table
     name: 核心结构
-    filters:
-      and:
-        - type == "literature_topic_structure"
-    order:
-      - file.name
-      - formula.dimension_zh
-      - sequence
-      - id
+    filters: {and: [type == "literature_topic_structure"]}
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, formula.role_zh, id]
   - type: table
     name: 核心问题
-    filters:
-      and:
-        - type == "literature_topic_section"
-        - dimension == "core_problem"
-    order:
-      - file.name
-      - sequence
-      - id
+    filters: {and: [type == "literature_topic_section", dimension == "core_problem"]}
+    order: [file.name, formula.type_zh, formula.dimension_zh, sequence, parent, formula.role_zh, id]
